@@ -1,5 +1,4 @@
-# SS3D Art
-<h5 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for Space Station 3D.</h5>
+<h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for Space Station 3D.</h3>
 
 ## CONTRIBUTING
 
