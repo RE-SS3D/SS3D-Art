@@ -1,4 +1,6 @@
-<h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for Space Station 3D.</h3>
+<h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for <a href="https://github.com/RE-SS3D/SS3D">Space Station 3D</a></h3>
+
+<br>
 
 ## CONTRIBUTING
 
@@ -17,21 +19,16 @@ Most of the time it will be the assets' source file (.blend, etc.) in this repos
 
 ### Contributor Kits
 
-- [Modeler's Kit v2.0](https://drive.google.com/drive/folders/11SMsOzh78-vNTq3Az5c-mUFpFw-5EOb8)(Blender 2.8 or newer only)
-
-- [Character Animation Kit v3.0](https://drive.google.com/drive/u/1/folders/1gAqPkdEb6VeVT-oSx_rtvCh1x4EB0d4i)(Maya only)
-
-- 2D Kit (COMING SOON)
+- [Modeler's Kit v2.0](https://drive.google.com/drive/folders/11SMsOzh78-vNTq3Az5c-mUFpFw-5EOb8) (Blender 2.8 or newer only)
+- [Character Animation Kit v3.0](https://drive.google.com/drive/u/1/folders/1gAqPkdEb6VeVT-oSx_rtvCh1x4EB0d4i) (Maya only)
+- 2D Art Kit (*COMING SOON*)
 
 ### Guides
 
 - [Using GitHub](https://ss3d.gitbook.io/programming/introduction/contributing-to-ss3d/github)
-
 - [File Organization](https://ss3d.gitbook.io/programming/guidelines/file-naming-and-organization)
-
 - [Art Asset Criteria](https://ss3d.gitbook.io/programming/guidelines/asset-criteria/art-assets-external)
 
 ## LICENSE
 
 **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
-
