@@ -8,7 +8,7 @@
 
 <!-- Follow with a more concise explanation of your change here. -->
 
-## Adding New Assets (optional)
+## Adding New Assets
 
 <!-- List any new assets added here. -->
 
