@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Pano2VR project file  -->
+<pano2vrconfig rev="18105" version="6.1.14">
+  <panorama>
+    <id>node1</id>
+    <input>
+      <patch/>
+      <type>auto</type>
+      <filename>4.png</filename>
+      <videotype>equi</videotype>
+      <levelpitch>0</levelpitch>
+      <levelroll>0</levelroll>
+    </input>
+    <viewingparameter>
+      <pan/>
+      <tilt/>
+      <fov/>
+      <flyinstart/>
+      <pannorth>0</pannorth>
+    </viewingparameter>
+    <userdata>
+      <capturedatetime>2020-02-14T18:15:06</capturedatetime>
+      <tags>Various Colors</tags>
+    </userdata>
+    <floorplans/>
+    <hotspots/>
+    <output>
+      <placeidcache>{"entries":[]}</placeidcache>
+      <thumb>
+        <html>
+          <enabled>0</enabled>
+          <filename>output/index.html</filename>
+        </html>
+        <facequality/>
+        <type>equirectangular</type>
+        <filename>pano.png</filename>
+        <fov>70</fov>
+        <defaultviewpan>1</defaultviewpan>
+        <defaultviewtilt>1</defaultviewtilt>
+        <defaultviewfov>1</defaultviewfov>
+        <width>0</width>
+        <height>0</height>
+      </thumb>
+    </output>
+    <streetview/>
+    <streetviewproject/>
+    <sounds/>
+    <animation>
+      <title>Animation01</title>
+    </animation>
+  </panorama>
+</pano2vrconfig>
