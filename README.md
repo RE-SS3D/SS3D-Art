@@ -31,4 +31,4 @@ Most of the time it will be the assets' source file (.blend, etc.) in this repos
 
 ## LICENSE
 
-ALL art assets fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
+ALL files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
