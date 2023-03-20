@@ -1,4 +1,4 @@
-<h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for <a href="https://github.com/RE-SS3D/SS3D">Space Station 3D</a></h3>
+<h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for <a href="https://ss3d.space/">Space Station 3D</a></h3>
 <br>
 
 ## CONTRIBUTING
@@ -27,6 +27,7 @@ Most of the time it will be the assets' source file (.blend, etc.) in this repos
 - [Using GitHub](https://ss3d.gitbook.io/programming/introduction/contributing-to-ss3d/github)
 - [File Organization](https://ss3d.gitbook.io/programming/guidelines/file-naming-and-organization)
 - [Art Asset Criteria](https://ss3d.gitbook.io/programming/guidelines/asset-criteria/art-assets-external)
+<br>
 
 ## LICENSE
 
