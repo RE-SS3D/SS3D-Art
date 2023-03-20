@@ -1,5 +1,4 @@
 <h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for <a href="https://github.com/RE-SS3D/SS3D">Space Station 3D</a></h3>
-
 <br>
 
 ## CONTRIBUTING
@@ -31,4 +30,4 @@ Most of the time it will be the assets' source file (.blend, etc.) in this repos
 
 ## LICENSE
 
-**[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
+ALL art assets fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
