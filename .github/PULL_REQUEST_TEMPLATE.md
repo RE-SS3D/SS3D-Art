@@ -4,7 +4,7 @@
 
 ## Summary
 
-<!-- Provide a general summary of your change here and in the title. -->
+<!-- Provide a general summary of your change here. -->
 
 <!-- Follow with a more concise explanation of your change here. -->
 
@@ -15,6 +15,11 @@
 ## Changes to Existing Assets
 
 <!-- List any modified assets here, with any changes made to them. -->
+
+## Contributors (optional)
+
+<!-- If you are adding asset(s), and you are NOT the original contributor of the asset(s), --> 
+<!--    list the name of the contribor of the NEW assets. -->
 
 ## Known issues (optional)
 

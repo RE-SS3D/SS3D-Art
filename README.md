@@ -1,12 +1,14 @@
-<h3 align="center"><img src="Documents/Images/EikoBannerShort.png" alt="SS3D_Banner">Art repository for <a href="https://github.com/RE-SS3D/SS3D">Space Station 3D</a></h3>
+<h3 align="center"><img src="Documents/Images/SS3DBanner2.png" alt="SS3D_Banner">Art repository for <a href="https://ss3d.space/">Space Station 3D</a>!</h3>
 
 <br>
 
 ## CONTRIBUTING
 
-This repository is for holding all SS3D art assets (assets created outside of our game engine, Unity).
+This repository is for holding all SS3D art assets (assets created outside of the game engine, Unity).
 
 Most of the time it will be the assets' source file (.blend, etc.) in this repository, but sometimes exported files can be saved here if no source file exists for them.
+
+Prior to using GitHub, art assets were submitted manually and we have been keeping a list of the contributors [here](https://docs.google.com/spreadsheets/d/1p5mEuqPZIFV5oGwKxdZSqUzp9qHCuANz).
 
 ### Task Boards
 
@@ -29,6 +31,8 @@ Most of the time it will be the assets' source file (.blend, etc.) in this repos
 - [File Organization](https://ss3d.gitbook.io/programming/guidelines/file-naming-and-organization)
 - [Art Asset Criteria](https://ss3d.gitbook.io/programming/guidelines/asset-criteria/art-assets-external)
 
+<br>
+
 ## LICENSE
 
-**[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
+ALL files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
