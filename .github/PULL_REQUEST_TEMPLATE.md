@@ -36,3 +36,5 @@
 <!--  **Contributor Name**
       - Asset Name 1
       - Asset Name 2      -->
+
+<!-- If the asset comes from a free/open source, replace the contributor name with the source name. -->
