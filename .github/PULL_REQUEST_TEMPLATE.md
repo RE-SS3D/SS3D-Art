@@ -16,19 +16,19 @@
 
 <!-- List any modified assets here, with any changes made to them. -->
 
-## Known issues (optional)
+## Known issues <!-- (optional) -->
 
 <!-- List ANYTHING not working correctly, either part of your new change, or another part of the game. -->
 
 <!-- Any known bugs will likely require sorting out before the PR is merged. -->
 
-## Fixes (optional)
+## Fixes <!-- (optional) -->
 
 <!-- List any issues or other PRs connected to this one. -->
 
 <!-- If this PR CLOSES any issues/PRs, add "Closes" before the number (e.g. "Closes #123"). -->
 
-## Contributors (optional)
+## Contributors <!-- (optional) -->
 
 <!-- If you are adding asset(s), and you are NOT the original contributor of the asset(s), 
            list the name(s) of the contributor(s) of the added assets. -->
