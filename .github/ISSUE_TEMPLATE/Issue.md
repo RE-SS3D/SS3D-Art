@@ -10,11 +10,11 @@ title: "Issue Name"
 
 <!-- Provide a general summary of the issue here. -->
 
-## Problem (optional)
+## Problem <!-- (optional) -->
 
 <!-- Is there a problem with an asset? Explain. -->
 
-## Media (optional)
+## Media <!-- (optional) -->
 
 <!-- provide photos or videos if possible to help developers. -->
 
