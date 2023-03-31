@@ -4,35 +4,18 @@
 
 ## CONTRIBUTING
 
-This repository is for holding all SS3D art assets (assets created outside of the game engine, Unity).
+This repository is for holding all SS3D art assets (assets created by our contributors externally from our game engine, Unity).
 
-Most of the time it will be the assets' source file (.blend, etc.) in this repository, but sometimes exported files can be saved here if no source file exists for them.
+Most of the time it will be the assets' source file (.blend, etc.) in this repository, but sometimes exported files can be saved here if no source file exists or is needed for them.
 
-Prior to using GitHub, art assets were submitted manually and we have been keeping a list of the contributors [here](https://docs.google.com/spreadsheets/d/1p5mEuqPZIFV5oGwKxdZSqUzp9qHCuANz).
+Prior to using GitHub, our art assets were submitted manually, and thus we have been keeping a list of the contributors [here](https://docs.google.com/spreadsheets/d/1p5mEuqPZIFV5oGwKxdZSqUzp9qHCuANz) and will continue doing so until all the assets have been moved to GitHub.
 
-### Task Boards
+## Guides & Tasks
 
-- [Models](https://trello.com/b/ZVcDitv0/ss3d-models)
-- [Rigged Models](https://trello.com/b/cyDuUYyv/ss3d-rig-models)
-- [3D Animations](https://trello.com/b/xZ5bhNWw/ss3d-animations)
-- [2D Textures/Graphics](https://trello.com/b/XVZ95Hjq/ss3d-2d)
-- [SFX](https://trello.com/b/k6pWgJE0/ss3d-sfx)
-- [VFX](https://trello.com/b/uwo7b3cr/ss3d-vfx)
-
-### Contributor Kits
-
-- [Modeler's Kit v2.0](https://drive.google.com/drive/folders/11SMsOzh78-vNTq3Az5c-mUFpFw-5EOb8) (Blender 2.8 or newer only)
-- [Character Animation Kit v3.0](https://drive.google.com/drive/u/1/folders/1gAqPkdEb6VeVT-oSx_rtvCh1x4EB0d4i) (Maya only)
-- 2D Art Kit (*COMING SOON*)
-
-### Guides
-
-- [Using GitHub](https://ss3d.gitbook.io/programming/introduction/contributing-to-ss3d/github)
-- [File Organization](https://ss3d.gitbook.io/programming/guidelines/file-naming-and-organization)
-- [Art Asset Criteria](https://ss3d.gitbook.io/programming/guidelines/asset-criteria/art-assets-external)
+We now have a primary [art guide](https://ss3d.gitbook.io/art-guide/), with links to basics on contributors, tasks boards for different asset types, and guides for 2D & 3D assets.
 
 <br>
 
 ## LICENSE
 
-ALL files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
+ALL files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE.md)**
