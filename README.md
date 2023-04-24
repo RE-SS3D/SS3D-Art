@@ -2,8 +2,7 @@
 
 <br>
 
-[<img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Art" alt="Repo Size" align="right">](https://github.com/RE-SS3D/SS3D-Art)
-## CONTRIBUTING
+## CONTRIBUTING [<img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Art" alt="Repo Size" align="right">](https://github.com/RE-SS3D/SS3D-Art)
 
 This repository is for holding all SS3D art assets (assets created by our contributors externally from our game engine, Unity).
 
