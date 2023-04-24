@@ -2,6 +2,7 @@
 
 <br>
 
+[<img src="https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Art" alt="Repo Size" align="right">](https://github.com/RE-SS3D/SS3D-Art)
 ## CONTRIBUTING
 
 This repository is for holding all SS3D art assets (assets created by our contributors externally from our game engine, Unity).
@@ -14,8 +15,12 @@ Prior to using GitHub, our art assets were submitted manually, and thus we have 
 
 We now have a primary [art guide](https://ss3d.gitbook.io/art-guide/), with links to basics on contributors, tasks boards for different asset types, and guides for 2D & 3D assets.
 
+More tasks will be moved to GitHub as we progress forward.
+
 <br>
 
 ## LICENSE
 
-ALL files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE.md)**
+ALL asset files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE.md)**
+
+https://img.shields.io/github/repo-size/RE-SS3D/SS3D-Art
