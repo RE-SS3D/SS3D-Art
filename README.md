@@ -14,7 +14,7 @@ Prior to using GitHub, our art assets were submitted manually, and thus we have 
 
 ## CONTRIBUTING
 
-We now have a primary [art guide](https://ss3d.gitbook.io/art-guide/), with links to basics on contributors, tasks boards for different asset types, and guides for 2D & 3D assets.
+We now have a proper [art guide](https://ss3d.gitbook.io/art-guide/), with guides and links to tasks boards based on asset types.
 
 More tasks will be moved to GitHub as we progress forward.
 
