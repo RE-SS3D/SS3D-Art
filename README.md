@@ -22,4 +22,4 @@ More tasks will be moved to GitHub as we progress forward.
 
 ## LICENSE
 
-ALL asset files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE.md)**
+ALL asset files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
