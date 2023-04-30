@@ -1,5 +1,5 @@
 ---
-name: Bug
+name: Issue
 about: Open an issue.
 title: "Issue Name"
 
@@ -16,10 +16,10 @@ title: "Issue Name"
 
 ## Media <!-- (optional) -->
 
-<!-- provide photos or videos if possible to help developers. -->
+<!-- provide photos or videos if possible to help identify the issue. -->
 
 ## Context 
 
 <!-- What other information might be useful to understand the issue? -->
 
-<!-- Is the issue related to another issue, link it here? -->
+<!-- Is the issue related to another issue? Link it here. -->
