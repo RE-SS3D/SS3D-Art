@@ -12,6 +12,17 @@
 
 <!-- List any new assets added here. -->
 
+### Contributors <!-- (optional) -->
+
+<!-- If you are adding asset(s), and you are NOT the original contributor of the asset(s), 
+           list the name(s) of the contributor(s) of the added assets. -->
+
+<!--  **Contributor Name**
+      - Asset Name 1
+      - Asset Name 2      -->
+
+<!-- If the asset comes from another source, replace the contributor name with the source name & link if available. -->
+
 ## Changes to Existing Assets
 
 <!-- List any modified assets here, with any changes made to them. -->
@@ -27,14 +38,3 @@
 <!-- List any issues or other PRs connected to this one. -->
 
 <!-- If this PR CLOSES any issues/PRs, add "Closes" before the number (e.g. "Closes #123"). -->
-
-## Contributors <!-- (optional) -->
-
-<!-- If you are adding asset(s), and you are NOT the original contributor of the asset(s), 
-           list the name(s) of the contributor(s) of the added assets. -->
-
-<!--  **Contributor Name**
-      - Asset Name 1
-      - Asset Name 2      -->
-
-<!-- If the asset comes from a free/open source, replace the contributor name with the source name. -->
