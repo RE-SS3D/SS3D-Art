@@ -1,0 +1,1 @@
+All information about the animation rig and creating animations will currently go here
