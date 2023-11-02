@@ -17,19 +17,19 @@
 <!-- If you are adding asset(s), and you are NOT the original contributor of the asset(s), 
            list the name(s) of the contributor(s) of the added assets. -->
 
-<!--  **Contributor Name**
-      - Asset Name 1
-      - Asset Name 2      -->
+<!-- @ContributorName (or **ContributorName**)
+     - Asset 1
+     - Asset 2                                   -->
 
-<!-- If the asset comes from another source, replace the contributor name with the source name & link if available. -->
+<!-- If the asset comes from another source, replace the contributor name with the source name & link (if available). Also check the license of the asset and make sure it is compatible with ours. -->
 
 ## Changes to Existing Assets
 
-<!-- List any modified assets here, with any changes made to them. -->
+<!-- List any changes to existing assets here. -->
 
 ## Known issues <!-- (optional) -->
 
-<!-- List ANYTHING not working correctly, either part of your new change, or another part of the game. -->
+<!-- List ANYTHING not working correctly, either part of your new change, or another asset. -->
 
 <!-- Any known bugs will likely require sorting out before the PR is merged. -->
 
