@@ -10,13 +10,14 @@ title: "Issue Name"
 
 <!-- Provide a general summary of the issue here. -->
 
-## Problem <!-- (optional) -->
+## Issue <!-- (optional) -->
 
-<!-- Is there a problem with an asset? Explain. -->
+<!-- Is there a problem with an asset? Explain what. -->
+<!-- Does a new asset need to be made? Explain why. -->
 
 ## Media <!-- (optional) -->
 
-<!-- provide photos or videos if possible to help identify the issue. -->
+<!-- Provide photos or videos if possible to help identify the issue. -->
 
 ## Context 
 
