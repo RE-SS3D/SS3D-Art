@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "ctime": "1581317024", 
+    "version": "1.0.0", 
+    "references": [
+      {
+        "node": "Default_PlaneRN", 
+        "unresolved": "C:/Users/dnest/OneDrive/Projects/Games/RESS3D/RESS3D-ASSETS/Animations/Animation Rigs/Humans/Default/Character_Animation_Rig/Assets/Default_Plane.ma", 
+        "namespace": ":Default_Plane", 
+        "filename": "C:/Users/dnest/OneDrive/Projects/Games/RESS3D/RESS3D-ASSETS/Animations/Animation Rigs/Humans/Default/Character_Animation_Rig/Assets/Default_Plane.ma"
+      }
+    ], 
+    "user": "dnest", 
+    "mayaSceneFile": "C:/Users/dnest/OneDrive/Projects/Games/RESS3D/RESS3D-ASSETS/Animations/Animation Rigs/Humans/Default/Character_Animation_Rig/Character_Idle_Default_Pose.mb", 
+    "mayaVersion": "2020", 
+    "description": ""
+  }
+,
+  "objects": {
+    "Default_Plane:MainCamera": {
+      "attrs": {
+        "visibility": {
+          "type": "bool", 
+          "value": false
+        }, 
+        "scaleX": {
+          "type": "double", 
+          "value": 1.0
+        }, 
+        "scaleY": {
+          "type": "double", 
+          "value": 1.0
+        }, 
+        "scaleZ": {
+          "type": "double", 
+          "value": 1.0
+        }
+      }
+    }
+  }
+}
