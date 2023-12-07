@@ -24,4 +24,4 @@ More art tasks will be moved to GitHub as we progress forward, thanks for being 
 
 ## LICENSE
 
-ALL asset files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
+ALL asset & artwork files fall under **[CC BY-NC-SA 4.0](Documents/LICENSE-ASSETS.md)**
