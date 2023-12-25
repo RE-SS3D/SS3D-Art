@@ -9,3 +9,6 @@
 
 # Photoshop data files
 *.psd~
+
+# Windows files
+*.ini
