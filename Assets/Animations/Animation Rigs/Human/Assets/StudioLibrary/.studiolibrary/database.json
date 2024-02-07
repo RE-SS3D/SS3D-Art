@@ -1,0 +1,38 @@
+{
+    "../../Movement": {
+        "name": "Movement",
+        "path": "../../Movement",
+        "type": "Folder",
+        "folder": "../..",
+        "category": "StudioLibrary",
+        "modified": 1707281701.3356855,
+        "__class__": "studiolibrary.folderitem.FolderItem"
+    },
+    "../../Movement/Human@DEF_WalkN.anim": {
+        "name": "Human@DEF_WalkN.anim",
+        "path": "../../Movement/Human@DEF_WalkN.anim",
+        "type": ".anim",
+        "folder": "../../Movement",
+        "category": "Movement",
+        "modified": 1707282172.1176312,
+        "__class__": "studiolibrarymaya.animitem.AnimItem"
+    },
+    "../../Trash/Human@DEF_WalkN (2).anim": {
+        "name": "Human@DEF_WalkN (2).anim",
+        "path": "../../Trash/Human@DEF_WalkN (2).anim",
+        "type": ".anim",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1707282058.8177526,
+        "__class__": "studiolibrary.libraryitem.LibraryItem"
+    },
+    "../../Trash/Human@DEF_WalkN.anim": {
+        "name": "Human@DEF_WalkN.anim",
+        "path": "../../Trash/Human@DEF_WalkN.anim",
+        "type": ".anim",
+        "folder": "../../Trash",
+        "category": "Trash",
+        "modified": 1707281985.8525033,
+        "__class__": "studiolibrary.libraryitem.LibraryItem"
+    }
+}

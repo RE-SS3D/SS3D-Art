@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "timeUnit": "film",
+    "linearUnit": "m",
+    "angularUnit": "deg",
+    "description": "",
+    "endFrame": 23,
+    "startFrame": 0,
+    "user": "Work",
+    "ctime": "1707282172",
+    "version": "1.0.0",
+    "references": [],
+    "mayaVersion": "2023",
+    "mayaSceneFile": "C:/Users/Work/Downloads/Human@DEF_WalkingSet.mb"
+  }
+,
+  "objects": {
+    "Default_Plane:Plane_Controls": {
+      "attrs": {
+        "Move_Y": {
+          "type": "double",
+          "value": 7.829416666666669
+        },
+        "Move_X": {
+          "type": "double",
+          "value": 0.0
+        },
+        "Fade": {
+          "type": "double",
+          "value": 0.0
+        }
+      }
+    }
+  }
+}
