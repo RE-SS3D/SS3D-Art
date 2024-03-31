@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Human@DEF_ActionsSet.ma
-//Last modified: Fri, Mar 29, 2024 12:41:34 AM
+//Last modified: Sat, Mar 30, 2024 06:17:22 PM
 //Codeset: 1252
 file -rdi 1 -ns "Human_AnimRig" -rfn "CHR_Rig_DefaultRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Animation Rigs/Human/Human@AnimRig.ma";
@@ -20,7 +20,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "BEF5ECD3-499D-BAF0-D738-DCBA691D31C1";
+fileInfo "UUID" "AFE0BC24-4AFE-A2A2-ABD3-A29ADE331C4D";
 fileInfo "vrayBuild" "6.00.02 ee5238c";
 createNode transform -s -n "persp";
 	rename -uid "9032DB97-4F61-0574-DD3C-77AF63BEA906";
@@ -3619,7 +3619,6 @@ createNode parentConstraint -n "Enforcer_parentConstraint1" -p "Enforcer";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.3447910280083307e-15 -0.033006561444794184 
 		-0.020746083796217788 ;
-	setAttr ".lr" -type "double3" 0.40036389156325564 1.2477576530779366 -12.939514206149722 ;
 	setAttr ".rst" -type "double3" -0.1545594843060687 0.9933284004967331 0.27700411451170615 ;
 	setAttr ".rsrr" -type "double3" 0 0 -13.200691515850298 ;
 	setAttr -k on ".w0";
@@ -5023,23 +5022,23 @@ createNode mesh -n "AmmoShape" -p "Ammo";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "636E1757-4D79-C217-503A-C789F8CD3970";
+	rename -uid "935B1019-4ED1-7236-2AB9-DDBDA707C2F0";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DC01D0AD-45E5-D61B-7968-FD98E03AEF5A";
+	rename -uid "EF517399-487B-1022-EE05-EC80160A5779";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 4 0 1 2 3 ;
 	setAttr -s 4 ".bspr";
 	setAttr -s 4 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9CF1FAA7-4EB1-0FB6-31B6-448FC698770F";
+	rename -uid "2638C582-43E6-0E54-C82D-16A084AEC5F8";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4229EB0A-4AE7-B0D5-96DC-6E850216129E";
+	rename -uid "6662CBDC-4269-C677-021B-96B8C994353C";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1C980215-4AF2-9FB3-F4CE-079DC29488F7";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "BA022149-470C-19D7-331E-B3A6A2273AA8";
+	rename -uid "FBFBDF23-42CC-FBF3-2710-CC851E9C6387";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D51D0F5A-4E3E-E3F2-0C5A-15BDB5A57242";
 	setAttr ".g" yes;
@@ -6908,7 +6907,6 @@ createNode reference -n "CHR_Rig_DefaultRN";
 	setAttr ".phl[2094]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"CHR_Rig_DefaultRN"
-		"Human_AnimRig:Default_Character_AssistantRN" 0
 		"CHR_Rig_DefaultRN" 75
 		2 "|CHR_Rig_Default:Character_Default|CHR_Rig_Default:Character_Default_Rig|CHR_Rig_Default:DontTouch" 
 		"visibility" " -k 0 0"
@@ -7060,6 +7058,7 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		"CHR_Rig_DefaultRN.placeHolderList[246]" ""
 		5 4 "CHR_Rig_DefaultRN" "|CHR_Rig_Default:Character_Default|CHR_Rig_Default:Character_Default_Rig|CHR_Rig_Default:MainRoot_CTR|CHR_Rig_Default:IKControllers|CHR_Rig_Default:ElbowVector_PRX_R|CHR_Rig_Default:ElbowVector_CTR_R.translateZ" 
 		"CHR_Rig_DefaultRN.placeHolderList[247]" ""
+		"Human_AnimRig:Default_Character_AssistantRN" 0
 		"CHR_Rig_Default:Default_Character_AssistantRN" 0
 		"CHR_Rig_DefaultRN" 2381
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR" 
@@ -7656,15 +7655,15 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		2 "Human_AnimRig:HMND_AnimRig" "uv[1:93]" " -s 93 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.99999999999997491 0.99999999999997491 0.99999999999997491 0 1 0 0 0 0 1 0 0 0 1 0 0 0 5 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0.99999999999997491 0.99999999999997491 0.99999999999997491 0 1 0 0 0 0 1 0 1 0 5.1619139831856633e-08 -1.99999999999953881 1.3429312350922857e-06 1 0 0 1.99999999999953904 -1.3429310632524658e-06 0.99999999999999978 0.99999999999999989 0.99999999999999978 1 1 1 1 0 0.99999999999997469 0.9999999999999748 0.99999999999997469 0 1.00000000000007527 1.00000000000007527 1.00000000000007527"
 		
 		2 "Human_AnimRig:HMND_AnimRig" "unitlessValues" " -s 63"
-		2 "Human_AnimRig:HMND_AnimRig" "lv[1:243]" (" -s 243 0.15000138581848585 1.3954013277151025 -1.1833378266395361e-07 0 0 0 1.008510589617373e-06 1.9073486313914147e-07 7.6293945383554274e-08 -0.023254185648160758 0.0085882377624511719 0.076616281887946683 0.015158044099807635 0 0.084018705188754442 0 0 0.23379094336677292 -0.11804807130790128 0 -0.17810487747192383 0 0 0 0.037819892422630633 1.1852846197850393 -0.57615023488705963 0.037819931534954748 1.18528446747999006 0.57615023488703254 0.5 1.03770954849195829 0 0 0 0 0.021054284294816275 1.18555838143657333 -0.57467495950677372 0.025462963366755034 -0.011941085699659482 -0.027353459282136897 0 0 0 0 0 0 0.021464867591857076 1.18556922912597651 0.57467399597167967 0.021054356043306136 1.18555821197482958 0.57467391728700445 0 0 0 0 0 0 0 0 0 -0.32999999999999774 1.14121810412814884 -0.67033629066924083 0 0 0 0 0 0 -0.32999999498545285 1.27102610176389086 0.5271735923564117 -0.32999999498545279 1.22775687099465936 0.67033598551880658 0 0 0 0 0 1.5685662776547816e-05 0 0 0 -0.19215279815462133 0.113256"
-		+ "59018552017 -0.064260585950231 0 0 0 0 0 0 -0.32214063404835969 -5.5767547688461149e-05 0.02778273620144029 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0 0 0 0 0 0 0.0020646403495949528 0 0 0 0 0.00011583747996704474 0 0 0 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.021054155826550555 1.18555847167972073 0.5746741867064793 0 0 0 0.007724025249481228 0.13722381591796817 -1.2685113688252841e-08 0.013290811777114877 0.13722364902496367 -1.3158447416168108e-08 0.014197571196150789 0.83354001622290963 0.00052534469889248486 0 0 0 0.020977702140806149 1.19745635986328147 0.14366539955139157 2.55107879634231e-07 -7.6293945312500002e-08 -0.11362313270568848 0.021054155826550555 1.18555847167972073 0.5746741867064793 0.01982280734592537 -0.0059491012049329587 0.23553479370115377 -0.019744858729214207 -0.0059484542798192309 0.19547417102961048 9.536743177385177e-09 7.6293945312500002e-08 0.11362301111221314 0.020977692"
-		+ "604064943 1.19745628356933587 0.030042388439178468 3.4824109014230941e-08 5.5414355685456936e-07 5.4365612143680361e-07 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.019822774798877656 -0.0059491016427033116 -0.23553492406628829 -0.019744544699559909 -0.0059486863853263116 -0.19547424449381059 -2.8610229492187499e-08 -7.6293945170391458e-08 -0.11362302541732792 0.02097769021987915 1.19745628356933587 -0.030042603015899658 3.4824109014230941e-08 5.5414355685456936e-07 5.4365612143680361e-07 0.021054190650659575 1.18555902582327755 0.57467473036260086 0.021054150119519461 1.18555917841111347 -0.57467364305038504 0.020015589252209517 1.24557436090625284 3.5804153142768212e-07 0 0 0 -0.0024958032770114875 -0.00075005914930984104 0.00041683734285245257 0 0 0 -0.16320012267410541 -0.87001023229022045 0.00085108722747538721 0.0016704549211674546 0.0050025519551094534 5.4366826906220723e-07 0.0052561721637391827 0.025168828307732857 4.1497079532740439e-05 0 5.5522481034131489e-07 5.4366826906224185e"
-		+ "-07 0.044525461201223422 -0.40167384270426992 -0.066757562310219856 0.045603780742128792 -0.35440307971241786 0.014620376975060552 0.0132432758808136 0.80896774291992191 -0.096564064025878915 -0.050501172673487305 -0.40097789388766403 -0.066689361602445207 -0.046 -0.354 0.014772866617099477 0.013243290185928345 0.80896781921386718 0.096563930511474605 0 0 0 0.092711346924619853 0.35497193771819541 -0.36362975161081884 0 0 0 0 0 0"
+		2 "Human_AnimRig:HMND_AnimRig" "lv[1:243]" (" -s 243 0.15000138581848585 1.3954013277151025 -1.1833378266395361e-07 0 0 0 1.008510589617373e-06 1.9073486313914147e-07 7.6293945383554274e-08 -0.023254185648160758 0.0085882377624511719 0.076616281887946683 0.015158044099807635 0 0.084018705188754442 0 0 0.23379094336677292 -0.11804807130790128 0 -0.17810487747192383 0 0 0 0.037819892422630633 1.1852846197850393 -0.57615023488705963 0.037819931534954748 1.18528446747999006 0.57615023488703254 0.5 1.03770954849195829 0 0 0 0 0.021054284294816275 1.18555838143657333 -0.57467495950677372 0.025462963366755034 -0.011941085699659482 -0.027353459282136897 0 0 0 0 0 0 0.021464867591857076 1.18556922912597651 0.57467399597167967 0.021054356043306136 1.18555821197482958 0.57467391728700445 0 0 0 0 0 0 0 0 0 -0.32999999999999774 1.14121810412814884 -0.67033629066924083 0 0 0 0 0 0 -0.32999999498545285 1.27102610176389086 0.5271735923564117 -0.32999999498545279 1.22775687099465936 0.67033598551880658 0 0 0 0 0 1.5685662776547816e-05 0 0 0 -0.0010396859697161132 -0.001"
+		+ "2581291673866703 0.04773021830825229 0 0 0 0 0 0 -0.32214063404835969 -5.5767547688461149e-05 0.02778273620144029 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0 0 0 0 0 0 0.0020646403495949528 0 0 0 0 0.00011583747996704474 0 0 0 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.021054155826550555 1.18555847167972073 0.5746741867064793 0 0 0 0.007724025249481228 0.13722381591796817 -1.2685113688252841e-08 0.013290811777114877 0.13722364902496367 -1.3158447416168108e-08 0.014197571196150789 0.83354001622290963 0.00052534469889248486 0 0 0 0.020977702140806149 1.19745635986328147 0.14366539955139157 2.55107879634231e-07 -7.6293945312500002e-08 -0.11362313270568848 0.021054155826550555 1.18555847167972073 0.5746741867064793 0.01982280734592537 -0.0059491012049329587 0.23553479370115377 -0.019744858729214207 -0.0059484542798192309 0.19547417102961048 9.536743177385177e-09 7.6293945312500002e-08 0.11362301111221314 0.020"
+		+ "977692604064943 1.19745628356933587 0.030042388439178468 3.4824109014230941e-08 5.5414355685456936e-07 5.4365612143680361e-07 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.019822774798877656 -0.0059491016427033116 -0.23553492406628829 -0.019744544699559909 -0.0059486863853263116 -0.19547424449381059 -2.8610229492187499e-08 -7.6293945170391458e-08 -0.11362302541732792 0.02097769021987915 1.19745628356933587 -0.030042603015899658 3.4824109014230941e-08 5.5414355685456936e-07 5.4365612143680361e-07 0.021054190650659575 1.18555902582327755 0.57467473036260086 0.021054150119519461 1.18555917841111347 -0.57467364305038504 0.020015589252209517 1.24557436090625284 3.5804153142768212e-07 0 0 0 -0.0024958032770114875 -0.00075005914930984104 0.00041683734285245257 0 0 0 -0.16320012267410541 -0.87001023229022045 0.00085108722747538721 0.0016704549211674546 0.0050025519551094534 5.4366826906220723e-07 0.0052561721637391827 0.025168828307732857 4.1497079532740439e-05 0 5.5522481034131489e-07 5.43668269062"
+		+ "24185e-07 0.044525461201223422 -0.40167384270426992 -0.066757562310219856 0.045603780742128792 -0.35440307971241786 0.014620376975060552 0.0132432758808136 0.80896774291992191 -0.096564064025878915 -0.050501172673487305 -0.40097789388766403 -0.066689361602445207 -0.046 -0.354 0.014772866617099477 0.013243290185928345 0.80896781921386718 0.096563930511474605 0 0 0 0.092711346924619853 0.35497193771819541 -0.36362975161081884 0 0 0 0 0 0"
 		)
 		2 "Human_AnimRig:HMND_AnimRig" "linearValues" " -s 201"
-		2 "Human_AnimRig:HMND_AnimRig" "av[1:381]" (" -s 381 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105.30234109110999441 10.03430356609829666 87.49256589980980436 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166.44723159044343674 73.68860995273881542 78.96984913985120613 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76.71837406222216771 -9.89725818905895771 50.59764143510535916 89.99999999999950262 0 -90.00000000000018474 0 0 0 -90.00000000000018474 0 -90.00000000000009948 -90.00000000000018474 0 -90.00000000000009948 0 0 0 0 0 0 -12.93951420614972392 1.24775765307793707 0.40036389156325569 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.5292510192985874e-06 -0.00014307569582722372 1.7749188174553151e-05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3.2370913817403749e-08 1.2060743422934725e-07 1.32755323966208683 6.05571380365861156 -2.28570645334376454 -10.24468851028083627 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
-		+ "0.29157181530081405 -10.43689843375821269 -0.28815248865675852 0.02233450581124612 -0.72065443006791541 0.23542554921943934 0 0 0 0 0 0 0 0 0 0 0 0 -0.49236139423259639 17.61963286248596106 -0.48647119444304282 65.24764081461204057 5.3151103132674784 48.29732064461516927 0 0 0 0 0 0 0 0 0 0 0 0 0.036921857992797222 0.76988418731918484 2.7456616939418641 0 0 0 0 0 0 270.00398181265057929 1.3236818525363383 -1.93103554624654028 0 0 0 0 0 0 0 0 0 0 0 0 -90.00397789388316028 181.323681537254771 178.06895498682953871 0 0 0 0 0 0 0 0 0 -4.452321476111285e-06 5.556578584713691e-06 5.94061232992952881 0 0.37830060720443798 -9.16226387023926314 0 0 0 0 0.37830060720443703 -9.16226387023993993 0 0 0 0 0 0 0 0 0 -6.7848970825988788 -0.84901107124854591 0.58307802643301176 0.008504384979663597 -0.071315577839268451 -0.004923063488017158 0 0 0 -4.18092547066560627 0.53993086206345853 -0.080353157645085327 -0.83980271306709731 -4.97372026904867237 -0.78592758674903307 0 0 0 4.64671443637566028 42.56803803904703187 -6.29846"
-		+ "69706776204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0")
+		2 "Human_AnimRig:HMND_AnimRig" "av[1:381]" (" -s 381 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105.30234109110999441 10.03430356609829666 87.49256589980980436 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69.66234155825638652 -7.29325969253472994 9.41476494024474952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76.71837406222216771 -9.89725818905895771 50.59764143510535916 89.99999999999950262 0 -90.00000000000018474 0 0 0 -90.00000000000018474 0 -90.00000000000009948 -90.00000000000018474 0 -90.00000000000009948 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.5292510192985874e-06 -0.00014307569582722372 1.7749188174553151e-05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3.2370913817403749e-08 1.2060743422934725e-07 1.32755323966208683 6.05571380365861156 -2.28570645334376454 -10.24468851028083627 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.29157181530081405 -10.43689843375821269 -0.2881524886567"
+		+ "5852 0.02233450581124612 -0.72065443006791541 0.23542554921943934 0 0 0 0 0 0 0 0 0 0 0 0 -0.49236139423259639 17.61963286248596106 -0.48647119444304282 65.24764081461204057 5.3151103132674784 48.29732064461516927 0 0 0 0 0 0 0 0 0 0 0 0 0.036921857992797222 0.76988418731918484 2.7456616939418641 0 0 0 0 0 0 270.00398181265057929 1.3236818525363383 -1.93103554624654028 0 0 0 0 0 0 0 0 0 0 0 0 -90.00397789388316028 181.323681537254771 178.06895498682953871 0 0 0 0 0 0 0 0 0 -4.452321476111285e-06 5.556578584713691e-06 5.94061232992952881 0 0.37830060720443798 -9.16226387023926314 0 0 0 0 0.37830060720443703 -9.16226387023993993 0 0 0 0 0 0 0 0 0 -6.7848970825988788 -0.84901107124854591 0.58307802643301176 0.008504384979663597 -0.071315577839268451 -0.004923063488017158 0 0 0 -4.18092547066560627 0.53993086206345853 -0.080353157645085327 -0.83980271306709731 -4.97372026904867237 -0.78592758674903307 0 0 0 4.64671443637566028 42.56803803904703187 -6.2984669706776204 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+		+ "0 0 0 0")
 		2 "Human_AnimRig:HMND_AnimRig" "angularValues" " -s 208"
 		2 "Human_AnimRig:HMND_AnimRig" "animationMapping" (" -type \"characterMapping\" 472 \"Human_AnimRig:Head_CTR_ANIM.Tilt_R\" 0 1 \"Human_AnimRig:Head_CTR_ANIM.Tilt_L\" 0 2 \"Human_AnimRig:Head_CTR_ANIM.Horizontal_R\" 0 3 \"Human_AnimRig:Head_CTR_ANIM.Horizontal_L\" 0 4 \"Human_AnimRig:Head_CTR_ANIM.Vertical_R\" 0 5 \"Human_AnimRig:Head_CTR_ANIM.Vertical_L\" 0 6 \"Human_AnimRig:Head_CTR_ANIM.LeftRightR\" 0 7 \"Human_AnimRig:Head_CTR_ANIM.LeftRightL\" 0 8 \"Human_AnimRig:Head_CTR_ANIM.UpDownR\" 0 9 \"Human_AnimRig:Head_CTR_ANIM.UpDownL\" 0 10 \"Human_AnimRig:Head_CTR_ANIM.ViewTarget\" 0 11 \"Human_AnimRig:Head_CTR_ANIM.Dead_R\" 0 12 \"Human_AnimRig:Head_CTR_ANIM.Dead_L\" 0 13 \"Human_AnimRig:Head_CTR_ANIM.Closed_R\" 0 14 \"Human_AnimRig:Head_CTR_ANIM.Closed_L\" 0 15 \"Human_AnimRig:Head_CTR_ANIM.Tight_R\" 0 16 \"Human_AnimRig:Head_CTR_ANIM.Tight_L\" 0 17 \"Human_AnimRig:Head_CTR_ANIM.Bored_R\" 0 18 \"Human_AnimRig:Head_CTR_ANIM.Bored_L\" 0 19 \"Human_AnimRig:Head_CTR_ANIM.Angry_R\" 0 20 \"Human_AnimRig:Head_CTR_ANIM.Angry_L\" 0 21 \"Human_AnimRig:Head_CTR_ANIM.ConcernedR\" 0 22 \"Human_AnimRig:Head_CTR_ANIM.Co"
 		+ "ncernedL\" 0 23 \"Human_AnimRig:Head_CTR_ANIM.Happy_R\" 0 24 \"Human_AnimRig:Head_CTR_ANIM.Happy_L\" 0 25 \"Human_AnimRig:locator4.scaleZ\" 0 26 \"Human_AnimRig:locator4.scaleY\" 0 27 \"Human_AnimRig:locator4.scaleX\" 0 28 \"Human_AnimRig:locator4.rotateZ\" 2 1 \"Human_AnimRig:locator4.rotateY\" 2 2 \"Human_AnimRig:locator4.rotateX\" 2 3 \"Human_AnimRig:locator4.translateZ\" 1 1 \"Human_AnimRig:locator4.translateY\" 1 2 \"Human_AnimRig:locator4.translateX\" 1 3 \"Human_AnimRig:locator4.visibility\" 0 29 \"Human_AnimRig:LegIK_MSC_R.ikBlend\" 0 35 \"Human_AnimRig:LegIK_MSC_R.twist\" 2 13 \"Human_AnimRig:LegIK_MSC_R.roll\" 2 14 \"Human_AnimRig:LegIK_MSC_R.offset\" 0 36 \"Human_AnimRig:LegIK_MSC_R.rotateZ\" 2 15 \"Human_AnimRig:LegIK_MSC_R.rotateY\" 2 16 \"Human_AnimRig:LegIK_MSC_R.rotateX\" 2 17 \"Human_AnimRig:LegIK_MSC_R.translateZ\" 1 7 \"Human_AnimRig:LegIK_MSC_R.translateY\" 1 8 \"Human_AnimRig:LegIK_MSC_R.translateX\" 1 9 \"Human_AnimRig:FootRollFoot_R.translateZ\" 1 10 \"Human_AnimRig:FootRollFoot_R.translateY\" 1 11 \"Human_AnimRig:FootRollFoot_R.transl"
@@ -7716,53 +7715,11 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		+ "AnimRig:LowerLegIK_PRX_L|Human_AnimRig:FootIK_PRX_L.translateY\" 1 224 \"Human_AnimRig:LowerLegIK_PRX_L|Human_AnimRig:FootIK_PRX_L.translateX\" 1 225 \"Human_AnimRig:LowerLegIK_PRX_L.rotateZ\" 2 343 \"Human_AnimRig:LowerLegIK_PRX_L.rotateY\" 2 344 \"Human_AnimRig:LowerLegIK_PRX_L.rotateX\" 2 345 \"Human_AnimRig:LowerLegIK_PRX_L.translateZ\" 1 226 \"Human_AnimRig:LowerLegIK_PRX_L.translateY\" 1 227 \"Human_AnimRig:LowerLegIK_PRX_L.translateX\" 1 228 \"Human_AnimRig:UpperLegIK_PRX_L.rotateZ\" 2 346 \"Human_AnimRig:UpperLegIK_PRX_L.rotateY\" 2 347 \"Human_AnimRig:UpperLegIK_PRX_L.rotateX\" 2 348 \"Human_AnimRig:UpperLegIK_PRX_L.translateZ\" 1 229 \"Human_AnimRig:UpperLegIK_PRX_L.translateY\" 1 230 \"Human_AnimRig:UpperLegIK_PRX_L.translateX\" 1 231 \"Human_AnimRig:LegIK_MSC.rotateZ\" 2 349 \"Human_AnimRig:LegIK_MSC.rotateY\" 2 350 \"Human_AnimRig:LegIK_MSC.rotateX\" 2 351 \"Human_AnimRig:LegIK_MSC.translateZ\" 1 232 \"Human_AnimRig:LegIK_MSC.translateY\" 1 233 \"Human_AnimRig:LegIK_MSC.translateX\" 1 234 \"Human_AnimRig:MainRoot_CTR.scaleZ\" 0 91 \"Huma"
 		+ "n_AnimRig:MainRoot_CTR.scaleY\" 0 92 \"Human_AnimRig:MainRoot_CTR.scaleX\" 0 93 \"Human_AnimRig:MainRoot_CTR.rotateZ\" 2 379 \"Human_AnimRig:MainRoot_CTR.rotateY\" 2 380 \"Human_AnimRig:MainRoot_CTR.rotateX\" 2 381 \"Human_AnimRig:MainRoot_CTR.translateZ\" 1 241 \"Human_AnimRig:MainRoot_CTR.translateY\" 1 242 \"Human_AnimRig:MainRoot_CTR.translateX\" 1 243"
 		)
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[60]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R|Human_AnimRig:Ring3_PRX_R|Human_AnimRig:Ring3_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[70]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[59]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R|Human_AnimRig:Ring3_PRX_R|Human_AnimRig:Ring3_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[71]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[58]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R|Human_AnimRig:Ring3_PRX_R|Human_AnimRig:Ring3_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[360]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[359]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[358]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[42]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchLeg" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[41]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchKnee" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[30]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L|Human_AnimRig:FootRoll_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[117]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[116]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[115]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[194]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[193]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[192]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[198]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[197]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[196]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[285]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[284]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[283]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[131]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[130]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[129]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[72]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateX" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[36]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectRoot_PRX|Human_AnimRig:Object_CTR.translateX" 
 		""
@@ -7778,119 +7735,11 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[50]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectRoot_PRX|Human_AnimRig:Object_CTR.visibility" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[134]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[133]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[132]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[137]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L|Human_AnimRig:Thumb3_PRX_L|Human_AnimRig:Thumb3_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[136]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L|Human_AnimRig:Thumb3_PRX_L|Human_AnimRig:Thumb3_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[135]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L|Human_AnimRig:Thumb3_PRX_L|Human_AnimRig:Thumb3_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[75]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[74]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[73]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[232]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[233]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[234]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[66]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[65]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[64]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[143]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[142]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[141]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[315]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[313]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[314]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[90]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[89]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[88]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R.rotateZ" 
-		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[116]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L.rotateX" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[115]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L.rotateY" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[114]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[297]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[296]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[295]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[69]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R|Human_AnimRig:Middle3_PRX_R|Human_AnimRig:Middle3_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[68]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R|Human_AnimRig:Middle3_PRX_R|Human_AnimRig:Middle3_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[67]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R|Human_AnimRig:Middle3_PRX_R|Human_AnimRig:Middle3_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[7]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[8]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[9]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[363]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[362]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[361]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[294]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[293]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[292]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[42]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[41]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[40]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[51]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[50]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[49]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[63]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[62]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[61]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[306]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateX" 
 		""
@@ -7898,85 +7747,11 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[304]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[105]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[357]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[104]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[356]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[103]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[185]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[184]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[183]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[291]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[290]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[289]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[108]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[107]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[106]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[44]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.SpaceSwitchObject" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[43]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.WeaponSelection" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[119]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L|Human_AnimRig:Middle3_PRX_L|Human_AnimRig:Middle3_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[118]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L|Human_AnimRig:Middle3_PRX_L|Human_AnimRig:Middle3_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[117]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L|Human_AnimRig:Middle3_PRX_L|Human_AnimRig:Middle3_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[300]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[299]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[298]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[29]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[28]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[27]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[375]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[374]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[373]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[57]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[56]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[55]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Fist" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[54]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Relaxed" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[53]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Weapon" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[70]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[71]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[72]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[81]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[80]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[79]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[355]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[79]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_L|Human_AnimRig:ElbowVectorIK_CTR_L.translateZ" 
 		""
@@ -7990,91 +7765,45 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[111]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[366]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[108]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[365]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[107]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[364]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[329]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[330]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[328]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[140]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[139]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[138]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[78]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R|Human_AnimRig:Index3_PRX_R|Human_AnimRig:Index3_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[77]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R|Human_AnimRig:Index3_PRX_R|Human_AnimRig:Index3_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[76]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R|Human_AnimRig:Index3_PRX_R|Human_AnimRig:Index3_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[125]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[124]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[123]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[85]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[86]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[87]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[168]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[169]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[170]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[224]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[225]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[226]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[12]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[11]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[10]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[106]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[21]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R|Human_AnimRig:FootRoll_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[128]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L|Human_AnimRig:Index3_PRX_L|Human_AnimRig:Index3_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[30]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L|Human_AnimRig:FootRoll_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[127]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L|Human_AnimRig:Index3_PRX_L|Human_AnimRig:Index3_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[69]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R|Human_AnimRig:Middle3_PRX_R|Human_AnimRig:Middle3_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[126]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L|Human_AnimRig:Index3_PRX_L|Human_AnimRig:Index3_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[68]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R|Human_AnimRig:Middle3_PRX_R|Human_AnimRig:Middle3_CTR_R.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[240]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[67]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R|Human_AnimRig:Middle3_PRX_R|Human_AnimRig:Middle3_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[239]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateY" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[105]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[238]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[104]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[378]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[103]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[377]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[185]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[376]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[184]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[20]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[183]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[19]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[81]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[18]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[80]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[79]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[131]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[130]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[129]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[372]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateX" 
 		""
@@ -8082,17 +7811,17 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[370]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[312]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[117]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[311]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[116]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[310]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[115]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[72]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[194]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[71]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[193]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[70]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[192]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[25]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM.Happy_L" 
 		""
@@ -8144,33 +7873,23 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[1]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM.Tilt_R" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[68]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchHand" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[42]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.translateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[67]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchElbow" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[41]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[66]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Fist" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[40]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[65]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Relaxed" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[51]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[64]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Weapon" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[50]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[309]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[49]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[308]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[119]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L|Human_AnimRig:Middle3_PRX_L|Human_AnimRig:Middle3_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[307]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[118]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L|Human_AnimRig:Middle3_PRX_L|Human_AnimRig:Middle3_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[84]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[83]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[82]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[357]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[356]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[355]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[117]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L|Human_AnimRig:Middle3_PRX_L|Human_AnimRig:Middle3_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[369]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R.rotateX" 
 		""
@@ -8182,17 +7901,69 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[37]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R.SpaceSwitchKnee" 
 		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[294]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[293]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[292]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[29]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[28]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[27]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[366]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[365]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[364]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[44]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.SpaceSwitchObject" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[43]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.WeaponSelection" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[84]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[83]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[82]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[78]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R|Human_AnimRig:Index3_PRX_R|Human_AnimRig:Index3_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[77]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R|Human_AnimRig:Index3_PRX_R|Human_AnimRig:Index3_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[76]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Index1_PRX_R|Human_AnimRig:Index1_CTR_R|Human_AnimRig:Index2_PRX_R|Human_AnimRig:Index2_CTR_R|Human_AnimRig:Index3_PRX_R|Human_AnimRig:Index3_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[134]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[133]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[132]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[66]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[65]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[64]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R.rotateZ" 
+		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[87]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R|Human_AnimRig:Thumb3_PRX_R|Human_AnimRig:Thumb3_CTR_R.rotateX" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[86]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R|Human_AnimRig:Thumb3_PRX_R|Human_AnimRig:Thumb3_CTR_R.rotateY" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[85]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R|Human_AnimRig:Thumb3_PRX_R|Human_AnimRig:Thumb3_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[110]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L|Human_AnimRig:Ring3_PRX_L|Human_AnimRig:Ring3_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[60]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R|Human_AnimRig:Ring3_PRX_R|Human_AnimRig:Ring3_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[109]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L|Human_AnimRig:Ring3_PRX_L|Human_AnimRig:Ring3_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[59]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R|Human_AnimRig:Ring3_PRX_R|Human_AnimRig:Ring3_CTR_R.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[108]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L|Human_AnimRig:Ring3_PRX_L|Human_AnimRig:Ring3_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[58]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R|Human_AnimRig:Ring3_PRX_R|Human_AnimRig:Ring3_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[312]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[311]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[310]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[82]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateZ" 
 		""
@@ -8206,11 +7977,239 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[167]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateX" 
 		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[140]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[139]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[138]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[42]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchLeg" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[41]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchKnee" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[232]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[233]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[234]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[309]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[308]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[307]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[143]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[142]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[141]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[57]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[56]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[55]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Fist" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[54]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Relaxed" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[53]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Weapon" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[363]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[362]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[361]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[375]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[374]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[373]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[12]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[11]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[10]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[329]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[330]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[328]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[297]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[296]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[295]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[300]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[299]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[298]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[291]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[290]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[289]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[110]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L|Human_AnimRig:Ring3_PRX_L|Human_AnimRig:Ring3_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[109]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L|Human_AnimRig:Ring3_PRX_L|Human_AnimRig:Ring3_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[108]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Ring1_PRX_L|Human_AnimRig:Ring1_CTR_L|Human_AnimRig:Ring2_PRX_L|Human_AnimRig:Ring2_CTR_L|Human_AnimRig:Ring3_PRX_L|Human_AnimRig:Ring3_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[85]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[86]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[87]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[168]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[169]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[170]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[125]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[124]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[123]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[240]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[239]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[238]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[378]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[377]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[376]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[128]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L|Human_AnimRig:Index3_PRX_L|Human_AnimRig:Index3_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[127]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L|Human_AnimRig:Index3_PRX_L|Human_AnimRig:Index3_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[126]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Index1_PRX_L|Human_AnimRig:Index1_CTR_L|Human_AnimRig:Index2_PRX_L|Human_AnimRig:Index2_CTR_L|Human_AnimRig:Index3_PRX_L|Human_AnimRig:Index3_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[68]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchHand" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[67]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchElbow" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[66]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Fist" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[65]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Relaxed" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[64]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Weapon" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[198]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[197]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[196]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[285]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[284]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[283]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[20]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[19]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[18]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[63]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[62]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[61]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Ring1_PRX_R|Human_AnimRig:Ring1_CTR_R|Human_AnimRig:Ring2_PRX_R|Human_AnimRig:Ring2_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[224]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[225]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[226]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[315]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[313]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[314]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[72]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[71]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[70]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R|Human_AnimRig:Middle2_PRX_R|Human_AnimRig:Middle2_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[137]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L|Human_AnimRig:Thumb3_PRX_L|Human_AnimRig:Thumb3_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[136]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L|Human_AnimRig:Thumb3_PRX_L|Human_AnimRig:Thumb3_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[135]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Thumb1_PRX_L|Human_AnimRig:Thumb1_CTR_L|Human_AnimRig:Thumb2_PRX_L|Human_AnimRig:Thumb2_CTR_L|Human_AnimRig:Thumb3_PRX_L|Human_AnimRig:Thumb3_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[75]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[74]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[73]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Middle1_PRX_R|Human_AnimRig:Middle1_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[90]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[89]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[88]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:Fingers_PRX_R|Human_AnimRig:Thumb1_PRX_R|Human_AnimRig:Thumb1_CTR_R|Human_AnimRig:Thumb2_PRX_R|Human_AnimRig:Thumb2_CTR_R.rotateZ" 
+		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[122]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L.rotateX" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[121]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L.rotateY" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[120]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:Fingers_PRX_L|Human_AnimRig:Middle1_PRX_L|Human_AnimRig:Middle1_CTR_L|Human_AnimRig:Middle2_PRX_L|Human_AnimRig:Middle2_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[360]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[359]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[358]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[7]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[8]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[9]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateX" 
 		""
 		5 3 "CHR_Rig_DefaultRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateX" 
 		"CHR_Rig_DefaultRN.placeHolderList[249]" ""
@@ -11911,13 +11910,15 @@ createNode reference -n "CHR_Rig_DefaultRN";
 		""
 		5 4 "CHR_Rig_DefaultRN" "Human_AnimRig:Export.dagSetMembers" "CHR_Rig_DefaultRN.placeHolderList[2094]" 
 		""
-		"Human_AnimRig:Default_Character_AssistantRN" 4
+		"Human_AnimRig:Default_Character_AssistantRN" 5
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature" 
 		"visibility" " 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Misc" 
 		"visibility" " 1"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Misc|Human_AnimRig:Default_Character_Assistant:Misc_PDA" 
 		"visibility" " 0"
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature.instObjGroups" 
+		"Human_AnimRig:Export.dagSetMembers" "-na"
 		5 4 "CHR_Rig_DefaultRN" "Human_AnimRig:Default_Character_Assistant:PaletteSG.dagSetMembers" 
 		"CHR_Rig_DefaultRN.placeHolderList[248]" "";
 	setAttr ".ptag" -type "string" "";
@@ -13822,7 +13823,7 @@ createNode animBlendNodeAdditiveRotation -n "HandFK_CTR_L_rotate_UpperBody";
 	setAttr ".o" -type "double3" 10.462223989608908 9.080250357689664 -10.825381352903957 ;
 createNode animBlendNodeAdditiveRotation -n "ShoulderFK_CTR_R_rotate_UpperBody";
 	rename -uid "796A362B-450E-F59D-582D-59AF80510DFA";
-	setAttr ".o" -type "double3" -2.7093524474036093 -2.7641710673308295 4.3604718214197007 ;
+	setAttr ".o" -type "double3" -2.7093524474036093 -2.7641710673308295 4.3604719585946539 ;
 createNode animBlendNodeAdditiveRotation -n "UpperArmFK_CTR_R_rotate_UpperBody";
 	rename -uid "EABBFB01-452C-0670-8017-79B2AC4655C5";
 	setAttr ".o" -type "double3" 10.408672288563782 -32.717544330649453 62.002112375720642 ;
@@ -13842,38 +13843,32 @@ createNode animBlendNodeAdditive -n "ArmOptions_CTR_L_Weapon_UpperBody";
 	rename -uid "6F3A2382-41D3-B990-1A56-41AAE33C69DE";
 createNode animBlendNodeEnum -n "ArmOptions_CTR_R_SpaceSwitchHand_UpperBody";
 	rename -uid "8C192E67-4FF7-3E62-0712-EBB4F0607E1A";
-	setAttr ".o" 2;
 createNode animBlendNodeEnum -n "ArmOptions_CTR_R_SpaceSwitchElbow_UpperBody";
 	rename -uid "84454E87-491B-1568-ACE1-1498C00C502D";
-	setAttr ".o" 2;
+	setAttr ".o" 1;
 createNode animBlendNodeAdditive -n "ArmOptions_CTR_R_Fist_UpperBody";
 	rename -uid "B60FEF4B-452E-F042-7F3C-4DB2E0918BB1";
 createNode animBlendNodeAdditive -n "ArmOptions_CTR_R_Relaxed_UpperBody";
 	rename -uid "B0C33E7E-4A6C-83A5-73C2-AF8A6188FE47";
 createNode animBlendNodeAdditive -n "ArmOptions_CTR_R_Weapon_UpperBody";
 	rename -uid "016D8F95-4B84-3517-4875-E3B1D31D728E";
-	setAttr ".o" 10;
 createNode animBlendNodeBoolean -n "Object_CTR_visibility_UpperBody";
 	rename -uid "6B795860-4EA8-D2FB-F163-72B4687153EB";
 	setAttr ".o" yes;
 createNode animBlendNodeAdditiveDL -n "Object_CTR_translateX_UpperBody";
 	rename -uid "7A5A2D8F-4DF9-4EC0-0841-AE845366DC16";
-	setAttr ".o" -0.15012671094681815;
 createNode animBlendNodeAdditiveDL -n "Object_CTR_translateY_UpperBody";
 	rename -uid "2F250725-4139-12FE-CD2E-E586D07AB0D5";
-	setAttr ".o" -0.016014078249535046;
 createNode animBlendNodeAdditiveDL -n "Object_CTR_translateZ_UpperBody";
 	rename -uid "48A9BE75-4265-D225-DBE5-95A27C6EEF27";
-	setAttr ".o" -0.20477655224461316;
 createNode animBlendNodeAdditiveRotation -n "Object_CTR_rotate_UpperBody";
 	rename -uid "51C5F047-478F-1021-AEEE-6B929BF179B9";
-	setAttr ".o" -type "double3" 0.40036389156325547 1.2477576530779364 -12.939514206149722 ;
 createNode animBlendNodeEnum -n "ObjectOptions_CTR_SpaceSwitchObject_UpperBody";
 	rename -uid "BCD096DA-4079-2F2D-7291-EC993A0F2623";
 	setAttr ".o" 1;
 createNode animBlendNodeEnum -n "ObjectOptions_CTR_WeaponSelection_UpperBody";
 	rename -uid "4D0CC4CD-4FB1-3431-2A5F-58B4552CF1C5";
-	setAttr ".o" 6;
+	setAttr ".o" 5;
 createNode animLayer -n "Fingers";
 	rename -uid "21375BC0-4AF7-C22A-E94B-0187801B1E0C";
 	setAttr -s 72 ".dsm";
@@ -14142,7 +14137,7 @@ createNode animCurveTA -n "ShoulderFK_CTR_R_rotate_UpperBody_inputBX";
 		 61 -5.9254077353561234 66 -2.7093524474036093 70 -2.7093524474036093 80 -2.7093524474036093
 		 89 -16.939992555726427 97 -2.213038830945381 100 -5.9254077353561234 105 -2.7093524474036093
 		 110 -2.7093524474036093 120 -2.7093524474036093 126 -7.7876359156842359 135 -1.4249406030462171
-		 140 -1.4249406030462171 143 -2.7093524474036093 160 -2.7093524474036093 164 -9.3622138311248904
+		 140 -1.4249406030462171 143 -2.7093524474036093 160 -2.7093524474036093 164 -9.3622138311248921
 		 165 -2.7093524474036093 190 -2.7093524474036093 200 -2.7093524474036093;
 	setAttr -s 37 ".kit[31:36]"  1 1 18 18 1 18;
 	setAttr -s 37 ".kot[16:36]"  1 18 18 18 18 18 18 18 
@@ -14309,7 +14304,7 @@ createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody_inputBY";
 		 65 -32.022154476157326 70 -32.717544330649453 80 -32.717544330649453 83 -15.988123848623886
 		 89 -9.4563286837752454 92 -11.139102824955726 97 -31.968080817757087 104 -32.022154476157326
 		 110 -32.717544330649453 120 -32.717544330649453 125 -4.6783929173326975 129 -23.902490530259396
-		 135 -24.753866186938808 140 -21.802589589215263 143 -32.717544330649453 160 -32.717544330649453
+		 135 -24.753866186938808 140 -21.802589589215266 143 -32.717544330649453 160 -32.717544330649453
 		 164 -27.107463182869004 165 -32.717544330649453 190 -32.717544330649453 200 -32.717544330649453;
 	setAttr -s 38 ".kit[32:37]"  1 1 18 18 1 18;
 	setAttr -s 38 ".kot[32:37]"  1 1 18 18 1 18;
@@ -14578,13 +14573,10 @@ createNode animBlendNodeAdditiveRotation -n "Human_AnimRig:Spine_CTR_rotate_Uppe
 	setAttr ".o" -type "double3" -3.7796800492197611 4.4706460790125329 3.4688825690051623 ;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:ElbowVectorIK_CTR_R_translateX_UpperBody";
 	rename -uid "BE5F9989-4CCD-D013-3D9D-1986ECCDD37F";
-	setAttr ".o" 0.063245782935749256;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:ElbowVectorIK_CTR_R_translateY_UpperBody";
 	rename -uid "BA10D771-4AC8-5D61-BE66-72A95C1546F9";
-	setAttr ".o" -0.1811340917602994;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:ElbowVectorIK_CTR_R_translateZ_UpperBody";
 	rename -uid "3D3D0FB5-4055-1AE1-E182-069A2D718D76";
-	setAttr ".o" -0.43126995681408453;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:ElbowVectorIK_CTR_L_translateX_UpperBody";
 	rename -uid "51FB1DD8-47D6-E541-C2CF-73B4089EEC11";
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:ElbowVectorIK_CTR_L_translateY_UpperBody";
@@ -14593,19 +14585,18 @@ createNode animBlendNodeAdditiveDL -n "Human_AnimRig:ElbowVectorIK_CTR_L_transla
 	rename -uid "9F89598B-4C40-59B7-7FB3-649854663327";
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:HandIK_CTR_R_translateX_UpperBody";
 	rename -uid "FA1C48FC-4BBE-0713-2660-FC9317D71264";
-	setAttr ".o" 0.52579849117527788;
+	setAttr ".o" 0.30641480648763281;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:HandIK_CTR_R_translateY_UpperBody";
 	rename -uid "8C44F9A8-4245-A851-70FC-B2985A5C52B3";
-	setAttr ".o" -0.19214220767777057;
+	setAttr ".o" -0.39821445648376269;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:HandIK_CTR_R_translateZ_UpperBody";
 	rename -uid "42FD4239-4D17-584F-027D-A38C14A31FED";
-	setAttr ".o" 0.38067304043566097;
+	setAttr ".o" -0.07735321485106679;
 createNode animBlendNodeAdditiveRotation -n "Human_AnimRig:HandIK_CTR_R_rotate_UpperBody";
 	rename -uid "BDD73574-4DA0-8D39-E81F-93860BA0030B";
-	setAttr ".o" -type "double3" 65.290872364058529 68.538339670812164 166.19895785106863 ;
+	setAttr ".o" -type "double3" 7.096122233214877 -8.2644545211776013 75.775581212328547 ;
 createNode animBlendNodeAdditiveRotation -n "Human_AnimRig:ShoulderIK_CTR_R_rotate_UpperBody";
 	rename -uid "2E06AA20-4667-227E-8C3C-F9B7C070560B";
-	setAttr ".o" -type "double3" -17.396019874835712 -14.190563842254605 -5.3216555137519315 ;
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:HandIK_CTR_L_translateX_UpperBody";
 	rename -uid "279DD7AA-4149-3302-E65E-22907A3A45F9";
 createNode animBlendNodeAdditiveDL -n "Human_AnimRig:HandIK_CTR_L_translateY_UpperBody";
@@ -15746,17 +15737,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n"
 		+ "            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n"
-		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1516\n            -height 1452\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"flat\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n"
 		+ "            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n"
 		+ "            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 1516\n            -height 1485\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 1516\n            -height 1383\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n"
 		+ "            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n"
 		+ "            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n"
 		+ "            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
 		+ "            -docTag \"RADRENDER\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1516\n            -height 1485\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1516\n            -height 1383\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
 		+ "            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n"
@@ -15786,11 +15777,11 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n"
 		+ "            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 1\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n"
 		+ "\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"vertical2\\\" -ps 1 50 100 -ps 2 50 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1485\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1485\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1383\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1383\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Side View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -camera \\\"|front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"flat\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1485\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -camera \\\"|front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"flat\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1485\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -camera \\\"|front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"flat\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1383\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Side View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -camera \\\"|front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"flat\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1516\\n    -height 1383\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.5 -size 10 -divisions 1 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode hyperLayout -n "hyperLayout4";
@@ -15812,15 +15803,15 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ils" yes;
 	setAttr ".ilu" yes;
 	setAttr ".eti" 2;
-	setAttr ".esi" 2;
-	setAttr ".ssn" -type "string" "";
+	setAttr ".esi" 3;
+	setAttr ".ssn" -type "string" "Human_AnimRig:Export";
 	setAttr -s 5 ".ac";
-	setAttr ".ac[0].acn" -type "string" "DEF_ThrowItem";
+	setAttr ".ac[0].acn" -type "string" "ThrowItem";
 	setAttr ".ac[0].ace" 30;
-	setAttr ".ac[1].acn" -type "string" "DEF_Punch";
+	setAttr ".ac[1].acn" -type "string" "Punch";
 	setAttr ".ac[1].acs" 40;
 	setAttr ".ac[1].ace" 70;
-	setAttr ".ac[2].acn" -type "string" "DEF_Interact";
+	setAttr ".ac[2].acn" -type "string" "Interact";
 	setAttr ".ac[2].acs" 80;
 	setAttr ".ac[2].ace" 110;
 	setAttr ".ac[3].acn" -type "string" "DrawHandgun";
@@ -15832,7 +15823,7 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ic" no;
 	setAttr ".fv" -type "string" "FBX202000";
 	setAttr ".exp" -type "string" "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Characters/Humanoid/Actions";
-	setAttr ".exf" -type "string" "Human@ActionSet";
+	setAttr ".exf" -type "string" "Human@ActionSet_DEF";
 createNode gameFbxExporter -n "gameExporterPreset3";
 	rename -uid "EC5BA26D-4080-40E4-CD73-BC8B508E892A";
 	setAttr ".pn" -type "string" "TE Anim Default";
@@ -16556,8 +16547,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 183;
-	setAttr -av ".unw" 183;
+	setAttr ".o" 0;
+	setAttr -av ".unw";
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
@@ -17070,9 +17061,9 @@ connectAttr "CHR_Rig_DefaultRN.phl[430]" "UpperBody.dsm" -na;
 connectAttr "CHR_Rig_DefaultRN.phl[431]" "UpperBodyTPose.dsm" -na;
 connectAttr "ShoulderIK_CTR_L_rotate_UpperBodyTPose.ox" "CHR_Rig_DefaultRN.phl[432]"
 		;
-connectAttr "CHR_Rig_DefaultRN.phl[433]" "Human_AnimRig:ShoulderIK_CTR_L_rotate_UpperBody.ro"
+connectAttr "CHR_Rig_DefaultRN.phl[433]" "ShoulderIK_CTR_L_rotate_UpperBodyTPose.ro"
 		;
-connectAttr "CHR_Rig_DefaultRN.phl[434]" "ShoulderIK_CTR_L_rotate_UpperBodyTPose.ro"
+connectAttr "CHR_Rig_DefaultRN.phl[434]" "Human_AnimRig:ShoulderIK_CTR_L_rotate_UpperBody.ro"
 		;
 connectAttr "CHR_Rig_DefaultRN.phl[435]" "LowerBody.dsm" -na;
 connectAttr "FootIK_CTR_L_translateZ_LowerBody.o" "CHR_Rig_DefaultRN.phl[436]";
@@ -17611,14 +17602,14 @@ connectAttr "CHR_Rig_DefaultRN.phl[891]" "UpperBody.dsm" -na;
 connectAttr "CHR_Rig_DefaultRN.phl[892]" "UpperBodyTPose.dsm" -na;
 connectAttr "FPVCam_RotationDampening_UpperBodyTPose.o" "CHR_Rig_DefaultRN.phl[893]"
 		;
-connectAttr "CHR_Rig_DefaultRN.phl[894]" "UpperBodyTPose.dsm" -na;
-connectAttr "CHR_Rig_DefaultRN.phl[895]" "UpperBody.dsm" -na;
+connectAttr "CHR_Rig_DefaultRN.phl[894]" "UpperBody.dsm" -na;
+connectAttr "CHR_Rig_DefaultRN.phl[895]" "UpperBodyTPose.dsm" -na;
 connectAttr "FPVCam_rotate_UpperBodyTPose.ox" "CHR_Rig_DefaultRN.phl[896]";
-connectAttr "CHR_Rig_DefaultRN.phl[897]" "UpperBodyTPose.dsm" -na;
-connectAttr "CHR_Rig_DefaultRN.phl[898]" "UpperBody.dsm" -na;
+connectAttr "CHR_Rig_DefaultRN.phl[897]" "UpperBody.dsm" -na;
+connectAttr "CHR_Rig_DefaultRN.phl[898]" "UpperBodyTPose.dsm" -na;
 connectAttr "FPVCam_rotate_UpperBodyTPose.oy" "CHR_Rig_DefaultRN.phl[899]";
-connectAttr "CHR_Rig_DefaultRN.phl[900]" "UpperBodyTPose.dsm" -na;
-connectAttr "CHR_Rig_DefaultRN.phl[901]" "UpperBody.dsm" -na;
+connectAttr "CHR_Rig_DefaultRN.phl[900]" "UpperBody.dsm" -na;
+connectAttr "CHR_Rig_DefaultRN.phl[901]" "UpperBodyTPose.dsm" -na;
 connectAttr "FPVCam_rotate_UpperBodyTPose.oz" "CHR_Rig_DefaultRN.phl[902]";
 connectAttr "CHR_Rig_DefaultRN.phl[903]" "Human_AnimRig:FPVCam_rotate_UpperBody.ro"
 		;
