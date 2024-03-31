@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Human@DEF_ActionsSet.ma
-//Last modified: Sat, Mar 30, 2024 06:30:59 PM
+//Last modified: Sat, Mar 30, 2024 06:31:56 PM
 //Codeset: 1252
 file -rdi 1 -ns "Human_AnimRig" -rfn "CHR_Rig_DefaultRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Animation Rigs/Human/Human@AnimRig.ma";
@@ -20,7 +20,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "7588B14D-4275-084C-B75B-87955F4109AD";
+fileInfo "UUID" "F9631140-4D96-537A-236A-69A8B1AFA9EA";
 fileInfo "vrayBuild" "6.00.02 ee5238c";
 createNode transform -s -n "persp";
 	rename -uid "9032DB97-4F61-0574-DD3C-77AF63BEA906";
@@ -11939,7 +11939,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6DA466EC-489B-7328-F8D0-FC9C011BF537";
-	setAttr ".b" -type "string" "playbackOptions -min 40 -max 70 -ast -30 -aet 250 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 200 -ast -30 -aet 250 ";
 	setAttr ".st" 6;
 createNode animLayer -n "BaseAnimation";
 	rename -uid "B0241C8F-4634-7C09-63A6-D790F4C02970";
