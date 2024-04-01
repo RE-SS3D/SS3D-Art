@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Human@RunningSet_DEF.ma
-//Last modified: Sun, Mar 31, 2024 11:22:19 PM
+//Last modified: Sun, Mar 31, 2024 11:32:05 PM
 //Codeset: 1252
 file -rdi 1 -ns "Default_Plane" -rfn "Default_PlaneRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/My Drive/My Drive/SS3D GoogleDrive/Assets/Animations/Animation Rigs/Human/Assets/Default_Plane.ma";
@@ -24,7 +24,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "DBF9EA52-4B68-4E6D-D74F-E4B6526C6A5D";
+fileInfo "UUID" "5ED34993-478B-1AE8-CF17-949A2EC3D888";
 fileInfo "vrayBuild" "6.00.02 ee5238c";
 createNode transform -s -n "top";
 	rename -uid "FF439B72-4617-74A9-89D0-7D9C18267EF2";
@@ -119,2269 +119,6 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "HumanArmature";
-	rename -uid "E89C033E-49A3-0D5C-2BA7-80A32545376B";
-	setAttr ".v" no;
-	setAttr ".s" -type "double3" 100 100 100 ;
-createNode locator -n "HumanArmatureShape" -p "HumanArmature";
-	rename -uid "37D26416-451B-09C2-44F7-DB968BD66242";
-	setAttr -k off ".v";
-createNode joint -n "hips" -p "HumanArmature";
-	rename -uid "B761F2FB-4B80-7029-DF06-97A400010CBA";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -0.00015917448767416333 0.0085402685654060312 0.00090342684053516256 ;
-	setAttr ".r" -type "double3" 2.4407186798694438 -26.479657384036912 -3.0553506747691777 ;
-	setAttr ".s" -type "double3" 1 0.99999999999999967 1.0000000000000002 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.999999986208778 0.0016530618713665019 -0.0001601074945165601 0
-		 2.6646167860215484e-10 9.6404149596509434 99.534227275875978 0 0.00166079738690968 99.534227262149017 -9.6404149583214203 0
-		 0 1.3243251480162144 83.337724208831787 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "thigh_l" -p "|HumanArmature|hips";
-	rename -uid "278A4A71-4451-9B71-1C04-D08B60C36310";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 0.00093409405239028949 -0.00037490169694001652 -7.4104868067411403e-05 ;
-	setAttr ".r" -type "double3" 158.67001384950396 13.060902103418643 7.4888012503826182 ;
-	setAttr ".s" -type "double3" 1.0000026226043701 1.0000002384185791 1.0000029802322388 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.165782250439804 1.3669167617398963 12.819189575828174 0
-		 -12.754217101146676 4.0878515893662772 -99.099062477362935 0 -1.8786313644980024 -99.907359687425114 -3.87941093690584 0
-		 -9.6564000520095359 1.3243245608804495 80.896783280624433 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "lower_leg_l" -p "|HumanArmature|hips|thigh_l";
-	rename -uid "093EF0C1-4C65-774C-2FFD-128859F0DAB0";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" -7.2582983461910717e-08 0.0035790049260500272 8.1387969485591237e-07 ;
-	setAttr ".r" -type "double3" 21.303354603128518 -0.68705964314192136 1.8517486986337588 ;
-	setAttr ".s" -type "double3" 0.99999988079071045 1 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.401794030678545 0.68688937209013545 10.902365687994745 0
-		 -10.868095951735777 -16.297785887195186 -98.062600980497194 0 1.1032483777368491 -98.660877299141788 16.27483597219646 0
-		 -14.217614801268684 2.7862386404634765 45.456574805525307 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "foot_l" -p "|HumanArmature|hips|thigh_l|lower_leg_l";
-	rename -uid "67B1D503-41AD-8F21-93FC-00B71E0E5795";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -7.4955520257269375e-09 0.0040961072343009258 -3.0072607473674572e-09 ;
-	setAttr ".r" -type "double3" -79.910866908444149 -11.65694938425152 23.81169077503689 ;
-	setAttr ".s" -type "double3" 0.99999988079071045 0.99999982118606567 0.99999970197677612 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -93.667106172771426 -6.949344234444057 -34.325182077463054 0
-		 10.665079034003881 87.696521757718244 -46.857421263334587 0 33.358294887737088 -47.550824682163004 -81.401256174884608 0
-		 -18.669304628756816 -3.8895099816973864 5.289073519483253 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "toes_l" -p "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l";
-	rename -uid "7D26BDA4-46A7-0747-0AD4-AFA40536A799";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" -8.6429768342277671e-11 0.00080526678641092055 3.4632290174529954e-10 ;
-	setAttr ".r" -type "double3" -8.0466518041890431 19.696039575054048 -6.1151157744998912 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.997603886685411 0.72507314153942204 0.0010872487013635634 0
-		 0.67133588447735804 92.639448847309694 -37.650065637645838 0 -0.27395702542958489 -37.649183627944154 -92.641638129129774 0
-		 -17.810479331942428 3.1723980791721682 1.5158030532571827 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "toes_l_parentConstraint4" -p "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l";
-	rename -uid "4925FE9A-4C5B-99C7-6ED9-068362B59AB0";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -8.0466655539358438 19.696028508461527 -6.1151104820084967 ;
-	setAttr ".rst" -type "double3" -2.3748725624939128e-10 0.00080526657402515403 -2.7939677516020111e-11 ;
-	setAttr ".rsrr" -type "double3" -8.0466766357421875 19.696008682250969 -6.1151137351989755 ;
-createNode parentConstraint -n "foot_l_parentConstraint4" -p "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l";
-	rename -uid "C3FC86DD-45D8-2B08-95CF-C9944C27D0B6";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -69.418976814297679 -10.281799578912855 23.584836417550289 ;
-	setAttr ".rst" -type "double3" 2.590240882893724e-11 0.0040961080789566036 -6.2864273855933741e-11 ;
-	setAttr ".rsrr" -type "double3" -70.102416992187514 -0.1354952752590167 26.726165771484382 ;
-createNode parentConstraint -n "lower_leg_l_parentConstraint2" -p "|HumanArmature|hips|thigh_l|lower_leg_l";
-	rename -uid "1E85D5F0-4D53-415F-CFCF-F28C28F45241";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 13.786912481429621 -0.4755696303293655 1.27127725034344 ;
-	setAttr ".rst" -type "double3" -7.5669953636392504e-12 0.0035762405395507791 -2.3283065059276354e-12 ;
-	setAttr ".rsrr" -type "double3" 11.707514762878423 -0.43441402912139887 1.0897806882858279 ;
-createNode joint -n "width_thigh_l" -p "|HumanArmature|hips|thigh_l";
-	rename -uid "9A37C8F4-42E5-4531-79E5-219181A9D005";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" 7.9436550567249523e-05 0.00084710233970816228 -0.00018205641536997219 ;
-	setAttr ".r" -type "double3" -3.0282283260890131e-06 -2.7347441599335028e-06 -4.2805409054223895e-06 ;
-	setAttr ".s" -type "double3" 0.9999999394739103 0.99999966516225047 1.0000003953640515 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.165781387245445 1.366911687731184 12.819196794307354 0
-		 -12.754224410485646 4.0878569718471685 -99.09906131461004 0 -1.8786271934049585 -99.907353581672098 -3.879416555177126 0
-		 -11.490361474877997 3.500335272473972 72.674536664775673 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "width_thigh_l_parentConstraint3" -p "|HumanArmature|hips|thigh_l|width_thigh_l";
-	rename -uid "008FBCFA-4266-E4A7-AF0B-4AAA3FA1D59B";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -3.0282283083975586e-06 -2.7347441454219412e-06 -4.280540895806431e-06 ;
-	setAttr ".rst" -type "double3" 7.9436550567244251e-05 0.00084710233970814233 -0.00018205641536996823 ;
-	setAttr ".rsrr" -type "double3" -3.0282283193305309e-06 -2.7347441582265472e-06 
-		-4.280540905431684e-06 ;
-createNode scaleConstraint -n "width_thigh_l_scaleConstraint3" -p "|HumanArmature|hips|thigh_l|width_thigh_l";
-	rename -uid "8D3EDFAD-4F70-77EB-1ABB-F78AF27A290D";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00025839469046 100.00002817244702 100.00029755837102 ;
-createNode parentConstraint -n "thigh_l_parentConstraint2" -p "|HumanArmature|hips|thigh_l";
-	rename -uid "49903010-4083-2070-9B2C-E9923804B98A";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 160.40199199931325 19.596381934043194 4.1781910049729447 ;
-	setAttr ".rst" -type "double3" 0.00096562924207692531 -0.00029315023282905584 3.1998473273829321e-05 ;
-	setAttr ".rsrr" -type "double3" 172.17073059082031 -0.070519492030144112 7.4067449569702166 ;
-createNode joint -n "thigh_r" -p "|HumanArmature|hips";
-	rename -uid "7F5296B9-43BA-01A8-DD4B-90B5F04FCA1F";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -0.00097641712042833217 -0.00020802821599439248 0.00015380465549966709 ;
-	setAttr ".r" -type "double3" 169.58814324390491 21.102286130639513 -4.9803332992007077 ;
-	setAttr ".s" -type "double3" 0.99999678134918213 0.99999988079071045 0.99999648332595825 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.165193617399098 -1.3675259597469476 -12.819121446511538 0
-		 12.754192879956094 4.0879807527763123 -99.099024178647468 0 1.8792477628697326 -99.90669680970214 -3.879436436241809 0
-		 9.6563989275645259 1.3243247288788518 80.896777275944586 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "lower_leg_r" -p "|HumanArmature|hips|thigh_r";
-	rename -uid "6A5D50A4-4014-ED8F-8E24-68A93E1326CA";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" -8.1253694883542945e-11 0.0035762409066652889 -1.7673653157634916e-09 ;
-	setAttr ".r" -type "double3" 90.249997038130402 3.0759384724222554 1.8773094795303118 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 1 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.401217878823886 -0.68750637795784331 -10.90227848976736 0
-		 10.868188093170469 -16.297640962966696 -98.062552381472983 0 -1.1026455110674758 -98.660239483354971 16.274906859990811 0
-		 14.217606261456696 2.786285552998506 45.456579673309783 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "foot_r" -p "|HumanArmature|hips|thigh_r|lower_leg_r";
-	rename -uid "8F03FFC0-4A55-E082-35B9-778F6678884F";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -4.151712931776963e-10 0.0040961210414306127 -3.1009165013529128e-09 ;
-	setAttr ".r" -type "double3" -56.39955841081013 5.7700473730507325 -28.628435664121298 ;
-	setAttr ".s" -type "double3" 0.99999988079071045 0.99999988079071045 0.99999982118606567 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -93.722185502777563 5.6872877602609231 34.405696617521642 0
-		 -11.944025927653227 87.458110153875012 -46.99320848614326 0 -32.763167313844839 -48.152462933484962 -81.288865619310229 0
-		 18.669333874874972 -3.8894052223086488 5.2890985507094967 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "toes_r" -p "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r";
-	rename -uid "98A880FA-462E-2699-C467-FDA44848B598";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" -1.3484646366190844e-09 0.0008052714201682912 2.6420556342721112e-09 ;
-	setAttr ".r" -type "double3" -8.0464113870859606 -19.695889321566259 6.1149767923987559 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 0.99999994039535522 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.976855331911111 -2.1331744300999489 0.098685801915280535 0
-		 -2.0121362084098919 92.556695562681995 -37.804044545365578 0 0.71516222601502122 -37.797256671695131 -92.57881822527888 0
-		 17.707515280865103 3.1533574581113886 1.5048634914515269 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "toes_r_parentConstraint4" -p "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r";
-	rename -uid "77462E3D-4535-ACD7-C9D8-AAB8EBEB312D";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -8.0463455963161117 -19.695885675781454 6.1149785884306302 ;
-	setAttr ".rst" -type "double3" -1.2340024141410666e-10 0.00080527268350124356 -9.3132257461547854e-12 ;
-	setAttr ".rsrr" -type "double3" -8.0466156005859393 -19.695928573608406 6.1150903701782244 ;
-createNode parentConstraint -n "foot_r_parentConstraint2" -p "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r";
-	rename -uid "9685CAD3-4243-3070-D7DE-C1979AB7572F";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -54.53199903068699 -2.9629942636150388 -26.109314178271674 ;
-	setAttr ".rst" -type "double3" -3.2014214057518589e-11 0.0040961080789566036 9.0803950886231283e-11 ;
-	setAttr ".rsrr" -type "double3" -69.732063293457017 -0.58544176816939941 -26.650217056274407 ;
-createNode parentConstraint -n "lower_leg_r_parentConstraint2" -p "|HumanArmature|hips|thigh_r|lower_leg_r";
-	rename -uid "8C0CE13D-427D-7E3E-09E9-5EBF835F4163";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 114.53680466999629 0.30129136532479062 5.4050979236366548 ;
-	setAttr ".rst" -type "double3" -8.0617610920263872e-11 0.0035762408375740059 -4.4237822433013111e-11 ;
-	setAttr ".rsrr" -type "double3" 11.707574844360343 0.43441426753997792 -1.0897923707962032 ;
-createNode joint -n "width_thigh_r" -p "|HumanArmature|hips|thigh_r";
-	rename -uid "DC48E836-41A6-D209-91BC-B6B186E5984D";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" -7.9437874676808743e-05 0.0008471015329064302 -0.00018205525705870085 ;
-	setAttr ".r" -type "double3" -3.041568567619399e-06 1.6808669393426271e-06 -1.5708102488792329e-06 ;
-	setAttr ".s" -type "double3" 1.0000000015948793 1.000000031830238 0.99999996657495882 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.165188111490252 -1.3675230593824794 -12.819117851742719 0
-		 12.754190061501463 4.087986018870021 -99.099024324152509 0 1.8792455307550109 -99.906696632808575 -3.879442073021913 0
-		 11.490347296403868 3.5003420353121295 72.674543598357701 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "width_thigh_r_parentConstraint3" -p "|HumanArmature|hips|thigh_r|width_thigh_r";
-	rename -uid "6DBC7F51-4E15-687B-CAAF-D682F0F75E1B";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -3.0415685685884826e-06 1.680866953481041e-06 -1.5708102489289253e-06 ;
-	setAttr ".rst" -type "double3" -7.9437874676805694e-05 0.00084710153290641242 -0.00018205525705869676 ;
-	setAttr ".rsrr" -type "double3" -3.0415685614572043e-06 1.6808669442659455e-06 -1.5708102409927497e-06 ;
-createNode scaleConstraint -n "width_thigh_r_scaleConstraint3" -p "|HumanArmature|hips|thigh_r|width_thigh_r";
-	rename -uid "47ED7C87-4424-AE38-E67A-D083FCF12FDA";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 99.999683166215462 99.999982474411723 99.99964890594066 ;
-createNode parentConstraint -n "thigh_r_parentConstraint2" -p "|HumanArmature|hips|thigh_r";
-	rename -uid "C5DB1DFA-4F4C-E5EA-017B-2C842940584F";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 173.69269502544472 19.863166535285089 -10.499068394741856 ;
-	setAttr ".rst" -type "double3" -0.00096565065561289261 -0.00029315082887550024 3.2030622529104766e-05 ;
-	setAttr ".rsrr" -type "double3" 172.17041015625 0.072758346796035128 -7.4067835807800311 ;
-createNode joint -n "spine" -p "|HumanArmature|hips";
-	rename -uid "7A8E9044-467A-CF2B-E566-9085B8C2859D";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -4.1534772569979536e-07 0.0013132122578459649 0.00019366306152445432 ;
-	setAttr ".r" -type "double3" 20.298779476094868 14.785544424930515 -4.4604487059318227 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.99780941381411 0.65919141586522056 -0.059825711542934215 0
-		 0.00014978225185972101 9.0610090974473891 99.588644503846595 0 0.66190060891140556 99.586462839149121 -9.0608115955855499 0
-		 4.0957305001542679e-05 3.8020301015705154 97.052725712194786 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "chest" -p "|HumanArmature|hips|spine";
-	rename -uid "99B863BA-4CA6-819D-CD65-D985CEA8B4FE";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" -0.00038682884807838896 0.0021784989983910795 -0.0012612532130808147 ;
-	setAttr ".r" -type "double3" 4.679122993704059 32.29322277982854 5.3059928181841602 ;
-	setAttr ".s" -type "double3" 1 1.0000001192092896 1.0000001192092896 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.999999986336732 0.0016530740495858121 -2.9503175250078506e-09 0
-		 -0.00011426672158926232 -6.9121996283770688 99.760833399036585 0 0.001649120244638147 99.760833385406059 6.9121996293215329 0
-		 5.7957318338888535e-05 4.8304831126180261 110.78137294130065 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "neck" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "B25F4B15-4B4F-696D-D451-C7B2961BB208";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -8.5815359678720342e-07 0.001380120039778252 3.0425038264092484e-06 ;
-	setAttr ".r" -type "double3" -17.628026646537702 -18.889646901746175 -3.6533686960590077 ;
-	setAttr ".s" -type "double3" 1 0.99999982118606567 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.984689209284497 -1.7462712728939258 0.11162927773819857 0
-		 0.027863895381161147 4.7897203589048898 99.885217176483877 0 -1.7496134789843212 99.869972922327364 -4.7885012918950949 0
-		 -0.0058185217576714396 3.3222624679011119 124.50485939570571 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "head" -p "|HumanArmature|hips|spine|chest|neck";
-	rename -uid "ED6630C7-4BE5-DEB5-F9BF-64A15B2F9B73";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".v" no;
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" 2.9427139058846306e-11 0.00084914469277083129 -6.3348715648170464e-11 ;
-	setAttr ".r" -type "double3" -3.2314099335462636 -0.77464929907790114 0.00022055878984043962 ;
-	setAttr ".s" -type "double3" 1 0.99999994039535522 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.999999642355931 0.0084573967192889121 -3.1533777702888455e-05 0
-		 7.6303798455246152e-06 0.46318789213476474 99.998915391551478 0 0.0084574505091228325 99.998932840992495 -0.46318951963309196 0
-		 0.0023992778012183538 3.728970209772164 132.98651278572018 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "head_parentConstraint1" -p "|HumanArmature|hips|spine|chest|neck|head";
-	rename -uid "482BD413-4E69-4FFC-F8AF-B09FA97315EB";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -3.2314099672534615 -0.7746537979913396 0.00021881941474645271 ;
-	setAttr ".rst" -type "double3" 6.4659695599069559e-12 0.00084914470371953103 1.9832384970386308e-11 ;
-	setAttr ".rsrr" -type "double3" -2.4802152611271406 -0.77465374876981286 0.00016906233010867142 ;
-createNode joint -n "muscle_neck" -p "|HumanArmature|hips|spine|chest|neck";
-	rename -uid "10D4AA98-43AB-00E6-A256-068767E88BE9";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" -7.6203599544535933e-07 0.0002076237290581906 5.6644245009682473e-05 ;
-	setAttr ".r" -type "double3" -5.6381504765750778e-06 1.8862645649723553e-06 5.8432754742822369e-07 ;
-	setAttr ".s" -type "double3" 0.99999998694476244 1.0000000004815082 1.0000000125738056 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.984689209284497 -1.7462712728939258 0.11162927773819857 0
-		 0.02786400618183427 4.7897140342735449 99.885217479733043 0 -1.7496134772197345 99.869973225653723 -4.7884949662983525 0
-		 -0.007531328025602092 3.9875474686215302 126.55158089525244 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "muscle_neck_parentConstraint3" -p "|HumanArmature|hips|spine|chest|neck|muscle_neck";
-	rename -uid "5AA0EBB4-434E-3833-BD9C-C7AE1B291831";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -5.7789049434027291e-06 2.5234009391387304e-06 5.6272952158175659e-07 ;
-	setAttr ".rst" -type "double3" -7.6203930223168789e-07 0.00020762372876140801 5.6644245523960119e-05 ;
-	setAttr ".rsrr" -type "double3" -5.3344176521322627e-06 -2.6465700357819854e-21 
-		4.7726856534159106e-22 ;
-createNode scaleConstraint -n "muscle_neck_scaleConstraint4" -p "|HumanArmature|hips|spine|chest|neck|muscle_neck";
-	rename -uid "7CA3DBD9-4062-0747-7F46-C281AF3E528A";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000003 99.999994080562885 100.00001187989947 ;
-createNode parentConstraint -n "neck_parentConstraint2" -p "|HumanArmature|hips|spine|chest|neck";
-	rename -uid "F3E1E783-473F-3834-1837-348A96540FAB";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -14.007997883295166 -25.795610270041877 -3.4228871202487978 ;
-	setAttr ".rst" -type "double3" 9.1162883312252453e-12 0.0013796459481822509 -8.1899937248719474e-10 ;
-	setAttr ".rsrr" -type "double3" 8.6869807088407356 0.76190771487544007 0.1164077803226547 ;
-createNode joint -n "shoulder_r" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "ACE41EA7-4C56-4C36-84FA-E39087FAD45C";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -0.0003089354770833233 -0.00028442735326398075 0.0010931414943382339 ;
-	setAttr ".r" -type "double3" 66.809403694541459 -111.52646787597955 26.512591028436443 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 1 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 0.0016309266338742788 99.482461164057923 -10.160763267322999 0
-		 99.999999986485875 -0.0016435313965495891 -4.0340009423932842e-05 0 -0.00020712655931659068 -10.160763265291925 -99.482461177418443 0
-		 3.0042842325927217 3.4220329364303859 119.74563033403338 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "upper_arm_r" -p "|HumanArmature|hips|spine|chest|shoulder_r";
-	rename -uid "CC8C0B6A-412F-4A6F-15B6-CD9E50C10405";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" -5.8658702406511057e-09 0.0011362359042710235 4.2926061816217497e-10 ;
-	setAttr ".r" -type "double3" 151.70773869796656 44.010207640458496 103.87640686522664 ;
-	setAttr ".ssc" no;
-	setAttr ".pa" -type "double3" -33.664310455322266 94.170730590820312 -28.031085968017578 ;
-	setAttr ".bps" -type "matrix" 3.4179916144431348 3.7473127809027842 99.871298033748374 0
-		 99.447910134950334 -10.047559935238326 -3.0265033059978168 0 9.921214800337637 99.423364348440131 -4.0700490028707916 0
-		 14.366586534340579 3.4218445632451098 119.74561572544744 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "forearm_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r";
-	rename -uid "8D7FE018-4BA1-6DA2-E2DC-94BEBFB3F412";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 5;
-	setAttr ".t" -type "double3" 2.164848139640796e-09 0.0019655909651642733 -6.9470989288999976e-09 ;
-	setAttr ".r" -type "double3" 94.493156012001904 0.12672409429945683 -0.67934165247496903 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 1 0.99999982118606567 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 2.2167335684967244 3.6462732595436376 99.908912430358484 0
-		 99.616308063512321 8.3821320190339446 -2.5161557472877476 0 -8.4662408341686444 99.581334587577501 -3.446472857990778 0
-		 33.913955387442584 1.4469082383952625 119.15075113325709 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "hand_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r";
-	rename -uid "90ED5A6D-415F-0146-02CD-238DFE9050EE";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 6;
-	setAttr ".t" -type "double3" 1.0265436611867075e-10 0.0023644213368805385 -2.6566335464828228e-10 ;
-	setAttr ".r" -type "double3" -266.22611770491937 436.5096343942468 88.890416086045704 ;
-	setAttr ".s" -type "double3" 1 1 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 10.684126931538248 -99.427595195675806 0.018765150295788402 0
-		 99.39399600864823 10.680025840680266 -2.6020411171803963 0 2.5851425738938056 0.29665762685225605 99.966133447935533 0
-		 57.467453847701705 3.4287978456788455 118.55582884970664 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb1_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
-	rename -uid "02945875-43E5-4957-A87B-3B88A62DCD2E";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" -0.00043030029869748742 0.00027325531635734811 -0.00029069341241196533 ;
-	setAttr ".r" -type "double3" -73.158427149420305 -71.191213381673947 114.995611519452 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 30.035857860769291 16.947116097230708 93.865016878393149 0
-		 61.755131201270409 71.54334778602373 -32.678005931634587 0 -72.692165918104962 67.781577789657405 11.022946130134232 0
-		 59.648552657466858 7.9904083084560478 115.57796855824706 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb2_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r";
-	rename -uid "C4BB33E3-444E-E497-F5EC-A28E88F71DE8";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -1.7510214367355559e-09 0.00067762423350115292 2.2628091872478606e-10 ;
-	setAttr ".r" -type "double3" -38.934861149862712 -14.006960594975972 9.361591455545641 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 0.99999994039535522 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 20.906935497885989 43.921594795615469 87.371569109095461 0
-		 93.956540754924333 15.748968318039843 -30.399624700573579 0 -27.112125810663315 88.446938285576422 -37.974590398462595 0
-		 63.833223427097266 12.838356702168202 113.36361153877991 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb3_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r";
-	rename -uid "AB8034C3-447D-966C-6D4D-998CA59CA22A";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -5.2791531590656864e-10 0.00034581294825957511 -6.4632644279985491e-11 ;
-	setAttr ".r" -type "double3" 19.15017678015905 9.0650327862338234 -6.2461524685149339 ;
-	setAttr ".s" -type "double3" 1 0.99999994039535522 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 14.700103140174267 27.488158316163236 95.017397072972614 0
-		 82.141970336818787 50.123641181984894 -27.208722926418467 0 -55.105366154656409 82.048875858188637 -15.211092032063569 0
-		 67.082361499408549 13.382973489896269 112.31234884043499 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_thumb3_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r";
-	rename -uid "A84E1CA4-43FC-F393-1EE1-8A9C5EDA1109";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 19.150176678581619 9.0650327911135644 -6.2461525024912952 ;
-	setAttr ".rst" -type "double3" -5.2154064400511402e-10 0.00034581296145916096 -7.4505805969238283e-11 ;
-	setAttr ".rsrr" -type "double3" 19.150175094604496 9.0650329589843732 -6.2461547851562518 ;
-createNode parentConstraint -n "c_thumb2_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r";
-	rename -uid "ECCA3839-40E1-662B-4A5D-5E8144201B32";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -38.934861192022773 -14.006960421423862 9.3615914167043002 ;
-	setAttr ".rst" -type "double3" -1.7508864402770997e-09 0.00067762419581413275 1.4901161138336507e-10 ;
-	setAttr ".rsrr" -type "double3" -38.934867858886733 -14.006959915161131 9.3615951538085973 ;
-createNode parentConstraint -n "c_thumb1_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r";
-	rename -uid "047D2A31-4B84-EAD3-B5EA-529B27E94746";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -73.158427507152666 -71.19121345564028 114.99561207657429 ;
-	setAttr ".rst" -type "double3" -0.00043030280619859646 0.00027325475588440895 -0.00029069352895021215 ;
-	setAttr ".rsrr" -type "double3" -73.158416748046818 -71.191215515136719 114.99560546874994 ;
-createNode joint -n "c_ring1_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
-	rename -uid "9445E335-4C56-69A0-64BE-05854B34A8F8";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" 0.00037961399877360749 0.00081633583039458443 0.00012623750724887527 ;
-	setAttr ".r" -type "double3" -12.282837627049025 -3.0349261612644414 -5.8653949223450494 ;
-	setAttr ".s" -type "double3" 1 1.0000001192092896 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 0.60875315868417434 -99.842506249885602 5.5768271444034729 0
-		 97.13335392956435 -0.73494887347724014 -23.760760150737745 0 23.764326130185832 5.5616040963064988 96.975895032230653 0
-		 65.928090144936533 0.53109643007368668 118.99875266532263 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_ring2_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r";
-	rename -uid "4B9066CC-4E68-3D94-9C0F-F5800ACF0016";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -1.3256764630487084e-10 0.00045393888846287925 -6.6102338047713258e-10 ;
-	setAttr ".r" -type "double3" -35.192101195940829 3.0042950520568628 -0.66526234764628356 ;
-	setAttr ".s" -type "double3" 0.99999982118606567 0.99999982118606567 0.99999988079071045 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -1.7638746060259374 -99.981511461746393 0.76170243287703698 0
-		 65.718811499343474 -1.7334793371770745 -75.352705683501995 0 75.352013141696744 -0.82854284481151108 65.73724542215227 0
-		 70.337349524053977 0.49773466625346785 117.92015289098572 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_ring3_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r";
-	rename -uid "7F07C91F-438D-4BCD-8C40-B6A42C9331B9";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -2.9773764564922087e-11 0.00030371778927137114 1.1484087236723894e-10 ;
-	setAttr ".r" -type "double3" -13.011150539853629 -21.301656576781188 8.7448672008900736 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 35.058410391902974 -92.614516350591529 13.908765943877249 0
-		 48.417322154169518 5.2110177786316934 -87.341885266149234 0 80.16651482527314 37.354929030721415 46.668374604074955 0
-		 72.333347723087527 0.44508575699883168 115.63155794654854 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_ring3_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r";
-	rename -uid "485A006D-40CF-2E74-6ECE-28B30A254B36";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -13.011150643167655 -21.301656551904593 8.7448672418542071 ;
-	setAttr ".rst" -type "double3" 4.6566132980846445e-12 0.00030371779575943838 1.2514647318440097e-10 ;
-	setAttr ".rsrr" -type "double3" -13.0111484527588 -21.301656723022457 8.7448663711547852 ;
-createNode parentConstraint -n "c_ring2_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r";
-	rename -uid "1566FF73-417A-7C2D-101C-66947D0976D9";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -35.192101243356554 3.0042950412641662 -0.66526234507163506 ;
-	setAttr ".rst" -type "double3" -7.9162418564759917e-11 0.00045393891632557139 -6.5570929352887217e-10 ;
-	setAttr ".rsrr" -type "double3" -35.19210052490233 3.0042951107025142 -0.66526287794113137 ;
-createNode parentConstraint -n "c_ring1_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r";
-	rename -uid "FC11B64D-4747-A4B3-70A3-A8A9FB6594E9";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -12.282837504220163 -3.0349262223296094 -5.8653947103552451 ;
-	setAttr ".rst" -type "double3" 0.00037961149340967262 0.0008163353492792525 0.00012623733084856647 ;
-	setAttr ".rsrr" -type "double3" -12.282837515707682 -3.0349221881839377 -5.8653911330036088 ;
-createNode joint -n "c_middle1_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
-	rename -uid "723CF41E-4978-F98A-EF76-F5B6825F2776";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" -0.00012728134644762301 0.0009529400056566906 5.3451380652683731e-05 ;
-	setAttr ".r" -type "double3" -5.977280923683753 -7.7997835372587012 -3.8853158964128114 ;
-	setAttr ".s" -type "double3" 1 1.0000001192092896 1.0000001192092896 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 4.2407762973692886 -98.95797771387447 13.759799665339456 0
-		 99.135171421638034 2.4558589659610033 -12.891427840394631 0 12.419176964679732 14.187497913586864 98.206314191541679 0
-		 66.946616907986467 5.7147826671805788 119.42550664545328 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_middle2_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r";
-	rename -uid "95DFA2A0-41D8-D3A7-0C26-C58BB2841935";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" 2.4821139976705099e-10 0.00043471944681745979 -2.3902587908963826e-10 ;
-	setAttr ".r" -type "double3" -29.721396975818806 -2.1510230294288069 5.2761639436712349 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 1 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 13.795651999864942 -97.711076386993071 16.193269573840833 0
-		 79.485484150291356 1.1680230235937286 -60.668735934932215 0 59.09094791494217 21.240946986765749 77.827267811412113 0
-		 71.25621568249143 5.8215403460362918 118.86508920566291 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_middle3_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r";
-	rename -uid "9E7C9F12-4121-D6C0-E2EF-E485266F377E";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 1.4470754372553073e-10 0.00032971582156106046 -5.1025568659213146e-10 ;
-	setAttr ".r" -type "double3" -19.624894452545909 -7.842074482253679 3.8938610411450312 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 0.99999994039535522 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 27.044886751615351 -93.597060339645452 22.542401554320215 0
-		 55.030412138582903 -4.1834119890831767 -83.391565527155578 0 78.995119966684484 34.958328381044595 50.375458840826298 0
-		 73.876975230029672 5.8600490262149707 116.8647413122461 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_middle3_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r";
-	rename -uid "2B4E7946-4F21-9615-4F56-6A8E21C776F8";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -19.624894550805678 -7.8420744792667376 3.8938610515219669 ;
-	setAttr ".rst" -type "double3" 1.8626451492309571e-10 0.00032971583306789788 -5.0291418807191233e-10 ;
-	setAttr ".rsrr" -type "double3" -19.624893188476566 -7.8420748710632306 3.8938612937927246 ;
-createNode parentConstraint -n "c_middle2_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r";
-	rename -uid "62BA8939-46D1-0A4D-BF7A-CEA5D53F32AD";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -29.721397024190114 -2.1510230478089318 5.2761639619422755 ;
-	setAttr ".rst" -type "double3" 2.9802322443206463e-10 0.0004347194731235504 -2.4214386940002442e-10 ;
-	setAttr ".rsrr" -type "double3" -29.721397399902347 -2.1510231494903578 5.2761635780334508 ;
-createNode parentConstraint -n "c_middle1_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r";
-	rename -uid "C8E6B947-4D14-7A86-5778-E79F1B65ACA6";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -5.9772808020853319 -7.7997836025254337 -3.8853156944222218 ;
-	setAttr ".rst" -type "double3" -0.00012728382963103976 0.00095293949855945412 5.3451241929514115e-05 ;
-	setAttr ".rsrr" -type "double3" -5.9772806729674537 -7.7997795703921868 -3.885312135201608 ;
-createNode joint -n "c_index1_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
-	rename -uid "DC049D20-4EE8-D116-BF4B-E9961406F243";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" -0.00059781669579362154 0.0009678050476473499 0.00014081939758629593 ;
-	setAttr ".r" -type "double3" -2.7066809913140366 -0.79142180770771697 -5.8463805713052377 ;
-	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 0.54138335568251028 -99.984681562553476 1.6644457893649798 0
-		 99.732039774729671 0.41843357783748419 -7.3036937680246989 0 7.2956105827186137 1.6995274961499163 99.719027665212508 0
-		 66.017443178407845 10.411664373318478 119.466727090452 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_index2_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r";
-	rename -uid "008DA92C-469A-5DD6-6CED-6D95AC01C5F1";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -4.5247195989972512e-11 0.00047904432520476717 1.1754434092736688e-10 ;
-	setAttr ".r" -type "double3" -44.521885063586254 -9.1481780920675959 7.3082033190893316 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 14.215279335622373 -97.588247751474597 16.56682268069569 0
-		 66.904134576591645 -2.8621623585592246 -74.267378912219684 0 72.950403681599255 21.641209646517282 64.883708407530236 0
-		 70.795050336597185 10.431709148020257 119.11684894836225 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_index3_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r";
-	rename -uid "8D2E20A1-4C7E-BA73-4BDB-8ABA5BAD2874";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 8.7596879194684623e-11 0.00051124266052507081 -1.4056668562467679e-09 ;
-	setAttr ".r" -type "double3" -9.2688465203917207 2.1274492164476122 1.0205803031465404 ;
-	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 12.685976457566955 -98.359842855849791 12.822230975764391 0
-		 53.936302391516705 -4.0084142604937849 -84.111862890682303 0 83.246259763214596 17.586252037482055 52.543152842374568 0
-		 74.215465215605263 10.285378717181956 115.31997480137687 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_index3_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r";
-	rename -uid "16E8620E-4836-4FA5-B026-2A850D3BF1C1";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -9.2688466764659925 2.1274491931227533 1.020580293996235 ;
-	setAttr ".rst" -type "double3" 1.4901161193847657e-10 0.00051124267280101723 -1.3969838597027718e-09 ;
-	setAttr ".rsrr" -type "double3" -9.2688455581665021 2.1274485588073739 1.0205807685852049 ;
-createNode parentConstraint -n "c_index2_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r";
-	rename -uid "93F2A0CF-4ED1-97EC-E414-92A9C8AD06F0";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -44.521885074274074 -9.1481780931796965 7.3082033224447418 ;
-	setAttr ".rst" -type "double3" 6.9849197259497232e-12 0.00047904435545206072 1.1874363492481167e-10 ;
-	setAttr ".rsrr" -type "double3" -44.521884918212905 -9.1481781005859411 7.3082027435302752 ;
-createNode parentConstraint -n "c_index1_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r";
-	rename -uid "6EEF516C-4BF5-D6B4-E2A8-D489A4F1497D";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -2.7066808686660138 -0.79142186881358212 -5.8463803545063691 ;
-	setAttr ".rst" -type "double3" -0.00059781916387494332 0.00096780450960370359 0.00014081928946480416 ;
-	setAttr ".rsrr" -type "double3" -2.7066808787995962 -0.79141783466432369 -5.8463767776229751 ;
-createNode joint -n "hold_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
-	rename -uid "AB0C1E83-4F92-AF98-75AA-D6853EBEAC84";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" -6.3287919344526267e-05 0.00082984219952727091 -0.00015038825218928077 ;
-	setAttr ".r" -type "double3" -89.829996240737387 -1.4813179945729267 83.863811503170623 ;
-	setAttr ".s" -type "double3" 0.99999988079071045 0.99999994039535522 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 99.999987932562632 -0.0015082766883325561 -3.900695319059011e-05 0
-		 -3.8331667969515593e-05 -7.6803596121222117e-05 -99.999988072683266 0 0.0015112817514497641 99.999988209097012 -7.6046424751730068e-05 0
-		 65.609092398888578 4.9398662572126266 116.83640866844607 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "hold_r_parentConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r";
-	rename -uid "72385424-47D4-F77C-C48C-A0B0062C4A07";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -89.829996301242389 -1.4813181175168106 83.863811723227684 ;
-	setAttr ".rst" -type "double3" -6.3287876546382969e-05 0.00082984223961830026 -0.00015038823708892092 ;
-	setAttr ".rsrr" -type "double3" -89.82999226584738 -1.4813180869791363 83.86381519565208 ;
-createNode parentConstraint -n "hand_r_parentConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
-	rename -uid "F12426E2-4F7F-6948-9F88-A19787D92D4B";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -266.22611765745154 436.50963459248925 88.890416292977278 ;
-	setAttr ".rst" -type "double3" 3.0966475383920057e-10 0.0023644219338893858 -1.8626451492309571e-11 ;
-	setAttr ".rsrr" -type "double3" -34.439586639404403 92.341018676757798 -34.413295745849609 ;
-createNode joint -n "forearm_twist_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r";
-	rename -uid "B4757A68-4DB0-7ECF-2E79-ECBB8D2F00FB";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 6;
-	setAttr ".t" -type "double3" 1.6284056593041106e-07 0.0012847267715089062 -6.6509933166480911e-08 ;
-	setAttr ".r" -type "double3" -0.0021814617548173644 -0.639631985132322 0.018577886841315248 ;
-	setAttr ".s" -type "double3" 1.0014800765362482 0.99999988739416812 1.0014799515266017 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 2.2281339464273202 3.8946672581874306 99.899272275991621 0
-		 99.615889092522281 8.3771537855773435 -2.5484049175564376 0 -8.4679675609402025 99.572342017647628 -3.693053708247005 0
-		 46.712022488869636 2.523179804152984 118.82914386929023 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "forearm_twist_r_parentConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r";
-	rename -uid "579F1DA9-4EFC-4856-89F8-30B443531DB7";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -0.002181659753178208 -0.63963197015790207 0.018578049824953043 ;
-	setAttr ".rst" -type "double3" 1.6285659512282891e-07 0.0012847268581390381 -6.6561624407629467e-08 ;
-	setAttr ".rsrr" -type "double3" -0.0021832410711795096 -0.14136098325252525 0.018575297668576223 ;
-createNode scaleConstraint -n "forearm_twist_r_scaleConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r";
-	rename -uid "6F1DCDFC-4A31-07E4-CDE4-FEA894A40602";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 99.99998794792306 99.999982108219527 99.999982260139504 ;
-createNode parentConstraint -n "forearm_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r";
-	rename -uid "E06330DF-40F9-9A8F-A67F-7185D6C9CAFA";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 94.49315610211552 0.12672409536794579 -0.67934164884210024 ;
-	setAttr ".rst" -type "double3" 2.1476807887665928e-09 0.0019655886292457578 -1.7462298395470865e-11 ;
-	setAttr ".rsrr" -type "double3" 10.555855751037598 0.1267195791006088 -0.67932349443435658 ;
-createNode joint -n "bicep_r" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r";
-	rename -uid "7EC6AB8D-4933-9A94-2EDA-F08EBE58C271";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 5;
-	setAttr ".t" -type "double3" 1.9557833090390055e-05 0.0002855872747045851 -2.0413288330856093e-06 ;
-	setAttr ".r" -type "double3" 0.011126042510331642 -5.9086974563113633e-06 0.30377434843189211 ;
-	setAttr ".s" -type "double3" 0.99999998714345206 1.0000000037835031 1.0000000090731214 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 3.9453239921537082 3.6940819240925209 99.853834054978876 0
-		 99.430347211214183 -10.047559573050982 -3.5568836822910792 0 9.9014786755042632 99.425350416098013 -4.0694475044118734 0
-		 17.21135350883419 3.1219520568863692 119.85530951909057 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "bicep_r_parentConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r";
-	rename -uid "9ED8BD47-4AD9-D77E-FA90-119DEA2D7F34";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 0.011126132628764902 -5.9091752805014073e-06 0.30377435186537938 ;
-	setAttr ".rst" -type "double3" 1.9557831983141315e-05 0.00028558727708680301 -2.0413329858315169e-06 ;
-	setAttr ".rsrr" -type "double3" 0.011125257088734018 -5.9045331363225661e-06 0.303770721263949 ;
-createNode scaleConstraint -n "bicep_r_scaleConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r";
-	rename -uid "6B579684-49A7-8256-6BDD-4A978EDCCCC4";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000001 100.00000596046374 100.00000596046381 ;
-createNode parentConstraint -n "upper_arm_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r";
-	rename -uid "E36EBA47-4092-8673-BADF-E2B1407EEB35";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 148.15703513787813 43.396368753817129 101.73877387163058 ;
-	setAttr ".rst" -type "double3" -6.0312288635566704e-11 0.0011362302303314208 1.0138786166180581e-09 ;
-	setAttr ".rsrr" -type "double3" -33.664303982004242 94.170731299579373 -28.031079477511131 ;
-createNode joint -n "muscle_shoulder_r" -p "|HumanArmature|hips|spine|chest|shoulder_r";
-	rename -uid "2735207F-4B74-400E-4C1C-15B40DDBF116";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" -1.6050505674057857e-05 0.00011050429276712986 -0.00015714148313771049 ;
-	setAttr ".r" -type "double3" -1.6239187170442971e-05 1.8024172872992877e-05 5.3675901282084267e-06 ;
-	setAttr ".s" -type "double3" 0.64699999168181332 0.64700000244792644 0.6470000058703097 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 0.0016309266284730321 99.482460899095344 -10.160765861530383 0
-		 99.999999986485875 -0.0016435313965495891 -4.0340009423932842e-05 0 -0.00020712660184631765 -10.160765859499309 -99.482460912455863 0
-		 4.1093280685408136 3.4220136000768191 121.32521194187089 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "muscle_shoulder_r_parentConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r";
-	rename -uid "27FF749B-4429-6443-B374-EF8CBA93E3DD";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -1.6239187228680661e-05 1.8024172857487654e-05 5.3675900946634868e-06 ;
-	setAttr ".rst" -type "double3" -1.6050509878882958e-05 0.00011050429462962739 -0.00015714148120084869 ;
-	setAttr ".rsrr" -type "double3" -1.5274636816003575e-05 1.7842061476815093e-05 3.1668990924944947e-06 ;
-createNode scaleConstraint -n "muscle_shoulder_r_scaleConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r";
-	rename -uid "007C7CA0-4D26-0982-F261-1884B4708AB6";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000001 100.00000596046374 100.00000596046381 ;
-createNode parentConstraint -n "shoulder_r_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_r";
-	rename -uid "DAB87A7A-44E1-FD1B-4B37-EEABF9E2EDC9";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 66.809403694541643 -111.52646787597965 26.51259102843629 ;
-	setAttr ".rst" -type "double3" -0.00030042500535217031 0.00090524555063316477 -3.9325245593768711e-05 ;
-	setAttr ".rsrr" -type "double3" 1.4933899558253818e-05 -101.77232907206694 89.999982013905992 ;
-createNode joint -n "shoulder_l" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "7EDBB57D-40CD-A882-B733-03A046F391F1";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" 0.00029191611841999449 -0.00028442720610496244 0.0010931388658327401 ;
-	setAttr ".r" -type "double3" 62.112291908213578 104.27474035669803 -26.596425671394194 ;
-	setAttr ".s" -type "double3" 0.99999988079071045 0.99999994039535522 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".pa" -type "double3" -5.7503380048729014e-06 101.77235412597656 -90.000022888183594 ;
-	setAttr ".bps" -type "matrix" -0.0016535805611694976 -99.482455234066506 10.160762661697321 0
-		 -99.999994025774612 0.0016585984536799196 -3.5095794025973582e-05 0 -0.0001336121189212502 -10.16076326650817 -99.482461177420149 0
-		 -3.0042148822918109 3.4221322613700371 119.7456303338561 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "upper_arm_l" -p "|HumanArmature|hips|spine|chest|shoulder_l";
-	rename -uid "4580A687-4F8E-FA10-FA37-0E874BCD6312";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" -2.5718490899162561e-08 0.0011362591191962513 1.1094607343942187e-09 ;
-	setAttr ".r" -type "double3" 53.161281278458155 -19.772559084994153 -47.218929140721038 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 3.4000358010884932 -6.2083524388243205 -99.749171946510643 0
-		 -99.454866881491157 -10.054217306892141 -2.7642341613838277 0 -9.8573839350676504 99.299391169574406 -6.5163552137659977 0
-		 -14.366515016684458 3.4223205121307347 119.74562814437323 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "forearm_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l";
-	rename -uid "24D171FD-4EFB-AD5C-A080-62A544F20D45";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 5;
-	setAttr ".t" -type "double3" 1.1209353017460621e-08 0.0019655868941431845 3.9670449725193183e-09 ;
-	setAttr ".r" -type "double3" 35.146489300028556 -0.12671242593334217 0.67934610650321914 ;
-	setAttr ".s" -type "double3" 0.99999988079071045 1 0.9999997615814209 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 2.1988379524466142 -6.1074866781064152 -99.78909019988744 0
-		 -99.611236455571841 8.3825600814087657 -2.7079652569634796 0 8.5302670244349486 99.460678558381701 -5.8994228782121665 0
-		 -33.915255059835282 1.4460757126454373 119.20229085811677 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "hand_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l";
-	rename -uid "2E597660-433A-06D8-667E-B1A5909A24E6";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 6;
-	setAttr ".t" -type "double3" 7.4734054744673982e-09 0.0023644147405814508 1.9400826489768266e-09 ;
-	setAttr ".r" -type "double3" -84.825370561500677 -77.060803913724939 88.763809266793828 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 10.613328567343091 99.406400117838174 2.3916788587477908 0
-		 -99.40196877981866 10.668880923425739 -2.3286052302647424 0 -2.5699477571930021 -2.1302304545355613 99.944265763316139 0
-		 -57.467652466718079 3.4295707679664309 118.55568965569903 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb1_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
-	rename -uid "5C00D4BC-4AD5-5DF6-CF32-F49382BA3D86";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" 0.00042588681907814954 0.00027691447212285168 -0.00029070775427644411 ;
-	setAttr ".r" -type "double3" -73.15844646301592 71.191220383553386 -114.99564832121861 ;
-	setAttr ".s" -type "double3" 1 1 1.0000001192092896 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 30.033440504516292 -14.643694729757726 -94.252604372573288 0
-		 -61.811076358137235 72.270782322827287 -30.924457775828429 0 72.645600838545903 67.546225662329903 12.653983858244377 0
-		 -59.652457614789562 8.0605124765313363 115.68967061958539 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb2_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l";
-	rename -uid "6ECC0BAB-4556-8E7B-B15C-6FAD0C611B42";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -1.7102833763660286e-08 0.00067761635223430598 2.9950455732175029e-09 ;
-	setAttr ".r" -type "double3" -38.934858517362031 14.006950066693394 -9.361589295710445 ;
-	setAttr ".s" -type "double3" 0.99999982118606567 0.99999994039535522 0.99999994039535522 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 20.906773661843822 -43.921734203385 -87.371522894619957 0
-		 -93.956324905866737 15.74979115125268 -30.399862213350676 0 27.112996131278969 88.446707487317198 -37.974480636104403 0
-		 -63.83309696842116 12.839181782562253 113.36347592680247 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb3_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l";
-	rename -uid "25E2106B-4A09-3469-F45C-2DB703A18B46";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 5.0268110590723228e-10 0.000345813522799161 -2.5190020291887547e-10 ;
-	setAttr ".r" -type "double3" 19.150168315037988 -9.0650356036712907 6.2461572794519267 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 14.700103066057412 -27.488239491374504 -95.017361217816728 0
-		 -82.141468986341195 50.124357483405205 -27.208914119739539 0 55.106122859373301 82.048401560472641 -15.210913014189899 0
-		 -67.082233658539479 13.383826809347054 112.31220409433462 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_thumb3_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l";
-	rename -uid "F3E4148D-4C22-8FE3-90AA-F38AD9F2D481";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 19.150169048597299 -9.06503562505746 6.2461567250961449 ;
-	setAttr ".rst" -type "double3" 4.8428774102049484e-10 0.0003458135575056065 -2.2351741679749184e-10 ;
-	setAttr ".rsrr" -type "double3" 19.150173187255852 -9.0650348663330078 6.2461562156677273 ;
-createNode parentConstraint -n "c_thumb2_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l";
-	rename -uid "620842F6-4C59-BAC6-B4D9-76BDEAA77A91";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -38.934856411402912 14.006950586663368 -9.3615882541013011 ;
-	setAttr ".rst" -type "double3" -1.714909785954788e-08 0.00067761643667300995 3.0158272629199344e-09 ;
-	setAttr ".rsrr" -type "double3" -38.934857376637737 14.006954155080171 -9.3615887532582729 ;
-createNode parentConstraint -n "c_thumb1_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l";
-	rename -uid "5C1C13B3-4363-E3BD-428C-4FB56F01EC81";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -73.158449107633572 71.191219607836871 -114.99564735430215 ;
-	setAttr ".rst" -type "double3" 0.00043030280619859695 0.00027325475588440895 -0.00029069235548376818 ;
-	setAttr ".rsrr" -type "double3" -73.15843963623044 71.191215515136733 -114.99563598632811 ;
-createNode joint -n "c_ring1_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
-	rename -uid "E9B4BBA6-4F51-9B58-DC0A-EBADB630FF31";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" -0.0003840272078736784 0.00081999544012304859 0.00012622742097335827 ;
-	setAttr ".r" -type "double3" -12.28280775659773 3.0348878980400142 5.8653751727807952 ;
-	setAttr ".s" -type "double3" 1 1.0000001192092896 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 0.53523165106250037 99.948815601281055 -3.1532612493796139 0
-		 -97.136440682136168 -0.22937272375325407 -23.75837685228489 0 -23.753451124793038 3.1901307814361561 97.085505594120377 0
-		 -66.017527404679214 0.50003852379439273 119.5365301940719 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_ring2_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l";
-	rename -uid "62F50174-4E77-3628-C945-758B44188FF0";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -2.1212451584151636e-09 0.00045393074160903271 2.8521510384016404e-08 ;
-	setAttr ".r" -type "double3" -35.192093563037119 -3.004295634894099 0.66525963550965972 ;
-	setAttr ".s" -type "double3" 0.9999997615814209 0.99999982118606567 0.99999988079071045 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -1.764576740896096 99.981481870885972 -0.76163117208762632 0
-		 -65.718558679300543 -1.7338851025332922 -75.352913401854281 0 -75.352209230442526 -0.82912233981683592 65.737008010989044 0
-		 -70.33710763964784 0.49745818520241425 117.91950960947618 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_ring3_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l";
-	rename -uid "4F1501D4-477F-B1CD-4F7C-9D87124DE7D0";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -2.6040783973613202e-11 0.00030371897956287864 6.9463551077841857e-10 ;
-	setAttr ".r" -type "double3" -13.011156582572978 21.301655592057703 -8.7448704087241325 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 0.99999988079071045 0.99999988079071045 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 35.057799187583804 92.61475115698012 -13.908581511684545 0
-		 -48.41707179777741 5.2107423082226543 -87.342025061530137 0 -80.166911870474223 37.354319556950877 46.668142450568617 0
-		 -72.333110488706609 0.44479683567631134 115.63090329113804 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_ring3_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l";
-	rename -uid "78853BBB-4704-F6FE-9EFB-DAA6E1465178";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -13.011156865487584 21.301655584835618 -8.7448705268943545 ;
-	setAttr ".rst" -type "double3" 9.3132264660650279e-12 0.00030371898785233609 7.2126567829400298e-10 ;
-	setAttr ".rsrr" -type "double3" -13.01115131378174 21.301656723022468 -8.7448682785034197 ;
-createNode parentConstraint -n "c_ring2_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l";
-	rename -uid "8C09DB55-48B1-BD8F-5D27-54858A5EFE83";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -35.192093578266686 -3.0042954833139888 0.66525887870050904 ;
-	setAttr ".rst" -type "double3" -2.0549112712819897e-09 0.00045393077593293532 2.8541881751387165e-08 ;
-	setAttr ".rsrr" -type "double3" -35.192090993830092 -3.0042961644950466 0.66525999521936319 ;
-createNode parentConstraint -n "c_ring1_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l";
-	rename -uid "EC4ABFFD-4321-DE89-2A03-6EA76984E9C1";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -12.282807985429809 3.0348890278790281 5.8653786309767 ;
-	setAttr ".rst" -type "double3" -0.0003796112164855005 0.00081633567810058822 0.00012624273076653926 ;
-	setAttr ".rsrr" -type "double3" -12.28281307220459 3.0348885059356694 5.865380764007571 ;
-createNode joint -n "c_middle1_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
-	rename -uid "234595A5-4029-969D-F3EC-E1AAD2FD8C6F";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" 0.00012286789718860325 0.00095660005824389554 5.344169973160229e-05 ;
-	setAttr ".r" -type "double3" -5.9772494918338221 7.7997451355667078 3.8853002615518899 ;
-	setAttr ".s" -type "double3" 1 1.0000001192092896 1.0000001192092896 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 4.1666363584590655 99.265708165741998 -11.355772539086104 0
-		 -99.138907872750607 2.6953590399219065 -12.814568994340409 0 -12.41439645565776 11.791927035864436 98.523268287347776 0
-		 -66.818714837529399 5.7001473742727038 118.89850177941319 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_middle2_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l";
-	rename -uid "D7D6BB70-4018-0B30-A87A-13BE2584538B";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -3.5814696608404972e-09 0.0004347222518286034 2.2899162600564793e-08 ;
-	setAttr ".r" -type "double3" -29.721383889675678 2.151023922571913 -5.2761640360948192 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 1 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 13.795012047659519 97.711174469669643 -16.193150239158605 0
-		 -79.485304208477942 1.1675113937650199 -60.668975318041575 0 -59.091329202417242 21.240468073351337 77.827106013412461 0
-		 -71.256015654115885 5.8212626410846688 118.86445459766273 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_middle3_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l";
-	rename -uid "8BF88B5B-4330-9469-39E5-969BF6462E49";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 3.7240760475398817e-11 0.00032971611144775372 3.6860245869463351e-10 ;
-	setAttr ".r" -type "double3" -19.62489877162411 7.8420745864511092 -3.8938614928662902 ;
-	setAttr ".s" -type "double3" 1 1.0000001192092896 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 27.04429545549209 93.597262655175925 -22.542247025935744 0
-		 -55.030137194041451 -4.183734376864173 -83.391750071508397 0 -78.995518449754442 34.957731296050866 50.375250751447183 0
-		 -73.87677661597985 5.859758953679628 116.86410361183368 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_middle3_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l";
-	rename -uid "9FE65807-4ED4-6C1B-ED8E-359B6EE322D7";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -19.624898832640508 7.8420745328359596 -3.8938614349565759 ;
-	setAttr ".rst" -type "double3" 7.450580541412677e-11 0.00032971613109111705 4.0046870708465576e-10 ;
-	setAttr ".rsrr" -type "double3" -19.62489318847657 7.8420748710632324 -3.8938610553741482 ;
-createNode parentConstraint -n "c_middle2_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l";
-	rename -uid "F7DD3215-44D2-6993-970E-E1AC04FBE694";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -29.721383615462184 2.1510239851415145 -5.2761647406315717 ;
-	setAttr ".rst" -type "double3" -3.5191714239934945e-09 0.0004347222844016374 2.2915435036185982e-08 ;
-	setAttr ".rsrr" -type "double3" -29.721381656159746 2.1510230794850407 -5.2761630435578528 ;
-createNode parentConstraint -n "c_middle1_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l";
-	rename -uid "30B03795-4ADF-4113-7264-B8B1543F68CE";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -5.9772497617437477 7.7997462568355944 3.8853036952332913 ;
-	setAttr ".rst" -type "double3" 0.00012728390283882603 0.00095294035971164816 5.3457003086809786e-05 ;
-	setAttr ".rsrr" -type "double3" -5.9772548675537127 7.7997455596923881 3.885305404663085 ;
-createNode joint -n "c_index1_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
-	rename -uid "2D55CF77-4F2C-0CEA-2071-43871DA35989";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" 0.00059340467020890905 0.00097145724429288432 0.00014072383270748447 ;
-	setAttr ".r" -type "double3" -9.1624343202543841 2.0049194351340804 5.5285876934127112 ;
-	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 0.46835919376546992 99.995992612308854 0.76142765476339669 0
-		 -99.733433921987057 0.52255062621281401 -7.2778220642091869 0 -7.2815097443893775 -0.72530863724061678 99.731902201865893 0
-		 -66.489533224919953 10.374817461236493 119.88077335787681 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_index2_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l";
-	rename -uid "57EA4F5D-4961-568B-FDC8-25BC1B0E9F34";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".t" -type "double3" -8.690747022033207e-10 0.00047904587659334088 5.4861515580428845e-09 ;
-	setAttr ".r" -type "double3" -44.521868342917593 9.1481792730832261 -7.3082045405513432 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 14.214643256946058 97.588348102688471 -16.566705655986933 0
-		 -66.903879780415124 -2.8625784270142658 -74.267588814533028 0 -72.950753071979321 21.640647625125013 64.883497888581886 0
-		 -70.794896311556883 10.431427483634257 119.11621300043181 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode joint -n "c_index3_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l";
-	rename -uid "0358FCFD-4395-72E0-55DF-AAA2CAF7544F";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -1.1438295977050927e-10 0.00051124207271251447 -2.714089488570215e-10 ;
-	setAttr ".r" -type "double3" -9.2688520754344079 -2.1274472921007614 -1.0205793389740292 ;
-	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1.0000001192092896 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 12.685323914199071 98.35992943236576 -12.822119410618631 0
-		 -53.936011245380058 -4.0087324687366701 -84.11203236460608 0 -83.246550548991692 17.585630349509238 52.54291486220604 0
-		 -74.215302766956952 10.285079259157124 115.3193401603495 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_index3_l_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l";
-	rename -uid "2910A67F-49F2-AAD7-807B-ECAAAC67AB27";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -9.2688518574941696 -2.1274474193107702 -1.0205792500382265 ;
-	setAttr ".rst" -type "double3" -7.4505806524349796e-11 0.00051124207675456892 -2.0489096863585133e-10 ;
-	setAttr ".rsrr" -type "double3" -9.2688446044921857 -2.1274478435516353 -1.0205804109573369 ;
-createNode parentConstraint -n "c_index2_l_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l";
-	rename -uid "E7F3F77D-4D90-AE0F-E23F-ED8558BFC7DC";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -44.521868384272196 9.1481793838269745 -7.3082053089487182 ;
-	setAttr ".rst" -type "double3" -7.9986137449528095e-10 0.00047904591299793078 5.5019261413491448e-09 ;
-	setAttr ".rsrr" -type "double3" -44.521866418803917 9.1481792931962893 -7.3082038189073719 ;
-createNode parentConstraint -n "c_index1_l_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l";
-	rename -uid "0F14F8D1-43F4-A96A-A74A-F590D52110E0";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -9.1624345555468381 2.0049205636103871 5.5285911554921361 ;
-	setAttr ".rst" -type "double3" 0.00059781923890113789 0.00096780523657798883 0.00014082530513406243 ;
-	setAttr ".rsrr" -type "double3" -2.706656932830811 0.79138404130935647 5.8463659286499023 ;
-createNode joint -n "hold_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
-	rename -uid "9C0A9D71-4AD3-398C-1F0C-76909513DBD2";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 7;
-	setAttr ".t" -type "double3" 6.3287846150543721e-05 0.00082984216662388257 -0.00015038815517022354 ;
-	setAttr ".r" -type "double3" -89.829998462848195 1.4813182695565905 -83.863827882129215 ;
-	setAttr ".s" -type "double3" 0.99999994039535522 1 1 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 99.999960294021903 0.073046179528293814 -0.013594304295019732 0
-		 -0.015363041604931738 2.4256839941293911 -99.970568647911236 0 -0.07269894129520095 99.970525695082017 2.4256975199518749 0
-		 -65.610629211960969 4.97607777238282 116.87454457913242 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "hold_l_parentConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l";
-	rename -uid "6A93BCF2-4EAF-5DFD-74B7-3DBD367EBF92";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -89.829999594132687 1.4813180463878912 -83.863824441062832 ;
-	setAttr ".rst" -type "double3" 6.3287881202995914e-05 0.00082984223961830145 -0.00015038821846246274 ;
-	setAttr ".rsrr" -type "double3" -89.829999096036545 1.4813129643372562 -83.863822025841287 ;
-createNode parentConstraint -n "hand_l_parentConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
-	rename -uid "28D64838-4F68-D324-3AC2-3CA1D4F1E723";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -84.825370461010777 -77.060805314778264 88.763809160240115 ;
-	setAttr ".rst" -type "double3" 7.5438036395425452e-09 0.0023644157111635876 9.8899328296320192e-10 ;
-	setAttr ".rsrr" -type "double3" -34.4396408186049 -92.341019701733913 34.413350103389618 ;
-createNode joint -n "forearm_twist_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l";
-	rename -uid "4EC609ED-480A-7E06-CE00-2C91C06F8EB2";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 6;
-	setAttr ".t" -type "double3" -1.2381995305954519e-07 0.0012847230387715426 -6.5401849724811004e-08 ;
-	setAttr ".r" -type "double3" -0.012298600865838241 1.5532021054165479 -0.030080928086433721 ;
-	setAttr ".s" -type "double3" 1.0031747206434867 0.99999980060353089 1.0031745805157113 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 2.2100787846635246 -6.3555754008754528 -99.773336287290988 0
-		 -99.610825787603062 8.3767880204868792 -2.7400820565025312 0 8.5319488626178082 99.445614063574894 -6.1457078436134198 0
-		 -46.712673713645898 2.5224433270596145 118.8560558006935 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "forearm_twist_l_parentConstraint3" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l";
-	rename -uid "9F99A553-401B-1B89-B101-199322BE3683";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -0.012297199134274833 1.5532020984221298 -0.030080898707677356 ;
-	setAttr ".rst" -type "double3" -1.2378604588025866e-07 0.0012847231752089077 -6.4984247140492674e-08 ;
-	setAttr ".rsrr" -type "double3" -0.0021833320683405568 0.14136108756065366 -0.018575310707092296 ;
-createNode scaleConstraint -n "forearm_twist_l_scaleConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l";
-	rename -uid "DA1BAA78-4B70-BB82-EB36-3890A497749A";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 99.999981941791106 99.99997608999378 99.999970442641825 ;
-createNode parentConstraint -n "forearm_l_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l";
-	rename -uid "86A7E4DB-434F-C473-0457-2AA2CA107EB7";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 35.146489796121422 -0.12671268751143458 0.67934570580802089 ;
-	setAttr ".rst" -type "double3" 1.1299333761982666e-08 0.0019655889951178617 5.3126282210241853e-10 ;
-	setAttr ".rsrr" -type "double3" 10.555856326541196 -0.12671993009558985 0.67932357700569934 ;
-createNode joint -n "bicep_l" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l";
-	rename -uid "196AFB77-4008-6BE4-26ED-0AACAB93C2AF";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 5;
-	setAttr ".t" -type "double3" -1.9486089083649572e-05 0.000285582344004639 -2.0357824677552651e-06 ;
-	setAttr ".r" -type "double3" 0.011600073380283788 5.4385549927540085e-05 -0.30375215913568537 ;
-	setAttr ".s" -type "double3" 1.0000000037214827 1.0000000163019875 0.99999997997660595 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 3.9274052249086124 -6.1550516000189734 -99.733097928446881 0
-		 -99.43738645211387 -10.067291905829432 -3.2944560483540211 0 -9.8376460389028093 99.301378609252353 -6.5158057546836616 0
-		 -17.211461038435978 3.1270751852161345 119.86304810097526 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "bicep_l_parentConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l";
-	rename -uid "3AE972AA-4156-07FE-0C8F-1CBF266CF127";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 0.011600573886930922 5.4132522036462591e-05 -0.30375255873324097 ;
-	setAttr ".rst" -type "double3" -1.9486071764642788e-05 0.00028558236619920338 -2.0357764604034962e-06 ;
-	setAttr ".rsrr" -type "double3" 0.011601408633498098 5.2751439846817609e-05 -0.30375085044465439 ;
-createNode scaleConstraint -n "bicep_l_scaleConstraint1" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l";
-	rename -uid "EEDD5D5B-484C-A164-40BD-02B517D74C28";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 99.999994039535508 100.00000589892842 100.00000006153397 ;
-createNode parentConstraint -n "upper_arm_l_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l";
-	rename -uid "B019CA61-412C-C997-543B-9C842CA8653B";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 72.93802266460014 -20.137912982359008 -53.452398529588066 ;
-	setAttr ".rst" -type "double3" 2.0267633335513402e-09 0.0011362359929075866 -3.4701658284674862e-08 ;
-	setAttr ".rsrr" -type "double3" -33.665317677894848 -94.170706722590964 28.032131117061017 ;
-createNode joint -n "muscle_shoulder_l" -p "|HumanArmature|hips|spine|chest|shoulder_l";
-	rename -uid "889A8846-4ED9-66E7-0C5F-138A638B4686";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 4;
-	setAttr ".t" -type "double3" 1.605078198221699e-05 0.00011050431943163186 -0.00015714176595011954 ;
-	setAttr ".r" -type "double3" 3.7465084348542475e-06 -7.7927689981465457e-06 -1.3783071522417005e-06 ;
-	setAttr ".s" -type "double3" 1.0000000037214833 1.0000000163019878 0.99999997997660572 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -0.0016535805566898017 -99.48245489340033 10.16076599710656 0
-		 -99.99998806531049 0.0016585983548197481 -3.5095791934101245e-05 0 -0.00013361217436185568 -10.16076660191721 -99.482460836754001 0
-		 -4.1092584764222604 3.4221508137261973 121.32522365249672 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "muscle_shoulder_l_parentConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l";
-	rename -uid "78C17E00-40CD-3BA7-6B59-FF82E91EC115";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 3.7465083950973017e-06 -7.7927689602780845e-06 -1.3783071547264702e-06 ;
-	setAttr ".rst" -type "double3" 1.6050784864911487e-05 0.00011050431944435543 -0.00015714176690446503 ;
-	setAttr ".rsrr" -type "double3" 3.2482493620753878e-06 -7.8102248089778296e-06 -7.400447922133174e-21 ;
-createNode scaleConstraint -n "muscle_shoulder_l_scaleConstraint4" -p "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l";
-	rename -uid "37DB3F35-461E-7DF4-3074-FEA23FCA5656";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 99.999994039535522 100.00000589892845 100.00000006153395 ;
-createNode parentConstraint -n "shoulder_l_parentConstraint2" -p "|HumanArmature|hips|spine|chest|shoulder_l";
-	rename -uid "71F7C7C3-41FF-4E6E-762C-49AAE00CE42B";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 62.112291908213422 104.27474035669793 -26.596425671394289 ;
-	setAttr ".rst" -type "double3" 0.00030042498072730734 0.00090524554657648085 -3.9325218958990161e-05 ;
-	setAttr ".rsrr" -type "double3" 1.4933929506356698e-05 101.77230858149942 -89.999954693142271 ;
-createNode joint -n "breast_L" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "4DBC69E4-403C-3836-CDDB-CCA06E3B170C";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" 0.0005708498955326577 -1.2027309731661439e-05 0.0010405562387576334 ;
-	setAttr ".r" -type "double3" 89.754953409038464 0.042115339287300088 -97.654176157515423 ;
-	setAttr ".s" -type "double3" 0.99999998687471314 1.000000003968013 1.0000000091573495 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 9.9097267747093589 -0.53559480772085255 -99.506345597781305 0
-		 -28.064995890323093 95.923920005380751 -3.3112748642317671 0 95.46808822579537 28.254586726600468 9.3554826080880495 0
-		 -8.291011474965849 13.032632545355733 110.65811361738271 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "breast_L_parentConstraint4" -p "|HumanArmature|hips|spine|chest|breast_L";
-	rename -uid "B69D3352-4C26-A181-5096-B0B7DCC16500";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 90.427533408776611 0.88419771416258197 -94.752235525355886 ;
-	setAttr ".rst" -type "double3" 0.00082911996736242098 -6.8993363912421839e-05 0.0008173869550002536 ;
-	setAttr ".rsrr" -type "double3" 73.193070848871415 4.2507860229030072 -95.702921657076544 ;
-createNode scaleConstraint -n "breast_L_scaleConstraint4" -p "|HumanArmature|hips|spine|chest|breast_L";
-	rename -uid "F6187227-4978-70C7-7618-B8A4334EE434";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100 100.00001192092893 100.00001192092898 ;
-createNode joint -n "breast_R" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "1163A0C1-4579-1AF3-D027-DDBF32CFAD9D";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -0.0010277474683639603 -3.1859256785482513e-05 0.0006003152205689144 ;
-	setAttr ".r" -type "double3" 57.772222357710781 3.1009837073048385 93.282576022730893 ;
-	setAttr ".s" -type "double3" 0.99999998687471314 1.0000000039680133 1.0000000091573498 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" 9.9097576783149801 0.53526810038369632 99.50634427809247 0
-		 28.068165860329678 95.922992336713847 -3.3112793836842611 0 -95.467153076845619 28.257742147539567 9.3554950448820531 0
-		 8.2913985602859981 13.032358425838607 110.65811361787195 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "breast_R_parentConstraint4" -p "|HumanArmature|hips|spine|chest|breast_R";
-	rename -uid "D97EAB40-4AF9-6C7B-D7D1-65B348689E5F";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 56.951444072969998 2.4014749921858831 96.139681230142514 ;
-	setAttr ".rst" -type "double3" -0.00082912103638916961 -6.8993227912408369e-05 0.00081738621360603338 ;
-	setAttr ".rsrr" -type "double3" 73.192985577662952 -4.2507834901732062 95.702918622115902 ;
-createNode scaleConstraint -n "breast_R_scaleConstraint3" -p "|HumanArmature|hips|spine|chest|breast_R";
-	rename -uid "48C8016E-4361-12F5-E222-01B98195969E";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100 100.00001192092893 100.00001192092898 ;
-createNode joint -n "muscle_chest" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "8AAFF11F-43DF-88A2-A1E6-B5B68055237C";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 3;
-	setAttr ".t" -type "double3" -7.7435836803408094e-05 0.00024458703757702205 0.00025707331630776597 ;
-	setAttr ".r" -type "double3" -6.6157087229560441 -15.215343893632793 0.48060131665802985 ;
-	setAttr ".s" -type "double3" 0.99999998687471281 1.0000000039680133 1.0000000091573495 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.999999985941486 0.0016768124303628317 1.6418277104814811e-06 0
-		 -0.00011426654651183468 -6.9121891821496462 99.760828148075731 0 0.001672915447583965 99.760828134049021 6.9121891830939139 0
-		 9.9652751022476482e-05 7.3530183140255385 113.61020911153685 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode scaleConstraint -n "muscle_chest_scaleConstraint3" -p "|HumanArmature|hips|spine|chest|muscle_chest";
-	rename -uid "F32652A0-4323-8B5B-F482-4AB10FD197E4";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100 100.00001192092891 100.00001192092898 ;
-createNode parentConstraint -n "muscle_chest_parentConstraint4" -p "|HumanArmature|hips|spine|chest|muscle_chest";
-	rename -uid "AB8B58EB-4184-794B-48AF-DF81A49F4C26";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -8.2751059060585419 -13.14050245159974 1.48141157714394 ;
-	setAttr ".rst" -type "double3" -2.92803362568804e-10 0.00026476776509523294 0.00027120270919946316 ;
-	setAttr ".rsrr" -type "double3" 2.2004230635006135e-06 -3.9269614781407165e-05 -4.3419662639080347e-23 ;
-createNode parentConstraint -n "chest_parentConstraint2" -p "|HumanArmature|hips|spine|chest";
-	rename -uid "4A9BC9AF-46CA-4992-3BB7-42A1E4A062D6";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 0.20355331145107658 34.019627242496874 -1.6627544297586214 ;
-	setAttr ".rst" -type "double3" 1.0479361517814252e-11 0.0013744131928114444 7.9233323027616552e-12 ;
-	setAttr ".rsrr" -type "double3" -9.1622638971130694 0.3783111238121683 4.4923477302136313e-07 ;
-createNode joint -n "torso_width" -p "|HumanArmature|hips|spine";
-	rename -uid "BDF17D81-4CE0-8746-C367-D9857D79A626";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 2;
-	setAttr ".t" -type "double3" 1.1271404730659046e-05 0.00020158321857952188 -0.00059903458084191561 ;
-	setAttr ".r" -type "double3" 9.5678220188548497 27.452667635402726 4.873451790210261 ;
-	setAttr ".s" -type "double3" 1.0000000000000244 1.0000000000000258 1.0000000000000246 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.997809387990813 0.66076290148622052 -0.038858603683807488 0
-		 9.7278579677992361e-05 5.8853974155742801 99.82666025291681 0 0.66190459890606756 99.824485300312432 -5.885269833711229 0
-		 7.6214771765849049e-05 5.9347392501903311 100.67188233343362 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "torso_width_parentConstraint3" -p "|HumanArmature|hips|spine|torso_width";
-	rename -uid "CA70D6B1-4681-FEA6-8366-AEA10794F60C";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 6.4392671382044391 28.657983070855011 -1.268177025907917 ;
-	setAttr ".rst" -type "double3" 1.1856914557203424e-06 0.00037975089815803112 0.0001795962626791141 ;
-	setAttr ".rsrr" -type "double3" -1.8246357616866089 0.00017702135769198451 0.012049993992997429 ;
-createNode scaleConstraint -n "torso_width_scaleConstraint2" -p "|HumanArmature|hips|spine|torso_width";
-	rename -uid "10CD5850-4303-8C44-B2EA-56812C5A9377";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999986 100.00000000000001 ;
-createNode parentConstraint -n "spine_parentConstraint2" -p "|HumanArmature|hips|spine";
-	rename -uid "861259FB-4D7B-F650-1FE7-49A3860BE809";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 19.537023532687087 19.381558680751223 -2.0477362796669798 ;
-	setAttr ".rst" -type "double3" -1.1975206192157202e-08 0.001328465306270391 8.4825245620746834e-06 ;
-	setAttr ".rsrr" -type "double3" -2.3105411221597749 -0.37703152451252442 0.015251672588440153 ;
-createNode joint -n "belly" -p "|HumanArmature|hips";
-	rename -uid "78A10C28-4604-B922-AAEF-10911A984DCA";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 0.00029496487671712153 0.00060329685341987689 0.00054290115442299201 ;
-	setAttr ".r" -type "double3" 113.08249775830195 27.065619375677642 1.3732605050486766 ;
-	setAttr ".s" -type "double3" 1.0000000000000255 1.0000000000000253 1.0000000000000251 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.9999999838561 -9.9178591120990811e-11 -0.0017968811411373229 0
-		 1.4062028754965872e-10 99.999999999999147 -1.334528327845419e-05 0 0.0017968811411373212 -1.3345283264243335e-05 -99.999999983855176 0
-		 3.0686922756562388e-11 8.0454029376298859 91.742360206285909 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "belly_parentConstraint3" -p "|HumanArmature|hips|belly";
-	rename -uid "0C9A0381-4E4C-D58E-12CA-F3B4E92F13F4";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 109.80204990072153 31.357558271141031 2.9683202739243417 ;
-	setAttr ".rst" -type "double3" -2.261470334488232e-09 0.00085115006747209958 0.0005964354389763869 ;
-	setAttr ".rsrr" -type "double3" 84.467849988725121 0.00084781208983635253 -0.0010192733291924708 ;
-createNode scaleConstraint -n "belly_scaleConstraint4" -p "|HumanArmature|hips|belly";
-	rename -uid "E5E54CC8-4D4F-FD83-099F-53B1933FFE3E";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
-createNode joint -n "waist" -p "|HumanArmature|hips";
-	rename -uid "F3E35696-401B-D08E-8ED2-DCBA7C69945B";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" 5.8266784974453752e-05 0.00060520942847684721 7.988227890594072e-05 ;
-	setAttr ".r" -type "double3" 28.369721284878207 27.064378445028556 1.3738163383173152 ;
-	setAttr ".s" -type "double3" 1.0000000000000255 1.0000000000000253 1.0000000000000253 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.999999986208522 0.0016537469540638956 -0.00015303423292035591 0
-		 1.4616729366259429e-10 9.2144273300540114 99.574560691404955 0 0.0016608125916313114 99.574566612778852 -9.2144278780059139 0
-		 2.0762269785639265e-11 3.2323370357955206 89.77359935879673 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "waist_parentConstraint3" -p "|HumanArmature|hips|waist";
-	rename -uid "976FFEF3-4A5F-7890-FE4F-85B65B4692AA";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" 25.089364916810958 31.356347696947854 2.9689821018530687 ;
-	setAttr ".rst" -type "double3" -9.8432626193036461e-09 0.00060879091708483711 0.00013635048396359458 ;
-	setAttr ".rsrr" -type "double3" -0.24517938182331289 -4.503166586136928e-06 9.5402675528465501e-06 ;
-createNode scaleConstraint -n "waist_scaleConstraint4" -p "|HumanArmature|hips|waist";
-	rename -uid "1BDC7CC7-4E32-6596-DA83-D79CDC497C8D";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
-createNode joint -n "butt" -p "|HumanArmature|hips";
-	rename -uid "929A1BDA-47B2-9154-061C-99A89F87986F";
-	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
-	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	setAttr ".uoc" 1;
-	setAttr ".oc" 1;
-	setAttr ".t" -type "double3" -1.4264857596184981e-07 8.5362477356730763e-05 1.6491685776633124e-05 ;
-	setAttr ".r" -type "double3" -114.59872991276096 -0.061591378773018311 0.0048893237123066669 ;
-	setAttr ".s" -type "double3" 1.0000000000000255 1.0000000000000251 1.0000000000000249 ;
-	setAttr ".ssc" no;
-	setAttr ".bps" -type "matrix" -99.999999986208778 -0.00055721496217782775 0.0015645322230017375 0
-		 4.8513951319759108e-10 -94.203659981129249 -33.551012595148173 0 0.0016607980757766278 -33.551016590113477 94.203671198088728 0
-		 1.4335960410014786e-11 1.534729090957657 84.679244765450861 1;
-	setAttr ".radi" 0.03;
-	setAttr ".fbxID" 5;
-createNode parentConstraint -n "butt_parentConstraint3" -p "|HumanArmature|hips|butt";
-	rename -uid "DEE568A9-4720-3C36-F15E-D8A30AE78843";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -114.59872991276096 -0.061591378773012948 0.0048893237123087425 ;
-	setAttr ".rst" -type "double3" -1.4264857596160661e-07 8.5362477356730763e-05 1.6491685776632433e-05 ;
-	setAttr ".rsrr" -type "double3" -114.59872991276096 -0.061591378773012524 0.0048893237123083574 ;
-createNode scaleConstraint -n "butt_scaleConstraint2" -p "|HumanArmature|hips|butt";
-	rename -uid "5E7D5527-4BDA-459C-FEB0-0DB00A45742B";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
-createNode parentConstraint -n "hips_parentConstraint4" -p "|HumanArmature|hips";
-	rename -uid "E5B22B55-4E02-0D64-EC92-848D63D3A50F";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -2.5640543870224679 -27.759301004459687 2.5352620327544764 ;
-	setAttr ".rst" -type "double3" 1.1294686221496873e-06 0.83845494787149866 0.012882795943033359 ;
-	setAttr ".rsrr" -type "double3" 5.5321426406765948 -0.00094713468504365838 -9.1734837054701716e-05 ;
-createNode parentConstraint -n "HumanArmature_parentConstraint2" -p "HumanArmature";
-	rename -uid "66E26ED7-43DD-E41A-E357-C4B19D063C8D";
-	setAttr -k on ".nds";
-	setAttr -k off ".v";
-	setAttr -k off ".tx";
-	setAttr -k off ".ty";
-	setAttr -k off ".tz";
-	setAttr -k off ".rx";
-	setAttr -k off ".ry";
-	setAttr -k off ".rz";
-	setAttr -k off ".sx";
-	setAttr -k off ".sy";
-	setAttr -k off ".sz";
-	setAttr ".erp" yes;
 createNode dagContainer -n "animBot";
 	rename -uid "8AAADFDC-4961-3EB3-91A8-21BC5D2CFC30";
 	addAttr -ci true -sn "animBot" -ln "animBot" -nn "animBot" -dt "string";
@@ -2652,7 +389,7 @@ createNode transform -n "pasted__locator1" -p "group";
 createNode locator -n "pasted__locatorShape1" -p "pasted__locator1";
 	rename -uid "26C005D7-4B76-2F92-AB77-D794D85DF264";
 	setAttr -k off ".v";
-createNode transform -n "HumanArmature1";
+createNode transform -n "HumanArmature";
 	rename -uid "363D12C1-4D94-9310-94F1-E4BB90F6BC30";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0 0 0 ;
@@ -2664,10 +401,10 @@ createNode transform -n "HumanArmature1";
 	setAttr -av ".ry";
 	setAttr -av ".rz";
 	setAttr ".s" -type "double3" 100 100 100 ;
-createNode locator -n "HumanArmature1Shape" -p "HumanArmature1";
+createNode locator -n "HumanArmatureShape" -p "HumanArmature";
 	rename -uid "515C5878-403C-F184-497C-7E8FE18C416F";
 	setAttr -k off ".v";
-createNode joint -n "hips" -p "HumanArmature1";
+createNode joint -n "hips" -p "HumanArmature";
 	rename -uid "28ED4280-458C-1B56-3F3A-808F1EF47C76";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2679,7 +416,7 @@ createNode joint -n "hips" -p "HumanArmature1";
 		 0 1.3243251480162144 83.337724208831787 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "thigh_l" -p "|HumanArmature1|hips";
+createNode joint -n "thigh_l" -p "hips";
 	rename -uid "B3C3409B-4672-DCF6-1477-7F9740F5FD67";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2692,7 +429,7 @@ createNode joint -n "thigh_l" -p "|HumanArmature1|hips";
 		 -9.6564000520095359 1.3243245608804495 80.896783280624433 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "lower_leg_l" -p "|HumanArmature1|hips|thigh_l";
+createNode joint -n "lower_leg_l" -p "thigh_l";
 	rename -uid "58130D35-4CE1-05E6-D7D0-738D1260C83A";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2705,7 +442,7 @@ createNode joint -n "lower_leg_l" -p "|HumanArmature1|hips|thigh_l";
 		 -14.217614801268684 2.7862386404634765 45.456574805525307 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "foot_l" -p "|HumanArmature1|hips|thigh_l|lower_leg_l";
+createNode joint -n "foot_l" -p "lower_leg_l";
 	rename -uid "6AD2F9D7-4C24-D656-D7ED-638137AD7967";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2718,7 +455,7 @@ createNode joint -n "foot_l" -p "|HumanArmature1|hips|thigh_l|lower_leg_l";
 		 -18.669304628756816 -3.8895099816973864 5.289073519483253 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "toes_l" -p "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l";
+createNode joint -n "toes_l" -p "foot_l";
 	rename -uid "D6DD789F-4C24-5A76-7551-FD885098FA0E";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2730,7 +467,7 @@ createNode joint -n "toes_l" -p "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l
 		 -17.810479331942428 3.1723980791721682 1.5158030532571827 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "toes_l_parentConstraint4" -p "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l";
+createNode parentConstraint -n "toes_l_parentConstraint4" -p "toes_l";
 	rename -uid "F9C1C367-4B75-500C-45BB-00ABFDA9F18D";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "toes_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2753,7 +490,7 @@ createNode parentConstraint -n "toes_l_parentConstraint4" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" -2.3748725624939128e-10 0.00080526657402515403 -2.7939677516020111e-11 ;
 	setAttr ".rsrr" -type "double3" -8.0466766357421875 19.696008682250969 -6.1151137351989755 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "foot_l_parentConstraint4" -p "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l";
+createNode parentConstraint -n "foot_l_parentConstraint4" -p "foot_l";
 	rename -uid "0C29D4F6-4563-417C-0F3F-B9B87F942935";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "foot_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2775,7 +512,7 @@ createNode parentConstraint -n "foot_l_parentConstraint4" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" 2.590240882893724e-11 0.0040961080789566036 -6.2864273855933741e-11 ;
 	setAttr ".rsrr" -type "double3" -70.102416992187514 -0.1354952752590167 26.726165771484382 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "lower_leg_l_parentConstraint2" -p "|HumanArmature1|hips|thigh_l|lower_leg_l";
+createNode parentConstraint -n "lower_leg_l_parentConstraint2" -p "lower_leg_l";
 	rename -uid "1ADD972F-4511-7BFD-F34A-DCAD6CFFC4AD";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "lower_leg_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2798,7 +535,7 @@ createNode parentConstraint -n "lower_leg_l_parentConstraint2" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" -7.5669953636392504e-12 0.0035762405395507791 -2.3283065059276354e-12 ;
 	setAttr ".rsrr" -type "double3" 11.707514762878423 -0.43441402912139887 1.0897806882858279 ;
 	setAttr -k on ".w0";
-createNode joint -n "width_thigh_l" -p "|HumanArmature1|hips|thigh_l";
+createNode joint -n "width_thigh_l" -p "thigh_l";
 	rename -uid "B676B180-403F-A348-31F2-B08DE75F5CD5";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2810,7 +547,7 @@ createNode joint -n "width_thigh_l" -p "|HumanArmature1|hips|thigh_l";
 		 -11.490361474877997 3.500335272473972 72.674536664775673 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "width_thigh_l_parentConstraint3" -p "|HumanArmature1|hips|thigh_l|width_thigh_l";
+createNode parentConstraint -n "width_thigh_l_parentConstraint3" -p "width_thigh_l";
 	rename -uid "04D817EF-4D4C-8695-A63A-27B0086E6379";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2834,7 +571,7 @@ createNode parentConstraint -n "width_thigh_l_parentConstraint3" -p "|HumanArmat
 	setAttr ".rsrr" -type "double3" -3.0282283193305309e-06 -2.7347441582265472e-06 
 		-4.280540905431684e-06 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "width_thigh_l_scaleConstraint3" -p "|HumanArmature1|hips|thigh_l|width_thigh_l";
+createNode scaleConstraint -n "width_thigh_l_scaleConstraint3" -p "width_thigh_l";
 	rename -uid "6E1E31ED-4FE3-7855-67A5-6FBE03AD28A0";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2851,7 +588,7 @@ createNode scaleConstraint -n "width_thigh_l_scaleConstraint3" -p "|HumanArmatur
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00025839469046 100.00002817244702 100.00029755837102 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "thigh_l_parentConstraint2" -p "|HumanArmature1|hips|thigh_l";
+createNode parentConstraint -n "thigh_l_parentConstraint2" -p "thigh_l";
 	rename -uid "CF1B073F-41E0-257C-563A-B2899CEC94CC";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "thigh_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2874,7 +611,7 @@ createNode parentConstraint -n "thigh_l_parentConstraint2" -p "|HumanArmature1|h
 	setAttr ".rst" -type "double3" 0.00096562924207692531 -0.00029315023282905584 3.1998473273829321e-05 ;
 	setAttr ".rsrr" -type "double3" 172.17073059082031 -0.070519492030144112 7.4067449569702166 ;
 	setAttr -k on ".w0";
-createNode joint -n "thigh_r" -p "|HumanArmature1|hips";
+createNode joint -n "thigh_r" -p "hips";
 	rename -uid "0A3F0E03-4426-10B7-91E1-2DA520384802";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2887,7 +624,7 @@ createNode joint -n "thigh_r" -p "|HumanArmature1|hips";
 		 9.6563989275645259 1.3243247288788518 80.896777275944586 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "lower_leg_r" -p "|HumanArmature1|hips|thigh_r";
+createNode joint -n "lower_leg_r" -p "thigh_r";
 	rename -uid "E8A46670-475A-4B7D-45B7-4E9D09DF72F4";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2900,7 +637,7 @@ createNode joint -n "lower_leg_r" -p "|HumanArmature1|hips|thigh_r";
 		 14.217606261456696 2.786285552998506 45.456579673309783 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "foot_r" -p "|HumanArmature1|hips|thigh_r|lower_leg_r";
+createNode joint -n "foot_r" -p "lower_leg_r";
 	rename -uid "0619EE73-4CCD-7686-3AEA-39B408CFEFFE";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2913,7 +650,7 @@ createNode joint -n "foot_r" -p "|HumanArmature1|hips|thigh_r|lower_leg_r";
 		 18.669333874874972 -3.8894052223086488 5.2890985507094967 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "toes_r" -p "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r";
+createNode joint -n "toes_r" -p "foot_r";
 	rename -uid "E5602BA3-4596-351C-81EE-47973993A815";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -2926,7 +663,7 @@ createNode joint -n "toes_r" -p "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r
 		 17.707515280865103 3.1533574581113886 1.5048634914515269 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "toes_r_parentConstraint4" -p "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r";
+createNode parentConstraint -n "toes_r_parentConstraint4" -p "toes_r";
 	rename -uid "BC7129EE-46D5-98F4-ABFA-58B2F5BDA0E8";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "toes_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2948,7 +685,7 @@ createNode parentConstraint -n "toes_r_parentConstraint4" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" -1.2340024141410666e-10 0.00080527268350124356 -9.3132257461547854e-12 ;
 	setAttr ".rsrr" -type "double3" -8.0466156005859393 -19.695928573608406 6.1150903701782244 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "foot_r_parentConstraint2" -p "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r";
+createNode parentConstraint -n "foot_r_parentConstraint2" -p "foot_r";
 	rename -uid "2804D0AB-49A5-BC55-227E-E9AA87DD0F33";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "foot_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2970,7 +707,7 @@ createNode parentConstraint -n "foot_r_parentConstraint2" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" -3.2014214057518589e-11 0.0040961080789566036 9.0803950886231283e-11 ;
 	setAttr ".rsrr" -type "double3" -69.732063293457017 -0.58544176816939941 -26.650217056274407 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "lower_leg_r_parentConstraint2" -p "|HumanArmature1|hips|thigh_r|lower_leg_r";
+createNode parentConstraint -n "lower_leg_r_parentConstraint2" -p "lower_leg_r";
 	rename -uid "55179271-4AF1-7CB2-58BD-CA8EA0AE29E7";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "lower_leg_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -2989,11 +726,11 @@ createNode parentConstraint -n "lower_leg_r_parentConstraint2" -p "|HumanArmatur
 		9.984523751782604e-08 ;
 	setAttr ".tg[0].tor" -type "double3" 7.6727522167438922e-06 -0.00037286558668074039 
 		9.0041168528121628e-06 ;
-	setAttr ".lr" -type "double3" 55.424305518026117 2.7897580096414534 -1.9559496215373033 ;
+	setAttr ".lr" -type "double3" 55.424305518026124 2.7897580096414534 -1.9559496215373033 ;
 	setAttr ".rst" -type "double3" -8.0617610920263872e-11 0.0035762408375740059 -4.4237822433013111e-11 ;
 	setAttr ".rsrr" -type "double3" 11.707574844360343 0.43441426753997792 -1.0897923707962032 ;
 	setAttr -k on ".w0";
-createNode joint -n "width_thigh_r" -p "|HumanArmature1|hips|thigh_r";
+createNode joint -n "width_thigh_r" -p "thigh_r";
 	rename -uid "DEBC9ADB-4165-99F3-3D87-7B9C79281473";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3005,7 +742,7 @@ createNode joint -n "width_thigh_r" -p "|HumanArmature1|hips|thigh_r";
 		 11.490347296403868 3.5003420353121295 72.674543598357701 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "width_thigh_r_parentConstraint3" -p "|HumanArmature1|hips|thigh_r|width_thigh_r";
+createNode parentConstraint -n "width_thigh_r_parentConstraint3" -p "width_thigh_r";
 	rename -uid "E465D2B7-4F1B-0585-8776-D9829A24A91F";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3028,7 +765,7 @@ createNode parentConstraint -n "width_thigh_r_parentConstraint3" -p "|HumanArmat
 	setAttr ".rst" -type "double3" -7.9437874676805694e-05 0.00084710153290641242 -0.00018205525705869676 ;
 	setAttr ".rsrr" -type "double3" -3.0415685614572043e-06 1.6808669442659455e-06 -1.5708102409927497e-06 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "width_thigh_r_scaleConstraint3" -p "|HumanArmature1|hips|thigh_r|width_thigh_r";
+createNode scaleConstraint -n "width_thigh_r_scaleConstraint3" -p "width_thigh_r";
 	rename -uid "0733409F-4D00-17EA-FF2E-41BFAFC41EA2";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3045,7 +782,7 @@ createNode scaleConstraint -n "width_thigh_r_scaleConstraint3" -p "|HumanArmatur
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 99.999683166215462 99.999982474411723 99.99964890594066 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "thigh_r_parentConstraint2" -p "|HumanArmature1|hips|thigh_r";
+createNode parentConstraint -n "thigh_r_parentConstraint2" -p "thigh_r";
 	rename -uid "DD0FA2CD-41B5-48CD-33EF-5684B0DEA070";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "thigh_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3068,7 +805,7 @@ createNode parentConstraint -n "thigh_r_parentConstraint2" -p "|HumanArmature1|h
 	setAttr ".rst" -type "double3" -0.00096565065561289261 -0.00029315082887550024 3.2030622529104766e-05 ;
 	setAttr ".rsrr" -type "double3" 172.17041015625 0.072758346796035128 -7.4067835807800311 ;
 	setAttr -k on ".w0";
-createNode joint -n "spine" -p "|HumanArmature1|hips";
+createNode joint -n "spine" -p "hips";
 	rename -uid "F5321D12-4C1B-450C-3AB3-FD8631AF9BB5";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3080,7 +817,7 @@ createNode joint -n "spine" -p "|HumanArmature1|hips";
 		 4.0957305001542679e-05 3.8020301015705154 97.052725712194786 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "chest" -p "|HumanArmature1|hips|spine";
+createNode joint -n "chest" -p "spine";
 	rename -uid "7FE86FA0-4A50-5EC2-9B11-0BA02098273A";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3093,7 +830,7 @@ createNode joint -n "chest" -p "|HumanArmature1|hips|spine";
 		 5.7957318338888535e-05 4.8304831126180261 110.78137294130065 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "neck" -p "|HumanArmature1|hips|spine|chest";
+createNode joint -n "neck" -p "chest";
 	rename -uid "00E03DA2-43B1-DBED-A4A3-398F5F6F8A5C";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3106,7 +843,7 @@ createNode joint -n "neck" -p "|HumanArmature1|hips|spine|chest";
 		 -0.0058185217576714396 3.3222624679011119 124.50485939570571 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "head" -p "|HumanArmature1|hips|spine|chest|neck";
+createNode joint -n "head" -p "neck";
 	rename -uid "8F00AF93-40A0-0507-AB0C-2BA14E0BBA89";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3120,7 +857,7 @@ createNode joint -n "head" -p "|HumanArmature1|hips|spine|chest|neck";
 		 0.0023992778012183538 3.728970209772164 132.98651278572018 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "head_parentConstraint1" -p "|HumanArmature1|hips|spine|chest|neck|head";
+createNode parentConstraint -n "head_parentConstraint1" -p "head";
 	rename -uid "6B1BEF20-4CFE-AFFC-1683-89970658D6FA";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "headW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3143,7 +880,7 @@ createNode parentConstraint -n "head_parentConstraint1" -p "|HumanArmature1|hips
 	setAttr ".rst" -type "double3" 6.4659695599069559e-12 0.00084914470371953103 1.9832384970386308e-11 ;
 	setAttr ".rsrr" -type "double3" -2.4802152611271406 -0.77465374876981286 0.00016906233010867142 ;
 	setAttr -k on ".w0";
-createNode joint -n "muscle_neck" -p "|HumanArmature1|hips|spine|chest|neck";
+createNode joint -n "muscle_neck" -p "neck";
 	rename -uid "5AA465BA-4C20-F50A-EFE4-F8AA16C398AB";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3155,7 +892,7 @@ createNode joint -n "muscle_neck" -p "|HumanArmature1|hips|spine|chest|neck";
 		 -0.007531328025602092 3.9875474686215302 126.55158089525244 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "muscle_neck_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|neck|muscle_neck";
+createNode parentConstraint -n "muscle_neck_parentConstraint3" -p "muscle_neck";
 	rename -uid "937B70E7-4E6C-01EE-3069-7BA3B8CDBCAE";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_neckW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3179,7 +916,7 @@ createNode parentConstraint -n "muscle_neck_parentConstraint3" -p "|HumanArmatur
 	setAttr ".rsrr" -type "double3" -5.3344176521322627e-06 -2.6465700357819854e-21 
 		4.7726856534159106e-22 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "muscle_neck_scaleConstraint4" -p "|HumanArmature1|hips|spine|chest|neck|muscle_neck";
+createNode scaleConstraint -n "muscle_neck_scaleConstraint4" -p "muscle_neck";
 	rename -uid "A9F879AB-434C-6514-3209-4FA009EBAAA3";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_neckW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3196,7 +933,7 @@ createNode scaleConstraint -n "muscle_neck_scaleConstraint4" -p "|HumanArmature1
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000003 99.999994080562885 100.00001187989947 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "neck_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|neck";
+createNode parentConstraint -n "neck_parentConstraint2" -p "neck";
 	rename -uid "CEE18D3F-4CEC-3CB4-392B-4CB92B393783";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "neckW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3219,7 +956,7 @@ createNode parentConstraint -n "neck_parentConstraint2" -p "|HumanArmature1|hips
 	setAttr ".rst" -type "double3" 9.1162883312252453e-12 0.0013796459481822509 -8.1899937248719474e-10 ;
 	setAttr ".rsrr" -type "double3" 8.6869807088407356 0.76190771487544007 0.1164077803226547 ;
 	setAttr -k on ".w0";
-createNode joint -n "shoulder_r" -p "|HumanArmature1|hips|spine|chest";
+createNode joint -n "shoulder_r" -p "chest";
 	rename -uid "3C210878-48F3-9171-8CB8-ACB052842B4B";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3232,7 +969,7 @@ createNode joint -n "shoulder_r" -p "|HumanArmature1|hips|spine|chest";
 		 3.0042842325927217 3.4220329364303859 119.74563033403338 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "upper_arm_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r";
+createNode joint -n "upper_arm_r" -p "shoulder_r";
 	rename -uid "9079D1D5-4E41-881D-E38A-E897C94181E3";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3245,7 +982,7 @@ createNode joint -n "upper_arm_r" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 14.366586534340579 3.4218445632451098 119.74561572544744 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "forearm_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r";
+createNode joint -n "forearm_r" -p "upper_arm_r";
 	rename -uid "C7DA5F57-464D-D5B8-91C0-4C8AFAC77583";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3258,7 +995,7 @@ createNode joint -n "forearm_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|
 		 33.913955387442584 1.4469082383952625 119.15075113325709 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "hand_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r";
+createNode joint -n "hand_r" -p "forearm_r";
 	rename -uid "B58BD708-4F01-9EBF-CEE0-0DBD0B477038";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3271,7 +1008,7 @@ createNode joint -n "hand_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upp
 		 57.467453847701705 3.4287978456788455 118.55582884970664 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
+createNode joint -n "c_thumb1_r" -p "hand_r";
 	rename -uid "AED18233-472C-67C0-FEB9-CD864ADC5396";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3283,7 +1020,7 @@ createNode joint -n "c_thumb1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r
 		 59.648552657466858 7.9904083084560478 115.57796855824706 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r";
+createNode joint -n "c_thumb2_r" -p "c_thumb1_r";
 	rename -uid "D9EEAB9C-4FE3-2EF0-230D-35BE8F6B53C2";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3295,7 +1032,7 @@ createNode joint -n "c_thumb2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r
 		 63.833223427097266 12.838356702168202 113.36361153877991 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r";
+createNode joint -n "c_thumb3_r" -p "c_thumb2_r";
 	rename -uid "A07235FB-4E28-100C-13FA-31ABAE01AB57";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3308,7 +1045,7 @@ createNode joint -n "c_thumb3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r
 		 67.082361499408549 13.382973489896269 112.31234884043499 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_thumb3_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r";
+createNode parentConstraint -n "c_thumb3_r_parentConstraint2" -p "c_thumb3_r";
 	rename -uid "37CCB12C-4DBE-B9CE-4139-E29F1150B467";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb3_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3327,11 +1064,11 @@ createNode parentConstraint -n "c_thumb3_r_parentConstraint2" -p "|HumanArmature
 		3.4406536912712227e-06 ;
 	setAttr ".tg[0].tor" -type "double3" 2.7592544476132592e-05 4.9710518772387776e-05 
 		1.4178650955852556e-05 ;
-	setAttr ".lr" -type "double3" 19.150172378069623 9.0650332586844478 -6.2461556663558504 ;
+	setAttr ".lr" -type "double3" 19.150172378069623 9.0650332586844478 -6.2461556663558513 ;
 	setAttr ".rst" -type "double3" -5.2154064400511402e-10 0.00034581296145916096 -7.4505805969238283e-11 ;
 	setAttr ".rsrr" -type "double3" 19.150175094604496 9.0650329589843732 -6.2461547851562518 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_thumb2_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r";
+createNode parentConstraint -n "c_thumb2_r_parentConstraint2" -p "c_thumb2_r";
 	rename -uid "CDAC3047-4C16-B031-CF96-A0BA84771449";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb2_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3354,7 +1091,7 @@ createNode parentConstraint -n "c_thumb2_r_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -1.7508864402770997e-09 0.00067762419581413275 1.4901161138336507e-10 ;
 	setAttr ".rsrr" -type "double3" -38.934867858886733 -14.006959915161131 9.3615951538085973 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_thumb1_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r";
+createNode parentConstraint -n "c_thumb1_r_parentConstraint2" -p "c_thumb1_r";
 	rename -uid "4359F593-4589-8588-FD82-84A31B800815";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb1_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3377,7 +1114,7 @@ createNode parentConstraint -n "c_thumb1_r_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -0.00043030280619859646 0.00027325475588440895 -0.00029069352895021215 ;
 	setAttr ".rsrr" -type "double3" -73.158416748046818 -71.191215515136719 114.99560546874994 ;
 	setAttr -k on ".w0";
-createNode joint -n "c_ring1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
+createNode joint -n "c_ring1_r" -p "hand_r";
 	rename -uid "744E1CA6-4028-A7D4-DE1B-E7B176AF7650";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3390,7 +1127,7 @@ createNode joint -n "c_ring1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|
 		 65.928090144936533 0.53109643007368668 118.99875266532263 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_ring2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r";
+createNode joint -n "c_ring2_r" -p "c_ring1_r";
 	rename -uid "130ADE03-4060-E266-B359-57B8AA29352E";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3402,7 +1139,7 @@ createNode joint -n "c_ring2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|
 		 70.337349524053977 0.49773466625346785 117.92015289098572 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_ring3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r";
+createNode joint -n "c_ring3_r" -p "c_ring2_r";
 	rename -uid "1CD8DEBD-4084-46A5-AE86-D3AAE1FCEEC9";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3414,7 +1151,7 @@ createNode joint -n "c_ring3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|
 		 72.333347723087527 0.44508575699883168 115.63155794654854 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_ring3_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r";
+createNode parentConstraint -n "c_ring3_r_parentConstraint2" -p "c_ring3_r";
 	rename -uid "2112663E-4CE9-77B7-AAE6-DD81A7CECC3C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring3_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3437,7 +1174,7 @@ createNode parentConstraint -n "c_ring3_r_parentConstraint2" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" 4.6566132980846445e-12 0.00030371779575943838 1.2514647318440097e-10 ;
 	setAttr ".rsrr" -type "double3" -13.0111484527588 -21.301656723022457 8.7448663711547852 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_ring2_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r";
+createNode parentConstraint -n "c_ring2_r_parentConstraint2" -p "c_ring2_r";
 	rename -uid "DC0C57AC-46D9-F6D7-34DC-A9849B7D4072";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring2_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3460,7 +1197,7 @@ createNode parentConstraint -n "c_ring2_r_parentConstraint2" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" -7.9162418564759917e-11 0.00045393891632557139 -6.5570929352887217e-10 ;
 	setAttr ".rsrr" -type "double3" -35.19210052490233 3.0042951107025142 -0.66526287794113137 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_ring1_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r";
+createNode parentConstraint -n "c_ring1_r_parentConstraint2" -p "c_ring1_r";
 	rename -uid "C8257E39-438D-7E4B-58E2-99A520518123";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring1_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3483,7 +1220,7 @@ createNode parentConstraint -n "c_ring1_r_parentConstraint2" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" 0.00037961149340967262 0.0008163353492792525 0.00012623733084856647 ;
 	setAttr ".rsrr" -type "double3" -12.282837515707682 -3.0349221881839377 -5.8653911330036088 ;
 	setAttr -k on ".w0";
-createNode joint -n "c_middle1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
+createNode joint -n "c_middle1_r" -p "hand_r";
 	rename -uid "83743F24-4EEF-6884-D0BF-FFB1FD078350";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3496,7 +1233,7 @@ createNode joint -n "c_middle1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 66.946616907986467 5.7147826671805788 119.42550664545328 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_middle2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r";
+createNode joint -n "c_middle2_r" -p "c_middle1_r";
 	rename -uid "2BF9680B-47D6-D259-3B10-AB8DD763E3ED";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3508,7 +1245,7 @@ createNode joint -n "c_middle2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 71.25621568249143 5.8215403460362918 118.86508920566291 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_middle3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r";
+createNode joint -n "c_middle3_r" -p "c_middle2_r";
 	rename -uid "167C669C-411B-4544-E25B-C38B4A57A219";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3521,7 +1258,7 @@ createNode joint -n "c_middle3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 73.876975230029672 5.8600490262149707 116.8647413122461 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_middle3_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r";
+createNode parentConstraint -n "c_middle3_r_parentConstraint2" -p "c_middle3_r";
 	rename -uid "2F3997A1-4BA6-8A9A-2275-29A8DCA0A18C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle3_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3544,7 +1281,7 @@ createNode parentConstraint -n "c_middle3_r_parentConstraint2" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" 1.8626451492309571e-10 0.00032971583306789788 -5.0291418807191233e-10 ;
 	setAttr ".rsrr" -type "double3" -19.624893188476566 -7.8420748710632306 3.8938612937927246 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_middle2_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r";
+createNode parentConstraint -n "c_middle2_r_parentConstraint2" -p "c_middle2_r";
 	rename -uid "054E6CFF-4C56-F21F-D3E9-B5BED8A70D6F";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle2_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3567,7 +1304,7 @@ createNode parentConstraint -n "c_middle2_r_parentConstraint2" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" 2.9802322443206463e-10 0.0004347194731235504 -2.4214386940002442e-10 ;
 	setAttr ".rsrr" -type "double3" -29.721397399902347 -2.1510231494903578 5.2761635780334508 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_middle1_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r";
+createNode parentConstraint -n "c_middle1_r_parentConstraint2" -p "c_middle1_r";
 	rename -uid "C16EF6F7-4114-3F06-9744-9C84F93BA6CF";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle1_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3590,7 +1327,7 @@ createNode parentConstraint -n "c_middle1_r_parentConstraint2" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" -0.00012728382963103976 0.00095293949855945412 5.3451241929514115e-05 ;
 	setAttr ".rsrr" -type "double3" -5.9772806729674537 -7.7997795703921868 -3.885312135201608 ;
 	setAttr -k on ".w0";
-createNode joint -n "c_index1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
+createNode joint -n "c_index1_r" -p "hand_r";
 	rename -uid "EEC30CCF-49E8-6BD0-2437-719D33121DAD";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3603,7 +1340,7 @@ createNode joint -n "c_index1_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r
 		 66.017443178407845 10.411664373318478 119.466727090452 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_index2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r";
+createNode joint -n "c_index2_r" -p "c_index1_r";
 	rename -uid "D8A1C49C-4A90-A790-881D-34B77EFAAABE";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3614,7 +1351,7 @@ createNode joint -n "c_index2_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r
 		 70.795050336597185 10.431709148020257 119.11684894836225 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_index3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r";
+createNode joint -n "c_index3_r" -p "c_index2_r";
 	rename -uid "5A44AD18-451A-86D0-7927-FA9A884E2CDD";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3627,7 +1364,7 @@ createNode joint -n "c_index3_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r
 		 74.215465215605263 10.285378717181956 115.31997480137687 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_index3_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r";
+createNode parentConstraint -n "c_index3_r_parentConstraint2" -p "c_index3_r";
 	rename -uid "9BE69F7D-4B71-35F7-4CBD-9DA6D9EA6BA3";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index3_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3646,11 +1383,11 @@ createNode parentConstraint -n "c_index3_r_parentConstraint2" -p "|HumanArmature
 		-8.1774220205943493e-07 ;
 	setAttr ".tg[0].tor" -type "double3" -5.1365847746760439e-05 -2.2887623176850841e-05 
 		-3.0498582921541893e-05 ;
-	setAttr ".lr" -type "double3" -9.2688497448277722 2.127447984273378 1.0205804843760735 ;
+	setAttr ".lr" -type "double3" -9.268849744827774 2.127447984273378 1.0205804843760735 ;
 	setAttr ".rst" -type "double3" 1.4901161193847657e-10 0.00051124267280101723 -1.3969838597027718e-09 ;
 	setAttr ".rsrr" -type "double3" -9.2688455581665021 2.1274485588073739 1.0205807685852049 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_index2_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r";
+createNode parentConstraint -n "c_index2_r_parentConstraint2" -p "c_index2_r";
 	rename -uid "663C8004-4608-EDB3-903A-28B7D66D355E";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index2_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3673,7 +1410,7 @@ createNode parentConstraint -n "c_index2_r_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" 6.9849197259497232e-12 0.00047904435545206072 1.1874363492481167e-10 ;
 	setAttr ".rsrr" -type "double3" -44.521884918212905 -9.1481781005859411 7.3082027435302752 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_index1_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r";
+createNode parentConstraint -n "c_index1_r_parentConstraint2" -p "c_index1_r";
 	rename -uid "98355525-41A2-E114-4C0B-42A1CD405819";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index1_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3696,7 +1433,7 @@ createNode parentConstraint -n "c_index1_r_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -0.00059781916387494332 0.00096780450960370359 0.00014081928946480416 ;
 	setAttr ".rsrr" -type "double3" -2.7066808787995962 -0.79141783466432369 -5.8463767776229751 ;
 	setAttr -k on ".w0";
-createNode joint -n "hold_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
+createNode joint -n "hold_r" -p "hand_r";
 	rename -uid "BA97F59C-4CC7-9C6A-D536-5482753012AF";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3709,7 +1446,7 @@ createNode joint -n "hold_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upp
 		 65.609092398888578 4.9398662572126266 116.83640866844607 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "hold_r_parentConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r";
+createNode parentConstraint -n "hold_r_parentConstraint1" -p "hold_r";
 	rename -uid "1E912D9B-48CD-2E00-D819-DFBE8C9E9BB2";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hold_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3732,7 +1469,7 @@ createNode parentConstraint -n "hold_r_parentConstraint1" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" -6.3287876546382969e-05 0.00082984223961830026 -0.00015038823708892092 ;
 	setAttr ".rsrr" -type "double3" -89.82999226584738 -1.4813180869791363 83.86381519565208 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "hand_r_parentConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r";
+createNode parentConstraint -n "hand_r_parentConstraint1" -p "hand_r";
 	rename -uid "F2B6B48E-44A0-0E70-23C8-8481697FCF32";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hand_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3751,11 +1488,11 @@ createNode parentConstraint -n "hand_r_parentConstraint1" -p "|HumanArmature1|hi
 		2.6916349995076415e-07 ;
 	setAttr ".tg[0].tor" -type "double3" -1.1553877302370318e-05 -7.0610169646973325e-06 
 		1.7468674161158738e-05 ;
-	setAttr ".lr" -type "double3" -84.993780541137653 75.018666339170863 -88.858422522898081 ;
+	setAttr ".lr" -type "double3" -84.993780541137653 75.018666339170863 -88.858422522898096 ;
 	setAttr ".rst" -type "double3" 3.0966475383920057e-10 0.0023644219338893858 -1.8626451492309571e-11 ;
 	setAttr ".rsrr" -type "double3" -34.439586639404403 92.341018676757798 -34.413295745849609 ;
 	setAttr -k on ".w0";
-createNode joint -n "forearm_twist_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r";
+createNode joint -n "forearm_twist_r" -p "forearm_r";
 	rename -uid "74D622E2-4C1E-8C9D-46E7-019648E7910E";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3767,7 +1504,7 @@ createNode joint -n "forearm_twist_r" -p "|HumanArmature1|hips|spine|chest|shoul
 		 46.712022488869636 2.523179804152984 118.82914386929023 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "forearm_twist_r_parentConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r";
+createNode parentConstraint -n "forearm_twist_r_parentConstraint1" -p "forearm_twist_r";
 	rename -uid "3E083E8C-4C45-0897-5FE0-18AA6FE5C7AE";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3790,7 +1527,7 @@ createNode parentConstraint -n "forearm_twist_r_parentConstraint1" -p "|HumanArm
 	setAttr ".rst" -type "double3" 1.6285659512282891e-07 0.0012847268581390381 -6.6561624407629467e-08 ;
 	setAttr ".rsrr" -type "double3" -0.0021832410711795096 -0.14136098325252525 0.018575297668576223 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "forearm_twist_r_scaleConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r";
+createNode scaleConstraint -n "forearm_twist_r_scaleConstraint1" -p "forearm_twist_r";
 	rename -uid "309F9D1F-4649-D7EA-D669-3896C6792CC0";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3807,7 +1544,7 @@ createNode scaleConstraint -n "forearm_twist_r_scaleConstraint1" -p "|HumanArmat
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 99.99998794792306 99.999982108219527 99.999982260139504 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "forearm_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r";
+createNode parentConstraint -n "forearm_r_parentConstraint2" -p "forearm_r";
 	rename -uid "56E27FFC-4251-5A1E-EAC9-69AF7FDAEC91";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3830,7 +1567,7 @@ createNode parentConstraint -n "forearm_r_parentConstraint2" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" 2.1476807887665928e-09 0.0019655886292457578 -1.7462298395470865e-11 ;
 	setAttr ".rsrr" -type "double3" 10.555855751037598 0.1267195791006088 -0.67932349443435658 ;
 	setAttr -k on ".w0";
-createNode joint -n "bicep_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r";
+createNode joint -n "bicep_r" -p "upper_arm_r";
 	rename -uid "5BBC8E26-4AE5-EAE8-DBAF-4CAD261FC6A7";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3842,7 +1579,7 @@ createNode joint -n "bicep_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r|up
 		 17.21135350883419 3.1219520568863692 119.85530951909057 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "bicep_r_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r";
+createNode parentConstraint -n "bicep_r_parentConstraint4" -p "bicep_r";
 	rename -uid "6088A05A-4C4E-6F08-ABFF-B98CAB0E6FDB";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3865,7 +1602,7 @@ createNode parentConstraint -n "bicep_r_parentConstraint4" -p "|HumanArmature1|h
 	setAttr ".rst" -type "double3" 1.9557831983141315e-05 0.00028558727708680301 -2.0413329858315169e-06 ;
 	setAttr ".rsrr" -type "double3" 0.011125257088734018 -5.9045331363225661e-06 0.303770721263949 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "bicep_r_scaleConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r";
+createNode scaleConstraint -n "bicep_r_scaleConstraint4" -p "bicep_r";
 	rename -uid "E3629104-4040-77B9-A5C1-6C9D018AE215";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3882,7 +1619,7 @@ createNode scaleConstraint -n "bicep_r_scaleConstraint4" -p "|HumanArmature1|hip
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000001 100.00000596046374 100.00000596046381 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "upper_arm_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r";
+createNode parentConstraint -n "upper_arm_r_parentConstraint2" -p "upper_arm_r";
 	rename -uid "F23DF5F5-4550-6CE7-F18B-5E9EF2B25871";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "upper_arm_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3901,11 +1638,11 @@ createNode parentConstraint -n "upper_arm_r_parentConstraint2" -p "|HumanArmatur
 		-2.9398335088526296e-08 ;
 	setAttr ".tg[0].tor" -type "double3" 1.7840565036136341e-05 -8.5156740480062957e-07 
 		1.1997355604678354e-05 ;
-	setAttr ".lr" -type "double3" 62.154360005807426 22.931931642240706 52.666460366925982 ;
+	setAttr ".lr" -type "double3" 62.154360005807426 22.931931642240706 52.666460366925989 ;
 	setAttr ".rst" -type "double3" -6.0312288635566704e-11 0.0011362302303314208 1.0138786166180581e-09 ;
 	setAttr ".rsrr" -type "double3" -33.664303982004242 94.170731299579373 -28.031079477511131 ;
 	setAttr -k on ".w0";
-createNode joint -n "muscle_shoulder_r" -p "|HumanArmature1|hips|spine|chest|shoulder_r";
+createNode joint -n "muscle_shoulder_r" -p "shoulder_r";
 	rename -uid "E9FB880B-4AA0-CBE3-06B9-B0A21B90EF6E";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3917,7 +1654,7 @@ createNode joint -n "muscle_shoulder_r" -p "|HumanArmature1|hips|spine|chest|sho
 		 4.1093280685408136 3.4220136000768191 121.32521194187089 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "muscle_shoulder_r_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r";
+createNode parentConstraint -n "muscle_shoulder_r_parentConstraint4" -p "muscle_shoulder_r";
 	rename -uid "DCBD7E00-4803-768B-9516-C8A03308A468";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_rW0" -dv 1 -min 0 
 		-at "double";
@@ -3941,7 +1678,7 @@ createNode parentConstraint -n "muscle_shoulder_r_parentConstraint4" -p "|HumanA
 	setAttr ".rst" -type "double3" -1.6050509878882958e-05 0.00011050429462962739 -0.00015714148120084869 ;
 	setAttr ".rsrr" -type "double3" -1.5274636816003575e-05 1.7842061476815093e-05 3.1668990924944947e-06 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "muscle_shoulder_r_scaleConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r";
+createNode scaleConstraint -n "muscle_shoulder_r_scaleConstraint4" -p "muscle_shoulder_r";
 	rename -uid "F650BA7A-4F6D-0E20-9C65-EBA1181C66B6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_rW0" -dv 1 -min 0 
 		-at "double";
@@ -3959,7 +1696,7 @@ createNode scaleConstraint -n "muscle_shoulder_r_scaleConstraint4" -p "|HumanArm
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000001 100.00000596046374 100.00000596046381 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "shoulder_r_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_r";
+createNode parentConstraint -n "shoulder_r_parentConstraint2" -p "shoulder_r";
 	rename -uid "BA9BEEB2-4282-0B33-D2D6-159153AC3513";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "shoulder_rW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -3982,7 +1719,7 @@ createNode parentConstraint -n "shoulder_r_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -0.00030042500535217031 0.00090524555063316477 -3.9325245593768711e-05 ;
 	setAttr ".rsrr" -type "double3" 1.4933899558253818e-05 -101.77232907206694 89.999982013905992 ;
 	setAttr -k on ".w0";
-createNode joint -n "shoulder_l" -p "|HumanArmature1|hips|spine|chest";
+createNode joint -n "shoulder_l" -p "chest";
 	rename -uid "379717E6-4DBB-4BDA-E7D6-9CA4BCDF8F7F";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -3996,7 +1733,7 @@ createNode joint -n "shoulder_l" -p "|HumanArmature1|hips|spine|chest";
 		 -3.0042148822918109 3.4221322613700371 119.7456303338561 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "upper_arm_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l";
+createNode joint -n "upper_arm_l" -p "shoulder_l";
 	rename -uid "143670F2-4D21-A00C-F1D2-C09D284476F1";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4008,7 +1745,7 @@ createNode joint -n "upper_arm_l" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 -14.366515016684458 3.4223205121307347 119.74562814437323 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "forearm_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l";
+createNode joint -n "forearm_l" -p "upper_arm_l";
 	rename -uid "9B29DF13-4FF0-3E20-EE16-67BE0BDFD73C";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4021,7 +1758,7 @@ createNode joint -n "forearm_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|
 		 -33.915255059835282 1.4460757126454373 119.20229085811677 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "hand_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l";
+createNode joint -n "hand_l" -p "forearm_l";
 	rename -uid "A0275ECB-4290-D0B5-1062-8CB8543D3BE4";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4033,7 +1770,7 @@ createNode joint -n "hand_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upp
 		 -57.467652466718079 3.4295707679664309 118.55568965569903 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
+createNode joint -n "c_thumb1_l" -p "hand_l";
 	rename -uid "5DFD52BA-4514-2A75-4995-A1B69CA02324";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4046,7 +1783,7 @@ createNode joint -n "c_thumb1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l
 		 -59.652457614789562 8.0605124765313363 115.68967061958539 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l";
+createNode joint -n "c_thumb2_l" -p "c_thumb1_l";
 	rename -uid "D2D61BB9-4C6B-F8EC-AABD-B7BBA5E9607E";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4058,7 +1795,7 @@ createNode joint -n "c_thumb2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l
 		 -63.83309696842116 12.839181782562253 113.36347592680247 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_thumb3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l";
+createNode joint -n "c_thumb3_l" -p "c_thumb2_l";
 	rename -uid "C46139BB-45C5-B8B1-E7BE-3D8EDB16A7FB";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4070,7 +1807,7 @@ createNode joint -n "c_thumb3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l
 		 -67.082233658539479 13.383826809347054 112.31220409433462 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_thumb3_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l";
+createNode parentConstraint -n "c_thumb3_l_parentConstraint3" -p "c_thumb3_l";
 	rename -uid "0D7B529F-4898-634A-B60F-0A87E9359892";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb3_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4093,7 +1830,7 @@ createNode parentConstraint -n "c_thumb3_l_parentConstraint3" -p "|HumanArmature
 	setAttr ".rst" -type "double3" 4.8428774102049484e-10 0.0003458135575056065 -2.2351741679749184e-10 ;
 	setAttr ".rsrr" -type "double3" 19.150173187255852 -9.0650348663330078 6.2461562156677273 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_thumb2_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l";
+createNode parentConstraint -n "c_thumb2_l_parentConstraint3" -p "c_thumb2_l";
 	rename -uid "8C22DDBC-45AC-5D94-EE7F-20A489CE5BFF";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb2_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4116,7 +1853,7 @@ createNode parentConstraint -n "c_thumb2_l_parentConstraint3" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -1.714909785954788e-08 0.00067761643667300995 3.0158272629199344e-09 ;
 	setAttr ".rsrr" -type "double3" -38.934857376637737 14.006954155080171 -9.3615887532582729 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_thumb1_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l";
+createNode parentConstraint -n "c_thumb1_l_parentConstraint3" -p "c_thumb1_l";
 	rename -uid "4ABE47D3-4A5B-9AF8-51DC-9EBB85E26940";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb1_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4139,7 +1876,7 @@ createNode parentConstraint -n "c_thumb1_l_parentConstraint3" -p "|HumanArmature
 	setAttr ".rst" -type "double3" 0.00043030280619859695 0.00027325475588440895 -0.00029069235548376818 ;
 	setAttr ".rsrr" -type "double3" -73.15843963623044 71.191215515136733 -114.99563598632811 ;
 	setAttr -k on ".w0";
-createNode joint -n "c_ring1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
+createNode joint -n "c_ring1_l" -p "hand_l";
 	rename -uid "2002E931-4FE1-E58B-1FA5-2092A295B736";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4152,7 +1889,7 @@ createNode joint -n "c_ring1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|
 		 -66.017527404679214 0.50003852379439273 119.5365301940719 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_ring2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l";
+createNode joint -n "c_ring2_l" -p "c_ring1_l";
 	rename -uid "87C09DE5-4AEB-B934-A3B5-D9AA278769FA";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4164,7 +1901,7 @@ createNode joint -n "c_ring2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|
 		 -70.33710763964784 0.49745818520241425 117.91950960947618 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_ring3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l";
+createNode joint -n "c_ring3_l" -p "c_ring2_l";
 	rename -uid "BA7EAEDA-4E49-0DC7-1D34-D58E52636706";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4177,7 +1914,7 @@ createNode joint -n "c_ring3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|
 		 -72.333110488706609 0.44479683567631134 115.63090329113804 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_ring3_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l";
+createNode parentConstraint -n "c_ring3_l_parentConstraint3" -p "c_ring3_l";
 	rename -uid "4BB115C7-4D38-3413-13C4-A1A728FFCE6B";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring3_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4200,7 +1937,7 @@ createNode parentConstraint -n "c_ring3_l_parentConstraint3" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" 9.3132264660650279e-12 0.00030371898785233609 7.2126567829400298e-10 ;
 	setAttr ".rsrr" -type "double3" -13.01115131378174 21.301656723022468 -8.7448682785034197 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_ring2_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l";
+createNode parentConstraint -n "c_ring2_l_parentConstraint3" -p "c_ring2_l";
 	rename -uid "1690B9DE-454D-AED4-405F-59B57A8E3697";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring2_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4223,7 +1960,7 @@ createNode parentConstraint -n "c_ring2_l_parentConstraint3" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" -2.0549112712819897e-09 0.00045393077593293532 2.8541881751387165e-08 ;
 	setAttr ".rsrr" -type "double3" -35.192090993830092 -3.0042961644950466 0.66525999521936319 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_ring1_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l";
+createNode parentConstraint -n "c_ring1_l_parentConstraint3" -p "c_ring1_l";
 	rename -uid "10401DA8-4086-7273-E200-7BAA4CB0FE3E";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring1_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4246,7 +1983,7 @@ createNode parentConstraint -n "c_ring1_l_parentConstraint3" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" -0.0003796112164855005 0.00081633567810058822 0.00012624273076653926 ;
 	setAttr ".rsrr" -type "double3" -12.28281307220459 3.0348885059356694 5.865380764007571 ;
 	setAttr -k on ".w0";
-createNode joint -n "c_middle1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
+createNode joint -n "c_middle1_l" -p "hand_l";
 	rename -uid "C5204C49-403A-F980-58B2-1C94601D602A";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4259,7 +1996,7 @@ createNode joint -n "c_middle1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 -66.818714837529399 5.7001473742727038 118.89850177941319 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_middle2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l";
+createNode joint -n "c_middle2_l" -p "c_middle1_l";
 	rename -uid "71E8872B-4F2F-28EF-29DB-8EA215CA4143";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4271,7 +2008,7 @@ createNode joint -n "c_middle2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 -71.256015654115885 5.8212626410846688 118.86445459766273 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_middle3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l";
+createNode joint -n "c_middle3_l" -p "c_middle2_l";
 	rename -uid "E873D927-47F3-F1F5-3132-63908AEB9034";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4284,7 +2021,7 @@ createNode joint -n "c_middle3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_
 		 -73.87677661597985 5.859758953679628 116.86410361183368 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_middle3_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l";
+createNode parentConstraint -n "c_middle3_l_parentConstraint3" -p "c_middle3_l";
 	rename -uid "1EDA7E57-40B7-7DCC-CB93-8DBD49E7C6C1";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle3_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4307,7 +2044,7 @@ createNode parentConstraint -n "c_middle3_l_parentConstraint3" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" 7.450580541412677e-11 0.00032971613109111705 4.0046870708465576e-10 ;
 	setAttr ".rsrr" -type "double3" -19.62489318847657 7.8420748710632324 -3.8938610553741482 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_middle2_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l";
+createNode parentConstraint -n "c_middle2_l_parentConstraint3" -p "c_middle2_l";
 	rename -uid "9FD26562-4394-C8F5-E015-79ADD545953E";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle2_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4330,7 +2067,7 @@ createNode parentConstraint -n "c_middle2_l_parentConstraint3" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" -3.5191714239934945e-09 0.0004347222844016374 2.2915435036185982e-08 ;
 	setAttr ".rsrr" -type "double3" -29.721381656159746 2.1510230794850407 -5.2761630435578528 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_middle1_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l";
+createNode parentConstraint -n "c_middle1_l_parentConstraint3" -p "c_middle1_l";
 	rename -uid "BF5CB9B9-4169-E88D-83B4-66B0A48F91DD";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle1_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4353,7 +2090,7 @@ createNode parentConstraint -n "c_middle1_l_parentConstraint3" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" 0.00012728390283882603 0.00095294035971164816 5.3457003086809786e-05 ;
 	setAttr ".rsrr" -type "double3" -5.9772548675537127 7.7997455596923881 3.885305404663085 ;
 	setAttr -k on ".w0";
-createNode joint -n "c_index1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
+createNode joint -n "c_index1_l" -p "hand_l";
 	rename -uid "9BE6839A-4574-24FA-73A1-3A82FC44AA42";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4366,7 +2103,7 @@ createNode joint -n "c_index1_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l
 		 -66.489533224919953 10.374817461236493 119.88077335787681 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_index2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l";
+createNode joint -n "c_index2_l" -p "c_index1_l";
 	rename -uid "31234720-43FE-775F-3047-2EABC3351D15";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4377,7 +2114,7 @@ createNode joint -n "c_index2_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l
 		 -70.794896311556883 10.431427483634257 119.11621300043181 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode joint -n "c_index3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l";
+createNode joint -n "c_index3_l" -p "c_index2_l";
 	rename -uid "DA720518-4360-3803-3E23-1C80D8C7378B";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4390,7 +2127,7 @@ createNode joint -n "c_index3_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l
 		 -74.215302766956952 10.285079259157124 115.3193401603495 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "c_index3_l_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l";
+createNode parentConstraint -n "c_index3_l_parentConstraint2" -p "c_index3_l";
 	rename -uid "AF560562-405F-76C5-5152-54A4886D0980";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index3_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4413,7 +2150,7 @@ createNode parentConstraint -n "c_index3_l_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -7.4505806524349796e-11 0.00051124207675456892 -2.0489096863585133e-10 ;
 	setAttr ".rsrr" -type "double3" -9.2688446044921857 -2.1274478435516353 -1.0205804109573369 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_index2_l_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l";
+createNode parentConstraint -n "c_index2_l_parentConstraint2" -p "c_index2_l";
 	rename -uid "9A0E6F06-4BFD-5CBF-DDB1-74BFF4D8254F";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index2_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4436,7 +2173,7 @@ createNode parentConstraint -n "c_index2_l_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" -7.9986137449528095e-10 0.00047904591299793078 5.5019261413491448e-09 ;
 	setAttr ".rsrr" -type "double3" -44.521866418803917 9.1481792931962893 -7.3082038189073719 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "c_index1_l_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l";
+createNode parentConstraint -n "c_index1_l_parentConstraint2" -p "c_index1_l";
 	rename -uid "85E42ED4-4971-6C69-525A-93BFFFF31484";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index1_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4459,7 +2196,7 @@ createNode parentConstraint -n "c_index1_l_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" 0.00059781923890113789 0.00096780523657798883 0.00014082530513406243 ;
 	setAttr ".rsrr" -type "double3" -2.706656932830811 0.79138404130935647 5.8463659286499023 ;
 	setAttr -k on ".w0";
-createNode joint -n "hold_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
+createNode joint -n "hold_l" -p "hand_l";
 	rename -uid "1BF3C524-41FB-5069-2355-248303DBDA54";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4472,7 +2209,7 @@ createNode joint -n "hold_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upp
 		 -65.610629211960969 4.97607777238282 116.87454457913242 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "hold_l_parentConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l";
+createNode parentConstraint -n "hold_l_parentConstraint1" -p "hold_l";
 	rename -uid "FBCB39F6-4FC9-1123-68B2-48AE5EA311BD";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hold_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4495,7 +2232,7 @@ createNode parentConstraint -n "hold_l_parentConstraint1" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" 6.3287881202995914e-05 0.00082984223961830145 -0.00015038821846246274 ;
 	setAttr ".rsrr" -type "double3" -89.829999096036545 1.4813129643372562 -83.863822025841287 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "hand_l_parentConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l";
+createNode parentConstraint -n "hand_l_parentConstraint1" -p "hand_l";
 	rename -uid "25582743-4DF4-E24D-A13F-44B881FD3C60";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hand_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4518,7 +2255,7 @@ createNode parentConstraint -n "hand_l_parentConstraint1" -p "|HumanArmature1|hi
 	setAttr ".rst" -type "double3" 7.5438036395425452e-09 0.0023644157111635876 9.8899328296320192e-10 ;
 	setAttr ".rsrr" -type "double3" -34.4396408186049 -92.341019701733913 34.413350103389618 ;
 	setAttr -k on ".w0";
-createNode joint -n "forearm_twist_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l";
+createNode joint -n "forearm_twist_l" -p "forearm_l";
 	rename -uid "947E3834-454E-0A95-42FD-83B4C407251D";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4530,7 +2267,7 @@ createNode joint -n "forearm_twist_l" -p "|HumanArmature1|hips|spine|chest|shoul
 		 -46.712673713645898 2.5224433270596145 118.8560558006935 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "forearm_twist_l_parentConstraint3" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l";
+createNode parentConstraint -n "forearm_twist_l_parentConstraint3" -p "forearm_twist_l";
 	rename -uid "0FE83CB7-4524-6338-BD14-E8848796389D";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4553,7 +2290,7 @@ createNode parentConstraint -n "forearm_twist_l_parentConstraint3" -p "|HumanArm
 	setAttr ".rst" -type "double3" -1.2378604588025866e-07 0.0012847231752089077 -6.4984247140492674e-08 ;
 	setAttr ".rsrr" -type "double3" -0.0021833320683405568 0.14136108756065366 -0.018575310707092296 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "forearm_twist_l_scaleConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l";
+createNode scaleConstraint -n "forearm_twist_l_scaleConstraint1" -p "forearm_twist_l";
 	rename -uid "3BD6BB28-43BC-531B-A680-16AAE233A4B7";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4570,7 +2307,7 @@ createNode scaleConstraint -n "forearm_twist_l_scaleConstraint1" -p "|HumanArmat
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 99.999981941791106 99.99997608999378 99.999970442641825 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "forearm_l_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l";
+createNode parentConstraint -n "forearm_l_parentConstraint2" -p "forearm_l";
 	rename -uid "A2DB412F-48DF-6A2A-E4A1-2384CDFD04EF";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4593,7 +2330,7 @@ createNode parentConstraint -n "forearm_l_parentConstraint2" -p "|HumanArmature1
 	setAttr ".rst" -type "double3" 1.1299333761982666e-08 0.0019655889951178617 5.3126282210241853e-10 ;
 	setAttr ".rsrr" -type "double3" 10.555856326541196 -0.12671993009558985 0.67932357700569934 ;
 	setAttr -k on ".w0";
-createNode joint -n "bicep_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l";
+createNode joint -n "bicep_l" -p "upper_arm_l";
 	rename -uid "1FE6C206-4358-0D63-C1A8-F7BEAE7A1B74";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4605,7 +2342,7 @@ createNode joint -n "bicep_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l|up
 		 -17.211461038435978 3.1270751852161345 119.86304810097526 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "bicep_l_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l";
+createNode parentConstraint -n "bicep_l_parentConstraint4" -p "bicep_l";
 	rename -uid "1C870919-4343-6018-1D4E-59A74C9A3856";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4624,11 +2361,11 @@ createNode parentConstraint -n "bicep_l_parentConstraint4" -p "|HumanArmature1|h
 		2.3586268117714583e-07 ;
 	setAttr ".tg[0].tor" -type "double3" 0.00011540080900484863 3.4312717803692231e-05 
 		5.3810951058578847e-06 ;
-	setAttr ".lr" -type "double3" 0.011603278169010495 5.2808650684912479e-05 -0.30375521875589351 ;
+	setAttr ".lr" -type "double3" 0.011603278169010495 5.2808650684912486e-05 -0.30375521875589351 ;
 	setAttr ".rst" -type "double3" -1.9486071764642788e-05 0.00028558236619920338 -2.0357764604034962e-06 ;
 	setAttr ".rsrr" -type "double3" 0.011601408633498098 5.2751439846817609e-05 -0.30375085044465439 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "bicep_l_scaleConstraint1" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l";
+createNode scaleConstraint -n "bicep_l_scaleConstraint1" -p "bicep_l";
 	rename -uid "E693B00E-473D-5CAF-3FA6-86AB125A6297";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4645,7 +2382,7 @@ createNode scaleConstraint -n "bicep_l_scaleConstraint1" -p "|HumanArmature1|hip
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 99.999994039535508 100.00000589892842 100.00000006153397 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "upper_arm_l_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l";
+createNode parentConstraint -n "upper_arm_l_parentConstraint2" -p "upper_arm_l";
 	rename -uid "EDC603D1-49B5-84AC-DD96-38BA15DEA579";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "upper_arm_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4664,11 +2401,11 @@ createNode parentConstraint -n "upper_arm_l_parentConstraint2" -p "|HumanArmatur
 		-9.1119435754460915e-08 ;
 	setAttr ".tg[0].tor" -type "double3" 0.000115749957844852 3.3605230351315585e-05 
 		4.0615023022998413e-06 ;
-	setAttr ".lr" -type "double3" 137.5712618871282 -42.338164323396093 -95.731117443943504 ;
+	setAttr ".lr" -type "double3" 137.57126188712823 -42.338164323396093 -95.731117443943504 ;
 	setAttr ".rst" -type "double3" 2.0267633335513402e-09 0.0011362359929075866 -3.4701658284674862e-08 ;
 	setAttr ".rsrr" -type "double3" -33.665317677894848 -94.170706722590964 28.032131117061017 ;
 	setAttr -k on ".w0";
-createNode joint -n "muscle_shoulder_l" -p "|HumanArmature1|hips|spine|chest|shoulder_l";
+createNode joint -n "muscle_shoulder_l" -p "shoulder_l";
 	rename -uid "D30A15B6-4E33-DFCB-5390-A4AA6675C4E9";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4680,7 +2417,7 @@ createNode joint -n "muscle_shoulder_l" -p "|HumanArmature1|hips|spine|chest|sho
 		 -4.1092584764222604 3.4221508137261973 121.32522365249672 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "muscle_shoulder_l_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l";
+createNode parentConstraint -n "muscle_shoulder_l_parentConstraint4" -p "muscle_shoulder_l";
 	rename -uid "69308EBE-44FC-EC89-1EDD-9EA8644804C4";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_lW0" -dv 1 -min 0 
 		-at "double";
@@ -4704,7 +2441,7 @@ createNode parentConstraint -n "muscle_shoulder_l_parentConstraint4" -p "|HumanA
 	setAttr ".rst" -type "double3" 1.6050784864911487e-05 0.00011050431944435543 -0.00015714176690446503 ;
 	setAttr ".rsrr" -type "double3" 3.2482493620753878e-06 -7.8102248089778296e-06 -7.400447922133174e-21 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "muscle_shoulder_l_scaleConstraint4" -p "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l";
+createNode scaleConstraint -n "muscle_shoulder_l_scaleConstraint4" -p "muscle_shoulder_l";
 	rename -uid "0B89BF4D-491D-DF18-D7A3-E18567E56C4B";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_lW0" -dv 1 -min 0 
 		-at "double";
@@ -4722,7 +2459,7 @@ createNode scaleConstraint -n "muscle_shoulder_l_scaleConstraint4" -p "|HumanArm
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 99.999994039535522 100.00000589892845 100.00000006153395 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "shoulder_l_parentConstraint2" -p "|HumanArmature1|hips|spine|chest|shoulder_l";
+createNode parentConstraint -n "shoulder_l_parentConstraint2" -p "shoulder_l";
 	rename -uid "EBBDF091-4408-8C2C-00BF-70969B857623";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "shoulder_lW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4745,7 +2482,7 @@ createNode parentConstraint -n "shoulder_l_parentConstraint2" -p "|HumanArmature
 	setAttr ".rst" -type "double3" 0.00030042498072730734 0.00090524554657648085 -3.9325218958990161e-05 ;
 	setAttr ".rsrr" -type "double3" 1.4933929506356698e-05 101.77230858149942 -89.999954693142271 ;
 	setAttr -k on ".w0";
-createNode joint -n "breast_L" -p "|HumanArmature1|hips|spine|chest";
+createNode joint -n "breast_L" -p "chest";
 	rename -uid "77371FDF-43AF-4BCB-B42B-788F6D470D9B";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4757,7 +2494,7 @@ createNode joint -n "breast_L" -p "|HumanArmature1|hips|spine|chest";
 		 -8.291011474965849 13.032632545355733 110.65811361738271 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "breast_L_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|breast_L";
+createNode parentConstraint -n "breast_L_parentConstraint4" -p "breast_L";
 	rename -uid "D6BFF442-4BC0-D080-15A4-CABBB4B6DF1F";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_LW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4780,7 +2517,7 @@ createNode parentConstraint -n "breast_L_parentConstraint4" -p "|HumanArmature1|
 	setAttr ".rst" -type "double3" 0.00082911996736242098 -6.8993363912421839e-05 0.0008173869550002536 ;
 	setAttr ".rsrr" -type "double3" 73.193070848871415 4.2507860229030072 -95.702921657076544 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "breast_L_scaleConstraint4" -p "|HumanArmature1|hips|spine|chest|breast_L";
+createNode scaleConstraint -n "breast_L_scaleConstraint4" -p "breast_L";
 	rename -uid "5B29AE61-452F-CEF3-669F-0CA33063941D";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_LW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4797,7 +2534,7 @@ createNode scaleConstraint -n "breast_L_scaleConstraint4" -p "|HumanArmature1|hi
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100 100.00001192092893 100.00001192092898 ;
 	setAttr -k on ".w0";
-createNode joint -n "breast_R" -p "|HumanArmature1|hips|spine|chest";
+createNode joint -n "breast_R" -p "chest";
 	rename -uid "9C418AF6-40E2-1F98-02B2-699BAB90A14B";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4809,7 +2546,7 @@ createNode joint -n "breast_R" -p "|HumanArmature1|hips|spine|chest";
 		 8.2913985602859981 13.032358425838607 110.65811361787195 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "breast_R_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|breast_R";
+createNode parentConstraint -n "breast_R_parentConstraint4" -p "breast_R";
 	rename -uid "97923980-4166-34FC-3C82-52B16979FC9C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_RW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4832,7 +2569,7 @@ createNode parentConstraint -n "breast_R_parentConstraint4" -p "|HumanArmature1|
 	setAttr ".rst" -type "double3" -0.00082912103638916961 -6.8993227912408369e-05 0.00081738621360603338 ;
 	setAttr ".rsrr" -type "double3" 73.192985577662952 -4.2507834901732062 95.702918622115902 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "breast_R_scaleConstraint3" -p "|HumanArmature1|hips|spine|chest|breast_R";
+createNode scaleConstraint -n "breast_R_scaleConstraint3" -p "breast_R";
 	rename -uid "C89890B1-4AB1-CB5A-2271-599C35F8AD3C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_RW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4849,7 +2586,7 @@ createNode scaleConstraint -n "breast_R_scaleConstraint3" -p "|HumanArmature1|hi
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100 100.00001192092893 100.00001192092898 ;
 	setAttr -k on ".w0";
-createNode joint -n "muscle_chest" -p "|HumanArmature1|hips|spine|chest";
+createNode joint -n "muscle_chest" -p "chest";
 	rename -uid "4BAA8B49-4AC1-8949-4F43-BF82A1738DA3";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4861,7 +2598,7 @@ createNode joint -n "muscle_chest" -p "|HumanArmature1|hips|spine|chest";
 		 9.9652751022476482e-05 7.3530183140255385 113.61020911153685 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode scaleConstraint -n "muscle_chest_scaleConstraint3" -p "|HumanArmature1|hips|spine|chest|muscle_chest";
+createNode scaleConstraint -n "muscle_chest_scaleConstraint3" -p "muscle_chest";
 	rename -uid "41AF7F6E-483C-C8EB-78F8-3589A41B7C74";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_chestW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4878,7 +2615,7 @@ createNode scaleConstraint -n "muscle_chest_scaleConstraint3" -p "|HumanArmature
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100 100.00001192092891 100.00001192092898 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "muscle_chest_parentConstraint4" -p "|HumanArmature1|hips|spine|chest|muscle_chest";
+createNode parentConstraint -n "muscle_chest_parentConstraint4" -p "muscle_chest";
 	rename -uid "CE6A5479-4110-726F-777F-9BB00191F9DC";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_chestW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4901,7 +2638,7 @@ createNode parentConstraint -n "muscle_chest_parentConstraint4" -p "|HumanArmatu
 	setAttr ".rst" -type "double3" -2.92803362568804e-10 0.00026476776509523294 0.00027120270919946316 ;
 	setAttr ".rsrr" -type "double3" 2.2004230635006135e-06 -3.9269614781407165e-05 -4.3419662639080347e-23 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "chest_parentConstraint2" -p "|HumanArmature1|hips|spine|chest";
+createNode parentConstraint -n "chest_parentConstraint2" -p "chest";
 	rename -uid "F67F465E-449B-41CC-0698-16B5EC9C0A2C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "chestW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4920,11 +2657,11 @@ createNode parentConstraint -n "chest_parentConstraint2" -p "|HumanArmature1|hip
 		-1.2103829760690133e-09 ;
 	setAttr ".tg[0].tor" -type "double3" -3.0070712150439752e-07 2.5561319082999462e-05 
 		-4.5503055528032732e-07 ;
-	setAttr ".lr" -type "double3" 10.270874665968824 -21.929281167009936 -5.2682159012578147 ;
+	setAttr ".lr" -type "double3" 10.270874665968824 -21.92928116700994 -5.2682159012578147 ;
 	setAttr ".rst" -type "double3" 1.0479361517814252e-11 0.0013744131928114444 7.9233323027616552e-12 ;
 	setAttr ".rsrr" -type "double3" -9.1622638971130694 0.3783111238121683 4.4923477302136313e-07 ;
 	setAttr -k on ".w0";
-createNode joint -n "torso_width" -p "|HumanArmature1|hips|spine";
+createNode joint -n "torso_width" -p "spine";
 	rename -uid "F148D2FB-44AD-4E17-F209-A58F2B46F2EE";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -4936,7 +2673,7 @@ createNode joint -n "torso_width" -p "|HumanArmature1|hips|spine";
 		 7.6214771765849049e-05 5.9347392501903311 100.67188233343362 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "torso_width_parentConstraint3" -p "|HumanArmature1|hips|spine|torso_width";
+createNode parentConstraint -n "torso_width_parentConstraint3" -p "torso_width";
 	rename -uid "DEDE6070-4286-630C-A5A6-C9969801BA6C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "torso_widthW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4958,7 +2695,7 @@ createNode parentConstraint -n "torso_width_parentConstraint3" -p "|HumanArmatur
 	setAttr ".rst" -type "double3" 1.1856914557203424e-06 0.00037975089815803112 0.0001795962626791141 ;
 	setAttr ".rsrr" -type "double3" -1.8246357616866089 0.00017702135769198451 0.012049993992997429 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "torso_width_scaleConstraint2" -p "|HumanArmature1|hips|spine|torso_width";
+createNode scaleConstraint -n "torso_width_scaleConstraint2" -p "torso_width";
 	rename -uid "0F2C25CA-4576-C1C0-F1C3-CA88D8668227";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "torso_widthW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4975,7 +2712,7 @@ createNode scaleConstraint -n "torso_width_scaleConstraint2" -p "|HumanArmature1
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999986 100.00000000000001 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "spine_parentConstraint2" -p "|HumanArmature1|hips|spine";
+createNode parentConstraint -n "spine_parentConstraint2" -p "spine";
 	rename -uid "84C7DF9E-450D-877F-3D80-9F9FA895C10A";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "spineW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -4998,7 +2735,7 @@ createNode parentConstraint -n "spine_parentConstraint2" -p "|HumanArmature1|hip
 	setAttr ".rst" -type "double3" -1.1975206192157202e-08 0.001328465306270391 8.4825245620746834e-06 ;
 	setAttr ".rsrr" -type "double3" -2.3105411221597749 -0.37703152451252442 0.015251672588440153 ;
 	setAttr -k on ".w0";
-createNode joint -n "belly" -p "|HumanArmature1|hips";
+createNode joint -n "belly" -p "hips";
 	rename -uid "5FED26DA-4E95-B850-44F0-FA86AC7D5CC6";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -5010,7 +2747,7 @@ createNode joint -n "belly" -p "|HumanArmature1|hips";
 		 3.0686922756562388e-11 8.0454029376298859 91.742360206285909 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "belly_parentConstraint3" -p "|HumanArmature1|hips|belly";
+createNode parentConstraint -n "belly_parentConstraint3" -p "belly";
 	rename -uid "971FB2A0-47CD-F4FC-744B-7485375BBB0F";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bellyW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5033,7 +2770,7 @@ createNode parentConstraint -n "belly_parentConstraint3" -p "|HumanArmature1|hip
 	setAttr ".rst" -type "double3" -2.261470334488232e-09 0.00085115006747209958 0.0005964354389763869 ;
 	setAttr ".rsrr" -type "double3" 84.467849988725121 0.00084781208983635253 -0.0010192733291924708 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "belly_scaleConstraint4" -p "|HumanArmature1|hips|belly";
+createNode scaleConstraint -n "belly_scaleConstraint4" -p "belly";
 	rename -uid "18CAD60D-42CB-964A-C78F-88BC5923BBB0";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bellyW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5050,7 +2787,7 @@ createNode scaleConstraint -n "belly_scaleConstraint4" -p "|HumanArmature1|hips|
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
 	setAttr -k on ".w0";
-createNode joint -n "waist" -p "|HumanArmature1|hips";
+createNode joint -n "waist" -p "hips";
 	rename -uid "587A0C64-4B40-A1D4-F46C-1F827B578CEB";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -5062,7 +2799,7 @@ createNode joint -n "waist" -p "|HumanArmature1|hips";
 		 2.0762269785639265e-11 3.2323370357955206 89.77359935879673 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "waist_parentConstraint3" -p "|HumanArmature1|hips|waist";
+createNode parentConstraint -n "waist_parentConstraint3" -p "waist";
 	rename -uid "D2769CC1-4B2D-339B-0589-C08121446F05";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "waistW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5085,7 +2822,7 @@ createNode parentConstraint -n "waist_parentConstraint3" -p "|HumanArmature1|hip
 	setAttr ".rst" -type "double3" -9.8432626193036461e-09 0.00060879091708483711 0.00013635048396359458 ;
 	setAttr ".rsrr" -type "double3" -0.24517938182331289 -4.503166586136928e-06 9.5402675528465501e-06 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "waist_scaleConstraint4" -p "|HumanArmature1|hips|waist";
+createNode scaleConstraint -n "waist_scaleConstraint4" -p "waist";
 	rename -uid "2E937CC2-4D6E-AD8E-DAB5-3D9F1C8EABA1";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "waistW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5102,7 +2839,7 @@ createNode scaleConstraint -n "waist_scaleConstraint4" -p "|HumanArmature1|hips|
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
 	setAttr -k on ".w0";
-createNode joint -n "butt" -p "|HumanArmature1|hips";
+createNode joint -n "butt" -p "hips";
 	rename -uid "B89E95FF-46EA-33F3-4B71-6EA953D506BA";
 	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
@@ -5114,7 +2851,7 @@ createNode joint -n "butt" -p "|HumanArmature1|hips";
 		 1.4335960410014786e-11 1.534729090957657 84.679244765450861 1;
 	setAttr ".radi" 0.03;
 	setAttr ".fbxID" 5;
-createNode parentConstraint -n "butt_parentConstraint3" -p "|HumanArmature1|hips|butt";
+createNode parentConstraint -n "butt_parentConstraint3" -p "butt";
 	rename -uid "3D13E855-44B3-EDF9-89F4-908299C7856A";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "buttW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5136,7 +2873,7 @@ createNode parentConstraint -n "butt_parentConstraint3" -p "|HumanArmature1|hips
 	setAttr ".rst" -type "double3" -1.4264857596160661e-07 8.5362477356730763e-05 1.6491685776632433e-05 ;
 	setAttr ".rsrr" -type "double3" -114.59872991276096 -0.061591378773012524 0.0048893237123083574 ;
 	setAttr -k on ".w0";
-createNode scaleConstraint -n "butt_scaleConstraint2" -p "|HumanArmature1|hips|butt";
+createNode scaleConstraint -n "butt_scaleConstraint2" -p "butt";
 	rename -uid "86FD8DC8-4D07-7882-6603-428F36774F60";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "buttW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5153,7 +2890,7 @@ createNode scaleConstraint -n "butt_scaleConstraint2" -p "|HumanArmature1|hips|b
 	setAttr ".erp" yes;
 	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "hips_parentConstraint4" -p "|HumanArmature1|hips";
+createNode parentConstraint -n "hips_parentConstraint4" -p "hips";
 	rename -uid "9543720D-4C0D-4E89-4AA9-7E9AF6348F20";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hipsW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5176,7 +2913,7 @@ createNode parentConstraint -n "hips_parentConstraint4" -p "|HumanArmature1|hips
 	setAttr ".rst" -type "double3" 1.1294686221496873e-06 0.83845494787149866 0.012882795943033359 ;
 	setAttr ".rsrr" -type "double3" 5.5321426406765948 -0.00094713468504365838 -9.1734837054701716e-05 ;
 	setAttr -k on ".w0";
-createNode parentConstraint -n "HumanArmature_parentConstraint2" -p "HumanArmature1";
+createNode parentConstraint -n "HumanArmature_parentConstraint2" -p "HumanArmature";
 	rename -uid "CDC44A83-4EDC-287A-4D04-5C94A87E13BD";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "MainRoot_CTRW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
@@ -5220,29 +2957,29 @@ createNode locator -n "locatorShape2" -p "locator2";
 	rename -uid "B56CC375-4AC9-004F-C312-BDB9FBD7280E";
 	setAttr -k off ".v";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DFBFB544-4AB4-F6F7-4019-3792C25A3D60";
+	rename -uid "8C424B10-4D69-3F12-9012-19A7720B08A3";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5A6C95F0-4C79-2341-FC52-BAA7FF3A2852";
+	rename -uid "50514AEF-44B0-B387-73CC-16BCFC24F503";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 3 0 1 2 ;
 	setAttr -s 3 ".bspr";
 	setAttr -s 3 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B5342B09-41EC-9673-2822-30B5BEBF8C9D";
+	rename -uid "0984C0E8-456A-ED12-43C0-4D969DAD6679";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "906BA62E-408F-62E8-F9BF-E19448253232";
+	rename -uid "F585523A-4C02-604E-EF99-18BD83939597";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1C980215-4AF2-9FB3-F4CE-079DC29488F7";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "06A5A4DD-4359-D2CC-25E0-269D13EF2D1F";
+	rename -uid "C7D3963A-4B80-7F5E-7741-9ABD5DCE19DA";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D51D0F5A-4E3E-E3F2-0C5A-15BDB5A57242";
 	setAttr ".g" yes;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6DA466EC-489B-7328-F8D0-FC9C011BF537";
-	setAttr ".b" -type "string" "playbackOptions -min 20 -max 40 -ast -30 -aet 250 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 60 -ast -30 -aet 250 ";
 	setAttr ".st" 6;
 createNode animLayer -n "BaseAnimation";
 	rename -uid "B0241C8F-4634-7C09-63A6-D790F4C02970";
@@ -6354,16 +4091,16 @@ createNode animLayer -n "UpperBody";
 	setAttr ".ovrd" yes;
 createNode animBlendNodeAdditiveRotation -n "ShoulderFK_CTR_L_rotate_UpperBody";
 	rename -uid "3143F583-4D8E-2497-2B42-5D90DFB23C38";
-	setAttr ".o" -type "double3" -2.3616257080374954 -15.017515332813961 2.8992667891946593 ;
+	setAttr ".o" -type "double3" -3.2198469928982059 -14.013147652116757 2.7425862179745848 ;
 createNode animBlendNodeAdditiveRotation -n "UpperArmFK_CTR_L_rotate_UpperBody";
 	rename -uid "CD7B3898-4F74-7642-0643-0BB04FC22F3A";
-	setAttr ".o" -type "double3" -25.186090478384884 24.491552929135274 -78.228966577034868 ;
+	setAttr ".o" -type "double3" -25.72245882549063 25.3915728721215 -78.880608570959353 ;
 createNode animBlendNodeAdditiveRotation -n "LowerArmFK_CTR_L_rotate_UpperBody";
 	rename -uid "94FF202C-4E95-0992-DC45-FAA47E665B86";
-	setAttr ".o" -type "double3" 10.66922083949048 -1.6877358650247509 2.0490266324210289 ;
+	setAttr ".o" -type "double3" 9.680605333257212 -0.91014059652289481 1.8353319089234033 ;
 createNode animBlendNodeAdditiveRotation -n "HandFK_CTR_L_rotate_UpperBody";
 	rename -uid "6A6F2783-414F-B51B-A85A-27BB3B310112";
-	setAttr ".o" -type "double3" -16.823700782274237 15.49447653276896 -15.169266792082214 ;
+	setAttr ".o" -type "double3" -16.497619212907459 13.16979055851956 -12.659283904722997 ;
 createNode animBlendNodeAdditiveRotation -n "ShoulderFK_CTR_R_rotate_UpperBody";
 	rename -uid "796A362B-450E-F59D-582D-59AF80510DFA";
 createNode animBlendNodeAdditiveRotation -n "UpperArmFK_CTR_R_rotate_UpperBody";
@@ -7270,20 +5007,18 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ils" yes;
 	setAttr ".ilu" yes;
 	setAttr ".eti" 2;
-	setAttr ".esi" 3;
+	setAttr ".esi" 2;
 	setAttr ".ssn" -type "string" "Human_AnimRig:Export";
 	setAttr ".mto" yes;
 	setAttr -s 3 ".ac";
 	setAttr ".ac[0].acn" -type "string" "RunNorth_Start";
 	setAttr ".ac[0].ace" 20;
-	setAttr ".ac[0].eac" no;
 	setAttr ".ac[1].acn" -type "string" "RunNorth";
 	setAttr ".ac[1].acs" 20;
 	setAttr ".ac[1].ace" 40;
 	setAttr ".ac[2].acn" -type "string" "RunNorth_End";
 	setAttr ".ac[2].acs" 40;
 	setAttr ".ac[2].ace" 60;
-	setAttr ".ac[2].eac" no;
 	setAttr ".ic" no;
 	setAttr ".ebm" yes;
 	setAttr ".fv" -type "string" "FBX201800";
@@ -9957,7 +7692,7 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_AssistantRN" 1
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature.instObjGroups" 
 		"Human_AnimRig:Export.dagSetMembers" "-na"
-		"Human_AnimRigRN" 1450
+		"Human_AnimRigRN" 1413
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR" 
 		"rotatePivot" " -type \"double3\" 1.0461846977705136e-06 0.83898162841796875 0.012919144630432129"
 		
@@ -10014,15 +7749,9 @@ createNode reference -n "Human_AnimRigRN";
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R|Human_AnimRig:HandSpace_MSC_R" 
 		"rotateX" " -av"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L" 
-		"SpaceSwitchHand" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L" 
-		"SpaceSwitchElbow" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L" 
 		"Fist" " -k 1"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L" 
-		"Relaxed" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L" 
-		"Weapon" " -av -k 1 0"
+		"Weapon" " -k 1 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:hold_CTR_L" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:hold_CTR_L" 
@@ -10042,13 +7771,7 @@ createNode reference -n "Human_AnimRigRN";
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R" 
 		"SpaceSwitchHand" " -k 1"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R" 
-		"SpaceSwitchElbow" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R" 
 		"Fist" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R" 
-		"Relaxed" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R" 
-		"Weapon" " -k 1"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:hold_CTR_R" 
@@ -10067,78 +7790,16 @@ createNode reference -n "Human_AnimRigRN";
 		"rotateX" " -av"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR" 
 		"SpaceSwitchObject" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR" 
-		"WeaponSelection" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L" 
-		"SpaceSwitchLeg" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L" 
-		"SpaceSwitchKnee" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R" 
-		"SpaceSwitchLeg" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R" 
-		"SpaceSwitchKnee" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR" 
-		"Muscularity" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR" 
-		"Feminine" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR" 
-		"Breasts" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR" 
-		"Obese" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR" 
-		"Fingers" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR" 
-		"Skeleton" " -k 1"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Happy_L" " -k 1"
+		"ViewTarget" " -k 1 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Happy_R" " -k 1"
+		"UpDownL" " -k 1 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"ConcernedL" " -k 1"
+		"UpDownR" " -k 1 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"ConcernedR" " -k 1"
+		"LeftRightL" " -k 1 0"
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Angry_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Angry_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Bored_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Bored_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Tight_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Tight_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Closed_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Closed_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Dead_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Dead_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"ViewTarget" " -av -k 1 0"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"UpDownL" " -av -k 1 0"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"UpDownR" " -av -k 1 0"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"LeftRightL" " -av -k 1 0"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"LeftRightR" " -av -k 1 0"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Vertical_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Vertical_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Horizontal_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Horizontal_R" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Tilt_L" " -k 1"
-		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM" 
-		"Tilt_R" " -k 1"
+		"LeftRightR" " -k 1 0"
 		2 "Human_AnimRig:HMND_AnimRig" "referenceMapping" (" -type \"characterMapping\" 697 \"Human_AnimRig:Head_CTR_ANIM.Tilt_R\" 0 1 \"Human_AnimRig:Head_CTR_ANIM.Tilt_L\" 0 2 \"Human_AnimRig:Head_CTR_ANIM.Horizontal_R\" 0 3 \"Human_AnimRig:Head_CTR_ANIM.Horizontal_L\" 0 4 \"Human_AnimRig:Head_CTR_ANIM.Vertical_R\" 0 5 \"Human_AnimRig:Head_CTR_ANIM.Vertical_L\" 0 6 \"Human_AnimRig:Head_CTR_ANIM.LeftRightR\" 0 7 \"Human_AnimRig:Head_CTR_ANIM.LeftRightL\" 0 8 \"Human_AnimRig:Head_CTR_ANIM.UpDownR\" 0 9 \"Human_AnimRig:Head_CTR_ANIM.UpDownL\" 0 10 \"Human_AnimRig:Head_CTR_ANIM.ViewTarget\" 0 11 \"Human_AnimRig:Head_CTR_ANIM.Dead_R\" 0 12 \"Human_AnimRig:Head_CTR_ANIM.Dead_L\" 0 13 \"Human_AnimRig:Head_CTR_ANIM.Closed_R\" 0 14 \"Human_AnimRig:Head_CTR_ANIM.Closed_L\" 0 15 \"Human_AnimRig:Head_CTR_ANIM.Tight_R\" 0 16 \"Human_AnimRig:Head_CTR_ANIM.Tight_L\" 0 17 \"Human_AnimRig:Head_CTR_ANIM.Bored_R\" 0 18 \"Human_AnimRig:Head_CTR_ANIM.Bored_L\" 0 19 \"Human_AnimRig:Head_CTR_ANIM.Angry_R\" 0 20 \"Human_AnimRig:Head_CTR_ANIM.Angry_L\" 0 21 \"Human_AnimRig:Head_CTR_ANIM.ConcernedR\" 0 22 \"Human_AnimRig:Head_CTR_ANIM.Co"
 		+ "ncernedL\" 0 23 \"Human_AnimRig:Head_CTR_ANIM.Happy_R\" 0 24 \"Human_AnimRig:Head_CTR_ANIM.Happy_L\" 0 25 \"Human_AnimRig:locator4.scaleZ\" 0 26 \"Human_AnimRig:locator4.scaleY\" 0 27 \"Human_AnimRig:locator4.scaleX\" 0 28 \"Human_AnimRig:locator4.rotateZ\" 2 1 \"Human_AnimRig:locator4.rotateY\" 2 2 \"Human_AnimRig:locator4.rotateX\" 2 3 \"Human_AnimRig:locator4.translateZ\" 1 1 \"Human_AnimRig:locator4.translateY\" 1 2 \"Human_AnimRig:locator4.translateX\" 1 3 \"Human_AnimRig:locator4.visibility\" 0 29 \"Human_AnimRig:Head_CTR.rotateZ\" 2 4 \"Human_AnimRig:Head_CTR.rotateY\" 2 5 \"Human_AnimRig:Head_CTR.rotateX\" 2 6 \"Human_AnimRig:Neck_CTR.rotateZ\" 2 7 \"Human_AnimRig:Neck_CTR.rotateY\" 2 8 \"Human_AnimRig:Neck_CTR.rotateX\" 2 9 \"Human_AnimRig:FeetPlatform_CTR.rotateZ\" 2 10 \"Human_AnimRig:FeetPlatform_CTR.rotateY\" 2 11 \"Human_AnimRig:FeetPlatform_CTR.rotateX\" 2 12 \"Human_AnimRig:FeetPlatform_CTR.translateZ\" 1 4 \"Human_AnimRig:FeetPlatform_CTR.translateY\" 1 5 \"Human_AnimRig:FeetPlatform_CTR.translateX\" 1 6 \"Human_AnimRig:RigSettings_CTR.Finge"
 		+ "rs\" 0 30 \"Human_AnimRig:RigSettings_CTR.Obese\" 0 31 \"Human_AnimRig:RigSettings_CTR.Breasts\" 0 32 \"Human_AnimRig:RigSettings_CTR.Feminine\" 0 33 \"Human_AnimRig:RigSettings_CTR.Muscularity\" 0 34 \"Human_AnimRig:LegIK_MSC_R.ikBlend\" 0 35 \"Human_AnimRig:LegIK_MSC_R.twist\" 2 13 \"Human_AnimRig:LegIK_MSC_R.roll\" 2 14 \"Human_AnimRig:LegIK_MSC_R.offset\" 0 36 \"Human_AnimRig:LegIK_MSC_R.rotateZ\" 2 15 \"Human_AnimRig:LegIK_MSC_R.rotateY\" 2 16 \"Human_AnimRig:LegIK_MSC_R.rotateX\" 2 17 \"Human_AnimRig:LegIK_MSC_R.translateZ\" 1 7 \"Human_AnimRig:LegIK_MSC_R.translateY\" 1 8 \"Human_AnimRig:LegIK_MSC_R.translateX\" 1 9 \"Human_AnimRig:FootRollFoot_R.translateZ\" 1 10 \"Human_AnimRig:FootRollFoot_R.translateY\" 1 11 \"Human_AnimRig:FootRollFoot_R.translateX\" 1 12 \"Human_AnimRig:FootRollToe_R.translateZ\" 1 13 \"Human_AnimRig:FootRollToe_R.translateY\" 1 14 \"Human_AnimRig:FootRollToe_R.translateX\" 1 15 \"Human_AnimRig:FootRollTip_R.translateZ\" 1 16 \"Human_AnimRig:FootRollTip_R.translateY\" 1 17 \"Human_AnimRig:FootRollTip_R.translateX\" 1 18 \"Huma"
@@ -12906,7 +10567,7 @@ createNode animCurveTA -n "HMND_AnimRig_ShoulderFK_CTR_R_rotateY1";
 	rename -uid "725CE965-44AE-B1E2-2A25-1E9BB03E7F25";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  18 2.1270774051739196 20 1.6871192756723918
+	setAttr -s 7 ".ktv[0:6]"  18 2.1270774051739201 20 1.6871192756723918
 		 23 2.8328567445005493 30 5.2352095017208793 33 4.6368090048444905 40 1.6871192756723918
 		 42 2.3781207980910932;
 createNode animCurveTA -n "HMND_AnimRig_ShoulderFK_CTR_R_rotateX1";
@@ -12922,14 +10583,14 @@ createNode animCurveTA -n "HMND_AnimRig_UpperArmFK_CTR_R_rotateZ1";
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  18 45.380377379886518 20 43.180795644976541
 		 23 47.326161222306894 30 62.372302947431827 33 58.226937370101481 40 43.180795644976541
-		 42 45.398480933260267;
+		 42 45.398480933260274;
 createNode animCurveTA -n "HMND_AnimRig_UpperArmFK_CTR_R_rotateY1";
 	rename -uid "5EFF867B-424B-919D-95CC-9FA211E33239";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  18 -2.2689445628051521 20 3.4399143233503087
 		 23 -7.3190889620965711 30 -46.370286072237 33 -35.611282786790113 40 3.4399143233503087
-		 42 -2.3159310556953416;
+		 42 -2.3159310556953421;
 createNode animCurveTA -n "HMND_AnimRig_UpperArmFK_CTR_R_rotateX1";
 	rename -uid "7C9B2881-4F3A-FAAD-A86A-65B88A2D6987";
 	setAttr ".tan" 18;
@@ -14092,8 +11753,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 32;
-	setAttr -av ".unw" 32;
+	setAttr ".o" 20;
+	setAttr -av ".unw" 20;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
@@ -14392,19 +12053,16 @@ connectAttr "Plane_Controls_Move_Y1.o" "Default_PlaneRN.phl[3]";
 connectAttr "Default_PlaneRN.phl[4]" "Camera_pointConstraint1.tg[0].tpm";
 connectAttr "Default_PlaneRN.phl[5]" "Camera_pointConstraint1.tg[0].trp";
 connectAttr "Default_PlaneRN.phl[6]" "Camera_pointConstraint1.tg[0].trt";
-connectAttr "Human_AnimRigRN.phl[1]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].tt"
+connectAttr "Human_AnimRigRN.phl[1]" "HumanArmature_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[2]" "HumanArmature_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[3]" "HumanArmature_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[4]" "HumanArmature_parentConstraint2.tg[0].trp"
 		;
-connectAttr "Human_AnimRigRN.phl[2]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].tr"
+connectAttr "Human_AnimRigRN.phl[5]" "HumanArmature_parentConstraint2.tg[0].trt"
 		;
-connectAttr "Human_AnimRigRN.phl[3]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].ts"
+connectAttr "Human_AnimRigRN.phl[6]" "HumanArmature_parentConstraint2.tg[0].tro"
 		;
-connectAttr "Human_AnimRigRN.phl[4]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[5]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[6]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[7]" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].tpm"
+connectAttr "Human_AnimRigRN.phl[7]" "HumanArmature_parentConstraint2.tg[0].tpm"
 		;
 connectAttr "Hips_CTR_translateX.o" "Human_AnimRigRN.phl[8]";
 connectAttr "Hips_CTR_translateY.o" "Human_AnimRigRN.phl[9]";
@@ -14412,2133 +12070,1254 @@ connectAttr "Hips_CTR_translateZ.o" "Human_AnimRigRN.phl[10]";
 connectAttr "RigSettings_CTR_Skeleton1.o" "Human_AnimRigRN.phl[11]";
 connectAttr "Human_AnimRigRN.phl[12]" "motionTrail2.lp";
 connectAttr "Human_AnimRigRN.phl[13]" "motionTrail2.im";
-connectAttr "Human_AnimRigRN.phl[14]" "motionTrail2HandleShape.tr";
-connectAttr "Human_AnimRigRN.phl[15]" "motionTrail2.so";
-connectAttr "Human_AnimRigRN.phl[16]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[17]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[18]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[19]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[20]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[21]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[22]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[23]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[24]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[25]" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[26]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[27]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[28]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[29]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[30]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[31]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[32]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[33]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[34]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[35]" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[36]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[37]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[38]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[39]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[40]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[41]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[42]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[43]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[44]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[45]" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[46]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[47]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[48]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[49]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[50]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[51]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[52]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[53]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[54]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[55]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[56]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[57]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[58]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[59]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[60]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[61]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[62]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[63]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[64]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[65]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[66]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[67]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[68]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[69]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[70]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[71]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[72]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[73]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[74]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[75]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[76]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[77]" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[78]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[79]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[80]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[81]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[82]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[83]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[84]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[85]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[86]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[87]" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[88]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[89]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[90]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[91]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[92]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[93]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[94]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[95]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[96]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[97]" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[98]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[99]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[100]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[101]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[102]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[103]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[104]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[105]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[106]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[107]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[108]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[109]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[110]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[111]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[112]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[113]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[114]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[115]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[116]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[117]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[118]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[119]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[120]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[121]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[122]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[123]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[124]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[125]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[126]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[127]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[128]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[129]" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[130]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[131]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[132]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[133]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[134]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[135]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[136]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[137]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[138]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[139]" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[140]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[141]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[142]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[143]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[144]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[145]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[146]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[147]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[148]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[149]" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[150]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[151]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[152]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[153]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[154]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[155]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[156]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[157]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[158]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[159]" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[160]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[161]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[162]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[163]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[164]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[165]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[166]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[167]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[168]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[169]" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[170]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[171]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[172]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[173]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[174]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[175]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[176]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[177]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[178]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[179]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[180]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[181]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[182]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[183]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[184]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[185]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[186]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[187]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[188]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[189]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[190]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[191]" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[192]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[193]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[194]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[195]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[196]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[197]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[198]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[199]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[200]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[201]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[202]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[203]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[204]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[205]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[206]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[207]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[208]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[209]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[210]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[211]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[212]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[213]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[214]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[215]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[216]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[217]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[218]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[219]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[220]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[221]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[222]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[223]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[224]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[225]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[226]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[227]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[228]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[229]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[230]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[231]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[232]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[233]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[234]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[235]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[236]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[237]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[238]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[239]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[240]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[241]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[242]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[243]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[244]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[245]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[246]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[247]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[248]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[249]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[250]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[251]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[252]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[253]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[254]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[255]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[256]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[257]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[258]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[259]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[260]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[261]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[262]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[263]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[264]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[265]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[266]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[267]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[268]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[269]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[270]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[271]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[272]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[273]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[274]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[275]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[276]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[277]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[278]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[279]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[280]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[281]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[282]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[283]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[284]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[285]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[286]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[287]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[288]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[289]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[290]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[291]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[292]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[293]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[294]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[295]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[296]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[297]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[298]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[299]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[300]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[301]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[302]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[303]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[304]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[305]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[306]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[307]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[308]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[309]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[310]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[311]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[312]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[313]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[314]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[315]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[316]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[317]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[318]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[319]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[320]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[321]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[322]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[323]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[324]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[325]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[326]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[327]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[328]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[329]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[330]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[331]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[332]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[333]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[334]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[335]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[336]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[337]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[338]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[339]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[340]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[341]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[342]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[343]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[344]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[345]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[346]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[347]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[348]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[349]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[350]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[351]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[352]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[353]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[354]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[355]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[356]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[357]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[358]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[359]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[360]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[361]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[362]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[363]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[364]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[365]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[366]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[367]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[368]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[369]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[370]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[371]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[372]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[373]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[374]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[375]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[376]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[377]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[378]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[379]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[380]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[381]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[382]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[383]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[384]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[385]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[386]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[387]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[388]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[389]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[390]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[391]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[392]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[393]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[394]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[395]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[396]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[397]" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[398]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[399]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[400]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[401]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[402]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[403]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[404]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[405]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[406]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[407]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[408]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[409]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[410]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[411]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[412]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[413]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[414]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[415]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[416]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[417]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[418]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[419]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[420]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[421]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[422]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[423]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[424]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[425]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[426]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[427]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[428]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[429]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[430]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[431]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[432]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[433]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[434]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[435]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[436]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[437]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[438]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[439]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[440]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[441]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[442]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[443]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[444]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[445]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[446]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[447]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[448]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[449]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[450]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[451]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[452]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[453]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[454]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[455]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[456]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[457]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[458]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[459]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[460]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[461]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[462]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[463]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[464]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[465]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[466]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[467]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[468]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[469]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[470]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[471]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[472]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[473]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[474]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[475]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[476]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[477]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[478]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[479]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[480]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[481]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[482]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[483]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[484]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[485]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[486]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[487]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[488]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[489]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[490]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[491]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[492]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[493]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[494]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[495]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[496]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[497]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[498]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[499]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[500]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[501]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[502]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[503]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[504]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[505]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[506]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[507]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[508]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[509]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[510]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[511]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[512]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[513]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[514]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[515]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[516]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[517]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[518]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[519]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[520]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[521]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[522]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[523]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[524]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[525]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[526]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[527]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[528]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[529]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[530]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[531]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[532]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[533]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[534]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[535]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[536]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[537]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[538]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[539]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[540]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[541]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[542]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[543]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[544]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[545]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[546]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[547]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[548]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[549]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[550]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[551]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[552]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[553]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[554]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[555]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[556]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[557]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[558]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[559]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[560]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[561]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[562]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[563]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[564]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[565]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[566]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[567]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[568]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[569]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[570]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[571]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[572]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[573]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[574]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[575]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[576]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[577]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[578]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[579]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[580]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[581]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[582]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[583]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[584]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[585]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[586]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[587]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[588]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[589]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[590]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[591]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[592]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[593]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[594]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[595]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[596]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[597]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[598]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[599]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[600]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[601]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[602]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[603]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[604]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[605]" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[606]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[607]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_scaleConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[608]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[609]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[610]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[611]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[612]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[613]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[614]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[615]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[616]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[617]" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_scaleConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[618]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[619]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[620]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[621]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[622]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[623]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[624]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[625]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[626]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[627]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[628]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[629]" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[630]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[631]" "|HumanArmature1|hips|spine|torso_width|torso_width_scaleConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[632]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[633]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[634]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[635]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[636]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[637]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[638]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[639]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[640]" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[641]" "|HumanArmature1|hips|spine|torso_width|torso_width_scaleConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[642]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[643]" "|HumanArmature1|hips|belly|belly_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[644]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[645]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[646]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[647]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[648]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[649]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[650]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[651]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[652]" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[653]" "|HumanArmature1|hips|belly|belly_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[654]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[655]" "|HumanArmature1|hips|waist|waist_scaleConstraint4.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[656]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[657]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[658]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[659]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[660]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[661]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[662]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[663]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[664]" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[665]" "|HumanArmature1|hips|waist|waist_scaleConstraint4.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[666]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[667]" "|HumanArmature1|hips|butt|butt_scaleConstraint2.tg[0].ts"
-		;
-connectAttr "Human_AnimRigRN.phl[668]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tis"
-		;
-connectAttr "Human_AnimRigRN.phl[669]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tt"
-		;
-connectAttr "Human_AnimRigRN.phl[670]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tr"
-		;
-connectAttr "Human_AnimRigRN.phl[671]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tro"
-		;
-connectAttr "Human_AnimRigRN.phl[672]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].trp"
-		;
-connectAttr "Human_AnimRigRN.phl[673]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].trt"
-		;
-connectAttr "Human_AnimRigRN.phl[674]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tjo"
-		;
-connectAttr "Human_AnimRigRN.phl[675]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tsc"
-		;
-connectAttr "Human_AnimRigRN.phl[676]" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[677]" "|HumanArmature1|hips|butt|butt_scaleConstraint2.tg[0].tpm"
-		;
-connectAttr "Human_AnimRigRN.phl[678]" "HumanArmature1.tx";
-connectAttr "Human_AnimRigRN.phl[679]" "HumanArmature1.ty";
-connectAttr "Human_AnimRigRN.phl[680]" "HumanArmature1.tz";
-connectAttr "Human_AnimRigRN.phl[681]" "HumanArmature1.rx";
-connectAttr "Human_AnimRigRN.phl[682]" "HumanArmature1.ry";
-connectAttr "Human_AnimRigRN.phl[683]" "HumanArmature1.rz";
-connectAttr "Human_AnimRigRN.phl[684]" "|HumanArmature1|hips.tx";
-connectAttr "Human_AnimRigRN.phl[685]" "|HumanArmature1|hips.ty";
-connectAttr "Human_AnimRigRN.phl[686]" "|HumanArmature1|hips.tz";
-connectAttr "Human_AnimRigRN.phl[687]" "|HumanArmature1|hips.rx";
-connectAttr "Human_AnimRigRN.phl[688]" "|HumanArmature1|hips.ry";
-connectAttr "Human_AnimRigRN.phl[689]" "|HumanArmature1|hips.rz";
-connectAttr "Human_AnimRigRN.phl[690]" "|HumanArmature1|hips|butt.tx";
-connectAttr "Human_AnimRigRN.phl[691]" "|HumanArmature1|hips|butt.ty";
-connectAttr "Human_AnimRigRN.phl[692]" "|HumanArmature1|hips|butt.tz";
-connectAttr "Human_AnimRigRN.phl[693]" "|HumanArmature1|hips|butt.rx";
-connectAttr "Human_AnimRigRN.phl[694]" "|HumanArmature1|hips|butt.ry";
-connectAttr "Human_AnimRigRN.phl[695]" "|HumanArmature1|hips|butt.rz";
-connectAttr "Human_AnimRigRN.phl[696]" "|HumanArmature1|hips|butt.sx";
-connectAttr "Human_AnimRigRN.phl[697]" "|HumanArmature1|hips|butt.sy";
-connectAttr "Human_AnimRigRN.phl[698]" "|HumanArmature1|hips|butt.sz";
-connectAttr "Human_AnimRigRN.phl[699]" "|HumanArmature1|hips|waist.tx";
-connectAttr "Human_AnimRigRN.phl[700]" "|HumanArmature1|hips|waist.ty";
-connectAttr "Human_AnimRigRN.phl[701]" "|HumanArmature1|hips|waist.tz";
-connectAttr "Human_AnimRigRN.phl[702]" "|HumanArmature1|hips|waist.rx";
-connectAttr "Human_AnimRigRN.phl[703]" "|HumanArmature1|hips|waist.ry";
-connectAttr "Human_AnimRigRN.phl[704]" "|HumanArmature1|hips|waist.rz";
-connectAttr "Human_AnimRigRN.phl[705]" "|HumanArmature1|hips|waist.sx";
-connectAttr "Human_AnimRigRN.phl[706]" "|HumanArmature1|hips|waist.sy";
-connectAttr "Human_AnimRigRN.phl[707]" "|HumanArmature1|hips|waist.sz";
-connectAttr "Human_AnimRigRN.phl[708]" "|HumanArmature1|hips|belly.tx";
-connectAttr "Human_AnimRigRN.phl[709]" "|HumanArmature1|hips|belly.ty";
-connectAttr "Human_AnimRigRN.phl[710]" "|HumanArmature1|hips|belly.tz";
-connectAttr "Human_AnimRigRN.phl[711]" "|HumanArmature1|hips|belly.rx";
-connectAttr "Human_AnimRigRN.phl[712]" "|HumanArmature1|hips|belly.ry";
-connectAttr "Human_AnimRigRN.phl[713]" "|HumanArmature1|hips|belly.rz";
-connectAttr "Human_AnimRigRN.phl[714]" "|HumanArmature1|hips|belly.sx";
-connectAttr "Human_AnimRigRN.phl[715]" "|HumanArmature1|hips|belly.sy";
-connectAttr "Human_AnimRigRN.phl[716]" "|HumanArmature1|hips|belly.sz";
-connectAttr "Human_AnimRigRN.phl[717]" "|HumanArmature1|hips|spine.tx";
-connectAttr "Human_AnimRigRN.phl[718]" "|HumanArmature1|hips|spine.ty";
-connectAttr "Human_AnimRigRN.phl[719]" "|HumanArmature1|hips|spine.tz";
-connectAttr "Human_AnimRigRN.phl[720]" "|HumanArmature1|hips|spine.rx";
-connectAttr "Human_AnimRigRN.phl[721]" "|HumanArmature1|hips|spine.ry";
-connectAttr "Human_AnimRigRN.phl[722]" "|HumanArmature1|hips|spine.rz";
-connectAttr "Human_AnimRigRN.phl[723]" "|HumanArmature1|hips|spine|torso_width.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[724]" "|HumanArmature1|hips|spine|torso_width.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[725]" "|HumanArmature1|hips|spine|torso_width.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[726]" "|HumanArmature1|hips|spine|torso_width.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[727]" "|HumanArmature1|hips|spine|torso_width.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[728]" "|HumanArmature1|hips|spine|torso_width.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[729]" "|HumanArmature1|hips|spine|torso_width.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[730]" "|HumanArmature1|hips|spine|torso_width.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[731]" "|HumanArmature1|hips|spine|torso_width.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[732]" "|HumanArmature1|hips|spine|chest.tx";
-connectAttr "Human_AnimRigRN.phl[733]" "|HumanArmature1|hips|spine|chest.ty";
-connectAttr "Human_AnimRigRN.phl[734]" "|HumanArmature1|hips|spine|chest.tz";
-connectAttr "Human_AnimRigRN.phl[735]" "|HumanArmature1|hips|spine|chest.rx";
-connectAttr "Human_AnimRigRN.phl[736]" "|HumanArmature1|hips|spine|chest.ry";
-connectAttr "Human_AnimRigRN.phl[737]" "|HumanArmature1|hips|spine|chest.rz";
-connectAttr "Human_AnimRigRN.phl[738]" "|HumanArmature1|hips|spine|chest|muscle_chest.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[739]" "|HumanArmature1|hips|spine|chest|muscle_chest.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[740]" "|HumanArmature1|hips|spine|chest|muscle_chest.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[741]" "|HumanArmature1|hips|spine|chest|muscle_chest.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[742]" "|HumanArmature1|hips|spine|chest|muscle_chest.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[743]" "|HumanArmature1|hips|spine|chest|muscle_chest.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[744]" "|HumanArmature1|hips|spine|chest|muscle_chest.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[745]" "|HumanArmature1|hips|spine|chest|muscle_chest.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[746]" "|HumanArmature1|hips|spine|chest|muscle_chest.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[747]" "|HumanArmature1|hips|spine|chest|breast_R.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[748]" "|HumanArmature1|hips|spine|chest|breast_R.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[749]" "|HumanArmature1|hips|spine|chest|breast_R.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[750]" "|HumanArmature1|hips|spine|chest|breast_R.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[751]" "|HumanArmature1|hips|spine|chest|breast_R.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[752]" "|HumanArmature1|hips|spine|chest|breast_R.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[753]" "|HumanArmature1|hips|spine|chest|breast_R.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[754]" "|HumanArmature1|hips|spine|chest|breast_R.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[755]" "|HumanArmature1|hips|spine|chest|breast_R.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[756]" "|HumanArmature1|hips|spine|chest|breast_L.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[757]" "|HumanArmature1|hips|spine|chest|breast_L.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[758]" "|HumanArmature1|hips|spine|chest|breast_L.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[759]" "|HumanArmature1|hips|spine|chest|breast_L.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[760]" "|HumanArmature1|hips|spine|chest|breast_L.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[761]" "|HumanArmature1|hips|spine|chest|breast_L.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[762]" "|HumanArmature1|hips|spine|chest|breast_L.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[763]" "|HumanArmature1|hips|spine|chest|breast_L.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[764]" "|HumanArmature1|hips|spine|chest|breast_L.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[765]" "|HumanArmature1|hips|spine|chest|shoulder_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[766]" "|HumanArmature1|hips|spine|chest|shoulder_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[767]" "|HumanArmature1|hips|spine|chest|shoulder_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[768]" "|HumanArmature1|hips|spine|chest|shoulder_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[769]" "|HumanArmature1|hips|spine|chest|shoulder_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[770]" "|HumanArmature1|hips|spine|chest|shoulder_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[771]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[772]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[773]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[774]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[775]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[776]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[777]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[778]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[779]" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[780]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[781]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[782]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[783]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[784]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[785]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[786]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[787]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[788]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[789]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[790]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[791]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[792]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[793]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[794]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[795]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[796]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[797]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[798]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[799]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[800]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[801]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[802]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[803]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[804]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[805]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[806]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[807]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[808]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[809]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[810]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[811]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[812]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[813]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[814]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[815]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[816]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[817]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[818]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[819]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[820]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[821]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[822]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[823]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[824]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[825]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[826]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[827]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[828]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[829]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[830]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[831]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[832]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[833]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[834]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[835]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[836]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[837]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[838]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[839]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[840]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[841]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[842]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[843]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[844]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[845]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[846]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[847]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[848]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[849]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[850]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[851]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[852]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[853]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[854]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[855]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[856]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[857]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[858]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[859]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[860]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[861]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[862]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[863]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[864]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[865]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[866]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[867]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[868]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[869]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[870]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[871]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[872]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[873]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[874]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[875]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[876]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[877]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[878]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[879]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[880]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[881]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[882]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[883]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[884]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[885]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[886]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[887]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[888]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[889]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[890]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[891]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[892]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[893]" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[894]" "|HumanArmature1|hips|spine|chest|shoulder_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[895]" "|HumanArmature1|hips|spine|chest|shoulder_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[896]" "|HumanArmature1|hips|spine|chest|shoulder_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[897]" "|HumanArmature1|hips|spine|chest|shoulder_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[898]" "|HumanArmature1|hips|spine|chest|shoulder_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[899]" "|HumanArmature1|hips|spine|chest|shoulder_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[900]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[901]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[902]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[903]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[904]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[905]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[906]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[907]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[908]" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[909]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[910]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[911]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[912]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[913]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[914]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[915]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[916]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[917]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[918]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[919]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[920]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[921]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[922]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[923]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[924]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[925]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[926]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[927]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[928]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[929]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[930]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[931]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[932]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[933]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[934]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[935]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[936]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[937]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[938]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[939]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[940]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[941]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[942]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[943]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[944]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[945]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[946]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[947]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[948]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[949]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[950]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[951]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[952]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[953]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[954]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[955]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[956]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[957]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[958]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[959]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[960]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[961]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[962]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[963]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[964]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[965]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[966]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[967]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[968]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[969]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[970]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[971]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[972]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[973]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[974]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[975]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[976]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[977]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[978]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[979]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[980]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[981]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[982]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[983]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[984]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[985]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[986]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[987]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[988]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[989]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[990]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[991]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[992]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[993]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[994]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[995]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[996]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[997]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[998]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[999]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1000]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1001]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1002]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1003]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1004]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1005]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1006]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1007]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1008]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1009]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1010]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1011]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1012]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1013]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1014]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1015]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1016]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1017]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1018]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1019]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1020]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1021]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1022]" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1023]" "|HumanArmature1|hips|spine|chest|neck.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1024]" "|HumanArmature1|hips|spine|chest|neck.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1025]" "|HumanArmature1|hips|spine|chest|neck.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1026]" "|HumanArmature1|hips|spine|chest|neck.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1027]" "|HumanArmature1|hips|spine|chest|neck.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1028]" "|HumanArmature1|hips|spine|chest|neck.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1029]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1030]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1031]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1032]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1033]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1034]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1035]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[1036]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[1037]" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[1038]" "|HumanArmature1|hips|spine|chest|neck|head.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1039]" "|HumanArmature1|hips|spine|chest|neck|head.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1040]" "|HumanArmature1|hips|spine|chest|neck|head.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1041]" "|HumanArmature1|hips|spine|chest|neck|head.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1042]" "|HumanArmature1|hips|spine|chest|neck|head.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1043]" "|HumanArmature1|hips|spine|chest|neck|head.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1044]" "|HumanArmature1|hips|thigh_r.tx";
-connectAttr "Human_AnimRigRN.phl[1045]" "|HumanArmature1|hips|thigh_r.ty";
-connectAttr "Human_AnimRigRN.phl[1046]" "|HumanArmature1|hips|thigh_r.tz";
-connectAttr "Human_AnimRigRN.phl[1047]" "|HumanArmature1|hips|thigh_r.rx";
-connectAttr "Human_AnimRigRN.phl[1048]" "|HumanArmature1|hips|thigh_r.ry";
-connectAttr "Human_AnimRigRN.phl[1049]" "|HumanArmature1|hips|thigh_r.rz";
-connectAttr "Human_AnimRigRN.phl[1050]" "|HumanArmature1|hips|thigh_r|width_thigh_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1051]" "|HumanArmature1|hips|thigh_r|width_thigh_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1052]" "|HumanArmature1|hips|thigh_r|width_thigh_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1053]" "|HumanArmature1|hips|thigh_r|width_thigh_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1054]" "|HumanArmature1|hips|thigh_r|width_thigh_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1055]" "|HumanArmature1|hips|thigh_r|width_thigh_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1056]" "|HumanArmature1|hips|thigh_r|width_thigh_r.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[1057]" "|HumanArmature1|hips|thigh_r|width_thigh_r.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[1058]" "|HumanArmature1|hips|thigh_r|width_thigh_r.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[1059]" "|HumanArmature1|hips|thigh_r|lower_leg_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1060]" "|HumanArmature1|hips|thigh_r|lower_leg_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1061]" "|HumanArmature1|hips|thigh_r|lower_leg_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1062]" "|HumanArmature1|hips|thigh_r|lower_leg_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1063]" "|HumanArmature1|hips|thigh_r|lower_leg_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1064]" "|HumanArmature1|hips|thigh_r|lower_leg_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1065]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1066]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1067]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1068]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1069]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1070]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1071]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1072]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1073]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1074]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1075]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1076]" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1077]" "|HumanArmature1|hips|thigh_l.tx";
-connectAttr "Human_AnimRigRN.phl[1078]" "|HumanArmature1|hips|thigh_l.ty";
-connectAttr "Human_AnimRigRN.phl[1079]" "|HumanArmature1|hips|thigh_l.tz";
-connectAttr "Human_AnimRigRN.phl[1080]" "|HumanArmature1|hips|thigh_l.rx";
-connectAttr "Human_AnimRigRN.phl[1081]" "|HumanArmature1|hips|thigh_l.ry";
-connectAttr "Human_AnimRigRN.phl[1082]" "|HumanArmature1|hips|thigh_l.rz";
-connectAttr "Human_AnimRigRN.phl[1083]" "|HumanArmature1|hips|thigh_l|width_thigh_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1084]" "|HumanArmature1|hips|thigh_l|width_thigh_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1085]" "|HumanArmature1|hips|thigh_l|width_thigh_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1086]" "|HumanArmature1|hips|thigh_l|width_thigh_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1087]" "|HumanArmature1|hips|thigh_l|width_thigh_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1088]" "|HumanArmature1|hips|thigh_l|width_thigh_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1089]" "|HumanArmature1|hips|thigh_l|width_thigh_l.sx"
-		;
-connectAttr "Human_AnimRigRN.phl[1090]" "|HumanArmature1|hips|thigh_l|width_thigh_l.sy"
-		;
-connectAttr "Human_AnimRigRN.phl[1091]" "|HumanArmature1|hips|thigh_l|width_thigh_l.sz"
-		;
-connectAttr "Human_AnimRigRN.phl[1092]" "|HumanArmature1|hips|thigh_l|lower_leg_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1093]" "|HumanArmature1|hips|thigh_l|lower_leg_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1094]" "|HumanArmature1|hips|thigh_l|lower_leg_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1095]" "|HumanArmature1|hips|thigh_l|lower_leg_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1096]" "|HumanArmature1|hips|thigh_l|lower_leg_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1097]" "|HumanArmature1|hips|thigh_l|lower_leg_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1098]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1099]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1100]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1101]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1102]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1103]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.rz"
-		;
-connectAttr "Human_AnimRigRN.phl[1104]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.tx"
-		;
-connectAttr "Human_AnimRigRN.phl[1105]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.ty"
-		;
-connectAttr "Human_AnimRigRN.phl[1106]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.tz"
-		;
-connectAttr "Human_AnimRigRN.phl[1107]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.rx"
-		;
-connectAttr "Human_AnimRigRN.phl[1108]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.ry"
-		;
-connectAttr "Human_AnimRigRN.phl[1109]" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.rz"
-		;
+connectAttr "Human_AnimRigRN.phl[14]" "motionTrail2.so";
+connectAttr "Human_AnimRigRN.phl[15]" "motionTrail2HandleShape.tr";
+connectAttr "Human_AnimRigRN.phl[16]" "hips_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[17]" "hips_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[18]" "hips_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[19]" "hips_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[20]" "hips_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[21]" "hips_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[22]" "hips_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[23]" "hips_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[24]" "hips_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[25]" "hips_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[26]" "thigh_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[27]" "thigh_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[28]" "thigh_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[29]" "thigh_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[30]" "thigh_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[31]" "thigh_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[32]" "thigh_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[33]" "thigh_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[34]" "thigh_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[35]" "thigh_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[36]" "lower_leg_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[37]" "lower_leg_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[38]" "lower_leg_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[39]" "lower_leg_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[40]" "lower_leg_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[41]" "lower_leg_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[42]" "lower_leg_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[43]" "lower_leg_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[44]" "lower_leg_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[45]" "lower_leg_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[46]" "foot_l_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[47]" "foot_l_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[48]" "foot_l_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[49]" "foot_l_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[50]" "foot_l_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[51]" "foot_l_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[52]" "foot_l_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[53]" "foot_l_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[54]" "foot_l_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[55]" "foot_l_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[56]" "toes_l_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[57]" "toes_l_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[58]" "toes_l_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[59]" "toes_l_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[60]" "toes_l_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[61]" "toes_l_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[62]" "toes_l_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[63]" "toes_l_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[64]" "toes_l_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[65]" "toes_l_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[66]" "width_thigh_l_parentConstraint3.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[67]" "width_thigh_l_scaleConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[68]" "width_thigh_l_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[69]" "width_thigh_l_parentConstraint3.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[70]" "width_thigh_l_parentConstraint3.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[71]" "width_thigh_l_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[72]" "width_thigh_l_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[73]" "width_thigh_l_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[74]" "width_thigh_l_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[75]" "width_thigh_l_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[76]" "width_thigh_l_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[77]" "width_thigh_l_scaleConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[78]" "thigh_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[79]" "thigh_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[80]" "thigh_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[81]" "thigh_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[82]" "thigh_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[83]" "thigh_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[84]" "thigh_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[85]" "thigh_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[86]" "thigh_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[87]" "thigh_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[88]" "lower_leg_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[89]" "lower_leg_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[90]" "lower_leg_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[91]" "lower_leg_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[92]" "lower_leg_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[93]" "lower_leg_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[94]" "lower_leg_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[95]" "lower_leg_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[96]" "lower_leg_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[97]" "lower_leg_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[98]" "foot_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[99]" "foot_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[100]" "foot_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[101]" "foot_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[102]" "foot_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[103]" "foot_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[104]" "foot_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[105]" "foot_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[106]" "foot_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[107]" "foot_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[108]" "toes_r_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[109]" "toes_r_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[110]" "toes_r_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[111]" "toes_r_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[112]" "toes_r_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[113]" "toes_r_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[114]" "toes_r_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[115]" "toes_r_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[116]" "toes_r_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[117]" "toes_r_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[118]" "width_thigh_r_parentConstraint3.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[119]" "width_thigh_r_scaleConstraint3.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[120]" "width_thigh_r_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[121]" "width_thigh_r_parentConstraint3.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[122]" "width_thigh_r_parentConstraint3.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[123]" "width_thigh_r_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[124]" "width_thigh_r_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[125]" "width_thigh_r_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[126]" "width_thigh_r_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[127]" "width_thigh_r_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[128]" "width_thigh_r_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[129]" "width_thigh_r_scaleConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[130]" "spine_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[131]" "spine_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[132]" "spine_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[133]" "spine_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[134]" "spine_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[135]" "spine_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[136]" "spine_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[137]" "spine_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[138]" "spine_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[139]" "spine_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[140]" "chest_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[141]" "chest_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[142]" "chest_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[143]" "chest_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[144]" "chest_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[145]" "chest_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[146]" "chest_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[147]" "chest_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[148]" "chest_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[149]" "chest_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[150]" "neck_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[151]" "neck_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[152]" "neck_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[153]" "neck_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[154]" "neck_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[155]" "neck_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[156]" "neck_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[157]" "neck_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[158]" "neck_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[159]" "neck_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[160]" "head_parentConstraint1.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[161]" "head_parentConstraint1.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[162]" "head_parentConstraint1.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[163]" "head_parentConstraint1.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[164]" "head_parentConstraint1.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[165]" "head_parentConstraint1.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[166]" "head_parentConstraint1.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[167]" "head_parentConstraint1.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[168]" "head_parentConstraint1.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[169]" "head_parentConstraint1.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[170]" "muscle_neck_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[171]" "muscle_neck_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[172]" "muscle_neck_scaleConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[173]" "muscle_neck_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[174]" "muscle_neck_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[175]" "muscle_neck_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[176]" "muscle_neck_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[177]" "muscle_neck_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[178]" "muscle_neck_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[179]" "muscle_neck_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[180]" "muscle_neck_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[181]" "muscle_neck_scaleConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[182]" "shoulder_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[183]" "shoulder_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[184]" "shoulder_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[185]" "shoulder_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[186]" "shoulder_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[187]" "shoulder_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[188]" "shoulder_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[189]" "shoulder_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[190]" "shoulder_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[191]" "shoulder_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[192]" "upper_arm_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[193]" "upper_arm_r_parentConstraint2.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[194]" "upper_arm_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[195]" "upper_arm_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[196]" "upper_arm_r_parentConstraint2.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[197]" "upper_arm_r_parentConstraint2.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[198]" "upper_arm_r_parentConstraint2.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[199]" "upper_arm_r_parentConstraint2.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[200]" "upper_arm_r_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[201]" "upper_arm_r_parentConstraint2.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[202]" "forearm_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[203]" "forearm_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[204]" "forearm_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[205]" "forearm_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[206]" "forearm_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[207]" "forearm_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[208]" "forearm_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[209]" "forearm_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[210]" "forearm_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[211]" "forearm_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[212]" "hand_r_parentConstraint1.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[213]" "hand_r_parentConstraint1.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[214]" "hand_r_parentConstraint1.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[215]" "hand_r_parentConstraint1.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[216]" "hand_r_parentConstraint1.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[217]" "hand_r_parentConstraint1.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[218]" "hand_r_parentConstraint1.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[219]" "hand_r_parentConstraint1.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[220]" "hand_r_parentConstraint1.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[221]" "hand_r_parentConstraint1.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[222]" "c_thumb1_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[223]" "c_thumb1_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[224]" "c_thumb1_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[225]" "c_thumb1_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[226]" "c_thumb1_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[227]" "c_thumb1_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[228]" "c_thumb1_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[229]" "c_thumb1_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[230]" "c_thumb1_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[231]" "c_thumb1_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[232]" "c_thumb2_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[233]" "c_thumb2_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[234]" "c_thumb2_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[235]" "c_thumb2_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[236]" "c_thumb2_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[237]" "c_thumb2_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[238]" "c_thumb2_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[239]" "c_thumb2_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[240]" "c_thumb2_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[241]" "c_thumb2_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[242]" "c_thumb3_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[243]" "c_thumb3_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[244]" "c_thumb3_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[245]" "c_thumb3_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[246]" "c_thumb3_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[247]" "c_thumb3_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[248]" "c_thumb3_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[249]" "c_thumb3_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[250]" "c_thumb3_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[251]" "c_thumb3_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[252]" "c_ring1_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[253]" "c_ring1_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[254]" "c_ring1_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[255]" "c_ring1_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[256]" "c_ring1_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[257]" "c_ring1_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[258]" "c_ring1_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[259]" "c_ring1_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[260]" "c_ring1_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[261]" "c_ring1_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[262]" "c_ring2_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[263]" "c_ring2_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[264]" "c_ring2_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[265]" "c_ring2_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[266]" "c_ring2_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[267]" "c_ring2_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[268]" "c_ring2_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[269]" "c_ring2_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[270]" "c_ring2_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[271]" "c_ring2_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[272]" "c_ring3_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[273]" "c_ring3_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[274]" "c_ring3_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[275]" "c_ring3_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[276]" "c_ring3_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[277]" "c_ring3_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[278]" "c_ring3_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[279]" "c_ring3_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[280]" "c_ring3_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[281]" "c_ring3_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[282]" "c_middle1_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[283]" "c_middle1_r_parentConstraint2.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[284]" "c_middle1_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[285]" "c_middle1_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[286]" "c_middle1_r_parentConstraint2.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[287]" "c_middle1_r_parentConstraint2.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[288]" "c_middle1_r_parentConstraint2.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[289]" "c_middle1_r_parentConstraint2.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[290]" "c_middle1_r_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[291]" "c_middle1_r_parentConstraint2.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[292]" "c_middle2_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[293]" "c_middle2_r_parentConstraint2.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[294]" "c_middle2_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[295]" "c_middle2_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[296]" "c_middle2_r_parentConstraint2.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[297]" "c_middle2_r_parentConstraint2.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[298]" "c_middle2_r_parentConstraint2.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[299]" "c_middle2_r_parentConstraint2.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[300]" "c_middle2_r_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[301]" "c_middle2_r_parentConstraint2.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[302]" "c_middle3_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[303]" "c_middle3_r_parentConstraint2.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[304]" "c_middle3_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[305]" "c_middle3_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[306]" "c_middle3_r_parentConstraint2.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[307]" "c_middle3_r_parentConstraint2.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[308]" "c_middle3_r_parentConstraint2.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[309]" "c_middle3_r_parentConstraint2.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[310]" "c_middle3_r_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[311]" "c_middle3_r_parentConstraint2.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[312]" "c_index1_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[313]" "c_index1_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[314]" "c_index1_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[315]" "c_index1_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[316]" "c_index1_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[317]" "c_index1_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[318]" "c_index1_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[319]" "c_index1_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[320]" "c_index1_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[321]" "c_index1_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[322]" "c_index2_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[323]" "c_index2_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[324]" "c_index2_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[325]" "c_index2_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[326]" "c_index2_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[327]" "c_index2_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[328]" "c_index2_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[329]" "c_index2_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[330]" "c_index2_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[331]" "c_index2_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[332]" "c_index3_r_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[333]" "c_index3_r_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[334]" "c_index3_r_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[335]" "c_index3_r_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[336]" "c_index3_r_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[337]" "c_index3_r_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[338]" "c_index3_r_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[339]" "c_index3_r_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[340]" "c_index3_r_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[341]" "c_index3_r_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[342]" "hold_r_parentConstraint1.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[343]" "hold_r_parentConstraint1.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[344]" "hold_r_parentConstraint1.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[345]" "hold_r_parentConstraint1.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[346]" "hold_r_parentConstraint1.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[347]" "hold_r_parentConstraint1.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[348]" "hold_r_parentConstraint1.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[349]" "hold_r_parentConstraint1.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[350]" "hold_r_parentConstraint1.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[351]" "hold_r_parentConstraint1.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[352]" "forearm_twist_r_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[353]" "forearm_twist_r_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[354]" "forearm_twist_r_parentConstraint1.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[355]" "forearm_twist_r_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[356]" "forearm_twist_r_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[357]" "forearm_twist_r_parentConstraint1.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[358]" "forearm_twist_r_parentConstraint1.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[359]" "forearm_twist_r_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[360]" "forearm_twist_r_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[361]" "forearm_twist_r_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[362]" "forearm_twist_r_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[363]" "forearm_twist_r_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[364]" "bicep_r_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[365]" "bicep_r_scaleConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[366]" "bicep_r_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[367]" "bicep_r_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[368]" "bicep_r_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[369]" "bicep_r_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[370]" "bicep_r_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[371]" "bicep_r_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[372]" "bicep_r_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[373]" "bicep_r_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[374]" "bicep_r_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[375]" "bicep_r_scaleConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[376]" "muscle_shoulder_r_parentConstraint4.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[377]" "muscle_shoulder_r_parentConstraint4.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[378]" "muscle_shoulder_r_parentConstraint4.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[379]" "muscle_shoulder_r_parentConstraint4.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[380]" "muscle_shoulder_r_parentConstraint4.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[381]" "muscle_shoulder_r_parentConstraint4.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[382]" "muscle_shoulder_r_parentConstraint4.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[383]" "muscle_shoulder_r_parentConstraint4.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[384]" "muscle_shoulder_r_scaleConstraint4.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[385]" "muscle_shoulder_r_parentConstraint4.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[386]" "muscle_shoulder_r_scaleConstraint4.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[387]" "muscle_shoulder_r_parentConstraint4.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[388]" "shoulder_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[389]" "shoulder_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[390]" "shoulder_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[391]" "shoulder_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[392]" "shoulder_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[393]" "shoulder_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[394]" "shoulder_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[395]" "shoulder_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[396]" "shoulder_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[397]" "shoulder_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[398]" "upper_arm_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[399]" "upper_arm_l_parentConstraint2.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[400]" "upper_arm_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[401]" "upper_arm_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[402]" "upper_arm_l_parentConstraint2.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[403]" "upper_arm_l_parentConstraint2.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[404]" "upper_arm_l_parentConstraint2.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[405]" "upper_arm_l_parentConstraint2.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[406]" "upper_arm_l_parentConstraint2.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[407]" "upper_arm_l_parentConstraint2.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[408]" "forearm_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[409]" "forearm_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[410]" "forearm_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[411]" "forearm_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[412]" "forearm_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[413]" "forearm_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[414]" "forearm_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[415]" "forearm_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[416]" "forearm_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[417]" "forearm_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[418]" "hand_l_parentConstraint1.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[419]" "hand_l_parentConstraint1.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[420]" "hand_l_parentConstraint1.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[421]" "hand_l_parentConstraint1.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[422]" "hand_l_parentConstraint1.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[423]" "hand_l_parentConstraint1.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[424]" "hand_l_parentConstraint1.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[425]" "hand_l_parentConstraint1.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[426]" "hand_l_parentConstraint1.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[427]" "hand_l_parentConstraint1.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[428]" "c_thumb1_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[429]" "c_thumb1_l_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[430]" "c_thumb1_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[431]" "c_thumb1_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[432]" "c_thumb1_l_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[433]" "c_thumb1_l_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[434]" "c_thumb1_l_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[435]" "c_thumb1_l_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[436]" "c_thumb1_l_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[437]" "c_thumb1_l_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[438]" "c_thumb2_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[439]" "c_thumb2_l_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[440]" "c_thumb2_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[441]" "c_thumb2_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[442]" "c_thumb2_l_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[443]" "c_thumb2_l_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[444]" "c_thumb2_l_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[445]" "c_thumb2_l_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[446]" "c_thumb2_l_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[447]" "c_thumb2_l_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[448]" "c_thumb3_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[449]" "c_thumb3_l_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[450]" "c_thumb3_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[451]" "c_thumb3_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[452]" "c_thumb3_l_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[453]" "c_thumb3_l_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[454]" "c_thumb3_l_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[455]" "c_thumb3_l_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[456]" "c_thumb3_l_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[457]" "c_thumb3_l_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[458]" "c_ring1_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[459]" "c_ring1_l_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[460]" "c_ring1_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[461]" "c_ring1_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[462]" "c_ring1_l_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[463]" "c_ring1_l_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[464]" "c_ring1_l_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[465]" "c_ring1_l_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[466]" "c_ring1_l_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[467]" "c_ring1_l_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[468]" "c_ring2_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[469]" "c_ring2_l_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[470]" "c_ring2_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[471]" "c_ring2_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[472]" "c_ring2_l_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[473]" "c_ring2_l_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[474]" "c_ring2_l_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[475]" "c_ring2_l_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[476]" "c_ring2_l_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[477]" "c_ring2_l_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[478]" "c_ring3_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[479]" "c_ring3_l_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[480]" "c_ring3_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[481]" "c_ring3_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[482]" "c_ring3_l_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[483]" "c_ring3_l_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[484]" "c_ring3_l_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[485]" "c_ring3_l_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[486]" "c_ring3_l_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[487]" "c_ring3_l_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[488]" "c_middle1_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[489]" "c_middle1_l_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[490]" "c_middle1_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[491]" "c_middle1_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[492]" "c_middle1_l_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[493]" "c_middle1_l_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[494]" "c_middle1_l_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[495]" "c_middle1_l_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[496]" "c_middle1_l_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[497]" "c_middle1_l_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[498]" "c_middle2_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[499]" "c_middle2_l_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[500]" "c_middle2_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[501]" "c_middle2_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[502]" "c_middle2_l_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[503]" "c_middle2_l_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[504]" "c_middle2_l_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[505]" "c_middle2_l_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[506]" "c_middle2_l_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[507]" "c_middle2_l_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[508]" "c_middle3_l_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[509]" "c_middle3_l_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[510]" "c_middle3_l_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[511]" "c_middle3_l_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[512]" "c_middle3_l_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[513]" "c_middle3_l_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[514]" "c_middle3_l_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[515]" "c_middle3_l_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[516]" "c_middle3_l_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[517]" "c_middle3_l_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[518]" "c_index1_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[519]" "c_index1_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[520]" "c_index1_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[521]" "c_index1_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[522]" "c_index1_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[523]" "c_index1_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[524]" "c_index1_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[525]" "c_index1_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[526]" "c_index1_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[527]" "c_index1_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[528]" "c_index2_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[529]" "c_index2_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[530]" "c_index2_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[531]" "c_index2_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[532]" "c_index2_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[533]" "c_index2_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[534]" "c_index2_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[535]" "c_index2_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[536]" "c_index2_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[537]" "c_index2_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[538]" "c_index3_l_parentConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[539]" "c_index3_l_parentConstraint2.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[540]" "c_index3_l_parentConstraint2.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[541]" "c_index3_l_parentConstraint2.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[542]" "c_index3_l_parentConstraint2.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[543]" "c_index3_l_parentConstraint2.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[544]" "c_index3_l_parentConstraint2.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[545]" "c_index3_l_parentConstraint2.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[546]" "c_index3_l_parentConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[547]" "c_index3_l_parentConstraint2.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[548]" "hold_l_parentConstraint1.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[549]" "hold_l_parentConstraint1.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[550]" "hold_l_parentConstraint1.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[551]" "hold_l_parentConstraint1.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[552]" "hold_l_parentConstraint1.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[553]" "hold_l_parentConstraint1.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[554]" "hold_l_parentConstraint1.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[555]" "hold_l_parentConstraint1.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[556]" "hold_l_parentConstraint1.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[557]" "hold_l_parentConstraint1.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[558]" "forearm_twist_l_parentConstraint3.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[559]" "forearm_twist_l_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[560]" "forearm_twist_l_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[561]" "forearm_twist_l_parentConstraint3.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[562]" "forearm_twist_l_parentConstraint3.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[563]" "forearm_twist_l_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[564]" "forearm_twist_l_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[565]" "forearm_twist_l_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[566]" "forearm_twist_l_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[567]" "forearm_twist_l_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[568]" "forearm_twist_l_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[569]" "forearm_twist_l_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[570]" "bicep_l_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[571]" "bicep_l_scaleConstraint1.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[572]" "bicep_l_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[573]" "bicep_l_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[574]" "bicep_l_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[575]" "bicep_l_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[576]" "bicep_l_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[577]" "bicep_l_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[578]" "bicep_l_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[579]" "bicep_l_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[580]" "bicep_l_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[581]" "bicep_l_scaleConstraint1.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[582]" "muscle_shoulder_l_parentConstraint4.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[583]" "muscle_shoulder_l_parentConstraint4.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[584]" "muscle_shoulder_l_parentConstraint4.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[585]" "muscle_shoulder_l_parentConstraint4.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[586]" "muscle_shoulder_l_scaleConstraint4.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[587]" "muscle_shoulder_l_parentConstraint4.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[588]" "muscle_shoulder_l_parentConstraint4.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[589]" "muscle_shoulder_l_parentConstraint4.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[590]" "muscle_shoulder_l_parentConstraint4.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[591]" "muscle_shoulder_l_parentConstraint4.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[592]" "muscle_shoulder_l_parentConstraint4.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[593]" "muscle_shoulder_l_scaleConstraint4.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[594]" "breast_L_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[595]" "breast_L_scaleConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[596]" "breast_L_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[597]" "breast_L_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[598]" "breast_L_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[599]" "breast_L_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[600]" "breast_L_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[601]" "breast_L_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[602]" "breast_L_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[603]" "breast_L_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[604]" "breast_L_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[605]" "breast_L_scaleConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[606]" "breast_R_parentConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[607]" "breast_R_scaleConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[608]" "breast_R_parentConstraint4.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[609]" "breast_R_parentConstraint4.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[610]" "breast_R_parentConstraint4.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[611]" "breast_R_parentConstraint4.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[612]" "breast_R_parentConstraint4.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[613]" "breast_R_parentConstraint4.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[614]" "breast_R_parentConstraint4.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[615]" "breast_R_parentConstraint4.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[616]" "breast_R_parentConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[617]" "breast_R_scaleConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[618]" "muscle_chest_parentConstraint4.tg[0].tt"
+		;
+connectAttr "Human_AnimRigRN.phl[619]" "muscle_chest_parentConstraint4.tg[0].tr"
+		;
+connectAttr "Human_AnimRigRN.phl[620]" "muscle_chest_scaleConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[621]" "muscle_chest_parentConstraint4.tg[0].ts"
+		;
+connectAttr "Human_AnimRigRN.phl[622]" "muscle_chest_parentConstraint4.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[623]" "muscle_chest_parentConstraint4.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[624]" "muscle_chest_parentConstraint4.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[625]" "muscle_chest_parentConstraint4.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[626]" "muscle_chest_parentConstraint4.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[627]" "muscle_chest_parentConstraint4.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[628]" "muscle_chest_scaleConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[629]" "muscle_chest_parentConstraint4.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[630]" "torso_width_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[631]" "torso_width_scaleConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[632]" "torso_width_parentConstraint3.tg[0].tis"
+		;
+connectAttr "Human_AnimRigRN.phl[633]" "torso_width_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[634]" "torso_width_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[635]" "torso_width_parentConstraint3.tg[0].tro"
+		;
+connectAttr "Human_AnimRigRN.phl[636]" "torso_width_parentConstraint3.tg[0].trp"
+		;
+connectAttr "Human_AnimRigRN.phl[637]" "torso_width_parentConstraint3.tg[0].trt"
+		;
+connectAttr "Human_AnimRigRN.phl[638]" "torso_width_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "Human_AnimRigRN.phl[639]" "torso_width_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "Human_AnimRigRN.phl[640]" "torso_width_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "Human_AnimRigRN.phl[641]" "torso_width_scaleConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[642]" "belly_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[643]" "belly_scaleConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[644]" "belly_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[645]" "belly_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[646]" "belly_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[647]" "belly_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[648]" "belly_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[649]" "belly_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[650]" "belly_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[651]" "belly_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[652]" "belly_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[653]" "belly_scaleConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[654]" "waist_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[655]" "waist_scaleConstraint4.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[656]" "waist_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[657]" "waist_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[658]" "waist_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[659]" "waist_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[660]" "waist_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[661]" "waist_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[662]" "waist_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[663]" "waist_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[664]" "waist_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[665]" "waist_scaleConstraint4.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[666]" "butt_parentConstraint3.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[667]" "butt_scaleConstraint2.tg[0].ts";
+connectAttr "Human_AnimRigRN.phl[668]" "butt_parentConstraint3.tg[0].tis";
+connectAttr "Human_AnimRigRN.phl[669]" "butt_parentConstraint3.tg[0].tt";
+connectAttr "Human_AnimRigRN.phl[670]" "butt_parentConstraint3.tg[0].tr";
+connectAttr "Human_AnimRigRN.phl[671]" "butt_parentConstraint3.tg[0].tro";
+connectAttr "Human_AnimRigRN.phl[672]" "butt_parentConstraint3.tg[0].trp";
+connectAttr "Human_AnimRigRN.phl[673]" "butt_parentConstraint3.tg[0].trt";
+connectAttr "Human_AnimRigRN.phl[674]" "butt_parentConstraint3.tg[0].tjo";
+connectAttr "Human_AnimRigRN.phl[675]" "butt_parentConstraint3.tg[0].tsc";
+connectAttr "Human_AnimRigRN.phl[676]" "butt_parentConstraint3.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[677]" "butt_scaleConstraint2.tg[0].tpm";
+connectAttr "Human_AnimRigRN.phl[678]" "HumanArmature.tx";
+connectAttr "Human_AnimRigRN.phl[679]" "HumanArmature.ty";
+connectAttr "Human_AnimRigRN.phl[680]" "HumanArmature.tz";
+connectAttr "Human_AnimRigRN.phl[681]" "HumanArmature.rx";
+connectAttr "Human_AnimRigRN.phl[682]" "HumanArmature.ry";
+connectAttr "Human_AnimRigRN.phl[683]" "HumanArmature.rz";
+connectAttr "Human_AnimRigRN.phl[684]" "hips.tx";
+connectAttr "Human_AnimRigRN.phl[685]" "hips.ty";
+connectAttr "Human_AnimRigRN.phl[686]" "hips.tz";
+connectAttr "Human_AnimRigRN.phl[687]" "hips.rx";
+connectAttr "Human_AnimRigRN.phl[688]" "hips.ry";
+connectAttr "Human_AnimRigRN.phl[689]" "hips.rz";
+connectAttr "Human_AnimRigRN.phl[690]" "butt.tx";
+connectAttr "Human_AnimRigRN.phl[691]" "butt.ty";
+connectAttr "Human_AnimRigRN.phl[692]" "butt.tz";
+connectAttr "Human_AnimRigRN.phl[693]" "butt.rx";
+connectAttr "Human_AnimRigRN.phl[694]" "butt.ry";
+connectAttr "Human_AnimRigRN.phl[695]" "butt.rz";
+connectAttr "Human_AnimRigRN.phl[696]" "butt.sx";
+connectAttr "Human_AnimRigRN.phl[697]" "butt.sy";
+connectAttr "Human_AnimRigRN.phl[698]" "butt.sz";
+connectAttr "Human_AnimRigRN.phl[699]" "waist.tx";
+connectAttr "Human_AnimRigRN.phl[700]" "waist.ty";
+connectAttr "Human_AnimRigRN.phl[701]" "waist.tz";
+connectAttr "Human_AnimRigRN.phl[702]" "waist.rx";
+connectAttr "Human_AnimRigRN.phl[703]" "waist.ry";
+connectAttr "Human_AnimRigRN.phl[704]" "waist.rz";
+connectAttr "Human_AnimRigRN.phl[705]" "waist.sx";
+connectAttr "Human_AnimRigRN.phl[706]" "waist.sy";
+connectAttr "Human_AnimRigRN.phl[707]" "waist.sz";
+connectAttr "Human_AnimRigRN.phl[708]" "belly.tx";
+connectAttr "Human_AnimRigRN.phl[709]" "belly.ty";
+connectAttr "Human_AnimRigRN.phl[710]" "belly.tz";
+connectAttr "Human_AnimRigRN.phl[711]" "belly.rx";
+connectAttr "Human_AnimRigRN.phl[712]" "belly.ry";
+connectAttr "Human_AnimRigRN.phl[713]" "belly.rz";
+connectAttr "Human_AnimRigRN.phl[714]" "belly.sx";
+connectAttr "Human_AnimRigRN.phl[715]" "belly.sy";
+connectAttr "Human_AnimRigRN.phl[716]" "belly.sz";
+connectAttr "Human_AnimRigRN.phl[717]" "spine.tx";
+connectAttr "Human_AnimRigRN.phl[718]" "spine.ty";
+connectAttr "Human_AnimRigRN.phl[719]" "spine.tz";
+connectAttr "Human_AnimRigRN.phl[720]" "spine.rx";
+connectAttr "Human_AnimRigRN.phl[721]" "spine.ry";
+connectAttr "Human_AnimRigRN.phl[722]" "spine.rz";
+connectAttr "Human_AnimRigRN.phl[723]" "torso_width.tx";
+connectAttr "Human_AnimRigRN.phl[724]" "torso_width.ty";
+connectAttr "Human_AnimRigRN.phl[725]" "torso_width.tz";
+connectAttr "Human_AnimRigRN.phl[726]" "torso_width.rx";
+connectAttr "Human_AnimRigRN.phl[727]" "torso_width.ry";
+connectAttr "Human_AnimRigRN.phl[728]" "torso_width.rz";
+connectAttr "Human_AnimRigRN.phl[729]" "torso_width.sx";
+connectAttr "Human_AnimRigRN.phl[730]" "torso_width.sy";
+connectAttr "Human_AnimRigRN.phl[731]" "torso_width.sz";
+connectAttr "Human_AnimRigRN.phl[732]" "chest.tx";
+connectAttr "Human_AnimRigRN.phl[733]" "chest.ty";
+connectAttr "Human_AnimRigRN.phl[734]" "chest.tz";
+connectAttr "Human_AnimRigRN.phl[735]" "chest.rx";
+connectAttr "Human_AnimRigRN.phl[736]" "chest.ry";
+connectAttr "Human_AnimRigRN.phl[737]" "chest.rz";
+connectAttr "Human_AnimRigRN.phl[738]" "muscle_chest.sx";
+connectAttr "Human_AnimRigRN.phl[739]" "muscle_chest.sy";
+connectAttr "Human_AnimRigRN.phl[740]" "muscle_chest.sz";
+connectAttr "Human_AnimRigRN.phl[741]" "muscle_chest.tx";
+connectAttr "Human_AnimRigRN.phl[742]" "muscle_chest.ty";
+connectAttr "Human_AnimRigRN.phl[743]" "muscle_chest.tz";
+connectAttr "Human_AnimRigRN.phl[744]" "muscle_chest.rx";
+connectAttr "Human_AnimRigRN.phl[745]" "muscle_chest.ry";
+connectAttr "Human_AnimRigRN.phl[746]" "muscle_chest.rz";
+connectAttr "Human_AnimRigRN.phl[747]" "breast_R.tx";
+connectAttr "Human_AnimRigRN.phl[748]" "breast_R.ty";
+connectAttr "Human_AnimRigRN.phl[749]" "breast_R.tz";
+connectAttr "Human_AnimRigRN.phl[750]" "breast_R.rx";
+connectAttr "Human_AnimRigRN.phl[751]" "breast_R.ry";
+connectAttr "Human_AnimRigRN.phl[752]" "breast_R.rz";
+connectAttr "Human_AnimRigRN.phl[753]" "breast_R.sx";
+connectAttr "Human_AnimRigRN.phl[754]" "breast_R.sy";
+connectAttr "Human_AnimRigRN.phl[755]" "breast_R.sz";
+connectAttr "Human_AnimRigRN.phl[756]" "breast_L.tx";
+connectAttr "Human_AnimRigRN.phl[757]" "breast_L.ty";
+connectAttr "Human_AnimRigRN.phl[758]" "breast_L.tz";
+connectAttr "Human_AnimRigRN.phl[759]" "breast_L.rx";
+connectAttr "Human_AnimRigRN.phl[760]" "breast_L.ry";
+connectAttr "Human_AnimRigRN.phl[761]" "breast_L.rz";
+connectAttr "Human_AnimRigRN.phl[762]" "breast_L.sx";
+connectAttr "Human_AnimRigRN.phl[763]" "breast_L.sy";
+connectAttr "Human_AnimRigRN.phl[764]" "breast_L.sz";
+connectAttr "Human_AnimRigRN.phl[765]" "shoulder_l.tx";
+connectAttr "Human_AnimRigRN.phl[766]" "shoulder_l.ty";
+connectAttr "Human_AnimRigRN.phl[767]" "shoulder_l.tz";
+connectAttr "Human_AnimRigRN.phl[768]" "shoulder_l.rx";
+connectAttr "Human_AnimRigRN.phl[769]" "shoulder_l.ry";
+connectAttr "Human_AnimRigRN.phl[770]" "shoulder_l.rz";
+connectAttr "Human_AnimRigRN.phl[771]" "muscle_shoulder_l.tx";
+connectAttr "Human_AnimRigRN.phl[772]" "muscle_shoulder_l.ty";
+connectAttr "Human_AnimRigRN.phl[773]" "muscle_shoulder_l.tz";
+connectAttr "Human_AnimRigRN.phl[774]" "muscle_shoulder_l.rx";
+connectAttr "Human_AnimRigRN.phl[775]" "muscle_shoulder_l.ry";
+connectAttr "Human_AnimRigRN.phl[776]" "muscle_shoulder_l.rz";
+connectAttr "Human_AnimRigRN.phl[777]" "muscle_shoulder_l.sx";
+connectAttr "Human_AnimRigRN.phl[778]" "muscle_shoulder_l.sy";
+connectAttr "Human_AnimRigRN.phl[779]" "muscle_shoulder_l.sz";
+connectAttr "Human_AnimRigRN.phl[780]" "upper_arm_l.tx";
+connectAttr "Human_AnimRigRN.phl[781]" "upper_arm_l.ty";
+connectAttr "Human_AnimRigRN.phl[782]" "upper_arm_l.tz";
+connectAttr "Human_AnimRigRN.phl[783]" "upper_arm_l.rx";
+connectAttr "Human_AnimRigRN.phl[784]" "upper_arm_l.ry";
+connectAttr "Human_AnimRigRN.phl[785]" "upper_arm_l.rz";
+connectAttr "Human_AnimRigRN.phl[786]" "bicep_l.tx";
+connectAttr "Human_AnimRigRN.phl[787]" "bicep_l.ty";
+connectAttr "Human_AnimRigRN.phl[788]" "bicep_l.tz";
+connectAttr "Human_AnimRigRN.phl[789]" "bicep_l.rx";
+connectAttr "Human_AnimRigRN.phl[790]" "bicep_l.ry";
+connectAttr "Human_AnimRigRN.phl[791]" "bicep_l.rz";
+connectAttr "Human_AnimRigRN.phl[792]" "bicep_l.sx";
+connectAttr "Human_AnimRigRN.phl[793]" "bicep_l.sy";
+connectAttr "Human_AnimRigRN.phl[794]" "bicep_l.sz";
+connectAttr "Human_AnimRigRN.phl[795]" "forearm_l.tx";
+connectAttr "Human_AnimRigRN.phl[796]" "forearm_l.ty";
+connectAttr "Human_AnimRigRN.phl[797]" "forearm_l.tz";
+connectAttr "Human_AnimRigRN.phl[798]" "forearm_l.rx";
+connectAttr "Human_AnimRigRN.phl[799]" "forearm_l.ry";
+connectAttr "Human_AnimRigRN.phl[800]" "forearm_l.rz";
+connectAttr "Human_AnimRigRN.phl[801]" "forearm_twist_l.tx";
+connectAttr "Human_AnimRigRN.phl[802]" "forearm_twist_l.ty";
+connectAttr "Human_AnimRigRN.phl[803]" "forearm_twist_l.tz";
+connectAttr "Human_AnimRigRN.phl[804]" "forearm_twist_l.rx";
+connectAttr "Human_AnimRigRN.phl[805]" "forearm_twist_l.ry";
+connectAttr "Human_AnimRigRN.phl[806]" "forearm_twist_l.rz";
+connectAttr "Human_AnimRigRN.phl[807]" "forearm_twist_l.sx";
+connectAttr "Human_AnimRigRN.phl[808]" "forearm_twist_l.sy";
+connectAttr "Human_AnimRigRN.phl[809]" "forearm_twist_l.sz";
+connectAttr "Human_AnimRigRN.phl[810]" "hand_l.tx";
+connectAttr "Human_AnimRigRN.phl[811]" "hand_l.ty";
+connectAttr "Human_AnimRigRN.phl[812]" "hand_l.tz";
+connectAttr "Human_AnimRigRN.phl[813]" "hand_l.rx";
+connectAttr "Human_AnimRigRN.phl[814]" "hand_l.ry";
+connectAttr "Human_AnimRigRN.phl[815]" "hand_l.rz";
+connectAttr "Human_AnimRigRN.phl[816]" "hold_l.tx";
+connectAttr "Human_AnimRigRN.phl[817]" "hold_l.ty";
+connectAttr "Human_AnimRigRN.phl[818]" "hold_l.tz";
+connectAttr "Human_AnimRigRN.phl[819]" "hold_l.rx";
+connectAttr "Human_AnimRigRN.phl[820]" "hold_l.ry";
+connectAttr "Human_AnimRigRN.phl[821]" "hold_l.rz";
+connectAttr "Human_AnimRigRN.phl[822]" "c_index1_l.tx";
+connectAttr "Human_AnimRigRN.phl[823]" "c_index1_l.ty";
+connectAttr "Human_AnimRigRN.phl[824]" "c_index1_l.tz";
+connectAttr "Human_AnimRigRN.phl[825]" "c_index1_l.rx";
+connectAttr "Human_AnimRigRN.phl[826]" "c_index1_l.ry";
+connectAttr "Human_AnimRigRN.phl[827]" "c_index1_l.rz";
+connectAttr "Human_AnimRigRN.phl[828]" "c_index2_l.tx";
+connectAttr "Human_AnimRigRN.phl[829]" "c_index2_l.ty";
+connectAttr "Human_AnimRigRN.phl[830]" "c_index2_l.tz";
+connectAttr "Human_AnimRigRN.phl[831]" "c_index2_l.rx";
+connectAttr "Human_AnimRigRN.phl[832]" "c_index2_l.ry";
+connectAttr "Human_AnimRigRN.phl[833]" "c_index2_l.rz";
+connectAttr "Human_AnimRigRN.phl[834]" "c_index3_l.rx";
+connectAttr "Human_AnimRigRN.phl[835]" "c_index3_l.ry";
+connectAttr "Human_AnimRigRN.phl[836]" "c_index3_l.rz";
+connectAttr "Human_AnimRigRN.phl[837]" "c_index3_l.tx";
+connectAttr "Human_AnimRigRN.phl[838]" "c_index3_l.ty";
+connectAttr "Human_AnimRigRN.phl[839]" "c_index3_l.tz";
+connectAttr "Human_AnimRigRN.phl[840]" "c_middle1_l.tx";
+connectAttr "Human_AnimRigRN.phl[841]" "c_middle1_l.ty";
+connectAttr "Human_AnimRigRN.phl[842]" "c_middle1_l.tz";
+connectAttr "Human_AnimRigRN.phl[843]" "c_middle1_l.rx";
+connectAttr "Human_AnimRigRN.phl[844]" "c_middle1_l.ry";
+connectAttr "Human_AnimRigRN.phl[845]" "c_middle1_l.rz";
+connectAttr "Human_AnimRigRN.phl[846]" "c_middle2_l.tx";
+connectAttr "Human_AnimRigRN.phl[847]" "c_middle2_l.ty";
+connectAttr "Human_AnimRigRN.phl[848]" "c_middle2_l.tz";
+connectAttr "Human_AnimRigRN.phl[849]" "c_middle2_l.rx";
+connectAttr "Human_AnimRigRN.phl[850]" "c_middle2_l.ry";
+connectAttr "Human_AnimRigRN.phl[851]" "c_middle2_l.rz";
+connectAttr "Human_AnimRigRN.phl[852]" "c_middle3_l.tx";
+connectAttr "Human_AnimRigRN.phl[853]" "c_middle3_l.ty";
+connectAttr "Human_AnimRigRN.phl[854]" "c_middle3_l.tz";
+connectAttr "Human_AnimRigRN.phl[855]" "c_middle3_l.rx";
+connectAttr "Human_AnimRigRN.phl[856]" "c_middle3_l.ry";
+connectAttr "Human_AnimRigRN.phl[857]" "c_middle3_l.rz";
+connectAttr "Human_AnimRigRN.phl[858]" "c_ring1_l.tx";
+connectAttr "Human_AnimRigRN.phl[859]" "c_ring1_l.ty";
+connectAttr "Human_AnimRigRN.phl[860]" "c_ring1_l.tz";
+connectAttr "Human_AnimRigRN.phl[861]" "c_ring1_l.rx";
+connectAttr "Human_AnimRigRN.phl[862]" "c_ring1_l.ry";
+connectAttr "Human_AnimRigRN.phl[863]" "c_ring1_l.rz";
+connectAttr "Human_AnimRigRN.phl[864]" "c_ring2_l.tx";
+connectAttr "Human_AnimRigRN.phl[865]" "c_ring2_l.ty";
+connectAttr "Human_AnimRigRN.phl[866]" "c_ring2_l.tz";
+connectAttr "Human_AnimRigRN.phl[867]" "c_ring2_l.rx";
+connectAttr "Human_AnimRigRN.phl[868]" "c_ring2_l.ry";
+connectAttr "Human_AnimRigRN.phl[869]" "c_ring2_l.rz";
+connectAttr "Human_AnimRigRN.phl[870]" "c_ring3_l.tx";
+connectAttr "Human_AnimRigRN.phl[871]" "c_ring3_l.ty";
+connectAttr "Human_AnimRigRN.phl[872]" "c_ring3_l.tz";
+connectAttr "Human_AnimRigRN.phl[873]" "c_ring3_l.rx";
+connectAttr "Human_AnimRigRN.phl[874]" "c_ring3_l.ry";
+connectAttr "Human_AnimRigRN.phl[875]" "c_ring3_l.rz";
+connectAttr "Human_AnimRigRN.phl[876]" "c_thumb1_l.tx";
+connectAttr "Human_AnimRigRN.phl[877]" "c_thumb1_l.ty";
+connectAttr "Human_AnimRigRN.phl[878]" "c_thumb1_l.tz";
+connectAttr "Human_AnimRigRN.phl[879]" "c_thumb1_l.rx";
+connectAttr "Human_AnimRigRN.phl[880]" "c_thumb1_l.ry";
+connectAttr "Human_AnimRigRN.phl[881]" "c_thumb1_l.rz";
+connectAttr "Human_AnimRigRN.phl[882]" "c_thumb2_l.tx";
+connectAttr "Human_AnimRigRN.phl[883]" "c_thumb2_l.ty";
+connectAttr "Human_AnimRigRN.phl[884]" "c_thumb2_l.tz";
+connectAttr "Human_AnimRigRN.phl[885]" "c_thumb2_l.rx";
+connectAttr "Human_AnimRigRN.phl[886]" "c_thumb2_l.ry";
+connectAttr "Human_AnimRigRN.phl[887]" "c_thumb2_l.rz";
+connectAttr "Human_AnimRigRN.phl[888]" "c_thumb3_l.tx";
+connectAttr "Human_AnimRigRN.phl[889]" "c_thumb3_l.ty";
+connectAttr "Human_AnimRigRN.phl[890]" "c_thumb3_l.tz";
+connectAttr "Human_AnimRigRN.phl[891]" "c_thumb3_l.rx";
+connectAttr "Human_AnimRigRN.phl[892]" "c_thumb3_l.ry";
+connectAttr "Human_AnimRigRN.phl[893]" "c_thumb3_l.rz";
+connectAttr "Human_AnimRigRN.phl[894]" "shoulder_r.tx";
+connectAttr "Human_AnimRigRN.phl[895]" "shoulder_r.ty";
+connectAttr "Human_AnimRigRN.phl[896]" "shoulder_r.tz";
+connectAttr "Human_AnimRigRN.phl[897]" "shoulder_r.rx";
+connectAttr "Human_AnimRigRN.phl[898]" "shoulder_r.ry";
+connectAttr "Human_AnimRigRN.phl[899]" "shoulder_r.rz";
+connectAttr "Human_AnimRigRN.phl[900]" "muscle_shoulder_r.tx";
+connectAttr "Human_AnimRigRN.phl[901]" "muscle_shoulder_r.ty";
+connectAttr "Human_AnimRigRN.phl[902]" "muscle_shoulder_r.tz";
+connectAttr "Human_AnimRigRN.phl[903]" "muscle_shoulder_r.rx";
+connectAttr "Human_AnimRigRN.phl[904]" "muscle_shoulder_r.ry";
+connectAttr "Human_AnimRigRN.phl[905]" "muscle_shoulder_r.rz";
+connectAttr "Human_AnimRigRN.phl[906]" "muscle_shoulder_r.sx";
+connectAttr "Human_AnimRigRN.phl[907]" "muscle_shoulder_r.sy";
+connectAttr "Human_AnimRigRN.phl[908]" "muscle_shoulder_r.sz";
+connectAttr "Human_AnimRigRN.phl[909]" "upper_arm_r.tx";
+connectAttr "Human_AnimRigRN.phl[910]" "upper_arm_r.ty";
+connectAttr "Human_AnimRigRN.phl[911]" "upper_arm_r.tz";
+connectAttr "Human_AnimRigRN.phl[912]" "upper_arm_r.rx";
+connectAttr "Human_AnimRigRN.phl[913]" "upper_arm_r.ry";
+connectAttr "Human_AnimRigRN.phl[914]" "upper_arm_r.rz";
+connectAttr "Human_AnimRigRN.phl[915]" "bicep_r.tx";
+connectAttr "Human_AnimRigRN.phl[916]" "bicep_r.ty";
+connectAttr "Human_AnimRigRN.phl[917]" "bicep_r.tz";
+connectAttr "Human_AnimRigRN.phl[918]" "bicep_r.rx";
+connectAttr "Human_AnimRigRN.phl[919]" "bicep_r.ry";
+connectAttr "Human_AnimRigRN.phl[920]" "bicep_r.rz";
+connectAttr "Human_AnimRigRN.phl[921]" "bicep_r.sx";
+connectAttr "Human_AnimRigRN.phl[922]" "bicep_r.sy";
+connectAttr "Human_AnimRigRN.phl[923]" "bicep_r.sz";
+connectAttr "Human_AnimRigRN.phl[924]" "forearm_r.tx";
+connectAttr "Human_AnimRigRN.phl[925]" "forearm_r.ty";
+connectAttr "Human_AnimRigRN.phl[926]" "forearm_r.tz";
+connectAttr "Human_AnimRigRN.phl[927]" "forearm_r.rx";
+connectAttr "Human_AnimRigRN.phl[928]" "forearm_r.ry";
+connectAttr "Human_AnimRigRN.phl[929]" "forearm_r.rz";
+connectAttr "Human_AnimRigRN.phl[930]" "forearm_twist_r.tx";
+connectAttr "Human_AnimRigRN.phl[931]" "forearm_twist_r.ty";
+connectAttr "Human_AnimRigRN.phl[932]" "forearm_twist_r.tz";
+connectAttr "Human_AnimRigRN.phl[933]" "forearm_twist_r.rx";
+connectAttr "Human_AnimRigRN.phl[934]" "forearm_twist_r.ry";
+connectAttr "Human_AnimRigRN.phl[935]" "forearm_twist_r.rz";
+connectAttr "Human_AnimRigRN.phl[936]" "forearm_twist_r.sx";
+connectAttr "Human_AnimRigRN.phl[937]" "forearm_twist_r.sy";
+connectAttr "Human_AnimRigRN.phl[938]" "forearm_twist_r.sz";
+connectAttr "Human_AnimRigRN.phl[939]" "hand_r.tx";
+connectAttr "Human_AnimRigRN.phl[940]" "hand_r.ty";
+connectAttr "Human_AnimRigRN.phl[941]" "hand_r.tz";
+connectAttr "Human_AnimRigRN.phl[942]" "hand_r.rx";
+connectAttr "Human_AnimRigRN.phl[943]" "hand_r.ry";
+connectAttr "Human_AnimRigRN.phl[944]" "hand_r.rz";
+connectAttr "Human_AnimRigRN.phl[945]" "hold_r.tx";
+connectAttr "Human_AnimRigRN.phl[946]" "hold_r.ty";
+connectAttr "Human_AnimRigRN.phl[947]" "hold_r.tz";
+connectAttr "Human_AnimRigRN.phl[948]" "hold_r.rx";
+connectAttr "Human_AnimRigRN.phl[949]" "hold_r.ry";
+connectAttr "Human_AnimRigRN.phl[950]" "hold_r.rz";
+connectAttr "Human_AnimRigRN.phl[951]" "c_index1_r.tx";
+connectAttr "Human_AnimRigRN.phl[952]" "c_index1_r.ty";
+connectAttr "Human_AnimRigRN.phl[953]" "c_index1_r.tz";
+connectAttr "Human_AnimRigRN.phl[954]" "c_index1_r.rx";
+connectAttr "Human_AnimRigRN.phl[955]" "c_index1_r.ry";
+connectAttr "Human_AnimRigRN.phl[956]" "c_index1_r.rz";
+connectAttr "Human_AnimRigRN.phl[957]" "c_index2_r.tx";
+connectAttr "Human_AnimRigRN.phl[958]" "c_index2_r.ty";
+connectAttr "Human_AnimRigRN.phl[959]" "c_index2_r.tz";
+connectAttr "Human_AnimRigRN.phl[960]" "c_index2_r.rx";
+connectAttr "Human_AnimRigRN.phl[961]" "c_index2_r.ry";
+connectAttr "Human_AnimRigRN.phl[962]" "c_index2_r.rz";
+connectAttr "Human_AnimRigRN.phl[963]" "c_index3_r.tx";
+connectAttr "Human_AnimRigRN.phl[964]" "c_index3_r.ty";
+connectAttr "Human_AnimRigRN.phl[965]" "c_index3_r.tz";
+connectAttr "Human_AnimRigRN.phl[966]" "c_index3_r.rx";
+connectAttr "Human_AnimRigRN.phl[967]" "c_index3_r.ry";
+connectAttr "Human_AnimRigRN.phl[968]" "c_index3_r.rz";
+connectAttr "Human_AnimRigRN.phl[969]" "c_middle1_r.tx";
+connectAttr "Human_AnimRigRN.phl[970]" "c_middle1_r.ty";
+connectAttr "Human_AnimRigRN.phl[971]" "c_middle1_r.tz";
+connectAttr "Human_AnimRigRN.phl[972]" "c_middle1_r.rx";
+connectAttr "Human_AnimRigRN.phl[973]" "c_middle1_r.ry";
+connectAttr "Human_AnimRigRN.phl[974]" "c_middle1_r.rz";
+connectAttr "Human_AnimRigRN.phl[975]" "c_middle2_r.tx";
+connectAttr "Human_AnimRigRN.phl[976]" "c_middle2_r.ty";
+connectAttr "Human_AnimRigRN.phl[977]" "c_middle2_r.tz";
+connectAttr "Human_AnimRigRN.phl[978]" "c_middle2_r.rx";
+connectAttr "Human_AnimRigRN.phl[979]" "c_middle2_r.ry";
+connectAttr "Human_AnimRigRN.phl[980]" "c_middle2_r.rz";
+connectAttr "Human_AnimRigRN.phl[981]" "c_middle3_r.tx";
+connectAttr "Human_AnimRigRN.phl[982]" "c_middle3_r.ty";
+connectAttr "Human_AnimRigRN.phl[983]" "c_middle3_r.tz";
+connectAttr "Human_AnimRigRN.phl[984]" "c_middle3_r.rx";
+connectAttr "Human_AnimRigRN.phl[985]" "c_middle3_r.ry";
+connectAttr "Human_AnimRigRN.phl[986]" "c_middle3_r.rz";
+connectAttr "Human_AnimRigRN.phl[987]" "c_ring1_r.tx";
+connectAttr "Human_AnimRigRN.phl[988]" "c_ring1_r.ty";
+connectAttr "Human_AnimRigRN.phl[989]" "c_ring1_r.tz";
+connectAttr "Human_AnimRigRN.phl[990]" "c_ring1_r.rx";
+connectAttr "Human_AnimRigRN.phl[991]" "c_ring1_r.ry";
+connectAttr "Human_AnimRigRN.phl[992]" "c_ring1_r.rz";
+connectAttr "Human_AnimRigRN.phl[993]" "c_ring2_r.tx";
+connectAttr "Human_AnimRigRN.phl[994]" "c_ring2_r.ty";
+connectAttr "Human_AnimRigRN.phl[995]" "c_ring2_r.tz";
+connectAttr "Human_AnimRigRN.phl[996]" "c_ring2_r.rx";
+connectAttr "Human_AnimRigRN.phl[997]" "c_ring2_r.ry";
+connectAttr "Human_AnimRigRN.phl[998]" "c_ring2_r.rz";
+connectAttr "Human_AnimRigRN.phl[999]" "c_ring3_r.tx";
+connectAttr "Human_AnimRigRN.phl[1000]" "c_ring3_r.ty";
+connectAttr "Human_AnimRigRN.phl[1001]" "c_ring3_r.tz";
+connectAttr "Human_AnimRigRN.phl[1002]" "c_ring3_r.rx";
+connectAttr "Human_AnimRigRN.phl[1003]" "c_ring3_r.ry";
+connectAttr "Human_AnimRigRN.phl[1004]" "c_ring3_r.rz";
+connectAttr "Human_AnimRigRN.phl[1005]" "c_thumb1_r.tx";
+connectAttr "Human_AnimRigRN.phl[1006]" "c_thumb1_r.ty";
+connectAttr "Human_AnimRigRN.phl[1007]" "c_thumb1_r.tz";
+connectAttr "Human_AnimRigRN.phl[1008]" "c_thumb1_r.rx";
+connectAttr "Human_AnimRigRN.phl[1009]" "c_thumb1_r.ry";
+connectAttr "Human_AnimRigRN.phl[1010]" "c_thumb1_r.rz";
+connectAttr "Human_AnimRigRN.phl[1011]" "c_thumb2_r.tx";
+connectAttr "Human_AnimRigRN.phl[1012]" "c_thumb2_r.ty";
+connectAttr "Human_AnimRigRN.phl[1013]" "c_thumb2_r.tz";
+connectAttr "Human_AnimRigRN.phl[1014]" "c_thumb2_r.rx";
+connectAttr "Human_AnimRigRN.phl[1015]" "c_thumb2_r.ry";
+connectAttr "Human_AnimRigRN.phl[1016]" "c_thumb2_r.rz";
+connectAttr "Human_AnimRigRN.phl[1017]" "c_thumb3_r.rx";
+connectAttr "Human_AnimRigRN.phl[1018]" "c_thumb3_r.ry";
+connectAttr "Human_AnimRigRN.phl[1019]" "c_thumb3_r.rz";
+connectAttr "Human_AnimRigRN.phl[1020]" "c_thumb3_r.tx";
+connectAttr "Human_AnimRigRN.phl[1021]" "c_thumb3_r.ty";
+connectAttr "Human_AnimRigRN.phl[1022]" "c_thumb3_r.tz";
+connectAttr "Human_AnimRigRN.phl[1023]" "neck.tx";
+connectAttr "Human_AnimRigRN.phl[1024]" "neck.ty";
+connectAttr "Human_AnimRigRN.phl[1025]" "neck.tz";
+connectAttr "Human_AnimRigRN.phl[1026]" "neck.rx";
+connectAttr "Human_AnimRigRN.phl[1027]" "neck.ry";
+connectAttr "Human_AnimRigRN.phl[1028]" "neck.rz";
+connectAttr "Human_AnimRigRN.phl[1029]" "muscle_neck.tx";
+connectAttr "Human_AnimRigRN.phl[1030]" "muscle_neck.ty";
+connectAttr "Human_AnimRigRN.phl[1031]" "muscle_neck.tz";
+connectAttr "Human_AnimRigRN.phl[1032]" "muscle_neck.rx";
+connectAttr "Human_AnimRigRN.phl[1033]" "muscle_neck.ry";
+connectAttr "Human_AnimRigRN.phl[1034]" "muscle_neck.rz";
+connectAttr "Human_AnimRigRN.phl[1035]" "muscle_neck.sx";
+connectAttr "Human_AnimRigRN.phl[1036]" "muscle_neck.sy";
+connectAttr "Human_AnimRigRN.phl[1037]" "muscle_neck.sz";
+connectAttr "Human_AnimRigRN.phl[1038]" "head.tx";
+connectAttr "Human_AnimRigRN.phl[1039]" "head.ty";
+connectAttr "Human_AnimRigRN.phl[1040]" "head.tz";
+connectAttr "Human_AnimRigRN.phl[1041]" "head.rx";
+connectAttr "Human_AnimRigRN.phl[1042]" "head.ry";
+connectAttr "Human_AnimRigRN.phl[1043]" "head.rz";
+connectAttr "Human_AnimRigRN.phl[1044]" "thigh_r.tx";
+connectAttr "Human_AnimRigRN.phl[1045]" "thigh_r.ty";
+connectAttr "Human_AnimRigRN.phl[1046]" "thigh_r.tz";
+connectAttr "Human_AnimRigRN.phl[1047]" "thigh_r.rx";
+connectAttr "Human_AnimRigRN.phl[1048]" "thigh_r.ry";
+connectAttr "Human_AnimRigRN.phl[1049]" "thigh_r.rz";
+connectAttr "Human_AnimRigRN.phl[1050]" "width_thigh_r.tx";
+connectAttr "Human_AnimRigRN.phl[1051]" "width_thigh_r.ty";
+connectAttr "Human_AnimRigRN.phl[1052]" "width_thigh_r.tz";
+connectAttr "Human_AnimRigRN.phl[1053]" "width_thigh_r.rx";
+connectAttr "Human_AnimRigRN.phl[1054]" "width_thigh_r.ry";
+connectAttr "Human_AnimRigRN.phl[1055]" "width_thigh_r.rz";
+connectAttr "Human_AnimRigRN.phl[1056]" "width_thigh_r.sx";
+connectAttr "Human_AnimRigRN.phl[1057]" "width_thigh_r.sy";
+connectAttr "Human_AnimRigRN.phl[1058]" "width_thigh_r.sz";
+connectAttr "Human_AnimRigRN.phl[1059]" "lower_leg_r.tx";
+connectAttr "Human_AnimRigRN.phl[1060]" "lower_leg_r.ty";
+connectAttr "Human_AnimRigRN.phl[1061]" "lower_leg_r.tz";
+connectAttr "Human_AnimRigRN.phl[1062]" "lower_leg_r.rx";
+connectAttr "Human_AnimRigRN.phl[1063]" "lower_leg_r.ry";
+connectAttr "Human_AnimRigRN.phl[1064]" "lower_leg_r.rz";
+connectAttr "Human_AnimRigRN.phl[1065]" "foot_r.tx";
+connectAttr "Human_AnimRigRN.phl[1066]" "foot_r.ty";
+connectAttr "Human_AnimRigRN.phl[1067]" "foot_r.tz";
+connectAttr "Human_AnimRigRN.phl[1068]" "foot_r.rx";
+connectAttr "Human_AnimRigRN.phl[1069]" "foot_r.ry";
+connectAttr "Human_AnimRigRN.phl[1070]" "foot_r.rz";
+connectAttr "Human_AnimRigRN.phl[1071]" "toes_r.tx";
+connectAttr "Human_AnimRigRN.phl[1072]" "toes_r.ty";
+connectAttr "Human_AnimRigRN.phl[1073]" "toes_r.tz";
+connectAttr "Human_AnimRigRN.phl[1074]" "toes_r.rx";
+connectAttr "Human_AnimRigRN.phl[1075]" "toes_r.ry";
+connectAttr "Human_AnimRigRN.phl[1076]" "toes_r.rz";
+connectAttr "Human_AnimRigRN.phl[1077]" "thigh_l.tx";
+connectAttr "Human_AnimRigRN.phl[1078]" "thigh_l.ty";
+connectAttr "Human_AnimRigRN.phl[1079]" "thigh_l.tz";
+connectAttr "Human_AnimRigRN.phl[1080]" "thigh_l.rx";
+connectAttr "Human_AnimRigRN.phl[1081]" "thigh_l.ry";
+connectAttr "Human_AnimRigRN.phl[1082]" "thigh_l.rz";
+connectAttr "Human_AnimRigRN.phl[1083]" "width_thigh_l.tx";
+connectAttr "Human_AnimRigRN.phl[1084]" "width_thigh_l.ty";
+connectAttr "Human_AnimRigRN.phl[1085]" "width_thigh_l.tz";
+connectAttr "Human_AnimRigRN.phl[1086]" "width_thigh_l.rx";
+connectAttr "Human_AnimRigRN.phl[1087]" "width_thigh_l.ry";
+connectAttr "Human_AnimRigRN.phl[1088]" "width_thigh_l.rz";
+connectAttr "Human_AnimRigRN.phl[1089]" "width_thigh_l.sx";
+connectAttr "Human_AnimRigRN.phl[1090]" "width_thigh_l.sy";
+connectAttr "Human_AnimRigRN.phl[1091]" "width_thigh_l.sz";
+connectAttr "Human_AnimRigRN.phl[1092]" "lower_leg_l.tx";
+connectAttr "Human_AnimRigRN.phl[1093]" "lower_leg_l.ty";
+connectAttr "Human_AnimRigRN.phl[1094]" "lower_leg_l.tz";
+connectAttr "Human_AnimRigRN.phl[1095]" "lower_leg_l.rx";
+connectAttr "Human_AnimRigRN.phl[1096]" "lower_leg_l.ry";
+connectAttr "Human_AnimRigRN.phl[1097]" "lower_leg_l.rz";
+connectAttr "Human_AnimRigRN.phl[1098]" "foot_l.tx";
+connectAttr "Human_AnimRigRN.phl[1099]" "foot_l.ty";
+connectAttr "Human_AnimRigRN.phl[1100]" "foot_l.tz";
+connectAttr "Human_AnimRigRN.phl[1101]" "foot_l.rx";
+connectAttr "Human_AnimRigRN.phl[1102]" "foot_l.ry";
+connectAttr "Human_AnimRigRN.phl[1103]" "foot_l.rz";
+connectAttr "Human_AnimRigRN.phl[1104]" "toes_l.tx";
+connectAttr "Human_AnimRigRN.phl[1105]" "toes_l.ty";
+connectAttr "Human_AnimRigRN.phl[1106]" "toes_l.tz";
+connectAttr "Human_AnimRigRN.phl[1107]" "toes_l.rx";
+connectAttr "Human_AnimRigRN.phl[1108]" "toes_l.ry";
+connectAttr "Human_AnimRigRN.phl[1109]" "toes_l.rz";
 connectAttr "HMND_AnimRig_FeetPlatform_CTR_translateZ.o" "Human_AnimRigRN.phl[1110]"
 		;
 connectAttr "HMND_AnimRig_FeetPlatform_CTR_translateY.o" "Human_AnimRigRN.phl[1111]"
@@ -16824,125 +13603,70 @@ connectAttr "HMND_AnimRig_ArmOptions_CTR_L_SpaceSwitchHand1.o" "Human_AnimRigRN.
 connectAttr "HMND_AnimRig_MainRoot_CTR_scaleZ1.o" "Human_AnimRigRN.phl[1294]";
 connectAttr "HMND_AnimRig_MainRoot_CTR_scaleY1.o" "Human_AnimRigRN.phl[1295]";
 connectAttr "HMND_AnimRig_MainRoot_CTR_scaleX1.o" "Human_AnimRigRN.phl[1296]";
-connectAttr "HumanArmature1.iog" "Human_AnimRigRN.phl[1297]";
-connectAttr "|HumanArmature1|hips.iog" "Human_AnimRigRN.phl[1298]";
-connectAttr "|HumanArmature1|hips|thigh_l.iog" "Human_AnimRigRN.phl[1299]";
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.iog" "Human_AnimRigRN.phl[1300]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.iog" "Human_AnimRigRN.phl[1301]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.iog" "Human_AnimRigRN.phl[1302]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.iog" "Human_AnimRigRN.phl[1303]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.iog" "Human_AnimRigRN.phl[1304]";
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.iog" "Human_AnimRigRN.phl[1305]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.iog" "Human_AnimRigRN.phl[1306]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.iog" "Human_AnimRigRN.phl[1307]"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.iog" "Human_AnimRigRN.phl[1308]"
-		;
-connectAttr "|HumanArmature1|hips|spine.iog" "Human_AnimRigRN.phl[1309]";
-connectAttr "|HumanArmature1|hips|spine|chest.iog" "Human_AnimRigRN.phl[1310]";
-connectAttr "|HumanArmature1|hips|spine|chest|neck.iog" "Human_AnimRigRN.phl[1311]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head.iog" "Human_AnimRigRN.phl[1312]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.iog" "Human_AnimRigRN.phl[1313]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.iog" "Human_AnimRigRN.phl[1314]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.iog" "Human_AnimRigRN.phl[1315]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.iog" "Human_AnimRigRN.phl[1316]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.iog" "Human_AnimRigRN.phl[1317]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.iog" "Human_AnimRigRN.phl[1318]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.iog" "Human_AnimRigRN.phl[1319]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.iog" "Human_AnimRigRN.phl[1320]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.iog" "Human_AnimRigRN.phl[1321]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.iog" "Human_AnimRigRN.phl[1322]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.iog" "Human_AnimRigRN.phl[1323]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.iog" "Human_AnimRigRN.phl[1324]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.iog" "Human_AnimRigRN.phl[1325]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.iog" "Human_AnimRigRN.phl[1326]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.iog" "Human_AnimRigRN.phl[1327]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.iog" "Human_AnimRigRN.phl[1328]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.iog" "Human_AnimRigRN.phl[1329]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.iog" "Human_AnimRigRN.phl[1330]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.iog" "Human_AnimRigRN.phl[1331]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.iog" "Human_AnimRigRN.phl[1332]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.iog" "Human_AnimRigRN.phl[1333]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.iog" "Human_AnimRigRN.phl[1334]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.iog" "Human_AnimRigRN.phl[1335]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.iog" "Human_AnimRigRN.phl[1336]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.iog" "Human_AnimRigRN.phl[1337]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.iog" "Human_AnimRigRN.phl[1338]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.iog" "Human_AnimRigRN.phl[1339]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.iog" "Human_AnimRigRN.phl[1340]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.iog" "Human_AnimRigRN.phl[1341]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.iog" "Human_AnimRigRN.phl[1342]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.iog" "Human_AnimRigRN.phl[1343]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.iog" "Human_AnimRigRN.phl[1344]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.iog" "Human_AnimRigRN.phl[1345]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.iog" "Human_AnimRigRN.phl[1346]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.iog" "Human_AnimRigRN.phl[1347]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.iog" "Human_AnimRigRN.phl[1348]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.iog" "Human_AnimRigRN.phl[1349]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.iog" "Human_AnimRigRN.phl[1350]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.iog" "Human_AnimRigRN.phl[1351]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.iog" "Human_AnimRigRN.phl[1352]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.iog" "Human_AnimRigRN.phl[1353]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.iog" "Human_AnimRigRN.phl[1354]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.iog" "Human_AnimRigRN.phl[1355]"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.iog" "Human_AnimRigRN.phl[1356]"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.iog" "Human_AnimRigRN.phl[1357]"
-		;
-connectAttr "|HumanArmature1|hips|belly.iog" "Human_AnimRigRN.phl[1358]";
-connectAttr "|HumanArmature1|hips|waist.iog" "Human_AnimRigRN.phl[1359]";
-connectAttr "|HumanArmature1|hips|butt.iog" "Human_AnimRigRN.phl[1360]";
+connectAttr "HumanArmature.iog" "Human_AnimRigRN.phl[1297]";
+connectAttr "hips.iog" "Human_AnimRigRN.phl[1298]";
+connectAttr "thigh_l.iog" "Human_AnimRigRN.phl[1299]";
+connectAttr "lower_leg_l.iog" "Human_AnimRigRN.phl[1300]";
+connectAttr "foot_l.iog" "Human_AnimRigRN.phl[1301]";
+connectAttr "toes_l.iog" "Human_AnimRigRN.phl[1302]";
+connectAttr "width_thigh_l.iog" "Human_AnimRigRN.phl[1303]";
+connectAttr "thigh_r.iog" "Human_AnimRigRN.phl[1304]";
+connectAttr "lower_leg_r.iog" "Human_AnimRigRN.phl[1305]";
+connectAttr "toes_r.iog" "Human_AnimRigRN.phl[1306]";
+connectAttr "foot_r.iog" "Human_AnimRigRN.phl[1307]";
+connectAttr "width_thigh_r.iog" "Human_AnimRigRN.phl[1308]";
+connectAttr "spine.iog" "Human_AnimRigRN.phl[1309]";
+connectAttr "chest.iog" "Human_AnimRigRN.phl[1310]";
+connectAttr "neck.iog" "Human_AnimRigRN.phl[1311]";
+connectAttr "head.iog" "Human_AnimRigRN.phl[1312]";
+connectAttr "muscle_neck.iog" "Human_AnimRigRN.phl[1313]";
+connectAttr "shoulder_r.iog" "Human_AnimRigRN.phl[1314]";
+connectAttr "upper_arm_r.iog" "Human_AnimRigRN.phl[1315]";
+connectAttr "forearm_r.iog" "Human_AnimRigRN.phl[1316]";
+connectAttr "hand_r.iog" "Human_AnimRigRN.phl[1317]";
+connectAttr "c_thumb1_r.iog" "Human_AnimRigRN.phl[1318]";
+connectAttr "c_thumb2_r.iog" "Human_AnimRigRN.phl[1319]";
+connectAttr "c_thumb3_r.iog" "Human_AnimRigRN.phl[1320]";
+connectAttr "c_ring1_r.iog" "Human_AnimRigRN.phl[1321]";
+connectAttr "c_ring2_r.iog" "Human_AnimRigRN.phl[1322]";
+connectAttr "c_ring3_r.iog" "Human_AnimRigRN.phl[1323]";
+connectAttr "c_middle1_r.iog" "Human_AnimRigRN.phl[1324]";
+connectAttr "c_middle2_r.iog" "Human_AnimRigRN.phl[1325]";
+connectAttr "c_middle3_r.iog" "Human_AnimRigRN.phl[1326]";
+connectAttr "c_index1_r.iog" "Human_AnimRigRN.phl[1327]";
+connectAttr "c_index2_r.iog" "Human_AnimRigRN.phl[1328]";
+connectAttr "c_index3_r.iog" "Human_AnimRigRN.phl[1329]";
+connectAttr "hold_r.iog" "Human_AnimRigRN.phl[1330]";
+connectAttr "forearm_twist_r.iog" "Human_AnimRigRN.phl[1331]";
+connectAttr "bicep_r.iog" "Human_AnimRigRN.phl[1332]";
+connectAttr "muscle_shoulder_r.iog" "Human_AnimRigRN.phl[1333]";
+connectAttr "shoulder_l.iog" "Human_AnimRigRN.phl[1334]";
+connectAttr "upper_arm_l.iog" "Human_AnimRigRN.phl[1335]";
+connectAttr "forearm_l.iog" "Human_AnimRigRN.phl[1336]";
+connectAttr "hand_l.iog" "Human_AnimRigRN.phl[1337]";
+connectAttr "c_thumb1_l.iog" "Human_AnimRigRN.phl[1338]";
+connectAttr "c_thumb2_l.iog" "Human_AnimRigRN.phl[1339]";
+connectAttr "c_thumb3_l.iog" "Human_AnimRigRN.phl[1340]";
+connectAttr "c_ring1_l.iog" "Human_AnimRigRN.phl[1341]";
+connectAttr "c_ring2_l.iog" "Human_AnimRigRN.phl[1342]";
+connectAttr "c_ring3_l.iog" "Human_AnimRigRN.phl[1343]";
+connectAttr "c_middle1_l.iog" "Human_AnimRigRN.phl[1344]";
+connectAttr "c_middle2_l.iog" "Human_AnimRigRN.phl[1345]";
+connectAttr "c_middle3_l.iog" "Human_AnimRigRN.phl[1346]";
+connectAttr "c_index1_l.iog" "Human_AnimRigRN.phl[1347]";
+connectAttr "c_index2_l.iog" "Human_AnimRigRN.phl[1348]";
+connectAttr "c_index3_l.iog" "Human_AnimRigRN.phl[1349]";
+connectAttr "hold_l.iog" "Human_AnimRigRN.phl[1350]";
+connectAttr "forearm_twist_l.iog" "Human_AnimRigRN.phl[1351]";
+connectAttr "bicep_l.iog" "Human_AnimRigRN.phl[1352]";
+connectAttr "muscle_shoulder_l.iog" "Human_AnimRigRN.phl[1353]";
+connectAttr "breast_L.iog" "Human_AnimRigRN.phl[1354]";
+connectAttr "breast_R.iog" "Human_AnimRigRN.phl[1355]";
+connectAttr "muscle_chest.iog" "Human_AnimRigRN.phl[1356]";
+connectAttr "torso_width.iog" "Human_AnimRigRN.phl[1357]";
+connectAttr "belly.iog" "Human_AnimRigRN.phl[1358]";
+connectAttr "waist.iog" "Human_AnimRigRN.phl[1359]";
+connectAttr "butt.iog" "Human_AnimRigRN.phl[1360]";
 connectAttr "side_parentConstraint1.ctx" ":side.tx";
 connectAttr "side_parentConstraint1.cty" ":side.ty";
 connectAttr "side_parentConstraint1.ctz" ":side.tz";
@@ -16963,826 +13687,6 @@ connectAttr "pCube1_scaleX.o" "pCube1.sx";
 connectAttr "pCube1_scaleY.o" "pCube1.sy";
 connectAttr "pCube1_scaleZ.o" "pCube1.sz";
 connectAttr "polyCube1.out" "pCubeShape1.i";
-connectAttr "HumanArmature.s" "|HumanArmature|hips.is";
-connectAttr "|HumanArmature|hips.s" "|HumanArmature|hips|thigh_l.is";
-connectAttr "|HumanArmature|hips|thigh_l.s" "|HumanArmature|hips|thigh_l|lower_leg_l.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l.s" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.s" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l.ro" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l.pim" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l.rp" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l.rpt" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l.jo" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.ro" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.pim" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.rp" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.rpt" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l.jo" "|HumanArmature|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l.ro" "|HumanArmature|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l.pim" "|HumanArmature|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l.rp" "|HumanArmature|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l.rpt" "|HumanArmature|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|lower_leg_l.jo" "|HumanArmature|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_l.s" "|HumanArmature|hips|thigh_l|width_thigh_l.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.ro" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.pim" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.rp" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.rpt" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.jo" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.pim" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_l|width_thigh_l.ssc" "|HumanArmature|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature|hips|thigh_l.ro" "|HumanArmature|hips|thigh_l|thigh_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_l.pim" "|HumanArmature|hips|thigh_l|thigh_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_l.rp" "|HumanArmature|hips|thigh_l|thigh_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_l.rpt" "|HumanArmature|hips|thigh_l|thigh_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_l.jo" "|HumanArmature|hips|thigh_l|thigh_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips.s" "|HumanArmature|hips|thigh_r.is";
-connectAttr "|HumanArmature|hips|thigh_r.s" "|HumanArmature|hips|thigh_r|lower_leg_r.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r.s" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.s" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r.ro" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r.pim" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r.rp" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r.rpt" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r.jo" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.ro" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.pim" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.rp" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.rpt" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r.jo" "|HumanArmature|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r.ro" "|HumanArmature|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r.pim" "|HumanArmature|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r.rp" "|HumanArmature|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r.rpt" "|HumanArmature|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|lower_leg_r.jo" "|HumanArmature|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_r.s" "|HumanArmature|hips|thigh_r|width_thigh_r.is"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.ro" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.pim" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.rp" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.rpt" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.jo" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.pim" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_r|width_thigh_r.ssc" "|HumanArmature|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature|hips|thigh_r.ro" "|HumanArmature|hips|thigh_r|thigh_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|thigh_r.pim" "|HumanArmature|hips|thigh_r|thigh_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|thigh_r.rp" "|HumanArmature|hips|thigh_r|thigh_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|thigh_r.rpt" "|HumanArmature|hips|thigh_r|thigh_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|thigh_r.jo" "|HumanArmature|hips|thigh_r|thigh_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips.s" "|HumanArmature|hips|spine.is";
-connectAttr "|HumanArmature|hips|spine.s" "|HumanArmature|hips|spine|chest.is";
-connectAttr "|HumanArmature|hips|spine|chest.s" "|HumanArmature|hips|spine|chest|neck.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.s" "|HumanArmature|hips|spine|chest|neck|head.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|head.ro" "|HumanArmature|hips|spine|chest|neck|head|head_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|head.pim" "|HumanArmature|hips|spine|chest|neck|head|head_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|head.rp" "|HumanArmature|hips|spine|chest|neck|head|head_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|head.rpt" "|HumanArmature|hips|spine|chest|neck|head|head_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|head.jo" "|HumanArmature|hips|spine|chest|neck|head|head_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.s" "|HumanArmature|hips|spine|chest|neck|muscle_neck.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.ro" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.pim" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.rp" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.rpt" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.jo" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.pim" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck|muscle_neck.ssc" "|HumanArmature|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.ro" "|HumanArmature|hips|spine|chest|neck|neck_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.pim" "|HumanArmature|hips|spine|chest|neck|neck_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.rp" "|HumanArmature|hips|spine|chest|neck|neck_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.rpt" "|HumanArmature|hips|spine|chest|neck|neck_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|neck.jo" "|HumanArmature|hips|spine|chest|neck|neck_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.s" "|HumanArmature|hips|spine|chest|shoulder_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.ssc" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.ssc" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.s" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r.ssc" "|HumanArmature|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.ro" "|HumanArmature|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.pim" "|HumanArmature|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.rp" "|HumanArmature|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.rpt" "|HumanArmature|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_r.jo" "|HumanArmature|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.s" "|HumanArmature|hips|spine|chest|shoulder_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.ssc" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.ssc" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.s" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l.ssc" "|HumanArmature|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.ro" "|HumanArmature|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.pim" "|HumanArmature|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.rp" "|HumanArmature|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.rpt" "|HumanArmature|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|shoulder_l.jo" "|HumanArmature|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.s" "|HumanArmature|hips|spine|chest|breast_L.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.ro" "|HumanArmature|hips|spine|chest|breast_L|breast_L_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.pim" "|HumanArmature|hips|spine|chest|breast_L|breast_L_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.rp" "|HumanArmature|hips|spine|chest|breast_L|breast_L_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.rpt" "|HumanArmature|hips|spine|chest|breast_L|breast_L_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.jo" "|HumanArmature|hips|spine|chest|breast_L|breast_L_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.pim" "|HumanArmature|hips|spine|chest|breast_L|breast_L_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_L.ssc" "|HumanArmature|hips|spine|chest|breast_L|breast_L_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.s" "|HumanArmature|hips|spine|chest|breast_R.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.ro" "|HumanArmature|hips|spine|chest|breast_R|breast_R_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.pim" "|HumanArmature|hips|spine|chest|breast_R|breast_R_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.rp" "|HumanArmature|hips|spine|chest|breast_R|breast_R_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.rpt" "|HumanArmature|hips|spine|chest|breast_R|breast_R_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.jo" "|HumanArmature|hips|spine|chest|breast_R|breast_R_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.pim" "|HumanArmature|hips|spine|chest|breast_R|breast_R_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|breast_R.ssc" "|HumanArmature|hips|spine|chest|breast_R|breast_R_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.s" "|HumanArmature|hips|spine|chest|muscle_chest.is"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.pim" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.ssc" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.ro" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.pim" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.rp" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.rpt" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest|muscle_chest.jo" "|HumanArmature|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.ro" "|HumanArmature|hips|spine|chest|chest_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.pim" "|HumanArmature|hips|spine|chest|chest_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.rp" "|HumanArmature|hips|spine|chest|chest_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.rpt" "|HumanArmature|hips|spine|chest|chest_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|chest.jo" "|HumanArmature|hips|spine|chest|chest_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine.s" "|HumanArmature|hips|spine|torso_width.is"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.ro" "|HumanArmature|hips|spine|torso_width|torso_width_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.pim" "|HumanArmature|hips|spine|torso_width|torso_width_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.rp" "|HumanArmature|hips|spine|torso_width|torso_width_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.rpt" "|HumanArmature|hips|spine|torso_width|torso_width_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.jo" "|HumanArmature|hips|spine|torso_width|torso_width_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.pim" "|HumanArmature|hips|spine|torso_width|torso_width_scaleConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine|torso_width.ssc" "|HumanArmature|hips|spine|torso_width|torso_width_scaleConstraint2.tsc"
-		;
-connectAttr "|HumanArmature|hips|spine.ro" "|HumanArmature|hips|spine|spine_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature|hips|spine.pim" "|HumanArmature|hips|spine|spine_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|spine.rp" "|HumanArmature|hips|spine|spine_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature|hips|spine.rpt" "|HumanArmature|hips|spine|spine_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature|hips|spine.jo" "|HumanArmature|hips|spine|spine_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature|hips.s" "|HumanArmature|hips|belly.is";
-connectAttr "|HumanArmature|hips|belly.ro" "|HumanArmature|hips|belly|belly_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|belly.pim" "|HumanArmature|hips|belly|belly_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|belly.rp" "|HumanArmature|hips|belly|belly_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|belly.rpt" "|HumanArmature|hips|belly|belly_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|belly.jo" "|HumanArmature|hips|belly|belly_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|belly.pim" "|HumanArmature|hips|belly|belly_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|belly.ssc" "|HumanArmature|hips|belly|belly_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips.s" "|HumanArmature|hips|waist.is";
-connectAttr "|HumanArmature|hips|waist.ro" "|HumanArmature|hips|waist|waist_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|waist.pim" "|HumanArmature|hips|waist|waist_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|waist.rp" "|HumanArmature|hips|waist|waist_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|waist.rpt" "|HumanArmature|hips|waist|waist_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|waist.jo" "|HumanArmature|hips|waist|waist_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|waist.pim" "|HumanArmature|hips|waist|waist_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips|waist.ssc" "|HumanArmature|hips|waist|waist_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature|hips.s" "|HumanArmature|hips|butt.is";
-connectAttr "|HumanArmature|hips|butt.ro" "|HumanArmature|hips|butt|butt_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature|hips|butt.pim" "|HumanArmature|hips|butt|butt_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature|hips|butt.rp" "|HumanArmature|hips|butt|butt_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature|hips|butt.rpt" "|HumanArmature|hips|butt|butt_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature|hips|butt.jo" "|HumanArmature|hips|butt|butt_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature|hips|butt.pim" "|HumanArmature|hips|butt|butt_scaleConstraint2.cpim"
-		;
-connectAttr "|HumanArmature|hips|butt.ssc" "|HumanArmature|hips|butt|butt_scaleConstraint2.tsc"
-		;
-connectAttr "|HumanArmature|hips.ro" "|HumanArmature|hips|hips_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature|hips.pim" "|HumanArmature|hips|hips_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature|hips.rp" "|HumanArmature|hips|hips_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature|hips.rpt" "|HumanArmature|hips|hips_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature|hips.jo" "|HumanArmature|hips|hips_parentConstraint4.cjo"
-		;
-connectAttr "HumanArmature.ro" "|HumanArmature|HumanArmature_parentConstraint2.cro"
-		;
-connectAttr "HumanArmature.pim" "|HumanArmature|HumanArmature_parentConstraint2.cpim"
-		;
-connectAttr "HumanArmature.rp" "|HumanArmature|HumanArmature_parentConstraint2.crp"
-		;
-connectAttr "HumanArmature.rpt" "|HumanArmature|HumanArmature_parentConstraint2.crt"
-		;
 connectAttr "hyperLayout1.msg" "animBot.hl";
 connectAttr "animBot_Anim_Recovery_Scene_ID.msg" "animBot.animBot_Anim_Recovery_Scene_ID"
 		;
@@ -17807,987 +13711,553 @@ connectAttr "Camera_pointConstraint1.w0" "Camera_pointConstraint1.tg[0].tw";
 connectAttr "Camera.pim" "Camera_pointConstraint1.cpim";
 connectAttr "Camera.rp" "Camera_pointConstraint1.crp";
 connectAttr "Camera.rpt" "Camera_pointConstraint1.crt";
-connectAttr "HumanArmature1.s" "|HumanArmature1|hips.is";
-connectAttr "|HumanArmature1|hips.s" "|HumanArmature1|hips|thigh_l.is";
-connectAttr "|HumanArmature1|hips|thigh_l.s" "|HumanArmature1|hips|thigh_l|lower_leg_l.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.s" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.s" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.ro" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.pim" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.rp" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.rpt" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l.jo" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.w0" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|toes_l|toes_l_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.ro" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.pim" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.rp" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.rpt" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l.jo" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.w0" "|HumanArmature1|hips|thigh_l|lower_leg_l|foot_l|foot_l_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.ro" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.pim" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.rp" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.rpt" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l.jo" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.w0" "|HumanArmature1|hips|thigh_l|lower_leg_l|lower_leg_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l.s" "|HumanArmature1|hips|thigh_l|width_thigh_l.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.ro" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.pim" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.rp" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.rpt" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.jo" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.w0" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.pim" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l.ssc" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.w0" "|HumanArmature1|hips|thigh_l|width_thigh_l|width_thigh_l_scaleConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l.ro" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l.pim" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l.rp" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l.rpt" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l.jo" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.w0" "|HumanArmature1|hips|thigh_l|thigh_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips.s" "|HumanArmature1|hips|thigh_r.is";
-connectAttr "|HumanArmature1|hips|thigh_r.s" "|HumanArmature1|hips|thigh_r|lower_leg_r.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.s" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.s" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.ro" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.pim" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.rp" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.rpt" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r.jo" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.w0" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|toes_r|toes_r_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.ro" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.pim" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.rp" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.rpt" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r.jo" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.w0" "|HumanArmature1|hips|thigh_r|lower_leg_r|foot_r|foot_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.ro" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.pim" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.rp" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.rpt" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r.jo" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.w0" "|HumanArmature1|hips|thigh_r|lower_leg_r|lower_leg_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.s" "|HumanArmature1|hips|thigh_r|width_thigh_r.is"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.ro" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.pim" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.rp" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.rpt" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.jo" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.w0" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.pim" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r.ssc" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.w0" "|HumanArmature1|hips|thigh_r|width_thigh_r|width_thigh_r_scaleConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.ro" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.pim" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.rp" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.rpt" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r.jo" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.w0" "|HumanArmature1|hips|thigh_r|thigh_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips.s" "|HumanArmature1|hips|spine.is";
-connectAttr "|HumanArmature1|hips|spine.s" "|HumanArmature1|hips|spine|chest.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.s" "|HumanArmature1|hips|spine|chest|neck.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.s" "|HumanArmature1|hips|spine|chest|neck|head.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head.ro" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head.pim" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head.rp" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head.rpt" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head.jo" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.w0" "|HumanArmature1|hips|spine|chest|neck|head|head_parentConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.s" "|HumanArmature1|hips|spine|chest|neck|muscle_neck.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.ro" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.pim" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.rp" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.rpt" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.jo" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.pim" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck.ssc" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.w0" "|HumanArmature1|hips|spine|chest|neck|muscle_neck|muscle_neck_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.ro" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.pim" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.rp" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.rpt" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck.jo" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|neck|neck_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.s" "|HumanArmature1|hips|spine|chest|shoulder_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb3_r|c_thumb3_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb2_r|c_thumb2_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_thumb1_r|c_thumb1_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring3_r|c_ring3_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring2_r|c_ring2_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_ring1_r|c_ring1_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle3_r|c_middle3_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle2_r|c_middle2_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_middle1_r|c_middle1_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index3_r|c_index3_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index2_r|c_index2_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|c_index1_r|c_index1_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hold_r|hold_r_parentConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|hand_r|hand_r_parentConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_parentConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r.ssc" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_twist_r|forearm_twist_r_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|forearm_r|forearm_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r.ssc" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|bicep_r|bicep_r_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|upper_arm_r|upper_arm_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.s" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r.ssc" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|muscle_shoulder_r|muscle_shoulder_r_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.ro" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.pim" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.rp" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.rpt" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r.jo" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_r|shoulder_r_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.s" "|HumanArmature1|hips|spine|chest|shoulder_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb3_l|c_thumb3_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb2_l|c_thumb2_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_thumb1_l|c_thumb1_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring3_l|c_ring3_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring2_l|c_ring2_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_ring1_l|c_ring1_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle3_l|c_middle3_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle2_l|c_middle2_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_middle1_l|c_middle1_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index3_l|c_index3_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index2_l|c_index2_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|c_index1_l|c_index1_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hold_l|hold_l_parentConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|hand_l|hand_l_parentConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l.ssc" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_twist_l|forearm_twist_l_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|forearm_l|forearm_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l.ssc" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|bicep_l|bicep_l_scaleConstraint1.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|upper_arm_l|upper_arm_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.s" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l.ssc" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|muscle_shoulder_l|muscle_shoulder_l_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.ro" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.pim" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.rp" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.rpt" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l.jo" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|shoulder_l|shoulder_l_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.s" "|HumanArmature1|hips|spine|chest|breast_L.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.ro" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.pim" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.rp" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.rpt" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.jo" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.pim" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L.ssc" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_L|breast_L_scaleConstraint4.w0" "|HumanArmature1|hips|spine|chest|breast_L|breast_L_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.s" "|HumanArmature1|hips|spine|chest|breast_R.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.ro" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.pim" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.rp" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.rpt" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.jo" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.pim" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R.ssc" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|breast_R|breast_R_scaleConstraint3.w0" "|HumanArmature1|hips|spine|chest|breast_R|breast_R_scaleConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.s" "|HumanArmature1|hips|spine|chest|muscle_chest.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.pim" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.ssc" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.w0" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_scaleConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.ro" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.pim" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.rp" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.rpt" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest.jo" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.w0" "|HumanArmature1|hips|spine|chest|muscle_chest|muscle_chest_parentConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.ro" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.pim" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.rp" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.rpt" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest.jo" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.w0" "|HumanArmature1|hips|spine|chest|chest_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine.s" "|HumanArmature1|hips|spine|torso_width.is"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.ro" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.pim" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.rp" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.rpt" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.jo" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.w0" "|HumanArmature1|hips|spine|torso_width|torso_width_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.pim" "|HumanArmature1|hips|spine|torso_width|torso_width_scaleConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width.ssc" "|HumanArmature1|hips|spine|torso_width|torso_width_scaleConstraint2.tsc"
-		;
-connectAttr "|HumanArmature1|hips|spine|torso_width|torso_width_scaleConstraint2.w0" "|HumanArmature1|hips|spine|torso_width|torso_width_scaleConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|spine.ro" "|HumanArmature1|hips|spine|spine_parentConstraint2.cro"
-		;
-connectAttr "|HumanArmature1|hips|spine.pim" "|HumanArmature1|hips|spine|spine_parentConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|spine.rp" "|HumanArmature1|hips|spine|spine_parentConstraint2.crp"
-		;
-connectAttr "|HumanArmature1|hips|spine.rpt" "|HumanArmature1|hips|spine|spine_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|hips|spine.jo" "|HumanArmature1|hips|spine|spine_parentConstraint2.cjo"
-		;
-connectAttr "|HumanArmature1|hips|spine|spine_parentConstraint2.w0" "|HumanArmature1|hips|spine|spine_parentConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips.s" "|HumanArmature1|hips|belly.is";
-connectAttr "|HumanArmature1|hips|belly.ro" "|HumanArmature1|hips|belly|belly_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|belly.pim" "|HumanArmature1|hips|belly|belly_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|belly.rp" "|HumanArmature1|hips|belly|belly_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|belly.rpt" "|HumanArmature1|hips|belly|belly_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|belly.jo" "|HumanArmature1|hips|belly|belly_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|belly|belly_parentConstraint3.w0" "|HumanArmature1|hips|belly|belly_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|belly.pim" "|HumanArmature1|hips|belly|belly_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|belly.ssc" "|HumanArmature1|hips|belly|belly_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|belly|belly_scaleConstraint4.w0" "|HumanArmature1|hips|belly|belly_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips.s" "|HumanArmature1|hips|waist.is";
-connectAttr "|HumanArmature1|hips|waist.ro" "|HumanArmature1|hips|waist|waist_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|waist.pim" "|HumanArmature1|hips|waist|waist_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|waist.rp" "|HumanArmature1|hips|waist|waist_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|waist.rpt" "|HumanArmature1|hips|waist|waist_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|waist.jo" "|HumanArmature1|hips|waist|waist_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|waist|waist_parentConstraint3.w0" "|HumanArmature1|hips|waist|waist_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|waist.pim" "|HumanArmature1|hips|waist|waist_scaleConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips|waist.ssc" "|HumanArmature1|hips|waist|waist_scaleConstraint4.tsc"
-		;
-connectAttr "|HumanArmature1|hips|waist|waist_scaleConstraint4.w0" "|HumanArmature1|hips|waist|waist_scaleConstraint4.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips.s" "|HumanArmature1|hips|butt.is";
-connectAttr "|HumanArmature1|hips|butt.ro" "|HumanArmature1|hips|butt|butt_parentConstraint3.cro"
-		;
-connectAttr "|HumanArmature1|hips|butt.pim" "|HumanArmature1|hips|butt|butt_parentConstraint3.cpim"
-		;
-connectAttr "|HumanArmature1|hips|butt.rp" "|HumanArmature1|hips|butt|butt_parentConstraint3.crp"
-		;
-connectAttr "|HumanArmature1|hips|butt.rpt" "|HumanArmature1|hips|butt|butt_parentConstraint3.crt"
-		;
-connectAttr "|HumanArmature1|hips|butt.jo" "|HumanArmature1|hips|butt|butt_parentConstraint3.cjo"
-		;
-connectAttr "|HumanArmature1|hips|butt|butt_parentConstraint3.w0" "|HumanArmature1|hips|butt|butt_parentConstraint3.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips|butt.pim" "|HumanArmature1|hips|butt|butt_scaleConstraint2.cpim"
-		;
-connectAttr "|HumanArmature1|hips|butt.ssc" "|HumanArmature1|hips|butt|butt_scaleConstraint2.tsc"
-		;
-connectAttr "|HumanArmature1|hips|butt|butt_scaleConstraint2.w0" "|HumanArmature1|hips|butt|butt_scaleConstraint2.tg[0].tw"
-		;
-connectAttr "|HumanArmature1|hips.ro" "|HumanArmature1|hips|hips_parentConstraint4.cro"
-		;
-connectAttr "|HumanArmature1|hips.pim" "|HumanArmature1|hips|hips_parentConstraint4.cpim"
-		;
-connectAttr "|HumanArmature1|hips.rp" "|HumanArmature1|hips|hips_parentConstraint4.crp"
-		;
-connectAttr "|HumanArmature1|hips.rpt" "|HumanArmature1|hips|hips_parentConstraint4.crt"
-		;
-connectAttr "|HumanArmature1|hips.jo" "|HumanArmature1|hips|hips_parentConstraint4.cjo"
-		;
-connectAttr "|HumanArmature1|hips|hips_parentConstraint4.w0" "|HumanArmature1|hips|hips_parentConstraint4.tg[0].tw"
-		;
-connectAttr "HumanArmature1.ro" "|HumanArmature1|HumanArmature_parentConstraint2.cro"
-		;
-connectAttr "HumanArmature1.pim" "|HumanArmature1|HumanArmature_parentConstraint2.cpim"
-		;
-connectAttr "HumanArmature1.rp" "|HumanArmature1|HumanArmature_parentConstraint2.crp"
-		;
-connectAttr "HumanArmature1.rpt" "|HumanArmature1|HumanArmature_parentConstraint2.crt"
-		;
-connectAttr "|HumanArmature1|HumanArmature_parentConstraint2.w0" "|HumanArmature1|HumanArmature_parentConstraint2.tg[0].tw"
-		;
+connectAttr "HumanArmature.s" "hips.is";
+connectAttr "hips.s" "thigh_l.is";
+connectAttr "thigh_l.s" "lower_leg_l.is";
+connectAttr "lower_leg_l.s" "foot_l.is";
+connectAttr "foot_l.s" "toes_l.is";
+connectAttr "toes_l_parentConstraint4.w0" "toes_l_parentConstraint4.tg[0].tw";
+connectAttr "toes_l.ro" "toes_l_parentConstraint4.cro";
+connectAttr "toes_l.pim" "toes_l_parentConstraint4.cpim";
+connectAttr "toes_l.rp" "toes_l_parentConstraint4.crp";
+connectAttr "toes_l.rpt" "toes_l_parentConstraint4.crt";
+connectAttr "toes_l.jo" "toes_l_parentConstraint4.cjo";
+connectAttr "foot_l_parentConstraint4.w0" "foot_l_parentConstraint4.tg[0].tw";
+connectAttr "foot_l.ro" "foot_l_parentConstraint4.cro";
+connectAttr "foot_l.pim" "foot_l_parentConstraint4.cpim";
+connectAttr "foot_l.rp" "foot_l_parentConstraint4.crp";
+connectAttr "foot_l.rpt" "foot_l_parentConstraint4.crt";
+connectAttr "foot_l.jo" "foot_l_parentConstraint4.cjo";
+connectAttr "lower_leg_l_parentConstraint2.w0" "lower_leg_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "lower_leg_l.ro" "lower_leg_l_parentConstraint2.cro";
+connectAttr "lower_leg_l.pim" "lower_leg_l_parentConstraint2.cpim";
+connectAttr "lower_leg_l.rp" "lower_leg_l_parentConstraint2.crp";
+connectAttr "lower_leg_l.rpt" "lower_leg_l_parentConstraint2.crt";
+connectAttr "lower_leg_l.jo" "lower_leg_l_parentConstraint2.cjo";
+connectAttr "thigh_l.s" "width_thigh_l.is";
+connectAttr "width_thigh_l_parentConstraint3.w0" "width_thigh_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "width_thigh_l.ro" "width_thigh_l_parentConstraint3.cro";
+connectAttr "width_thigh_l.pim" "width_thigh_l_parentConstraint3.cpim";
+connectAttr "width_thigh_l.rp" "width_thigh_l_parentConstraint3.crp";
+connectAttr "width_thigh_l.rpt" "width_thigh_l_parentConstraint3.crt";
+connectAttr "width_thigh_l.jo" "width_thigh_l_parentConstraint3.cjo";
+connectAttr "width_thigh_l_scaleConstraint3.w0" "width_thigh_l_scaleConstraint3.tg[0].tw"
+		;
+connectAttr "width_thigh_l.pim" "width_thigh_l_scaleConstraint3.cpim";
+connectAttr "width_thigh_l.ssc" "width_thigh_l_scaleConstraint3.tsc";
+connectAttr "thigh_l_parentConstraint2.w0" "thigh_l_parentConstraint2.tg[0].tw";
+connectAttr "thigh_l.ro" "thigh_l_parentConstraint2.cro";
+connectAttr "thigh_l.pim" "thigh_l_parentConstraint2.cpim";
+connectAttr "thigh_l.rp" "thigh_l_parentConstraint2.crp";
+connectAttr "thigh_l.rpt" "thigh_l_parentConstraint2.crt";
+connectAttr "thigh_l.jo" "thigh_l_parentConstraint2.cjo";
+connectAttr "hips.s" "thigh_r.is";
+connectAttr "thigh_r.s" "lower_leg_r.is";
+connectAttr "lower_leg_r.s" "foot_r.is";
+connectAttr "foot_r.s" "toes_r.is";
+connectAttr "toes_r_parentConstraint4.w0" "toes_r_parentConstraint4.tg[0].tw";
+connectAttr "toes_r.ro" "toes_r_parentConstraint4.cro";
+connectAttr "toes_r.pim" "toes_r_parentConstraint4.cpim";
+connectAttr "toes_r.rp" "toes_r_parentConstraint4.crp";
+connectAttr "toes_r.rpt" "toes_r_parentConstraint4.crt";
+connectAttr "toes_r.jo" "toes_r_parentConstraint4.cjo";
+connectAttr "foot_r_parentConstraint2.w0" "foot_r_parentConstraint2.tg[0].tw";
+connectAttr "foot_r.ro" "foot_r_parentConstraint2.cro";
+connectAttr "foot_r.pim" "foot_r_parentConstraint2.cpim";
+connectAttr "foot_r.rp" "foot_r_parentConstraint2.crp";
+connectAttr "foot_r.rpt" "foot_r_parentConstraint2.crt";
+connectAttr "foot_r.jo" "foot_r_parentConstraint2.cjo";
+connectAttr "lower_leg_r_parentConstraint2.w0" "lower_leg_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "lower_leg_r.ro" "lower_leg_r_parentConstraint2.cro";
+connectAttr "lower_leg_r.pim" "lower_leg_r_parentConstraint2.cpim";
+connectAttr "lower_leg_r.rp" "lower_leg_r_parentConstraint2.crp";
+connectAttr "lower_leg_r.rpt" "lower_leg_r_parentConstraint2.crt";
+connectAttr "lower_leg_r.jo" "lower_leg_r_parentConstraint2.cjo";
+connectAttr "thigh_r.s" "width_thigh_r.is";
+connectAttr "width_thigh_r_parentConstraint3.w0" "width_thigh_r_parentConstraint3.tg[0].tw"
+		;
+connectAttr "width_thigh_r.ro" "width_thigh_r_parentConstraint3.cro";
+connectAttr "width_thigh_r.pim" "width_thigh_r_parentConstraint3.cpim";
+connectAttr "width_thigh_r.rp" "width_thigh_r_parentConstraint3.crp";
+connectAttr "width_thigh_r.rpt" "width_thigh_r_parentConstraint3.crt";
+connectAttr "width_thigh_r.jo" "width_thigh_r_parentConstraint3.cjo";
+connectAttr "width_thigh_r_scaleConstraint3.w0" "width_thigh_r_scaleConstraint3.tg[0].tw"
+		;
+connectAttr "width_thigh_r.pim" "width_thigh_r_scaleConstraint3.cpim";
+connectAttr "width_thigh_r.ssc" "width_thigh_r_scaleConstraint3.tsc";
+connectAttr "thigh_r_parentConstraint2.w0" "thigh_r_parentConstraint2.tg[0].tw";
+connectAttr "thigh_r.ro" "thigh_r_parentConstraint2.cro";
+connectAttr "thigh_r.pim" "thigh_r_parentConstraint2.cpim";
+connectAttr "thigh_r.rp" "thigh_r_parentConstraint2.crp";
+connectAttr "thigh_r.rpt" "thigh_r_parentConstraint2.crt";
+connectAttr "thigh_r.jo" "thigh_r_parentConstraint2.cjo";
+connectAttr "hips.s" "spine.is";
+connectAttr "spine.s" "chest.is";
+connectAttr "chest.s" "neck.is";
+connectAttr "neck.s" "head.is";
+connectAttr "head_parentConstraint1.w0" "head_parentConstraint1.tg[0].tw";
+connectAttr "head.ro" "head_parentConstraint1.cro";
+connectAttr "head.pim" "head_parentConstraint1.cpim";
+connectAttr "head.rp" "head_parentConstraint1.crp";
+connectAttr "head.rpt" "head_parentConstraint1.crt";
+connectAttr "head.jo" "head_parentConstraint1.cjo";
+connectAttr "neck.s" "muscle_neck.is";
+connectAttr "muscle_neck_parentConstraint3.w0" "muscle_neck_parentConstraint3.tg[0].tw"
+		;
+connectAttr "muscle_neck.ro" "muscle_neck_parentConstraint3.cro";
+connectAttr "muscle_neck.pim" "muscle_neck_parentConstraint3.cpim";
+connectAttr "muscle_neck.rp" "muscle_neck_parentConstraint3.crp";
+connectAttr "muscle_neck.rpt" "muscle_neck_parentConstraint3.crt";
+connectAttr "muscle_neck.jo" "muscle_neck_parentConstraint3.cjo";
+connectAttr "muscle_neck_scaleConstraint4.w0" "muscle_neck_scaleConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_neck.pim" "muscle_neck_scaleConstraint4.cpim";
+connectAttr "muscle_neck.ssc" "muscle_neck_scaleConstraint4.tsc";
+connectAttr "neck_parentConstraint2.w0" "neck_parentConstraint2.tg[0].tw";
+connectAttr "neck.ro" "neck_parentConstraint2.cro";
+connectAttr "neck.pim" "neck_parentConstraint2.cpim";
+connectAttr "neck.rp" "neck_parentConstraint2.crp";
+connectAttr "neck.rpt" "neck_parentConstraint2.crt";
+connectAttr "neck.jo" "neck_parentConstraint2.cjo";
+connectAttr "chest.s" "shoulder_r.is";
+connectAttr "shoulder_r.s" "upper_arm_r.is";
+connectAttr "upper_arm_r.s" "forearm_r.is";
+connectAttr "forearm_r.s" "hand_r.is";
+connectAttr "hand_r.s" "c_thumb1_r.is";
+connectAttr "c_thumb1_r.s" "c_thumb2_r.is";
+connectAttr "c_thumb2_r.s" "c_thumb3_r.is";
+connectAttr "c_thumb3_r_parentConstraint2.w0" "c_thumb3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_thumb3_r.ro" "c_thumb3_r_parentConstraint2.cro";
+connectAttr "c_thumb3_r.pim" "c_thumb3_r_parentConstraint2.cpim";
+connectAttr "c_thumb3_r.rp" "c_thumb3_r_parentConstraint2.crp";
+connectAttr "c_thumb3_r.rpt" "c_thumb3_r_parentConstraint2.crt";
+connectAttr "c_thumb3_r.jo" "c_thumb3_r_parentConstraint2.cjo";
+connectAttr "c_thumb2_r_parentConstraint2.w0" "c_thumb2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_thumb2_r.ro" "c_thumb2_r_parentConstraint2.cro";
+connectAttr "c_thumb2_r.pim" "c_thumb2_r_parentConstraint2.cpim";
+connectAttr "c_thumb2_r.rp" "c_thumb2_r_parentConstraint2.crp";
+connectAttr "c_thumb2_r.rpt" "c_thumb2_r_parentConstraint2.crt";
+connectAttr "c_thumb2_r.jo" "c_thumb2_r_parentConstraint2.cjo";
+connectAttr "c_thumb1_r_parentConstraint2.w0" "c_thumb1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_thumb1_r.ro" "c_thumb1_r_parentConstraint2.cro";
+connectAttr "c_thumb1_r.pim" "c_thumb1_r_parentConstraint2.cpim";
+connectAttr "c_thumb1_r.rp" "c_thumb1_r_parentConstraint2.crp";
+connectAttr "c_thumb1_r.rpt" "c_thumb1_r_parentConstraint2.crt";
+connectAttr "c_thumb1_r.jo" "c_thumb1_r_parentConstraint2.cjo";
+connectAttr "hand_r.s" "c_ring1_r.is";
+connectAttr "c_ring1_r.s" "c_ring2_r.is";
+connectAttr "c_ring2_r.s" "c_ring3_r.is";
+connectAttr "c_ring3_r_parentConstraint2.w0" "c_ring3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_ring3_r.ro" "c_ring3_r_parentConstraint2.cro";
+connectAttr "c_ring3_r.pim" "c_ring3_r_parentConstraint2.cpim";
+connectAttr "c_ring3_r.rp" "c_ring3_r_parentConstraint2.crp";
+connectAttr "c_ring3_r.rpt" "c_ring3_r_parentConstraint2.crt";
+connectAttr "c_ring3_r.jo" "c_ring3_r_parentConstraint2.cjo";
+connectAttr "c_ring2_r_parentConstraint2.w0" "c_ring2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_ring2_r.ro" "c_ring2_r_parentConstraint2.cro";
+connectAttr "c_ring2_r.pim" "c_ring2_r_parentConstraint2.cpim";
+connectAttr "c_ring2_r.rp" "c_ring2_r_parentConstraint2.crp";
+connectAttr "c_ring2_r.rpt" "c_ring2_r_parentConstraint2.crt";
+connectAttr "c_ring2_r.jo" "c_ring2_r_parentConstraint2.cjo";
+connectAttr "c_ring1_r_parentConstraint2.w0" "c_ring1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_ring1_r.ro" "c_ring1_r_parentConstraint2.cro";
+connectAttr "c_ring1_r.pim" "c_ring1_r_parentConstraint2.cpim";
+connectAttr "c_ring1_r.rp" "c_ring1_r_parentConstraint2.crp";
+connectAttr "c_ring1_r.rpt" "c_ring1_r_parentConstraint2.crt";
+connectAttr "c_ring1_r.jo" "c_ring1_r_parentConstraint2.cjo";
+connectAttr "hand_r.s" "c_middle1_r.is";
+connectAttr "c_middle1_r.s" "c_middle2_r.is";
+connectAttr "c_middle2_r.s" "c_middle3_r.is";
+connectAttr "c_middle3_r_parentConstraint2.w0" "c_middle3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_middle3_r.ro" "c_middle3_r_parentConstraint2.cro";
+connectAttr "c_middle3_r.pim" "c_middle3_r_parentConstraint2.cpim";
+connectAttr "c_middle3_r.rp" "c_middle3_r_parentConstraint2.crp";
+connectAttr "c_middle3_r.rpt" "c_middle3_r_parentConstraint2.crt";
+connectAttr "c_middle3_r.jo" "c_middle3_r_parentConstraint2.cjo";
+connectAttr "c_middle2_r_parentConstraint2.w0" "c_middle2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_middle2_r.ro" "c_middle2_r_parentConstraint2.cro";
+connectAttr "c_middle2_r.pim" "c_middle2_r_parentConstraint2.cpim";
+connectAttr "c_middle2_r.rp" "c_middle2_r_parentConstraint2.crp";
+connectAttr "c_middle2_r.rpt" "c_middle2_r_parentConstraint2.crt";
+connectAttr "c_middle2_r.jo" "c_middle2_r_parentConstraint2.cjo";
+connectAttr "c_middle1_r_parentConstraint2.w0" "c_middle1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_middle1_r.ro" "c_middle1_r_parentConstraint2.cro";
+connectAttr "c_middle1_r.pim" "c_middle1_r_parentConstraint2.cpim";
+connectAttr "c_middle1_r.rp" "c_middle1_r_parentConstraint2.crp";
+connectAttr "c_middle1_r.rpt" "c_middle1_r_parentConstraint2.crt";
+connectAttr "c_middle1_r.jo" "c_middle1_r_parentConstraint2.cjo";
+connectAttr "hand_r.s" "c_index1_r.is";
+connectAttr "c_index1_r.s" "c_index2_r.is";
+connectAttr "c_index2_r.s" "c_index3_r.is";
+connectAttr "c_index3_r_parentConstraint2.w0" "c_index3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index3_r.ro" "c_index3_r_parentConstraint2.cro";
+connectAttr "c_index3_r.pim" "c_index3_r_parentConstraint2.cpim";
+connectAttr "c_index3_r.rp" "c_index3_r_parentConstraint2.crp";
+connectAttr "c_index3_r.rpt" "c_index3_r_parentConstraint2.crt";
+connectAttr "c_index3_r.jo" "c_index3_r_parentConstraint2.cjo";
+connectAttr "c_index2_r_parentConstraint2.w0" "c_index2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index2_r.ro" "c_index2_r_parentConstraint2.cro";
+connectAttr "c_index2_r.pim" "c_index2_r_parentConstraint2.cpim";
+connectAttr "c_index2_r.rp" "c_index2_r_parentConstraint2.crp";
+connectAttr "c_index2_r.rpt" "c_index2_r_parentConstraint2.crt";
+connectAttr "c_index2_r.jo" "c_index2_r_parentConstraint2.cjo";
+connectAttr "c_index1_r_parentConstraint2.w0" "c_index1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index1_r.ro" "c_index1_r_parentConstraint2.cro";
+connectAttr "c_index1_r.pim" "c_index1_r_parentConstraint2.cpim";
+connectAttr "c_index1_r.rp" "c_index1_r_parentConstraint2.crp";
+connectAttr "c_index1_r.rpt" "c_index1_r_parentConstraint2.crt";
+connectAttr "c_index1_r.jo" "c_index1_r_parentConstraint2.cjo";
+connectAttr "hand_r.s" "hold_r.is";
+connectAttr "hold_r_parentConstraint1.w0" "hold_r_parentConstraint1.tg[0].tw";
+connectAttr "hold_r.ro" "hold_r_parentConstraint1.cro";
+connectAttr "hold_r.pim" "hold_r_parentConstraint1.cpim";
+connectAttr "hold_r.rp" "hold_r_parentConstraint1.crp";
+connectAttr "hold_r.rpt" "hold_r_parentConstraint1.crt";
+connectAttr "hold_r.jo" "hold_r_parentConstraint1.cjo";
+connectAttr "hand_r_parentConstraint1.w0" "hand_r_parentConstraint1.tg[0].tw";
+connectAttr "hand_r.ro" "hand_r_parentConstraint1.cro";
+connectAttr "hand_r.pim" "hand_r_parentConstraint1.cpim";
+connectAttr "hand_r.rp" "hand_r_parentConstraint1.crp";
+connectAttr "hand_r.rpt" "hand_r_parentConstraint1.crt";
+connectAttr "hand_r.jo" "hand_r_parentConstraint1.cjo";
+connectAttr "forearm_r.s" "forearm_twist_r.is";
+connectAttr "forearm_twist_r_parentConstraint1.w0" "forearm_twist_r_parentConstraint1.tg[0].tw"
+		;
+connectAttr "forearm_twist_r.ro" "forearm_twist_r_parentConstraint1.cro";
+connectAttr "forearm_twist_r.pim" "forearm_twist_r_parentConstraint1.cpim";
+connectAttr "forearm_twist_r.rp" "forearm_twist_r_parentConstraint1.crp";
+connectAttr "forearm_twist_r.rpt" "forearm_twist_r_parentConstraint1.crt";
+connectAttr "forearm_twist_r.jo" "forearm_twist_r_parentConstraint1.cjo";
+connectAttr "forearm_twist_r_scaleConstraint1.w0" "forearm_twist_r_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "forearm_twist_r.pim" "forearm_twist_r_scaleConstraint1.cpim";
+connectAttr "forearm_twist_r.ssc" "forearm_twist_r_scaleConstraint1.tsc";
+connectAttr "forearm_r_parentConstraint2.w0" "forearm_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "forearm_r.ro" "forearm_r_parentConstraint2.cro";
+connectAttr "forearm_r.pim" "forearm_r_parentConstraint2.cpim";
+connectAttr "forearm_r.rp" "forearm_r_parentConstraint2.crp";
+connectAttr "forearm_r.rpt" "forearm_r_parentConstraint2.crt";
+connectAttr "forearm_r.jo" "forearm_r_parentConstraint2.cjo";
+connectAttr "upper_arm_r.s" "bicep_r.is";
+connectAttr "bicep_r_parentConstraint4.w0" "bicep_r_parentConstraint4.tg[0].tw";
+connectAttr "bicep_r.ro" "bicep_r_parentConstraint4.cro";
+connectAttr "bicep_r.pim" "bicep_r_parentConstraint4.cpim";
+connectAttr "bicep_r.rp" "bicep_r_parentConstraint4.crp";
+connectAttr "bicep_r.rpt" "bicep_r_parentConstraint4.crt";
+connectAttr "bicep_r.jo" "bicep_r_parentConstraint4.cjo";
+connectAttr "bicep_r_scaleConstraint4.w0" "bicep_r_scaleConstraint4.tg[0].tw";
+connectAttr "bicep_r.pim" "bicep_r_scaleConstraint4.cpim";
+connectAttr "bicep_r.ssc" "bicep_r_scaleConstraint4.tsc";
+connectAttr "upper_arm_r_parentConstraint2.w0" "upper_arm_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "upper_arm_r.ro" "upper_arm_r_parentConstraint2.cro";
+connectAttr "upper_arm_r.pim" "upper_arm_r_parentConstraint2.cpim";
+connectAttr "upper_arm_r.rp" "upper_arm_r_parentConstraint2.crp";
+connectAttr "upper_arm_r.rpt" "upper_arm_r_parentConstraint2.crt";
+connectAttr "upper_arm_r.jo" "upper_arm_r_parentConstraint2.cjo";
+connectAttr "shoulder_r.s" "muscle_shoulder_r.is";
+connectAttr "muscle_shoulder_r_parentConstraint4.w0" "muscle_shoulder_r_parentConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_shoulder_r.ro" "muscle_shoulder_r_parentConstraint4.cro";
+connectAttr "muscle_shoulder_r.pim" "muscle_shoulder_r_parentConstraint4.cpim";
+connectAttr "muscle_shoulder_r.rp" "muscle_shoulder_r_parentConstraint4.crp";
+connectAttr "muscle_shoulder_r.rpt" "muscle_shoulder_r_parentConstraint4.crt";
+connectAttr "muscle_shoulder_r.jo" "muscle_shoulder_r_parentConstraint4.cjo";
+connectAttr "muscle_shoulder_r_scaleConstraint4.w0" "muscle_shoulder_r_scaleConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_shoulder_r.pim" "muscle_shoulder_r_scaleConstraint4.cpim";
+connectAttr "muscle_shoulder_r.ssc" "muscle_shoulder_r_scaleConstraint4.tsc";
+connectAttr "shoulder_r_parentConstraint2.w0" "shoulder_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "shoulder_r.ro" "shoulder_r_parentConstraint2.cro";
+connectAttr "shoulder_r.pim" "shoulder_r_parentConstraint2.cpim";
+connectAttr "shoulder_r.rp" "shoulder_r_parentConstraint2.crp";
+connectAttr "shoulder_r.rpt" "shoulder_r_parentConstraint2.crt";
+connectAttr "shoulder_r.jo" "shoulder_r_parentConstraint2.cjo";
+connectAttr "chest.s" "shoulder_l.is";
+connectAttr "shoulder_l.s" "upper_arm_l.is";
+connectAttr "upper_arm_l.s" "forearm_l.is";
+connectAttr "forearm_l.s" "hand_l.is";
+connectAttr "hand_l.s" "c_thumb1_l.is";
+connectAttr "c_thumb1_l.s" "c_thumb2_l.is";
+connectAttr "c_thumb2_l.s" "c_thumb3_l.is";
+connectAttr "c_thumb3_l_parentConstraint3.w0" "c_thumb3_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_thumb3_l.ro" "c_thumb3_l_parentConstraint3.cro";
+connectAttr "c_thumb3_l.pim" "c_thumb3_l_parentConstraint3.cpim";
+connectAttr "c_thumb3_l.rp" "c_thumb3_l_parentConstraint3.crp";
+connectAttr "c_thumb3_l.rpt" "c_thumb3_l_parentConstraint3.crt";
+connectAttr "c_thumb3_l.jo" "c_thumb3_l_parentConstraint3.cjo";
+connectAttr "c_thumb2_l_parentConstraint3.w0" "c_thumb2_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_thumb2_l.ro" "c_thumb2_l_parentConstraint3.cro";
+connectAttr "c_thumb2_l.pim" "c_thumb2_l_parentConstraint3.cpim";
+connectAttr "c_thumb2_l.rp" "c_thumb2_l_parentConstraint3.crp";
+connectAttr "c_thumb2_l.rpt" "c_thumb2_l_parentConstraint3.crt";
+connectAttr "c_thumb2_l.jo" "c_thumb2_l_parentConstraint3.cjo";
+connectAttr "c_thumb1_l_parentConstraint3.w0" "c_thumb1_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_thumb1_l.ro" "c_thumb1_l_parentConstraint3.cro";
+connectAttr "c_thumb1_l.pim" "c_thumb1_l_parentConstraint3.cpim";
+connectAttr "c_thumb1_l.rp" "c_thumb1_l_parentConstraint3.crp";
+connectAttr "c_thumb1_l.rpt" "c_thumb1_l_parentConstraint3.crt";
+connectAttr "c_thumb1_l.jo" "c_thumb1_l_parentConstraint3.cjo";
+connectAttr "hand_l.s" "c_ring1_l.is";
+connectAttr "c_ring1_l.s" "c_ring2_l.is";
+connectAttr "c_ring2_l.s" "c_ring3_l.is";
+connectAttr "c_ring3_l_parentConstraint3.w0" "c_ring3_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_ring3_l.ro" "c_ring3_l_parentConstraint3.cro";
+connectAttr "c_ring3_l.pim" "c_ring3_l_parentConstraint3.cpim";
+connectAttr "c_ring3_l.rp" "c_ring3_l_parentConstraint3.crp";
+connectAttr "c_ring3_l.rpt" "c_ring3_l_parentConstraint3.crt";
+connectAttr "c_ring3_l.jo" "c_ring3_l_parentConstraint3.cjo";
+connectAttr "c_ring2_l_parentConstraint3.w0" "c_ring2_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_ring2_l.ro" "c_ring2_l_parentConstraint3.cro";
+connectAttr "c_ring2_l.pim" "c_ring2_l_parentConstraint3.cpim";
+connectAttr "c_ring2_l.rp" "c_ring2_l_parentConstraint3.crp";
+connectAttr "c_ring2_l.rpt" "c_ring2_l_parentConstraint3.crt";
+connectAttr "c_ring2_l.jo" "c_ring2_l_parentConstraint3.cjo";
+connectAttr "c_ring1_l_parentConstraint3.w0" "c_ring1_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_ring1_l.ro" "c_ring1_l_parentConstraint3.cro";
+connectAttr "c_ring1_l.pim" "c_ring1_l_parentConstraint3.cpim";
+connectAttr "c_ring1_l.rp" "c_ring1_l_parentConstraint3.crp";
+connectAttr "c_ring1_l.rpt" "c_ring1_l_parentConstraint3.crt";
+connectAttr "c_ring1_l.jo" "c_ring1_l_parentConstraint3.cjo";
+connectAttr "hand_l.s" "c_middle1_l.is";
+connectAttr "c_middle1_l.s" "c_middle2_l.is";
+connectAttr "c_middle2_l.s" "c_middle3_l.is";
+connectAttr "c_middle3_l_parentConstraint3.w0" "c_middle3_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_middle3_l.ro" "c_middle3_l_parentConstraint3.cro";
+connectAttr "c_middle3_l.pim" "c_middle3_l_parentConstraint3.cpim";
+connectAttr "c_middle3_l.rp" "c_middle3_l_parentConstraint3.crp";
+connectAttr "c_middle3_l.rpt" "c_middle3_l_parentConstraint3.crt";
+connectAttr "c_middle3_l.jo" "c_middle3_l_parentConstraint3.cjo";
+connectAttr "c_middle2_l_parentConstraint3.w0" "c_middle2_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_middle2_l.ro" "c_middle2_l_parentConstraint3.cro";
+connectAttr "c_middle2_l.pim" "c_middle2_l_parentConstraint3.cpim";
+connectAttr "c_middle2_l.rp" "c_middle2_l_parentConstraint3.crp";
+connectAttr "c_middle2_l.rpt" "c_middle2_l_parentConstraint3.crt";
+connectAttr "c_middle2_l.jo" "c_middle2_l_parentConstraint3.cjo";
+connectAttr "c_middle1_l_parentConstraint3.w0" "c_middle1_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_middle1_l.ro" "c_middle1_l_parentConstraint3.cro";
+connectAttr "c_middle1_l.pim" "c_middle1_l_parentConstraint3.cpim";
+connectAttr "c_middle1_l.rp" "c_middle1_l_parentConstraint3.crp";
+connectAttr "c_middle1_l.rpt" "c_middle1_l_parentConstraint3.crt";
+connectAttr "c_middle1_l.jo" "c_middle1_l_parentConstraint3.cjo";
+connectAttr "hand_l.s" "c_index1_l.is";
+connectAttr "c_index1_l.s" "c_index2_l.is";
+connectAttr "c_index2_l.s" "c_index3_l.is";
+connectAttr "c_index3_l_parentConstraint2.w0" "c_index3_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index3_l.ro" "c_index3_l_parentConstraint2.cro";
+connectAttr "c_index3_l.pim" "c_index3_l_parentConstraint2.cpim";
+connectAttr "c_index3_l.rp" "c_index3_l_parentConstraint2.crp";
+connectAttr "c_index3_l.rpt" "c_index3_l_parentConstraint2.crt";
+connectAttr "c_index3_l.jo" "c_index3_l_parentConstraint2.cjo";
+connectAttr "c_index2_l_parentConstraint2.w0" "c_index2_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index2_l.ro" "c_index2_l_parentConstraint2.cro";
+connectAttr "c_index2_l.pim" "c_index2_l_parentConstraint2.cpim";
+connectAttr "c_index2_l.rp" "c_index2_l_parentConstraint2.crp";
+connectAttr "c_index2_l.rpt" "c_index2_l_parentConstraint2.crt";
+connectAttr "c_index2_l.jo" "c_index2_l_parentConstraint2.cjo";
+connectAttr "c_index1_l_parentConstraint2.w0" "c_index1_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index1_l.ro" "c_index1_l_parentConstraint2.cro";
+connectAttr "c_index1_l.pim" "c_index1_l_parentConstraint2.cpim";
+connectAttr "c_index1_l.rp" "c_index1_l_parentConstraint2.crp";
+connectAttr "c_index1_l.rpt" "c_index1_l_parentConstraint2.crt";
+connectAttr "c_index1_l.jo" "c_index1_l_parentConstraint2.cjo";
+connectAttr "hand_l.s" "hold_l.is";
+connectAttr "hold_l_parentConstraint1.w0" "hold_l_parentConstraint1.tg[0].tw";
+connectAttr "hold_l.ro" "hold_l_parentConstraint1.cro";
+connectAttr "hold_l.pim" "hold_l_parentConstraint1.cpim";
+connectAttr "hold_l.rp" "hold_l_parentConstraint1.crp";
+connectAttr "hold_l.rpt" "hold_l_parentConstraint1.crt";
+connectAttr "hold_l.jo" "hold_l_parentConstraint1.cjo";
+connectAttr "hand_l_parentConstraint1.w0" "hand_l_parentConstraint1.tg[0].tw";
+connectAttr "hand_l.ro" "hand_l_parentConstraint1.cro";
+connectAttr "hand_l.pim" "hand_l_parentConstraint1.cpim";
+connectAttr "hand_l.rp" "hand_l_parentConstraint1.crp";
+connectAttr "hand_l.rpt" "hand_l_parentConstraint1.crt";
+connectAttr "hand_l.jo" "hand_l_parentConstraint1.cjo";
+connectAttr "forearm_l.s" "forearm_twist_l.is";
+connectAttr "forearm_twist_l_parentConstraint3.w0" "forearm_twist_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "forearm_twist_l.ro" "forearm_twist_l_parentConstraint3.cro";
+connectAttr "forearm_twist_l.pim" "forearm_twist_l_parentConstraint3.cpim";
+connectAttr "forearm_twist_l.rp" "forearm_twist_l_parentConstraint3.crp";
+connectAttr "forearm_twist_l.rpt" "forearm_twist_l_parentConstraint3.crt";
+connectAttr "forearm_twist_l.jo" "forearm_twist_l_parentConstraint3.cjo";
+connectAttr "forearm_twist_l_scaleConstraint1.w0" "forearm_twist_l_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "forearm_twist_l.pim" "forearm_twist_l_scaleConstraint1.cpim";
+connectAttr "forearm_twist_l.ssc" "forearm_twist_l_scaleConstraint1.tsc";
+connectAttr "forearm_l_parentConstraint2.w0" "forearm_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "forearm_l.ro" "forearm_l_parentConstraint2.cro";
+connectAttr "forearm_l.pim" "forearm_l_parentConstraint2.cpim";
+connectAttr "forearm_l.rp" "forearm_l_parentConstraint2.crp";
+connectAttr "forearm_l.rpt" "forearm_l_parentConstraint2.crt";
+connectAttr "forearm_l.jo" "forearm_l_parentConstraint2.cjo";
+connectAttr "upper_arm_l.s" "bicep_l.is";
+connectAttr "bicep_l_parentConstraint4.w0" "bicep_l_parentConstraint4.tg[0].tw";
+connectAttr "bicep_l.ro" "bicep_l_parentConstraint4.cro";
+connectAttr "bicep_l.pim" "bicep_l_parentConstraint4.cpim";
+connectAttr "bicep_l.rp" "bicep_l_parentConstraint4.crp";
+connectAttr "bicep_l.rpt" "bicep_l_parentConstraint4.crt";
+connectAttr "bicep_l.jo" "bicep_l_parentConstraint4.cjo";
+connectAttr "bicep_l_scaleConstraint1.w0" "bicep_l_scaleConstraint1.tg[0].tw";
+connectAttr "bicep_l.pim" "bicep_l_scaleConstraint1.cpim";
+connectAttr "bicep_l.ssc" "bicep_l_scaleConstraint1.tsc";
+connectAttr "upper_arm_l_parentConstraint2.w0" "upper_arm_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "upper_arm_l.ro" "upper_arm_l_parentConstraint2.cro";
+connectAttr "upper_arm_l.pim" "upper_arm_l_parentConstraint2.cpim";
+connectAttr "upper_arm_l.rp" "upper_arm_l_parentConstraint2.crp";
+connectAttr "upper_arm_l.rpt" "upper_arm_l_parentConstraint2.crt";
+connectAttr "upper_arm_l.jo" "upper_arm_l_parentConstraint2.cjo";
+connectAttr "shoulder_l.s" "muscle_shoulder_l.is";
+connectAttr "muscle_shoulder_l_parentConstraint4.w0" "muscle_shoulder_l_parentConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_shoulder_l.ro" "muscle_shoulder_l_parentConstraint4.cro";
+connectAttr "muscle_shoulder_l.pim" "muscle_shoulder_l_parentConstraint4.cpim";
+connectAttr "muscle_shoulder_l.rp" "muscle_shoulder_l_parentConstraint4.crp";
+connectAttr "muscle_shoulder_l.rpt" "muscle_shoulder_l_parentConstraint4.crt";
+connectAttr "muscle_shoulder_l.jo" "muscle_shoulder_l_parentConstraint4.cjo";
+connectAttr "muscle_shoulder_l_scaleConstraint4.w0" "muscle_shoulder_l_scaleConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_shoulder_l.pim" "muscle_shoulder_l_scaleConstraint4.cpim";
+connectAttr "muscle_shoulder_l.ssc" "muscle_shoulder_l_scaleConstraint4.tsc";
+connectAttr "shoulder_l_parentConstraint2.w0" "shoulder_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "shoulder_l.ro" "shoulder_l_parentConstraint2.cro";
+connectAttr "shoulder_l.pim" "shoulder_l_parentConstraint2.cpim";
+connectAttr "shoulder_l.rp" "shoulder_l_parentConstraint2.crp";
+connectAttr "shoulder_l.rpt" "shoulder_l_parentConstraint2.crt";
+connectAttr "shoulder_l.jo" "shoulder_l_parentConstraint2.cjo";
+connectAttr "chest.s" "breast_L.is";
+connectAttr "breast_L_parentConstraint4.w0" "breast_L_parentConstraint4.tg[0].tw"
+		;
+connectAttr "breast_L.ro" "breast_L_parentConstraint4.cro";
+connectAttr "breast_L.pim" "breast_L_parentConstraint4.cpim";
+connectAttr "breast_L.rp" "breast_L_parentConstraint4.crp";
+connectAttr "breast_L.rpt" "breast_L_parentConstraint4.crt";
+connectAttr "breast_L.jo" "breast_L_parentConstraint4.cjo";
+connectAttr "breast_L_scaleConstraint4.w0" "breast_L_scaleConstraint4.tg[0].tw";
+connectAttr "breast_L.pim" "breast_L_scaleConstraint4.cpim";
+connectAttr "breast_L.ssc" "breast_L_scaleConstraint4.tsc";
+connectAttr "chest.s" "breast_R.is";
+connectAttr "breast_R_parentConstraint4.w0" "breast_R_parentConstraint4.tg[0].tw"
+		;
+connectAttr "breast_R.ro" "breast_R_parentConstraint4.cro";
+connectAttr "breast_R.pim" "breast_R_parentConstraint4.cpim";
+connectAttr "breast_R.rp" "breast_R_parentConstraint4.crp";
+connectAttr "breast_R.rpt" "breast_R_parentConstraint4.crt";
+connectAttr "breast_R.jo" "breast_R_parentConstraint4.cjo";
+connectAttr "breast_R_scaleConstraint3.w0" "breast_R_scaleConstraint3.tg[0].tw";
+connectAttr "breast_R.pim" "breast_R_scaleConstraint3.cpim";
+connectAttr "breast_R.ssc" "breast_R_scaleConstraint3.tsc";
+connectAttr "chest.s" "muscle_chest.is";
+connectAttr "muscle_chest_scaleConstraint3.w0" "muscle_chest_scaleConstraint3.tg[0].tw"
+		;
+connectAttr "muscle_chest.pim" "muscle_chest_scaleConstraint3.cpim";
+connectAttr "muscle_chest.ssc" "muscle_chest_scaleConstraint3.tsc";
+connectAttr "muscle_chest_parentConstraint4.w0" "muscle_chest_parentConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_chest.ro" "muscle_chest_parentConstraint4.cro";
+connectAttr "muscle_chest.pim" "muscle_chest_parentConstraint4.cpim";
+connectAttr "muscle_chest.rp" "muscle_chest_parentConstraint4.crp";
+connectAttr "muscle_chest.rpt" "muscle_chest_parentConstraint4.crt";
+connectAttr "muscle_chest.jo" "muscle_chest_parentConstraint4.cjo";
+connectAttr "chest_parentConstraint2.w0" "chest_parentConstraint2.tg[0].tw";
+connectAttr "chest.ro" "chest_parentConstraint2.cro";
+connectAttr "chest.pim" "chest_parentConstraint2.cpim";
+connectAttr "chest.rp" "chest_parentConstraint2.crp";
+connectAttr "chest.rpt" "chest_parentConstraint2.crt";
+connectAttr "chest.jo" "chest_parentConstraint2.cjo";
+connectAttr "spine.s" "torso_width.is";
+connectAttr "torso_width_parentConstraint3.w0" "torso_width_parentConstraint3.tg[0].tw"
+		;
+connectAttr "torso_width.ro" "torso_width_parentConstraint3.cro";
+connectAttr "torso_width.pim" "torso_width_parentConstraint3.cpim";
+connectAttr "torso_width.rp" "torso_width_parentConstraint3.crp";
+connectAttr "torso_width.rpt" "torso_width_parentConstraint3.crt";
+connectAttr "torso_width.jo" "torso_width_parentConstraint3.cjo";
+connectAttr "torso_width_scaleConstraint2.w0" "torso_width_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "torso_width.pim" "torso_width_scaleConstraint2.cpim";
+connectAttr "torso_width.ssc" "torso_width_scaleConstraint2.tsc";
+connectAttr "spine_parentConstraint2.w0" "spine_parentConstraint2.tg[0].tw";
+connectAttr "spine.ro" "spine_parentConstraint2.cro";
+connectAttr "spine.pim" "spine_parentConstraint2.cpim";
+connectAttr "spine.rp" "spine_parentConstraint2.crp";
+connectAttr "spine.rpt" "spine_parentConstraint2.crt";
+connectAttr "spine.jo" "spine_parentConstraint2.cjo";
+connectAttr "hips.s" "belly.is";
+connectAttr "belly_parentConstraint3.w0" "belly_parentConstraint3.tg[0].tw";
+connectAttr "belly.ro" "belly_parentConstraint3.cro";
+connectAttr "belly.pim" "belly_parentConstraint3.cpim";
+connectAttr "belly.rp" "belly_parentConstraint3.crp";
+connectAttr "belly.rpt" "belly_parentConstraint3.crt";
+connectAttr "belly.jo" "belly_parentConstraint3.cjo";
+connectAttr "belly_scaleConstraint4.w0" "belly_scaleConstraint4.tg[0].tw";
+connectAttr "belly.pim" "belly_scaleConstraint4.cpim";
+connectAttr "belly.ssc" "belly_scaleConstraint4.tsc";
+connectAttr "hips.s" "waist.is";
+connectAttr "waist_parentConstraint3.w0" "waist_parentConstraint3.tg[0].tw";
+connectAttr "waist.ro" "waist_parentConstraint3.cro";
+connectAttr "waist.pim" "waist_parentConstraint3.cpim";
+connectAttr "waist.rp" "waist_parentConstraint3.crp";
+connectAttr "waist.rpt" "waist_parentConstraint3.crt";
+connectAttr "waist.jo" "waist_parentConstraint3.cjo";
+connectAttr "waist_scaleConstraint4.w0" "waist_scaleConstraint4.tg[0].tw";
+connectAttr "waist.pim" "waist_scaleConstraint4.cpim";
+connectAttr "waist.ssc" "waist_scaleConstraint4.tsc";
+connectAttr "hips.s" "butt.is";
+connectAttr "butt_parentConstraint3.w0" "butt_parentConstraint3.tg[0].tw";
+connectAttr "butt.ro" "butt_parentConstraint3.cro";
+connectAttr "butt.pim" "butt_parentConstraint3.cpim";
+connectAttr "butt.rp" "butt_parentConstraint3.crp";
+connectAttr "butt.rpt" "butt_parentConstraint3.crt";
+connectAttr "butt.jo" "butt_parentConstraint3.cjo";
+connectAttr "butt_scaleConstraint2.w0" "butt_scaleConstraint2.tg[0].tw";
+connectAttr "butt.pim" "butt_scaleConstraint2.cpim";
+connectAttr "butt.ssc" "butt_scaleConstraint2.tsc";
+connectAttr "hips_parentConstraint4.w0" "hips_parentConstraint4.tg[0].tw";
+connectAttr "hips.ro" "hips_parentConstraint4.cro";
+connectAttr "hips.pim" "hips_parentConstraint4.cpim";
+connectAttr "hips.rp" "hips_parentConstraint4.crp";
+connectAttr "hips.rpt" "hips_parentConstraint4.crt";
+connectAttr "hips.jo" "hips_parentConstraint4.cjo";
+connectAttr "HumanArmature_parentConstraint2.w0" "HumanArmature_parentConstraint2.tg[0].tw"
+		;
+connectAttr "HumanArmature.ro" "HumanArmature_parentConstraint2.cro";
+connectAttr "HumanArmature.pim" "HumanArmature_parentConstraint2.cpim";
+connectAttr "HumanArmature.rp" "HumanArmature_parentConstraint2.crp";
+connectAttr "HumanArmature.rpt" "HumanArmature_parentConstraint2.crt";
 connectAttr "motionTrail2.pts" "motionTrail2HandleShape.pts";
 connectAttr "motionTrail2.lp" "motionTrail2HandleShape.lp";
 connectAttr "motionTrail2.f" "motionTrail2HandleShape.f";
