@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Human@CrouchSet_DEF.ma
-//Last modified: Tue, Apr 02, 2024 01:01:29 AM
+//Last modified: Tue, Apr 02, 2024 01:54:40 AM
 //Codeset: 1252
 file -rdi 1 -ns "Human_AnimRig" -rfn "Human_AnimRigRN" -typ "mayaAscii" "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Animation Rigs/Human/Human@AnimRig.ma";
 file -rdi 2 -ns "Default_Character_Assistant" -rfn "Human_AnimRig:Default_Character_AssistantRN"
@@ -18,13 +18,13 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "1EFA4C61-4A20-CC2C-379C-5B908180C6AF";
+fileInfo "UUID" "0EC2B071-4F53-2729-C766-198525896ABE";
 fileInfo "vrayBuild" "6.00.02 ee5238c";
 createNode transform -s -n "persp";
 	rename -uid "9032DB97-4F61-0574-DD3C-77AF63BEA906";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.82532287079468691 0.21295579054469158 4.3695089266084572 ;
-	setAttr ".r" -type "double3" 18.135610330868854 3232.999999998472 0 ;
+	setAttr ".t" -type "double3" -3.121480611862832 1.4741797128370837 -0.031358768046188458 ;
+	setAttr ".r" -type "double3" -7.0643896691074213 3151.39999999782 0 ;
 	setAttr ".rp" -type "double3" 1.8651746813702629e-16 -1.4210854715202004e-16 0 ;
 	setAttr ".rpt" -type "double3" 5.5043992900140518e-16 -1.2293095526547328e-15 -1.972176785456826e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -32,7 +32,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 4.6850874241536582;
+	setAttr ".coi" 3.9199483740475829;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -2789,29 +2789,29 @@ createNode parentConstraint -n "HumanArmature_parentConstraint2" -p "HumanArmatu
 	setAttr ".erp" yes;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9E02259E-4968-6108-55A3-D7B72B23C397";
+	rename -uid "30125B3E-48D1-CB05-168C-C6988C9D63F4";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5D25C0AF-4647-5C85-D9ED-A1ABA5E6C1B4";
+	rename -uid "F50C46FB-4953-14DA-8012-CFADDE293908";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 4 2 3 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5E5DE4E5-4A58-458C-CA93-41AAA58A420E";
+	rename -uid "6D2BD10E-4499-E419-A192-10944503B38C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A1F72B79-4FFE-CB3F-7FCA-D6BA844C2A6E";
+	rename -uid "17A0A488-4C1A-4953-A081-C59CBA3CDAC9";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1C980215-4AF2-9FB3-F4CE-079DC29488F7";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A480760D-49FD-2A98-34CE-47A98435BA19";
+	rename -uid "7C637E47-4102-8EDE-B75C-E7B84A5F50E6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D51D0F5A-4E3E-E3F2-0C5A-15BDB5A57242";
 	setAttr ".g" yes;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6DA466EC-489B-7328-F8D0-FC9C011BF537";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 105 -ast -30 -aet 250 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 110 -ast -30 -aet 250 ";
 	setAttr ".st" 6;
 createNode animLayer -n "BaseAnimation";
 	rename -uid "B0241C8F-4634-7C09-63A6-D790F4C02970";
@@ -7857,14 +7857,87 @@ createNode reference -n "Human_AnimRigRN";
 		
 		2 "Human_AnimRig:Default_Character_Assistant:skinCluster271" "matrix" " -s 4"
 		
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_scaleConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_parentConstraint4.constraintParentInverseMatrix" 
-		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[0]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[11]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[12]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[13]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[15]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[16]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[17]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[18]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[35]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[36]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[37]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[55]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[56]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[57]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[58]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[59]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[60]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[61]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring1_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:toes_r_parentConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster274.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l|Human_AnimRig:Default_Character_Assistant:c_index3_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index3_l_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l|Human_AnimRig:Default_Character_Assistant:c_ring3_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring3_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:thigh_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring1_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:chest_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r|Human_AnimRig:Default_Character_Assistant:c_thumb3_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb3_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_scaleConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_scaleConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l|Human_AnimRig:Default_Character_Assistant:c_middle3_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle3_l_parentConstraint3.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[0]" ""
@@ -7940,18 +8013,96 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[61]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[62]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature.instObjGroups" 
-		"Human_AnimRig:Export.dagSetMembers" "-na"
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster273.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l|Human_AnimRig:Default_Character_Assistant:c_thumb3_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb3_l_parentConstraint3.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb1_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_parentConstraint3.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index2_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_scaleConstraint3.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_scaleConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:hold_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hold_l_parentConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[47]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[48]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[49]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[50]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[53]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[59]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[64]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[65]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r|Human_AnimRig:Default_Character_Assistant:c_index3_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index3_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l|Human_AnimRig:Default_Character_Assistant:toes_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:toes_l_parentConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[26]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[27]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[28]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[29]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[32]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[38]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[43]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[44]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:upper_arm_l_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_parentConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_scaleConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r|Human_AnimRig:Default_Character_Assistant:c_middle3_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle3_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_scaleConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[1]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[2]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[3]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[5]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_scaleConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_parentConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:lower_leg_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:foot_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[48]" ""
@@ -7983,208 +8134,35 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[61]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[64]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:chest_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[2]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[3]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l|Human_AnimRig:Default_Character_Assistant:toes_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[4]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[7]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[8]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[9]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle2_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r|Human_AnimRig:Default_Character_Assistant:c_index3_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index3_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:shoulder_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r|Human_AnimRig:Default_Character_Assistant:c_ring3_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring3_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hand_r_parentConstraint1.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring1_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle1_l_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[47]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[48]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[49]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[50]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[53]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[59]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[64]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[65]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb2_l_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:shoulder_l_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:thigh_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster283.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_scaleConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_scaleConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_parentConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hips_parentConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[26]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[27]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[28]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[29]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[32]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[38]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[43]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[44]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index1_l_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_scaleConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:neck_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle1_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:lower_leg_l_parentConstraint2.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_parentConstraint1.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_scaleConstraint1.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_scaleConstraint1.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[0]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[11]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[12]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[13]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[15]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[16]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[17]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[18]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[35]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[36]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[37]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[55]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[56]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[57]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[58]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[59]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[60]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[61]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l|Human_AnimRig:Default_Character_Assistant:c_index3_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index3_l_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster75.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_scaleConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster266.matrix[2]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster266.matrix[3]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l|Human_AnimRig:Default_Character_Assistant:toes_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster266.matrix[4]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb1_l_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[27]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[28]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[29]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[30]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r|Human_AnimRig:Default_Character_Assistant:c_thumb3_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[31]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[32]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[33]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r|Human_AnimRig:Default_Character_Assistant:c_ring3_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[34]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[35]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[36]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r|Human_AnimRig:Default_Character_Assistant:c_middle3_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[37]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[38]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[39]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r|Human_AnimRig:Default_Character_Assistant:c_index3_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[40]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[43]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:upper_arm_l_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_scaleConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_parentConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:upper_arm_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:toes_r_parentConstraint4.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:foot_l_parentConstraint4.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[0]" ""
@@ -8208,46 +8186,67 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[61]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[62]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index2_l_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle2_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index2_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index1_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l|Human_AnimRig:Default_Character_Assistant:c_ring3_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring3_l_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:shoulder_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[1]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[2]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[3]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[5]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hand_l_parentConstraint1.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_scaleConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_parentConstraint4.constraintParentInverseMatrix" 
-		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle2_l_parentConstraint3.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:foot_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hand_l_parentConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:upper_arm_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:thigh_l_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[12]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[13]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[24]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[25]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[46]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:shoulder_l_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_scaleConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:spine_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[6]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[7]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[8]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[10]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index1_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r|Human_AnimRig:Default_Character_Assistant:c_ring3_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring3_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index1_l_parentConstraint2.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb1_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_scaleConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_parentConstraint4.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster270.matrix[7]" ""
@@ -8255,17 +8254,10 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_Assistant:skinCluster270.matrix[8]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster270.matrix[9]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb2_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:head_parentConstraint1.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_scaleConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature.instObjGroups" 
+		"Human_AnimRig:Export.dagSetMembers" "-na"
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l|Human_AnimRig:Default_Character_Assistant:c_thumb3_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb3_l_parentConstraint3.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[0]" ""
@@ -8321,6 +8313,50 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[72]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[73]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster273.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[27]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[28]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[29]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[30]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r|Human_AnimRig:Default_Character_Assistant:c_thumb3_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[31]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[32]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[33]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r|Human_AnimRig:Default_Character_Assistant:c_ring3_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[34]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[35]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[36]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r|Human_AnimRig:Default_Character_Assistant:c_middle3_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[37]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[38]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[39]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r|Human_AnimRig:Default_Character_Assistant:c_index3_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[40]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[43]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_scaleConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_parentConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hips_parentConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring2_r_parentConstraint2.constraintParentInverseMatrix" 
+		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[17]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
@@ -8385,86 +8421,20 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[51]" ""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[53]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_parentConstraint3.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_scaleConstraint3.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_scaleConstraint3.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_parentConstraint4.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster274.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[12]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[13]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[24]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[25]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[46]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[6]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[7]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[8]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[10]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:lower_leg_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_scaleConstraint4.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:hold_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hold_l_parentConstraint1.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_parentConstraint3.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:thigh_l_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_scaleConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_parentConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:hold_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hold_r_parentConstraint1.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l|Human_AnimRig:Default_Character_Assistant:toes_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:toes_l_parentConstraint4.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_scaleConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[2]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[3]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l|Human_AnimRig:Default_Character_Assistant:toes_l.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[4]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[7]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[8]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[9]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring2_l_parentConstraint3.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
-		"Human_AnimRig:Default_Character_Assistant:skinCluster279.matrix[14]" ""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle1_r_parentConstraint2.constraintParentInverseMatrix" 
-		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hand_r_parentConstraint1.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_l_parentConstraint2.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_l_scaleConstraint4.constraintParentInverseMatrix" 
@@ -8472,20 +8442,44 @@ createNode reference -n "Human_AnimRigRN";
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_l_parentConstraint4.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r|Human_AnimRig:Default_Character_Assistant:c_middle3_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle3_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster75.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster279.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_index2_l_parentConstraint2.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:foot_l_parentConstraint4.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_scaleConstraint4.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb1_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_parentConstraint3.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:spine_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_scaleConstraint4.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring2_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_parentConstraint4.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster266.matrix[2]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster266.matrix[3]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l|Human_AnimRig:Default_Character_Assistant:foot_l|Human_AnimRig:Default_Character_Assistant:toes_l.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster266.matrix[4]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle1_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:hold_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hold_r_parentConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_ring2_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
+		"Human_AnimRig:Default_Character_Assistant:skinCluster283.matrix[14]" ""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb2_r_parentConstraint2.constraintParentInverseMatrix" 
 		""
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_l_parentConstraint4.constraintParentInverseMatrix" 
@@ -8493,14 +8487,20 @@ createNode reference -n "Human_AnimRigRN";
 		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_l_scaleConstraint1.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l|Human_AnimRig:Default_Character_Assistant:c_middle3_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_middle3_l_parentConstraint3.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_parentConstraint3.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_l_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_scaleConstraint3.constraintParentInverseMatrix" 
 		""
-		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r|Human_AnimRig:Default_Character_Assistant:c_thumb3_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb3_r_parentConstraint2.constraintParentInverseMatrix" 
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:c_thumb2_l_parentConstraint3.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:head_parentConstraint1.constraintParentInverseMatrix" 
+		""
+		3 "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck.parentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:neck_parentConstraint2.constraintParentInverseMatrix" 
 		""
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.parentInverseMatrix" 
 		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:hips_parentConstraint4.constraintParentInverseMatrix" 
@@ -8523,11 +8523,11 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRigRN.placeHolderList[9]" "Human_AnimRigRN.placeHolderList[10]" "Human_AnimRig:toes_l_parentConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_scaleConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[11]" "Human_AnimRigRN.placeHolderList[12]" "Human_AnimRig:width_thigh_l_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_l_scaleConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[13]" "Human_AnimRigRN.placeHolderList[14]" "Human_AnimRig:width_thigh_l_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.parentInverseMatrix" 
@@ -8547,11 +8547,11 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRigRN.placeHolderList[21]" "Human_AnimRigRN.placeHolderList[22]" "Human_AnimRig:toes_r_parentConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_scaleConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[23]" "Human_AnimRigRN.placeHolderList[24]" "Human_AnimRig:width_thigh_r_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:width_thigh_r_scaleConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[25]" "Human_AnimRigRN.placeHolderList[26]" "Human_AnimRig:width_thigh_r_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.parentInverseMatrix" 
@@ -8571,11 +8571,11 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRigRN.placeHolderList[33]" "Human_AnimRigRN.placeHolderList[34]" "Human_AnimRig:head_parentConstraint1.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[35]" "Human_AnimRigRN.placeHolderList[36]" "Human_AnimRig:muscle_neck_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:muscle_neck.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_neck_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[37]" "Human_AnimRigRN.placeHolderList[38]" "Human_AnimRig:muscle_neck_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.parentInverseMatrix" 
@@ -8647,27 +8647,27 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRigRN.placeHolderList[71]" "Human_AnimRigRN.placeHolderList[72]" "Human_AnimRig:hold_r_parentConstraint1.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_scaleConstraint1.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_parentConstraint1.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[73]" "Human_AnimRigRN.placeHolderList[74]" "Human_AnimRig:forearm_twist_r_parentConstraint1.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_parentConstraint1.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_r_scaleConstraint1.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[75]" "Human_AnimRigRN.placeHolderList[76]" "Human_AnimRig:forearm_twist_r_parentConstraint1.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[77]" "Human_AnimRigRN.placeHolderList[78]" "Human_AnimRig:bicep_r_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_r_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[79]" "Human_AnimRigRN.placeHolderList[80]" "Human_AnimRig:bicep_r_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[81]" "Human_AnimRigRN.placeHolderList[82]" "Human_AnimRig:muscle_shoulder_r_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_r_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[83]" "Human_AnimRigRN.placeHolderList[84]" "Human_AnimRig:muscle_shoulder_r_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.parentInverseMatrix" 
@@ -8739,92 +8739,92 @@ createNode reference -n "Human_AnimRigRN";
 		"Human_AnimRigRN.placeHolderList[117]" "Human_AnimRigRN.placeHolderList[118]" "Human_AnimRig:hold_l_parentConstraint1.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_scaleConstraint1.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[119]" "Human_AnimRigRN.placeHolderList[120]" "Human_AnimRig:forearm_twist_l_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:forearm_twist_l_scaleConstraint1.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[121]" "Human_AnimRigRN.placeHolderList[122]" "Human_AnimRig:forearm_twist_l_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_l_scaleConstraint1.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_l_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[123]" "Human_AnimRigRN.placeHolderList[124]" "Human_AnimRig:bicep_l_parentConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_l_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:bicep_l_scaleConstraint1.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[125]" "Human_AnimRigRN.placeHolderList[126]" "Human_AnimRig:bicep_l_parentConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_l_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_l_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[127]" "Human_AnimRigRN.placeHolderList[128]" "Human_AnimRig:muscle_shoulder_l_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_l_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_shoulder_l_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[129]" "Human_AnimRigRN.placeHolderList[130]" "Human_AnimRig:muscle_shoulder_l_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[131]" "Human_AnimRigRN.placeHolderList[132]" "Human_AnimRig:breast_L_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_L.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_L_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[133]" "Human_AnimRigRN.placeHolderList[134]" "Human_AnimRig:breast_L_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_scaleConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[135]" "Human_AnimRigRN.placeHolderList[136]" "Human_AnimRig:breast_R_scaleConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:breast_R.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_scaleConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:breast_R_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[137]" "Human_AnimRigRN.placeHolderList[138]" "Human_AnimRig:breast_R_scaleConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_parentConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_scaleConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[139]" "Human_AnimRigRN.placeHolderList[140]" "Human_AnimRig:muscle_chest_scaleConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:muscle_chest.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_scaleConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:muscle_chest_parentConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[141]" "Human_AnimRigRN.placeHolderList[142]" "Human_AnimRig:muscle_chest_scaleConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_scaleConstraint2.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[143]" "Human_AnimRigRN.placeHolderList[144]" "Human_AnimRig:torso_width_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:torso_width.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:torso_width_scaleConstraint2.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[145]" "Human_AnimRigRN.placeHolderList[146]" "Human_AnimRig:torso_width_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[147]" "Human_AnimRigRN.placeHolderList[148]" "Human_AnimRig:belly_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:belly_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[149]" "Human_AnimRigRN.placeHolderList[150]" "Human_AnimRig:belly_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_scaleConstraint4.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[151]" "Human_AnimRigRN.placeHolderList[152]" "Human_AnimRig:waist_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_scaleConstraint4.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:waist_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[153]" "Human_AnimRigRN.placeHolderList[154]" "Human_AnimRig:waist_scaleConstraint4.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_scaleConstraint2.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_parentConstraint3.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[155]" "Human_AnimRigRN.placeHolderList[156]" "Human_AnimRig:butt_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.parentInverseMatrix" 
-		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_parentConstraint3.constraintParentInverseMatrix" 
+		"|Human_AnimRig:Default_Character_AssistantRNfosterParent1|Human_AnimRig:butt_scaleConstraint2.constraintParentInverseMatrix" 
 		"Human_AnimRigRN.placeHolderList[157]" "Human_AnimRigRN.placeHolderList[158]" "Human_AnimRig:butt_parentConstraint3.cpim"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[0]" "Human_AnimRigRN.placeHolderList[159]" 
-		"Human_AnimRigRN.placeHolderList[160]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[0]"
+		"Human_AnimRigRN.placeHolderList[160]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[0]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[1]" "Human_AnimRigRN.placeHolderList[161]" 
-		"Human_AnimRigRN.placeHolderList[162]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[1]"
+		"Human_AnimRigRN.placeHolderList[162]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[1]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[2]" "Human_AnimRigRN.placeHolderList[163]" 
@@ -8840,19 +8840,19 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[5]" "Human_AnimRigRN.placeHolderList[169]" 
-		"Human_AnimRigRN.placeHolderList[170]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[5]"
+		"Human_AnimRigRN.placeHolderList[170]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[5]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[6]" "Human_AnimRigRN.placeHolderList[171]" 
-		"Human_AnimRigRN.placeHolderList[172]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[6]"
+		"Human_AnimRigRN.placeHolderList[172]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[6]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[7]" "Human_AnimRigRN.placeHolderList[173]" 
-		"Human_AnimRigRN.placeHolderList[174]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[7]"
+		"Human_AnimRigRN.placeHolderList[174]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[7]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[8]" "Human_AnimRigRN.placeHolderList[175]" 
-		"Human_AnimRigRN.placeHolderList[176]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[8]"
+		"Human_AnimRigRN.placeHolderList[176]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[8]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[9]" "Human_AnimRigRN.placeHolderList[177]" 
@@ -8860,11 +8860,11 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[10]" "Human_AnimRigRN.placeHolderList[179]" 
-		"Human_AnimRigRN.placeHolderList[180]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[10]"
+		"Human_AnimRigRN.placeHolderList[180]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[10]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[11]" "Human_AnimRigRN.placeHolderList[181]" 
-		"Human_AnimRigRN.placeHolderList[182]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[11]"
+		"Human_AnimRigRN.placeHolderList[182]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[11]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[12]" "Human_AnimRigRN.placeHolderList[183]" 
@@ -8884,23 +8884,23 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[16]" "Human_AnimRigRN.placeHolderList[191]" 
-		"Human_AnimRigRN.placeHolderList[192]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[16]"
+		"Human_AnimRigRN.placeHolderList[192]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[16]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[17]" "Human_AnimRigRN.placeHolderList[193]" 
-		"Human_AnimRigRN.placeHolderList[194]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[17]"
+		"Human_AnimRigRN.placeHolderList[194]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[17]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[18]" "Human_AnimRigRN.placeHolderList[195]" 
-		"Human_AnimRigRN.placeHolderList[196]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[18]"
+		"Human_AnimRigRN.placeHolderList[196]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[18]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[19]" "Human_AnimRigRN.placeHolderList[197]" 
-		"Human_AnimRigRN.placeHolderList[198]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[19]"
+		"Human_AnimRigRN.placeHolderList[198]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[19]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[33]" "Human_AnimRigRN.placeHolderList[199]" 
-		"Human_AnimRigRN.placeHolderList[200]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[33]"
+		"Human_AnimRigRN.placeHolderList[200]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[33]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[34]" "Human_AnimRigRN.placeHolderList[201]" 
@@ -8912,23 +8912,23 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[36]" "Human_AnimRigRN.placeHolderList[205]" 
-		"Human_AnimRigRN.placeHolderList[206]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[36]"
+		"Human_AnimRigRN.placeHolderList[206]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[37]" "Human_AnimRigRN.placeHolderList[207]" 
-		"Human_AnimRigRN.placeHolderList[208]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[37]"
+		"Human_AnimRigRN.placeHolderList[208]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[38]" "Human_AnimRigRN.placeHolderList[209]" 
-		"Human_AnimRigRN.placeHolderList[210]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[38]"
+		"Human_AnimRigRN.placeHolderList[210]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[39]" "Human_AnimRigRN.placeHolderList[211]" 
-		"Human_AnimRigRN.placeHolderList[212]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[39]"
+		"Human_AnimRigRN.placeHolderList[212]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[39]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[53]" "Human_AnimRigRN.placeHolderList[213]" 
-		"Human_AnimRigRN.placeHolderList[214]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[53]"
+		"Human_AnimRigRN.placeHolderList[214]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[54]" "Human_AnimRigRN.placeHolderList[215]" 
@@ -8956,23 +8956,23 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[60]" "Human_AnimRigRN.placeHolderList[227]" 
-		"Human_AnimRigRN.placeHolderList[228]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[60]"
+		"Human_AnimRigRN.placeHolderList[228]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[60]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[61]" "Human_AnimRigRN.placeHolderList[229]" 
-		"Human_AnimRigRN.placeHolderList[230]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[61]"
+		"Human_AnimRigRN.placeHolderList[230]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[61]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster27.matrix[62]" "Human_AnimRigRN.placeHolderList[231]" 
-		"Human_AnimRigRN.placeHolderList[232]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[62]"
+		"Human_AnimRigRN.placeHolderList[232]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[62]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[0]" "Human_AnimRigRN.placeHolderList[233]" 
-		"Human_AnimRigRN.placeHolderList[234]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[0]"
+		"Human_AnimRigRN.placeHolderList[234]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[0]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[11]" "Human_AnimRigRN.placeHolderList[235]" 
-		"Human_AnimRigRN.placeHolderList[236]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[11]"
+		"Human_AnimRigRN.placeHolderList[236]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[11]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[12]" "Human_AnimRigRN.placeHolderList[237]" 
@@ -8992,15 +8992,15 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[16]" "Human_AnimRigRN.placeHolderList[245]" 
-		"Human_AnimRigRN.placeHolderList[246]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[16]"
+		"Human_AnimRigRN.placeHolderList[246]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[16]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[17]" "Human_AnimRigRN.placeHolderList[247]" 
-		"Human_AnimRigRN.placeHolderList[248]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[17]"
+		"Human_AnimRigRN.placeHolderList[248]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[17]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[18]" "Human_AnimRigRN.placeHolderList[249]" 
-		"Human_AnimRigRN.placeHolderList[250]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[18]"
+		"Human_AnimRigRN.placeHolderList[250]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[18]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[35]" "Human_AnimRigRN.placeHolderList[251]" 
@@ -9008,11 +9008,11 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[36]" "Human_AnimRigRN.placeHolderList[253]" 
-		"Human_AnimRigRN.placeHolderList[254]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[36]"
+		"Human_AnimRigRN.placeHolderList[254]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[37]" "Human_AnimRigRN.placeHolderList[255]" 
-		"Human_AnimRigRN.placeHolderList[256]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[37]"
+		"Human_AnimRigRN.placeHolderList[256]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:muscle_shoulder_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[55]" "Human_AnimRigRN.placeHolderList[257]" 
@@ -9036,183 +9036,183 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[60]" "Human_AnimRigRN.placeHolderList[267]" 
-		"Human_AnimRigRN.placeHolderList[268]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[60]"
+		"Human_AnimRigRN.placeHolderList[268]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[60]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster38.matrix[61]" "Human_AnimRigRN.placeHolderList[269]" 
-		"Human_AnimRigRN.placeHolderList[270]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[61]"
+		"Human_AnimRigRN.placeHolderList[270]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[61]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[0]" "Human_AnimRigRN.placeHolderList[271]" 
-		"Human_AnimRigRN.placeHolderList[272]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[0]"
+		"Human_AnimRigRN.placeHolderList[272]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[0]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[1]" "Human_AnimRigRN.placeHolderList[273]" 
-		"Human_AnimRigRN.placeHolderList[274]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[1]"
+		"Human_AnimRigRN.placeHolderList[274]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[1]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[5]" "Human_AnimRigRN.placeHolderList[275]" 
-		"Human_AnimRigRN.placeHolderList[276]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[5]"
+		"Human_AnimRigRN.placeHolderList[276]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[5]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[6]" "Human_AnimRigRN.placeHolderList[277]" 
-		"Human_AnimRigRN.placeHolderList[278]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[6]"
+		"Human_AnimRigRN.placeHolderList[278]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[6]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[10]" "Human_AnimRigRN.placeHolderList[279]" 
-		"Human_AnimRigRN.placeHolderList[280]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[10]"
+		"Human_AnimRigRN.placeHolderList[280]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[10]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[11]" "Human_AnimRigRN.placeHolderList[281]" 
-		"Human_AnimRigRN.placeHolderList[282]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[11]"
+		"Human_AnimRigRN.placeHolderList[282]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[11]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[16]" "Human_AnimRigRN.placeHolderList[283]" 
-		"Human_AnimRigRN.placeHolderList[284]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[16]"
+		"Human_AnimRigRN.placeHolderList[284]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[16]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[36]" "Human_AnimRigRN.placeHolderList[285]" 
-		"Human_AnimRigRN.placeHolderList[286]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[36]"
+		"Human_AnimRigRN.placeHolderList[286]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[60]" "Human_AnimRigRN.placeHolderList[287]" 
-		"Human_AnimRigRN.placeHolderList[288]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[60]"
+		"Human_AnimRigRN.placeHolderList[288]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[60]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[61]" "Human_AnimRigRN.placeHolderList[289]" 
-		"Human_AnimRigRN.placeHolderList[290]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[61]"
+		"Human_AnimRigRN.placeHolderList[290]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[61]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster39.matrix[62]" "Human_AnimRigRN.placeHolderList[291]" 
-		"Human_AnimRigRN.placeHolderList[292]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[62]"
+		"Human_AnimRigRN.placeHolderList[292]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[62]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[17]" "Human_AnimRigRN.placeHolderList[293]" 
-		"Human_AnimRigRN.placeHolderList[294]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[17]"
+		"Human_AnimRigRN.placeHolderList[294]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[17]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[18]" "Human_AnimRigRN.placeHolderList[295]" 
-		"Human_AnimRigRN.placeHolderList[296]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[18]"
+		"Human_AnimRigRN.placeHolderList[296]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[18]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[19]" "Human_AnimRigRN.placeHolderList[297]" 
-		"Human_AnimRigRN.placeHolderList[298]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[19]"
+		"Human_AnimRigRN.placeHolderList[298]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[19]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[20]" "Human_AnimRigRN.placeHolderList[299]" 
-		"Human_AnimRigRN.placeHolderList[300]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[20]"
+		"Human_AnimRigRN.placeHolderList[300]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[29]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[21]" "Human_AnimRigRN.placeHolderList[301]" 
-		"Human_AnimRigRN.placeHolderList[302]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[21]"
+		"Human_AnimRigRN.placeHolderList[302]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[30]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r|Human_AnimRig:Default_Character_Assistant:c_thumb3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[22]" "Human_AnimRigRN.placeHolderList[303]" 
-		"Human_AnimRigRN.placeHolderList[304]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[22]"
+		"Human_AnimRigRN.placeHolderList[304]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[31]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[23]" "Human_AnimRigRN.placeHolderList[305]" 
-		"Human_AnimRigRN.placeHolderList[306]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[23]"
+		"Human_AnimRigRN.placeHolderList[306]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[32]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[24]" "Human_AnimRigRN.placeHolderList[307]" 
-		"Human_AnimRigRN.placeHolderList[308]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[24]"
+		"Human_AnimRigRN.placeHolderList[308]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[33]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r|Human_AnimRig:Default_Character_Assistant:c_ring3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[25]" "Human_AnimRigRN.placeHolderList[309]" 
-		"Human_AnimRigRN.placeHolderList[310]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[25]"
+		"Human_AnimRigRN.placeHolderList[310]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[34]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[26]" "Human_AnimRigRN.placeHolderList[311]" 
-		"Human_AnimRigRN.placeHolderList[312]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[26]"
+		"Human_AnimRigRN.placeHolderList[312]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[35]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[27]" "Human_AnimRigRN.placeHolderList[313]" 
-		"Human_AnimRigRN.placeHolderList[314]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[27]"
+		"Human_AnimRigRN.placeHolderList[314]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r|Human_AnimRig:Default_Character_Assistant:c_middle3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[28]" "Human_AnimRigRN.placeHolderList[315]" 
-		"Human_AnimRigRN.placeHolderList[316]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[28]"
+		"Human_AnimRigRN.placeHolderList[316]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[29]" "Human_AnimRigRN.placeHolderList[317]" 
-		"Human_AnimRigRN.placeHolderList[318]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[29]"
+		"Human_AnimRigRN.placeHolderList[318]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[30]" "Human_AnimRigRN.placeHolderList[319]" 
-		"Human_AnimRigRN.placeHolderList[320]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[30]"
+		"Human_AnimRigRN.placeHolderList[320]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[39]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r|Human_AnimRig:Default_Character_Assistant:c_index3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[31]" "Human_AnimRigRN.placeHolderList[321]" 
-		"Human_AnimRigRN.placeHolderList[322]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[31]"
+		"Human_AnimRigRN.placeHolderList[322]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[40]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[33]" "Human_AnimRigRN.placeHolderList[323]" 
-		"Human_AnimRigRN.placeHolderList[324]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[33]"
+		"Human_AnimRigRN.placeHolderList[324]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[33]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[37]" "Human_AnimRigRN.placeHolderList[325]" 
-		"Human_AnimRigRN.placeHolderList[326]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[37]"
+		"Human_AnimRigRN.placeHolderList[326]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[38]" "Human_AnimRigRN.placeHolderList[327]" 
-		"Human_AnimRigRN.placeHolderList[328]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[38]"
+		"Human_AnimRigRN.placeHolderList[328]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[39]" "Human_AnimRigRN.placeHolderList[329]" 
-		"Human_AnimRigRN.placeHolderList[330]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[39]"
+		"Human_AnimRigRN.placeHolderList[330]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[39]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[40]" "Human_AnimRigRN.placeHolderList[331]" 
-		"Human_AnimRigRN.placeHolderList[332]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[40]"
+		"Human_AnimRigRN.placeHolderList[332]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[50]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[41]" "Human_AnimRigRN.placeHolderList[333]" 
-		"Human_AnimRigRN.placeHolderList[334]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[41]"
+		"Human_AnimRigRN.placeHolderList[334]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[51]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l|Human_AnimRig:Default_Character_Assistant:c_thumb3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[42]" "Human_AnimRigRN.placeHolderList[335]" 
-		"Human_AnimRigRN.placeHolderList[336]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[42]"
+		"Human_AnimRigRN.placeHolderList[336]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[52]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[43]" "Human_AnimRigRN.placeHolderList[337]" 
-		"Human_AnimRigRN.placeHolderList[338]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[43]"
+		"Human_AnimRigRN.placeHolderList[338]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[44]" "Human_AnimRigRN.placeHolderList[339]" 
-		"Human_AnimRigRN.placeHolderList[340]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[44]"
+		"Human_AnimRigRN.placeHolderList[340]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[54]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l|Human_AnimRig:Default_Character_Assistant:c_ring3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[45]" "Human_AnimRigRN.placeHolderList[341]" 
-		"Human_AnimRigRN.placeHolderList[342]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[45]"
+		"Human_AnimRigRN.placeHolderList[342]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[55]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[46]" "Human_AnimRigRN.placeHolderList[343]" 
-		"Human_AnimRigRN.placeHolderList[344]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[46]"
+		"Human_AnimRigRN.placeHolderList[344]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[56]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[47]" "Human_AnimRigRN.placeHolderList[345]" 
-		"Human_AnimRigRN.placeHolderList[346]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[47]"
+		"Human_AnimRigRN.placeHolderList[346]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[57]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l|Human_AnimRig:Default_Character_Assistant:c_middle3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[48]" "Human_AnimRigRN.placeHolderList[347]" 
-		"Human_AnimRigRN.placeHolderList[348]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[48]"
+		"Human_AnimRigRN.placeHolderList[348]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[58]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[49]" "Human_AnimRigRN.placeHolderList[349]" 
-		"Human_AnimRigRN.placeHolderList[350]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[49]"
+		"Human_AnimRigRN.placeHolderList[350]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[59]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[50]" "Human_AnimRigRN.placeHolderList[351]" 
-		"Human_AnimRigRN.placeHolderList[352]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[50]"
+		"Human_AnimRigRN.placeHolderList[352]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[60]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l|Human_AnimRig:Default_Character_Assistant:c_index3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[51]" "Human_AnimRigRN.placeHolderList[353]" 
-		"Human_AnimRigRN.placeHolderList[354]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[51]"
+		"Human_AnimRigRN.placeHolderList[354]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[61]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster70.matrix[53]" "Human_AnimRigRN.placeHolderList[355]" 
-		"Human_AnimRigRN.placeHolderList[356]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[53]"
+		"Human_AnimRigRN.placeHolderList[356]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster75.matrix[14]" "Human_AnimRigRN.placeHolderList[357]" 
@@ -9232,11 +9232,11 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[7]" "Human_AnimRigRN.placeHolderList[365]" 
-		"Human_AnimRigRN.placeHolderList[366]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[7]"
+		"Human_AnimRigRN.placeHolderList[366]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[7]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[8]" "Human_AnimRigRN.placeHolderList[367]" 
-		"Human_AnimRigRN.placeHolderList[368]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[8]"
+		"Human_AnimRigRN.placeHolderList[368]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[8]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster79.matrix[9]" "Human_AnimRigRN.placeHolderList[369]" 
@@ -9244,27 +9244,27 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[0]" "Human_AnimRigRN.placeHolderList[371]" 
-		"Human_AnimRigRN.placeHolderList[372]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[0]"
+		"Human_AnimRigRN.placeHolderList[372]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[0]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[1]" "Human_AnimRigRN.placeHolderList[373]" 
-		"Human_AnimRigRN.placeHolderList[374]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[1]"
+		"Human_AnimRigRN.placeHolderList[374]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[1]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[5]" "Human_AnimRigRN.placeHolderList[375]" 
-		"Human_AnimRigRN.placeHolderList[376]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[5]"
+		"Human_AnimRigRN.placeHolderList[376]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[5]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[6]" "Human_AnimRigRN.placeHolderList[377]" 
-		"Human_AnimRigRN.placeHolderList[378]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[6]"
+		"Human_AnimRigRN.placeHolderList[378]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[6]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[10]" "Human_AnimRigRN.placeHolderList[379]" 
-		"Human_AnimRigRN.placeHolderList[380]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[10]"
+		"Human_AnimRigRN.placeHolderList[380]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[10]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[11]" "Human_AnimRigRN.placeHolderList[381]" 
-		"Human_AnimRigRN.placeHolderList[382]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[11]"
+		"Human_AnimRigRN.placeHolderList[382]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[11]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[12]" "Human_AnimRigRN.placeHolderList[383]" 
@@ -9284,15 +9284,15 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[25]" "Human_AnimRigRN.placeHolderList[391]" 
-		"Human_AnimRigRN.placeHolderList[392]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[16]"
+		"Human_AnimRigRN.placeHolderList[392]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[16]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[26]" "Human_AnimRigRN.placeHolderList[393]" 
-		"Human_AnimRigRN.placeHolderList[394]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[17]"
+		"Human_AnimRigRN.placeHolderList[394]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[17]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[27]" "Human_AnimRigRN.placeHolderList[395]" 
-		"Human_AnimRigRN.placeHolderList[396]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[18]"
+		"Human_AnimRigRN.placeHolderList[396]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[18]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[44]" "Human_AnimRigRN.placeHolderList[397]" 
@@ -9304,15 +9304,15 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[46]" "Human_AnimRigRN.placeHolderList[401]" 
-		"Human_AnimRigRN.placeHolderList[402]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[36]"
+		"Human_AnimRigRN.placeHolderList[402]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[47]" "Human_AnimRigRN.placeHolderList[403]" 
-		"Human_AnimRigRN.placeHolderList[404]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[37]"
+		"Human_AnimRigRN.placeHolderList[404]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[48]" "Human_AnimRigRN.placeHolderList[405]" 
-		"Human_AnimRigRN.placeHolderList[406]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[38]"
+		"Human_AnimRigRN.placeHolderList[406]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[65]" "Human_AnimRigRN.placeHolderList[407]" 
@@ -9340,15 +9340,15 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:belly.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[71]" "Human_AnimRigRN.placeHolderList[419]" 
-		"Human_AnimRigRN.placeHolderList[420]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[60]"
+		"Human_AnimRigRN.placeHolderList[420]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[60]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:waist.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[72]" "Human_AnimRigRN.placeHolderList[421]" 
-		"Human_AnimRigRN.placeHolderList[422]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[61]"
+		"Human_AnimRigRN.placeHolderList[422]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[61]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:butt.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster262.matrix[73]" "Human_AnimRigRN.placeHolderList[423]" 
-		"Human_AnimRigRN.placeHolderList[424]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[62]"
+		"Human_AnimRigRN.placeHolderList[424]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[62]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[12]" "Human_AnimRigRN.placeHolderList[425]" 
@@ -9368,99 +9368,99 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[25]" "Human_AnimRigRN.placeHolderList[433]" 
-		"Human_AnimRigRN.placeHolderList[434]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[16]"
+		"Human_AnimRigRN.placeHolderList[434]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[16]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster263.matrix[46]" "Human_AnimRigRN.placeHolderList[435]" 
-		"Human_AnimRigRN.placeHolderList[436]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[36]"
+		"Human_AnimRigRN.placeHolderList[436]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[48]" "Human_AnimRigRN.placeHolderList[437]" 
-		"Human_AnimRigRN.placeHolderList[438]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[38]"
+		"Human_AnimRigRN.placeHolderList[438]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[49]" "Human_AnimRigRN.placeHolderList[439]" 
-		"Human_AnimRigRN.placeHolderList[440]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[39]"
+		"Human_AnimRigRN.placeHolderList[440]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[39]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[50]" "Human_AnimRigRN.placeHolderList[441]" 
-		"Human_AnimRigRN.placeHolderList[442]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[40]"
+		"Human_AnimRigRN.placeHolderList[442]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[50]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[51]" "Human_AnimRigRN.placeHolderList[443]" 
-		"Human_AnimRigRN.placeHolderList[444]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[41]"
+		"Human_AnimRigRN.placeHolderList[444]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[51]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l|Human_AnimRig:Default_Character_Assistant:c_thumb2_l|Human_AnimRig:Default_Character_Assistant:c_thumb3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[52]" "Human_AnimRigRN.placeHolderList[445]" 
-		"Human_AnimRigRN.placeHolderList[446]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[42]"
+		"Human_AnimRigRN.placeHolderList[446]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[52]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[53]" "Human_AnimRigRN.placeHolderList[447]" 
-		"Human_AnimRigRN.placeHolderList[448]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[43]"
+		"Human_AnimRigRN.placeHolderList[448]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[54]" "Human_AnimRigRN.placeHolderList[449]" 
-		"Human_AnimRigRN.placeHolderList[450]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[44]"
+		"Human_AnimRigRN.placeHolderList[450]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[54]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l|Human_AnimRig:Default_Character_Assistant:c_ring2_l|Human_AnimRig:Default_Character_Assistant:c_ring3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[55]" "Human_AnimRigRN.placeHolderList[451]" 
-		"Human_AnimRigRN.placeHolderList[452]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[45]"
+		"Human_AnimRigRN.placeHolderList[452]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[55]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[56]" "Human_AnimRigRN.placeHolderList[453]" 
-		"Human_AnimRigRN.placeHolderList[454]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[46]"
+		"Human_AnimRigRN.placeHolderList[454]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[56]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[57]" "Human_AnimRigRN.placeHolderList[455]" 
-		"Human_AnimRigRN.placeHolderList[456]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[47]"
+		"Human_AnimRigRN.placeHolderList[456]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[57]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_middle1_l|Human_AnimRig:Default_Character_Assistant:c_middle2_l|Human_AnimRig:Default_Character_Assistant:c_middle3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[58]" "Human_AnimRigRN.placeHolderList[457]" 
-		"Human_AnimRigRN.placeHolderList[458]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[48]"
+		"Human_AnimRigRN.placeHolderList[458]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[58]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[59]" "Human_AnimRigRN.placeHolderList[459]" 
-		"Human_AnimRigRN.placeHolderList[460]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[49]"
+		"Human_AnimRigRN.placeHolderList[460]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[59]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[60]" "Human_AnimRigRN.placeHolderList[461]" 
-		"Human_AnimRigRN.placeHolderList[462]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[50]"
+		"Human_AnimRigRN.placeHolderList[462]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[60]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l|Human_AnimRig:Default_Character_Assistant:c_index2_l|Human_AnimRig:Default_Character_Assistant:c_index3_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[61]" "Human_AnimRigRN.placeHolderList[463]" 
-		"Human_AnimRigRN.placeHolderList[464]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[51]"
+		"Human_AnimRigRN.placeHolderList[464]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[61]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster264.matrix[64]" "Human_AnimRigRN.placeHolderList[465]" 
-		"Human_AnimRigRN.placeHolderList[466]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[53]"
+		"Human_AnimRigRN.placeHolderList[466]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[47]" "Human_AnimRigRN.placeHolderList[467]" 
-		"Human_AnimRigRN.placeHolderList[468]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[37]"
+		"Human_AnimRigRN.placeHolderList[468]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[48]" "Human_AnimRigRN.placeHolderList[469]" 
-		"Human_AnimRigRN.placeHolderList[470]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[38]"
+		"Human_AnimRigRN.placeHolderList[470]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[49]" "Human_AnimRigRN.placeHolderList[471]" 
-		"Human_AnimRigRN.placeHolderList[472]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[39]"
+		"Human_AnimRigRN.placeHolderList[472]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[39]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_thumb1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[50]" "Human_AnimRigRN.placeHolderList[473]" 
-		"Human_AnimRigRN.placeHolderList[474]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[40]"
+		"Human_AnimRigRN.placeHolderList[474]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[50]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_ring1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[53]" "Human_AnimRigRN.placeHolderList[475]" 
-		"Human_AnimRigRN.placeHolderList[476]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[43]"
+		"Human_AnimRigRN.placeHolderList[476]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:hand_l|Human_AnimRig:Default_Character_Assistant:c_index1_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[59]" "Human_AnimRigRN.placeHolderList[477]" 
-		"Human_AnimRigRN.placeHolderList[478]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[49]"
+		"Human_AnimRigRN.placeHolderList[478]" "Human_AnimRig:Default_Character_Assistant:skinCluster264.ma[59]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:forearm_l|Human_AnimRig:Default_Character_Assistant:forearm_twist_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[64]" "Human_AnimRigRN.placeHolderList[479]" 
-		"Human_AnimRigRN.placeHolderList[480]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[53]"
+		"Human_AnimRigRN.placeHolderList[480]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[53]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_l|Human_AnimRig:Default_Character_Assistant:upper_arm_l|Human_AnimRig:Default_Character_Assistant:bicep_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster265.matrix[65]" "Human_AnimRigRN.placeHolderList[481]" 
@@ -9480,7 +9480,7 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[1]" "Human_AnimRigRN.placeHolderList[489]" 
-		"Human_AnimRigRN.placeHolderList[490]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[1]"
+		"Human_AnimRigRN.placeHolderList[490]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[1]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:lower_leg_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[2]" "Human_AnimRigRN.placeHolderList[491]" 
@@ -9492,95 +9492,95 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_l|Human_AnimRig:Default_Character_Assistant:width_thigh_l.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster267.matrix[5]" "Human_AnimRigRN.placeHolderList[495]" 
-		"Human_AnimRigRN.placeHolderList[496]" "Human_AnimRig:Default_Character_Assistant:skinCluster39.ma[5]"
+		"Human_AnimRigRN.placeHolderList[496]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[5]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[27]" "Human_AnimRigRN.placeHolderList[497]" 
-		"Human_AnimRigRN.placeHolderList[498]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[18]"
+		"Human_AnimRigRN.placeHolderList[498]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[18]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[28]" "Human_AnimRigRN.placeHolderList[499]" 
-		"Human_AnimRigRN.placeHolderList[500]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[19]"
+		"Human_AnimRigRN.placeHolderList[500]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[19]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[29]" "Human_AnimRigRN.placeHolderList[501]" 
-		"Human_AnimRigRN.placeHolderList[502]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[20]"
+		"Human_AnimRigRN.placeHolderList[502]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[29]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[30]" "Human_AnimRigRN.placeHolderList[503]" 
-		"Human_AnimRigRN.placeHolderList[504]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[21]"
+		"Human_AnimRigRN.placeHolderList[504]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[30]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r|Human_AnimRig:Default_Character_Assistant:c_thumb2_r|Human_AnimRig:Default_Character_Assistant:c_thumb3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[31]" "Human_AnimRigRN.placeHolderList[505]" 
-		"Human_AnimRigRN.placeHolderList[506]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[22]"
+		"Human_AnimRigRN.placeHolderList[506]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[31]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[32]" "Human_AnimRigRN.placeHolderList[507]" 
-		"Human_AnimRigRN.placeHolderList[508]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[23]"
+		"Human_AnimRigRN.placeHolderList[508]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[32]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[33]" "Human_AnimRigRN.placeHolderList[509]" 
-		"Human_AnimRigRN.placeHolderList[510]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[24]"
+		"Human_AnimRigRN.placeHolderList[510]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[33]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r|Human_AnimRig:Default_Character_Assistant:c_ring2_r|Human_AnimRig:Default_Character_Assistant:c_ring3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[34]" "Human_AnimRigRN.placeHolderList[511]" 
-		"Human_AnimRigRN.placeHolderList[512]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[25]"
+		"Human_AnimRigRN.placeHolderList[512]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[34]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[35]" "Human_AnimRigRN.placeHolderList[513]" 
-		"Human_AnimRigRN.placeHolderList[514]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[26]"
+		"Human_AnimRigRN.placeHolderList[514]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[35]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[36]" "Human_AnimRigRN.placeHolderList[515]" 
-		"Human_AnimRigRN.placeHolderList[516]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[27]"
+		"Human_AnimRigRN.placeHolderList[516]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[36]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_middle1_r|Human_AnimRig:Default_Character_Assistant:c_middle2_r|Human_AnimRig:Default_Character_Assistant:c_middle3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[37]" "Human_AnimRigRN.placeHolderList[517]" 
-		"Human_AnimRigRN.placeHolderList[518]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[28]"
+		"Human_AnimRigRN.placeHolderList[518]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[37]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[38]" "Human_AnimRigRN.placeHolderList[519]" 
-		"Human_AnimRigRN.placeHolderList[520]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[29]"
+		"Human_AnimRigRN.placeHolderList[520]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[39]" "Human_AnimRigRN.placeHolderList[521]" 
-		"Human_AnimRigRN.placeHolderList[522]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[30]"
+		"Human_AnimRigRN.placeHolderList[522]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[39]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r|Human_AnimRig:Default_Character_Assistant:c_index2_r|Human_AnimRig:Default_Character_Assistant:c_index3_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[40]" "Human_AnimRigRN.placeHolderList[523]" 
-		"Human_AnimRigRN.placeHolderList[524]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[31]"
+		"Human_AnimRigRN.placeHolderList[524]" "Human_AnimRig:Default_Character_Assistant:skinCluster268.ma[40]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster268.matrix[43]" "Human_AnimRigRN.placeHolderList[525]" 
-		"Human_AnimRigRN.placeHolderList[526]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[33]"
+		"Human_AnimRigRN.placeHolderList[526]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[33]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[26]" "Human_AnimRigRN.placeHolderList[527]" 
-		"Human_AnimRigRN.placeHolderList[528]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[17]"
+		"Human_AnimRigRN.placeHolderList[528]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[17]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[27]" "Human_AnimRigRN.placeHolderList[529]" 
-		"Human_AnimRigRN.placeHolderList[530]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[18]"
+		"Human_AnimRigRN.placeHolderList[530]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[18]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[28]" "Human_AnimRigRN.placeHolderList[531]" 
-		"Human_AnimRigRN.placeHolderList[532]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[19]"
+		"Human_AnimRigRN.placeHolderList[532]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[19]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_thumb1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[29]" "Human_AnimRigRN.placeHolderList[533]" 
-		"Human_AnimRigRN.placeHolderList[534]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[20]"
+		"Human_AnimRigRN.placeHolderList[534]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[29]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_ring1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[32]" "Human_AnimRigRN.placeHolderList[535]" 
-		"Human_AnimRigRN.placeHolderList[536]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[23]"
+		"Human_AnimRigRN.placeHolderList[536]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[32]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:hand_r|Human_AnimRig:Default_Character_Assistant:c_index1_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[38]" "Human_AnimRigRN.placeHolderList[537]" 
-		"Human_AnimRigRN.placeHolderList[538]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[29]"
+		"Human_AnimRigRN.placeHolderList[538]" "Human_AnimRig:Default_Character_Assistant:skinCluster269.ma[38]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:forearm_r|Human_AnimRig:Default_Character_Assistant:forearm_twist_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[43]" "Human_AnimRigRN.placeHolderList[539]" 
-		"Human_AnimRigRN.placeHolderList[540]" "Human_AnimRig:Default_Character_Assistant:skinCluster70.ma[33]"
+		"Human_AnimRigRN.placeHolderList[540]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[33]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:shoulder_r|Human_AnimRig:Default_Character_Assistant:upper_arm_r|Human_AnimRig:Default_Character_Assistant:bicep_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster269.matrix[44]" "Human_AnimRigRN.placeHolderList[541]" 
@@ -9588,11 +9588,11 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster270.matrix[7]" "Human_AnimRigRN.placeHolderList[543]" 
-		"Human_AnimRigRN.placeHolderList[544]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[7]"
+		"Human_AnimRigRN.placeHolderList[544]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[7]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster270.matrix[8]" "Human_AnimRigRN.placeHolderList[545]" 
-		"Human_AnimRigRN.placeHolderList[546]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[8]"
+		"Human_AnimRigRN.placeHolderList[546]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[8]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r|Human_AnimRig:Default_Character_Assistant:toes_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster270.matrix[9]" "Human_AnimRigRN.placeHolderList[547]" 
@@ -9600,19 +9600,19 @@ createNode reference -n "Human_AnimRigRN";
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[6]" "Human_AnimRigRN.placeHolderList[549]" 
-		"Human_AnimRigRN.placeHolderList[550]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[6]"
+		"Human_AnimRigRN.placeHolderList[550]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[6]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[7]" "Human_AnimRigRN.placeHolderList[551]" 
-		"Human_AnimRigRN.placeHolderList[552]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[7]"
+		"Human_AnimRigRN.placeHolderList[552]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[7]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:lower_leg_r|Human_AnimRig:Default_Character_Assistant:foot_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[8]" "Human_AnimRigRN.placeHolderList[553]" 
-		"Human_AnimRigRN.placeHolderList[554]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[8]"
+		"Human_AnimRigRN.placeHolderList[554]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[8]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:thigh_r|Human_AnimRig:Default_Character_Assistant:width_thigh_r.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster271.matrix[10]" "Human_AnimRigRN.placeHolderList[555]" 
-		"Human_AnimRigRN.placeHolderList[556]" "Human_AnimRig:Default_Character_Assistant:skinCluster271.ma[10]"
+		"Human_AnimRigRN.placeHolderList[556]" "Human_AnimRig:Default_Character_Assistant:skinCluster27.ma[10]"
 		
 		5 0 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Rig_Assets|Human_AnimRig:Character|Human_AnimRig:Default_Character_Assistant:Human|Human_AnimRig:Default_Character_Assistant:HumanArmature|Human_AnimRig:Default_Character_Assistant:hips|Human_AnimRig:Default_Character_Assistant:spine|Human_AnimRig:Default_Character_Assistant:chest|Human_AnimRig:Default_Character_Assistant:neck|Human_AnimRig:Default_Character_Assistant:head.worldMatrix" 
 		"Human_AnimRig:Default_Character_Assistant:skinCluster273.matrix[14]" "Human_AnimRigRN.placeHolderList[557]" 
@@ -9667,7 +9667,7 @@ createNode reference -n "Human_AnimRigRN";
 		"rotatePivot" " -type \"double3\" 0 2.6339429979316266e-08 -2.3961657769078217e-09"
 		
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR" 
-		"rotatePivotTranslate" " -type \"double3\" 0.00010888038676134481 -0.0073383192489926818 -0.002088452595777006"
+		"rotatePivotTranslate" " -type \"double3\" 0.00022989551412690436 -0.0093999035313704123 -0.0025665690322287582"
 		
 		2 "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX" 
 		"translateX" " -av 0"
@@ -10192,13 +10192,13 @@ createNode reference -n "Human_AnimRigRN";
 		
 		2 "Human_AnimRig:HMND_AnimRig" "unitlessValues" " -s 85"
 		2 "Human_AnimRig:HMND_AnimRig" "lv[1:243]" (" -s 243 0.15000138581848585 1.3954013277151025 -1.1833378266395361e-07 0 0 0 1.008510589617373e-06 1.9073486313914147e-07 7.6293945383554274e-08 -0.023254185648160758 0.0085882377624511719 0.076616281887946683 0.015158044099807635 0 0.084018705188754442 0 0 0.23379094336677292 -0.11804807130790128 0 -0.17810487747192383 0 0 0 0.037819892422630633 1.1852846197850393 -0.57615023488705963 0.037819931534954748 1.18528446747999006 0.57615023488703254 0.5 1.03770954849195829 0 0 0 0 0.021054284294816275 1.18555838143657333 -0.57467495950677372 0 0 0 0 0 0 0 0 0 0.021464867591857076 1.18556922912597651 0.57467399597167967 0.021054356043306136 1.18555821197482958 0.57467391728700445 0 0 0 0 0 0 0 0 0 -0.32999999999999774 1.14121810412814884 -0.67033629066924083 0 0 0 0 0 0 -0.32999999498545285 1.27102610176389086 0.5271735923564117 -0.32999999498545279 1.22775687099465936 0.67033598551880658 0 0 0 0 0 0 0 0 0 -0.0010396859697161132 -0.0012581291673866703 0.04773021830825229 0 0 0 0 0 0 -0.32214063404835969 -5.5767547"
-		+ "688461149e-05 0.02778273620144029 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0 0 0 0 0 0 0.0020646403495949528 0 0 0 0 0.00011583747996704474 0 0 0 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.021054155826550555 1.18555847167972073 0.5746741867064793 0 0 0 0.007724025249481228 0.13722381591796817 -1.2685113688252841e-08 0.013290811777114877 0.13722364902496367 -1.3158447416168108e-08 0.016688361207910632 0.83482671493987837 0.00022489229027250425 0 0 0 0.020977702140806149 1.19745635986328147 0.14366539955139157 2.55107879634231e-07 -7.6293945312500002e-08 -0.11362313270568848 0.021054155826550555 1.18555847167972073 0.5746741867064793 0.01982280734592537 -0.0059491012049329587 0.23553479370115377 -0.019744858729214207 -0.0059484542798192309 0.19547417102961048 9.536743177385177e-09 7.6293945312500002e-08 0.11362301111221314 0.020977692604064943 1.19745628356933587 0.030042388439178468 0.12492939871065328 -0."
+		+ "688461149e-05 0.02778273620144029 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0 0 0 0 0 0 0.0020646403495949528 0 0 0 0 0.00011583747996704474 0 0 0 -0.038894917964935306 0.052890744209289554 0.18669311523437501 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.021054155826550555 1.18555847167972073 0.5746741867064793 0 0 0 0.007724025249481228 0.13722381591796817 -1.2685113688252841e-08 0.013290811777114877 0.13722364902496367 -1.3158447416168108e-08 0.016689363179728432 0.83482648688031735 0.00020268345794362098 0 0 0 0.020977702140806149 1.19745635986328147 0.14366539955139157 2.55107879634231e-07 -7.6293945312500002e-08 -0.11362313270568848 0.021054155826550555 1.18555847167972073 0.5746741867064793 0.01982280734592537 -0.0059491012049329587 0.23553479370115377 -0.019744858729214207 -0.0059484542798192309 0.19547417102961048 9.536743177385177e-09 7.6293945312500002e-08 0.11362301111221314 0.020977692604064943 1.19745628356933587 0.030042388439178468 0.12492939871065328 -0."
 		+ "1066216346457972 -0.00085016787236540342 0.021054115295410441 1.18555862426755665 -0.57467418670650638 0.019822774798877656 -0.0059491016427033116 -0.23553492406628829 -0.019744544699559909 -0.0059486863853263116 -0.19547424449381059 -2.8610229492187499e-08 -7.6293945170391458e-08 -0.11362302541732792 0.02097769021987915 1.19745628356933587 -0.030042603015899658 0.12492939871065328 -0.1066216346457972 -0.00085016787236540342 0.021054190650659575 1.18555902582327755 0.57467473036260086 0.021054150119519461 1.18555917841111347 -0.57467364305038504 0.020015589252209517 1.24557436090625284 3.5804153142768212e-07 0.12492936388654428 -0.10662218878935406 -0.00085071152848684021 0 0 0 0 0 0 -0.16015235020073637 -0.86499984172238531 0.00085949551310381968 0 0 0 0.0052561721637391827 0.025168828307732857 4.1497079532740439e-05 0 5.5522481034131489e-07 5.4366826906224185e-07 0.044525461201223422 -0.40167384270426992 -0.066757562310219856 0.045603780742128792 -0.35440307971241786 0.014620376975060552 0.0132432758808136 "
 		+ "0.80896774291992191 -0.096564064025878915 -0.050501172673487305 -0.40097789388766403 -0.066689361602445207 -0.046 -0.354 0.014772866617099477 0.013243290185928345 0.80896781921386718 0.096563930511474605 0 0 0 0.092711346924619853 0.35497193771819541 -0.36362975161081884 0 0 0 0 0 0"
 		)
 		2 "Human_AnimRig:HMND_AnimRig" "linearValues" " -s 237"
-		2 "Human_AnimRig:HMND_AnimRig" "av[1:381]" (" -s 381 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46.87131659978772547 1.45780914625060398 -11.62843433529266868 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -78.81763361912986454 -47.66413264864929289 47.37798927724119125 89.99999999999950262 0 -90.00000000000018474 0 0 0 -90.00000000000018474 0 -90.00000000000009948 -90.00000000000018474 0 -90.00000000000009948 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.5292510192985874e-06 -0.00014307569582722372 1.7749188174553151e-05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3.2370913817403749e-08 1.2060743422934725e-07 1.32755323966208683 0.3278697893362621 3.06361136846417459 -39.31629010223339549 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.035479971838573002 1.39157655246551859 0.038136270608992683 0.02233450581124612 -0.72065443006791541 0.23542554921"
-		+ "943934 0 0 0 0 0 0 0 0 0 0 0 0 2.4721974354873524e-05 -0.00096932983747855005 2.6565196326366203e-05 -5.2745195453430429e-05 0.0077045624065433431 0.26037079045073597 0 0 0 0 0 0 0 0 0 0 0 0 0.036921857992797222 0.76988418731918484 2.7456616939418641 0 0 0 0 0 0 270.00398181265057929 1.3236818525363383 -1.93103554624654028 0 0 0 0 0 0 0 0 0 0 0 0 -90.00397789388316028 181.323681537254771 178.06895498682953871 0 0 0 0 0 0 0 0 0 0 0 0 -5.2804105690667182e-06 0.3783053839409638 -3.22165157517388323 0 0 0 0 0.37830060720443703 -9.16226387023993993 0 0 0 0 0 0 0 0 0 0 0 0 0.008504384979663597 -0.071315577839268451 -0.004923063488017158 0 0 0 0.48199873569564677 -0.061286660492482901 0.0031322387368486393 -0.83980271306709731 -4.97372026904867237 -0.78592758674903307 0 0 0 4.64671443637566028 4.64671443637566028 4.64671443637566028 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+		2 "Human_AnimRig:HMND_AnimRig" "av[1:381]" (" -s 381 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 -90 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63.9232655148874187 12.18165119648025474 0.52026517131009098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64.33405345691517141 -47.64937081208795888 26.50480116352720117 89.99999999999950262 0 -90.00000000000018474 0 0 0 -90.00000000000018474 0 -90.00000000000009948 -90.00000000000018474 0 -90.00000000000009948 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.5292510192985874e-06 -0.00014307569582722372 1.7749188174553151e-05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3.2370913817403749e-08 1.2060743422934725e-07 1.32755323966208683 0.29555613704999384 2.76167299011825751 -39.31629010223339549 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.035479971838573002 1.39157655246551859 0.038136270608992683 0.02233450581124612 -0.72065443006791541 0.235425549219"
+		+ "43934 0 0 0 0 0 0 0 0 0 0 0 0 2.4721974354873524e-05 -0.00096932983747855005 2.6565196326366203e-05 -5.2745195453430429e-05 0.0077045624065433431 0.26037079045073597 0 0 0 0 0 0 0 0 0 0 0 0 0.036921857992797222 0.76988418731918484 2.7456616939418641 0 0 0 0 0 0 270.00398181265057929 1.3236818525363383 -1.93103554624654028 0 0 0 0 0 0 0 0 0 0 0 0 -90.00397789388316028 181.323681537254771 178.06895498682953871 0 0 0 0 0 0 0 0 0 0 0 0 -5.2804105690667182e-06 0.3783053839409638 -3.22165157517388323 0 0 0 0 0.37830060720443703 -9.16226387023993993 0 0 0 0 0 0 0 0 0 0 0 0 0.008504384979663597 -0.071315577839268451 -0.004923063488017158 0 0 0 0.48199873569564677 -0.061286660492482901 0.0031322387368486393 -0.83980271306709731 -4.97372026904867237 -0.78592758674903307 0 0 0 4.64671443637566028 4.64671443637566028 4.64671443637566028 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		)
 		2 "Human_AnimRig:HMND_AnimRig" "angularValues" " -s 375"
 		2 "Human_AnimRig:HMND_AnimRig" "referenceMapping" (" -type \"characterMapping\" 697 \"Human_AnimRig:Head_CTR_ANIM.Tilt_R\" 0 1 \"Human_AnimRig:Head_CTR_ANIM.Tilt_L\" 0 2 \"Human_AnimRig:Head_CTR_ANIM.Horizontal_R\" 0 3 \"Human_AnimRig:Head_CTR_ANIM.Horizontal_L\" 0 4 \"Human_AnimRig:Head_CTR_ANIM.Vertical_R\" 0 5 \"Human_AnimRig:Head_CTR_ANIM.Vertical_L\" 0 6 \"Human_AnimRig:Head_CTR_ANIM.LeftRightR\" 0 7 \"Human_AnimRig:Head_CTR_ANIM.LeftRightL\" 0 8 \"Human_AnimRig:Head_CTR_ANIM.UpDownR\" 0 9 \"Human_AnimRig:Head_CTR_ANIM.UpDownL\" 0 10 \"Human_AnimRig:Head_CTR_ANIM.ViewTarget\" 0 11 \"Human_AnimRig:Head_CTR_ANIM.Dead_R\" 0 12 \"Human_AnimRig:Head_CTR_ANIM.Dead_L\" 0 13 \"Human_AnimRig:Head_CTR_ANIM.Closed_R\" 0 14 \"Human_AnimRig:Head_CTR_ANIM.Closed_L\" 0 15 \"Human_AnimRig:Head_CTR_ANIM.Tight_R\" 0 16 \"Human_AnimRig:Head_CTR_ANIM.Tight_L\" 0 17 \"Human_AnimRig:Head_CTR_ANIM.Bored_R\" 0 18 \"Human_AnimRig:Head_CTR_ANIM.Bored_L\" 0 19 \"Human_AnimRig:Head_CTR_ANIM.Angry_R\" 0 20 \"Human_AnimRig:Head_CTR_ANIM.Angry_L\" 0 21 \"Human_AnimRig:Head_CTR_ANIM.ConcernedR\" 0 22 \"Human_AnimRig:Head_CTR_ANIM.Co"
@@ -10235,81 +10235,39 @@ createNode reference -n "Human_AnimRigRN";
 		+ "_AnimRig:UpperLegIK_PRX_L.translateX\" 1 231 \"Human_AnimRig:LegIK_MSC.rotateZ\" 2 349 \"Human_AnimRig:LegIK_MSC.rotateY\" 2 350 \"Human_AnimRig:LegIK_MSC.rotateX\" 2 351 \"Human_AnimRig:LegIK_MSC.translateZ\" 1 232 \"Human_AnimRig:LegIK_MSC.translateY\" 1 233 \"Human_AnimRig:LegIK_MSC.translateX\" 1 234 \"Human_AnimRig:PDA_CTR.rotateZ\" 2 352 \"Human_AnimRig:PDA_CTR.rotateY\" 2 353 \"Human_AnimRig:PDA_CTR.rotateX\" 2 354 \"Human_AnimRig:PDA_CTR.translateZ\" 1 235 \"Human_AnimRig:PDA_CTR.translateY\" 1 236 \"Human_AnimRig:PDA_CTR.translateX\" 1 237 \"Human_AnimRig:FootFK_CTR_L.rotateZ\" 2 355 \"Human_AnimRig:FootFK_CTR_L.rotateY\" 2 356 \"Human_AnimRig:FootFK_CTR_L.rotateX\" 2 357 \"Human_AnimRig:LowerLegFK_CTR_L.rotateZ\" 2 358 \"Human_AnimRig:LowerLegFK_CTR_L.rotateY\" 2 359 \"Human_AnimRig:LowerLegFK_CTR_L.rotateX\" 2 360 \"Human_AnimRig:UpperLegFK_CTR_L.rotateZ\" 2 361 \"Human_AnimRig:UpperLegFK_CTR_L.rotateY\" 2 362 \"Human_AnimRig:UpperLegFK_CTR_L.rotateX\" 2 363 \"Human_AnimRig:FootFK_CTR_R.rotateZ\" 2 364 \"Human_AnimRig:FootFK_CTR_R.rotateY\" 2 3"
 		+ "65 \"Human_AnimRig:FootFK_CTR_R.rotateX\" 2 366 \"Human_AnimRig:LowerLegFK_CTR_R.rotateZ\" 2 367 \"Human_AnimRig:LowerLegFK_CTR_R.rotateY\" 2 368 \"Human_AnimRig:LowerLegFK_CTR_R.rotateX\" 2 369 \"Human_AnimRig:UpperLegFK_CTR_R.rotateZ\" 2 370 \"Human_AnimRig:UpperLegFK_CTR_R.rotateY\" 2 371 \"Human_AnimRig:UpperLegFK_CTR_R.rotateX\" 2 372 \"Human_AnimRig:Hips_CTR.rotateZ\" 2 373 \"Human_AnimRig:Hips_CTR.rotateY\" 2 374 \"Human_AnimRig:Hips_CTR.rotateX\" 2 375 \"Human_AnimRig:Pelvis_CTR.rotateZ\" 2 376 \"Human_AnimRig:Pelvis_CTR.rotateY\" 2 377 \"Human_AnimRig:Pelvis_CTR.rotateX\" 2 378 \"Human_AnimRig:Pelvis_CTR.translateZ\" 1 238 \"Human_AnimRig:Pelvis_CTR.translateY\" 1 239 \"Human_AnimRig:Pelvis_CTR.translateX\" 1 240 \"Human_AnimRig:MainRoot_CTR.scaleZ\" 0 91 \"Human_AnimRig:MainRoot_CTR.scaleY\" 0 92 \"Human_AnimRig:MainRoot_CTR.scaleX\" 0 93 \"Human_AnimRig:MainRoot_CTR.rotateZ\" 2 379 \"Human_AnimRig:MainRoot_CTR.rotateY\" 2 380 \"Human_AnimRig:MainRoot_CTR.rotateX\" 2 381 \"Human_AnimRig:MainRoot_CTR.translateZ\" 1 241 \"Human_AnimRig:MainRoot_CT"
 		+ "R.translateY\" 1 242 \"Human_AnimRig:MainRoot_CTR.translateX\" 1 243")
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[363]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[362]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[361]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[20]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[19]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[18]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[9]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[8]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[7]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateZ" 
-		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[369]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R.rotateX" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[368]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R.rotateY" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[367]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[309]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[44]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.SpaceSwitchObject" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[308]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[43]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.WeaponSelection" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[307]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[117]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateX" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[116]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateY" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[115]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[12]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[194]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[11]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[193]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[10]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[192]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[226]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[372]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[225]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[371]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[224]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[370]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[357]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[356]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[72]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[71]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[70]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[366]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[365]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[364]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[285]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[284]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[283]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[38]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R.SpaceSwitchLeg" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[37]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R.SpaceSwitchKnee" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[355]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[375]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateX" 
 		""
@@ -10317,41 +10275,15 @@ createNode reference -n "Human_AnimRigRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[373]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[330]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[68]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchHand" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[329]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[67]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchElbow" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[328]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[66]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Fist" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[300]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[65]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Relaxed" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[299]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[298]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[312]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[311]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[310]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[237]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[236]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[235]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[354]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[353]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[352]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[360]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[359]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[358]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[64]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Weapon" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[108]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateX" 
 		""
@@ -10359,11 +10291,109 @@ createNode reference -n "Human_AnimRigRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[106]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[357]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[300]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[356]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[299]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[355]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[298]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[240]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[239]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[238]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[378]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[377]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[376]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[20]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[19]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[18]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[243]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[242]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[241]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[381]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[380]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[379]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.scaleX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.scaleY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.scaleZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[87]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[86]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[85]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[170]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[169]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[168]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[30]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L|Human_AnimRig:FootRoll_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[297]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[296]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[295]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[360]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[359]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[358]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[309]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[308]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[307]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[105]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[104]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[103]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[185]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[184]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[183]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[294]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[293]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[292]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[234]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[233]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[232]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[50]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectRoot_PRX|Human_AnimRig:Object_CTR.visibility" 
 		""
@@ -10379,29 +10409,115 @@ createNode reference -n "Human_AnimRigRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[40]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectRoot_PRX|Human_AnimRig:Object_CTR.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[29]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[42]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchLeg" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[28]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[41]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchKnee" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[27]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[291]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[297]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[290]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[296]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[289]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[295]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[84]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateX" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[83]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateY" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[82]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.translateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[167]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[12]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[166]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[11]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[165]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[10]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[117]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[116]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[115]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[194]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[193]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[192]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[34]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Muscularity" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[33]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Feminine" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[32]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Breasts" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[31]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Obese" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[30]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Fingers" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[6]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[5]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[4]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[285]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[284]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[283]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[72]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[71]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[70]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[363]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[362]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[361]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[312]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[311]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[310]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[366]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[365]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[364]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[237]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.translateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[236]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.translateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.linearValues[235]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.translateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[354]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[353]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[352]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[372]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[371]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[370]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[306]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[305]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[304]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateZ" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[315]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateX" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[314]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateY" 
+		""
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[313]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[57]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
 		""
@@ -10413,11 +10529,11 @@ createNode reference -n "Human_AnimRigRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[53]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R.Weapon" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[294]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[29]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[293]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[28]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[292]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[27]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[25]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM.Happy_L" 
 		""
@@ -10469,37 +10585,17 @@ createNode reference -n "Human_AnimRigRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[1]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM.Tilt_R" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[44]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.SpaceSwitchObject" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[9]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[43]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR.WeaponSelection" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[8]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateX" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[7]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR.rotateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateY" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[330]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R.translateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[329]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateY" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[105]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[104]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[103]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[185]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[184]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[183]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[42]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchLeg" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[41]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L.SpaceSwitchKnee" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[291]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[290]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[289]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.angularValues[328]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR.rotateZ" 
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[81]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_L|Human_AnimRig:ElbowVectorIK_CTR_L.translateX" 
 		""
@@ -10507,107 +10603,11 @@ createNode reference -n "Human_AnimRigRN";
 		""
 		3 "Human_AnimRig:HMND_AnimRig.linearValues[79]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_L|Human_AnimRig:ElbowVectorIK_CTR_L.translateZ" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[30]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L|Human_AnimRig:FootRoll_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[306]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[305]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[304]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[84]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[83]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[82]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[167]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[166]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[165]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[240]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[239]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[238]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[378]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[377]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[376]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR.rotateZ" 
-		""
 		3 "Human_AnimRig:HMND_AnimRig.angularValues[21]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R|Human_AnimRig:FootRoll_CTR_R.rotateX" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[315]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateX" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[38]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R.SpaceSwitchLeg" 
 		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[314]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[313]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[243]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[242]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[241]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[381]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[380]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[379]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[93]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.scaleX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[92]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.scaleY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[91]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.scaleZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[226]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[225]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[224]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[34]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Muscularity" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[33]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Feminine" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[32]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Breasts" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[31]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Obese" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[30]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR.Fingers" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[68]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchHand" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[67]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.SpaceSwitchElbow" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[66]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Fist" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[65]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Relaxed" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[64]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L.Weapon" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[234]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[233]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[232]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R.rotateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[87]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[86]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.linearValues[85]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.translateZ" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[170]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateX" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[169]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateY" 
-		""
-		3 "Human_AnimRig:HMND_AnimRig.angularValues[168]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R.rotateZ" 
+		3 "Human_AnimRig:HMND_AnimRig.unitlessValues[37]" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R.SpaceSwitchKnee" 
 		""
 		5 3 "Human_AnimRigRN" "|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR.translate" 
 		"Human_AnimRigRN.placeHolderList[565]" ""
@@ -14519,16 +14519,16 @@ createNode reference -n "Human_AnimRigRN";
 lockNode -l 1 ;
 createNode animBlendNodeAdditiveRotation -n "ShoulderFK_CTR_R_rotate_UpperBody1";
 	rename -uid "1EC25516-4434-85C1-7E29-C985A0905D6E";
-	setAttr ".o" -type "double3" 5.0075632530666168 0.51335507460710494 40.71400244994485 ;
+	setAttr ".o" -type "double3" 1.8771830441253341 2.6586652687938259 24.825369402342901 ;
 createNode animBlendNodeAdditiveRotation -n "UpperArmFK_CTR_R_rotate_UpperBody1";
 	rename -uid "472D446C-4CF4-0D92-BA1B-C9BD684EE99F";
-	setAttr ".o" -type "double3" 36.756957430321272 -9.5941647397759979 74.610016234348123 ;
+	setAttr ".o" -type "double3" 37.091088125611343 -9.0652899576898491 73.763262567982224 ;
 createNode animBlendNodeAdditiveRotation -n "LowerArmFK_CTR_R_rotate_UpperBody1";
 	rename -uid "E5B148C2-41A6-2406-10F9-99A30D214B27";
-	setAttr ".o" -type "double3" 42.224189570429388 -1.524662180736239 3.0471776368466519 ;
+	setAttr ".o" -type "double3" 40.536048780613065 -1.3216184380839862 2.6413760371684698 ;
 createNode animBlendNodeAdditiveRotation -n "HandFK_CTR_R_rotate_UpperBody";
 	rename -uid "64147F33-46EA-93B0-6CEE-F4B4ED793C9F";
-	setAttr ".o" -type "double3" 16.690439985149183 -12.350821730598904 5.4671113508336973 ;
+	setAttr ".o" -type "double3" 15.539333679641238 -12.065417467756591 6.0537595366006647 ;
 createNode animBlendNodeAdditiveRotation -n "ShoulderIK_CTR_R_rotate_UpperBody";
 	rename -uid "136E053D-4F13-5F5A-7054-0C998BA68162";
 	setAttr ".o" -type "double3" -2.3160505125640856 -12.306799777437586 -1.6092881493391373 ;
@@ -14555,13 +14555,13 @@ createNode animBlendNodeAdditiveRotation -n "HandIK_CTR_R_rotate_UpperBody";
 	setAttr ".o" -type "double3" 5.6008082467412255 -16.16043259579785 80.577869840207171 ;
 createNode animBlendNodeAdditiveRotation -n "ShoulderFK_CTR_L_rotate_UpperBody1";
 	rename -uid "8B400324-40C0-EE9A-209D-C09D4B65291C";
-	setAttr ".o" -type "double3" 0.54591784629427642 -3.7671709337399331 -25.984294029259107 ;
+	setAttr ".o" -type "double3" 4.707589020612529 -0.78675666149982015 -39.524000241543519 ;
 createNode animBlendNodeAdditiveRotation -n "UpperArmFK_CTR_L_rotate_UpperBody";
 	rename -uid "548AF9B4-4538-E054-9942-7CB7CC90F297";
-	setAttr ".o" -type "double3" 36.411655486810332 -1.8591049001984616 -65.269689786362449 ;
+	setAttr ".o" -type "double3" 39.212706328757655 7.9583812519069159 -73.971683572507331 ;
 createNode animBlendNodeAdditiveRotation -n "LowerArmFK_CTR_L_rotate_UpperBody1";
 	rename -uid "36896F2D-4A92-9407-A711-47BF0EB38EE0";
-	setAttr ".o" -type "double3" 48.354552013952429 2.0073196601955043 -4.011813013946937 ;
+	setAttr ".o" -type "double3" 52.683512268303453 2.2441741017432215 -4.4851884059458982 ;
 createNode animBlendNodeAdditiveRotation -n "ShoulderIK_CTR_L_rotate_UpperBody";
 	rename -uid "68BBD0B9-4C49-596F-083D-A6BBC0E53631";
 	setAttr ".o" -type "double3" -10.319494103899078 13.587378721874597 -4.6608608763584316 ;
@@ -14588,7 +14588,7 @@ createNode animBlendNodeAdditiveRotation -n "HandIK_CTR_L_rotate_UpperBody";
 	setAttr ".o" -type "double3" 26.628810524361882 5.3132459965781296 -78.866846602615624 ;
 createNode animBlendNodeAdditiveRotation -n "HandFK_CTR_L_rotate_UpperBody1";
 	rename -uid "865D15C4-468C-00C7-DB04-DDA3AD5BF1B8";
-	setAttr ".o" -type "double3" 13.002528548594142 3.0447161925203585 -6.5669304642860649 ;
+	setAttr ".o" -type "double3" 14.397990134449154 3.3301204553626711 -6.5332006659240767 ;
 createNode animBlendNodeEnum -n "ObjectOptions_CTR_SpaceSwitchObject_UpperBody1";
 	rename -uid "B65806EC-451B-5C7B-354D-758D7812DE11";
 	setAttr ".o" 1;
@@ -14683,25 +14683,25 @@ createNode animBlendNodeAdditiveRotation -n "Head_CTR_rotate_UpperBody";
 	setAttr ".o" -type "double3" -14.032094117647063 0 0 ;
 createNode animBlendNodeAdditiveRotation -n "Neck_CTR_rotate_UpperBody";
 	rename -uid "A6BA1866-4867-D11C-9372-DC807BA36007";
-	setAttr ".o" -type "double3" 26.623871018117804 0.068408130119214927 2.0219091780933129 ;
+	setAttr ".o" -type "double3" 25.627373908218992 -0.072430757587734276 -1.9486155312740274 ;
 createNode animBlendNodeAdditiveRotation -n "Chest_CTR_rotate_UpperBody";
 	rename -uid "000B3BF6-4867-B9F0-648D-2A91325466E2";
-	setAttr ".o" -type "double3" 9.0420148490685115 -1.3362878053795499 1.6078083994283729 ;
+	setAttr ".o" -type "double3" 9.0268662675657989 -1.2543239302700375 1.5091902676754252 ;
 createNode animBlendNodeAdditiveRotation -n "Spine_CTR_rotate_UpperBody";
 	rename -uid "546981F9-425A-280A-B924-0583315D0065";
-	setAttr ".o" -type "double3" 44.026806749574881 -0.1892388872865314 -3.3891297712588679 ;
+	setAttr ".o" -type "double3" 42.291964336309128 -0.17763154307447257 0.57126334350718866 ;
 createNode animBlendNodeAdditiveDL -n "Pelvis_CTR_translateX_LowerBody";
 	rename -uid "F1FB8179-4C75-1505-FFC3-F88F57A2AEFC";
-	setAttr ".o" 0.056239985878569827;
+	setAttr ".o" 0.055633964541669842;
 createNode animBlendNodeAdditiveDL -n "Pelvis_CTR_translateY_LowerBody";
 	rename -uid "6A70F6F9-4120-B3F2-A117-A09004BFE6E7";
-	setAttr ".o" -0.30493270963876301;
+	setAttr ".o" -0.35238982637792793;
 createNode animBlendNodeAdditiveDL -n "Pelvis_CTR_translateZ_LowerBody";
 	rename -uid "B8E84328-4F2E-5F1B-A1F2-AA8E92D3CBB2";
-	setAttr ".o" -0.17668082747735273;
+	setAttr ".o" -0.19134234266148256;
 createNode animBlendNodeAdditiveRotation -n "Pelvis_CTR_rotate_LowerBody";
 	rename -uid "8CAB3C30-4948-A8EB-7351-0AAEB2B3F45E";
-	setAttr ".o" -type "double3" -0.52122156890996652 -22.154156632875242 0.54481752711779985 ;
+	setAttr ".o" -type "double3" 4.0663034168406238 -16.043030955088749 0.40904751681017643 ;
 createNode animBlendNodeAdditiveDL -n "Hips_CTR_translateX_LowerBody";
 	rename -uid "320D7CF9-40C7-D328-8E7C-F0BA33C74422";
 createNode animBlendNodeAdditiveDL -n "Hips_CTR_translateY_LowerBody";
@@ -14710,28 +14710,27 @@ createNode animBlendNodeAdditiveDL -n "Hips_CTR_translateZ_LowerBody";
 	rename -uid "1EBDFFB4-4225-6B33-CAED-708689FA257F";
 createNode animBlendNodeAdditiveRotation -n "Hips_CTR_rotate_LowerBody";
 	rename -uid "7E06E12D-4437-6A26-FED4-A691B51DA391";
-	setAttr ".o" -type "double3" -38.935715781270474 3.0636113684641746 0.3278697893362621 ;
+	setAttr ".o" -type "double3" -38.935715781270474 2.7616729901182571 0.29555613704999395 ;
 createNode animBlendNodeAdditiveDL -n "FootIK_CTR_R_translateX_LowerBody1";
 	rename -uid "AD37A5C6-443C-CC31-5216-A9B29F85C385";
-	setAttr ".o" 0.045407579225416522;
+	setAttr ".o" 0.099923034251010318;
 createNode animBlendNodeAdditiveDL -n "FootIK_CTR_R_translateY_LowerBody1";
 	rename -uid "D45D8266-4284-608B-F5E2-B2AAC56D89B4";
-	setAttr ".o" 0.052638263206751468;
 createNode animBlendNodeAdditiveDL -n "FootIK_CTR_R_translateZ_LowerBody1";
 	rename -uid "20DB701D-449B-B163-274E-E4BEC83DFE9E";
-	setAttr ".o" -0.043026054748998441;
+	setAttr ".o" 0.052230268898905668;
 createNode animBlendNodeAdditiveRotation -n "FootIK_CTR_R_rotate_LowerBody1";
 	rename -uid "F5745B8A-4E81-3DEA-91B5-36B6F5165468";
-	setAttr ".o" -type "double3" 5.9559026588289745 -2.732753180534691 0.11968836247981363 ;
+	setAttr ".o" -type "double3" 0 2.2068385123266432 0 ;
 createNode animBlendNodeAdditiveDL -n "KneeVectorIK_CTR_L_translateX_LowerBody";
 	rename -uid "DA94B768-4992-3DC0-9F87-B0845A21A4F9";
-	setAttr ".o" 0.43890120305636965;
+	setAttr ".o" 0.46267642783622948;
 createNode animBlendNodeAdditiveDL -n "KneeVectorIK_CTR_L_translateY_LowerBody";
 	rename -uid "19FF660F-4315-84FB-4316-088119C56CA9";
-	setAttr ".o" 0.31021426268603397;
+	setAttr ".o" 0.31335022844272098;
 createNode animBlendNodeAdditiveDL -n "KneeVectorIK_CTR_L_translateZ_LowerBody";
 	rename -uid "609B24B7-4D0C-215B-2364-33BD6509F66D";
-	setAttr ".o" 1.2340831292025551;
+	setAttr ".o" 1.2568649103215628;
 createNode animBlendNodeAdditiveRotation -n "Toe_CTR_L_rotate_LowerBody1";
 	rename -uid "22B4E621-48E8-1E04-4D57-95920F9A4ABE";
 createNode animBlendNodeAdditiveRotation -n "FootFK_CTR_L_rotate_LowerBody1";
@@ -14742,23 +14741,25 @@ createNode animBlendNodeAdditiveRotation -n "UpperLegFK_CTR_L_rotate_LowerBody";
 	rename -uid "FD83FF54-4DC5-A296-BCC3-F3800C0FF926";
 createNode animBlendNodeAdditiveDL -n "FootIK_CTR_L_translateX_LowerBody1";
 	rename -uid "26ABBCBA-44AA-AB98-A0F0-24AA1FD4BDE2";
-	setAttr ".o" -0.099923034251010318;
+	setAttr ".o" -0.060005262664072141;
 createNode animBlendNodeAdditiveDL -n "FootIK_CTR_L_translateY_LowerBody1";
 	rename -uid "FA683FF3-4D01-D558-1D5B-8E899B0EB607";
+	setAttr ".o" 0.044136513113807174;
 createNode animBlendNodeAdditiveDL -n "FootIK_CTR_L_translateZ_LowerBody1";
 	rename -uid "BCE7F70F-4EDE-05E2-0330-18AFE2B9C7CE";
-	setAttr ".o" -0.054032771000203025;
+	setAttr ".o" -0.24365220202114826;
 createNode animBlendNodeAdditiveRotation -n "FootIK_CTR_L_rotate_LowerBody1";
 	rename -uid "C1D1A14B-4CBD-3F60-A580-FC8AADDD343E";
+	setAttr ".o" -type "double3" 14.208979541102982 -7.8194277563272321 -1.642721339824428 ;
 createNode animBlendNodeAdditiveDL -n "KneeVectorIK_CTR_R_translateX_LowerBody1";
 	rename -uid "DA34F1F0-4992-9E24-5D40-408B39B57F07";
-	setAttr ".o" -0.47423163392724271;
+	setAttr ".o" -0.49509872403285488;
 createNode animBlendNodeAdditiveDL -n "KneeVectorIK_CTR_R_translateY_LowerBody1";
 	rename -uid "CAECD5DA-448F-D8E2-2B82-608AF86F6DCA";
-	setAttr ".o" 0.30506448142499848;
+	setAttr ".o" 0.31896317994068063;
 createNode animBlendNodeAdditiveDL -n "KneeVectorIK_CTR_R_translateZ_LowerBody1";
 	rename -uid "4F210B68-4AEB-CC01-8FA2-5096A8EE078E";
-	setAttr ".o" 0.89062000508387618;
+	setAttr ".o" 0.81493614321245089;
 createNode animBlendNodeAdditiveRotation -n "Toe_CTR_R_rotate_LowerBody1";
 	rename -uid "AA0E16B8-40FC-9419-B244-7FA2A327BA18";
 createNode animBlendNodeAdditiveRotation -n "FootFK_CTR_R_rotate_LowerBody1";
@@ -14817,10 +14818,8 @@ createNode animBlendNodeAdditiveRotation -n "FeetPlatform_CTR_rotate_LowerBody1"
 	rename -uid "85D2F4C8-4A82-7620-A6AF-A1AE62CEE4C5";
 createNode animBlendNodeAdditiveDA -n "FootRoll_CTR_R_rotateX_LowerBody1";
 	rename -uid "2B7960B9-423E-3FEE-CC00-BAA6663B311F";
-	setAttr ".o" 0.65476190476190255;
 createNode animBlendNodeAdditiveDA -n "FootRoll_CTR_L_rotateX_LowerBody1";
 	rename -uid "EBEC37CB-426E-43F5-45A0-8887DC6BA395";
-	setAttr ".o" -2.7157198848201509;
 createNode animBlendNodeAdditiveDL -n "PDA_CTR_translateX_LowerBody";
 	rename -uid "3DC23908-405F-8FC7-5EA0-0AAA89B4A278";
 createNode animBlendNodeAdditiveDL -n "PDA_CTR_translateY_LowerBody";
@@ -14867,69 +14866,33 @@ createNode animCurveTA -n "Pelvis_CTR_rotate_LowerBody_inputBX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 23 ".ktv[0:22]"  0 0.47544579174338697 12 4.5505778739652358
-		 16 6.149600175070157 20 6.1076967206596633 30 2.5755516787854922 35 4.6802201477723964
+		 16 7.2761036904805287 20 6.1076967206596633 30 2.5755516787854922 35 4.6802201477723964
 		 38 8.0111658811877522 39 7.459781092194663 43 0.70717662429475858 45 -1.0989007192278686
 		 50 5.1286838709000042 53 8.0111658811877522 58 0.70717662429475858 60 -1.0989007192278686
 		 61 -0.49787214905984406 65 4.6802201477723964 70 -5.0416604140530019 75 -11.062382865782883
 		 80 -1.1743867991510619 85 6.1076967206596633 93 3.756168114692426 98 1.7637912701606366
 		 105 0.47544579174338697;
-	setAttr -s 23 ".kit[4:22]"  9 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 23 ".kot[4:22]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 23 ".kox[4:22]"  0.99997679060372302 0.94215383965575661 
-		1 0.79429417310085726 0.80119601384271211 1 0.85890971585424403 1 0.82637608719841082 
-		1 0.85552851499844573 1 0.77164564799059521 1 0.74365520850882827 1 0.98503736805829911 
-		0.9899090727048051 1;
-	setAttr -s 23 ".koy[4:22]"  -0.0068130942953918937 0.33518076081707748 
-		0 -0.60753334606260534 -0.59840199481832335 0 0.51212703503250223 0 -0.56311860429810379 
-		0 0.51775569530866028 0 -0.63605266600901411 0 0.66856333346788566 0 -0.17234089337350803 
-		-0.14170401468099894 0;
 createNode animCurveTA -n "Pelvis_CTR_rotate_LowerBody_inputBY";
 	rename -uid "DE026B5B-4F91-47C4-1558-3AAE6EFDCA89";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 21 ".ktv[0:20]"  0 -10.562818923341862 12 -18.41069131238093
-		 16 -21.490081799144509 20 -21.640155157368579 30 -22.199074888111298 35 -19.299269086620502
+		 16 -21.150350497933211 20 -21.640155157368579 30 -22.199074888111298 35 -19.299269086620502
 		 39 -17.111007780579481 43 -15.113742976911016 45 -14.803996282175355 50 -16.542317849724533
 		 58 -21.839728846222854 60 -22.199074888111298 61 -21.897495084756255 65 -19.299269086620502
 		 70 -17.776793356614199 75 -16.946636166357592 80 -19.945301409563807 85 -21.640155157368579
 		 93 -16.880820307075723 98 -13.029486100582117 105 -10.562818923341862;
-	setAttr -s 21 ".kit[4:20]"  9 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18;
-	setAttr -s 21 ".kot[4:20]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18;
-	setAttr -s 21 ".kox[4:20]"  0.97423261947959361 0.95887239918010925 
-		0.96446579759779982 0.9803301353357291 1 0.96211570745030894 0.96240479528967438 
-		1 0.95685516682648497 0.9724462557093011 0.99249817232251991 1 0.97110536133053638 
-		1 0.94479415160784452 0.96403888040642238 1;
-	setAttr -s 21 ".koy[4:20]"  0.2255455677727437 0.28383749239764128 
-		0.26420773127226943 0.19736470239794918 0 -0.27264145957170832 -0.27161923717483666 
-		0 0.29056529338078141 0.23312717507180628 0.12225946972098951 0 -0.238651162149042 
-		0 0.32766447944141486 0.26576124071190582 0;
 createNode animCurveTA -n "Pelvis_CTR_rotate_LowerBody_inputBZ";
 	rename -uid "417C3175-488E-3DDA-248C-B7BBDB728F80";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 23 ".ktv[0:22]"  0 -2.59191195788845 12 -0.24236306468804159
-		 16 0.67956559969906583 20 -4.3508951026200382 30 0.80271810354456841 35 1.0706539032659619
+		 16 -2.4181312110529207 20 -4.3508951026200382 30 0.80271810354456841 35 1.0706539032659619
 		 38 1.1200609691690075 39 1.0228259397438919 43 -0.23748004403151191 45 -0.80271810354456841
 		 50 -1.1033260914895939 53 -1.1200609691690075 58 0.25748342457659251 60 0.80271810354456841
 		 61 0.90493044191004979 65 1.0706539032659619 70 2.5750725279557356 75 3.3423193456743401
 		 80 -0.71790821266369276 85 -4.3508951026200382 93 -0.70038615031754436 98 -1.6461490541029988
 		 105 -2.59191195788845;
-	setAttr -s 23 ".kit[4:22]"  9 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 23 ".kot[4:22]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 23 ".kox[4:22]"  0.99927953903314282 0.9997843724408787 
-		1 0.99004570309699791 0.98754690074757256 0.9979093135593976 0.99996161272128614 
-		1 0.98981513242142782 0.99367590821883656 0.99960660177574923 0.99788903564207077 
-		0.99300033260272469 1 0.92757332979709251 1 1 0.99661142217825549 1;
-	setAttr -s 23 ".koy[4:22]"  0.037952639825305952 0.020765563392270248 
-		0 -0.14074624605711883 -0.15732488304099929 -0.064629729315631629 -0.0087620250995166463 
-		0 0.14235871462453994 0.11228619427814999 0.02804713329983579 0.064942070688715228 
-		0.11811155511158949 0 -0.37364116187745466 0 0 -0.082253712279963212 0;
 createNode animCurveTL -n "Hips_CTR_translateX_LowerBody_inputB";
 	rename -uid "D2090BF9-41BD-1411-1713-F989A126F83D";
 	setAttr ".tan" 18;
@@ -15116,18 +15079,6 @@ createNode animCurveTL -n "FootIK_CTR_L_translateX_LowerBody1_inputB";
 		 46 -0.086589331842012188 50 -0.099923034251010318 54 -0.099923034251010318 58 -0.099923034251010318
 		 61 -0.099923034251010318 65 -0.099517701769356259 80 -0.099517701769356259 85 -0.099517701769356259
 		 95 -0.099517701769356259 102 0;
-	setAttr -s 17 ".kit[1:16]"  1 1 1 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kot[1:16]"  1 1 1 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kix[1:16]"  1 1 1 1 1 0.074974275653968234 0.07497427565396822 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[1:16]"  0 0 0 0 0 -0.99718546820045606 -0.99718546820045606 
-		0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[1:16]"  1 1 1 1 1 0.07497427565396822 0.074974275653968234 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[1:16]"  0 0 0 0 0 -0.99718546820045606 -0.99718546820045606 
-		0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "FootIK_CTR_L_translateY_LowerBody1_inputB";
 	rename -uid "43EFED1A-41EA-1080-B69D-AFB729FFCFD5";
 	setAttr ".tan" 18;
@@ -15135,18 +15086,6 @@ createNode animCurveTL -n "FootIK_CTR_L_translateY_LowerBody1_inputB";
 	setAttr -s 18 ".ktv[0:17]"  0 -8.8817841970012525e-18 5 0.023524327800349215
 		 8 0 10 0 20 -8.8817841970012525e-18 35 0 39 0.049056951110210731 43 0.034314065727728174
 		 46 0.014742885382482558 50 0 54 0 58 0 61 0 65 0 80 0 85 0 95 0 102 0;
-	setAttr -s 18 ".kit[2:17]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 18 ".kix[2:17]"  1 1 1 1 1 0.067842657535371831 0.067842657535371817 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 -0.99769603277678631 -0.9976960327767862 
-		0 0 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  1 1 1 1 1 0.067842657535371831 0.067842657535371831 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 -0.9976960327767862 -0.99769603277678631 
-		0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "FootIK_CTR_L_translateZ_LowerBody1_inputB";
 	rename -uid "D8205774-4EB5-FF36-017A-AFB61AE691C2";
 	setAttr ".tan" 18;
@@ -15157,22 +15096,6 @@ createNode animCurveTL -n "FootIK_CTR_L_translateZ_LowerBody1_inputB";
 		 50 0.24251978308738956 54 0.11361353308740345 58 -0.013521178712961974 61 -0.13890128073009705
 		 65 -0.26637314910647575 80 0.32335181586441231 85 0.32335181586441231 95 0.32335181586441231
 		 102 0.077358360165144482;
-	setAttr -s 19 ".kit[2:18]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 1 1 18 18;
-	setAttr -s 19 ".kot[2:18]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 1 1 18 18;
-	setAttr -s 19 ".kix[2:18]"  1 1 1 0.011334457963592887 0.053557273220712125 
-		1 0.0061731157682873112 0.006173115768287313 1 0.010414435370198104 0.0092399875041109508 
-		0.0092276678172281169 1 1 1 1 1;
-	setAttr -s 19 ".kiy[2:18]"  0 0 0 -0.99993576296813758 -0.99856477931337129 
-		0 0.99998094613933086 0.99998094613933097 0 -0.99994576829742121 -0.99995731040426106 
-		-0.99995742416697664 0 0 0 0 0;
-	setAttr -s 19 ".kox[2:18]"  1 1 1 0.011334457963592887 0.053557273220712132 
-		1 0.0061731157682873112 0.0061731157682873121 1 0.010414435370198104 0.0092399875041109508 
-		0.0092276678172281187 1 1 1 1 1;
-	setAttr -s 19 ".koy[2:18]"  0 0 0 -0.99993576296813769 -0.9985647793133714 
-		0 0.99998094613933097 0.99998094613933086 0 -0.99994576829742121 -0.99995731040426117 
-		-0.99995742416697664 0 0 0 0 0;
 createNode animCurveTA -n "FootIK_CTR_L_rotate_LowerBody1_inputBX";
 	rename -uid "B8C3B81A-4016-99BF-F266-67BFF15BF389";
 	setAttr ".tan" 18;
@@ -15180,18 +15103,6 @@ createNode animCurveTA -n "FootIK_CTR_L_rotate_LowerBody1_inputBX";
 	setAttr -s 17 ".ktv[0:16]"  0 0 8 0 10 0 20 0 35 0 39 15.79302861729275
 		 43 11.046814156799064 46 4.7462144604936878 50 0 54 0 58 0 61 0 65 0 80 0 85 0 95 0
 		 102 0;
-	setAttr -s 17 ".kit[1:16]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kot[1:16]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kix[1:16]"  1 1 1 1 1 0.77088119440501179 0.77088119440501168 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[1:16]"  0 0 0 0 0 -0.63697895107507474 -0.63697895107507474 
-		0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[1:16]"  1 1 1 1 1 0.77088119440501179 0.77088119440501168 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[1:16]"  0 0 0 0 0 -0.63697895107507485 -0.63697895107507474 
-		0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "FootIK_CTR_L_rotate_LowerBody1_inputBY";
 	rename -uid "C2987966-4F3D-0A1E-AEFC-71BE89043B87";
 	setAttr ".tan" 18;
@@ -15199,18 +15110,6 @@ createNode animCurveTA -n "FootIK_CTR_L_rotate_LowerBody1_inputBY";
 	setAttr -s 17 ".ktv[0:16]"  0 0 8 0 10 0 20 0 35 0 39 -8.6911551930451321
 		 43 -6.0792377796581665 46 -2.6119174133869674 50 0 54 0 58 0 61 0 65 0 80 0 85 0
 		 95 0 102 0;
-	setAttr -s 17 ".kit[1:16]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kot[1:16]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kix[1:16]"  1 1 1 1 1 0.91030458065217779 0.9103045806521779 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[1:16]"  0 0 0 0 0 0.41393909025805053 0.4139390902580507 
-		0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[1:16]"  1 1 1 1 1 0.9103045806521779 0.91030458065217779 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[1:16]"  0 0 0 0 0 0.41393909025805059 0.4139390902580507 
-		0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "FootIK_CTR_L_rotate_LowerBody1_inputBZ";
 	rename -uid "5E07A669-4D32-1FCE-2184-BD82B728AEE9";
 	setAttr ".tan" 18;
@@ -15218,18 +15117,6 @@ createNode animCurveTA -n "FootIK_CTR_L_rotate_LowerBody1_inputBZ";
 	setAttr -s 17 ".ktv[0:16]"  0 0 8 0 10 0 20 0 35 0 39 -1.8258556186274018
 		 43 -1.2771386783937726 46 -0.54871694023362905 50 0 54 0 58 0 61 0 65 0 80 0 85 0
 		 95 0 102 0;
-	setAttr -s 17 ".kit[1:16]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kot[1:16]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 1 1 18 18;
-	setAttr -s 17 ".kix[1:16]"  1 1 1 1 1 0.9954680288226514 0.99546802882265129 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[1:16]"  0 0 0 0 0 0.095096811681280813 0.095096811681280799 
-		0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[1:16]"  1 1 1 1 1 0.99546802882265129 0.9954680288226514 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[1:16]"  0 0 0 0 0 0.095096811681280799 0.095096811681280813 
-		0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "KneeVectorIK_CTR_R_translateX_LowerBody1_inputB";
 	rename -uid "A8D6DDDE-405C-9128-F020-D6A46A5258E1";
 	setAttr ".tan" 18;
@@ -15332,20 +15219,12 @@ createNode animCurveTU -n "FootOptions_CTR_R_SpaceSwitchKnee_LowerBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 0 20 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 85 0 95 0 105 0;
-	setAttr -s 12 ".kit[3:11]"  9 9 9 9 9 18 9 9 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 5 5 5 18 5 5 
-		5;
 createNode animCurveTU -n "FootOptions_CTR_L_SpaceSwitchKnee_LowerBody1_inputB";
 	rename -uid "C8ED376F-4AAA-583E-4ED7-15A14B9BF47A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 0 20 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 85 0 95 0 105 0;
-	setAttr -s 12 ".kit[3:11]"  9 9 9 9 9 18 9 9 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 5 5 5 18 5 5 
-		5;
 createNode animCurveTU -n "RigSettings_CTR_Muscularity_LowerBody_inputB";
 	rename -uid "D389A3E1-448A-FDB0-BDAA-318BEC628F14";
 	setAttr ".tan" 18;
@@ -15376,16 +15255,12 @@ createNode animCurveTU -n "RigSettings_CTR_Fingers_LowerBody_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  0 1 20 1 35 1 39 1 43 1 46 1 50 1 54 1 58 1
 		 61 1 65 1 85 1 95 1 105 1;
-	setAttr -s 14 ".kit[11:13]"  9 9 9;
-	setAttr -s 14 ".kot[11:13]"  5 5 5;
 createNode animCurveTU -n "RigSettings_CTR_Skeleton_LowerBody_inputB";
 	rename -uid "6F140A0A-4703-B813-7C65-74BE00792D2D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  0 0 20 0 35 0 39 0 43 0 46 0 50 0 54 0 58 0
 		 61 0 65 0 85 0 95 0 105 0;
-	setAttr -s 14 ".kit[11:13]"  9 9 9;
-	setAttr -s 14 ".kot[11:13]"  5 5 5;
 createNode animCurveTL -n "MainRoot_CTR_translateX_LowerBody_inputB";
 	rename -uid "0F31F004-4655-4F18-7582-9299E4F763C7";
 	setAttr ".tan" 18;
@@ -15527,14 +15402,6 @@ createNode animCurveTA -n "ShoulderFK_CTR_R_rotate_UpperBody1_inputBX";
 		 39 2.5896264075594688 43 1.4497170260648533 50 2.3971741743201194 58 5.1041945979065879
 		 61 4.5631481279500639 65 3.7295357890540846 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  0.99331663552065574 1 0.99475514126843545 
-		0.99508118654245226 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0.11542123547218149 0 -0.10228493984949572 
-		-0.099062768935989892 0 0 0;
 createNode animCurveTA -n "ShoulderFK_CTR_R_rotate_UpperBody1_inputBY";
 	rename -uid "8F8C5A58-47C2-A281-0D73-E1B83BE30C88";
 	setAttr ".tan" 18;
@@ -15543,12 +15410,6 @@ createNode animCurveTA -n "ShoulderFK_CTR_R_rotate_UpperBody1_inputBY";
 		 39 2.247283766595503 43 2.8804468065773641 50 2.2500884833282098 58 0.44906470261634557
 		 61 0.8090315319655299 65 1.3636470912590886 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 1 0.99766817625455162 1 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 0 0.068251081228921054 0 0 0 0;
 createNode animCurveTA -n "ShoulderFK_CTR_R_rotate_UpperBody1_inputBZ";
 	rename -uid "6C5B8D88-4F85-3F0A-C8E0-90AD53B8AFAE";
 	setAttr ".tan" 18;
@@ -15557,14 +15418,6 @@ createNode animCurveTA -n "ShoulderFK_CTR_R_rotate_UpperBody1_inputBZ";
 		 39 28.44146406601083 43 22.655712604142138 50 27.464648884136899 58 41.204466826979051
 		 61 38.458318356487986 65 34.227215527879522 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  0.72934559218454276 1 0.88652737867358311 
-		0.76607057641525544 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0.6841454576045789 0 -0.46267613604134089 
-		-0.64275646395100416 0 0 0;
 createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody1_inputBX";
 	rename -uid "2BAABF3C-4361-16B1-5C7E-759265239548";
 	setAttr ".tan" 18;
@@ -15574,14 +15427,6 @@ createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody1_inputBX";
 		 43 37.888236040118819 50 41.431291789202213 58 37.569610800260094 61 34.796400924213835
 		 65 32.075904743515721 85 -1.158372360291402 99 -10.034548422782327 105 -10.034548422782327;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 0.95357428772804231 0.92495025148342569 
-		0.78681607018245037 0.83901842947361105 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 -0.3011578951048049 -0.38008819013585199 
-		-0.61718754986036883 -0.54410300036264747 0 0;
 createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody1_inputBY";
 	rename -uid "811D7BF4-42E3-0A41-30A0-EC8FF41C4147";
 	setAttr ".tan" 18;
@@ -15591,14 +15436,6 @@ createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody1_inputBY";
 		 43 -9.9768268771475412 50 -7.0824645810268203 58 -10.000508348016089 61 -7.7253586521095814
 		 65 -4.2199428243425121 85 -2.2544002167579187 99 -21.880948538525171 105 -21.880948538525171;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  0.98480532063516679 1 0.91787279908361585 
-		0.99295207438856581 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  -0.17366197179770304 0 0.396874696475359 
-		0.11851657254343831 0 0 0;
 createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody1_inputBZ";
 	rename -uid "9312D980-46D8-C8F8-AC26-F1B781CB6BE0";
 	setAttr ".tan" 18;
@@ -15608,14 +15445,6 @@ createNode animCurveTA -n "UpperArmFK_CTR_R_rotate_UpperBody1_inputBZ";
 		 43 73.768232849063722 50 68.37304508549731 58 74.697714582176175 61 74.206684662309385
 		 65 73.450134859847978 85 57.923598327417238 99 57.923598327417238 105 57.923598327417238;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  0.93420365154413687 1 0.99567403960640399 
-		0.95858894012948725 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0.35674015395186531 0 -0.092915051815435232 
-		-0.28479333535289486 0 0 0;
 createNode animCurveTA -n "LowerArmFK_CTR_R_rotate_UpperBody1_inputBX";
 	rename -uid "7233AD85-4DFB-F0DA-1C30-1488C79A0445";
 	setAttr ".tan" 18;
@@ -15625,14 +15454,6 @@ createNode animCurveTA -n "LowerArmFK_CTR_R_rotate_UpperBody1_inputBX";
 		 43 44.781090940850994 50 74.374353500084382 58 44.781090940850994 61 39.455263299007633
 		 65 37.386746596343713 85 52.755801736736871 95 16.175933693298234 105 16.175933693298234;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 0.51552382355577897 0.87506955820799148 
-		1 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 -0.85687524608103238 -0.48399717798523445 
-		0 0 0 0;
 createNode animCurveTA -n "LowerArmFK_CTR_R_rotate_UpperBody1_inputBY";
 	rename -uid "FCCCA2DF-40E1-CFE4-5E6C-1AB9303A0FFE";
 	setAttr ".tan" 18;
@@ -15641,14 +15462,6 @@ createNode animCurveTA -n "LowerArmFK_CTR_R_rotate_UpperBody1_inputBY";
 		 39 -0.90580617628895321 43 -1.7659909204658715 50 -3.222050434389983 58 -1.7659909204658715
 		 61 -1.0027270703097344 65 -0.30993140654176038 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 0.99446641533709601 0.9941212288202238 
-		0.99976080373134724 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 0.10505497973245453 0.1082727223679545 
-		0.021870878410580431 0 0 0;
 createNode animCurveTA -n "LowerArmFK_CTR_R_rotate_UpperBody1_inputBZ";
 	rename -uid "86DB4E24-46CB-4ABE-682E-0E999F7F7157";
 	setAttr ".tan" 18;
@@ -15657,14 +15470,6 @@ createNode animCurveTA -n "LowerArmFK_CTR_R_rotate_UpperBody1_inputBZ";
 		 39 1.8103369773181051 43 3.5294953253967947 50 6.439564221186453 58 3.5294953253967947
 		 61 2.0040423007233832 65 0.61942642960713656 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 0.97843047971278163 0.97711926400985571 
-		0.99904558678714406 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 -0.20657636933835394 -0.2126921340831332 
-		-0.04367969231955611 0 0 0;
 createNode animCurveTA -n "HandFK_CTR_R_rotate_UpperBody_inputBX";
 	rename -uid "C4F1FA3F-494C-342E-9776-64815B520570";
 	setAttr ".tan" 18;
@@ -15673,14 +15478,6 @@ createNode animCurveTA -n "HandFK_CTR_R_rotate_UpperBody_inputBX";
 		 39 17.235769346996232 43 13.810489784938859 50 9.297914195376709 58 15.933869517136536
 		 61 17.923038372487646 65 19.32420953097397 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  0.94755798108901768 0.92507160960130985 
-		0.96931660320728441 1 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0.31958390521818358 0.37979272914267542 
-		0.24581562754774577 0 0 0 0;
 createNode animCurveTA -n "HandFK_CTR_R_rotate_UpperBody_inputBY";
 	rename -uid "024B28D7-4F70-B519-8B05-0C8475E9D152";
 	setAttr ".tan" 18;
@@ -15689,14 +15486,6 @@ createNode animCurveTA -n "HandFK_CTR_R_rotate_UpperBody_inputBY";
 		 39 -18.097823820367886 43 -5.9177697297575156 50 10.128632840612971 58 -9.4777681933617632
 		 61 -18.121754046823408 65 -25.524170763732233 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 0.59673485821381744 0.64009999530641293 
-		1 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 -0.80243847676475177 -0.76829160870644042 
-		0 0 0 0;
 createNode animCurveTA -n "HandFK_CTR_R_rotate_UpperBody_inputBZ";
 	rename -uid "4CD12297-4704-3919-F0C6-5CAFC7F00E2F";
 	setAttr ".tan" 18;
@@ -15705,152 +15494,111 @@ createNode animCurveTA -n "HandFK_CTR_R_rotate_UpperBody_inputBZ";
 		 39 5.3150750350506852 43 6.6991673174570625 50 8.1237902049731172 58 5.8066560917885433
 		 61 4.7850879590020448 65 3.9102516101466445 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[7:13]"  1 18 18 18 18 1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[7:13]"  1 0.987606198827924 0.99008851422122668 
-		0.99459504035700252 1 1 1;
-	setAttr -s 14 ".koy[7:13]"  0 -0.15695220940355981 -0.1404447720892594 
-		-0.10383017719936884 0 0 0;
 createNode animCurveTA -n "ShoulderIK_CTR_R_rotate_UpperBody_inputBX";
 	rename -uid "897126CE-4E07-8B9F-D0FA-C88C8AE25A21";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 0 13 -0.69619501985387355 20 -2.3160505125640856
-		 35 -2.3160505125640856 39 -2.3160505125640856 43 -2.3160505125640856 50 -2.3160505125640856
-		 58 -2.3160505125640856 61 -2.3160505125640856 65 -2.3160505125640856 85 -2.3160505125640856
-		 93 -5.6568708699983086 99 -3.1627034926574735 105 0;
+	setAttr -s 15 ".ktv[0:14]"  0 0 6 -0.88252584345325757 13 -0.69619501985387355
+		 20 -2.3160505125640856 35 -2.3160505125640856 39 -2.3160505125640856 43 -2.3160505125640856
+		 50 -2.3160505125640856 58 -2.3160505125640856 61 -2.3160505125640856 65 -2.3160505125640856
+		 85 -2.3160505125640856 93 -5.6568708699983086 99 -3.1627034926574735 105 0;
 createNode animCurveTA -n "ShoulderIK_CTR_R_rotate_UpperBody_inputBY";
 	rename -uid "CE3F923E-44FA-7337-1E6E-4492CCA1D84B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 0 13 -2.8877601191041604 20 -12.306799777437586
-		 35 -12.306799777437586 39 -12.306799777437586 43 -12.306799777437586 50 -12.306799777437586
-		 58 -12.306799777437586 61 -12.306799777437586 65 -12.306799777437586 85 -12.306799777437586
-		 93 -26.540084242067561 99 4.9388583712649137 105 0;
+	setAttr -s 15 ".ktv[0:14]"  0 0 6 -6.432208322863918 13 -2.8877601191041604
+		 20 -12.306799777437586 35 -12.306799777437586 39 -12.306799777437586 43 -12.306799777437586
+		 50 -12.306799777437586 58 -12.306799777437586 61 -12.306799777437586 65 -12.306799777437586
+		 85 -12.306799777437586 93 -26.540084242067561 99 4.9388583712649137 105 0;
 createNode animCurveTA -n "ShoulderIK_CTR_R_rotate_UpperBody_inputBZ";
 	rename -uid "E404D686-43CF-BF1E-A7D0-8CB2EF3AED58";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 0 13 9.1234257687503391 20 -1.6092881493391373
-		 35 -1.6092881493391373 39 -1.6092881493391373 43 -1.6092881493391373 50 -1.6092881493391373
-		 58 -1.6092881493391373 61 -1.6092881493391373 65 -1.6092881493391373 85 -1.6092881493391373
-		 93 15.732865382769482 99 -1.7783905120737309 105 0;
+	setAttr -s 15 ".ktv[0:14]"  0 0 6 7.2654716309310956 13 9.1234257687503391
+		 20 -1.6092881493391373 35 -1.6092881493391373 39 -1.6092881493391373 43 -1.6092881493391373
+		 50 -1.6092881493391373 58 -1.6092881493391373 61 -1.6092881493391373 65 -1.6092881493391373
+		 85 -1.6092881493391373 93 15.732865382769482 99 -1.7783905120737309 105 0;
 createNode animCurveTL -n "ElbowVectorIK_CTR_R_translateX_UpperBody_inputB";
 	rename -uid "58D237F6-4423-89E2-3D53-239F32995F42";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  0 0.12261272948250738 20 0.12261272948250738
-		 35 0.12261272948250738 39 0.12261272948250738 43 0.12261272948250738 50 0.12261272948250738
-		 58 0.12261272948250738 61 0.12261272948250738 65 0.12261272948250738 85 0.12261272948250738
-		 90 0.13031469211252847 95 0.12261272948250738 105 0.12261272948250738;
+	setAttr -s 15 ".ktv[0:14]"  0 0.12261272948250738 6 0.12937310444477229
+		 20 0.12261272948250738 35 0.12261272948250738 39 0.12261272948250738 43 0.12261272948250738
+		 50 0.12261272948250738 58 0.12261272948250738 61 0.12261272948250738 65 0.12261272948250738
+		 85 0.12261272948250738 90 0.13031469211252847 95 0.12261272948250738 99 0.12610250019410874
+		 105 0.12261272948250738;
 createNode animCurveTL -n "ElbowVectorIK_CTR_R_translateY_UpperBody_inputB";
 	rename -uid "37C2ADEF-4E00-46C9-B433-66B6D326EBD2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  0 -0.18448733489739907 20 -0.18448733489739907
-		 35 -0.18448733489739907 39 -0.18448733489739907 43 -0.18448733489739907 50 -0.18448733489739907
-		 58 -0.18448733489739907 61 -0.18448733489739907 65 -0.18448733489739907 85 -0.18448733489739907
-		 90 -0.52871158554726794 95 -0.18448733489739907 105 -0.18448733489739907;
+	setAttr -s 15 ".ktv[0:14]"  0 -0.18448733489739907 6 -0.18894069329861438
+		 20 -0.18448733489739907 35 -0.18448733489739907 39 -0.18448733489739907 43 -0.18448733489739907
+		 50 -0.18448733489739907 58 -0.18448733489739907 61 -0.18448733489739907 65 -0.18448733489739907
+		 85 -0.18448733489739907 90 -0.52871158554726794 95 -0.18448733489739907 99 -0.17051056898882094
+		 105 -0.18448733489739907;
 createNode animCurveTL -n "ElbowVectorIK_CTR_R_translateZ_UpperBody_inputB";
 	rename -uid "F9D39423-4BFD-D367-A020-F2A3CCCD2043";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  0 -0.14803822890858753 20 -0.14803822890858753
-		 35 -0.14803822890858753 39 -0.14803822890858753 43 -0.14803822890858753 50 -0.14803822890858753
-		 58 -0.14803822890858753 61 -0.14803822890858753 65 -0.14803822890858753 85 -0.14803822890858753
-		 90 0.19821056288468566 95 -0.14803822890858753 105 -0.14803822890858753;
+	setAttr -s 15 ".ktv[0:14]"  0 -0.14803822890858753 6 0.16901630702060286
+		 20 -0.14803822890858753 35 -0.14803822890858753 39 -0.14803822890858753 43 -0.14803822890858753
+		 50 -0.14803822890858753 58 -0.14803822890858753 61 -0.14803822890858753 65 -0.14803822890858753
+		 85 -0.14803822890858753 90 0.19821056288468566 95 -0.14803822890858753 99 0.16602665702951355
+		 105 -0.14803822890858753;
 createNode animCurveTL -n "HandIK_CTR_R_translateX_UpperBody_inputB";
 	rename -uid "4D461917-421C-D6E6-1112-49B4CFCA4D65";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 0.30641480648761937 10 0.26561905829287524
-		 20 0.28512483359390156 35 0.28512483359390156 39 0.28512483359390156 43 0.28512483359390156
-		 50 0.28512483359390156 58 0.28512483359390156 61 0.28512483359390156 65 0.28512483359390156
-		 85 0.28512483359390156 90 0.2926220275890502 93 0.26561905829287524 99 0.26709857497969597
-		 105 0.30641480648761937;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 0.41081771724557331 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0.91171750185961442 0;
-	setAttr -s 15 ".kox[12:14]"  1 0.41081771724557342 1;
-	setAttr -s 15 ".koy[12:14]"  0 0.91171750185961453 0;
+	setAttr -s 16 ".ktv[0:15]"  0 0.30641480648761937 6 0.27557866961500488
+		 10 0.26561905829287524 20 0.28512483359390156 35 0.28512483359390156 39 0.28512483359390156
+		 43 0.28512483359390156 50 0.28512483359390156 58 0.28512483359390156 61 0.28512483359390156
+		 65 0.28512483359390156 85 0.28512483359390156 90 0.2926220275890502 93 0.26561905829287524
+		 99 0.26709857497969597 105 0.30641480648761937;
 createNode animCurveTL -n "HandIK_CTR_R_translateY_UpperBody_inputB";
 	rename -uid "5430B7BB-439C-84D1-E816-5BABA3639C5A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  0 -0.39821445648372333 10 -0.3867431761362356
-		 15 -0.92681398580232854 20 -0.91142801400393614 35 -0.91142801400393614 39 -0.91142801400393614
-		 43 -0.91142801400393614 50 -0.91142801400393614 58 -0.91142801400393614 61 -0.91142801400393614
-		 65 -0.91142801400393614 85 -0.91142801400393614 90 -0.75292750733291547 93 -0.64162459475628075
-		 99 -0.3868444235945499 105 -0.39821445648372333;
-	setAttr -s 16 ".kit[13:15]"  1 18 18;
-	setAttr -s 16 ".kot[13:15]"  1 18 18;
-	setAttr -s 16 ".kix[13:15]"  1 1 1;
-	setAttr -s 16 ".kiy[13:15]"  0 0 0;
-	setAttr -s 16 ".kox[13:15]"  1 1 1;
-	setAttr -s 16 ".koy[13:15]"  0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  0 -0.39821445648372333 6 -0.41372502228393687
+		 10 -0.3867431761362356 15 -0.92681398580232854 20 -0.91142801400393614 35 -0.91142801400393614
+		 39 -0.91142801400393614 43 -0.91142801400393614 50 -0.91142801400393614 58 -0.91142801400393614
+		 61 -0.91142801400393614 65 -0.91142801400393614 85 -0.91142801400393614 90 -0.75292750733291547
+		 93 -0.64162459475628075 99 -0.3868444235945499 105 -0.39821445648372333;
 createNode animCurveTL -n "HandIK_CTR_R_translateZ_UpperBody_inputB";
 	rename -uid "4DE272A8-494D-C204-C59D-389C1CA64031";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  0 -0.077353214851069677 10 -0.084598874646207314
-		 15 -0.025230409039997959 20 -0.045133390972915979 35 -0.045133390972915979 39 -0.045133390972915979
-		 43 -0.045133390972915979 50 -0.045133390972915979 58 -0.045133390972915979 61 -0.045133390972915979
-		 65 -0.045133390972915979 85 -0.045133390972915979 90 -0.085477888455069234 93 -0.055586617296141068
-		 99 -0.094642579997796461 105 -0.077353214851069677;
-	setAttr -s 16 ".kit[13:15]"  1 18 18;
-	setAttr -s 16 ".kot[13:15]"  1 18 18;
-	setAttr -s 16 ".kix[13:15]"  1 1 1;
-	setAttr -s 16 ".kiy[13:15]"  0 0 0;
-	setAttr -s 16 ".kox[13:15]"  1 1 1;
-	setAttr -s 16 ".koy[13:15]"  0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  0 -0.077353214851069677 6 -0.10285670301329923
+		 10 -0.084598874646207314 15 -0.025230409039997959 20 -0.045133390972915979 35 -0.045133390972915979
+		 39 -0.045133390972915979 43 -0.045133390972915979 50 -0.045133390972915979 58 -0.045133390972915979
+		 61 -0.045133390972915979 65 -0.045133390972915979 85 -0.045133390972915979 90 -0.085477888455069234
+		 93 -0.055586617296141068 99 -0.094642579997796461 105 -0.077353214851069677;
 createNode animCurveTA -n "HandIK_CTR_R_rotate_UpperBody_inputBX";
 	rename -uid "355DC4EC-473C-CEC9-2801-DEA19EFB8D78";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 5.6008082467412255 10 10.02434976628159
-		 20 5.6008082467412255 35 5.6008082467412255 39 5.6008082467412255 43 5.6008082467412255
-		 50 5.6008082467412255 58 5.6008082467412255 61 5.6008082467412255 65 5.6008082467412255
-		 85 5.6008082467412255 90 6.7870910815310577 93 6.1482178946225821 99 11.601092721087564
-		 105 5.6008082467412255;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 1 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0 0;
-	setAttr -s 15 ".kox[12:14]"  1 1 1;
-	setAttr -s 15 ".koy[12:14]"  0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  0 5.6008082467412255 6 13.788972198169461
+		 10 10.02434976628159 20 5.6008082467412255 35 5.6008082467412255 39 5.6008082467412255
+		 43 5.6008082467412255 50 5.6008082467412255 58 5.6008082467412255 61 5.6008082467412255
+		 65 5.6008082467412255 85 5.6008082467412255 90 6.7870910815310577 93 6.1482178946225821
+		 99 11.601092721087564 105 5.6008082467412255;
 createNode animCurveTA -n "HandIK_CTR_R_rotate_UpperBody_inputBY";
 	rename -uid "882CDB53-43FC-3052-4999-378A4797E03C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 -16.16043259579785 10 6.4027773614218892
-		 20 -16.16043259579785 35 -16.16043259579785 39 -16.16043259579785 43 -16.16043259579785
-		 50 -16.16043259579785 58 -16.16043259579785 61 -16.16043259579785 65 -16.16043259579785
-		 85 -16.16043259579785 90 -2.0076367152972678 93 -4.5865987410624482 99 3.551207314084913
-		 105 -16.16043259579785;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 1 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0 0;
-	setAttr -s 15 ".kox[12:14]"  1 1 1;
-	setAttr -s 15 ".koy[12:14]"  0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  0 -16.16043259579785 6 -2.6219055977582943
+		 10 6.4027773614218892 20 -16.16043259579785 35 -16.16043259579785 39 -16.16043259579785
+		 43 -16.16043259579785 50 -16.16043259579785 58 -16.16043259579785 61 -16.16043259579785
+		 65 -16.16043259579785 85 -16.16043259579785 90 -2.0076367152972678 93 -4.5865987410624482
+		 99 3.551207314084913 105 -16.16043259579785;
 createNode animCurveTA -n "HandIK_CTR_R_rotate_UpperBody_inputBZ";
 	rename -uid "A0717282-4CB0-9630-549A-85B19A11D59B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 80.577869840207171 10 65.964586804628325
-		 20 80.577869840207171 35 80.577869840207171 39 80.577869840207171 43 80.577869840207171
-		 50 80.577869840207171 58 80.577869840207171 61 80.577869840207171 65 80.577869840207171
-		 85 80.577869840207171 90 72.133777836853241 93 67.535843103249675 99 66.727899626885858
-		 105 80.577869840207171;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 1 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0 0;
-	setAttr -s 15 ".kox[12:14]"  1 1 1;
-	setAttr -s 15 ".koy[12:14]"  0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  0 80.577869840207171 6 69.802904438376117
+		 10 65.964586804628325 20 80.577869840207171 35 80.577869840207171 39 80.577869840207171
+		 43 80.577869840207171 50 80.577869840207171 58 80.577869840207171 61 80.577869840207171
+		 65 80.577869840207171 85 80.577869840207171 90 72.133777836853241 93 67.53584310324969
+		 99 66.727899626885858 105 80.577869840207171;
 createNode animCurveTA -n "ShoulderFK_CTR_L_rotate_UpperBody1_inputBX";
 	rename -uid "B0EE7BAC-4CF3-3BFF-5EEA-6A8C7B0FE841";
 	setAttr ".tan" 18;
@@ -15859,18 +15607,6 @@ createNode animCurveTA -n "ShoulderFK_CTR_L_rotate_UpperBody1_inputBX";
 		 35 2.3971741743201194 39 3.9726058903701613 43 5.1041945979065879 50 3.7295357890540846
 		 55 -1.6978146964401986 61 1.8226229007425814 65 2.3971741743201194 85 0 95 0 105 0;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kot[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kix[5:14]"  1 0.98466478102961252 1 0.95866814226071595 
-		1 0.9777768850964812 1 1 1 1;
-	setAttr -s 15 ".kiy[5:14]"  0 0.17445706921734386 0 -0.28452661213740232 
-		0 0.20964818857081191 0 0 0 0;
-	setAttr -s 15 ".kox[5:14]"  1 0.98466478102961252 1 0.95866814226071584 
-		1 0.9777768850964812 1 1 1 1;
-	setAttr -s 15 ".koy[5:14]"  0 0.17445706921734386 0 -0.28452661213740232 
-		0 0.20964818857081188 0 0 0 0;
 createNode animCurveTA -n "ShoulderFK_CTR_L_rotate_UpperBody1_inputBY";
 	rename -uid "2ABC5002-4369-4168-4108-49B46B8E9A89";
 	setAttr ".tan" 18;
@@ -15879,18 +15615,6 @@ createNode animCurveTA -n "ShoulderFK_CTR_L_rotate_UpperBody1_inputBY";
 		 35 -2.2500884833282098 39 -1.3495765929722776 43 -0.44906470261634557 50 -1.3636470912590886
 		 55 -6.0265767741660472 61 -2.6323465918874636 65 -2.2500884833282098 85 0 95 0 105 0;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kot[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kix[5:14]"  0.99835502889105121 0.9931241107366674 
-		1 0.97958271841651778 1 0.9889200394023655 0.99835502889105121 1 1 1;
-	setAttr -s 15 ".kiy[5:14]"  0.057334424981403169 0.1170662234528109 
-		0 -0.20104153247452441 0 0.14844916863500379 0.057334424981403169 0 0 0;
-	setAttr -s 15 ".kox[5:14]"  0.99835502889105121 0.9931241107366674 
-		1 0.97958271841651778 1 0.98892003940236539 0.99835502889105121 1 1 1;
-	setAttr -s 15 ".koy[5:14]"  0.057334424981403169 0.1170662234528109 
-		0 -0.20104153247452444 0 0.14844916863500374 0.057334424981403169 0 0 0;
 createNode animCurveTA -n "ShoulderFK_CTR_L_rotate_UpperBody1_inputBZ";
 	rename -uid "1A112A32-4C83-7A59-DF21-18930DD32B7F";
 	setAttr ".tan" 18;
@@ -15899,18 +15623,6 @@ createNode animCurveTA -n "ShoulderFK_CTR_L_rotate_UpperBody1_inputBZ";
 		 35 -27.464648884136899 39 -36.126056413252712 43 -41.204466826979051 50 -34.227215527879522
 		 55 -31.595106799846889 61 -24.548442626880597 65 -27.464648884136899 85 0 95 0 105 0;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kot[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kix[5:14]"  1 0.74356436369744516 1 0.92221655124026714 
-		0.90824598265790935 1 1 1 1 1;
-	setAttr -s 15 ".kiy[5:14]"  0 -0.66866436800476636 0 0.38667380648100219 
-		0.41843665588206858 0 0 0 0 0;
-	setAttr -s 15 ".kox[5:14]"  1 0.74356436369744516 1 0.92221655124026725 
-		0.90824598265790935 1 1 1 1 1;
-	setAttr -s 15 ".koy[5:14]"  0 -0.66866436800476636 0 0.38667380648100219 
-		0.41843665588206858 0 0 0 0 0;
 createNode animCurveTA -n "UpperArmFK_CTR_L_rotate_UpperBody_inputBX";
 	rename -uid "90143E9F-4AAE-0796-1A28-179F7D1A2141";
 	setAttr ".tan" 18;
@@ -15921,18 +15633,6 @@ createNode animCurveTA -n "UpperArmFK_CTR_L_rotate_UpperBody_inputBX";
 		 61 37.394091323818493 65 38.931685860220739 85 -1.2119244263626674 99 -10.088100488853593
 		 105 -10.088100488853593;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kot[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kix[5:14]"  1 1 0.93382039379571669 1 0.96942086441565523 
-		0.97415090333073107 1 0.79811777893618441 1 1;
-	setAttr -s 15 ".kiy[5:14]"  0 0 -0.35774218668087282 0 0.24540413125211197 
-		0.22589824598681763 0 -0.60250146136417937 0 0;
-	setAttr -s 15 ".kox[5:14]"  1 1 0.9338203937957168 1 0.96942086441565534 
-		0.97415090333073107 1 0.79811777893618441 1 1;
-	setAttr -s 15 ".koy[5:14]"  0 0 -0.35774218668087288 0 0.24540413125211197 
-		0.22589824598681763 0 -0.60250146136417937 0 0;
 createNode animCurveTA -n "UpperArmFK_CTR_L_rotate_UpperBody_inputBY";
 	rename -uid "839B468E-4D2D-39C2-31C1-B685685AA7E8";
 	setAttr ".tan" 18;
@@ -15940,21 +15640,9 @@ createNode animCurveTA -n "UpperArmFK_CTR_L_rotate_UpperBody_inputBY";
 	setAttr -s 15 ".ktv[0:14]"  0 15.912046947374376 10 15.912046947374376
 		 16 -9.0464613708691655 20 -11.828096264467478 28 -5.344956064593636 35 -4.0678382609249395
 		 39 4.1577108296801129 43 10.000508348016089 50 4.2199428243425121 57 -1.1734759648042181
-		 61 -2.3126564603619362 65 -4.0678382609249395 85 0.11829257396570146 99 15.912046947374376
+		 61 -2.3126564603619366 65 -4.0678382609249395 85 0.11829257396570146 99 15.912046947374376
 		 105 15.912046947374376;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kot[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kix[5:14]"  1 0.7356482896746559 1 0.92267042202602301 
-		0.95490013467884494 0.98252600253597122 1 0.95577975959911821 1 1;
-	setAttr -s 15 ".kiy[5:14]"  0 0.67736370872578744 0 -0.38558953865259415 
-		-0.29692715064527847 -0.18612537264082041 0 0.29408340847564268 0 0;
-	setAttr -s 15 ".kox[5:14]"  1 0.7356482896746559 1 0.92267042202602301 
-		0.95490013467884494 0.98252600253597122 1 0.95577975959911832 1 1;
-	setAttr -s 15 ".koy[5:14]"  0 0.67736370872578744 0 -0.3855895386525941 
-		-0.29692715064527841 -0.18612537264082041 0 0.29408340847564263 0 0;
 createNode animCurveTA -n "UpperArmFK_CTR_L_rotate_UpperBody_inputBZ";
 	rename -uid "FDE180D8-4B6C-7991-FD18-51875C1FA318";
 	setAttr ".tan" 18;
@@ -15965,18 +15653,6 @@ createNode animCurveTA -n "UpperArmFK_CTR_L_rotate_UpperBody_inputBZ";
 		 61 -64.287250111158684 65 -61.01553275016213 85 -68.37304508549731 99 -68.37304508549731
 		 105 -68.37304508549731;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kot[5:14]"  1 18 18 18 18 18 18 18 
-		1 18;
-	setAttr -s 15 ".kix[5:14]"  1 0.74495995456137321 1 0.96297496150222506 
-		0.91661037431076176 0.94293911425306876 1 1 1 1;
-	setAttr -s 15 ".kiy[5:14]"  0 -0.66710918604072367 0 0.26959084465127525 
-		0.39978171757333414 0.33296520360487858 0 0 0 0;
-	setAttr -s 15 ".kox[5:14]"  1 0.74495995456137321 1 0.96297496150222517 
-		0.91661037431076187 0.94293911425306876 1 1 1 1;
-	setAttr -s 15 ".koy[5:14]"  0 -0.66710918604072367 0 0.26959084465127525 
-		0.39978171757333419 0.33296520360487858 0 0 0 0;
 createNode animCurveTA -n "LowerArmFK_CTR_L_rotate_UpperBody1_inputBX";
 	rename -uid "FDCBC4EF-4E79-24EC-3555-2DBFFC1632E6";
 	setAttr ".tan" 18;
@@ -15987,12 +15663,6 @@ createNode animCurveTA -n "LowerArmFK_CTR_L_rotate_UpperBody1_inputBX";
 		 61 58.844102136595282 65 74.374353500084382 85 47.922193922408873 95 11.342325878970234
 		 105 11.342325878970234;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[13:14]"  1 18;
-	setAttr -s 15 ".kot[13:14]"  1 18;
-	setAttr -s 15 ".kix[13:14]"  1 1;
-	setAttr -s 15 ".kiy[13:14]"  0 0;
-	setAttr -s 15 ".kox[13:14]"  1 1;
-	setAttr -s 15 ".koy[13:14]"  0 0;
 createNode animCurveTA -n "LowerArmFK_CTR_L_rotate_UpperBody1_inputBY";
 	rename -uid "A827FA5F-48A5-0541-175B-4DADD509F5B8";
 	setAttr ".tan" 18;
@@ -16001,12 +15671,6 @@ createNode animCurveTA -n "LowerArmFK_CTR_L_rotate_UpperBody1_inputBY";
 		 39 2.6881619459511419 43 1.7659909204658715 50 0.30993140654176038 58 1.7659909204658715
 		 61 2.5292547706220092 65 3.222050434389983 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[12:13]"  1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[12:13]"  1 1;
-	setAttr -s 14 ".koy[12:13]"  0 0;
 createNode animCurveTA -n "LowerArmFK_CTR_L_rotate_UpperBody1_inputBZ";
 	rename -uid "DC4EEF02-451A-0E72-DC72-08A0E6EE5642";
 	setAttr ".tan" 18;
@@ -16015,154 +15679,111 @@ createNode animCurveTA -n "LowerArmFK_CTR_L_rotate_UpperBody1_inputBZ";
 		 39 -5.3725389593969117 43 -3.5294953253967947 50 -0.61942642960713656 58 -3.5294953253967947
 		 61 -5.0549483500702062 65 -6.439564221186453 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[12:13]"  1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[12:13]"  1 1;
-	setAttr -s 14 ".koy[12:13]"  0 0;
 createNode animCurveTA -n "ShoulderIK_CTR_L_rotate_UpperBody_inputBX";
 	rename -uid "64817729-4C12-7606-4BF9-E29D540C5C33";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 0 13 -14.43223531593963 20 -10.319494103899078
-		 35 -10.319494103899078 39 -10.319494103899078 43 -10.319494103899078 50 -10.319494103899078
-		 58 -10.319494103899078 61 -10.319494103899078 65 -10.319494103899078 85 -10.319494103899078
-		 93 -20.028327803479318 99 -2.4874701878595453 105 0;
+	setAttr -s 15 ".ktv[0:14]"  0 0 6 -2.5046889047691625 13 -14.43223531593963
+		 20 -10.319494103899078 35 -10.319494103899078 39 -10.319494103899078 43 -10.319494103899078
+		 50 -10.319494103899078 58 -10.319494103899078 61 -10.319494103899078 65 -10.319494103899078
+		 85 -10.319494103899078 93 -20.028327803479318 99 -2.4874701878595453 105 0;
 createNode animCurveTA -n "ShoulderIK_CTR_L_rotate_UpperBody_inputBY";
 	rename -uid "F8CBBB5C-4A47-EF35-F569-C6B40B5C4BD5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 0 13 23.285968214873762 20 13.587378721874597
-		 35 13.587378721874597 39 13.587378721874597 43 13.587378721874597 50 13.587378721874597
-		 58 13.587378721874597 61 13.587378721874597 65 13.587378721874597 85 13.587378721874597
-		 93 30.811891448867325 99 1.0185357894511891 105 0;
+	setAttr -s 15 ".ktv[0:14]"  0 0 6 -1.6375241361659501 13 23.285968214873762
+		 20 13.587378721874597 35 13.587378721874597 39 13.587378721874597 43 13.587378721874597
+		 50 13.587378721874597 58 13.587378721874597 61 13.587378721874597 65 13.587378721874597
+		 85 13.587378721874597 93 30.811891448867325 99 1.0185357894511891 105 0;
 createNode animCurveTA -n "ShoulderIK_CTR_L_rotate_UpperBody_inputBZ";
 	rename -uid "6BD28B71-43C4-C4DF-68C3-A484622971C9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 0 13 -8.3443702307467866 20 -4.6608608763584316
-		 35 -4.6608608763584316 39 -4.6608608763584316 43 -4.6608608763584316 50 -4.6608608763584316
-		 58 -4.6608608763584316 61 -4.6608608763584316 65 -4.6608608763584316 85 -4.6608608763584316
-		 93 -25.988667288288134 99 -4.507784680244276 105 0;
+	setAttr -s 15 ".ktv[0:14]"  0 0 6 -6.9027818314966716 13 -8.3443702307467866
+		 20 -4.6608608763584316 35 -4.6608608763584316 39 -4.6608608763584316 43 -4.6608608763584316
+		 50 -4.6608608763584316 58 -4.6608608763584316 61 -4.6608608763584316 65 -4.6608608763584316
+		 85 -4.6608608763584316 93 -25.988667288288134 99 -4.507784680244276 105 0;
 createNode animCurveTL -n "ElbowVectorIK_CTR_L_translateX_UpperBody_inputB";
 	rename -uid "4DADDE0E-4BBE-C735-D722-3786BB04181F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  0 -0.16200200740530274 20 -0.16200200740530274
-		 35 -0.16200200740530274 39 -0.16200200740530274 43 -0.16200200740530274 50 -0.16200200740530274
-		 58 -0.16200200740530274 61 -0.16200200740530274 65 -0.16200200740530274 85 -0.16200200740530274
-		 90 -0.1087205405841799 95 -0.16200200740530274 105 -0.16200200740530274;
+	setAttr -s 15 ".ktv[0:14]"  0 -0.16200200740530274 6 -0.092437063184976437
+		 20 -0.16200200740530274 35 -0.16200200740530274 39 -0.16200200740530274 43 -0.16200200740530274
+		 50 -0.16200200740530274 58 -0.16200200740530274 61 -0.16200200740530274 65 -0.16200200740530274
+		 85 -0.16200200740530274 90 -0.1087205405841799 95 -0.16200200740530274 99 -0.094468136767631536
+		 105 -0.16200200740530274;
 createNode animCurveTL -n "ElbowVectorIK_CTR_L_translateY_UpperBody_inputB";
 	rename -uid "7AB7E7D0-4B24-D792-8559-799DEC44A2A1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  0 -0.18448771636712558 20 -0.18448771636712558
-		 35 -0.18448771636712558 39 -0.18448771636712558 43 -0.18448771636712558 50 -0.18448771636712558
-		 58 -0.18448771636712558 61 -0.18448771636712558 65 -0.18448771636712558 85 -0.18448771636712558
-		 90 -0.52396332307873972 95 -0.18448771636712558 105 -0.18448771636712558;
+	setAttr -s 15 ".ktv[0:14]"  0 -0.18448771636712558 6 -0.18971707918264286
+		 20 -0.18448771636712558 35 -0.18448771636712558 39 -0.18448771636712558 43 -0.18448771636712558
+		 50 -0.18448771636712558 58 -0.18448771636712558 61 -0.18448771636712558 65 -0.18448771636712558
+		 85 -0.18448771636712558 90 -0.52396332307873972 95 -0.18448771636712558 99 -0.1722976919750461
+		 105 -0.18448771636712558;
 createNode animCurveTL -n "ElbowVectorIK_CTR_L_translateZ_UpperBody_inputB";
 	rename -uid "16F065F2-4B76-839E-735E-B099D4CA60CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  0 -0.28669008500517168 20 -0.28669008500517168
-		 35 -0.28669008500517168 39 -0.28669008500517168 43 -0.28669008500517168 50 -0.28669008500517168
-		 58 -0.28669008500517168 61 -0.28669008500517168 65 -0.28669008500517168 85 -0.28669008500517168
-		 90 0.30918462747639297 95 -0.28669008500517168 105 -0.28669008500517168;
+	setAttr -s 15 ".ktv[0:14]"  0 -0.28669008500517168 6 0.24331993142933042
+		 20 -0.28669008500517168 35 -0.28669008500517168 39 -0.28669008500517168 43 -0.28669008500517168
+		 50 -0.28669008500517168 58 -0.28669008500517168 61 -0.28669008500517168 65 -0.28669008500517168
+		 85 -0.28669008500517168 90 0.30918462747639297 95 -0.28669008500517168 99 0.23224815876093363
+		 105 -0.28669008500517168;
 createNode animCurveTL -n "HandIK_CTR_L_translateX_UpperBody_inputB";
 	rename -uid "886890E5-4A4C-ECF9-6CC5-7E88A8A5C9C7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 -0.28212127559789452 10 -0.25365284903467805
-		 20 -0.25605166599640145 35 -0.25605166599640145 39 -0.25605166599640145 43 -0.25605166599640145
-		 50 -0.25605166599640145 58 -0.25605166599640145 61 -0.25605166599640145 65 -0.25605166599640145
-		 85 -0.25605166599640145 90 -0.26355426913835234 93 -0.25365284903467805 99 -0.25167920411557881
-		 105 -0.28212127559789452;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 1 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0 0;
-	setAttr -s 15 ".kox[12:14]"  1 1 1;
-	setAttr -s 15 ".koy[12:14]"  0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  0 -0.28212127559789452 6 -0.2437957314733869
+		 10 -0.25365284903467805 20 -0.25605166599640145 35 -0.25605166599640145 39 -0.25605166599640145
+		 43 -0.25605166599640145 50 -0.25605166599640145 58 -0.25605166599640145 61 -0.25605166599640145
+		 65 -0.25605166599640145 85 -0.25605166599640145 90 -0.26355426913835234 93 -0.25365284903467805
+		 99 -0.25167920411557881 105 -0.28212127559789452;
 createNode animCurveTL -n "HandIK_CTR_L_translateY_UpperBody_inputB";
 	rename -uid "150FD439-4C22-87FD-91D8-C997DFDA1E80";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  0 -0.39561154420529632 10 -0.39812714152581435
-		 15 -0.8680924762325114 20 -0.85456694403001143 35 -0.85456694403001143 39 -0.85456694403001143
-		 43 -0.85456694403001143 50 -0.85456694403001143 58 -0.85456694403001143 61 -0.85456694403001143
-		 65 -0.85456694403001143 85 -0.85456694403001143 90 -0.74721926528885607 93 -0.63107816129455541
-		 99 -0.3957023358690191 105 -0.39561154420529632;
-	setAttr -s 16 ".kit[13:15]"  1 18 18;
-	setAttr -s 16 ".kot[13:15]"  1 18 18;
-	setAttr -s 16 ".kix[13:15]"  0.40403244954835477 0.99085351826145474 
-		1;
-	setAttr -s 16 ".kiy[13:15]"  -0.91474465273755823 0.13494185914273188 
-		0;
-	setAttr -s 16 ".kox[13:15]"  0.40403244954835477 0.99085351826145485 
-		1;
-	setAttr -s 16 ".koy[13:15]"  -0.91474465273755823 0.13494185914273188 
-		0;
+	setAttr -s 17 ".ktv[0:16]"  0 -0.39561154420529632 6 -0.39774358948216559
+		 10 -0.39812714152581435 15 -0.8680924762325114 20 -0.85456694403001143 35 -0.85456694403001143
+		 39 -0.85456694403001143 43 -0.85456694403001143 50 -0.85456694403001143 58 -0.85456694403001143
+		 61 -0.85456694403001143 65 -0.85456694403001143 85 -0.85456694403001143 90 -0.74721926528885607
+		 93 -0.63107816129455541 99 -0.3957023358690191 105 -0.39561154420529632;
 createNode animCurveTL -n "HandIK_CTR_L_translateZ_UpperBody_inputB";
 	rename -uid "AA42133C-4A81-41D5-285D-EEA0656F412A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  0 0.03295497889072576 10 -0.006631252393379217
-		 15 0.098192069857608255 20 0.07828908792469022 35 0.07828908792469022 39 0.07828908792469022
-		 43 0.07828908792469022 50 0.07828908792469022 58 0.07828908792469022 61 0.07828908792469022
-		 65 0.07828908792469022 85 0.07828908792469022 90 0.033032017714897048 93 0.064059676436752241
-		 99 -0.020422605962568667 105 0.03295497889072576;
-	setAttr -s 16 ".kit[13:15]"  1 18 18;
-	setAttr -s 16 ".kot[13:15]"  1 18 18;
-	setAttr -s 16 ".kix[13:15]"  1 1 1;
-	setAttr -s 16 ".kiy[13:15]"  0 0 0;
-	setAttr -s 16 ".kox[13:15]"  1 1 1;
-	setAttr -s 16 ".koy[13:15]"  0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  0 0.03295497889072576 6 -0.025304791121832881
+		 10 -0.006631252393379217 15 0.098192069857608255 20 0.07828908792469022 35 0.07828908792469022
+		 39 0.07828908792469022 43 0.07828908792469022 50 0.07828908792469022 58 0.07828908792469022
+		 61 0.07828908792469022 65 0.07828908792469022 85 0.07828908792469022 90 0.033032017714897048
+		 93 0.064059676436752241 99 -0.020422605962568667 105 0.03295497889072576;
 createNode animCurveTA -n "HandIK_CTR_L_rotate_UpperBody_inputBX";
 	rename -uid "00D68B97-4E81-1636-007C-04B5AD59A036";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 23.142081235676656 10 18.558768419457561
-		 20 26.628810524361882 35 26.628810524361882 39 26.628810524361882 43 26.628810524361882
-		 50 26.628810524361882 58 26.628810524361882 61 26.628810524361882 65 26.628810524361882
-		 85 26.628810524361882 90 26.335270712207091 93 18.558768419457561 99 19.322475337009131
-		 105 23.142081235676656;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 0.98059236497186442 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0.1960576796733193 0;
-	setAttr -s 15 ".kox[12:14]"  1 0.98059236497186442 1;
-	setAttr -s 15 ".koy[12:14]"  0 0.19605767967331933 0;
+	setAttr -s 16 ".ktv[0:15]"  0 23.142081235676656 6 21.840796712100442
+		 10 18.558768419457561 20 26.628810524361882 35 26.628810524361882 39 26.628810524361882
+		 43 26.628810524361882 50 26.628810524361882 58 26.628810524361882 61 26.628810524361882
+		 65 26.628810524361882 85 26.628810524361882 90 26.335270712207091 93 18.558768419457561
+		 99 19.322475337009131 105 23.142081235676656;
 createNode animCurveTA -n "HandIK_CTR_L_rotate_UpperBody_inputBY";
 	rename -uid "7780ED30-434B-9AE4-24E5-89B85A7BEA2A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 8.7386126832758055 10 -8.8578004622365398
-		 20 5.3132459965781296 35 5.3132459965781296 39 5.3132459965781296 43 5.3132459965781296
-		 50 5.3132459965781296 58 5.3132459965781296 61 5.3132459965781296 65 5.3132459965781296
-		 85 5.3132459965781296 90 0.071661207444567804 93 -8.8578004622365398 99 -5.6916366675381216
-		 105 8.7386126832758055;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 0.79317656498154809 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0.60899173784549143 0;
-	setAttr -s 15 ".kox[12:14]"  1 0.79317656498154832 1;
-	setAttr -s 15 ".koy[12:14]"  0 0.60899173784549154 0;
+	setAttr -s 16 ".ktv[0:15]"  0 8.7386126832758055 6 0.35542118239305165
+		 10 -8.8578004622365398 20 5.3132459965781296 35 5.3132459965781296 39 5.3132459965781296
+		 43 5.3132459965781296 50 5.3132459965781296 58 5.3132459965781296 61 5.3132459965781296
+		 65 5.3132459965781296 85 5.3132459965781296 90 0.071661207444567804 93 -8.8578004622365398
+		 99 -5.6916366675381216 105 8.7386126832758055;
 createNode animCurveTA -n "HandIK_CTR_L_rotate_UpperBody_inputBZ";
 	rename -uid "524F2551-4D99-2CF2-2761-DEBBAFDA61B5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  0 -78.147986542787947 10 -71.608383686550539
-		 20 -78.866846602615624 35 -78.866846602615624 39 -78.866846602615624 43 -78.866846602615624
-		 50 -78.866846602615624 58 -78.866846602615624 61 -78.866846602615624 65 -78.866846602615624
-		 85 -78.866846602615624 90 -70.668683938694173 93 -71.608383686550539 99 -71.078657441466575
-		 105 -78.147986542787947;
-	setAttr -s 15 ".kit[12:14]"  1 18 18;
-	setAttr -s 15 ".kot[12:14]"  1 18 18;
-	setAttr -s 15 ".kix[12:14]"  1 1 1;
-	setAttr -s 15 ".kiy[12:14]"  0 0 0;
-	setAttr -s 15 ".kox[12:14]"  1 1 1;
-	setAttr -s 15 ".koy[12:14]"  0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  0 -78.147986542787947 6 -68.138834625295956
+		 10 -71.608383686550539 20 -78.866846602615624 35 -78.866846602615624 39 -78.866846602615624
+		 43 -78.866846602615624 50 -78.866846602615624 58 -78.866846602615624 61 -78.866846602615624
+		 65 -78.866846602615624 85 -78.866846602615624 90 -70.668683938694173 93 -71.608383686550539
+		 99 -71.078657441466575 105 -78.147986542787947;
 createNode animCurveTA -n "HandFK_CTR_L_rotate_UpperBody1_inputBX";
 	rename -uid "B697F6E5-4EBF-51F8-DB14-129548D8820C";
 	setAttr ".tan" 18;
@@ -16171,12 +15792,6 @@ createNode animCurveTA -n "HandFK_CTR_L_rotate_UpperBody1_inputBX";
 		 39 12.640249102744477 43 15.933869517136532 50 19.32420953097397 58 13.810489784938854
 		 61 11.379624711736907 65 9.297914195376709 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[12:13]"  1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[12:13]"  1 1;
-	setAttr -s 14 ".koy[12:13]"  0 0;
 createNode animCurveTA -n "HandFK_CTR_L_rotate_UpperBody1_inputBY";
 	rename -uid "86E23737-4D6B-A48B-BD89-61B5317A919B";
 	setAttr ".tan" 18;
@@ -16185,12 +15800,6 @@ createNode animCurveTA -n "HandFK_CTR_L_rotate_UpperBody1_inputBY";
 		 39 -2.7022858972486254 43 9.477768193361749 50 25.524170763732233 58 5.9177697297574987
 		 61 -2.7262161237041451 65 -10.128632840612971 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[12:13]"  1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[12:13]"  1 1;
-	setAttr -s 14 ".koy[12:13]"  0 0;
 createNode animCurveTA -n "HandFK_CTR_L_rotate_UpperBody1_inputBZ";
 	rename -uid "F47081BE-4706-35F4-392E-ABA68981A2C2";
 	setAttr ".tan" 18;
@@ -16199,32 +15808,18 @@ createNode animCurveTA -n "HandFK_CTR_L_rotate_UpperBody1_inputBZ";
 		 39 -7.2461257213692614 43 -5.8066560917885441 50 -3.9102516101466445 58 -6.227385723331218
 		 61 -7.2489538561177174 65 -8.1237902049731172 85 0 95 0 105 0;
 	setAttr -s 14 ".kyts[2:13]" yes no no no no no no no no no no no;
-	setAttr -s 14 ".kit[12:13]"  1 18;
-	setAttr -s 14 ".kot[12:13]"  1 18;
-	setAttr -s 14 ".kix[12:13]"  1 1;
-	setAttr -s 14 ".kiy[12:13]"  0 0;
-	setAttr -s 14 ".kox[12:13]"  1 1;
-	setAttr -s 14 ".koy[12:13]"  0 0;
 createNode animCurveTU -n "ObjectOptions_CTR_SpaceSwitchObject_UpperBody1_inputB";
 	rename -uid "0210080A-4489-BE40-97AE-07818C42EA35";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 1 20 1 35 1 39 1 43 1 50 1 58 1 61 1 65 1
 		 85 1 95 1 105 1;
-	setAttr -s 12 ".kit[3:11]"  9 9 9 9 9 18 9 9 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 5 5 5 18 5 5 
-		5;
 createNode animCurveTU -n "Object_CTR_visibility_UpperBody1_inputB";
 	rename -uid "657EF019-44BF-F5FA-73C2-7392D60ABFB6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 1 20 1 35 1 39 1 43 1 50 1 58 1 61 1 65 1
 		 85 1 95 1 105 1;
-	setAttr -s 12 ".kit[3:11]"  9 9 9 9 9 18 9 9 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 5 5 5 18 5 5 
-		5;
 createNode animCurveTL -n "Object_CTR_translateX_UpperBody1_inputB";
 	rename -uid "93D01E58-44DF-502A-FF4C-E4820490C379";
 	setAttr ".tan" 18;
@@ -16267,48 +15862,24 @@ createNode animCurveTU -n "ArmOptions_CTR_L_SpaceSwitchElbow_UpperBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 1 10 1 35 1 39 1 43 1 50 1 58 1 61 1 65 1
 		 94 1 105 1;
-	setAttr -s 11 ".kit[3:10]"  9 9 18 9 9 18 1 9;
-	setAttr -s 11 ".kot[3:10]"  5 5 18 5 5 18 1 5;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 0;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "ArmOptions_CTR_L_Fist_UpperBody1_inputB";
 	rename -uid "742AEA62-405C-53C6-DB25-CCAAA74BCB7A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 0 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 105 0;
-	setAttr -s 11 ".kit[9:10]"  1 18;
-	setAttr -s 11 ".kot[9:10]"  1 18;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 1;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "ArmOptions_CTR_L_Relaxed_UpperBody1_inputB";
 	rename -uid "270C8A45-4E3B-D0BB-4120-01A574F09925";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 0 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 105 0;
-	setAttr -s 11 ".kit[9:10]"  1 18;
-	setAttr -s 11 ".kot[9:10]"  1 18;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 1;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "ArmOptions_CTR_L_Weapon_UpperBody1_inputB";
 	rename -uid "45BAA096-4F63-CDC6-44B5-6CA7A0CBF1A3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 0 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 105 0;
-	setAttr -s 11 ".kit[9:10]"  1 18;
-	setAttr -s 11 ".kot[9:10]"  1 18;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 1;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "Head_CTR_ANIM_Happy_L_UpperBody_inputB";
 	rename -uid "A4BB3ED8-4D38-7BE6-9752-2C948CAB44A1";
 	setAttr ".tan" 18;
@@ -16399,8 +15970,6 @@ createNode animCurveTU -n "Head_CTR_ANIM_ViewTarget_UpperBody_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  0 0 20 0 35 0 39 0 43 0 46 0 50 0 54 0 58 0
 		 61 0 65 0 85 0 95 0 105 0;
-	setAttr -s 14 ".kit[11:13]"  9 9 9;
-	setAttr -s 14 ".kot[11:13]"  5 5 5;
 createNode animCurveTU -n "Head_CTR_ANIM_UpDownL_UpperBody_inputB";
 	rename -uid "8034D080-4201-85A9-D4A2-0A85D58A40D0";
 	setAttr ".tan" 18;
@@ -16467,48 +16036,24 @@ createNode animCurveTU -n "ArmOptions_CTR_R_SpaceSwitchElbow_UpperBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 1 10 1 35 1 39 1 43 1 50 1 58 1 61 1 65 1
 		 94 1 105 1;
-	setAttr -s 11 ".kit[3:10]"  9 9 18 9 9 18 1 9;
-	setAttr -s 11 ".kot[3:10]"  5 5 18 5 5 18 1 5;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 0;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "ArmOptions_CTR_R_Fist_UpperBody1_inputB";
 	rename -uid "EA91A669-4F2E-0769-F16D-39856AA98941";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 0 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 105 0;
-	setAttr -s 11 ".kit[9:10]"  1 18;
-	setAttr -s 11 ".kot[9:10]"  1 18;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 1;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "ArmOptions_CTR_R_Relaxed_UpperBody1_inputB";
 	rename -uid "CC1B3596-4736-AC3A-A1CC-DBB3EA4F1B2C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 0 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 105 0;
-	setAttr -s 11 ".kit[9:10]"  1 18;
-	setAttr -s 11 ".kot[9:10]"  1 18;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 1;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTU -n "ArmOptions_CTR_R_Weapon_UpperBody1_inputB";
 	rename -uid "A3880360-4615-6658-8617-A892F7D49539";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  0 0 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 105 0;
-	setAttr -s 11 ".kit[9:10]"  1 18;
-	setAttr -s 11 ".kot[9:10]"  1 18;
-	setAttr -s 11 ".kix[9:10]"  1 1;
-	setAttr -s 11 ".kiy[9:10]"  0 0;
-	setAttr -s 11 ".kox[9:10]"  1 1;
-	setAttr -s 11 ".koy[9:10]"  0 0;
 createNode animCurveTA -n "Head_CTR_rotate_UpperBody_inputBX";
 	rename -uid "6A03C342-4614-8C1E-E07F-48B74B8D6CF8";
 	setAttr ".tan" 18;
@@ -16536,18 +16081,6 @@ createNode animCurveTA -n "Neck_CTR_rotate_UpperBody_inputBX";
 		 20 6.6637468654025218 35 28.581769181084191 39 25.287866685153066 43 26.475834815552052
 		 48 29.868449843557276 50 28.884549095410421 58 26.475834815552052 61 27.304701111023885
 		 65 28.581769181084191 85 6.6637468654025218 95 -4.4486808776481856 105 0;
-	setAttr -s 15 ".kit[1:14]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 1 18;
-	setAttr -s 15 ".kot[1:14]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 1 18;
-	setAttr -s 15 ".kix[1:14]"  1 1 1 1 1 0.96627802146424491 1 0.98458640077659609 
-		1 0.98781939108438555 1 0.86634790440049425 1 1;
-	setAttr -s 15 ".kiy[1:14]"  0 0 0 0 0 0.25750103928944423 0 -0.17489888337490342 
-		0 0.15560478976456227 0 -0.49944099605546211 0 0;
-	setAttr -s 15 ".kox[1:14]"  1 1 1 1 1 0.96627802146424513 1 0.98458640077659609 
-		1 0.98781939108438566 1 0.86634790440049425 1 1;
-	setAttr -s 15 ".koy[1:14]"  0 0 0 0 0 0.25750103928944429 0 -0.17489888337490342 
-		0 0.15560478976456227 0 -0.49944099605546211 0 0;
 createNode animCurveTA -n "Neck_CTR_rotate_UpperBody_inputBY";
 	rename -uid "6E98E3BB-41D7-8361-F9F7-F2844716F113";
 	setAttr ".tan" 18;
@@ -16566,48 +16099,49 @@ createNode animCurveTA -n "Chest_CTR_rotate_UpperBody_inputBX";
 	rename -uid "BB268AAC-4113-576E-848F-DD8C7665711E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  0 0 20 15.735902380565843 35 8.9218519776564253
-		 39 8.986476156062194 43 9.0511003344679626 50 8.9218519776564253 58 9.0511003344679626
-		 61 9.0002299899503022 65 8.9218519776564253 85 15.735902380565843 95 7.8679511902829287
-		 105 0;
+	setAttr -s 13 ".ktv[0:12]"  0 0 15 13.27716763360243 20 15.735902380565843
+		 35 8.9218519776564253 39 8.986476156062194 43 9.0511003344679626 50 8.9218519776564253
+		 58 9.0511003344679626 61 9.0002299899503022 65 8.9218519776564253 85 15.735902380565843
+		 95 7.8679511902829287 105 0;
 createNode animCurveTA -n "Chest_CTR_rotate_UpperBody_inputBY";
 	rename -uid "4A15793B-426C-81A0-E0CE-A9879CBBC365";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  0 0 20 0 35 -5.119478442312559 39 -2.9867416453076845
+	setAttr -s 13 ".ktv[0:12]"  0 0 15 0 20 0 35 -5.119478442312559 39 -2.9867416453076845
 		 43 0.51118940298053983 50 5.119478442312559 58 -0.51118940298054305 61 -2.9936140517427128
 		 65 -5.119478442312559 85 0 95 0 105 0;
 createNode animCurveTA -n "Chest_CTR_rotate_UpperBody_inputBZ";
 	rename -uid "899C9BF3-4E80-2831-E946-26A5006CB629";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  0 0 20 0 35 6.1597063200802662 39 3.5936182945890516
+	setAttr -s 13 ".ktv[0:12]"  0 0 15 0 20 0 35 6.1597063200802662 39 3.5936182945890516
 		 43 -0.61505808292356823 50 -6.1597063200802662 58 0.615058082923573 61 3.6018871067012674
 		 65 6.1597063200802662 85 0 95 0 105 0;
 createNode animCurveTA -n "Spine_CTR_rotate_UpperBody_inputBX";
 	rename -uid "ABD87245-4988-DA9E-32C1-1099F7252532";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  0 -3.779680049219762 20 25.131021667537063
-		 35 43.153403327723844 39 41.547568686119234 43 43.495169884100335 46 44.759237969328453
-		 50 43.153403327723851 54 41.547568686119234 58 43.495169884100335 61 44.759237969328453
-		 65 43.153403327723844 85 25.131021667537063 95 7.3233077108055298 105 -3.779680049219762;
+	setAttr -s 15 ".ktv[0:14]"  0 -3.779680049219762 10 18.289298671810645
+		 20 25.131021667537063 35 43.153403327723844 39 41.547568686119234 43 43.495169884100335
+		 46 44.759237969328453 50 43.153403327723851 54 41.547568686119234 58 43.495169884100335
+		 61 44.759237969328453 65 43.153403327723844 85 25.131021667537063 95 7.3233077108055298
+		 105 -3.779680049219762;
 createNode animCurveTA -n "Spine_CTR_rotate_UpperBody_inputBY";
 	rename -uid "62EBFF0C-49A5-AEB7-D42A-4095D106D25D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  0 4.4706460790125329 20 4.470646079012532
-		 35 -0.72499681581352149 39 -0.42296851269239227 43 0.07239227464567595 50 0.72499681581352149
-		 58 -0.072392274645676435 61 -0.42394175104831416 65 -0.72499681581352149 85 4.470646079012532
-		 95 4.470646079012532 105 4.470646079012532;
+	setAttr -s 13 ".ktv[0:12]"  0 4.4706460790125329 10 5.2749101949382249
+		 20 4.470646079012532 35 -0.72499681581352149 39 -0.42296851269239227 43 0.07239227464567595
+		 50 0.72499681581352149 58 -0.072392274645676435 61 -0.42394175104831416 65 -0.72499681581352149
+		 85 4.470646079012532 95 4.470646079012532 105 4.470646079012532;
 createNode animCurveTA -n "Spine_CTR_rotate_UpperBody_inputBZ";
 	rename -uid "D576AA9E-47A1-5CE9-596C-D4AAA44DF585";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  0 3.4688825690051628 20 3.4688825690051659
-		 35 -5.0588363839122339 39 -1.8673885824389984 43 2.6730822547441657 50 5.0588363839122339
-		 58 -2.6730822547441657 61 -4.272827670012262 65 -5.0588363839122339 85 3.4688825690051659
-		 95 3.4688825690051659 105 3.4688825690051659;
+	setAttr -s 13 ".ktv[0:12]"  0 3.4688825690051628 10 5.8446346371760383
+		 20 3.4688825690051659 35 -5.0588363839122339 39 -1.8673885824389984 43 2.6730822547441657
+		 50 5.0588363839122339 58 -2.6730822547441657 61 -4.272827670012262 65 -5.0588363839122339
+		 85 3.4688825690051659 95 3.4688825690051659 105 3.4688825690051659;
 createNode animCurveTU -n "HMND_AnimRig_Head_CTR_ANIM_Tilt_R";
 	rename -uid "A25296A7-422C-612E-C978-598CA2987508";
 	setAttr ".tan" 18;
@@ -16847,10 +16381,6 @@ createNode animCurveTU -n "ObjectOptions_CTR_WeaponSelection_UpperBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 5 20 5 35 5 39 5 43 5 50 5 58 5 61 5 65 5
 		 85 5 95 5 105 5;
-	setAttr -s 12 ".kit[3:11]"  9 9 9 9 9 18 9 9 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 5 5 5 18 5 5 
-		5;
 createNode animCurveTA -n "HMND_AnimRig_Object_CTR_rotateZ";
 	rename -uid "C78E9605-4EEF-2FB6-06FA-FCB0190420F3";
 	setAttr ".tan" 18;
@@ -17224,14 +16754,6 @@ createNode animCurveTU -n "ArmOptions_CTR_R_SpaceSwitchHand_UpperBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 1 10 0 35 0 39 0 43 0 50 0 58 0 61 0 65 0
 		 94 0 102 1 105 1;
-	setAttr -s 12 ".kit[3:11]"  9 9 18 9 9 18 1 1 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 1 5 5 18 1 5 
-		5;
-	setAttr -s 12 ".kix[9:11]"  1 0.31622776601683805 1;
-	setAttr -s 12 ".kiy[9:11]"  0 0.94868329805051377 0;
-	setAttr -s 12 ".kox[5:11]"  1 0 0 1 1 0 0;
-	setAttr -s 12 ".koy[5:11]"  0 0 0 0 0 0 0;
 createNode animCurveTA -n "HMND_AnimRig_HandFK_CTR_L_rotateZ";
 	rename -uid "38FE52F7-4523-4486-5A5C-6A8F13EC5210";
 	setAttr ".tan" 18;
@@ -17329,14 +16851,6 @@ createNode animCurveTU -n "ArmOptions_CTR_L_SpaceSwitchHand_UpperBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 1 10 0 35 0 39 0 43 0 50 0 55 0 61 0 65 0
 		 94 0 102 1 105 1;
-	setAttr -s 12 ".kit[2:11]"  1 9 18 18 18 9 18 1 
-		1 9;
-	setAttr -s 12 ".kot[2:11]"  1 5 18 18 18 5 18 1 
-		5 5;
-	setAttr -s 12 ".kix[2:11]"  1 1 1 1 1 1 1 1 0.31622776601683805 1;
-	setAttr -s 12 ".kiy[2:11]"  0 0 0 0 0 0 0 0 0.94868329805051377 0;
-	setAttr -s 12 ".kox[2:11]"  1 0 1 1 1 0 1 1 0 0;
-	setAttr -s 12 ".koy[2:11]"  0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "HMND_AnimRig_Chest_CTR_rotateZ";
 	rename -uid "3CF08A68-491A-E949-2D4B-B792FC702278";
 	setAttr ".tan" 18;
@@ -17535,18 +17049,6 @@ createNode animCurveTA -n "FootRoll_CTR_L_rotateX_LowerBody1_inputB";
 	setAttr -s 18 ".ktv[0:17]"  0 0 8 12.587998839008975 10 0 25 0 35 -27.330258903808524
 		 39 0 43 0 46 3.7500000000000013 50 10 52 0 58 0 61 -13.821481870486974 65 -27.330258903808524
 		 80 13.993664640379826 82 0 95 0 102 -8.7831891518031302 105 0;
-	setAttr -s 18 ".kit[4:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18;
-	setAttr -s 18 ".kot[4:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18;
-	setAttr -s 18 ".kix[4:17]"  1 1 1 0.80076875255024949 1 1 1 0.43941054417711922 
-		1 1 1 1 1 1;
-	setAttr -s 18 ".kiy[4:17]"  0 0 0 0.5989736262466967 0 0 0 -0.89828635393507328 
-		0 0 0 0 0 0;
-	setAttr -s 18 ".kox[4:17]"  1 1 1 0.80076875255024926 1 1 1 0.43941054417711928 
-		1 1 1 1 1 1;
-	setAttr -s 18 ".koy[4:17]"  0 0 0 0.59897362624669659 0 0 0 -0.89828635393507339 
-		0 0 0 0 0 0;
 createNode animCurveTA -n "HMND_AnimRig_FootRoll_CTR_L_rotateX";
 	rename -uid "7F432643-497F-EF15-C109-DBA7106F2548";
 	setAttr ".tan" 18;
@@ -17760,18 +17262,10 @@ createNode animCurveTU -n "HMND_AnimRig_FootOptions_CTR_L_SpaceSwitchLeg";
 	setAttr -l on ".ktv[0]";
 createNode animCurveTU -n "FootOptions_CTR_L_SpaceSwitchLeg_LowerBody1_inputB";
 	rename -uid "F2780C3E-41CF-B0E1-95BF-B2B3940B78F6";
-	setAttr ".tan" 1;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 17 ".ktv[0:16]"  0 1 7 1 8 1 10 1 25 1 35 1 39 1 43 1 50 1
 		 58 1 61 1 65 1 80 1 82 1 85 1 95 1 102 1;
-	setAttr -s 17 ".kit[0:16]"  18 18 1 1 18 1 9 9 
-		9 9 9 18 1 9 1 9 9;
-	setAttr -s 17 ".kot[0:16]"  18 18 1 1 18 1 5 5 
-		5 5 5 18 1 5 1 5 5;
-	setAttr -s 17 ".kix[2:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[2:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[2:16]"  1 1 1 1 0 0 0 0 0 1 1 0 1 0 0;
-	setAttr -s 17 ".koy[2:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "HMND_AnimRig_FootFK_CTR_R_rotateZ";
 	rename -uid "B2AD1660-42A7-EADD-77E2-9A82E7435BF4";
 	setAttr ".tan" 18;
@@ -17848,10 +17342,6 @@ createNode animCurveTU -n "FootOptions_CTR_R_SpaceSwitchLeg_LowerBody1_inputB";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 1 20 1 35 1 39 1 43 1 50 1 58 1 61 1 65 1
 		 85 1 95 1 105 1;
-	setAttr -s 12 ".kit[3:11]"  9 9 9 9 9 18 9 9 
-		9;
-	setAttr -s 12 ".kot[3:11]"  5 5 5 5 5 18 5 5 
-		5;
 createNode animCurveTA -n "HMND_AnimRig_Hips_CTR_rotateZ";
 	rename -uid "94C57236-4EC8-15D9-4AB3-4E98B4C8677E";
 	setAttr ".tan" 18;
@@ -18103,8 +17593,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 59;
-	setAttr -av ".unw" 59;
+	setAttr ".o" 41;
+	setAttr -av ".unw" 41;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
