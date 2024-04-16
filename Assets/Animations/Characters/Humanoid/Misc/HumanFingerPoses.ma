@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: HumanFingerPoses.ma
-//Last modified: Mon, Apr 15, 2024 08:23:14 PM
+//Last modified: Mon, Apr 15, 2024 08:26:51 PM
 //Codeset: 1252
 file -rdi 1 -ns "HumanAnimRig" -rfn "HumanAnimRigRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Animation Rigs/Human/HumanAnimRig.ma";
@@ -20,7 +20,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "444DC680-4C61-F8C4-814B-8B8990837DFF";
+fileInfo "UUID" "CD55771C-42B4-D388-F686-3E9E7922FDA8";
 fileInfo "vrayBuild" "6.00.02 ee5238c";
 createNode transform -s -n "persp";
 	rename -uid "9032DB97-4F61-0574-DD3C-77AF63BEA906";
@@ -258,6 +258,2538 @@ createNode transform -n "AllControls" -p "__Purple__";
 	setAttr ".animBot" -type "string" "2.0.4";
 	setAttr -l on ".contents" -type "string" (
 		"|Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_R|Human_AnimRig:ShoulderFK_CTR_R|Human_AnimRig:UpperArmFK_PRX_R|Human_AnimRig:UpperArmFK_CTR_R|Human_AnimRig:LowerArmFK_PRX_R|Human_AnimRig:LowerArmFK_CTR_R|Human_AnimRig:HandFK_PRX_R|Human_AnimRig:HandFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_R|Human_AnimRig:ShoulderIK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_R|Human_AnimRig:ElbowVectorIK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_R|Human_AnimRig:HandIK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderIK_PRX_L|Human_AnimRig:ShoulderIK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:ElbowVector_PRX_L|Human_AnimRig:ElbowVectorIK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:HandIK_PRX_L|Human_AnimRig:HandIK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_R|Human_AnimRig:UpperLegFK_CTR_R|Human_AnimRig:LowerLegFK_PRX_R|Human_AnimRig:LowerLegFK_CTR_R|Human_AnimRig:Foot_PRX_R1|Human_AnimRig:FootFK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:Toe_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:KneeControls_PRX_R|Human_AnimRig:KneeVector_PRX_R|Human_AnimRig:KneeVectorIK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:FootIK_PRX_L|Human_AnimRig:FootIK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:UpperLegFK_PRX_L|Human_AnimRig:UpperLegFK_CTR_L|Human_AnimRig:LowerLegFK_PRX_L|Human_AnimRig:LowerLegFK_CTR_L|Human_AnimRig:FootFK_PRX_L|Human_AnimRig:FootFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:Toe_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_L|Human_AnimRig:KneeControls_PRX_L|Human_AnimRig:KneeVector_PRX_L|Human_AnimRig:KneeVectorIK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:IKControllers|Human_AnimRig:Leg_IK_R|Human_AnimRig:FootIK_PRX_R|Human_AnimRig:FootIK_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:HeadIK_PRX|Human_AnimRig:Neck_CTR|Human_AnimRig:Head_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_R|Human_AnimRig:ArmOptions_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Hand_PRX_L|Human_AnimRig:ArmOptions_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Head_CTR_ANIM |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:RigSettings_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:FeetPlatform_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_R|Human_AnimRig:FootOptions_CTR_R|Human_AnimRig:FootRoll_CTR_R |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Foot_PRX_L|Human_AnimRig:FootOptions_CTR_L|Human_AnimRig:FootRoll_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR|Human_AnimRig:PDA_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectOptions_PRX|Human_AnimRig:ObjectOptions_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Object_PRX|Human_AnimRig:ObjectRoot_PRX|Human_AnimRig:Object_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Spine_PRX|Human_AnimRig:Spine_CTR|Human_AnimRig:ChestOffset_PRX|Human_AnimRig:Chest_PRX|Human_AnimRig:Chest_CTR|Human_AnimRig:ShoulderFK_PRX_L|Human_AnimRig:ShoulderFK_CTR_L|Human_AnimRig:UpperArmFK_PRX_L|Human_AnimRig:UpperArmFK_CTR_L|Human_AnimRig:LowerArmFK_PRX_L|Human_AnimRig:LowerArmFK_CTR_L|Human_AnimRig:HandFK_PRX_L|Human_AnimRig:HandFK_CTR_L |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR |Human_AnimRig:Character_Default|Human_AnimRig:Character_Default_Rig|Human_AnimRig:MainRoot_CTR|Human_AnimRig:Pelvis_CTR|Human_AnimRig:Hips_CTR");
+createNode transform -n "HumanArmature";
+	rename -uid "60CEB968-4490-6642-5AB8-0BA76A45D141";
+	setAttr ".v" no;
+	setAttr ".s" -type "double3" 100 100 100 ;
+createNode locator -n "HumanArmatureShape" -p "HumanArmature";
+	rename -uid "7629188B-4386-0A37-44A8-1EA3AEA6C464";
+	setAttr -k off ".v";
+createNode joint -n "hips" -p "HumanArmature";
+	rename -uid "C3F5144F-4822-164C-194B-719576E5118A";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 1 0.99999999999999967 1.0000000000000002 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.999999986208778 0.0016530618713665019 -0.0001601074945165601 0
+		 2.6646167860215484e-10 9.6404149596509434 99.534227275875978 0 0.00166079738690968 99.534227262149017 -9.6404149583214203 0
+		 0 1.3243251480162144 83.337724208831787 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "thigh_l" -p "hips";
+	rename -uid "FDE194DE-4F76-4A44-B5B4-08B9E43E3E63";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 1.0000026226043701 1.0000002384185791 1.0000029802322388 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.165782250439804 1.3669167617398963 12.819189575828174 0
+		 -12.754217101146676 4.0878515893662772 -99.099062477362935 0 -1.8786313644980024 -99.907359687425114 -3.87941093690584 0
+		 -9.6564000520095359 1.3243245608804495 80.896783280624433 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "lower_leg_l" -p "thigh_l";
+	rename -uid "EEF1A7F8-45F2-FB7D-78E4-07B05E5C4CFC";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".s" -type "double3" 0.99999988079071045 1 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.401794030678545 0.68688937209013545 10.902365687994745 0
+		 -10.868095951735777 -16.297785887195186 -98.062600980497194 0 1.1032483777368491 -98.660877299141788 16.27483597219646 0
+		 -14.217614801268684 2.7862386404634765 45.456574805525307 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "foot_l" -p "lower_leg_l";
+	rename -uid "0FE9426C-4675-51DD-891F-AE8135D18052";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".s" -type "double3" 0.99999988079071045 0.99999982118606567 0.99999970197677612 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -93.667106172771426 -6.949344234444057 -34.325182077463054 0
+		 10.665079034003881 87.696521757718244 -46.857421263334587 0 33.358294887737088 -47.550824682163004 -81.401256174884608 0
+		 -18.669304628756816 -3.8895099816973864 5.289073519483253 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "toes_l" -p "foot_l";
+	rename -uid "E96772CC-46C1-BB6D-D3F8-8E84AEE20C37";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.997603886685411 0.72507314153942204 0.0010872487013635634 0
+		 0.67133588447735804 92.639448847309694 -37.650065637645838 0 -0.27395702542958489 -37.649183627944154 -92.641638129129774 0
+		 -17.810479331942428 3.1723980791721682 1.5158030532571827 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "toes_l_parentConstraint4" -p "toes_l";
+	rename -uid "DD6241EB-42E0-5B39-08CC-71AB557927BE";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "toes_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.1844561364758874e-06 -8.9327208109057924e-06 
+		3.6234250930977652e-06 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00043386312995016742 -0.00072650760408060188 
+		-0.0019661720453535529 ;
+	setAttr ".lr" -type "double3" -8.0466766357421715 19.696008682250984 -6.1151137351989764 ;
+	setAttr ".rst" -type "double3" -2.3748725624939128e-10 0.00080526657402515403 -2.7939677516020111e-11 ;
+	setAttr ".rsrr" -type "double3" -8.0466766357421875 19.696008682250969 -6.1151137351989755 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "foot_l_parentConstraint4" -p "foot_l";
+	rename -uid "FDD33B1E-4943-FAF6-5265-6C8E21A4DA05";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "foot_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.00098166958147338345 0.0017729086650139082 
+		-0.00012306758933885219 ;
+	setAttr ".tg[0].tor" -type "double3" -0.37988723359092841 -0.42766383870902946 -0.65362106945210097 ;
+	setAttr ".lr" -type "double3" -70.102416992187528 -0.13549527525901511 26.726165771484386 ;
+	setAttr ".rst" -type "double3" 2.590240882893724e-11 0.0040961080789566036 -6.2864273855933741e-11 ;
+	setAttr ".rsrr" -type "double3" -70.102416992187514 -0.1354952752590167 26.726165771484382 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "lower_leg_l_parentConstraint2" -p "lower_leg_l";
+	rename -uid "4CDF08EB-4793-6AAE-708D-5C80C4077FA0";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "lower_leg_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.00016661336512896696 -2.1818176192311969e-06 
+		-0.0017035307961553059 ;
+	setAttr ".tg[0].tor" -type "double3" -0.0010657414928873926 -0.85109582272912354 
+		0.17604016707080333 ;
+	setAttr ".lr" -type "double3" 11.707514762878422 -0.43441402912139904 1.0897806882858276 ;
+	setAttr ".rst" -type "double3" -7.5669953636392504e-12 0.0035762405395507791 -2.3283065059276354e-12 ;
+	setAttr ".rsrr" -type "double3" 11.707514762878423 -0.43441402912139887 1.0897806882858279 ;
+	setAttr -k on ".w0";
+createNode joint -n "width_thigh_l" -p "thigh_l";
+	rename -uid "8EC108A7-4FD7-DFF0-1B24-C9966F0FAF53";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.165781387245445 1.366911687731184 12.819196794307354 0
+		 -12.754224410485646 4.0878569718471685 -99.09906131461004 0 -1.8786271934049585 -99.907353581672098 -3.879416555177126 0
+		 -11.490361474877997 3.500335272473972 72.674536664775673 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "width_thigh_l_parentConstraint3" -p "width_thigh_l";
+	rename -uid "FF2DD50E-4D79-42B6-8169-ACA9E4822AFC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 6.6764455521450826e-07 2.1737791811915485e-07 
+		1.3054670228029864e-06 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00073839183273257563 -0.0014769650075956041 
+		-0.00014753272872165002 ;
+	setAttr ".lr" -type "double3" -3.0282283176040711e-06 -2.7347441579264243e-06 -4.2805409051755361e-06 ;
+	setAttr ".rst" -type "double3" 7.9436550567244251e-05 0.00084710233970814233 -0.00018205641536996823 ;
+	setAttr ".rsrr" -type "double3" -3.0282283193305309e-06 -2.7347441582265472e-06 
+		-4.280540905431684e-06 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "width_thigh_l_scaleConstraint3" -p "width_thigh_l";
+	rename -uid "732D2C9F-40DB-7745-EEC4-26B372E2B9AC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00025839469046 100.00002817244702 100.00029755837102 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "thigh_l_parentConstraint2" -p "thigh_l";
+	rename -uid "14DC641E-44F2-3715-B69E-E39757A68F8E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "thigh_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 7.0257501256776327e-08 1.0594276034225914e-08 
+		4.5583428667228535e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00074009463593590209 -0.0014770189552629031 
+		-0.00015089403341711608 ;
+	setAttr ".lr" -type "double3" 172.17073059082031 -0.070519492030143904 7.4067449569702166 ;
+	setAttr ".rst" -type "double3" 0.00096562924207692531 -0.00029315023282905584 3.1998473273829321e-05 ;
+	setAttr ".rsrr" -type "double3" 172.17073059082031 -0.070519492030144112 7.4067449569702166 ;
+	setAttr -k on ".w0";
+createNode joint -n "thigh_r" -p "hips";
+	rename -uid "1BC816B3-446C-31A1-E00C-68B117BA4DE4";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 0.99999678134918213 0.99999988079071045 0.99999648332595825 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.165193617399098 -1.3675259597469476 -12.819121446511538 0
+		 12.754192879956094 4.0879807527763123 -99.099024178647468 0 1.8792477628697326 -99.90669680970214 -3.879436436241809 0
+		 9.6563989275645259 1.3243247288788518 80.896777275944586 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "lower_leg_r" -p "thigh_r";
+	rename -uid "E01D4A5B-41C2-23D2-3126-36B002AA5AAA";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".s" -type "double3" 0.99999994039535522 1 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.401217878823886 -0.68750637795784331 -10.90227848976736 0
+		 10.868188093170469 -16.297640962966696 -98.062552381472983 0 -1.1026455110674758 -98.660239483354971 16.274906859990811 0
+		 14.217606261456696 2.786285552998506 45.456579673309783 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "foot_r" -p "lower_leg_r";
+	rename -uid "1AC16616-498C-976A-07F0-58989E5D14E8";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".s" -type "double3" 0.99999988079071045 0.99999988079071045 0.99999982118606567 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -93.722185502777563 5.6872877602609231 34.405696617521642 0
+		 -11.944025927653227 87.458110153875012 -46.99320848614326 0 -32.763167313844839 -48.152462933484962 -81.288865619310229 0
+		 18.669333874874972 -3.8894052223086488 5.2890985507094967 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "toes_r" -p "foot_r";
+	rename -uid "FEAF3200-4E4E-3D96-E960-49A65E5D1B9E";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".s" -type "double3" 0.99999994039535522 0.99999994039535522 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.976855331911111 -2.1331744300999489 0.098685801915280535 0
+		 -2.0121362084098919 92.556695562681995 -37.804044545365578 0 0.71516222601502122 -37.797256671695131 -92.57881822527888 0
+		 17.707515280865103 3.1533574581113886 1.5048634914515269 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "toes_r_parentConstraint4" -p "toes_r";
+	rename -uid "4756323F-4749-E8EC-27F2-B1B22A1A7A63";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "toes_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.0010308580660490208 -0.00012953162132971929 
+		0.00017068366763131948 ;
+	setAttr ".tg[0].tor" -type "double3" 0.097491505758082894 -0.2509242545385551 -0.76873033345608055 ;
+	setAttr ".lr" -type "double3" -8.0466156005859428 -19.695928573608409 6.1150903701782235 ;
+	setAttr ".rst" -type "double3" -1.2340024141410666e-10 0.00080527268350124356 -9.3132257461547854e-12 ;
+	setAttr ".rsrr" -type "double3" -8.0466156005859393 -19.695928573608406 6.1150903701782244 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "foot_r_parentConstraint2" -p "foot_r";
+	rename -uid "26C5D847-4319-D834-C66C-20A8A4859B39";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "foot_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.3364943757542278e-08 -2.0561917902561787e-07 
+		-7.3704901311089085e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 0.37258099265865258 -0.3169311271701829 -0.6520142814981722 ;
+	setAttr ".lr" -type "double3" -69.732063293457017 -0.58544176816939775 -26.650217056274407 ;
+	setAttr ".rst" -type "double3" -3.2014214057518589e-11 0.0040961080789566036 9.0803950886231283e-11 ;
+	setAttr ".rsrr" -type "double3" -69.732063293457017 -0.58544176816939941 -26.650217056274407 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "lower_leg_r_parentConstraint2" -p "lower_leg_r";
+	rename -uid "5A641202-4D54-2065-58A3-44B8C2847924";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "lower_leg_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 3.3899193319086863e-08 -7.5496488420867537e-08 
+		9.984523751782604e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 7.6727522167438922e-06 -0.00037286558668074039 
+		9.0041168528121628e-06 ;
+	setAttr ".lr" -type "double3" 11.707574844360343 0.43441426753997781 -1.0897923707962043 ;
+	setAttr ".rst" -type "double3" -8.0617610920263872e-11 0.0035762408375740059 -4.4237822433013111e-11 ;
+	setAttr ".rsrr" -type "double3" 11.707574844360343 0.43441426753997792 -1.0897923707962032 ;
+	setAttr -k on ".w0";
+createNode joint -n "width_thigh_r" -p "thigh_r";
+	rename -uid "2381F2D8-4614-2A54-C742-6C8F82D7615C";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.165188111490252 -1.3675230593824794 -12.819117851742719 0
+		 12.754190061501463 4.087986018870021 -99.099024324152509 0 1.8792455307550109 -99.906696632808575 -3.879442073021913 0
+		 11.490347296403868 3.5003420353121295 72.674543598357701 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "width_thigh_r_parentConstraint3" -p "width_thigh_r";
+	rename -uid "B08D5063-4F0D-6ADD-2A13-2E8E924A0FAB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 8.0113672282777767e-08 -5.5626871215963551e-08 
+		4.6535439457429109e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 6.963917723588003e-06 -0.0003823384781753882 
+		8.394672465124578e-06 ;
+	setAttr ".lr" -type "double3" -3.0415685604755087e-06 1.6808669440574062e-06 -1.5708102393444085e-06 ;
+	setAttr ".rst" -type "double3" -7.9437874676805694e-05 0.00084710153290641242 -0.00018205525705869676 ;
+	setAttr ".rsrr" -type "double3" -3.0415685614572043e-06 1.6808669442659455e-06 -1.5708102409927497e-06 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "width_thigh_r_scaleConstraint3" -p "width_thigh_r";
+	rename -uid "42A6567F-458A-DAB8-B704-D2A4CC385CAB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "width_thigh_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 99.999683166215462 99.999982474411723 99.99964890594066 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "thigh_r_parentConstraint2" -p "thigh_r";
+	rename -uid "F779883E-4201-7072-92FF-5B8CCD7FCE98";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "thigh_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 7.2307145799754834e-08 -5.41871187920151e-09 
+		2.740934363920644e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 8.4779927295543129e-06 -0.00038236504482625053 
+		5.3948187404619246e-06 ;
+	setAttr ".lr" -type "double3" 172.17041015625 0.072758346796035128 -7.4067835807800311 ;
+	setAttr ".rst" -type "double3" -0.00096565065561289261 -0.00029315082887550024 3.2030622529104766e-05 ;
+	setAttr ".rsrr" -type "double3" 172.17041015625 0.072758346796035128 -7.4067835807800311 ;
+	setAttr -k on ".w0";
+createNode joint -n "spine" -p "hips";
+	rename -uid "0A0C958B-4698-8165-65AD-81BD03FC90C9";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.99780941381411 0.65919141586522056 -0.059825711542934215 0
+		 0.00014978225185972101 9.0610090974473891 99.588644503846595 0 0.66190060891140556 99.586462839149121 -9.0608115955855499 0
+		 4.0957305001542679e-05 3.8020301015705154 97.052725712194786 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "chest" -p "spine";
+	rename -uid "A8B471B1-4148-7EAD-5434-F8BEBB2D496C";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".s" -type "double3" 1 1.0000001192092896 1.0000001192092896 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.999999986336732 0.0016530740495858121 -2.9503175250078506e-09 0
+		 -0.00011426672158926232 -6.9121996283770688 99.760833399036585 0 0.001649120244638147 99.760833385406059 6.9121996293215329 0
+		 5.7957318338888535e-05 4.8304831126180261 110.78137294130065 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "neck" -p "chest";
+	rename -uid "C544282F-41BE-3E4C-EC58-5BB163B11324";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".s" -type "double3" 1 0.99999982118606567 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.984689209284497 -1.7462712728939258 0.11162927773819857 0
+		 0.027863895381161147 4.7897203589048898 99.885217176483877 0 -1.7496134789843212 99.869972922327364 -4.7885012918950949 0
+		 -0.0058185217576714396 3.3222624679011119 124.50485939570571 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "head" -p "neck";
+	rename -uid "7C58145B-45F3-AA98-E058-38984FADA305";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".v" no;
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".s" -type "double3" 1 0.99999994039535522 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.999999642355931 0.0084573967192889121 -3.1533777702888455e-05 0
+		 7.6303798455246152e-06 0.46318789213476474 99.998915391551478 0 0.0084574505091228325 99.998932840992495 -0.46318951963309196 0
+		 0.0023992778012183538 3.728970209772164 132.98651278572018 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "head_parentConstraint1" -p "head";
+	rename -uid "B25BF228-4B0D-0D32-959A-3CBFD92B613C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "headW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.5606732559633652e-08 4.7420445639545508e-07 
+		-7.9398050778500825e-08 ;
+	setAttr ".tg[0].tor" -type "double3" -4.222840643352042e-07 1.5411901864542555e-05 
+		-3.0313760829922963e-06 ;
+	setAttr ".lr" -type "double3" -2.480216753740645 -0.77465375134570247 0.00016905008813161034 ;
+	setAttr ".rst" -type "double3" 6.4659695599069559e-12 0.00084914470371953103 1.9832384970386308e-11 ;
+	setAttr ".rsrr" -type "double3" -2.4802152611271406 -0.77465374876981286 0.00016906233010867142 ;
+	setAttr -k on ".w0";
+createNode joint -n "muscle_neck" -p "neck";
+	rename -uid "AF2D569A-4B1E-B29A-BC34-A1BB1C1A4AEE";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.984689209284497 -1.7462712728939258 0.11162927773819857 0
+		 0.02786400618183427 4.7897140342735449 99.885217479733043 0 -1.7496134772197345 99.869973225653723 -4.7884949662983525 0
+		 -0.007531328025602092 3.9875474686215302 126.55158089525244 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "muscle_neck_parentConstraint3" -p "muscle_neck";
+	rename -uid "028EEF42-442B-AD30-9F1A-14A5ED01C165";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_neckW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.3403238556402028e-08 2.4843720467515597e-08 
+		-1.0575146803137869e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 8.5480379613380378e-15 1.510604316903442e-05 
+		-4.0095068226149068e-06 ;
+	setAttr ".lr" -type "double3" -5.3344176527038278e-06 -3.1022152613193411e-16 -1.0201641565121816e-16 ;
+	setAttr ".rst" -type "double3" -7.6203930223168789e-07 0.00020762372876140801 5.6644245523960119e-05 ;
+	setAttr ".rsrr" -type "double3" -5.3344176521322627e-06 -2.6465700357819854e-21 
+		4.7726856534159106e-22 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "muscle_neck_scaleConstraint4" -p "muscle_neck";
+	rename -uid "03A0D68E-4E73-2C75-E6D7-CEB75A8A8CCF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_neckW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000003 99.999994080562885 100.00001187989947 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "neck_parentConstraint2" -p "neck";
+	rename -uid "51722CBA-404B-8E5D-C8BD-AD92A8B98D86";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "neckW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.0388984267386e-08 1.4780632795918791e-07 
+		-1.0542825834569669e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 1.4836120071015352e-06 1.508115005168146e-05 
+		-3.5711798187284077e-06 ;
+	setAttr ".lr" -type "double3" 8.6869807086972095 0.76190764423985002 0.11640778032074617 ;
+	setAttr ".rst" -type "double3" 9.1162883312252453e-12 0.0013796459481822509 -8.1899937248719474e-10 ;
+	setAttr ".rsrr" -type "double3" 8.6869807088407356 0.76190771487544007 0.1164077803226547 ;
+	setAttr -k on ".w0";
+createNode joint -n "shoulder_r" -p "chest";
+	rename -uid "91CA9EA0-490C-8FB3-4814-8995171FC707";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".s" -type "double3" 0.99999994039535522 1 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 0.0016309266338742788 99.482461164057923 -10.160763267322999 0
+		 99.999999986485875 -0.0016435313965495891 -4.0340009423932842e-05 0 -0.00020712655931659068 -10.160763265291925 -99.482461177418443 0
+		 3.0042842325927217 3.4220329364303859 119.74563033403338 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "upper_arm_r" -p "shoulder_r";
+	rename -uid "4D23E58B-4E60-52A3-B61A-FDA76EEAD936";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".ssc" no;
+	setAttr ".pa" -type "double3" -33.664310455322266 94.170730590820312 -28.031085968017578 ;
+	setAttr ".bps" -type "matrix" 3.4179916144431348 3.7473127809027842 99.871298033748374 0
+		 99.447910134950334 -10.047559935238326 -3.0265033059978168 0 9.921214800337637 99.423364348440131 -4.0700490028707916 0
+		 14.366586534340579 3.4218445632451098 119.74561572544744 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "forearm_r" -p "upper_arm_r";
+	rename -uid "71DF02F6-4971-11E7-8698-40AD063FC97F";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".s" -type "double3" 0.99999994039535522 1 0.99999982118606567 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 2.2167335684967244 3.6462732595436376 99.908912430358484 0
+		 99.616308063512321 8.3821320190339446 -2.5161557472877476 0 -8.4662408341686444 99.581334587577501 -3.446472857990778 0
+		 33.913955387442584 1.4469082383952625 119.15075113325709 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "hand_r" -p "forearm_r";
+	rename -uid "36C7615A-4137-372A-2092-9A9789BADC0F";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 6;
+	setAttr ".s" -type "double3" 1 1 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 10.684126931538248 -99.427595195675806 0.018765150295788402 0
+		 99.39399600864823 10.680025840680266 -2.6020411171803963 0 2.5851425738938056 0.29665762685225605 99.966133447935533 0
+		 57.467453847701705 3.4287978456788455 118.55582884970664 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_thumb1_r" -p "hand_r";
+	rename -uid "B37AAD3D-45F4-B32A-F2FA-32A41686EB56";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 30.035857860769291 16.947116097230708 93.865016878393149 0
+		 61.755131201270409 71.54334778602373 -32.678005931634587 0 -72.692165918104962 67.781577789657405 11.022946130134232 0
+		 59.648552657466858 7.9904083084560478 115.57796855824706 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_thumb2_r" -p "c_thumb1_r";
+	rename -uid "BCDCC03A-4CB6-B9F7-CC69-07A1B3202058";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 0.99999994039535522 0.99999994039535522 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 20.906935497885989 43.921594795615469 87.371569109095461 0
+		 93.956540754924333 15.748968318039843 -30.399624700573579 0 -27.112125810663315 88.446938285576422 -37.974590398462595 0
+		 63.833223427097266 12.838356702168202 113.36361153877991 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_thumb3_r" -p "c_thumb2_r";
+	rename -uid "6B60E222-4453-EE47-8430-C5AC68D6E37F";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 1 0.99999994039535522 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 14.700103140174267 27.488158316163236 95.017397072972614 0
+		 82.141970336818787 50.123641181984894 -27.208722926418467 0 -55.105366154656409 82.048875858188637 -15.211092032063569 0
+		 67.082361499408549 13.382973489896269 112.31234884043499 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_thumb3_r_parentConstraint2" -p "c_thumb3_r";
+	rename -uid "76F776D0-43C6-E828-8B44-F49556366E2F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb3_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.6478795267147461e-05 5.6159256538279583e-06 
+		3.4406536912712227e-06 ;
+	setAttr ".tg[0].tor" -type "double3" 2.7592544476132592e-05 4.9710518772387776e-05 
+		1.4178650955852556e-05 ;
+	setAttr ".lr" -type "double3" -13.0561819208997 6.9383562416726763 -1.2611610248419596 ;
+	setAttr ".rst" -type "double3" -5.2154064400511402e-10 0.00034581296145916096 -7.4505805969238283e-11 ;
+	setAttr ".rsrr" -type "double3" 19.150175094604496 9.0650329589843732 -6.2461547851562518 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_thumb2_r_parentConstraint2" -p "c_thumb2_r";
+	rename -uid "B2340FEF-466A-9343-A6B0-61A304CADCD2";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb2_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.4158272549025241e-07 -6.6774773962663406e-07 
+		2.5139490638537155e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 2.1714597745319712e-05 4.5632756659538465e-05 
+		1.2493420499570657e-05 ;
+	setAttr ".lr" -type "double3" -62.108878536160397 -8.8144493519454503 9.7025044667914297 ;
+	setAttr ".rst" -type "double3" -1.7508864402770997e-09 0.00067762419581413275 1.4901161138336507e-10 ;
+	setAttr ".rsrr" -type "double3" -38.934867858886733 -14.006959915161131 9.3615951538085973 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_thumb1_r_parentConstraint2" -p "c_thumb1_r";
+	rename -uid "7CDBA7E4-4878-A850-7F1F-D79195DE9232";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb1_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.0303083101348421e-07 -3.6353922246767926e-07 
+		5.0965852050666171e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 2.1040524690338437e-05 3.8191713811856349e-06 
+		-7.4753798453553187e-05 ;
+	setAttr ".lr" -type "double3" 91.863448496446182 -134.97017513137916 -12.839323770746676 ;
+	setAttr ".rst" -type "double3" -0.00043030280619859646 0.00027325475588440895 -0.00029069352895021215 ;
+	setAttr ".rsrr" -type "double3" -73.158416748046818 -71.191215515136719 114.99560546874994 ;
+	setAttr -k on ".w0";
+createNode joint -n "c_ring1_r" -p "hand_r";
+	rename -uid "A47343FC-475B-F84E-844A-E3ADD4E80EF8";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1 1.0000001192092896 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 0.60875315868417434 -99.842506249885602 5.5768271444034729 0
+		 97.13335392956435 -0.73494887347724014 -23.760760150737745 0 23.764326130185832 5.5616040963064988 96.975895032230653 0
+		 65.928090144936533 0.53109643007368668 118.99875266532263 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_ring2_r" -p "c_ring1_r";
+	rename -uid "F4A6D0AF-4FF8-C07E-58A9-01870E10D7AA";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 0.99999982118606567 0.99999982118606567 0.99999988079071045 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -1.7638746060259374 -99.981511461746393 0.76170243287703698 0
+		 65.718811499343474 -1.7334793371770745 -75.352705683501995 0 75.352013141696744 -0.82854284481151108 65.73724542215227 0
+		 70.337349524053977 0.49773466625346785 117.92015289098572 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_ring3_r" -p "c_ring2_r";
+	rename -uid "D1337BD0-48CE-AC00-DA15-59893F4F806B";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 35.058410391902974 -92.614516350591529 13.908765943877249 0
+		 48.417322154169518 5.2110177786316934 -87.341885266149234 0 80.16651482527314 37.354929030721415 46.668374604074955 0
+		 72.333347723087527 0.44508575699883168 115.63155794654854 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_ring3_r_parentConstraint2" -p "c_ring3_r";
+	rename -uid "74F35909-412A-CB5B-5D6F-8688FA6DDBFA";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring3_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -3.9635296808171464e-07 -2.848780239617099e-07 
+		-6.3894363918848288e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -2.6011529158708237e-05 -2.3940815846759241e-05 
+		-2.6391490557532413e-05 ;
+	setAttr ".lr" -type "double3" -13.011149551350567 -21.301656459181242 8.7448666952021306 ;
+	setAttr ".rst" -type "double3" 4.6566132980846445e-12 0.00030371779575943838 1.2514647318440097e-10 ;
+	setAttr ".rsrr" -type "double3" -13.0111484527588 -21.301656723022457 8.7448663711547852 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_ring2_r_parentConstraint2" -p "c_ring2_r";
+	rename -uid "639DFB6F-44E0-B1FC-AB56-1B82F5977CFA";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring2_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.1414041775625883e-07 -2.8708650170017334e-07 
+		-5.8826005101764166e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -2.8110589447324928e-05 -3.1636107155532691e-05 
+		-2.7088810960356768e-05 ;
+	setAttr ".lr" -type "double3" -50.025688873463181 3.0042915256197942 -0.6652592686955453 ;
+	setAttr ".rst" -type "double3" -7.9162418564759917e-11 0.00045393891632557139 -6.5570929352887217e-10 ;
+	setAttr ".rsrr" -type "double3" -35.19210052490233 3.0042951107025142 -0.66526287794113137 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_ring1_r_parentConstraint2" -p "c_ring1_r";
+	rename -uid "38AFAE0C-46A2-799D-DD1E-70990B22423C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring1_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.3285257978168376e-07 -5.0444640415037161e-07 
+		-3.9774517489377105e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00011144621393126667 -4.1556167753123878e-05 
+		-8.2600564538377192e-06 ;
+	setAttr ".lr" -type "double3" -8.808509425370378 19.478210924489073 -19.871981471672033 ;
+	setAttr ".rst" -type "double3" 0.00037961149340967262 0.0008163353492792525 0.00012623733084856647 ;
+	setAttr ".rsrr" -type "double3" -12.282837515707682 -3.0349221881839377 -5.8653911330036088 ;
+	setAttr -k on ".w0";
+createNode joint -n "c_middle1_r" -p "hand_r";
+	rename -uid "D0CF3D67-47E0-0F44-A6D0-B88DB2A62FF4";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1 1.0000001192092896 1.0000001192092896 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 4.2407762973692886 -98.95797771387447 13.759799665339456 0
+		 99.135171421638034 2.4558589659610033 -12.891427840394631 0 12.419176964679732 14.187497913586864 98.206314191541679 0
+		 66.946616907986467 5.7147826671805788 119.42550664545328 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_middle2_r" -p "c_middle1_r";
+	rename -uid "FC94AC33-490B-A622-6CCF-919B06B238D0";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 0.99999994039535522 1 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 13.795651999864942 -97.711076386993071 16.193269573840833 0
+		 79.485484150291356 1.1680230235937286 -60.668735934932215 0 59.09094791494217 21.240946986765749 77.827267811412113 0
+		 71.25621568249143 5.8215403460362918 118.86508920566291 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_middle3_r" -p "c_middle2_r";
+	rename -uid "1A27BEEA-44B3-6C5B-CA52-958FD385D748";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 0.99999994039535522 0.99999994039535522 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 27.044886751615351 -93.597060339645452 22.542401554320215 0
+		 55.030412138582903 -4.1834119890831767 -83.391565527155578 0 78.995119966684484 34.958328381044595 50.375458840826298 0
+		 73.876975230029672 5.8600490262149707 116.8647413122461 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_middle3_r_parentConstraint2" -p "c_middle3_r";
+	rename -uid "9F608DE3-4731-45A1-FB0E-0295CEA74857";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle3_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -2.9115371589227836e-07 -2.0358036216805432e-07 
+		-7.0368939432796649e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -2.7353856591764568e-05 -2.9452723772998168e-05 
+		-1.0282264872957942e-05 ;
+	setAttr ".lr" -type "double3" -19.624894119707619 -7.8420747208865862 3.8938617422250887 ;
+	setAttr ".rst" -type "double3" 1.8626451492309571e-10 0.00032971583306789788 -5.0291418807191233e-10 ;
+	setAttr ".rsrr" -type "double3" -19.624893188476566 -7.8420748710632306 3.8938612937927246 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_middle2_r_parentConstraint2" -p "c_middle2_r";
+	rename -uid "B0560CB1-4279-C62B-722A-56BAA59C5342";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle2_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -2.0167809410054362e-07 -3.924045569903001e-07 
+		-5.7977374581241745e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -3.1743113941592331e-05 -3.4761991646750562e-05 
+		-1.7863932018290861e-05 ;
+	setAttr ".lr" -type "double3" -41.563883469260013 -2.1510241235884497 5.2761648588620913 ;
+	setAttr ".rst" -type "double3" 2.9802322443206463e-10 0.0004347194731235504 -2.4214386940002442e-10 ;
+	setAttr ".rsrr" -type "double3" -29.721397399902347 -2.1510231494903578 5.2761635780334508 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_middle1_r_parentConstraint2" -p "c_middle1_r";
+	rename -uid "6B0B5B91-4FA7-53B0-9AA2-59B3A78AA121";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle1_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.6556968525094364e-07 -6.9492711567420435e-07 
+		-2.6827731332446091e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -3.6344052868113814e-05 -3.9482406078299309e-05 
+		5.0650677476104211e-06 ;
+	setAttr ".lr" -type "double3" 16.49669548216918 -4.5884025291259629 -5.076509022675407 ;
+	setAttr ".rst" -type "double3" -0.00012728382963103976 0.00095293949855945412 5.3451241929514115e-05 ;
+	setAttr ".rsrr" -type "double3" -5.9772806729674537 -7.7997795703921868 -3.885312135201608 ;
+	setAttr -k on ".w0";
+createNode joint -n "c_index1_r" -p "hand_r";
+	rename -uid "33D43D9C-4784-19F7-A819-518A4159BCA2";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 0.54138335568251028 -99.984681562553476 1.6644457893649798 0
+		 99.732039774729671 0.41843357783748419 -7.3036937680246989 0 7.2956105827186137 1.6995274961499163 99.719027665212508 0
+		 66.017443178407845 10.411664373318478 119.466727090452 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_index2_r" -p "c_index1_r";
+	rename -uid "62DBFC19-4A48-10C0-DC88-88A0B04BB896";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 14.215279335622373 -97.588247751474597 16.56682268069569 0
+		 66.904134576591645 -2.8621623585592246 -74.267378912219684 0 72.950403681599255 21.641209646517282 64.883708407530236 0
+		 70.795050336597185 10.431709148020257 119.11684894836225 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_index3_r" -p "c_index2_r";
+	rename -uid "1E212C67-4CCA-A720-165C-A38CCD66F12D";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 12.685976457566955 -98.359842855849791 12.822230975764391 0
+		 53.936302391516705 -4.0084142604937849 -84.111862890682303 0 83.246259763214596 17.586252037482055 52.543152842374568 0
+		 74.215465215605263 10.285378717181956 115.31997480137687 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_index3_r_parentConstraint2" -p "c_index3_r";
+	rename -uid "B9369DC0-4055-7EC3-6324-E485E5E9FD95";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index3_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.824155259200211e-07 -1.3491901334816703e-07 
+		-8.1774220205943493e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -5.1365847746760439e-05 -2.2887623176850841e-05 
+		-3.0498582921541893e-05 ;
+	setAttr ".lr" -type "double3" -72.178759476364036 6.1222114458988459 5.518347448394981 ;
+	setAttr ".rst" -type "double3" 1.4901161193847657e-10 0.00051124267280101723 -1.3969838597027718e-09 ;
+	setAttr ".rsrr" -type "double3" -9.2688455581665021 2.1274485588073739 1.0205807685852049 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_index2_r_parentConstraint2" -p "c_index2_r";
+	rename -uid "38B9F2FD-47CD-956B-67EB-82831227F0E8";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index2_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -2.4140663793303932e-07 -3.5077222456436628e-07 
+		-6.0706631700213619e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -4.1432019020143376e-05 -2.7196193744225858e-05 
+		-1.6606427815414425e-05 ;
+	setAttr ".lr" -type "double3" -66.389486062093823 -9.1481793770829842 7.3082022412996865 ;
+	setAttr ".rst" -type "double3" 6.9849197259497232e-12 0.00047904435545206072 1.1874363492481167e-10 ;
+	setAttr ".rsrr" -type "double3" -44.521884918212905 -9.1481781005859411 7.3082027435302752 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_index1_r_parentConstraint2" -p "c_index1_r";
+	rename -uid "1609289E-4316-B170-2D08-558E994AF648";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index1_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.2219792903778172e-07 -7.0204094690495824e-07 
+		-2.8165757527176537e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -3.3484713788726611e-05 -4.199107175024222e-05 
+		-3.7389828982136523e-06 ;
+	setAttr ".lr" -type "double3" 13.298181092240927 -19.439594041599655 21.025312250297358 ;
+	setAttr ".rst" -type "double3" -0.00059781916387494332 0.00096780450960370359 0.00014081928946480416 ;
+	setAttr ".rsrr" -type "double3" -2.7066808787995962 -0.79141783466432369 -5.8463767776229751 ;
+	setAttr -k on ".w0";
+createNode joint -n "hold_r" -p "hand_r";
+	rename -uid "E072C81B-468F-DF04-49EE-CBA9D5BAFAC7";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 0.99999988079071045 0.99999994039535522 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 99.999987932562632 -0.0015082766883325561 -3.900695319059011e-05 0
+		 -3.8331667969515593e-05 -7.6803596121222117e-05 -99.999988072683266 0 0.0015112817514497641 99.999988209097012 -7.6046424751730068e-05 0
+		 65.609092398888578 4.9398662572126266 116.83640866844607 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "hold_r_parentConstraint1" -p "hold_r";
+	rename -uid "FE30BAFE-43A4-81FD-C9A6-848BF88E2EB9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hold_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -2.1846372490585964e-07 -2.5615129828793215e-07 
+		1.1248140880049107e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 9.4129091252442759e-06 -9.5068820205369791e-06 
+		2.7355479280145945e-06 ;
+	setAttr ".lr" -type "double3" -89.829992049984526 -1.4813180681123794 83.863814458768886 ;
+	setAttr ".rst" -type "double3" -6.3287876546382969e-05 0.00082984223961830026 -0.00015038823708892092 ;
+	setAttr ".rsrr" -type "double3" -89.82999226584738 -1.4813180869791363 83.86381519565208 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "hand_r_parentConstraint1" -p "hand_r";
+	rename -uid "4172131B-4686-80F4-831C-8981A5778916";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hand_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.2215063054377141e-07 -1.4783268952101026e-07 
+		2.6916349995076415e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -1.1553877302370318e-05 -7.0610169646973325e-06 
+		1.7468674161158738e-05 ;
+	setAttr ".lr" -type "double3" -87.087057184798496 97.435698841706952 -91.753055404488123 ;
+	setAttr ".rst" -type "double3" 3.0966475383920057e-10 0.0023644219338893858 -1.8626451492309571e-11 ;
+	setAttr ".rsrr" -type "double3" -34.439586639404403 92.341018676757798 -34.413295745849609 ;
+	setAttr -k on ".w0";
+createNode joint -n "forearm_twist_r" -p "forearm_r";
+	rename -uid "79FDB91F-42CA-F51D-DC28-C4B5A0A58240";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 6;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 2.2281339464273202 3.8946672581874306 99.899272275991621 0
+		 99.615889092522281 8.3771537855773435 -2.5484049175564376 0 -8.4679675609402025 99.572342017647628 -3.693053708247005 0
+		 46.712022488869636 2.523179804152984 118.82914386929023 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "forearm_twist_r_parentConstraint1" -p "forearm_twist_r";
+	rename -uid "06B9D6D5-434D-8941-F730-4C9454A65B6D";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 2.944039657393205e-07 -8.046797923100258e-08 
+		6.357425816894135e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 1.9537575364326383e-05 2.7542562566053772e-06 
+		1.1215435040043195e-05 ;
+	setAttr ".lr" -type "double3" -0.0021823292536706108 -0.8352313082968793 0.018577954220704272 ;
+	setAttr ".rst" -type "double3" 1.6285659512282891e-07 0.0012847268581390381 -6.6561624407629467e-08 ;
+	setAttr ".rsrr" -type "double3" -0.0021832410711795096 -0.14136098325252525 0.018575297668576223 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "forearm_twist_r_scaleConstraint1" -p "forearm_twist_r";
+	rename -uid "C72973F5-45E9-A7DD-CBF3-11A255A8D0CA";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 99.99998794792306 99.999982108219527 99.999982260139504 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "forearm_r_parentConstraint2" -p "forearm_r";
+	rename -uid "ECC36A9D-4B0A-FEBF-2ACD-21B92C8F7D10";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 3.2207944215656427e-07 -6.5164454028376894e-08 
+		3.4918409266282426e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 1.6522311492533202e-05 2.3985947641576619e-06 
+		1.0878102379014425e-05 ;
+	setAttr ".lr" -type "double3" 10.555855751037633 0.1267195791006156 -0.67932349443434603 ;
+	setAttr ".rst" -type "double3" 2.1476807887665928e-09 0.0019655886292457578 -1.7462298395470865e-11 ;
+	setAttr ".rsrr" -type "double3" 10.555855751037598 0.1267195791006088 -0.67932349443435658 ;
+	setAttr -k on ".w0";
+createNode joint -n "bicep_r" -p "upper_arm_r";
+	rename -uid "C6445A19-4CB8-E072-0CCB-FC87919CE04D";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 3.9453239921537082 3.6940819240925209 99.853834054978876 0
+		 99.430347211214183 -10.047559573050982 -3.5568836822910792 0 9.9014786755042632 99.425350416098013 -4.0694475044118734 0
+		 17.21135350883419 3.1219520568863692 119.85530951909057 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "bicep_r_parentConstraint4" -p "bicep_r";
+	rename -uid "7250BDA2-42F8-F8E2-75BE-33B02EC3E462";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 3.5427273061827694e-07 -6.5433518745550142e-08 
+		-3.0713440481999757e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 1.598817234862278e-05 -3.1848739772192886e-20 
+		1.1553440345609083e-05 ;
+	setAttr ".lr" -type "double3" 0.011125257088825698 -5.9045331173108583e-06 0.30377072126395199 ;
+	setAttr ".rst" -type "double3" 1.9557831983141315e-05 0.00028558727708680301 -2.0413329858315169e-06 ;
+	setAttr ".rsrr" -type "double3" 0.011125257088734018 -5.9045331363225661e-06 0.303770721263949 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "bicep_r_scaleConstraint4" -p "bicep_r";
+	rename -uid "9B010EEB-4C08-FEBF-45B2-80B32C0EFDB4";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000001 100.00000596046374 100.00000596046381 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "upper_arm_r_parentConstraint2" -p "upper_arm_r";
+	rename -uid "3FF3EB37-4BD7-E70B-62C5-47A75E9872BC";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "upper_arm_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.2846258726995074e-07 -1.2508331934668604e-08 
+		-2.9398335088526296e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 1.7840565036136341e-05 -8.5156740480062957e-07 
+		1.1997355604678354e-05 ;
+	setAttr ".lr" -type "double3" -33.664296317050137 94.170732311052703 -28.031071829369807 ;
+	setAttr ".rst" -type "double3" -6.0312288635566704e-11 0.0011362302303314208 1.0138786166180581e-09 ;
+	setAttr ".rsrr" -type "double3" -33.664303982004242 94.170731299579373 -28.031079477511131 ;
+	setAttr -k on ".w0";
+createNode joint -n "muscle_shoulder_r" -p "shoulder_r";
+	rename -uid "3AEC1957-432A-5253-0257-78971CA6F28C";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 0.0016309266284730321 99.482460899095344 -10.160765861530383 0
+		 99.999999986485875 -0.0016435313965495891 -4.0340009423932842e-05 0 -0.00020712660184631765 -10.160765859499309 -99.482460912455863 0
+		 4.1093280685408136 3.4220136000768191 121.32521194187089 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "muscle_shoulder_r_parentConstraint4" -p "muscle_shoulder_r";
+	rename -uid "058F2E1F-4FAB-3487-D0D9-79A07CDACDD3";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_rW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -8.5197629555722194e-08 -7.9575125599973265e-09 
+		-1.4541782576316108e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 8.3163550885454895e-06 1.0946959625903389e-05 
+		-2.5930713751451227e-05 ;
+	setAttr ".lr" -type "double3" -1.5274636815982674e-05 1.7842061486456361e-05 3.1668990926350886e-06 ;
+	setAttr ".rst" -type "double3" -1.6050509878882958e-05 0.00011050429462962739 -0.00015714148120084869 ;
+	setAttr ".rsrr" -type "double3" -1.5274636816003575e-05 1.7842061476815093e-05 3.1668990924944947e-06 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "muscle_shoulder_r_scaleConstraint4" -p "muscle_shoulder_r";
+	rename -uid "BF552B1E-4ECA-D384-4BB5-C8A8FAE028DF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_rW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000001 100.00000596046374 100.00000596046381 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "shoulder_r_parentConstraint2" -p "shoulder_r";
+	rename -uid "847393D4-493C-4526-25B1-E0BFD7474BE1";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "shoulder_rW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -8.5100977393892659e-08 -1.0964754126874255e-08 
+		-1.5291636145775556e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 8.7672482597213277e-06 9.7951269856079575e-06 
+		-2.6024677629194151e-05 ;
+	setAttr ".lr" -type "double3" 1.5280113698328163e-05 -101.77232907206694 89.999981674974066 ;
+	setAttr ".rst" -type "double3" -0.00030042500535217031 0.00090524555063316477 -3.9325245593768711e-05 ;
+	setAttr ".rsrr" -type "double3" 1.4933899558253818e-05 -101.77232907206694 89.999982013905992 ;
+	setAttr -k on ".w0";
+createNode joint -n "shoulder_l" -p "chest";
+	rename -uid "3A5A232B-47F2-FB31-CE1E-CBB8CBD690BF";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".s" -type "double3" 0.99999988079071045 0.99999994039535522 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".pa" -type "double3" -5.7503380048729014e-06 101.77235412597656 -90.000022888183594 ;
+	setAttr ".bps" -type "matrix" -0.0016535805611694976 -99.482455234066506 10.160762661697321 0
+		 -99.999994025774612 0.0016585984536799196 -3.5095794025973582e-05 0 -0.0001336121189212502 -10.16076326650817 -99.482461177420149 0
+		 -3.0042148822918109 3.4221322613700371 119.7456303338561 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "upper_arm_l" -p "shoulder_l";
+	rename -uid "5F4DC149-4EFE-791E-4916-5C859D5F95BE";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 3.4000358010884932 -6.2083524388243205 -99.749171946510643 0
+		 -99.454866881491157 -10.054217306892141 -2.7642341613838277 0 -9.8573839350676504 99.299391169574406 -6.5163552137659977 0
+		 -14.366515016684458 3.4223205121307347 119.74562814437323 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "forearm_l" -p "upper_arm_l";
+	rename -uid "0113FD15-466A-996D-DBDA-98929CA0ABCA";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".s" -type "double3" 0.99999988079071045 1 0.9999997615814209 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 2.1988379524466142 -6.1074866781064152 -99.78909019988744 0
+		 -99.611236455571841 8.3825600814087657 -2.7079652569634796 0 8.5302670244349486 99.460678558381701 -5.8994228782121665 0
+		 -33.915255059835282 1.4460757126454373 119.20229085811677 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "hand_l" -p "forearm_l";
+	rename -uid "22E95C44-4D9B-DBF9-24F4-94AFB2EAAAC3";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 6;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 10.613328567343091 99.406400117838174 2.3916788587477908 0
+		 -99.40196877981866 10.668880923425739 -2.3286052302647424 0 -2.5699477571930021 -2.1302304545355613 99.944265763316139 0
+		 -57.467652466718079 3.4295707679664309 118.55568965569903 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_thumb1_l" -p "hand_l";
+	rename -uid "857A8D48-44B2-FBEC-E310-FAB35F4C0244";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1 1 1.0000001192092896 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 30.033440504516292 -14.643694729757726 -94.252604372573288 0
+		 -61.811076358137235 72.270782322827287 -30.924457775828429 0 72.645600838545903 67.546225662329903 12.653983858244377 0
+		 -59.652457614789562 8.0605124765313363 115.68967061958539 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_thumb2_l" -p "c_thumb1_l";
+	rename -uid "A9B14448-46B2-1FED-5179-AB829516D3F3";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 0.99999982118606567 0.99999994039535522 0.99999994039535522 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 20.906773661843822 -43.921734203385 -87.371522894619957 0
+		 -93.956324905866737 15.74979115125268 -30.399862213350676 0 27.112996131278969 88.446707487317198 -37.974480636104403 0
+		 -63.83309696842116 12.839181782562253 113.36347592680247 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_thumb3_l" -p "c_thumb2_l";
+	rename -uid "D65BB546-4E9A-A2DF-11FE-D9A80CAA61AF";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 14.700103066057412 -27.488239491374504 -95.017361217816728 0
+		 -82.141468986341195 50.124357483405205 -27.208914119739539 0 55.106122859373301 82.048401560472641 -15.210913014189899 0
+		 -67.082233658539479 13.383826809347054 112.31220409433462 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_thumb3_l_parentConstraint3" -p "c_thumb3_l";
+	rename -uid "D592CE68-4AEC-FB99-9E16-77A4CF0F0572";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb3_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -3.5000892439995825e-06 -8.2707387154101759e-07 
+		-7.2465156321754874e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 3.9240408432403231e-05 2.7944692510273067e-06 
+		-5.4297611670544448e-05 ;
+	setAttr ".lr" -type "double3" 19.150173959702403 -9.065035182163701 6.2461558422902144 ;
+	setAttr ".rst" -type "double3" 4.8428774102049484e-10 0.0003458135575056065 -2.2351741679749184e-10 ;
+	setAttr ".rsrr" -type "double3" 19.150173187255852 -9.0650348663330078 6.2461562156677273 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_thumb2_l_parentConstraint3" -p "c_thumb2_l";
+	rename -uid "32AB019B-47AE-AB45-7251-E2B749454D2C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb2_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -3.1743234960401878e-06 -9.2591612897763299e-07 
+		-1.4640965420653628e-06 ;
+	setAttr ".tg[0].tor" -type "double3" 2.2397992680849003e-05 2.4644508837367742e-05 
+		-5.4325853579581263e-05 ;
+	setAttr ".lr" -type "double3" -38.934856628181386 14.006955165932501 -9.3615893197696387 ;
+	setAttr ".rst" -type "double3" -1.714909785954788e-08 0.00067761643667300995 3.0158272629199344e-09 ;
+	setAttr ".rsrr" -type "double3" -38.934857376637737 14.006954155080171 -9.3615887532582729 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_thumb1_l_parentConstraint3" -p "c_thumb1_l";
+	rename -uid "318467C3-455C-66B6-C5C9-CC834CCEAE2F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_thumb1_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.8439124515623462e-06 -3.1019770988738317e-07 
+		-9.2277149050801196e-08 ;
+	setAttr ".tg[0].tor" -type "double3" -1.3463569400003918e-06 -2.3925171210349737e-06 
+		-6.4711432217037738e-05 ;
+	setAttr ".lr" -type "double3" -73.158438845662772 71.191215558926615 -114.9956341890574 ;
+	setAttr ".rst" -type "double3" 0.00043030280619859695 0.00027325475588440895 -0.00029069235548376818 ;
+	setAttr ".rsrr" -type "double3" -73.15843963623044 71.191215515136733 -114.99563598632811 ;
+	setAttr -k on ".w0";
+createNode joint -n "c_ring1_l" -p "hand_l";
+	rename -uid "5EEBA6CA-4C8D-B426-4287-A0A4C7512969";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1 1.0000001192092896 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 0.53523165106250037 99.948815601281055 -3.1532612493796139 0
+		 -97.136440682136168 -0.22937272375325407 -23.75837685228489 0 -23.753451124793038 3.1901307814361561 97.085505594120377 0
+		 -66.017527404679214 0.50003852379439273 119.5365301940719 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_ring2_l" -p "c_ring1_l";
+	rename -uid "DEC1465F-444F-C7B4-6AB2-8D8A2980D806";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 0.9999997615814209 0.99999982118606567 0.99999988079071045 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -1.764576740896096 99.981481870885972 -0.76163117208762632 0
+		 -65.718558679300543 -1.7338851025332922 -75.352913401854281 0 -75.352209230442526 -0.82912233981683592 65.737008010989044 0
+		 -70.33710763964784 0.49745818520241425 117.91950960947618 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_ring3_l" -p "c_ring2_l";
+	rename -uid "E236EC52-48FE-518D-2CD8-32BC4CC87F6D";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 0.99999994039535522 0.99999988079071045 0.99999988079071045 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 35.057799187583804 92.61475115698012 -13.908581511684545 0
+		 -48.41707179777741 5.2107423082226543 -87.342025061530137 0 -80.166911870474223 37.354319556950877 46.668142450568617 0
+		 -72.333110488706609 0.44479683567631134 115.63090329113804 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_ring3_l_parentConstraint3" -p "c_ring3_l";
+	rename -uid "38D55072-4FEB-A236-9B89-86ACB72D1BF6";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring3_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -7.8249134134011915e-07 -3.8485448203573471e-06 
+		2.4819995807945363e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -3.2381723882632412e-05 2.2021420896948894e-05 
+		1.6746290298260984e-05 ;
+	setAttr ".lr" -type "double3" -13.011151391302795 21.30165672389796 -8.7448683046461433 ;
+	setAttr ".rst" -type "double3" 9.3132264660650279e-12 0.00030371898785233609 7.2126567829400298e-10 ;
+	setAttr ".rsrr" -type "double3" -13.01115131378174 21.301656723022468 -8.7448682785034197 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_ring2_l_parentConstraint3" -p "c_ring2_l";
+	rename -uid "F6BC5D5D-4F80-2C36-84F5-F893951DCD91";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring2_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.7607346081138786e-08 -3.2506620578942601e-06 
+		3.2375675820617289e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -2.4878027350306151e-05 3.1311560637654552e-05 
+		2.1545809915847043e-05 ;
+	setAttr ".lr" -type "double3" -35.192090897533859 -3.0042961746582995 0.66525999264573754 ;
+	setAttr ".rst" -type "double3" -2.0549112712819897e-09 0.00045393077593293532 2.8541881751387165e-08 ;
+	setAttr ".rsrr" -type "double3" -35.192090993830092 -3.0042961644950466 0.66525999521936319 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_ring1_l_parentConstraint3" -p "c_ring1_l";
+	rename -uid "CBF2CE4B-4163-5A98-3AF7-BE9542168A3B";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_ring1_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -3.7481644179493399e-08 4.6567603817493368e-08 
+		1.7645547504230309e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -0.00019099409880065439 3.3924719364236428e-05 
+		-1.0613453088534674e-05 ;
+	setAttr ".lr" -type "double3" -12.282813165491993 3.0348882646742235 5.8653818079880349 ;
+	setAttr ".rst" -type "double3" -0.0003796112164855005 0.00081633567810058822 0.00012624273076653926 ;
+	setAttr ".rsrr" -type "double3" -12.28281307220459 3.0348885059356694 5.865380764007571 ;
+	setAttr -k on ".w0";
+createNode joint -n "c_middle1_l" -p "hand_l";
+	rename -uid "0C18F840-4F78-E3EE-FBA4-EFB31E44758C";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1 1.0000001192092896 1.0000001192092896 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 4.1666363584590655 99.265708165741998 -11.355772539086104 0
+		 -99.138907872750607 2.6953590399219065 -12.814568994340409 0 -12.41439645565776 11.791927035864436 98.523268287347776 0
+		 -66.818714837529399 5.7001473742727038 118.89850177941319 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_middle2_l" -p "c_middle1_l";
+	rename -uid "B3C83644-450A-14D2-4837-DA8B55C6FA01";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".s" -type "double3" 0.99999994039535522 1 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 13.795012047659519 97.711174469669643 -16.193150239158605 0
+		 -79.485304208477942 1.1675113937650199 -60.668975318041575 0 -59.091329202417242 21.240468073351337 77.827106013412461 0
+		 -71.256015654115885 5.8212626410846688 118.86445459766273 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_middle3_l" -p "c_middle2_l";
+	rename -uid "B9878A08-4646-680E-D335-35894031689D";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 1 1.0000001192092896 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 27.04429545549209 93.597262655175925 -22.542247025935744 0
+		 -55.030137194041451 -4.183734376864173 -83.391750071508397 0 -78.995518449754442 34.957731296050866 50.375250751447183 0
+		 -73.87677661597985 5.859758953679628 116.86410361183368 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_middle3_l_parentConstraint3" -p "c_middle3_l";
+	rename -uid "060BAEB8-4489-9A9A-81E1-9EB334059A98";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle3_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.0742240418437633e-06 -2.4187482553372776e-06 
+		2.5499377572657523e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -3.1090465762119271e-05 2.5038635519489898e-05 
+		1.4258958968029769e-05 ;
+	setAttr ".lr" -type "double3" -19.62489316483796 7.8420748938369087 -3.8938610678294086 ;
+	setAttr ".rst" -type "double3" 7.450580541412677e-11 0.00032971613109111705 4.0046870708465576e-10 ;
+	setAttr ".rsrr" -type "double3" -19.62489318847657 7.8420748710632324 -3.8938610553741482 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_middle2_l_parentConstraint3" -p "c_middle2_l";
+	rename -uid "C29CB795-429D-1D53-82DA-85B64CFE4B66";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle2_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -6.9866465256751554e-07 -1.4664309047951464e-06 
+		3.4363294454919923e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -3.028582990458601e-05 2.7257151697063453e-05 
+		7.1784098781050535e-06 ;
+	setAttr ".lr" -type "double3" -29.721381374630411 2.1510230989534178 -5.276163016614289 ;
+	setAttr ".rst" -type "double3" -3.5191714239934945e-09 0.0004347222844016374 2.2915435036185982e-08 ;
+	setAttr ".rsrr" -type "double3" -29.721381656159746 2.1510230794850407 -5.2761630435578528 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_middle1_l_parentConstraint3" -p "c_middle1_l";
+	rename -uid "04F823E8-4AC7-5F1B-D478-C6B086DF0EB8";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_middle1_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.9920255548200316e-07 1.7251634290005314e-07 
+		1.6903269788315356e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -0.00020046934326363981 3.1928823285271401e-05 
+		-2.5402556292713298e-05 ;
+	setAttr ".lr" -type "double3" -5.9772549531101458 7.7997453153562502 3.8853064419715775 ;
+	setAttr ".rst" -type "double3" 0.00012728390283882603 0.00095294035971164816 5.3457003086809786e-05 ;
+	setAttr ".rsrr" -type "double3" -5.9772548675537127 7.7997455596923881 3.885305404663085 ;
+	setAttr -k on ".w0";
+createNode joint -n "c_index1_l" -p "hand_l";
+	rename -uid "571A9B0A-4A46-2D44-FF43-E1B1566EB865";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 0.46835919376546992 99.995992612308854 0.76142765476339669 0
+		 -99.733433921987057 0.52255062621281401 -7.2778220642091869 0 -7.2815097443893775 -0.72530863724061678 99.731902201865893 0
+		 -66.489533224919953 10.374817461236493 119.88077335787681 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_index2_l" -p "c_index1_l";
+	rename -uid "D2E7D7E2-432B-4D57-4044-AA971FBD7D83";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 14.214643256946058 97.588348102688471 -16.566705655986933 0
+		 -66.903879780415124 -2.8625784270142658 -74.267588814533028 0 -72.950753071979321 21.640647625125013 64.883497888581886 0
+		 -70.794896311556883 10.431427483634257 119.11621300043181 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode joint -n "c_index3_l" -p "c_index2_l";
+	rename -uid "7B620FAA-4B78-E62F-E2E8-529CE3D073EC";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".s" -type "double3" 1.0000001192092896 0.99999994039535522 1.0000001192092896 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 12.685323914199071 98.35992943236576 -12.822119410618631 0
+		 -53.936011245380058 -4.0087324687366701 -84.11203236460608 0 -83.246550548991692 17.585630349509238 52.54291486220604 0
+		 -74.215302766956952 10.285079259157124 115.3193401603495 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "c_index3_l_parentConstraint2" -p "c_index3_l";
+	rename -uid "56408590-48F0-5684-E1C1-C7841981D4C3";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index3_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -9.7967146743016541e-06 4.4668827674172465e-05 
+		6.2116334550381687e-05 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00021063412425138415 -7.3751192992874996e-05 
+		0.00059165701409375924 ;
+	setAttr ".lr" -type "double3" -9.2688444467258595 -2.1274477997806565 -1.0205803893788103 ;
+	setAttr ".rst" -type "double3" -7.4505806524349796e-11 0.00051124207675456892 -2.0489096863585133e-10 ;
+	setAttr ".rsrr" -type "double3" -9.2688446044921857 -2.1274478435516353 -1.0205804109573369 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_index2_l_parentConstraint2" -p "c_index2_l";
+	rename -uid "87C485A7-4C27-7AC1-4227-5399AF153EA1";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index2_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.0309459468906823e-05 5.4260119889448791e-05 
+		5.3655349034045231e-05 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00010140857100607156 1.7472433392319917e-05 
+		0.00058817994156678763 ;
+	setAttr ".lr" -type "double3" -44.521866361201994 9.1481791926956468 -7.3082037968878595 ;
+	setAttr ".rst" -type "double3" -7.9986137449528095e-10 0.00047904591299793078 5.5019261413491448e-09 ;
+	setAttr ".rsrr" -type "double3" -44.521866418803917 9.1481792931962893 -7.3082038189073719 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "c_index1_l_parentConstraint2" -p "c_index1_l";
+	rename -uid "6911B31D-4183-DFCD-3408-328750653B32";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "c_index1_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 5.818083669062446e-08 7.6874804773439115e-05 
+		1.066640882925185e-06 ;
+	setAttr ".tg[0].tor" -type "double3" 0.0002939965571748793 0.00039993529483078356 
+		0.00038219793004657483 ;
+	setAttr ".lr" -type "double3" -9.162439726934176 2.0049197700129846 5.5285944258342283 ;
+	setAttr ".rst" -type "double3" 0.00059781923890113789 0.00096780523657798883 0.00014082530513406243 ;
+	setAttr ".rsrr" -type "double3" -2.706656932830811 0.79138404130935647 5.8463659286499023 ;
+	setAttr -k on ".w0";
+createNode joint -n "hold_l" -p "hand_l";
+	rename -uid "D55C05E8-4F07-71B7-1F35-A7BC76342E41";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 7;
+	setAttr ".s" -type "double3" 0.99999994039535522 1 1 ;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 99.999960294021903 0.073046179528293814 -0.013594304295019732 0
+		 -0.015363041604931738 2.4256839941293911 -99.970568647911236 0 -0.07269894129520095 99.970525695082017 2.4256975199518749 0
+		 -65.610629211960969 4.97607777238282 116.87454457913242 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "hold_l_parentConstraint1" -p "hold_l";
+	rename -uid "301C6558-4151-7B73-C75D-F8A4C21AE716";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hold_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.0883842961106894e-07 -1.1260995920281402e-06 
+		-3.0451919474927536e-09 ;
+	setAttr ".tg[0].tor" -type "double3" -2.3503724189760838e-05 -5.3798602128433187e-06 
+		-3.8889567224956451e-05 ;
+	setAttr ".lr" -type "double3" -89.829998855137489 1.4813128700415488 -83.863820970694405 ;
+	setAttr ".rst" -type "double3" 6.3287881202995914e-05 0.00082984223961830145 -0.00015038821846246274 ;
+	setAttr ".rsrr" -type "double3" -89.829999096036545 1.4813129643372562 -83.863822025841287 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "hand_l_parentConstraint1" -p "hand_l";
+	rename -uid "395BBAFB-4027-DD76-ACF0-5590A277D9AD";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hand_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.7978466324564123e-08 -1.0278101896687986e-07 
+		1.1878340121995735e-06 ;
+	setAttr ".tg[0].tor" -type "double3" -4.6973926259780348e-05 2.9655507905407192e-05 
+		-2.1066975011208723e-06 ;
+	setAttr ".lr" -type "double3" -87.087017967634154 -97.435689670506193 91.753020543488859 ;
+	setAttr ".rst" -type "double3" 7.5438036395425452e-09 0.0023644157111635876 9.8899328296320192e-10 ;
+	setAttr ".rsrr" -type "double3" -34.4396408186049 -92.341019701733913 34.413350103389618 ;
+	setAttr -k on ".w0";
+createNode joint -n "forearm_twist_l" -p "forearm_l";
+	rename -uid "D535B70D-483D-6B59-966E-B39CAF2577AC";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 6;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 2.2100787846635246 -6.3555754008754528 -99.773336287290988 0
+		 -99.610825787603062 8.3767880204868792 -2.7400820565025312 0 8.5319488626178082 99.445614063574894 -6.1457078436134198 0
+		 -46.712673713645898 2.5224433270596145 118.8560558006935 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "forearm_twist_l_parentConstraint3" -p "forearm_twist_l";
+	rename -uid "F627CA06-45D4-2641-3B5B-8F968E700D91";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.8464282568686486e-06 1.0975302593863035e-07 
+		2.9952178950409804e-08 ;
+	setAttr ".tg[0].tor" -type "double3" -3.2926215074679818e-07 2.9478496478231849e-05 
+		-4.6233544264689377e-05 ;
+	setAttr ".lr" -type "double3" -0.01229813496502964 0.97615652130219432 -0.030080791695541995 ;
+	setAttr ".rst" -type "double3" -1.2378604588025866e-07 0.0012847231752089077 -6.4984247140492674e-08 ;
+	setAttr ".rsrr" -type "double3" -0.0021833320683405568 0.14136108756065366 -0.018575310707092296 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "forearm_twist_l_scaleConstraint1" -p "forearm_twist_l";
+	rename -uid "CE932F62-492C-D333-8AEC-CCAF90741161";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_twist_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 99.999981941791106 99.99997608999378 99.999970442641825 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "forearm_l_parentConstraint2" -p "forearm_l";
+	rename -uid "5EF190E5-4E12-2BFD-F2E1-FEAE4967E74E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "forearm_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -2.1681335576317906e-06 5.0682678324420746e-07 
+		-1.2660036781575458e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -9.0478289242760424e-07 2.945198301013426e-05 
+		-4.6352298210288527e-05 ;
+	setAttr ".lr" -type "double3" 10.555856326541143 -0.12671993009568999 0.67932357700569979 ;
+	setAttr ".rst" -type "double3" 1.1299333761982666e-08 0.0019655889951178617 5.3126282210241853e-10 ;
+	setAttr ".rsrr" -type "double3" 10.555856326541196 -0.12671993009558985 0.67932357700569934 ;
+	setAttr -k on ".w0";
+createNode joint -n "bicep_l" -p "upper_arm_l";
+	rename -uid "ED7BF821-4927-AB5E-DF18-53B331AD22FD";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 5;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 3.9274052249086124 -6.1550516000189734 -99.733097928446881 0
+		 -99.43738645211387 -10.067291905829432 -3.2944560483540211 0 -9.8376460389028093 99.301378609252353 -6.5158057546836616 0
+		 -17.211461038435978 3.1270751852161345 119.86304810097526 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "bicep_l_parentConstraint4" -p "bicep_l";
+	rename -uid "9752EE98-485E-FB1C-3095-8A96CA28E33F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 3.2560758775446177e-06 -1.7840421016046548e-08 
+		2.3586268117714583e-07 ;
+	setAttr ".tg[0].tor" -type "double3" 0.00011540080900484863 3.4312717803692231e-05 
+		5.3810951058578847e-06 ;
+	setAttr ".lr" -type "double3" 0.011601408633482338 5.2751439844399289e-05 -0.30375085044466155 ;
+	setAttr ".rst" -type "double3" -1.9486071764642788e-05 0.00028558236619920338 -2.0357764604034962e-06 ;
+	setAttr ".rsrr" -type "double3" 0.011601408633498098 5.2751439846817609e-05 -0.30375085044465439 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "bicep_l_scaleConstraint1" -p "bicep_l";
+	rename -uid "A75BA7CE-4BD1-D40D-9B41-748C71FD7074";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bicep_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 99.999994039535508 100.00000589892842 100.00000006153397 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "upper_arm_l_parentConstraint2" -p "upper_arm_l";
+	rename -uid "CD6BE206-4F32-66F8-9193-5BADEE1EA085";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "upper_arm_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -3.6555835337992447e-06 4.8891387889327125e-07 
+		-9.1119435754460915e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 0.000115749957844852 3.3605230351315585e-05 
+		4.0615023022998413e-06 ;
+	setAttr ".lr" -type "double3" -33.665310418637603 -94.170707749775374 28.032123880513087 ;
+	setAttr ".rst" -type "double3" 2.0267633335513402e-09 0.0011362359929075866 -3.4701658284674862e-08 ;
+	setAttr ".rsrr" -type "double3" -33.665317677894848 -94.170706722590964 28.032131117061017 ;
+	setAttr -k on ".w0";
+createNode joint -n "muscle_shoulder_l" -p "shoulder_l";
+	rename -uid "7B3C5BD1-47F5-81DB-0BA3-CA8FDFD8BBA6";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 4;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -0.0016535805566898017 -99.48245489340033 10.16076599710656 0
+		 -99.99998806531049 0.0016585983548197481 -3.5095791934101245e-05 0 -0.00013361217436185568 -10.16076660191721 -99.482460836754001 0
+		 -4.1092584764222604 3.4221508137261973 121.32522365249672 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "muscle_shoulder_l_parentConstraint4" -p "muscle_shoulder_l";
+	rename -uid "7F2217F5-48CD-565D-346A-40BA7D2ACA17";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_lW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.2281539117253714e-07 1.5544115701260354e-08 
+		-1.4849502932179349e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -1.0534504844931326e-05 -3.1437512771951525e-05 
+		-3.2621125538874989e-05 ;
+	setAttr ".lr" -type "double3" 3.2482493620545034e-06 -7.8102248173771794e-06 1.4059926795525293e-16 ;
+	setAttr ".rst" -type "double3" 1.6050784864911487e-05 0.00011050431944435543 -0.00015714176690446503 ;
+	setAttr ".rsrr" -type "double3" 3.2482493620753878e-06 -7.8102248089778296e-06 -7.400447922133174e-21 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "muscle_shoulder_l_scaleConstraint4" -p "muscle_shoulder_l";
+	rename -uid "4813198F-49DE-4EC2-8211-05B9011A04DB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_shoulder_lW0" -dv 1 -min 0 
+		-at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 99.999994039535522 100.00000589892845 100.00000006153395 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "shoulder_l_parentConstraint2" -p "shoulder_l";
+	rename -uid "46B8CCBA-46ED-AD53-D10D-14891F811176";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "shoulder_lW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.0825159826310938e-07 1.8415732232490713e-08 
+		-1.5479450141242523e-07 ;
+	setAttr ".tg[0].tor" -type "double3" -1.0985395629422431e-05 -3.0285682021512107e-05 
+		-3.2711607767527188e-05 ;
+	setAttr ".lr" -type "double3" 1.4587714831949167e-05 101.77230858149936 -89.999955032074652 ;
+	setAttr ".rst" -type "double3" 0.00030042498072730734 0.00090524554657648085 -3.9325218958990161e-05 ;
+	setAttr ".rsrr" -type "double3" 1.4933929506356698e-05 101.77230858149942 -89.999954693142271 ;
+	setAttr -k on ".w0";
+createNode joint -n "breast_L" -p "chest";
+	rename -uid "FA1837DA-40A5-475B-ABD3-02AE332ED160";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 9.9097267747093589 -0.53559480772085255 -99.506345597781305 0
+		 -28.064995890323093 95.923920005380751 -3.3112748642317671 0 95.46808822579537 28.254586726600468 9.3554826080880495 0
+		 -8.291011474965849 13.032632545355733 110.65811361738271 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "breast_L_parentConstraint4" -p "breast_L";
+	rename -uid "4D487CCC-4556-6EDC-1204-7F8795EB65EF";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_LW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.4210854715202004e-16 -7.105427357601002e-17 
+		8.8817841970012525e-18 ;
+	setAttr ".tg[0].tor" -type "double3" 7.4203930995884537e-10 -6.6420533239113973e-09 
+		1.0785308633163006e-09 ;
+	setAttr ".lr" -type "double3" 73.193070848871372 4.2507860229033563 -95.702921657076544 ;
+	setAttr ".rst" -type "double3" 0.00082911996736242098 -6.8993363912421839e-05 0.0008173869550002536 ;
+	setAttr ".rsrr" -type "double3" 73.193070848871415 4.2507860229030072 -95.702921657076544 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "breast_L_scaleConstraint4" -p "breast_L";
+	rename -uid "25255A42-47A9-AB7C-298E-EEB4190EB936";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_LW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100 100.00001192092893 100.00001192092898 ;
+	setAttr -k on ".w0";
+createNode joint -n "breast_R" -p "chest";
+	rename -uid "73D3D40D-44DE-D0B4-41BD-7DB53AC885C7";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" 9.9097576783149801 0.53526810038369632 99.50634427809247 0
+		 28.068165860329678 95.922992336713847 -3.3112793836842611 0 -95.467153076845619 28.257742147539567 9.3554950448820531 0
+		 8.2913985602859981 13.032358425838607 110.65811361787195 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "breast_R_parentConstraint4" -p "breast_R";
+	rename -uid "CC05E561-487A-B987-E0DE-ACA164931E69";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_RW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.6505130417954206e-08 6.8244558448782304e-10 
+		4.3548473982468752e-09 ;
+	setAttr ".tg[0].tor" -type "double3" -6.5209372997515109e-05 -1.9178040564159326e-05 
+		-8.9474004746984243e-06 ;
+	setAttr ".lr" -type "double3" 73.192985577662938 -4.2507834901735402 95.702918622115888 ;
+	setAttr ".rst" -type "double3" -0.00082912103638916961 -6.8993227912408369e-05 0.00081738621360603338 ;
+	setAttr ".rsrr" -type "double3" 73.192985577662952 -4.2507834901732062 95.702918622115902 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "breast_R_scaleConstraint3" -p "breast_R";
+	rename -uid "1B21EC63-4BBF-4746-F8E2-39A7F2CF0743";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "breast_RW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100 100.00001192092893 100.00001192092898 ;
+	setAttr -k on ".w0";
+createNode joint -n "muscle_chest" -p "chest";
+	rename -uid "75E8B7B0-4701-B5F0-BC47-C6818A7B70F1";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 3;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.999999985941486 0.0016768124303628317 1.6418277104814811e-06 0
+		 -0.00011426654651183468 -6.9121891821496462 99.760828148075731 0 0.001672915447583965 99.760828134049021 6.9121891830939139 0
+		 9.9652751022476482e-05 7.3530183140255385 113.61020911153685 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode scaleConstraint -n "muscle_chest_scaleConstraint3" -p "muscle_chest";
+	rename -uid "F210CD5B-4AA6-8F43-FCD9-4990594DACFD";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_chestW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100 100.00001192092891 100.00001192092898 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "muscle_chest_parentConstraint4" -p "muscle_chest";
+	rename -uid "01225419-4B3B-63D5-EAFD-02B91F57D854";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "muscle_chestW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.7067713887174152e-19 -9.3316121763109544e-09 
+		2.7472266506123333e-09 ;
+	setAttr ".tg[0].tor" -type "double3" -5.9406052892649486 -1.328168773247004e-11 
+		1.3820433234264312e-12 ;
+	setAttr ".lr" -type "double3" -3.0549741332972991 0.12603861353227605 0.006726561764736465 ;
+	setAttr ".rst" -type "double3" -2.92803362568804e-10 0.00026476776509523294 0.00027120270919946316 ;
+	setAttr ".rsrr" -type "double3" 2.2004230635006135e-06 -3.9269614781407165e-05 -4.3419662639080347e-23 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "chest_parentConstraint2" -p "chest";
+	rename -uid "C1877005-4E8C-E889-3BB2-A28FC05D85FD";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "chestW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.6948275983173713e-08 3.0765042311031723e-07 
+		-1.2103829760690133e-09 ;
+	setAttr ".tg[0].tor" -type "double3" -3.0070712150439752e-07 2.5561319082999462e-05 
+		-4.5503055528032732e-07 ;
+	setAttr ".lr" -type "double3" -9.162263897113748 0.37831112381223564 4.4923499168926407e-07 ;
+	setAttr ".rst" -type "double3" 1.0479361517814252e-11 0.0013744131928114444 7.9233323027616552e-12 ;
+	setAttr ".rsrr" -type "double3" -9.1622638971130694 0.3783111238121683 4.4923477302136313e-07 ;
+	setAttr -k on ".w0";
+createNode joint -n "torso_width" -p "spine";
+	rename -uid "C42A705C-4B7D-ACE0-8E99-A4A61EFCD352";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 2;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.997809387990813 0.66076290148622052 -0.038858603683807488 0
+		 9.7278579677992361e-05 5.8853974155742801 99.82666025291681 0 0.66190459890606756 99.824485300312432 -5.885269833711229 0
+		 7.6214771765849049e-05 5.9347392501903311 100.67188233343362 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "torso_width_parentConstraint3" -p "torso_width";
+	rename -uid "F63AE66B-42CD-25AB-9933-B781DACA8070";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "torso_widthW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.5617187081253847e-07 6.005168680758288e-06 
+		-1.2618217469428928e-05 ;
+	setAttr ".tg[0].tor" -type "double3" 1.3970043172216131 -0.37816335449274302 -0.0092270124204334187 ;
+	setAttr ".lr" -type "double3" -0.76292332817889352 0.00040814062051708875 0.0050412435990823071 ;
+	setAttr ".rst" -type "double3" 1.1856914557203424e-06 0.00037975089815803112 0.0001795962626791141 ;
+	setAttr ".rsrr" -type "double3" -1.8246357616866089 0.00017702135769198451 0.012049993992997429 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "torso_width_scaleConstraint2" -p "torso_width";
+	rename -uid "26FE106B-48BB-D188-858D-AD8E7CE41B6C";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "torso_widthW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999986 100.00000000000001 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "spine_parentConstraint2" -p "spine";
+	rename -uid "482CBAD0-4719-BB2E-50CC-2FAA2BC8AD0F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "spineW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 4.712903005216207e-09 5.3139055893325347e-08 
+		-4.838461249434545e-08 ;
+	setAttr ".tg[0].tor" -type "double3" -8.5114542113017076e-07 1.4718583407817516e-05 
+		-4.5194782593949601e-06 ;
+	setAttr ".lr" -type "double3" -2.3105411221590959 -0.37703152451252447 0.015251672588435669 ;
+	setAttr ".rst" -type "double3" -1.1975206192157202e-08 0.001328465306270391 8.4825245620746834e-06 ;
+	setAttr ".rsrr" -type "double3" -2.3105411221597749 -0.37703152451252442 0.015251672588440153 ;
+	setAttr -k on ".w0";
+createNode joint -n "belly" -p "hips";
+	rename -uid "DBAC3EE4-4BDD-645A-026B-57B10DBA2730";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.9999999838561 -9.9178591120990811e-11 -0.0017968811411373229 0
+		 1.4062028754965872e-10 99.999999999999147 -1.334528327845419e-05 0 0.0017968811411373212 -1.3345283264243335e-05 -99.999999983855176 0
+		 3.0686922756562388e-11 8.0454029376298859 91.742360206285909 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "belly_parentConstraint3" -p "belly";
+	rename -uid "BB3A69A5-4B5B-070D-DA19-2788B3DB32E5";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bellyW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.5828939721462821e-15 -1.3661427544775506e-11 
+		-8.9342222509003485e-11 ;
+	setAttr ".tg[0].tor" -type "double3" 7.8529942066473597e-06 -5.008586095436431e-06 
+		-5.0093169424378062e-06 ;
+	setAttr ".lr" -type "double3" 90.22427760732333 0.00095056806967517529 -0.0010245399775055983 ;
+	setAttr ".rst" -type "double3" -2.261470334488232e-09 0.00085115006747209958 0.0005964354389763869 ;
+	setAttr ".rsrr" -type "double3" 84.467849988725121 0.00084781208983635253 -0.0010192733291924708 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "belly_scaleConstraint4" -p "belly";
+	rename -uid "D8A5D58A-4A7A-71BE-C973-908536785D81";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "bellyW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
+	setAttr -k on ".w0";
+createNode joint -n "waist" -p "hips";
+	rename -uid "D69F5BD0-4E36-3F7A-C1BF-6CB5EE7845EA";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.999999986208522 0.0016537469540638956 -0.00015303423292035591 0
+		 1.4616729366259429e-10 9.2144273300540114 99.574560691404955 0 0.0016608125916313114 99.574566612778852 -9.2144278780059139 0
+		 2.0762269785639265e-11 3.2323370357955206 89.77359935879673 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "waist_parentConstraint3" -p "waist";
+	rename -uid "0D13A0AE-4D73-BD30-22F9-F7ACE2AD6F92";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "waistW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.1695737854220367e-12 6.1183790478480663e-09 
+		2.4043692858910506e-09 ;
+	setAttr ".tg[0].tor" -type "double3" 5.2869857699496841 -0.00094348383496379229 
+		-9.357124276259799e-05 ;
+	setAttr ".lr" -type "double3" 5.5112482369804843 -6.3886739788915689e-07 -8.64013544618061e-05 ;
+	setAttr ".rst" -type "double3" -9.8432626193036461e-09 0.00060879091708483711 0.00013635048396359458 ;
+	setAttr ".rsrr" -type "double3" -0.24517938182331289 -4.503166586136928e-06 9.5402675528465501e-06 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "waist_scaleConstraint4" -p "waist";
+	rename -uid "8C017506-439B-C3D0-AEB2-36804D8D92DB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "waistW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
+	setAttr -k on ".w0";
+createNode joint -n "butt" -p "hips";
+	rename -uid "6D94C8A4-43E1-0E36-0B0A-42810566EEBD";
+	addAttr -ci true -h true -sn "fbxID" -ln "filmboxTypeID" -at "short";
+	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
+	setAttr ".uoc" 1;
+	setAttr ".oc" 1;
+	setAttr ".ssc" no;
+	setAttr ".bps" -type "matrix" -99.999999986208778 -0.00055721496217782775 0.0015645322230017375 0
+		 4.8513951319759108e-10 -94.203659981129249 -33.551012595148173 0 0.0016607980757766278 -33.551016590113477 94.203671198088728 0
+		 1.4335960410014786e-11 1.534729090957657 84.679244765450861 1;
+	setAttr ".radi" 0.03;
+	setAttr ".fbxID" 5;
+createNode parentConstraint -n "butt_parentConstraint3" -p "butt";
+	rename -uid "3C9628D4-41F3-46AD-DD27-CA9C4015A950";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "buttW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -1.3087407588300086e-05 4.6781586355848502e-08 
+		1.2128661239785288e-08 ;
+	setAttr ".tg[0].tor" -type "double3" 0.53696052663194971 0.023097280383890684 -0.058684408943248598 ;
+	setAttr ".lr" -type "double3" -114.59872991276096 -0.06159137877301251 0.0048893237123083504 ;
+	setAttr ".rst" -type "double3" -1.4264857596160661e-07 8.5362477356730763e-05 1.6491685776632433e-05 ;
+	setAttr ".rsrr" -type "double3" -114.59872991276096 -0.061591378773012524 0.0048893237123083574 ;
+	setAttr -k on ".w0";
+createNode scaleConstraint -n "butt_scaleConstraint2" -p "butt";
+	rename -uid "615F2AE3-40C8-A3E2-342D-B28D94B25D21";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "buttW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".o" -type "double3" 100.00000000000003 99.999999999999957 100.00000000000001 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "hips_parentConstraint4" -p "hips";
+	rename -uid "34FC0752-46C6-3D01-92BA-46942128EDA0";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hipsW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -7.6172931538640503e-15 -2.3388987813177663e-08 
+		1.679693504286206e-09 ;
+	setAttr ".tg[0].tor" -type "double3" 9.0613392049369678e-06 4.5028465684373289e-06 
+		-5.4685215924102382e-06 ;
+	setAttr ".lr" -type "double3" 5.5321426406765966 -0.00094713468504365914 -9.1734837054701756e-05 ;
+	setAttr ".rst" -type "double3" 1.1294686221496873e-06 0.83845494787149866 0.012882795943033359 ;
+	setAttr ".rsrr" -type "double3" 5.5321426406765948 -0.00094713468504365838 -9.1734837054701716e-05 ;
+	setAttr -k on ".w0";
+createNode parentConstraint -n "HumanArmature_parentConstraint2" -p "HumanArmature";
+	rename -uid "38D1EC4B-487F-ADC0-2FA2-469FF38A4068";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "MainRoot_CTRW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "96F8181A-4E8E-3643-ED58-3BBFAF1591C5";
 	setAttr -s 7 ".lnk";
@@ -295,7 +2827,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6DA466EC-489B-7328-F8D0-FC9C011BF537";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 41 -ast -30 -aet 250 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 30 -ast -30 -aet 250 ";
 	setAttr ".st" 6;
 createNode animLayer -n "BaseAnimation";
 	rename -uid "B0241C8F-4634-7C09-63A6-D790F4C02970";
@@ -2946,49 +5478,55 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ils" yes;
 	setAttr ".ilu" yes;
 	setAttr ".eti" 2;
-	setAttr ".esi" 3;
-	setAttr ".ssn" -type "string" "Human_AnimRig:Export";
-	setAttr -s 12 ".ac";
-	setAttr ".ac[0].acn" -type "string" "CloseFist";
+	setAttr ".esi" 2;
+	setAttr ".ssn" -type "string" "";
+	setAttr -s 11 ".ac";
+	setAttr ".ac[0].acn" -type "string" "OpenFist";
 	setAttr ".ac[0].ace" 5;
-	setAttr ".ac[1].acn" -type "string" "OpenFIst";
+	setAttr ".ac[1].acn" -type "string" "CloseFist";
 	setAttr ".ac[1].acs" 5;
 	setAttr ".ac[1].ace" 10;
-	setAttr ".ac[2].acn" -type "string" "Fist";
-	setAttr ".ac[2].acs" 11;
-	setAttr ".ac[2].ace" 12;
-	setAttr ".ac[3].acn" -type "string" "OpenPalm";
-	setAttr ".ac[3].acs" 13;
-	setAttr ".ac[3].ace" 14;
-	setAttr ".ac[4].acn" -type "string" "Relaxed";
-	setAttr ".ac[4].acs" 15;
-	setAttr ".ac[4].ace" 16;
-	setAttr ".ac[5].acn" -type "string" "Tense";
-	setAttr ".ac[5].acs" 17;
-	setAttr ".ac[5].ace" 18;
-	setAttr ".ac[6].acn" -type "string" "Gun";
-	setAttr ".ac[6].acs" 19;
-	setAttr ".ac[6].ace" 20;
-	setAttr ".ac[7].acn" -type "string" "Melee";
-	setAttr ".ac[7].acs" 21;
-	setAttr ".ac[7].ace" 22;
-	setAttr ".ac[8].acn" -type "string" "Point";
-	setAttr ".ac[8].acs" 23;
-	setAttr ".ac[8].ace" 24;
-	setAttr ".ac[9].acn" -type "string" "Bird";
-	setAttr ".ac[9].acs" 25;
-	setAttr ".ac[9].ace" 26;
-	setAttr ".ac[10].acn" -type "string" "Thumb";
-	setAttr ".ac[10].acs" 27;
-	setAttr ".ac[10].ace" 28;
-	setAttr ".ac[11].acn" -type "string" "OK";
-	setAttr ".ac[11].acs" 29;
-	setAttr ".ac[11].ace" 30;
+	setAttr ".ac[2].acn" -type "string" "OpenPalm";
+	setAttr ".ac[2].acs" 13;
+	setAttr ".ac[2].ace" 14;
+	setAttr ".ac[2].asn" -type "string" "";
+	setAttr ".ac[3].acn" -type "string" "Relaxed";
+	setAttr ".ac[3].acs" 15;
+	setAttr ".ac[3].ace" 16;
+	setAttr ".ac[3].asn" -type "string" "";
+	setAttr ".ac[4].acn" -type "string" "Tense";
+	setAttr ".ac[4].acs" 17;
+	setAttr ".ac[4].ace" 18;
+	setAttr ".ac[4].asn" -type "string" "";
+	setAttr ".ac[5].acn" -type "string" "Gun";
+	setAttr ".ac[5].acs" 19;
+	setAttr ".ac[5].ace" 20;
+	setAttr ".ac[5].asn" -type "string" "";
+	setAttr ".ac[6].acn" -type "string" "Melee";
+	setAttr ".ac[6].acs" 21;
+	setAttr ".ac[6].ace" 22;
+	setAttr ".ac[6].asn" -type "string" "";
+	setAttr ".ac[7].acn" -type "string" "Point";
+	setAttr ".ac[7].acs" 23;
+	setAttr ".ac[7].ace" 24;
+	setAttr ".ac[7].asn" -type "string" "";
+	setAttr ".ac[8].acn" -type "string" "Bird";
+	setAttr ".ac[8].acs" 25;
+	setAttr ".ac[8].ace" 26;
+	setAttr ".ac[8].asn" -type "string" "";
+	setAttr ".ac[9].acn" -type "string" "Thumb";
+	setAttr ".ac[9].acs" 27;
+	setAttr ".ac[9].ace" 28;
+	setAttr ".ac[9].asn" -type "string" "";
+	setAttr ".ac[10].acn" -type "string" "OK";
+	setAttr ".ac[10].acs" 29;
+	setAttr ".ac[10].ace" 30;
+	setAttr ".ac[10].asn" -type "string" "";
 	setAttr ".ic" no;
 	setAttr ".ebm" yes;
 	setAttr ".fv" -type "string" "FBX201800";
 	setAttr ".exp" -type "string" "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Characters/Humanoid/Misc";
-	setAttr ".exf" -type "string" "Human@FingerPoses_DEF";
+	setAttr ".exf" -type "string" "HumanFingerPosesDEF";
 createNode gameFbxExporter -n "gameExporterPreset3";
 	rename -uid "45A6D31F-466F-2B99-E45D-3C90E1332332";
 	setAttr ".pn" -type "string" "TE Anim Default";
@@ -3863,7 +6401,7 @@ createNode animCurveTA -n "Ring3_CTR_R_rotate_Fingers_inputBZ";
 	setAttr -s 12 ".kiy[3:11]"  0 0 0 0 0 0 0 0 0;
 createNode reference -n "HumanAnimRigRN";
 	rename -uid "FD8A6585-4DB0-B038-B95E-D8A91E549284";
-	setAttr -s 140 ".phl";
+	setAttr -s 1305 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -4004,11 +6542,1179 @@ createNode reference -n "HumanAnimRigRN";
 	setAttr ".phl[138]" 0;
 	setAttr ".phl[139]" 0;
 	setAttr ".phl[140]" 0;
+	setAttr ".phl[141]" 0;
+	setAttr ".phl[142]" 0;
+	setAttr ".phl[143]" 0;
+	setAttr ".phl[144]" 0;
+	setAttr ".phl[145]" 0;
+	setAttr ".phl[146]" 0;
+	setAttr ".phl[147]" 0;
+	setAttr ".phl[148]" 0;
+	setAttr ".phl[149]" 0;
+	setAttr ".phl[150]" 0;
+	setAttr ".phl[151]" 0;
+	setAttr ".phl[152]" 0;
+	setAttr ".phl[153]" 0;
+	setAttr ".phl[154]" 0;
+	setAttr ".phl[155]" 0;
+	setAttr ".phl[156]" 0;
+	setAttr ".phl[157]" 0;
+	setAttr ".phl[158]" 0;
+	setAttr ".phl[159]" 0;
+	setAttr ".phl[160]" 0;
+	setAttr ".phl[161]" 0;
+	setAttr ".phl[162]" 0;
+	setAttr ".phl[163]" 0;
+	setAttr ".phl[164]" 0;
+	setAttr ".phl[165]" 0;
+	setAttr ".phl[166]" 0;
+	setAttr ".phl[167]" 0;
+	setAttr ".phl[168]" 0;
+	setAttr ".phl[169]" 0;
+	setAttr ".phl[170]" 0;
+	setAttr ".phl[171]" 0;
+	setAttr ".phl[172]" 0;
+	setAttr ".phl[173]" 0;
+	setAttr ".phl[174]" 0;
+	setAttr ".phl[175]" 0;
+	setAttr ".phl[176]" 0;
+	setAttr ".phl[177]" 0;
+	setAttr ".phl[178]" 0;
+	setAttr ".phl[179]" 0;
+	setAttr ".phl[180]" 0;
+	setAttr ".phl[181]" 0;
+	setAttr ".phl[182]" 0;
+	setAttr ".phl[183]" 0;
+	setAttr ".phl[184]" 0;
+	setAttr ".phl[185]" 0;
+	setAttr ".phl[186]" 0;
+	setAttr ".phl[187]" 0;
+	setAttr ".phl[188]" 0;
+	setAttr ".phl[189]" 0;
+	setAttr ".phl[190]" 0;
+	setAttr ".phl[191]" 0;
+	setAttr ".phl[192]" 0;
+	setAttr ".phl[193]" 0;
+	setAttr ".phl[194]" 0;
+	setAttr ".phl[195]" 0;
+	setAttr ".phl[196]" 0;
+	setAttr ".phl[197]" 0;
+	setAttr ".phl[198]" 0;
+	setAttr ".phl[199]" 0;
+	setAttr ".phl[200]" 0;
+	setAttr ".phl[201]" 0;
+	setAttr ".phl[202]" 0;
+	setAttr ".phl[203]" 0;
+	setAttr ".phl[204]" 0;
+	setAttr ".phl[205]" 0;
+	setAttr ".phl[206]" 0;
+	setAttr ".phl[207]" 0;
+	setAttr ".phl[208]" 0;
+	setAttr ".phl[209]" 0;
+	setAttr ".phl[210]" 0;
+	setAttr ".phl[211]" 0;
+	setAttr ".phl[212]" 0;
+	setAttr ".phl[213]" 0;
+	setAttr ".phl[214]" 0;
+	setAttr ".phl[215]" 0;
+	setAttr ".phl[216]" 0;
+	setAttr ".phl[217]" 0;
+	setAttr ".phl[218]" 0;
+	setAttr ".phl[219]" 0;
+	setAttr ".phl[220]" 0;
+	setAttr ".phl[221]" 0;
+	setAttr ".phl[222]" 0;
+	setAttr ".phl[223]" 0;
+	setAttr ".phl[224]" 0;
+	setAttr ".phl[225]" 0;
+	setAttr ".phl[226]" 0;
+	setAttr ".phl[227]" 0;
+	setAttr ".phl[228]" 0;
+	setAttr ".phl[229]" 0;
+	setAttr ".phl[230]" 0;
+	setAttr ".phl[231]" 0;
+	setAttr ".phl[232]" 0;
+	setAttr ".phl[233]" 0;
+	setAttr ".phl[234]" 0;
+	setAttr ".phl[235]" 0;
+	setAttr ".phl[236]" 0;
+	setAttr ".phl[237]" 0;
+	setAttr ".phl[238]" 0;
+	setAttr ".phl[239]" 0;
+	setAttr ".phl[240]" 0;
+	setAttr ".phl[241]" 0;
+	setAttr ".phl[242]" 0;
+	setAttr ".phl[243]" 0;
+	setAttr ".phl[244]" 0;
+	setAttr ".phl[245]" 0;
+	setAttr ".phl[246]" 0;
+	setAttr ".phl[247]" 0;
+	setAttr ".phl[248]" 0;
+	setAttr ".phl[249]" 0;
+	setAttr ".phl[250]" 0;
+	setAttr ".phl[251]" 0;
+	setAttr ".phl[252]" 0;
+	setAttr ".phl[253]" 0;
+	setAttr ".phl[254]" 0;
+	setAttr ".phl[255]" 0;
+	setAttr ".phl[256]" 0;
+	setAttr ".phl[257]" 0;
+	setAttr ".phl[258]" 0;
+	setAttr ".phl[259]" 0;
+	setAttr ".phl[260]" 0;
+	setAttr ".phl[261]" 0;
+	setAttr ".phl[262]" 0;
+	setAttr ".phl[263]" 0;
+	setAttr ".phl[264]" 0;
+	setAttr ".phl[265]" 0;
+	setAttr ".phl[266]" 0;
+	setAttr ".phl[267]" 0;
+	setAttr ".phl[268]" 0;
+	setAttr ".phl[269]" 0;
+	setAttr ".phl[270]" 0;
+	setAttr ".phl[271]" 0;
+	setAttr ".phl[272]" 0;
+	setAttr ".phl[273]" 0;
+	setAttr ".phl[274]" 0;
+	setAttr ".phl[275]" 0;
+	setAttr ".phl[276]" 0;
+	setAttr ".phl[277]" 0;
+	setAttr ".phl[278]" 0;
+	setAttr ".phl[279]" 0;
+	setAttr ".phl[280]" 0;
+	setAttr ".phl[281]" 0;
+	setAttr ".phl[282]" 0;
+	setAttr ".phl[283]" 0;
+	setAttr ".phl[284]" 0;
+	setAttr ".phl[285]" 0;
+	setAttr ".phl[286]" 0;
+	setAttr ".phl[287]" 0;
+	setAttr ".phl[288]" 0;
+	setAttr ".phl[289]" 0;
+	setAttr ".phl[290]" 0;
+	setAttr ".phl[291]" 0;
+	setAttr ".phl[292]" 0;
+	setAttr ".phl[293]" 0;
+	setAttr ".phl[294]" 0;
+	setAttr ".phl[295]" 0;
+	setAttr ".phl[296]" 0;
+	setAttr ".phl[297]" 0;
+	setAttr ".phl[298]" 0;
+	setAttr ".phl[299]" 0;
+	setAttr ".phl[300]" 0;
+	setAttr ".phl[301]" 0;
+	setAttr ".phl[302]" 0;
+	setAttr ".phl[303]" 0;
+	setAttr ".phl[304]" 0;
+	setAttr ".phl[305]" 0;
+	setAttr ".phl[306]" 0;
+	setAttr ".phl[307]" 0;
+	setAttr ".phl[308]" 0;
+	setAttr ".phl[309]" 0;
+	setAttr ".phl[310]" 0;
+	setAttr ".phl[311]" 0;
+	setAttr ".phl[312]" 0;
+	setAttr ".phl[313]" 0;
+	setAttr ".phl[314]" 0;
+	setAttr ".phl[315]" 0;
+	setAttr ".phl[316]" 0;
+	setAttr ".phl[317]" 0;
+	setAttr ".phl[318]" 0;
+	setAttr ".phl[319]" 0;
+	setAttr ".phl[320]" 0;
+	setAttr ".phl[321]" 0;
+	setAttr ".phl[322]" 0;
+	setAttr ".phl[323]" 0;
+	setAttr ".phl[324]" 0;
+	setAttr ".phl[325]" 0;
+	setAttr ".phl[326]" 0;
+	setAttr ".phl[327]" 0;
+	setAttr ".phl[328]" 0;
+	setAttr ".phl[329]" 0;
+	setAttr ".phl[330]" 0;
+	setAttr ".phl[331]" 0;
+	setAttr ".phl[332]" 0;
+	setAttr ".phl[333]" 0;
+	setAttr ".phl[334]" 0;
+	setAttr ".phl[335]" 0;
+	setAttr ".phl[336]" 0;
+	setAttr ".phl[337]" 0;
+	setAttr ".phl[338]" 0;
+	setAttr ".phl[339]" 0;
+	setAttr ".phl[340]" 0;
+	setAttr ".phl[341]" 0;
+	setAttr ".phl[342]" 0;
+	setAttr ".phl[343]" 0;
+	setAttr ".phl[344]" 0;
+	setAttr ".phl[345]" 0;
+	setAttr ".phl[346]" 0;
+	setAttr ".phl[347]" 0;
+	setAttr ".phl[348]" 0;
+	setAttr ".phl[349]" 0;
+	setAttr ".phl[350]" 0;
+	setAttr ".phl[351]" 0;
+	setAttr ".phl[352]" 0;
+	setAttr ".phl[353]" 0;
+	setAttr ".phl[354]" 0;
+	setAttr ".phl[355]" 0;
+	setAttr ".phl[356]" 0;
+	setAttr ".phl[357]" 0;
+	setAttr ".phl[358]" 0;
+	setAttr ".phl[359]" 0;
+	setAttr ".phl[360]" 0;
+	setAttr ".phl[361]" 0;
+	setAttr ".phl[362]" 0;
+	setAttr ".phl[363]" 0;
+	setAttr ".phl[364]" 0;
+	setAttr ".phl[365]" 0;
+	setAttr ".phl[366]" 0;
+	setAttr ".phl[367]" 0;
+	setAttr ".phl[368]" 0;
+	setAttr ".phl[369]" 0;
+	setAttr ".phl[370]" 0;
+	setAttr ".phl[371]" 0;
+	setAttr ".phl[372]" 0;
+	setAttr ".phl[373]" 0;
+	setAttr ".phl[374]" 0;
+	setAttr ".phl[375]" 0;
+	setAttr ".phl[376]" 0;
+	setAttr ".phl[377]" 0;
+	setAttr ".phl[378]" 0;
+	setAttr ".phl[379]" 0;
+	setAttr ".phl[380]" 0;
+	setAttr ".phl[381]" 0;
+	setAttr ".phl[382]" 0;
+	setAttr ".phl[383]" 0;
+	setAttr ".phl[384]" 0;
+	setAttr ".phl[385]" 0;
+	setAttr ".phl[386]" 0;
+	setAttr ".phl[387]" 0;
+	setAttr ".phl[388]" 0;
+	setAttr ".phl[389]" 0;
+	setAttr ".phl[390]" 0;
+	setAttr ".phl[391]" 0;
+	setAttr ".phl[392]" 0;
+	setAttr ".phl[393]" 0;
+	setAttr ".phl[394]" 0;
+	setAttr ".phl[395]" 0;
+	setAttr ".phl[396]" 0;
+	setAttr ".phl[397]" 0;
+	setAttr ".phl[398]" 0;
+	setAttr ".phl[399]" 0;
+	setAttr ".phl[400]" 0;
+	setAttr ".phl[401]" 0;
+	setAttr ".phl[402]" 0;
+	setAttr ".phl[403]" 0;
+	setAttr ".phl[404]" 0;
+	setAttr ".phl[405]" 0;
+	setAttr ".phl[406]" 0;
+	setAttr ".phl[407]" 0;
+	setAttr ".phl[408]" 0;
+	setAttr ".phl[409]" 0;
+	setAttr ".phl[410]" 0;
+	setAttr ".phl[411]" 0;
+	setAttr ".phl[412]" 0;
+	setAttr ".phl[413]" 0;
+	setAttr ".phl[414]" 0;
+	setAttr ".phl[415]" 0;
+	setAttr ".phl[416]" 0;
+	setAttr ".phl[417]" 0;
+	setAttr ".phl[418]" 0;
+	setAttr ".phl[419]" 0;
+	setAttr ".phl[420]" 0;
+	setAttr ".phl[421]" 0;
+	setAttr ".phl[422]" 0;
+	setAttr ".phl[423]" 0;
+	setAttr ".phl[424]" 0;
+	setAttr ".phl[425]" 0;
+	setAttr ".phl[426]" 0;
+	setAttr ".phl[427]" 0;
+	setAttr ".phl[428]" 0;
+	setAttr ".phl[429]" 0;
+	setAttr ".phl[430]" 0;
+	setAttr ".phl[431]" 0;
+	setAttr ".phl[432]" 0;
+	setAttr ".phl[433]" 0;
+	setAttr ".phl[434]" 0;
+	setAttr ".phl[435]" 0;
+	setAttr ".phl[436]" 0;
+	setAttr ".phl[437]" 0;
+	setAttr ".phl[438]" 0;
+	setAttr ".phl[439]" 0;
+	setAttr ".phl[440]" 0;
+	setAttr ".phl[441]" 0;
+	setAttr ".phl[442]" 0;
+	setAttr ".phl[443]" 0;
+	setAttr ".phl[444]" 0;
+	setAttr ".phl[445]" 0;
+	setAttr ".phl[446]" 0;
+	setAttr ".phl[447]" 0;
+	setAttr ".phl[448]" 0;
+	setAttr ".phl[449]" 0;
+	setAttr ".phl[450]" 0;
+	setAttr ".phl[451]" 0;
+	setAttr ".phl[452]" 0;
+	setAttr ".phl[453]" 0;
+	setAttr ".phl[454]" 0;
+	setAttr ".phl[455]" 0;
+	setAttr ".phl[456]" 0;
+	setAttr ".phl[457]" 0;
+	setAttr ".phl[458]" 0;
+	setAttr ".phl[459]" 0;
+	setAttr ".phl[460]" 0;
+	setAttr ".phl[461]" 0;
+	setAttr ".phl[462]" 0;
+	setAttr ".phl[463]" 0;
+	setAttr ".phl[464]" 0;
+	setAttr ".phl[465]" 0;
+	setAttr ".phl[466]" 0;
+	setAttr ".phl[467]" 0;
+	setAttr ".phl[468]" 0;
+	setAttr ".phl[469]" 0;
+	setAttr ".phl[470]" 0;
+	setAttr ".phl[471]" 0;
+	setAttr ".phl[472]" 0;
+	setAttr ".phl[473]" 0;
+	setAttr ".phl[474]" 0;
+	setAttr ".phl[475]" 0;
+	setAttr ".phl[476]" 0;
+	setAttr ".phl[477]" 0;
+	setAttr ".phl[478]" 0;
+	setAttr ".phl[479]" 0;
+	setAttr ".phl[480]" 0;
+	setAttr ".phl[481]" 0;
+	setAttr ".phl[482]" 0;
+	setAttr ".phl[483]" 0;
+	setAttr ".phl[484]" 0;
+	setAttr ".phl[485]" 0;
+	setAttr ".phl[486]" 0;
+	setAttr ".phl[487]" 0;
+	setAttr ".phl[488]" 0;
+	setAttr ".phl[489]" 0;
+	setAttr ".phl[490]" 0;
+	setAttr ".phl[491]" 0;
+	setAttr ".phl[492]" 0;
+	setAttr ".phl[493]" 0;
+	setAttr ".phl[494]" 0;
+	setAttr ".phl[495]" 0;
+	setAttr ".phl[496]" 0;
+	setAttr ".phl[497]" 0;
+	setAttr ".phl[498]" 0;
+	setAttr ".phl[499]" 0;
+	setAttr ".phl[500]" 0;
+	setAttr ".phl[501]" 0;
+	setAttr ".phl[502]" 0;
+	setAttr ".phl[503]" 0;
+	setAttr ".phl[504]" 0;
+	setAttr ".phl[505]" 0;
+	setAttr ".phl[506]" 0;
+	setAttr ".phl[507]" 0;
+	setAttr ".phl[508]" 0;
+	setAttr ".phl[509]" 0;
+	setAttr ".phl[510]" 0;
+	setAttr ".phl[511]" 0;
+	setAttr ".phl[512]" 0;
+	setAttr ".phl[513]" 0;
+	setAttr ".phl[514]" 0;
+	setAttr ".phl[515]" 0;
+	setAttr ".phl[516]" 0;
+	setAttr ".phl[517]" 0;
+	setAttr ".phl[518]" 0;
+	setAttr ".phl[519]" 0;
+	setAttr ".phl[520]" 0;
+	setAttr ".phl[521]" 0;
+	setAttr ".phl[522]" 0;
+	setAttr ".phl[523]" 0;
+	setAttr ".phl[524]" 0;
+	setAttr ".phl[525]" 0;
+	setAttr ".phl[526]" 0;
+	setAttr ".phl[527]" 0;
+	setAttr ".phl[528]" 0;
+	setAttr ".phl[529]" 0;
+	setAttr ".phl[530]" 0;
+	setAttr ".phl[531]" 0;
+	setAttr ".phl[532]" 0;
+	setAttr ".phl[533]" 0;
+	setAttr ".phl[534]" 0;
+	setAttr ".phl[535]" 0;
+	setAttr ".phl[536]" 0;
+	setAttr ".phl[537]" 0;
+	setAttr ".phl[538]" 0;
+	setAttr ".phl[539]" 0;
+	setAttr ".phl[540]" 0;
+	setAttr ".phl[541]" 0;
+	setAttr ".phl[542]" 0;
+	setAttr ".phl[543]" 0;
+	setAttr ".phl[544]" 0;
+	setAttr ".phl[545]" 0;
+	setAttr ".phl[546]" 0;
+	setAttr ".phl[547]" 0;
+	setAttr ".phl[548]" 0;
+	setAttr ".phl[549]" 0;
+	setAttr ".phl[550]" 0;
+	setAttr ".phl[551]" 0;
+	setAttr ".phl[552]" 0;
+	setAttr ".phl[553]" 0;
+	setAttr ".phl[554]" 0;
+	setAttr ".phl[555]" 0;
+	setAttr ".phl[556]" 0;
+	setAttr ".phl[557]" 0;
+	setAttr ".phl[558]" 0;
+	setAttr ".phl[559]" 0;
+	setAttr ".phl[560]" 0;
+	setAttr ".phl[561]" 0;
+	setAttr ".phl[562]" 0;
+	setAttr ".phl[563]" 0;
+	setAttr ".phl[564]" 0;
+	setAttr ".phl[565]" 0;
+	setAttr ".phl[566]" 0;
+	setAttr ".phl[567]" 0;
+	setAttr ".phl[568]" 0;
+	setAttr ".phl[569]" 0;
+	setAttr ".phl[570]" 0;
+	setAttr ".phl[571]" 0;
+	setAttr ".phl[572]" 0;
+	setAttr ".phl[573]" 0;
+	setAttr ".phl[574]" 0;
+	setAttr ".phl[575]" 0;
+	setAttr ".phl[576]" 0;
+	setAttr ".phl[577]" 0;
+	setAttr ".phl[578]" 0;
+	setAttr ".phl[579]" 0;
+	setAttr ".phl[580]" 0;
+	setAttr ".phl[581]" 0;
+	setAttr ".phl[582]" 0;
+	setAttr ".phl[583]" 0;
+	setAttr ".phl[584]" 0;
+	setAttr ".phl[585]" 0;
+	setAttr ".phl[586]" 0;
+	setAttr ".phl[587]" 0;
+	setAttr ".phl[588]" 0;
+	setAttr ".phl[589]" 0;
+	setAttr ".phl[590]" 0;
+	setAttr ".phl[591]" 0;
+	setAttr ".phl[592]" 0;
+	setAttr ".phl[593]" 0;
+	setAttr ".phl[594]" 0;
+	setAttr ".phl[595]" 0;
+	setAttr ".phl[596]" 0;
+	setAttr ".phl[597]" 0;
+	setAttr ".phl[598]" 0;
+	setAttr ".phl[599]" 0;
+	setAttr ".phl[600]" 0;
+	setAttr ".phl[601]" 0;
+	setAttr ".phl[602]" 0;
+	setAttr ".phl[603]" 0;
+	setAttr ".phl[604]" 0;
+	setAttr ".phl[605]" 0;
+	setAttr ".phl[606]" 0;
+	setAttr ".phl[607]" 0;
+	setAttr ".phl[608]" 0;
+	setAttr ".phl[609]" 0;
+	setAttr ".phl[610]" 0;
+	setAttr ".phl[611]" 0;
+	setAttr ".phl[612]" 0;
+	setAttr ".phl[613]" 0;
+	setAttr ".phl[614]" 0;
+	setAttr ".phl[615]" 0;
+	setAttr ".phl[616]" 0;
+	setAttr ".phl[617]" 0;
+	setAttr ".phl[618]" 0;
+	setAttr ".phl[619]" 0;
+	setAttr ".phl[620]" 0;
+	setAttr ".phl[621]" 0;
+	setAttr ".phl[622]" 0;
+	setAttr ".phl[623]" 0;
+	setAttr ".phl[624]" 0;
+	setAttr ".phl[625]" 0;
+	setAttr ".phl[626]" 0;
+	setAttr ".phl[627]" 0;
+	setAttr ".phl[628]" 0;
+	setAttr ".phl[629]" 0;
+	setAttr ".phl[630]" 0;
+	setAttr ".phl[631]" 0;
+	setAttr ".phl[632]" 0;
+	setAttr ".phl[633]" 0;
+	setAttr ".phl[634]" 0;
+	setAttr ".phl[635]" 0;
+	setAttr ".phl[636]" 0;
+	setAttr ".phl[637]" 0;
+	setAttr ".phl[638]" 0;
+	setAttr ".phl[639]" 0;
+	setAttr ".phl[640]" 0;
+	setAttr ".phl[641]" 0;
+	setAttr ".phl[642]" 0;
+	setAttr ".phl[643]" 0;
+	setAttr ".phl[644]" 0;
+	setAttr ".phl[645]" 0;
+	setAttr ".phl[646]" 0;
+	setAttr ".phl[647]" 0;
+	setAttr ".phl[648]" 0;
+	setAttr ".phl[649]" 0;
+	setAttr ".phl[650]" 0;
+	setAttr ".phl[651]" 0;
+	setAttr ".phl[652]" 0;
+	setAttr ".phl[653]" 0;
+	setAttr ".phl[654]" 0;
+	setAttr ".phl[655]" 0;
+	setAttr ".phl[656]" 0;
+	setAttr ".phl[657]" 0;
+	setAttr ".phl[658]" 0;
+	setAttr ".phl[659]" 0;
+	setAttr ".phl[660]" 0;
+	setAttr ".phl[661]" 0;
+	setAttr ".phl[662]" 0;
+	setAttr ".phl[663]" 0;
+	setAttr ".phl[664]" 0;
+	setAttr ".phl[665]" 0;
+	setAttr ".phl[666]" 0;
+	setAttr ".phl[667]" 0;
+	setAttr ".phl[668]" 0;
+	setAttr ".phl[669]" 0;
+	setAttr ".phl[670]" 0;
+	setAttr ".phl[671]" 0;
+	setAttr ".phl[672]" 0;
+	setAttr ".phl[673]" 0;
+	setAttr ".phl[674]" 0;
+	setAttr ".phl[675]" 0;
+	setAttr ".phl[676]" 0;
+	setAttr ".phl[677]" 0;
+	setAttr ".phl[678]" 0;
+	setAttr ".phl[679]" 0;
+	setAttr ".phl[680]" 0;
+	setAttr ".phl[681]" 0;
+	setAttr ".phl[682]" 0;
+	setAttr ".phl[683]" 0;
+	setAttr ".phl[684]" 0;
+	setAttr ".phl[685]" 0;
+	setAttr ".phl[686]" 0;
+	setAttr ".phl[687]" 0;
+	setAttr ".phl[688]" 0;
+	setAttr ".phl[689]" 0;
+	setAttr ".phl[690]" 0;
+	setAttr ".phl[691]" 0;
+	setAttr ".phl[692]" 0;
+	setAttr ".phl[693]" 0;
+	setAttr ".phl[694]" 0;
+	setAttr ".phl[695]" 0;
+	setAttr ".phl[696]" 0;
+	setAttr ".phl[697]" 0;
+	setAttr ".phl[698]" 0;
+	setAttr ".phl[699]" 0;
+	setAttr ".phl[700]" 0;
+	setAttr ".phl[701]" 0;
+	setAttr ".phl[702]" 0;
+	setAttr ".phl[703]" 0;
+	setAttr ".phl[704]" 0;
+	setAttr ".phl[705]" 0;
+	setAttr ".phl[706]" 0;
+	setAttr ".phl[707]" 0;
+	setAttr ".phl[708]" 0;
+	setAttr ".phl[709]" 0;
+	setAttr ".phl[710]" 0;
+	setAttr ".phl[711]" 0;
+	setAttr ".phl[712]" 0;
+	setAttr ".phl[713]" 0;
+	setAttr ".phl[714]" 0;
+	setAttr ".phl[715]" 0;
+	setAttr ".phl[716]" 0;
+	setAttr ".phl[717]" 0;
+	setAttr ".phl[718]" 0;
+	setAttr ".phl[719]" 0;
+	setAttr ".phl[720]" 0;
+	setAttr ".phl[721]" 0;
+	setAttr ".phl[722]" 0;
+	setAttr ".phl[723]" 0;
+	setAttr ".phl[724]" 0;
+	setAttr ".phl[725]" 0;
+	setAttr ".phl[726]" 0;
+	setAttr ".phl[727]" 0;
+	setAttr ".phl[728]" 0;
+	setAttr ".phl[729]" 0;
+	setAttr ".phl[730]" 0;
+	setAttr ".phl[731]" 0;
+	setAttr ".phl[732]" 0;
+	setAttr ".phl[733]" 0;
+	setAttr ".phl[734]" 0;
+	setAttr ".phl[735]" 0;
+	setAttr ".phl[736]" 0;
+	setAttr ".phl[737]" 0;
+	setAttr ".phl[738]" 0;
+	setAttr ".phl[739]" 0;
+	setAttr ".phl[740]" 0;
+	setAttr ".phl[741]" 0;
+	setAttr ".phl[742]" 0;
+	setAttr ".phl[743]" 0;
+	setAttr ".phl[744]" 0;
+	setAttr ".phl[745]" 0;
+	setAttr ".phl[746]" 0;
+	setAttr ".phl[747]" 0;
+	setAttr ".phl[748]" 0;
+	setAttr ".phl[749]" 0;
+	setAttr ".phl[750]" 0;
+	setAttr ".phl[751]" 0;
+	setAttr ".phl[752]" 0;
+	setAttr ".phl[753]" 0;
+	setAttr ".phl[754]" 0;
+	setAttr ".phl[755]" 0;
+	setAttr ".phl[756]" 0;
+	setAttr ".phl[757]" 0;
+	setAttr ".phl[758]" 0;
+	setAttr ".phl[759]" 0;
+	setAttr ".phl[760]" 0;
+	setAttr ".phl[761]" 0;
+	setAttr ".phl[762]" 0;
+	setAttr ".phl[763]" 0;
+	setAttr ".phl[764]" 0;
+	setAttr ".phl[765]" 0;
+	setAttr ".phl[766]" 0;
+	setAttr ".phl[767]" 0;
+	setAttr ".phl[768]" 0;
+	setAttr ".phl[769]" 0;
+	setAttr ".phl[770]" 0;
+	setAttr ".phl[771]" 0;
+	setAttr ".phl[772]" 0;
+	setAttr ".phl[773]" 0;
+	setAttr ".phl[774]" 0;
+	setAttr ".phl[775]" 0;
+	setAttr ".phl[776]" 0;
+	setAttr ".phl[777]" 0;
+	setAttr ".phl[778]" 0;
+	setAttr ".phl[779]" 0;
+	setAttr ".phl[780]" 0;
+	setAttr ".phl[781]" 0;
+	setAttr ".phl[782]" 0;
+	setAttr ".phl[783]" 0;
+	setAttr ".phl[784]" 0;
+	setAttr ".phl[785]" 0;
+	setAttr ".phl[786]" 0;
+	setAttr ".phl[787]" 0;
+	setAttr ".phl[788]" 0;
+	setAttr ".phl[789]" 0;
+	setAttr ".phl[790]" 0;
+	setAttr ".phl[791]" 0;
+	setAttr ".phl[792]" 0;
+	setAttr ".phl[793]" 0;
+	setAttr ".phl[794]" 0;
+	setAttr ".phl[795]" 0;
+	setAttr ".phl[796]" 0;
+	setAttr ".phl[797]" 0;
+	setAttr ".phl[798]" 0;
+	setAttr ".phl[799]" 0;
+	setAttr ".phl[800]" 0;
+	setAttr ".phl[801]" 0;
+	setAttr ".phl[802]" 0;
+	setAttr ".phl[803]" 0;
+	setAttr ".phl[804]" 0;
+	setAttr ".phl[805]" 0;
+	setAttr ".phl[806]" 0;
+	setAttr ".phl[807]" 0;
+	setAttr ".phl[808]" 0;
+	setAttr ".phl[809]" 0;
+	setAttr ".phl[810]" 0;
+	setAttr ".phl[811]" 0;
+	setAttr ".phl[812]" 0;
+	setAttr ".phl[813]" 0;
+	setAttr ".phl[814]" 0;
+	setAttr ".phl[815]" 0;
+	setAttr ".phl[816]" 0;
+	setAttr ".phl[817]" 0;
+	setAttr ".phl[818]" 0;
+	setAttr ".phl[819]" 0;
+	setAttr ".phl[820]" 0;
+	setAttr ".phl[821]" 0;
+	setAttr ".phl[822]" 0;
+	setAttr ".phl[823]" 0;
+	setAttr ".phl[824]" 0;
+	setAttr ".phl[825]" 0;
+	setAttr ".phl[826]" 0;
+	setAttr ".phl[827]" 0;
+	setAttr ".phl[828]" 0;
+	setAttr ".phl[829]" 0;
+	setAttr ".phl[830]" 0;
+	setAttr ".phl[831]" 0;
+	setAttr ".phl[832]" 0;
+	setAttr ".phl[833]" 0;
+	setAttr ".phl[834]" 0;
+	setAttr ".phl[835]" 0;
+	setAttr ".phl[836]" 0;
+	setAttr ".phl[837]" 0;
+	setAttr ".phl[838]" 0;
+	setAttr ".phl[839]" 0;
+	setAttr ".phl[840]" 0;
+	setAttr ".phl[841]" 0;
+	setAttr ".phl[842]" 0;
+	setAttr ".phl[843]" 0;
+	setAttr ".phl[844]" 0;
+	setAttr ".phl[845]" 0;
+	setAttr ".phl[846]" 0;
+	setAttr ".phl[847]" 0;
+	setAttr ".phl[848]" 0;
+	setAttr ".phl[849]" 0;
+	setAttr ".phl[850]" 0;
+	setAttr ".phl[851]" 0;
+	setAttr ".phl[852]" 0;
+	setAttr ".phl[853]" 0;
+	setAttr ".phl[854]" 0;
+	setAttr ".phl[855]" 0;
+	setAttr ".phl[856]" 0;
+	setAttr ".phl[857]" 0;
+	setAttr ".phl[858]" 0;
+	setAttr ".phl[859]" 0;
+	setAttr ".phl[860]" 0;
+	setAttr ".phl[861]" 0;
+	setAttr ".phl[862]" 0;
+	setAttr ".phl[863]" 0;
+	setAttr ".phl[864]" 0;
+	setAttr ".phl[865]" 0;
+	setAttr ".phl[866]" 0;
+	setAttr ".phl[867]" 0;
+	setAttr ".phl[868]" 0;
+	setAttr ".phl[869]" 0;
+	setAttr ".phl[870]" 0;
+	setAttr ".phl[871]" 0;
+	setAttr ".phl[872]" 0;
+	setAttr ".phl[873]" 0;
+	setAttr ".phl[874]" 0;
+	setAttr ".phl[875]" 0;
+	setAttr ".phl[876]" 0;
+	setAttr ".phl[877]" 0;
+	setAttr ".phl[878]" 0;
+	setAttr ".phl[879]" 0;
+	setAttr ".phl[880]" 0;
+	setAttr ".phl[881]" 0;
+	setAttr ".phl[882]" 0;
+	setAttr ".phl[883]" 0;
+	setAttr ".phl[884]" 0;
+	setAttr ".phl[885]" 0;
+	setAttr ".phl[886]" 0;
+	setAttr ".phl[887]" 0;
+	setAttr ".phl[888]" 0;
+	setAttr ".phl[889]" 0;
+	setAttr ".phl[890]" 0;
+	setAttr ".phl[891]" 0;
+	setAttr ".phl[892]" 0;
+	setAttr ".phl[893]" 0;
+	setAttr ".phl[894]" 0;
+	setAttr ".phl[895]" 0;
+	setAttr ".phl[896]" 0;
+	setAttr ".phl[897]" 0;
+	setAttr ".phl[898]" 0;
+	setAttr ".phl[899]" 0;
+	setAttr ".phl[900]" 0;
+	setAttr ".phl[901]" 0;
+	setAttr ".phl[902]" 0;
+	setAttr ".phl[903]" 0;
+	setAttr ".phl[904]" 0;
+	setAttr ".phl[905]" 0;
+	setAttr ".phl[906]" 0;
+	setAttr ".phl[907]" 0;
+	setAttr ".phl[908]" 0;
+	setAttr ".phl[909]" 0;
+	setAttr ".phl[910]" 0;
+	setAttr ".phl[911]" 0;
+	setAttr ".phl[912]" 0;
+	setAttr ".phl[913]" 0;
+	setAttr ".phl[914]" 0;
+	setAttr ".phl[915]" 0;
+	setAttr ".phl[916]" 0;
+	setAttr ".phl[917]" 0;
+	setAttr ".phl[918]" 0;
+	setAttr ".phl[919]" 0;
+	setAttr ".phl[920]" 0;
+	setAttr ".phl[921]" 0;
+	setAttr ".phl[922]" 0;
+	setAttr ".phl[923]" 0;
+	setAttr ".phl[924]" 0;
+	setAttr ".phl[925]" 0;
+	setAttr ".phl[926]" 0;
+	setAttr ".phl[927]" 0;
+	setAttr ".phl[928]" 0;
+	setAttr ".phl[929]" 0;
+	setAttr ".phl[930]" 0;
+	setAttr ".phl[931]" 0;
+	setAttr ".phl[932]" 0;
+	setAttr ".phl[933]" 0;
+	setAttr ".phl[934]" 0;
+	setAttr ".phl[935]" 0;
+	setAttr ".phl[936]" 0;
+	setAttr ".phl[937]" 0;
+	setAttr ".phl[938]" 0;
+	setAttr ".phl[939]" 0;
+	setAttr ".phl[940]" 0;
+	setAttr ".phl[941]" 0;
+	setAttr ".phl[942]" 0;
+	setAttr ".phl[943]" 0;
+	setAttr ".phl[944]" 0;
+	setAttr ".phl[945]" 0;
+	setAttr ".phl[946]" 0;
+	setAttr ".phl[947]" 0;
+	setAttr ".phl[948]" 0;
+	setAttr ".phl[949]" 0;
+	setAttr ".phl[950]" 0;
+	setAttr ".phl[951]" 0;
+	setAttr ".phl[952]" 0;
+	setAttr ".phl[953]" 0;
+	setAttr ".phl[954]" 0;
+	setAttr ".phl[955]" 0;
+	setAttr ".phl[956]" 0;
+	setAttr ".phl[957]" 0;
+	setAttr ".phl[958]" 0;
+	setAttr ".phl[959]" 0;
+	setAttr ".phl[960]" 0;
+	setAttr ".phl[961]" 0;
+	setAttr ".phl[962]" 0;
+	setAttr ".phl[963]" 0;
+	setAttr ".phl[964]" 0;
+	setAttr ".phl[965]" 0;
+	setAttr ".phl[966]" 0;
+	setAttr ".phl[967]" 0;
+	setAttr ".phl[968]" 0;
+	setAttr ".phl[969]" 0;
+	setAttr ".phl[970]" 0;
+	setAttr ".phl[971]" 0;
+	setAttr ".phl[972]" 0;
+	setAttr ".phl[973]" 0;
+	setAttr ".phl[974]" 0;
+	setAttr ".phl[975]" 0;
+	setAttr ".phl[976]" 0;
+	setAttr ".phl[977]" 0;
+	setAttr ".phl[978]" 0;
+	setAttr ".phl[979]" 0;
+	setAttr ".phl[980]" 0;
+	setAttr ".phl[981]" 0;
+	setAttr ".phl[982]" 0;
+	setAttr ".phl[983]" 0;
+	setAttr ".phl[984]" 0;
+	setAttr ".phl[985]" 0;
+	setAttr ".phl[986]" 0;
+	setAttr ".phl[987]" 0;
+	setAttr ".phl[988]" 0;
+	setAttr ".phl[989]" 0;
+	setAttr ".phl[990]" 0;
+	setAttr ".phl[991]" 0;
+	setAttr ".phl[992]" 0;
+	setAttr ".phl[993]" 0;
+	setAttr ".phl[994]" 0;
+	setAttr ".phl[995]" 0;
+	setAttr ".phl[996]" 0;
+	setAttr ".phl[997]" 0;
+	setAttr ".phl[998]" 0;
+	setAttr ".phl[999]" 0;
+	setAttr ".phl[1000]" 0;
+	setAttr ".phl[1001]" 0;
+	setAttr ".phl[1002]" 0;
+	setAttr ".phl[1003]" 0;
+	setAttr ".phl[1004]" 0;
+	setAttr ".phl[1005]" 0;
+	setAttr ".phl[1006]" 0;
+	setAttr ".phl[1007]" 0;
+	setAttr ".phl[1008]" 0;
+	setAttr ".phl[1009]" 0;
+	setAttr ".phl[1010]" 0;
+	setAttr ".phl[1011]" 0;
+	setAttr ".phl[1012]" 0;
+	setAttr ".phl[1013]" 0;
+	setAttr ".phl[1014]" 0;
+	setAttr ".phl[1015]" 0;
+	setAttr ".phl[1016]" 0;
+	setAttr ".phl[1017]" 0;
+	setAttr ".phl[1018]" 0;
+	setAttr ".phl[1019]" 0;
+	setAttr ".phl[1020]" 0;
+	setAttr ".phl[1021]" 0;
+	setAttr ".phl[1022]" 0;
+	setAttr ".phl[1023]" 0;
+	setAttr ".phl[1024]" 0;
+	setAttr ".phl[1025]" 0;
+	setAttr ".phl[1026]" 0;
+	setAttr ".phl[1027]" 0;
+	setAttr ".phl[1028]" 0;
+	setAttr ".phl[1029]" 0;
+	setAttr ".phl[1030]" 0;
+	setAttr ".phl[1031]" 0;
+	setAttr ".phl[1032]" 0;
+	setAttr ".phl[1033]" 0;
+	setAttr ".phl[1034]" 0;
+	setAttr ".phl[1035]" 0;
+	setAttr ".phl[1036]" 0;
+	setAttr ".phl[1037]" 0;
+	setAttr ".phl[1038]" 0;
+	setAttr ".phl[1039]" 0;
+	setAttr ".phl[1040]" 0;
+	setAttr ".phl[1041]" 0;
+	setAttr ".phl[1042]" 0;
+	setAttr ".phl[1043]" 0;
+	setAttr ".phl[1044]" 0;
+	setAttr ".phl[1045]" 0;
+	setAttr ".phl[1046]" 0;
+	setAttr ".phl[1047]" 0;
+	setAttr ".phl[1048]" 0;
+	setAttr ".phl[1049]" 0;
+	setAttr ".phl[1050]" 0;
+	setAttr ".phl[1051]" 0;
+	setAttr ".phl[1052]" 0;
+	setAttr ".phl[1053]" 0;
+	setAttr ".phl[1054]" 0;
+	setAttr ".phl[1055]" 0;
+	setAttr ".phl[1056]" 0;
+	setAttr ".phl[1057]" 0;
+	setAttr ".phl[1058]" 0;
+	setAttr ".phl[1059]" 0;
+	setAttr ".phl[1060]" 0;
+	setAttr ".phl[1061]" 0;
+	setAttr ".phl[1062]" 0;
+	setAttr ".phl[1063]" 0;
+	setAttr ".phl[1064]" 0;
+	setAttr ".phl[1065]" 0;
+	setAttr ".phl[1066]" 0;
+	setAttr ".phl[1067]" 0;
+	setAttr ".phl[1068]" 0;
+	setAttr ".phl[1069]" 0;
+	setAttr ".phl[1070]" 0;
+	setAttr ".phl[1071]" 0;
+	setAttr ".phl[1072]" 0;
+	setAttr ".phl[1073]" 0;
+	setAttr ".phl[1074]" 0;
+	setAttr ".phl[1075]" 0;
+	setAttr ".phl[1076]" 0;
+	setAttr ".phl[1077]" 0;
+	setAttr ".phl[1078]" 0;
+	setAttr ".phl[1079]" 0;
+	setAttr ".phl[1080]" 0;
+	setAttr ".phl[1081]" 0;
+	setAttr ".phl[1082]" 0;
+	setAttr ".phl[1083]" 0;
+	setAttr ".phl[1084]" 0;
+	setAttr ".phl[1085]" 0;
+	setAttr ".phl[1086]" 0;
+	setAttr ".phl[1087]" 0;
+	setAttr ".phl[1088]" 0;
+	setAttr ".phl[1089]" 0;
+	setAttr ".phl[1090]" 0;
+	setAttr ".phl[1091]" 0;
+	setAttr ".phl[1092]" 0;
+	setAttr ".phl[1093]" 0;
+	setAttr ".phl[1094]" 0;
+	setAttr ".phl[1095]" 0;
+	setAttr ".phl[1096]" 0;
+	setAttr ".phl[1097]" 0;
+	setAttr ".phl[1098]" 0;
+	setAttr ".phl[1099]" 0;
+	setAttr ".phl[1100]" 0;
+	setAttr ".phl[1101]" 0;
+	setAttr ".phl[1102]" 0;
+	setAttr ".phl[1103]" 0;
+	setAttr ".phl[1104]" 0;
+	setAttr ".phl[1105]" 0;
+	setAttr ".phl[1106]" 0;
+	setAttr ".phl[1107]" 0;
+	setAttr ".phl[1108]" 0;
+	setAttr ".phl[1109]" 0;
+	setAttr ".phl[1110]" 0;
+	setAttr ".phl[1111]" 0;
+	setAttr ".phl[1112]" 0;
+	setAttr ".phl[1113]" 0;
+	setAttr ".phl[1114]" 0;
+	setAttr ".phl[1115]" 0;
+	setAttr ".phl[1116]" 0;
+	setAttr ".phl[1117]" 0;
+	setAttr ".phl[1118]" 0;
+	setAttr ".phl[1119]" 0;
+	setAttr ".phl[1120]" 0;
+	setAttr ".phl[1121]" 0;
+	setAttr ".phl[1122]" 0;
+	setAttr ".phl[1123]" 0;
+	setAttr ".phl[1124]" 0;
+	setAttr ".phl[1125]" 0;
+	setAttr ".phl[1126]" 0;
+	setAttr ".phl[1127]" 0;
+	setAttr ".phl[1128]" 0;
+	setAttr ".phl[1129]" 0;
+	setAttr ".phl[1130]" 0;
+	setAttr ".phl[1131]" 0;
+	setAttr ".phl[1132]" 0;
+	setAttr ".phl[1133]" 0;
+	setAttr ".phl[1134]" 0;
+	setAttr ".phl[1135]" 0;
+	setAttr ".phl[1136]" 0;
+	setAttr ".phl[1137]" 0;
+	setAttr ".phl[1138]" 0;
+	setAttr ".phl[1139]" 0;
+	setAttr ".phl[1140]" 0;
+	setAttr ".phl[1141]" 0;
+	setAttr ".phl[1142]" 0;
+	setAttr ".phl[1143]" 0;
+	setAttr ".phl[1144]" 0;
+	setAttr ".phl[1145]" 0;
+	setAttr ".phl[1146]" 0;
+	setAttr ".phl[1147]" 0;
+	setAttr ".phl[1148]" 0;
+	setAttr ".phl[1149]" 0;
+	setAttr ".phl[1150]" 0;
+	setAttr ".phl[1151]" 0;
+	setAttr ".phl[1152]" 0;
+	setAttr ".phl[1153]" 0;
+	setAttr ".phl[1154]" 0;
+	setAttr ".phl[1155]" 0;
+	setAttr ".phl[1156]" 0;
+	setAttr ".phl[1157]" 0;
+	setAttr ".phl[1158]" 0;
+	setAttr ".phl[1159]" 0;
+	setAttr ".phl[1160]" 0;
+	setAttr ".phl[1161]" 0;
+	setAttr ".phl[1162]" 0;
+	setAttr ".phl[1163]" 0;
+	setAttr ".phl[1164]" 0;
+	setAttr ".phl[1165]" 0;
+	setAttr ".phl[1166]" 0;
+	setAttr ".phl[1167]" 0;
+	setAttr ".phl[1168]" 0;
+	setAttr ".phl[1169]" 0;
+	setAttr ".phl[1170]" 0;
+	setAttr ".phl[1171]" 0;
+	setAttr ".phl[1172]" 0;
+	setAttr ".phl[1173]" 0;
+	setAttr ".phl[1174]" 0;
+	setAttr ".phl[1175]" 0;
+	setAttr ".phl[1176]" 0;
+	setAttr ".phl[1177]" 0;
+	setAttr ".phl[1178]" 0;
+	setAttr ".phl[1179]" 0;
+	setAttr ".phl[1180]" 0;
+	setAttr ".phl[1181]" 0;
+	setAttr ".phl[1182]" 0;
+	setAttr ".phl[1183]" 0;
+	setAttr ".phl[1184]" 0;
+	setAttr ".phl[1185]" 0;
+	setAttr ".phl[1186]" 0;
+	setAttr ".phl[1187]" 0;
+	setAttr ".phl[1188]" 0;
+	setAttr ".phl[1189]" 0;
+	setAttr ".phl[1190]" 0;
+	setAttr ".phl[1191]" 0;
+	setAttr ".phl[1192]" 0;
+	setAttr ".phl[1193]" 0;
+	setAttr ".phl[1194]" 0;
+	setAttr ".phl[1195]" 0;
+	setAttr ".phl[1196]" 0;
+	setAttr ".phl[1197]" 0;
+	setAttr ".phl[1198]" 0;
+	setAttr ".phl[1199]" 0;
+	setAttr ".phl[1200]" 0;
+	setAttr ".phl[1201]" 0;
+	setAttr ".phl[1202]" 0;
+	setAttr ".phl[1203]" 0;
+	setAttr ".phl[1204]" 0;
+	setAttr ".phl[1205]" 0;
+	setAttr ".phl[1206]" 0;
+	setAttr ".phl[1207]" 0;
+	setAttr ".phl[1208]" 0;
+	setAttr ".phl[1209]" 0;
+	setAttr ".phl[1210]" 0;
+	setAttr ".phl[1211]" 0;
+	setAttr ".phl[1212]" 0;
+	setAttr ".phl[1213]" 0;
+	setAttr ".phl[1214]" 0;
+	setAttr ".phl[1215]" 0;
+	setAttr ".phl[1216]" 0;
+	setAttr ".phl[1217]" 0;
+	setAttr ".phl[1218]" 0;
+	setAttr ".phl[1219]" 0;
+	setAttr ".phl[1220]" 0;
+	setAttr ".phl[1221]" 0;
+	setAttr ".phl[1222]" 0;
+	setAttr ".phl[1223]" 0;
+	setAttr ".phl[1224]" 0;
+	setAttr ".phl[1225]" 0;
+	setAttr ".phl[1226]" 0;
+	setAttr ".phl[1227]" 0;
+	setAttr ".phl[1228]" 0;
+	setAttr ".phl[1229]" 0;
+	setAttr ".phl[1230]" 0;
+	setAttr ".phl[1231]" 0;
+	setAttr ".phl[1232]" 0;
+	setAttr ".phl[1233]" 0;
+	setAttr ".phl[1234]" 0;
+	setAttr ".phl[1235]" 0;
+	setAttr ".phl[1236]" 0;
+	setAttr ".phl[1237]" 0;
+	setAttr ".phl[1238]" 0;
+	setAttr ".phl[1239]" 0;
+	setAttr ".phl[1240]" 0;
+	setAttr ".phl[1241]" 0;
+	setAttr ".phl[1242]" 0;
+	setAttr ".phl[1243]" 0;
+	setAttr ".phl[1244]" 0;
+	setAttr ".phl[1245]" 0;
+	setAttr ".phl[1246]" 0;
+	setAttr ".phl[1247]" 0;
+	setAttr ".phl[1248]" 0;
+	setAttr ".phl[1249]" 0;
+	setAttr ".phl[1250]" 0;
+	setAttr ".phl[1251]" 0;
+	setAttr ".phl[1252]" 0;
+	setAttr ".phl[1253]" 0;
+	setAttr ".phl[1254]" 0;
+	setAttr ".phl[1255]" 0;
+	setAttr ".phl[1256]" 0;
+	setAttr ".phl[1257]" 0;
+	setAttr ".phl[1258]" 0;
+	setAttr ".phl[1259]" 0;
+	setAttr ".phl[1260]" 0;
+	setAttr ".phl[1261]" 0;
+	setAttr ".phl[1262]" 0;
+	setAttr ".phl[1263]" 0;
+	setAttr ".phl[1264]" 0;
+	setAttr ".phl[1265]" 0;
+	setAttr ".phl[1266]" 0;
+	setAttr ".phl[1267]" 0;
+	setAttr ".phl[1268]" 0;
+	setAttr ".phl[1269]" 0;
+	setAttr ".phl[1270]" 0;
+	setAttr ".phl[1271]" 0;
+	setAttr ".phl[1272]" 0;
+	setAttr ".phl[1273]" 0;
+	setAttr ".phl[1274]" 0;
+	setAttr ".phl[1275]" 0;
+	setAttr ".phl[1276]" 0;
+	setAttr ".phl[1277]" 0;
+	setAttr ".phl[1278]" 0;
+	setAttr ".phl[1279]" 0;
+	setAttr ".phl[1280]" 0;
+	setAttr ".phl[1281]" 0;
+	setAttr ".phl[1282]" 0;
+	setAttr ".phl[1283]" 0;
+	setAttr ".phl[1284]" 0;
+	setAttr ".phl[1285]" 0;
+	setAttr ".phl[1286]" 0;
+	setAttr ".phl[1287]" 0;
+	setAttr ".phl[1288]" 0;
+	setAttr ".phl[1289]" 0;
+	setAttr ".phl[1290]" 0;
+	setAttr ".phl[1291]" 0;
+	setAttr ".phl[1292]" 0;
+	setAttr ".phl[1293]" 0;
+	setAttr ".phl[1294]" 0;
+	setAttr ".phl[1295]" 0;
+	setAttr ".phl[1296]" 0;
+	setAttr ".phl[1297]" 0;
+	setAttr ".phl[1298]" 0;
+	setAttr ".phl[1299]" 0;
+	setAttr ".phl[1300]" 0;
+	setAttr ".phl[1301]" 0;
+	setAttr ".phl[1302]" 0;
+	setAttr ".phl[1303]" 0;
+	setAttr ".phl[1304]" 0;
+	setAttr ".phl[1305]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"HumanAnimRigRN"
 		"HumanAnimRig:Default_Character_AssistantRN" 0
 		"HumanAnimRigRN" 0
-		"HumanAnimRigRN" 204
+		"HumanAnimRig:Default_Character_AssistantRN" 1
+		3 "|HumanAnimRig:Character_Default|HumanAnimRig:Rig_Assets|HumanAnimRig:Character|HumanAnimRig:Default_Character_Assistant:Human|HumanAnimRig:Default_Character_Assistant:HumanArmature.instObjGroups" 
+		"HumanAnimRig:Export.dagSetMembers" "-na"
+		"HumanAnimRigRN" 1369
 		2 "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R" 
 		"rotateOrder" " 0"
 		2 "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R" 
@@ -4168,294 +7874,2625 @@ createNode reference -n "HumanAnimRigRN";
 		""
 		3 "HumanAnimRig:HMND_AnimRig.angularValues[73]" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateZ" 
 		""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.translate" 
 		"HumanAnimRigRN.placeHolderList[1]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.rotate" 
 		"HumanAnimRigRN.placeHolderList[2]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.scale" 
 		"HumanAnimRigRN.placeHolderList[3]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.rotatePivot" 
 		"HumanAnimRigRN.placeHolderList[4]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.rotatePivotTranslate" 
 		"HumanAnimRigRN.placeHolderList[5]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[6]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR.parentMatrix" 
 		"HumanAnimRigRN.placeHolderList[7]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[8]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[9]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[10]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[11]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[12]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[13]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[14]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[15]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[16]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[17]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[18]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[19]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[20]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[21]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[22]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[23]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[24]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[25]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[26]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[27]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Thumb1_PRX_R|HumanAnimRig:Thumb1_CTR_R|HumanAnimRig:Thumb2_PRX_R|HumanAnimRig:Thumb2_CTR_R|HumanAnimRig:Thumb3_PRX_R|HumanAnimRig:Thumb3_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[28]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[29]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[30]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[31]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[32]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[33]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[34]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[35]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[36]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[37]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[38]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[39]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[40]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[41]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[42]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[43]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[44]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[45]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[46]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[47]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[48]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Index1_PRX_R|HumanAnimRig:Index1_CTR_R|HumanAnimRig:Index2_PRX_R|HumanAnimRig:Index2_CTR_R|HumanAnimRig:Index3_PRX_R|HumanAnimRig:Index3_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[49]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[50]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[51]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[52]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[53]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[54]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[55]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[56]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[57]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[58]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[59]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[60]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[61]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[62]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[63]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[64]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[65]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[66]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[67]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[68]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[69]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Middle1_PRX_R|HumanAnimRig:Middle1_CTR_R|HumanAnimRig:Middle2_PRX_R|HumanAnimRig:Middle2_CTR_R|HumanAnimRig:Middle3_PRX_R|HumanAnimRig:Middle3_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[70]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[71]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[72]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[73]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[74]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[75]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[76]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[77]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateZ" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[78]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateZ" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[79]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateY" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[80]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateY" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[81]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateX" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[82]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateX" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[83]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateOrder" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[84]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[85]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateZ" 
 		"HumanAnimRigRN.placeHolderList[86]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[87]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateY" 
 		"HumanAnimRigRN.placeHolderList[88]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[89]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateX" 
 		"HumanAnimRigRN.placeHolderList[90]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Fist" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:Fingers_PRX_R|HumanAnimRig:Ring1_PRX_R|HumanAnimRig:Ring1_CTR_R|HumanAnimRig:Ring2_PRX_R|HumanAnimRig:Ring2_CTR_R|HumanAnimRig:Ring3_PRX_R|HumanAnimRig:Ring3_CTR_R.rotateOrder" 
 		"HumanAnimRigRN.placeHolderList[91]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Fist" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
 		"HumanAnimRigRN.placeHolderList[92]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Fist" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
 		"HumanAnimRigRN.placeHolderList[93]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Relaxed" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand" 
 		"HumanAnimRigRN.placeHolderList[94]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Relaxed" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
 		"HumanAnimRigRN.placeHolderList[95]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Relaxed" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
 		"HumanAnimRigRN.placeHolderList[96]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Weapon" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow" 
 		"HumanAnimRigRN.placeHolderList[97]" ""
-		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Weapon" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Fist" 
 		"HumanAnimRigRN.placeHolderList[98]" ""
-		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Weapon" 
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Fist" 
 		"HumanAnimRigRN.placeHolderList[99]" ""
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[58]" "HumanAnimRigRN.placeHolderList[100]" 
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Fist" 
+		"HumanAnimRigRN.placeHolderList[100]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Relaxed" 
+		"HumanAnimRigRN.placeHolderList[101]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Relaxed" 
+		"HumanAnimRigRN.placeHolderList[102]" ""
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Relaxed" 
+		"HumanAnimRigRN.placeHolderList[103]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Weapon" 
+		"HumanAnimRigRN.placeHolderList[104]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Weapon" 
+		"HumanAnimRigRN.placeHolderList[105]" ""
+		5 4 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:MainRoot_CTR|HumanAnimRig:Hand_PRX_R|HumanAnimRig:ArmOptions_CTR_R.Weapon" 
+		"HumanAnimRigRN.placeHolderList[106]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.scale" 
+		"HumanAnimRigRN.placeHolderList[107]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.translate" 
+		"HumanAnimRigRN.placeHolderList[108]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.rotate" 
+		"HumanAnimRigRN.placeHolderList[109]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[110]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[111]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[112]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[113]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[114]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[115]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[116]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.scale" 
+		"HumanAnimRigRN.placeHolderList[117]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[118]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.translate" 
+		"HumanAnimRigRN.placeHolderList[119]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[120]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[121]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[122]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[123]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[124]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[125]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[126]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.scale" 
+		"HumanAnimRigRN.placeHolderList[127]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[128]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.translate" 
+		"HumanAnimRigRN.placeHolderList[129]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[130]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[131]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[132]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[133]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[134]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[135]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[136]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.scale" 
+		"HumanAnimRigRN.placeHolderList[137]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[138]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.translate" 
+		"HumanAnimRigRN.placeHolderList[139]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[140]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[141]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[142]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[143]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[144]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[145]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[146]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.scale" 
+		"HumanAnimRigRN.placeHolderList[147]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[148]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.translate" 
+		"HumanAnimRigRN.placeHolderList[149]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[150]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[151]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[152]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[153]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[154]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[155]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:lower_leg_l|HumanAnimRig:foot_l|HumanAnimRig:toes_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[156]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.scale" 
+		"HumanAnimRigRN.placeHolderList[157]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.scale" 
+		"HumanAnimRigRN.placeHolderList[158]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[159]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.translate" 
+		"HumanAnimRigRN.placeHolderList[160]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[161]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[162]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[163]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[164]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[165]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[166]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[167]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_l|HumanAnimRig:width_thigh_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[168]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.scale" 
+		"HumanAnimRigRN.placeHolderList[169]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[170]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.translate" 
+		"HumanAnimRigRN.placeHolderList[171]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[172]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[173]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[174]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[175]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[176]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[177]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[178]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.scale" 
+		"HumanAnimRigRN.placeHolderList[179]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[180]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.translate" 
+		"HumanAnimRigRN.placeHolderList[181]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[182]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[183]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[184]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[185]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[186]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[187]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[188]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.scale" 
+		"HumanAnimRigRN.placeHolderList[189]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[190]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.translate" 
+		"HumanAnimRigRN.placeHolderList[191]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[192]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[193]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[194]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[195]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[196]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[197]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[198]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.scale" 
+		"HumanAnimRigRN.placeHolderList[199]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[200]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.translate" 
+		"HumanAnimRigRN.placeHolderList[201]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[202]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[203]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[204]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[205]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[206]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[207]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:lower_leg_r|HumanAnimRig:foot_r|HumanAnimRig:toes_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[208]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.scale" 
+		"HumanAnimRigRN.placeHolderList[209]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.scale" 
+		"HumanAnimRigRN.placeHolderList[210]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[211]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.translate" 
+		"HumanAnimRigRN.placeHolderList[212]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[213]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[214]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[215]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[216]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[217]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[218]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[219]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:thigh_r|HumanAnimRig:width_thigh_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[220]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.scale" 
+		"HumanAnimRigRN.placeHolderList[221]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[222]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.translate" 
+		"HumanAnimRigRN.placeHolderList[223]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.rotate" 
+		"HumanAnimRigRN.placeHolderList[224]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[225]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[226]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[227]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[228]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[229]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[230]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[231]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.translate" 
+		"HumanAnimRigRN.placeHolderList[232]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.rotate" 
+		"HumanAnimRigRN.placeHolderList[233]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.scale" 
+		"HumanAnimRigRN.placeHolderList[234]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[235]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[236]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[237]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[238]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[239]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[240]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.scale" 
+		"HumanAnimRigRN.placeHolderList[241]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[242]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.translate" 
+		"HumanAnimRigRN.placeHolderList[243]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.rotate" 
+		"HumanAnimRigRN.placeHolderList[244]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[245]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[246]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[247]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[248]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[249]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[250]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.scale" 
+		"HumanAnimRigRN.placeHolderList[251]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[252]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.rotate" 
+		"HumanAnimRigRN.placeHolderList[253]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[254]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[255]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.translate" 
+		"HumanAnimRigRN.placeHolderList[256]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[257]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[258]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[259]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:head.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[260]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[261]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.scale" 
+		"HumanAnimRigRN.placeHolderList[262]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.scale" 
+		"HumanAnimRigRN.placeHolderList[263]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.translate" 
+		"HumanAnimRigRN.placeHolderList[264]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.rotate" 
+		"HumanAnimRigRN.placeHolderList[265]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[266]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[267]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[268]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[269]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[270]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[271]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:neck|HumanAnimRig:muscle_neck.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[272]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.scale" 
+		"HumanAnimRigRN.placeHolderList[273]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[274]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.translate" 
+		"HumanAnimRigRN.placeHolderList[275]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[276]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[277]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[278]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[279]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[280]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[281]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[282]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.scale" 
+		"HumanAnimRigRN.placeHolderList[283]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[284]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.translate" 
+		"HumanAnimRigRN.placeHolderList[285]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[286]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[287]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[288]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[289]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[290]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[291]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[292]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.scale" 
+		"HumanAnimRigRN.placeHolderList[293]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[294]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.translate" 
+		"HumanAnimRigRN.placeHolderList[295]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[296]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[297]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[298]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[299]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[300]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[301]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[302]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.scale" 
+		"HumanAnimRigRN.placeHolderList[303]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[304]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[305]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[306]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[307]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.translate" 
+		"HumanAnimRigRN.placeHolderList[308]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[309]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[310]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[311]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[312]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.scale" 
+		"HumanAnimRigRN.placeHolderList[313]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[314]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.translate" 
+		"HumanAnimRigRN.placeHolderList[315]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[316]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[317]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[318]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[319]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[320]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[321]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[322]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.scale" 
+		"HumanAnimRigRN.placeHolderList[323]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[324]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.translate" 
+		"HumanAnimRigRN.placeHolderList[325]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[326]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[327]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[328]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[329]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[330]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[331]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[332]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.scale" 
+		"HumanAnimRigRN.placeHolderList[333]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[334]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.translate" 
+		"HumanAnimRigRN.placeHolderList[335]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[336]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[337]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[338]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[339]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[340]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[341]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_thumb1_r|HumanAnimRig:c_thumb2_r|HumanAnimRig:c_thumb3_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[342]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.scale" 
+		"HumanAnimRigRN.placeHolderList[343]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[344]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.translate" 
+		"HumanAnimRigRN.placeHolderList[345]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[346]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[347]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[348]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[349]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[350]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[351]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[352]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.scale" 
+		"HumanAnimRigRN.placeHolderList[353]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[354]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.translate" 
+		"HumanAnimRigRN.placeHolderList[355]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[356]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[357]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[358]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[359]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[360]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[361]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[362]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.scale" 
+		"HumanAnimRigRN.placeHolderList[363]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[364]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.translate" 
+		"HumanAnimRigRN.placeHolderList[365]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[366]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[367]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[368]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[369]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[370]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[371]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_ring1_r|HumanAnimRig:c_ring2_r|HumanAnimRig:c_ring3_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[372]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.scale" 
+		"HumanAnimRigRN.placeHolderList[373]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[374]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.translate" 
+		"HumanAnimRigRN.placeHolderList[375]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[376]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[377]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[378]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[379]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[380]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[381]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[382]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.scale" 
+		"HumanAnimRigRN.placeHolderList[383]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[384]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.translate" 
+		"HumanAnimRigRN.placeHolderList[385]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[386]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[387]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[388]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[389]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[390]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[391]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[392]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.scale" 
+		"HumanAnimRigRN.placeHolderList[393]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[394]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.translate" 
+		"HumanAnimRigRN.placeHolderList[395]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[396]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[397]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[398]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[399]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[400]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[401]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_middle1_r|HumanAnimRig:c_middle2_r|HumanAnimRig:c_middle3_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[402]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.scale" 
+		"HumanAnimRigRN.placeHolderList[403]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[404]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.translate" 
+		"HumanAnimRigRN.placeHolderList[405]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[406]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[407]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[408]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[409]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[410]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[411]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[412]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.scale" 
+		"HumanAnimRigRN.placeHolderList[413]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[414]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.translate" 
+		"HumanAnimRigRN.placeHolderList[415]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[416]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[417]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[418]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[419]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[420]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[421]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[422]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.scale" 
+		"HumanAnimRigRN.placeHolderList[423]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[424]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.translate" 
+		"HumanAnimRigRN.placeHolderList[425]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[426]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[427]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[428]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[429]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[430]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[431]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:c_index1_r|HumanAnimRig:c_index2_r|HumanAnimRig:c_index3_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[432]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.scale" 
+		"HumanAnimRigRN.placeHolderList[433]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[434]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.translate" 
+		"HumanAnimRigRN.placeHolderList[435]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[436]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[437]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[438]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[439]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[440]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[441]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:hand_r|HumanAnimRig:hold_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[442]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.scale" 
+		"HumanAnimRigRN.placeHolderList[443]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.scale" 
+		"HumanAnimRigRN.placeHolderList[444]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[445]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[446]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[447]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[448]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[449]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.translate" 
+		"HumanAnimRigRN.placeHolderList[450]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[451]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[452]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[453]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:forearm_r|HumanAnimRig:forearm_twist_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[454]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.scale" 
+		"HumanAnimRigRN.placeHolderList[455]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.scale" 
+		"HumanAnimRigRN.placeHolderList[456]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[457]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.translate" 
+		"HumanAnimRigRN.placeHolderList[458]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[459]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[460]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[461]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[462]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[463]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[464]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[465]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:upper_arm_r|HumanAnimRig:bicep_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[466]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[467]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.translate" 
+		"HumanAnimRigRN.placeHolderList[468]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.rotate" 
+		"HumanAnimRigRN.placeHolderList[469]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[470]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[471]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[472]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[473]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.scale" 
+		"HumanAnimRigRN.placeHolderList[474]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.scale" 
+		"HumanAnimRigRN.placeHolderList[475]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[476]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[477]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_r|HumanAnimRig:muscle_shoulder_r.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[478]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.scale" 
+		"HumanAnimRigRN.placeHolderList[479]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[480]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.translate" 
+		"HumanAnimRigRN.placeHolderList[481]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[482]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[483]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[484]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[485]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[486]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[487]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[488]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.scale" 
+		"HumanAnimRigRN.placeHolderList[489]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[490]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.translate" 
+		"HumanAnimRigRN.placeHolderList[491]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[492]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[493]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[494]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[495]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[496]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[497]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[498]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.scale" 
+		"HumanAnimRigRN.placeHolderList[499]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[500]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.translate" 
+		"HumanAnimRigRN.placeHolderList[501]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[502]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[503]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[504]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[505]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[506]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[507]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[508]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.scale" 
+		"HumanAnimRigRN.placeHolderList[509]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[510]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[511]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[512]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[513]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.translate" 
+		"HumanAnimRigRN.placeHolderList[514]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[515]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[516]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[517]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[518]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.scale" 
+		"HumanAnimRigRN.placeHolderList[519]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[520]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.translate" 
+		"HumanAnimRigRN.placeHolderList[521]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[522]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[523]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[524]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[525]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[526]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[527]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[528]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.scale" 
+		"HumanAnimRigRN.placeHolderList[529]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[530]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.translate" 
+		"HumanAnimRigRN.placeHolderList[531]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[532]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[533]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[534]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[535]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[536]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[537]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[538]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.scale" 
+		"HumanAnimRigRN.placeHolderList[539]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[540]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.translate" 
+		"HumanAnimRigRN.placeHolderList[541]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[542]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[543]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[544]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[545]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[546]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[547]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_thumb1_l|HumanAnimRig:c_thumb2_l|HumanAnimRig:c_thumb3_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[548]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.scale" 
+		"HumanAnimRigRN.placeHolderList[549]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[550]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.translate" 
+		"HumanAnimRigRN.placeHolderList[551]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[552]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[553]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[554]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[555]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[556]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[557]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[558]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.scale" 
+		"HumanAnimRigRN.placeHolderList[559]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[560]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.translate" 
+		"HumanAnimRigRN.placeHolderList[561]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[562]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[563]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[564]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[565]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[566]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[567]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[568]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.scale" 
+		"HumanAnimRigRN.placeHolderList[569]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[570]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.translate" 
+		"HumanAnimRigRN.placeHolderList[571]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[572]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[573]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[574]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[575]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[576]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[577]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_ring1_l|HumanAnimRig:c_ring2_l|HumanAnimRig:c_ring3_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[578]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.scale" 
+		"HumanAnimRigRN.placeHolderList[579]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[580]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.translate" 
+		"HumanAnimRigRN.placeHolderList[581]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[582]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[583]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[584]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[585]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[586]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[587]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[588]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.scale" 
+		"HumanAnimRigRN.placeHolderList[589]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[590]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.translate" 
+		"HumanAnimRigRN.placeHolderList[591]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[592]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[593]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[594]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[595]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[596]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[597]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[598]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.scale" 
+		"HumanAnimRigRN.placeHolderList[599]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[600]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.translate" 
+		"HumanAnimRigRN.placeHolderList[601]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[602]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[603]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[604]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[605]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[606]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[607]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_middle1_l|HumanAnimRig:c_middle2_l|HumanAnimRig:c_middle3_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[608]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.scale" 
+		"HumanAnimRigRN.placeHolderList[609]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[610]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.translate" 
+		"HumanAnimRigRN.placeHolderList[611]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[612]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[613]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[614]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[615]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[616]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[617]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[618]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.scale" 
+		"HumanAnimRigRN.placeHolderList[619]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[620]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.translate" 
+		"HumanAnimRigRN.placeHolderList[621]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[622]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[623]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[624]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[625]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[626]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[627]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[628]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.scale" 
+		"HumanAnimRigRN.placeHolderList[629]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[630]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.translate" 
+		"HumanAnimRigRN.placeHolderList[631]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[632]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[633]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[634]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[635]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[636]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[637]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:c_index1_l|HumanAnimRig:c_index2_l|HumanAnimRig:c_index3_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[638]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.scale" 
+		"HumanAnimRigRN.placeHolderList[639]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[640]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.translate" 
+		"HumanAnimRigRN.placeHolderList[641]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[642]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[643]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[644]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[645]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[646]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[647]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:hand_l|HumanAnimRig:hold_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[648]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.scale" 
+		"HumanAnimRigRN.placeHolderList[649]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.scale" 
+		"HumanAnimRigRN.placeHolderList[650]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[651]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.translate" 
+		"HumanAnimRigRN.placeHolderList[652]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[653]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[654]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[655]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[656]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[657]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[658]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[659]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:forearm_l|HumanAnimRig:forearm_twist_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[660]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.scale" 
+		"HumanAnimRigRN.placeHolderList[661]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.scale" 
+		"HumanAnimRigRN.placeHolderList[662]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[663]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.translate" 
+		"HumanAnimRigRN.placeHolderList[664]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[665]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[666]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[667]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[668]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[669]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[670]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[671]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:upper_arm_l|HumanAnimRig:bicep_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[672]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[673]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.translate" 
+		"HumanAnimRigRN.placeHolderList[674]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.rotate" 
+		"HumanAnimRigRN.placeHolderList[675]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.scale" 
+		"HumanAnimRigRN.placeHolderList[676]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.scale" 
+		"HumanAnimRigRN.placeHolderList[677]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[678]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[679]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[680]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[681]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[682]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[683]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:shoulder_l|HumanAnimRig:muscle_shoulder_l.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[684]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.scale" 
+		"HumanAnimRigRN.placeHolderList[685]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.scale" 
+		"HumanAnimRigRN.placeHolderList[686]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[687]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.translate" 
+		"HumanAnimRigRN.placeHolderList[688]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.rotate" 
+		"HumanAnimRigRN.placeHolderList[689]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[690]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[691]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[692]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[693]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[694]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[695]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_L.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[696]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.scale" 
+		"HumanAnimRigRN.placeHolderList[697]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.scale" 
+		"HumanAnimRigRN.placeHolderList[698]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[699]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.translate" 
+		"HumanAnimRigRN.placeHolderList[700]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.rotate" 
+		"HumanAnimRigRN.placeHolderList[701]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[702]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[703]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[704]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[705]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[706]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[707]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:breast_R.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[708]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.translate" 
+		"HumanAnimRigRN.placeHolderList[709]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.rotate" 
+		"HumanAnimRigRN.placeHolderList[710]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.scale" 
+		"HumanAnimRigRN.placeHolderList[711]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.scale" 
+		"HumanAnimRigRN.placeHolderList[712]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[713]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[714]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[715]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[716]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[717]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[718]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[719]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:chest|HumanAnimRig:muscle_chest.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[720]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.scale" 
+		"HumanAnimRigRN.placeHolderList[721]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.scale" 
+		"HumanAnimRigRN.placeHolderList[722]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[723]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.translate" 
+		"HumanAnimRigRN.placeHolderList[724]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.rotate" 
+		"HumanAnimRigRN.placeHolderList[725]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[726]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[727]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[728]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[729]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[730]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[731]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:spine|HumanAnimRig:torso_width.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[732]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.scale" 
+		"HumanAnimRigRN.placeHolderList[733]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.scale" 
+		"HumanAnimRigRN.placeHolderList[734]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[735]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.translate" 
+		"HumanAnimRigRN.placeHolderList[736]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.rotate" 
+		"HumanAnimRigRN.placeHolderList[737]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[738]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[739]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[740]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[741]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[742]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[743]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:belly.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[744]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.scale" 
+		"HumanAnimRigRN.placeHolderList[745]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.scale" 
+		"HumanAnimRigRN.placeHolderList[746]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[747]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.translate" 
+		"HumanAnimRigRN.placeHolderList[748]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.rotate" 
+		"HumanAnimRigRN.placeHolderList[749]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[750]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[751]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[752]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[753]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[754]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[755]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:waist.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[756]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.scale" 
+		"HumanAnimRigRN.placeHolderList[757]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.scale" 
+		"HumanAnimRigRN.placeHolderList[758]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.inverseScale" 
+		"HumanAnimRigRN.placeHolderList[759]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.translate" 
+		"HumanAnimRigRN.placeHolderList[760]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.rotate" 
+		"HumanAnimRigRN.placeHolderList[761]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.rotateOrder" 
+		"HumanAnimRigRN.placeHolderList[762]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.rotatePivot" 
+		"HumanAnimRigRN.placeHolderList[763]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.rotatePivotTranslate" 
+		"HumanAnimRigRN.placeHolderList[764]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.jointOrient" 
+		"HumanAnimRigRN.placeHolderList[765]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.segmentScaleCompensate" 
+		"HumanAnimRigRN.placeHolderList[766]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[767]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Character_Default|HumanAnimRig:Character_Default_Rig|HumanAnimRig:DontTouch|HumanAnimRig:SKEL_PROXY|HumanAnimRig:HumanArmature|HumanAnimRig:hips|HumanAnimRig:butt.parentMatrix" 
+		"HumanAnimRigRN.placeHolderList[768]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:HumanArmature_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[769]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:HumanArmature_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[770]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:HumanArmature_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[771]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:HumanArmature_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[772]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:HumanArmature_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[773]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:HumanArmature_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[774]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hips_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[775]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hips_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[776]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hips_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[777]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hips_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[778]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hips_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[779]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hips_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[780]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[781]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[782]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[783]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[784]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[785]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[786]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_scaleConstraint2.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[787]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_scaleConstraint2.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[788]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:butt_scaleConstraint2.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[789]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[790]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[791]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[792]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[793]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[794]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[795]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[796]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[797]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:waist_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[798]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[799]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[800]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[801]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[802]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[803]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[804]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[805]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[806]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:belly_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[807]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:spine_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[808]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:spine_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[809]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:spine_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[810]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:spine_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[811]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:spine_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[812]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:spine_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[813]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[814]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[815]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[816]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[817]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[818]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[819]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_scaleConstraint2.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[820]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_scaleConstraint2.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[821]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:torso_width_scaleConstraint2.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[822]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:chest_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[823]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:chest_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[824]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:chest_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[825]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:chest_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[826]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:chest_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[827]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:chest_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[828]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_scaleConstraint3.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[829]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_scaleConstraint3.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[830]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_scaleConstraint3.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[831]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[832]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[833]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[834]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[835]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[836]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_chest_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[837]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[838]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[839]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[840]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[841]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[842]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[843]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_scaleConstraint3.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[844]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_scaleConstraint3.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[845]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_R_scaleConstraint3.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[846]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[847]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[848]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[849]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[850]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[851]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[852]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[853]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[854]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:breast_L_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[855]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[856]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[857]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[858]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[859]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[860]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[861]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[862]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[863]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[864]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[865]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[866]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[867]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[868]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[869]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_l_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[870]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[871]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[872]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[873]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[874]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[875]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[876]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[877]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[878]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[879]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[880]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[881]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[882]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_scaleConstraint1.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[883]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_scaleConstraint1.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[884]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_l_scaleConstraint1.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[885]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[886]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[887]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[888]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[889]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[890]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[891]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[892]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[893]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[894]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[895]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[896]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[897]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_scaleConstraint1.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[898]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_scaleConstraint1.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[899]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_l_scaleConstraint1.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[900]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_l_parentConstraint1.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[901]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_l_parentConstraint1.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[902]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_l_parentConstraint1.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[903]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_l_parentConstraint1.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[904]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_l_parentConstraint1.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[905]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_l_parentConstraint1.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[906]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_l_parentConstraint1.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[907]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_l_parentConstraint1.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[908]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_l_parentConstraint1.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[909]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_l_parentConstraint1.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[910]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_l_parentConstraint1.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[911]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_l_parentConstraint1.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[912]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[913]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[914]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[915]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[916]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[917]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[918]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[919]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[920]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[921]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[922]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[923]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[924]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[925]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[926]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[927]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[928]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[929]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[930]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[931]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[932]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[933]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[934]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[935]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[936]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[937]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[938]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[939]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[940]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[941]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[942]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[943]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[944]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[945]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[946]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[947]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[948]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[949]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[950]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[951]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[952]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[953]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[954]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[955]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[956]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[957]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[958]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[959]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[960]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[961]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[962]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[963]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[964]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[965]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[966]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[967]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[968]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[969]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[970]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[971]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[972]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[973]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[974]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[975]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[976]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[977]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[978]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[979]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[980]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[981]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[982]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[983]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[984]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[985]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[986]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[987]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[988]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[989]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:shoulder_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[990]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[991]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[992]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[993]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[994]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[995]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[996]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[997]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[998]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_shoulder_r_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[999]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1000]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1001]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1002]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1003]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1004]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:upper_arm_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1005]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1006]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1007]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1008]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1009]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1010]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1011]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[1012]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[1013]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:bicep_r_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[1014]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1015]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1016]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1017]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1018]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1019]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1020]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_parentConstraint1.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1021]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_parentConstraint1.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1022]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_parentConstraint1.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1023]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_parentConstraint1.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1024]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_parentConstraint1.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1025]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_parentConstraint1.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1026]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_scaleConstraint1.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[1027]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_scaleConstraint1.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[1028]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:forearm_twist_r_scaleConstraint1.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[1029]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_r_parentConstraint1.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1030]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_r_parentConstraint1.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1031]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_r_parentConstraint1.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1032]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_r_parentConstraint1.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1033]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_r_parentConstraint1.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1034]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hand_r_parentConstraint1.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1035]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_r_parentConstraint1.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1036]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_r_parentConstraint1.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1037]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_r_parentConstraint1.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1038]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_r_parentConstraint1.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1039]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_r_parentConstraint1.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1040]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:hold_r_parentConstraint1.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1041]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1042]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1043]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1044]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1045]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1046]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index1_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1047]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1048]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1049]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1050]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1051]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1052]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index2_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1053]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1054]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1055]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1056]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1057]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1058]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_index3_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1059]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1060]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1061]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1062]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1063]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1064]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle1_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1065]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1066]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1067]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1068]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1069]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1070]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle2_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1071]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1072]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1073]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1074]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1075]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1076]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_middle3_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1077]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1078]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1079]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1080]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1081]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1082]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring1_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1083]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1084]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1085]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1086]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1087]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1088]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring2_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1089]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1090]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1091]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1092]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1093]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1094]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_ring3_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1095]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1096]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1097]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1098]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1099]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1100]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb1_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1101]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1102]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1103]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1104]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1105]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1106]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb2_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1107]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1108]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1109]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1110]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1111]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1112]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:c_thumb3_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1113]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:neck_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1114]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:neck_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1115]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:neck_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1116]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:neck_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1117]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:neck_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1118]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:neck_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1119]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1120]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1121]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1122]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1123]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1124]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1125]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_scaleConstraint4.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[1126]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_scaleConstraint4.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[1127]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:muscle_neck_scaleConstraint4.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[1128]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:head_parentConstraint1.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1129]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:head_parentConstraint1.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1130]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:head_parentConstraint1.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1131]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:head_parentConstraint1.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1132]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:head_parentConstraint1.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1133]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:head_parentConstraint1.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1134]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1135]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1136]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1137]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1138]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1139]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1140]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1141]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1142]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1143]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1144]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1145]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1146]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_scaleConstraint3.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[1147]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_scaleConstraint3.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[1148]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_r_scaleConstraint3.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[1149]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1150]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1151]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1152]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1153]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1154]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1155]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_r_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1156]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_r_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1157]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_r_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1158]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_r_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1159]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_r_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1160]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_r_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1161]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_r_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1162]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_r_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1163]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_r_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1164]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_r_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1165]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_r_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1166]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_r_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1167]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1168]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1169]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1170]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1171]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1172]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:thigh_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1173]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_parentConstraint3.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1174]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_parentConstraint3.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1175]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_parentConstraint3.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1176]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_parentConstraint3.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1177]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_parentConstraint3.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1178]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_parentConstraint3.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1179]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_scaleConstraint3.constraintScaleX" 
+		"HumanAnimRigRN.placeHolderList[1180]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_scaleConstraint3.constraintScaleY" 
+		"HumanAnimRigRN.placeHolderList[1181]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:width_thigh_l_scaleConstraint3.constraintScaleZ" 
+		"HumanAnimRigRN.placeHolderList[1182]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_l_parentConstraint2.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1183]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_l_parentConstraint2.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1184]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_l_parentConstraint2.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1185]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_l_parentConstraint2.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1186]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_l_parentConstraint2.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1187]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:lower_leg_l_parentConstraint2.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1188]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_l_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1189]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_l_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1190]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_l_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1191]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_l_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1192]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_l_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1193]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:foot_l_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1194]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_l_parentConstraint4.constraintTranslateX" 
+		"HumanAnimRigRN.placeHolderList[1195]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_l_parentConstraint4.constraintTranslateY" 
+		"HumanAnimRigRN.placeHolderList[1196]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_l_parentConstraint4.constraintTranslateZ" 
+		"HumanAnimRigRN.placeHolderList[1197]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_l_parentConstraint4.constraintRotateX" 
+		"HumanAnimRigRN.placeHolderList[1198]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_l_parentConstraint4.constraintRotateY" 
+		"HumanAnimRigRN.placeHolderList[1199]" ""
+		5 3 "HumanAnimRigRN" "|HumanAnimRig:Default_Character_AssistantRNfosterParent1|HumanAnimRig:toes_l_parentConstraint4.constraintRotateZ" 
+		"HumanAnimRigRN.placeHolderList[1200]" ""
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[58]" "HumanAnimRigRN.placeHolderList[1201]" 
 		"HumanAnimRig:Ring3_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[59]" "HumanAnimRigRN.placeHolderList[101]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[59]" "HumanAnimRigRN.placeHolderList[1202]" 
 		"HumanAnimRig:Ring3_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[60]" "HumanAnimRigRN.placeHolderList[102]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[60]" "HumanAnimRigRN.placeHolderList[1203]" 
 		"HumanAnimRig:Ring3_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[61]" "HumanAnimRigRN.placeHolderList[103]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[61]" "HumanAnimRigRN.placeHolderList[1204]" 
 		"HumanAnimRig:Ring2_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[62]" "HumanAnimRigRN.placeHolderList[104]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[62]" "HumanAnimRigRN.placeHolderList[1205]" 
 		"HumanAnimRig:Ring2_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[63]" "HumanAnimRigRN.placeHolderList[105]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[63]" "HumanAnimRigRN.placeHolderList[1206]" 
 		"HumanAnimRig:Ring2_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[64]" "HumanAnimRigRN.placeHolderList[106]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[64]" "HumanAnimRigRN.placeHolderList[1207]" 
 		"HumanAnimRig:Ring1_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[65]" "HumanAnimRigRN.placeHolderList[107]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[65]" "HumanAnimRigRN.placeHolderList[1208]" 
 		"HumanAnimRig:Ring1_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[66]" "HumanAnimRigRN.placeHolderList[108]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[66]" "HumanAnimRigRN.placeHolderList[1209]" 
 		"HumanAnimRig:Ring1_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[67]" "HumanAnimRigRN.placeHolderList[109]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[67]" "HumanAnimRigRN.placeHolderList[1210]" 
 		"HumanAnimRig:Middle3_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[68]" "HumanAnimRigRN.placeHolderList[110]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[68]" "HumanAnimRigRN.placeHolderList[1211]" 
 		"HumanAnimRig:Middle3_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[69]" "HumanAnimRigRN.placeHolderList[111]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[69]" "HumanAnimRigRN.placeHolderList[1212]" 
 		"HumanAnimRig:Middle3_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[70]" "HumanAnimRigRN.placeHolderList[112]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[70]" "HumanAnimRigRN.placeHolderList[1213]" 
 		"HumanAnimRig:Middle2_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[71]" "HumanAnimRigRN.placeHolderList[113]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[71]" "HumanAnimRigRN.placeHolderList[1214]" 
 		"HumanAnimRig:Middle2_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[72]" "HumanAnimRigRN.placeHolderList[114]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[72]" "HumanAnimRigRN.placeHolderList[1215]" 
 		"HumanAnimRig:Middle2_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[73]" "HumanAnimRigRN.placeHolderList[115]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[73]" "HumanAnimRigRN.placeHolderList[1216]" 
 		"HumanAnimRig:Middle1_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[74]" "HumanAnimRigRN.placeHolderList[116]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[74]" "HumanAnimRigRN.placeHolderList[1217]" 
 		"HumanAnimRig:Middle1_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[75]" "HumanAnimRigRN.placeHolderList[117]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[75]" "HumanAnimRigRN.placeHolderList[1218]" 
 		"HumanAnimRig:Middle1_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[76]" "HumanAnimRigRN.placeHolderList[118]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[76]" "HumanAnimRigRN.placeHolderList[1219]" 
 		"HumanAnimRig:Index3_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[77]" "HumanAnimRigRN.placeHolderList[119]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[77]" "HumanAnimRigRN.placeHolderList[1220]" 
 		"HumanAnimRig:Index3_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[78]" "HumanAnimRigRN.placeHolderList[120]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[78]" "HumanAnimRigRN.placeHolderList[1221]" 
 		"HumanAnimRig:Index3_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[79]" "HumanAnimRigRN.placeHolderList[121]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[79]" "HumanAnimRigRN.placeHolderList[1222]" 
 		"HumanAnimRig:Index2_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[80]" "HumanAnimRigRN.placeHolderList[122]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[80]" "HumanAnimRigRN.placeHolderList[1223]" 
 		"HumanAnimRig:Index2_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[81]" "HumanAnimRigRN.placeHolderList[123]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[81]" "HumanAnimRigRN.placeHolderList[1224]" 
 		"HumanAnimRig:Index2_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[82]" "HumanAnimRigRN.placeHolderList[124]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[82]" "HumanAnimRigRN.placeHolderList[1225]" 
 		"HumanAnimRig:Index1_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[83]" "HumanAnimRigRN.placeHolderList[125]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[83]" "HumanAnimRigRN.placeHolderList[1226]" 
 		"HumanAnimRig:Index1_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[84]" "HumanAnimRigRN.placeHolderList[126]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[84]" "HumanAnimRigRN.placeHolderList[1227]" 
 		"HumanAnimRig:Index1_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[85]" "HumanAnimRigRN.placeHolderList[127]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[85]" "HumanAnimRigRN.placeHolderList[1228]" 
 		"HumanAnimRig:Thumb3_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[86]" "HumanAnimRigRN.placeHolderList[128]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[86]" "HumanAnimRigRN.placeHolderList[1229]" 
 		"HumanAnimRig:Thumb3_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[87]" "HumanAnimRigRN.placeHolderList[129]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[87]" "HumanAnimRigRN.placeHolderList[1230]" 
 		"HumanAnimRig:Thumb3_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[88]" "HumanAnimRigRN.placeHolderList[130]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[88]" "HumanAnimRigRN.placeHolderList[1231]" 
 		"HumanAnimRig:Thumb2_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[89]" "HumanAnimRigRN.placeHolderList[131]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[89]" "HumanAnimRigRN.placeHolderList[1232]" 
 		"HumanAnimRig:Thumb2_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[90]" "HumanAnimRigRN.placeHolderList[132]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[90]" "HumanAnimRigRN.placeHolderList[1233]" 
 		"HumanAnimRig:Thumb2_CTR_R.rx"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[91]" "HumanAnimRigRN.placeHolderList[133]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[91]" "HumanAnimRigRN.placeHolderList[1234]" 
 		"HumanAnimRig:Thumb1_CTR_R.rz"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[92]" "HumanAnimRigRN.placeHolderList[134]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[92]" "HumanAnimRigRN.placeHolderList[1235]" 
 		"HumanAnimRig:Thumb1_CTR_R.ry"
-		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[93]" "HumanAnimRigRN.placeHolderList[135]" 
+		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.angularValues[93]" "HumanAnimRigRN.placeHolderList[1236]" 
 		"HumanAnimRig:Thumb1_CTR_R.rx"
 		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.unitlessValues[53]" 
-		"HumanAnimRigRN.placeHolderList[136]" "HumanAnimRig:ArmOptions_CTR_R.Weapon"
+		"HumanAnimRigRN.placeHolderList[1237]" "HumanAnimRig:ArmOptions_CTR_R.Weapon"
 		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.unitlessValues[54]" 
-		"HumanAnimRigRN.placeHolderList[137]" "HumanAnimRig:ArmOptions_CTR_R.Relaxed"
+		"HumanAnimRigRN.placeHolderList[1238]" "HumanAnimRig:ArmOptions_CTR_R.Relaxed"
 		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.unitlessValues[55]" 
-		"HumanAnimRigRN.placeHolderList[138]" "HumanAnimRig:ArmOptions_CTR_R.Fist"
+		"HumanAnimRigRN.placeHolderList[1239]" "HumanAnimRig:ArmOptions_CTR_R.Fist"
 		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.unitlessValues[56]" 
-		"HumanAnimRigRN.placeHolderList[139]" "HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow"
+		"HumanAnimRigRN.placeHolderList[1240]" "HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchElbow"
 		
 		5 3 "HumanAnimRigRN" "HumanAnimRig:HMND_AnimRig.unitlessValues[57]" 
-		"HumanAnimRigRN.placeHolderList[140]" "HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand";
+		"HumanAnimRigRN.placeHolderList[1241]" "HumanAnimRig:ArmOptions_CTR_R.SpaceSwitchHand"
+		
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1242]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1243]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1244]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1245]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1246]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1247]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1248]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1249]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1250]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1251]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1252]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1253]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1254]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1255]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1256]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1257]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1258]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1259]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1260]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1261]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1262]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1263]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1264]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1265]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1266]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1267]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1268]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1269]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1270]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1271]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1272]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1273]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1274]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1275]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1276]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1277]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1278]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1279]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1280]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1281]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1282]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1283]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1284]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1285]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1286]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1287]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1288]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1289]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1290]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1291]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1292]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1293]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1294]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1295]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1296]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1297]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1298]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1299]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1300]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1301]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1302]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1303]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1304]" 
+		""
+		5 4 "HumanAnimRigRN" "HumanAnimRig:Export.dagSetMembers" "HumanAnimRigRN.placeHolderList[1305]" 
+		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animBlendNodeAdditive -n "HumanAnimRig:ArmOptions_CTR_R_Fist_UpperBody";
 	rename -uid "C6D6A04B-4648-230B-58A6-0BACB2A25B08";
 createNode animBlendNodeAdditive -n "HumanAnimRig:ArmOptions_CTR_R_Relaxed_UpperBody";
 	rename -uid "FE363810-4FE1-F06C-3783-6082A900A888";
-	setAttr ".o" -10;
+	setAttr ".o" 10;
 createNode animBlendNodeEnum -n "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchElbow_UpperBody";
 	rename -uid "F142EA51-4DC5-B4AA-AAE7-0A959FDD2FBD";
 	setAttr ".o" 1;
@@ -4505,7 +10542,7 @@ createNode animBlendNodeAdditive -n "HumanAnimRig:ArmOptions_CTR_R_Fist_Fingers"
 	rename -uid "FA96912F-49B1-3994-1CF0-3DBC51E9CCE3";
 createNode animBlendNodeAdditive -n "HumanAnimRig:ArmOptions_CTR_R_Relaxed_Fingers";
 	rename -uid "B330BCE7-410B-E5C8-637A-229249A2FEDD";
-	setAttr ".o" -10;
+	setAttr ".o" 10;
 createNode animBlendNodeEnum -n "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchElbow_Fingers";
 	rename -uid "0480247D-416F-BD98-5688-3982C5EAAD84";
 	setAttr ".o" 1;
@@ -4517,7 +10554,7 @@ createNode animCurveTU -n "ArmOptions_CTR_R_Fist_Fingers_inputB1";
 	rename -uid "ED92B093-4512-F455-7A85-D69A2EBA1BB8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  0 0 5 10 10 0 11 10 13 -10 15 0 17 0 19 0
+	setAttr -s 19 ".ktv[0:18]"  0 10 5 0 10 10 11 10 13 -10 15 0 17 0 19 0
 		 21 0 23 10 25 10 27 10 29 0 31 0 33 0 35 0 37 0 39 0 41 0;
 	setAttr -s 19 ".kit[10:18]"  1 18 18 18 18 18 18 18 
 		18;
@@ -5031,8 +11068,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 18;
-	setAttr -av ".unw" 18;
+	setAttr ".o" 16;
+	setAttr -av ".unw" 16;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
@@ -5311,240 +11348,1482 @@ select -ne :ikSystem;
 	setAttr -av -k on ".gsn";
 	setAttr -k on ".gsv";
 	setAttr -s 2 ".sol";
-connectAttr "HumanAnimRigRN.phl[1]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[2]"
-		;
-connectAttr "HumanAnimRigRN.phl[3]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[4]"
-		;
-connectAttr "HumanAnimRigRN.phl[5]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[6]"
-		;
-connectAttr "HumanAnimRigRN.phl[7]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.ro"
-		;
+connectAttr "HumanAnimRigRN.phl[1]" "HumanArmature_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[2]" "HumanArmature_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[3]" "HumanArmature_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[4]" "HumanArmature_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[5]" "HumanArmature_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[6]" "HumanArmature_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[7]" "HumanArmature_parentConstraint2.tg[0].tpm";
 connectAttr "HumanAnimRigRN.phl[8]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[9]"
+connectAttr "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[9]"
 		;
 connectAttr "HumanAnimRigRN.phl[10]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[11]"
+connectAttr "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[11]"
 		;
 connectAttr "HumanAnimRigRN.phl[12]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[13]"
+connectAttr "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[13]"
 		;
-connectAttr "HumanAnimRigRN.phl[14]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[14]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[15]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[16]"
+connectAttr "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[16]"
 		;
 connectAttr "HumanAnimRigRN.phl[17]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[18]"
+connectAttr "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[18]"
 		;
 connectAttr "HumanAnimRigRN.phl[19]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[20]"
+connectAttr "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[20]"
 		;
-connectAttr "HumanAnimRigRN.phl[21]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[21]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[22]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[23]"
+connectAttr "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[23]"
 		;
 connectAttr "HumanAnimRigRN.phl[24]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[25]"
+connectAttr "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[25]"
 		;
 connectAttr "HumanAnimRigRN.phl[26]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[27]"
+connectAttr "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[27]"
 		;
-connectAttr "HumanAnimRigRN.phl[28]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[28]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[29]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[30]"
+connectAttr "HumanAnimRig:Index1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[30]"
 		;
 connectAttr "HumanAnimRigRN.phl[31]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[32]"
+connectAttr "HumanAnimRig:Index1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[32]"
 		;
 connectAttr "HumanAnimRigRN.phl[33]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[34]"
+connectAttr "HumanAnimRig:Index1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[34]"
 		;
-connectAttr "HumanAnimRigRN.phl[35]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[35]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[36]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[37]"
+connectAttr "HumanAnimRig:Index2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[37]"
 		;
 connectAttr "HumanAnimRigRN.phl[38]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[39]"
+connectAttr "HumanAnimRig:Index2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[39]"
 		;
 connectAttr "HumanAnimRigRN.phl[40]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Index3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[41]"
+connectAttr "HumanAnimRig:Index2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[41]"
 		;
-connectAttr "HumanAnimRigRN.phl[42]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[42]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[43]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[44]"
+connectAttr "HumanAnimRig:Index3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[44]"
 		;
 connectAttr "HumanAnimRigRN.phl[45]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[46]"
+connectAttr "HumanAnimRig:Index3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[46]"
 		;
 connectAttr "HumanAnimRigRN.phl[47]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[48]"
+connectAttr "HumanAnimRig:Index3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[48]"
 		;
-connectAttr "HumanAnimRigRN.phl[49]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[49]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[50]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[51]"
+connectAttr "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[51]"
 		;
 connectAttr "HumanAnimRigRN.phl[52]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[53]"
+connectAttr "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[53]"
 		;
 connectAttr "HumanAnimRigRN.phl[54]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[55]"
+connectAttr "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[55]"
 		;
-connectAttr "HumanAnimRigRN.phl[56]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[56]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[57]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[58]"
+connectAttr "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[58]"
 		;
 connectAttr "HumanAnimRigRN.phl[59]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[60]"
+connectAttr "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[60]"
 		;
 connectAttr "HumanAnimRigRN.phl[61]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[62]"
+connectAttr "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[62]"
 		;
-connectAttr "HumanAnimRigRN.phl[63]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[63]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[64]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[65]"
+connectAttr "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[65]"
 		;
 connectAttr "HumanAnimRigRN.phl[66]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[67]"
+connectAttr "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[67]"
 		;
 connectAttr "HumanAnimRigRN.phl[68]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[69]"
+connectAttr "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[69]"
 		;
-connectAttr "HumanAnimRigRN.phl[70]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[70]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[71]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[72]"
+connectAttr "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[72]"
 		;
 connectAttr "HumanAnimRigRN.phl[73]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[74]"
+connectAttr "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[74]"
 		;
 connectAttr "HumanAnimRigRN.phl[75]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[76]"
+connectAttr "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[76]"
 		;
-connectAttr "HumanAnimRigRN.phl[77]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[77]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.ro"
 		;
 connectAttr "HumanAnimRigRN.phl[78]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[79]"
+connectAttr "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[79]"
 		;
 connectAttr "HumanAnimRigRN.phl[80]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[81]"
+connectAttr "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[81]"
 		;
 connectAttr "HumanAnimRigRN.phl[82]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[83]"
+connectAttr "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[83]"
 		;
-connectAttr "HumanAnimRigRN.phl[84]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.ro"
+connectAttr "HumanAnimRigRN.phl[84]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.ro"
 		;
-connectAttr "HumanAnimRigRN.phl[85]" "UpperBody.dsm" -na;
-connectAttr "HumanAnimRigRN.phl[86]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchHand_UpperBody.o" "HumanAnimRigRN.phl[87]"
+connectAttr "HumanAnimRigRN.phl[85]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.oz" "HumanAnimRigRN.phl[86]"
 		;
-connectAttr "HumanAnimRigRN.phl[88]" "UpperBody.dsm" -na;
+connectAttr "HumanAnimRigRN.phl[87]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.oy" "HumanAnimRigRN.phl[88]"
+		;
 connectAttr "HumanAnimRigRN.phl[89]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchElbow_UpperBody.o" "HumanAnimRigRN.phl[90]"
+connectAttr "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.ox" "HumanAnimRigRN.phl[90]"
 		;
-connectAttr "HumanAnimRigRN.phl[91]" "UpperBody.dsm" -na;
-connectAttr "HumanAnimRigRN.phl[92]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:ArmOptions_CTR_R_Fist_UpperBody.o" "HumanAnimRigRN.phl[93]"
+connectAttr "HumanAnimRigRN.phl[91]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.ro"
 		;
-connectAttr "HumanAnimRigRN.phl[94]" "UpperBody.dsm" -na;
-connectAttr "HumanAnimRigRN.phl[95]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:ArmOptions_CTR_R_Relaxed_UpperBody.o" "HumanAnimRigRN.phl[96]"
+connectAttr "HumanAnimRigRN.phl[92]" "UpperBody.dsm" -na;
+connectAttr "HumanAnimRigRN.phl[93]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchHand_UpperBody.o" "HumanAnimRigRN.phl[94]"
 		;
-connectAttr "HumanAnimRigRN.phl[97]" "UpperBody.dsm" -na;
-connectAttr "HumanAnimRigRN.phl[98]" "Fingers.dsm" -na;
-connectAttr "HumanAnimRig:ArmOptions_CTR_R_Weapon_UpperBody.o" "HumanAnimRigRN.phl[99]"
+connectAttr "HumanAnimRigRN.phl[95]" "UpperBody.dsm" -na;
+connectAttr "HumanAnimRigRN.phl[96]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchElbow_UpperBody.o" "HumanAnimRigRN.phl[97]"
 		;
-connectAttr "HumanAnimRigRN.phl[100]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[98]" "UpperBody.dsm" -na;
+connectAttr "HumanAnimRigRN.phl[99]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:ArmOptions_CTR_R_Fist_UpperBody.o" "HumanAnimRigRN.phl[100]"
 		;
-connectAttr "HumanAnimRigRN.phl[101]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[101]" "UpperBody.dsm" -na;
+connectAttr "HumanAnimRigRN.phl[102]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:ArmOptions_CTR_R_Relaxed_UpperBody.o" "HumanAnimRigRN.phl[103]"
 		;
-connectAttr "HumanAnimRigRN.phl[102]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[104]" "UpperBody.dsm" -na;
+connectAttr "HumanAnimRigRN.phl[105]" "Fingers.dsm" -na;
+connectAttr "HumanAnimRig:ArmOptions_CTR_R_Weapon_UpperBody.o" "HumanAnimRigRN.phl[106]"
 		;
-connectAttr "HumanAnimRigRN.phl[103]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[107]" "hips_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[108]" "hips_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[109]" "hips_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[110]" "hips_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[111]" "hips_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[112]" "hips_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[113]" "hips_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[114]" "hips_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[115]" "hips_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[116]" "hips_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[117]" "thigh_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[118]" "thigh_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[119]" "thigh_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[120]" "thigh_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[121]" "thigh_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[122]" "thigh_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[123]" "thigh_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[124]" "thigh_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[125]" "thigh_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[126]" "thigh_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[127]" "lower_leg_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[128]" "lower_leg_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[129]" "lower_leg_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[130]" "lower_leg_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[131]" "lower_leg_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[132]" "lower_leg_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[133]" "lower_leg_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[134]" "lower_leg_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[135]" "lower_leg_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[136]" "lower_leg_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[137]" "foot_l_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[138]" "foot_l_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[139]" "foot_l_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[140]" "foot_l_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[141]" "foot_l_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[142]" "foot_l_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[143]" "foot_l_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[144]" "foot_l_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[145]" "foot_l_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[146]" "foot_l_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[147]" "toes_l_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[148]" "toes_l_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[149]" "toes_l_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[150]" "toes_l_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[151]" "toes_l_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[152]" "toes_l_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[153]" "toes_l_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[154]" "toes_l_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[155]" "toes_l_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[156]" "toes_l_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[157]" "width_thigh_l_parentConstraint3.tg[0].ts"
 		;
-connectAttr "HumanAnimRigRN.phl[104]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[158]" "width_thigh_l_scaleConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[159]" "width_thigh_l_parentConstraint3.tg[0].tis"
 		;
-connectAttr "HumanAnimRigRN.phl[105]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[160]" "width_thigh_l_parentConstraint3.tg[0].tt"
 		;
-connectAttr "HumanAnimRigRN.phl[106]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[161]" "width_thigh_l_parentConstraint3.tg[0].tr"
 		;
-connectAttr "HumanAnimRigRN.phl[107]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[162]" "width_thigh_l_parentConstraint3.tg[0].tsc"
 		;
-connectAttr "HumanAnimRigRN.phl[108]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[163]" "width_thigh_l_parentConstraint3.tg[0].tro"
 		;
-connectAttr "HumanAnimRigRN.phl[109]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[164]" "width_thigh_l_parentConstraint3.tg[0].trp"
 		;
-connectAttr "HumanAnimRigRN.phl[110]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[165]" "width_thigh_l_parentConstraint3.tg[0].trt"
 		;
-connectAttr "HumanAnimRigRN.phl[111]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[166]" "width_thigh_l_parentConstraint3.tg[0].tjo"
 		;
-connectAttr "HumanAnimRigRN.phl[112]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[167]" "width_thigh_l_parentConstraint3.tg[0].tpm"
 		;
-connectAttr "HumanAnimRigRN.phl[113]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[168]" "width_thigh_l_scaleConstraint3.tg[0].tpm"
 		;
-connectAttr "HumanAnimRigRN.phl[114]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[169]" "thigh_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[170]" "thigh_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[171]" "thigh_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[172]" "thigh_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[173]" "thigh_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[174]" "thigh_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[175]" "thigh_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[176]" "thigh_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[177]" "thigh_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[178]" "thigh_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[179]" "lower_leg_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[180]" "lower_leg_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[181]" "lower_leg_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[182]" "lower_leg_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[183]" "lower_leg_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[184]" "lower_leg_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[185]" "lower_leg_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[186]" "lower_leg_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[187]" "lower_leg_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[188]" "lower_leg_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[189]" "foot_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[190]" "foot_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[191]" "foot_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[192]" "foot_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[193]" "foot_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[194]" "foot_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[195]" "foot_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[196]" "foot_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[197]" "foot_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[198]" "foot_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[199]" "toes_r_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[200]" "toes_r_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[201]" "toes_r_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[202]" "toes_r_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[203]" "toes_r_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[204]" "toes_r_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[205]" "toes_r_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[206]" "toes_r_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[207]" "toes_r_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[208]" "toes_r_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[209]" "width_thigh_r_parentConstraint3.tg[0].ts"
 		;
-connectAttr "HumanAnimRigRN.phl[115]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[210]" "width_thigh_r_scaleConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[211]" "width_thigh_r_parentConstraint3.tg[0].tis"
 		;
-connectAttr "HumanAnimRigRN.phl[116]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[212]" "width_thigh_r_parentConstraint3.tg[0].tt"
 		;
-connectAttr "HumanAnimRigRN.phl[117]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[213]" "width_thigh_r_parentConstraint3.tg[0].tr"
 		;
-connectAttr "HumanAnimRigRN.phl[118]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[214]" "width_thigh_r_parentConstraint3.tg[0].tro"
 		;
-connectAttr "HumanAnimRigRN.phl[119]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[215]" "width_thigh_r_parentConstraint3.tg[0].trp"
 		;
-connectAttr "HumanAnimRigRN.phl[120]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[216]" "width_thigh_r_parentConstraint3.tg[0].trt"
 		;
-connectAttr "HumanAnimRigRN.phl[121]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[217]" "width_thigh_r_parentConstraint3.tg[0].tjo"
 		;
-connectAttr "HumanAnimRigRN.phl[122]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[218]" "width_thigh_r_parentConstraint3.tg[0].tsc"
 		;
-connectAttr "HumanAnimRigRN.phl[123]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[219]" "width_thigh_r_parentConstraint3.tg[0].tpm"
 		;
-connectAttr "HumanAnimRigRN.phl[124]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[220]" "width_thigh_r_scaleConstraint3.tg[0].tpm"
 		;
-connectAttr "HumanAnimRigRN.phl[125]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[221]" "spine_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[222]" "spine_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[223]" "spine_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[224]" "spine_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[225]" "spine_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[226]" "spine_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[227]" "spine_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[228]" "spine_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[229]" "spine_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[230]" "spine_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[231]" "chest_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[232]" "chest_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[233]" "chest_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[234]" "chest_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[235]" "chest_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[236]" "chest_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[237]" "chest_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[238]" "chest_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[239]" "chest_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[240]" "chest_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[241]" "neck_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[242]" "neck_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[243]" "neck_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[244]" "neck_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[245]" "neck_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[246]" "neck_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[247]" "neck_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[248]" "neck_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[249]" "neck_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[250]" "neck_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[251]" "head_parentConstraint1.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[252]" "head_parentConstraint1.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[253]" "head_parentConstraint1.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[254]" "head_parentConstraint1.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[255]" "head_parentConstraint1.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[256]" "head_parentConstraint1.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[257]" "head_parentConstraint1.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[258]" "head_parentConstraint1.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[259]" "head_parentConstraint1.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[260]" "head_parentConstraint1.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[261]" "muscle_neck_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[262]" "muscle_neck_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[263]" "muscle_neck_scaleConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[264]" "muscle_neck_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[265]" "muscle_neck_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[266]" "muscle_neck_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[267]" "muscle_neck_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[268]" "muscle_neck_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[269]" "muscle_neck_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[270]" "muscle_neck_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[271]" "muscle_neck_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[272]" "muscle_neck_scaleConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[273]" "shoulder_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[274]" "shoulder_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[275]" "shoulder_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[276]" "shoulder_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[277]" "shoulder_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[278]" "shoulder_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[279]" "shoulder_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[280]" "shoulder_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[281]" "shoulder_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[282]" "shoulder_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[283]" "upper_arm_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[284]" "upper_arm_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[285]" "upper_arm_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[286]" "upper_arm_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[287]" "upper_arm_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[288]" "upper_arm_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[289]" "upper_arm_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[290]" "upper_arm_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[291]" "upper_arm_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[292]" "upper_arm_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[293]" "forearm_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[294]" "forearm_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[295]" "forearm_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[296]" "forearm_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[297]" "forearm_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[298]" "forearm_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[299]" "forearm_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[300]" "forearm_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[301]" "forearm_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[302]" "forearm_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[303]" "hand_r_parentConstraint1.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[304]" "hand_r_parentConstraint1.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[305]" "hand_r_parentConstraint1.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[306]" "hand_r_parentConstraint1.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[307]" "hand_r_parentConstraint1.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[308]" "hand_r_parentConstraint1.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[309]" "hand_r_parentConstraint1.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[310]" "hand_r_parentConstraint1.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[311]" "hand_r_parentConstraint1.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[312]" "hand_r_parentConstraint1.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[313]" "c_thumb1_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[314]" "c_thumb1_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[315]" "c_thumb1_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[316]" "c_thumb1_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[317]" "c_thumb1_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[318]" "c_thumb1_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[319]" "c_thumb1_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[320]" "c_thumb1_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[321]" "c_thumb1_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[322]" "c_thumb1_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[323]" "c_thumb2_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[324]" "c_thumb2_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[325]" "c_thumb2_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[326]" "c_thumb2_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[327]" "c_thumb2_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[328]" "c_thumb2_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[329]" "c_thumb2_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[330]" "c_thumb2_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[331]" "c_thumb2_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[332]" "c_thumb2_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[333]" "c_thumb3_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[334]" "c_thumb3_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[335]" "c_thumb3_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[336]" "c_thumb3_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[337]" "c_thumb3_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[338]" "c_thumb3_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[339]" "c_thumb3_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[340]" "c_thumb3_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[341]" "c_thumb3_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[342]" "c_thumb3_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[343]" "c_ring1_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[344]" "c_ring1_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[345]" "c_ring1_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[346]" "c_ring1_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[347]" "c_ring1_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[348]" "c_ring1_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[349]" "c_ring1_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[350]" "c_ring1_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[351]" "c_ring1_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[352]" "c_ring1_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[353]" "c_ring2_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[354]" "c_ring2_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[355]" "c_ring2_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[356]" "c_ring2_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[357]" "c_ring2_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[358]" "c_ring2_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[359]" "c_ring2_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[360]" "c_ring2_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[361]" "c_ring2_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[362]" "c_ring2_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[363]" "c_ring3_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[364]" "c_ring3_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[365]" "c_ring3_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[366]" "c_ring3_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[367]" "c_ring3_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[368]" "c_ring3_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[369]" "c_ring3_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[370]" "c_ring3_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[371]" "c_ring3_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[372]" "c_ring3_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[373]" "c_middle1_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[374]" "c_middle1_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[375]" "c_middle1_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[376]" "c_middle1_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[377]" "c_middle1_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[378]" "c_middle1_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[379]" "c_middle1_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[380]" "c_middle1_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[381]" "c_middle1_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[382]" "c_middle1_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[383]" "c_middle2_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[384]" "c_middle2_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[385]" "c_middle2_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[386]" "c_middle2_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[387]" "c_middle2_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[388]" "c_middle2_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[389]" "c_middle2_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[390]" "c_middle2_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[391]" "c_middle2_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[392]" "c_middle2_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[393]" "c_middle3_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[394]" "c_middle3_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[395]" "c_middle3_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[396]" "c_middle3_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[397]" "c_middle3_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[398]" "c_middle3_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[399]" "c_middle3_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[400]" "c_middle3_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[401]" "c_middle3_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[402]" "c_middle3_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[403]" "c_index1_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[404]" "c_index1_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[405]" "c_index1_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[406]" "c_index1_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[407]" "c_index1_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[408]" "c_index1_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[409]" "c_index1_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[410]" "c_index1_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[411]" "c_index1_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[412]" "c_index1_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[413]" "c_index2_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[414]" "c_index2_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[415]" "c_index2_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[416]" "c_index2_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[417]" "c_index2_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[418]" "c_index2_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[419]" "c_index2_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[420]" "c_index2_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[421]" "c_index2_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[422]" "c_index2_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[423]" "c_index3_r_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[424]" "c_index3_r_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[425]" "c_index3_r_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[426]" "c_index3_r_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[427]" "c_index3_r_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[428]" "c_index3_r_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[429]" "c_index3_r_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[430]" "c_index3_r_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[431]" "c_index3_r_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[432]" "c_index3_r_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[433]" "hold_r_parentConstraint1.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[434]" "hold_r_parentConstraint1.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[435]" "hold_r_parentConstraint1.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[436]" "hold_r_parentConstraint1.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[437]" "hold_r_parentConstraint1.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[438]" "hold_r_parentConstraint1.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[439]" "hold_r_parentConstraint1.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[440]" "hold_r_parentConstraint1.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[441]" "hold_r_parentConstraint1.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[442]" "hold_r_parentConstraint1.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[443]" "forearm_twist_r_parentConstraint1.tg[0].ts"
 		;
-connectAttr "HumanAnimRigRN.phl[126]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[444]" "forearm_twist_r_scaleConstraint1.tg[0].ts"
 		;
-connectAttr "HumanAnimRigRN.phl[127]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[445]" "forearm_twist_r_parentConstraint1.tg[0].tis"
 		;
-connectAttr "HumanAnimRigRN.phl[128]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[446]" "forearm_twist_r_parentConstraint1.tg[0].tr"
 		;
-connectAttr "HumanAnimRigRN.phl[129]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[447]" "forearm_twist_r_parentConstraint1.tg[0].tro"
 		;
-connectAttr "HumanAnimRigRN.phl[130]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[448]" "forearm_twist_r_parentConstraint1.tg[0].tjo"
 		;
-connectAttr "HumanAnimRigRN.phl[131]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[449]" "forearm_twist_r_parentConstraint1.tg[0].tsc"
 		;
-connectAttr "HumanAnimRigRN.phl[132]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[450]" "forearm_twist_r_parentConstraint1.tg[0].tt"
 		;
-connectAttr "HumanAnimRigRN.phl[133]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.iaz"
+connectAttr "HumanAnimRigRN.phl[451]" "forearm_twist_r_parentConstraint1.tg[0].trp"
 		;
-connectAttr "HumanAnimRigRN.phl[134]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.iay"
+connectAttr "HumanAnimRigRN.phl[452]" "forearm_twist_r_parentConstraint1.tg[0].trt"
 		;
-connectAttr "HumanAnimRigRN.phl[135]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.iax"
+connectAttr "HumanAnimRigRN.phl[453]" "forearm_twist_r_parentConstraint1.tg[0].tpm"
 		;
-connectAttr "HumanAnimRigRN.phl[136]" "HumanAnimRig:ArmOptions_CTR_R_Weapon_Fingers.ia"
+connectAttr "HumanAnimRigRN.phl[454]" "forearm_twist_r_scaleConstraint1.tg[0].tpm"
 		;
-connectAttr "HumanAnimRigRN.phl[137]" "HumanAnimRig:ArmOptions_CTR_R_Relaxed_Fingers.ia"
+connectAttr "HumanAnimRigRN.phl[455]" "bicep_r_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[456]" "bicep_r_scaleConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[457]" "bicep_r_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[458]" "bicep_r_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[459]" "bicep_r_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[460]" "bicep_r_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[461]" "bicep_r_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[462]" "bicep_r_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[463]" "bicep_r_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[464]" "bicep_r_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[465]" "bicep_r_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[466]" "bicep_r_scaleConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[467]" "muscle_shoulder_r_parentConstraint4.tg[0].tis"
 		;
-connectAttr "HumanAnimRigRN.phl[138]" "HumanAnimRig:ArmOptions_CTR_R_Fist_Fingers.ia"
+connectAttr "HumanAnimRigRN.phl[468]" "muscle_shoulder_r_parentConstraint4.tg[0].tt"
 		;
-connectAttr "HumanAnimRigRN.phl[139]" "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchElbow_Fingers.ia"
+connectAttr "HumanAnimRigRN.phl[469]" "muscle_shoulder_r_parentConstraint4.tg[0].tr"
 		;
-connectAttr "HumanAnimRigRN.phl[140]" "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchHand_Fingers.ia"
+connectAttr "HumanAnimRigRN.phl[470]" "muscle_shoulder_r_parentConstraint4.tg[0].tro"
 		;
+connectAttr "HumanAnimRigRN.phl[471]" "muscle_shoulder_r_parentConstraint4.tg[0].trp"
+		;
+connectAttr "HumanAnimRigRN.phl[472]" "muscle_shoulder_r_parentConstraint4.tg[0].trt"
+		;
+connectAttr "HumanAnimRigRN.phl[473]" "muscle_shoulder_r_parentConstraint4.tg[0].tjo"
+		;
+connectAttr "HumanAnimRigRN.phl[474]" "muscle_shoulder_r_parentConstraint4.tg[0].ts"
+		;
+connectAttr "HumanAnimRigRN.phl[475]" "muscle_shoulder_r_scaleConstraint4.tg[0].ts"
+		;
+connectAttr "HumanAnimRigRN.phl[476]" "muscle_shoulder_r_parentConstraint4.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[477]" "muscle_shoulder_r_scaleConstraint4.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[478]" "muscle_shoulder_r_parentConstraint4.tg[0].tsc"
+		;
+connectAttr "HumanAnimRigRN.phl[479]" "shoulder_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[480]" "shoulder_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[481]" "shoulder_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[482]" "shoulder_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[483]" "shoulder_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[484]" "shoulder_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[485]" "shoulder_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[486]" "shoulder_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[487]" "shoulder_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[488]" "shoulder_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[489]" "upper_arm_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[490]" "upper_arm_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[491]" "upper_arm_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[492]" "upper_arm_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[493]" "upper_arm_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[494]" "upper_arm_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[495]" "upper_arm_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[496]" "upper_arm_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[497]" "upper_arm_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[498]" "upper_arm_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[499]" "forearm_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[500]" "forearm_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[501]" "forearm_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[502]" "forearm_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[503]" "forearm_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[504]" "forearm_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[505]" "forearm_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[506]" "forearm_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[507]" "forearm_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[508]" "forearm_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[509]" "hand_l_parentConstraint1.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[510]" "hand_l_parentConstraint1.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[511]" "hand_l_parentConstraint1.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[512]" "hand_l_parentConstraint1.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[513]" "hand_l_parentConstraint1.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[514]" "hand_l_parentConstraint1.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[515]" "hand_l_parentConstraint1.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[516]" "hand_l_parentConstraint1.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[517]" "hand_l_parentConstraint1.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[518]" "hand_l_parentConstraint1.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[519]" "c_thumb1_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[520]" "c_thumb1_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[521]" "c_thumb1_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[522]" "c_thumb1_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[523]" "c_thumb1_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[524]" "c_thumb1_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[525]" "c_thumb1_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[526]" "c_thumb1_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[527]" "c_thumb1_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[528]" "c_thumb1_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[529]" "c_thumb2_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[530]" "c_thumb2_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[531]" "c_thumb2_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[532]" "c_thumb2_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[533]" "c_thumb2_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[534]" "c_thumb2_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[535]" "c_thumb2_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[536]" "c_thumb2_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[537]" "c_thumb2_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[538]" "c_thumb2_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[539]" "c_thumb3_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[540]" "c_thumb3_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[541]" "c_thumb3_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[542]" "c_thumb3_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[543]" "c_thumb3_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[544]" "c_thumb3_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[545]" "c_thumb3_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[546]" "c_thumb3_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[547]" "c_thumb3_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[548]" "c_thumb3_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[549]" "c_ring1_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[550]" "c_ring1_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[551]" "c_ring1_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[552]" "c_ring1_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[553]" "c_ring1_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[554]" "c_ring1_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[555]" "c_ring1_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[556]" "c_ring1_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[557]" "c_ring1_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[558]" "c_ring1_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[559]" "c_ring2_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[560]" "c_ring2_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[561]" "c_ring2_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[562]" "c_ring2_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[563]" "c_ring2_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[564]" "c_ring2_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[565]" "c_ring2_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[566]" "c_ring2_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[567]" "c_ring2_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[568]" "c_ring2_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[569]" "c_ring3_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[570]" "c_ring3_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[571]" "c_ring3_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[572]" "c_ring3_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[573]" "c_ring3_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[574]" "c_ring3_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[575]" "c_ring3_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[576]" "c_ring3_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[577]" "c_ring3_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[578]" "c_ring3_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[579]" "c_middle1_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[580]" "c_middle1_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[581]" "c_middle1_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[582]" "c_middle1_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[583]" "c_middle1_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[584]" "c_middle1_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[585]" "c_middle1_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[586]" "c_middle1_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[587]" "c_middle1_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[588]" "c_middle1_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[589]" "c_middle2_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[590]" "c_middle2_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[591]" "c_middle2_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[592]" "c_middle2_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[593]" "c_middle2_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[594]" "c_middle2_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[595]" "c_middle2_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[596]" "c_middle2_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[597]" "c_middle2_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[598]" "c_middle2_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[599]" "c_middle3_l_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[600]" "c_middle3_l_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[601]" "c_middle3_l_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[602]" "c_middle3_l_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[603]" "c_middle3_l_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[604]" "c_middle3_l_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[605]" "c_middle3_l_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[606]" "c_middle3_l_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[607]" "c_middle3_l_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[608]" "c_middle3_l_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[609]" "c_index1_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[610]" "c_index1_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[611]" "c_index1_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[612]" "c_index1_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[613]" "c_index1_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[614]" "c_index1_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[615]" "c_index1_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[616]" "c_index1_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[617]" "c_index1_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[618]" "c_index1_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[619]" "c_index2_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[620]" "c_index2_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[621]" "c_index2_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[622]" "c_index2_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[623]" "c_index2_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[624]" "c_index2_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[625]" "c_index2_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[626]" "c_index2_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[627]" "c_index2_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[628]" "c_index2_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[629]" "c_index3_l_parentConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[630]" "c_index3_l_parentConstraint2.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[631]" "c_index3_l_parentConstraint2.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[632]" "c_index3_l_parentConstraint2.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[633]" "c_index3_l_parentConstraint2.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[634]" "c_index3_l_parentConstraint2.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[635]" "c_index3_l_parentConstraint2.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[636]" "c_index3_l_parentConstraint2.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[637]" "c_index3_l_parentConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[638]" "c_index3_l_parentConstraint2.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[639]" "hold_l_parentConstraint1.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[640]" "hold_l_parentConstraint1.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[641]" "hold_l_parentConstraint1.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[642]" "hold_l_parentConstraint1.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[643]" "hold_l_parentConstraint1.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[644]" "hold_l_parentConstraint1.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[645]" "hold_l_parentConstraint1.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[646]" "hold_l_parentConstraint1.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[647]" "hold_l_parentConstraint1.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[648]" "hold_l_parentConstraint1.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[649]" "forearm_twist_l_parentConstraint3.tg[0].ts"
+		;
+connectAttr "HumanAnimRigRN.phl[650]" "forearm_twist_l_scaleConstraint1.tg[0].ts"
+		;
+connectAttr "HumanAnimRigRN.phl[651]" "forearm_twist_l_parentConstraint3.tg[0].tis"
+		;
+connectAttr "HumanAnimRigRN.phl[652]" "forearm_twist_l_parentConstraint3.tg[0].tt"
+		;
+connectAttr "HumanAnimRigRN.phl[653]" "forearm_twist_l_parentConstraint3.tg[0].tr"
+		;
+connectAttr "HumanAnimRigRN.phl[654]" "forearm_twist_l_parentConstraint3.tg[0].tro"
+		;
+connectAttr "HumanAnimRigRN.phl[655]" "forearm_twist_l_parentConstraint3.tg[0].trp"
+		;
+connectAttr "HumanAnimRigRN.phl[656]" "forearm_twist_l_parentConstraint3.tg[0].trt"
+		;
+connectAttr "HumanAnimRigRN.phl[657]" "forearm_twist_l_parentConstraint3.tg[0].tjo"
+		;
+connectAttr "HumanAnimRigRN.phl[658]" "forearm_twist_l_parentConstraint3.tg[0].tsc"
+		;
+connectAttr "HumanAnimRigRN.phl[659]" "forearm_twist_l_parentConstraint3.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[660]" "forearm_twist_l_scaleConstraint1.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[661]" "bicep_l_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[662]" "bicep_l_scaleConstraint1.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[663]" "bicep_l_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[664]" "bicep_l_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[665]" "bicep_l_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[666]" "bicep_l_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[667]" "bicep_l_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[668]" "bicep_l_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[669]" "bicep_l_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[670]" "bicep_l_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[671]" "bicep_l_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[672]" "bicep_l_scaleConstraint1.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[673]" "muscle_shoulder_l_parentConstraint4.tg[0].tis"
+		;
+connectAttr "HumanAnimRigRN.phl[674]" "muscle_shoulder_l_parentConstraint4.tg[0].tt"
+		;
+connectAttr "HumanAnimRigRN.phl[675]" "muscle_shoulder_l_parentConstraint4.tg[0].tr"
+		;
+connectAttr "HumanAnimRigRN.phl[676]" "muscle_shoulder_l_parentConstraint4.tg[0].ts"
+		;
+connectAttr "HumanAnimRigRN.phl[677]" "muscle_shoulder_l_scaleConstraint4.tg[0].ts"
+		;
+connectAttr "HumanAnimRigRN.phl[678]" "muscle_shoulder_l_parentConstraint4.tg[0].tro"
+		;
+connectAttr "HumanAnimRigRN.phl[679]" "muscle_shoulder_l_parentConstraint4.tg[0].trp"
+		;
+connectAttr "HumanAnimRigRN.phl[680]" "muscle_shoulder_l_parentConstraint4.tg[0].trt"
+		;
+connectAttr "HumanAnimRigRN.phl[681]" "muscle_shoulder_l_parentConstraint4.tg[0].tjo"
+		;
+connectAttr "HumanAnimRigRN.phl[682]" "muscle_shoulder_l_parentConstraint4.tg[0].tsc"
+		;
+connectAttr "HumanAnimRigRN.phl[683]" "muscle_shoulder_l_parentConstraint4.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[684]" "muscle_shoulder_l_scaleConstraint4.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[685]" "breast_L_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[686]" "breast_L_scaleConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[687]" "breast_L_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[688]" "breast_L_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[689]" "breast_L_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[690]" "breast_L_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[691]" "breast_L_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[692]" "breast_L_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[693]" "breast_L_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[694]" "breast_L_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[695]" "breast_L_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[696]" "breast_L_scaleConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[697]" "breast_R_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[698]" "breast_R_scaleConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[699]" "breast_R_parentConstraint4.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[700]" "breast_R_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[701]" "breast_R_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[702]" "breast_R_parentConstraint4.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[703]" "breast_R_parentConstraint4.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[704]" "breast_R_parentConstraint4.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[705]" "breast_R_parentConstraint4.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[706]" "breast_R_parentConstraint4.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[707]" "breast_R_parentConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[708]" "breast_R_scaleConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[709]" "muscle_chest_parentConstraint4.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[710]" "muscle_chest_parentConstraint4.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[711]" "muscle_chest_scaleConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[712]" "muscle_chest_parentConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[713]" "muscle_chest_parentConstraint4.tg[0].tis"
+		;
+connectAttr "HumanAnimRigRN.phl[714]" "muscle_chest_parentConstraint4.tg[0].tro"
+		;
+connectAttr "HumanAnimRigRN.phl[715]" "muscle_chest_parentConstraint4.tg[0].trp"
+		;
+connectAttr "HumanAnimRigRN.phl[716]" "muscle_chest_parentConstraint4.tg[0].trt"
+		;
+connectAttr "HumanAnimRigRN.phl[717]" "muscle_chest_parentConstraint4.tg[0].tjo"
+		;
+connectAttr "HumanAnimRigRN.phl[718]" "muscle_chest_parentConstraint4.tg[0].tsc"
+		;
+connectAttr "HumanAnimRigRN.phl[719]" "muscle_chest_scaleConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[720]" "muscle_chest_parentConstraint4.tg[0].tpm"
+		;
+connectAttr "HumanAnimRigRN.phl[721]" "torso_width_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[722]" "torso_width_scaleConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[723]" "torso_width_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[724]" "torso_width_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[725]" "torso_width_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[726]" "torso_width_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[727]" "torso_width_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[728]" "torso_width_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[729]" "torso_width_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[730]" "torso_width_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[731]" "torso_width_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[732]" "torso_width_scaleConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[733]" "belly_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[734]" "belly_scaleConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[735]" "belly_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[736]" "belly_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[737]" "belly_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[738]" "belly_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[739]" "belly_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[740]" "belly_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[741]" "belly_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[742]" "belly_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[743]" "belly_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[744]" "belly_scaleConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[745]" "waist_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[746]" "waist_scaleConstraint4.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[747]" "waist_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[748]" "waist_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[749]" "waist_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[750]" "waist_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[751]" "waist_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[752]" "waist_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[753]" "waist_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[754]" "waist_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[755]" "waist_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[756]" "waist_scaleConstraint4.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[757]" "butt_parentConstraint3.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[758]" "butt_scaleConstraint2.tg[0].ts";
+connectAttr "HumanAnimRigRN.phl[759]" "butt_parentConstraint3.tg[0].tis";
+connectAttr "HumanAnimRigRN.phl[760]" "butt_parentConstraint3.tg[0].tt";
+connectAttr "HumanAnimRigRN.phl[761]" "butt_parentConstraint3.tg[0].tr";
+connectAttr "HumanAnimRigRN.phl[762]" "butt_parentConstraint3.tg[0].tro";
+connectAttr "HumanAnimRigRN.phl[763]" "butt_parentConstraint3.tg[0].trp";
+connectAttr "HumanAnimRigRN.phl[764]" "butt_parentConstraint3.tg[0].trt";
+connectAttr "HumanAnimRigRN.phl[765]" "butt_parentConstraint3.tg[0].tjo";
+connectAttr "HumanAnimRigRN.phl[766]" "butt_parentConstraint3.tg[0].tsc";
+connectAttr "HumanAnimRigRN.phl[767]" "butt_parentConstraint3.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[768]" "butt_scaleConstraint2.tg[0].tpm";
+connectAttr "HumanAnimRigRN.phl[769]" "HumanArmature.tx";
+connectAttr "HumanAnimRigRN.phl[770]" "HumanArmature.ty";
+connectAttr "HumanAnimRigRN.phl[771]" "HumanArmature.tz";
+connectAttr "HumanAnimRigRN.phl[772]" "HumanArmature.rx";
+connectAttr "HumanAnimRigRN.phl[773]" "HumanArmature.ry";
+connectAttr "HumanAnimRigRN.phl[774]" "HumanArmature.rz";
+connectAttr "HumanAnimRigRN.phl[775]" "hips.tx";
+connectAttr "HumanAnimRigRN.phl[776]" "hips.ty";
+connectAttr "HumanAnimRigRN.phl[777]" "hips.tz";
+connectAttr "HumanAnimRigRN.phl[778]" "hips.rx";
+connectAttr "HumanAnimRigRN.phl[779]" "hips.ry";
+connectAttr "HumanAnimRigRN.phl[780]" "hips.rz";
+connectAttr "HumanAnimRigRN.phl[781]" "butt.tx";
+connectAttr "HumanAnimRigRN.phl[782]" "butt.ty";
+connectAttr "HumanAnimRigRN.phl[783]" "butt.tz";
+connectAttr "HumanAnimRigRN.phl[784]" "butt.rx";
+connectAttr "HumanAnimRigRN.phl[785]" "butt.ry";
+connectAttr "HumanAnimRigRN.phl[786]" "butt.rz";
+connectAttr "HumanAnimRigRN.phl[787]" "butt.sx";
+connectAttr "HumanAnimRigRN.phl[788]" "butt.sy";
+connectAttr "HumanAnimRigRN.phl[789]" "butt.sz";
+connectAttr "HumanAnimRigRN.phl[790]" "waist.tx";
+connectAttr "HumanAnimRigRN.phl[791]" "waist.ty";
+connectAttr "HumanAnimRigRN.phl[792]" "waist.tz";
+connectAttr "HumanAnimRigRN.phl[793]" "waist.rx";
+connectAttr "HumanAnimRigRN.phl[794]" "waist.ry";
+connectAttr "HumanAnimRigRN.phl[795]" "waist.rz";
+connectAttr "HumanAnimRigRN.phl[796]" "waist.sx";
+connectAttr "HumanAnimRigRN.phl[797]" "waist.sy";
+connectAttr "HumanAnimRigRN.phl[798]" "waist.sz";
+connectAttr "HumanAnimRigRN.phl[799]" "belly.tx";
+connectAttr "HumanAnimRigRN.phl[800]" "belly.ty";
+connectAttr "HumanAnimRigRN.phl[801]" "belly.tz";
+connectAttr "HumanAnimRigRN.phl[802]" "belly.rx";
+connectAttr "HumanAnimRigRN.phl[803]" "belly.ry";
+connectAttr "HumanAnimRigRN.phl[804]" "belly.rz";
+connectAttr "HumanAnimRigRN.phl[805]" "belly.sx";
+connectAttr "HumanAnimRigRN.phl[806]" "belly.sy";
+connectAttr "HumanAnimRigRN.phl[807]" "belly.sz";
+connectAttr "HumanAnimRigRN.phl[808]" "spine.tx";
+connectAttr "HumanAnimRigRN.phl[809]" "spine.ty";
+connectAttr "HumanAnimRigRN.phl[810]" "spine.tz";
+connectAttr "HumanAnimRigRN.phl[811]" "spine.rx";
+connectAttr "HumanAnimRigRN.phl[812]" "spine.ry";
+connectAttr "HumanAnimRigRN.phl[813]" "spine.rz";
+connectAttr "HumanAnimRigRN.phl[814]" "torso_width.tx";
+connectAttr "HumanAnimRigRN.phl[815]" "torso_width.ty";
+connectAttr "HumanAnimRigRN.phl[816]" "torso_width.tz";
+connectAttr "HumanAnimRigRN.phl[817]" "torso_width.rx";
+connectAttr "HumanAnimRigRN.phl[818]" "torso_width.ry";
+connectAttr "HumanAnimRigRN.phl[819]" "torso_width.rz";
+connectAttr "HumanAnimRigRN.phl[820]" "torso_width.sx";
+connectAttr "HumanAnimRigRN.phl[821]" "torso_width.sy";
+connectAttr "HumanAnimRigRN.phl[822]" "torso_width.sz";
+connectAttr "HumanAnimRigRN.phl[823]" "chest.tx";
+connectAttr "HumanAnimRigRN.phl[824]" "chest.ty";
+connectAttr "HumanAnimRigRN.phl[825]" "chest.tz";
+connectAttr "HumanAnimRigRN.phl[826]" "chest.rx";
+connectAttr "HumanAnimRigRN.phl[827]" "chest.ry";
+connectAttr "HumanAnimRigRN.phl[828]" "chest.rz";
+connectAttr "HumanAnimRigRN.phl[829]" "muscle_chest.sx";
+connectAttr "HumanAnimRigRN.phl[830]" "muscle_chest.sy";
+connectAttr "HumanAnimRigRN.phl[831]" "muscle_chest.sz";
+connectAttr "HumanAnimRigRN.phl[832]" "muscle_chest.tx";
+connectAttr "HumanAnimRigRN.phl[833]" "muscle_chest.ty";
+connectAttr "HumanAnimRigRN.phl[834]" "muscle_chest.tz";
+connectAttr "HumanAnimRigRN.phl[835]" "muscle_chest.rx";
+connectAttr "HumanAnimRigRN.phl[836]" "muscle_chest.ry";
+connectAttr "HumanAnimRigRN.phl[837]" "muscle_chest.rz";
+connectAttr "HumanAnimRigRN.phl[838]" "breast_R.tx";
+connectAttr "HumanAnimRigRN.phl[839]" "breast_R.ty";
+connectAttr "HumanAnimRigRN.phl[840]" "breast_R.tz";
+connectAttr "HumanAnimRigRN.phl[841]" "breast_R.rx";
+connectAttr "HumanAnimRigRN.phl[842]" "breast_R.ry";
+connectAttr "HumanAnimRigRN.phl[843]" "breast_R.rz";
+connectAttr "HumanAnimRigRN.phl[844]" "breast_R.sx";
+connectAttr "HumanAnimRigRN.phl[845]" "breast_R.sy";
+connectAttr "HumanAnimRigRN.phl[846]" "breast_R.sz";
+connectAttr "HumanAnimRigRN.phl[847]" "breast_L.tx";
+connectAttr "HumanAnimRigRN.phl[848]" "breast_L.ty";
+connectAttr "HumanAnimRigRN.phl[849]" "breast_L.tz";
+connectAttr "HumanAnimRigRN.phl[850]" "breast_L.rx";
+connectAttr "HumanAnimRigRN.phl[851]" "breast_L.ry";
+connectAttr "HumanAnimRigRN.phl[852]" "breast_L.rz";
+connectAttr "HumanAnimRigRN.phl[853]" "breast_L.sx";
+connectAttr "HumanAnimRigRN.phl[854]" "breast_L.sy";
+connectAttr "HumanAnimRigRN.phl[855]" "breast_L.sz";
+connectAttr "HumanAnimRigRN.phl[856]" "shoulder_l.tx";
+connectAttr "HumanAnimRigRN.phl[857]" "shoulder_l.ty";
+connectAttr "HumanAnimRigRN.phl[858]" "shoulder_l.tz";
+connectAttr "HumanAnimRigRN.phl[859]" "shoulder_l.rx";
+connectAttr "HumanAnimRigRN.phl[860]" "shoulder_l.ry";
+connectAttr "HumanAnimRigRN.phl[861]" "shoulder_l.rz";
+connectAttr "HumanAnimRigRN.phl[862]" "muscle_shoulder_l.tx";
+connectAttr "HumanAnimRigRN.phl[863]" "muscle_shoulder_l.ty";
+connectAttr "HumanAnimRigRN.phl[864]" "muscle_shoulder_l.tz";
+connectAttr "HumanAnimRigRN.phl[865]" "muscle_shoulder_l.rx";
+connectAttr "HumanAnimRigRN.phl[866]" "muscle_shoulder_l.ry";
+connectAttr "HumanAnimRigRN.phl[867]" "muscle_shoulder_l.rz";
+connectAttr "HumanAnimRigRN.phl[868]" "muscle_shoulder_l.sx";
+connectAttr "HumanAnimRigRN.phl[869]" "muscle_shoulder_l.sy";
+connectAttr "HumanAnimRigRN.phl[870]" "muscle_shoulder_l.sz";
+connectAttr "HumanAnimRigRN.phl[871]" "upper_arm_l.tx";
+connectAttr "HumanAnimRigRN.phl[872]" "upper_arm_l.ty";
+connectAttr "HumanAnimRigRN.phl[873]" "upper_arm_l.tz";
+connectAttr "HumanAnimRigRN.phl[874]" "upper_arm_l.rx";
+connectAttr "HumanAnimRigRN.phl[875]" "upper_arm_l.ry";
+connectAttr "HumanAnimRigRN.phl[876]" "upper_arm_l.rz";
+connectAttr "HumanAnimRigRN.phl[877]" "bicep_l.tx";
+connectAttr "HumanAnimRigRN.phl[878]" "bicep_l.ty";
+connectAttr "HumanAnimRigRN.phl[879]" "bicep_l.tz";
+connectAttr "HumanAnimRigRN.phl[880]" "bicep_l.rx";
+connectAttr "HumanAnimRigRN.phl[881]" "bicep_l.ry";
+connectAttr "HumanAnimRigRN.phl[882]" "bicep_l.rz";
+connectAttr "HumanAnimRigRN.phl[883]" "bicep_l.sx";
+connectAttr "HumanAnimRigRN.phl[884]" "bicep_l.sy";
+connectAttr "HumanAnimRigRN.phl[885]" "bicep_l.sz";
+connectAttr "HumanAnimRigRN.phl[886]" "forearm_l.tx";
+connectAttr "HumanAnimRigRN.phl[887]" "forearm_l.ty";
+connectAttr "HumanAnimRigRN.phl[888]" "forearm_l.tz";
+connectAttr "HumanAnimRigRN.phl[889]" "forearm_l.rx";
+connectAttr "HumanAnimRigRN.phl[890]" "forearm_l.ry";
+connectAttr "HumanAnimRigRN.phl[891]" "forearm_l.rz";
+connectAttr "HumanAnimRigRN.phl[892]" "forearm_twist_l.tx";
+connectAttr "HumanAnimRigRN.phl[893]" "forearm_twist_l.ty";
+connectAttr "HumanAnimRigRN.phl[894]" "forearm_twist_l.tz";
+connectAttr "HumanAnimRigRN.phl[895]" "forearm_twist_l.rx";
+connectAttr "HumanAnimRigRN.phl[896]" "forearm_twist_l.ry";
+connectAttr "HumanAnimRigRN.phl[897]" "forearm_twist_l.rz";
+connectAttr "HumanAnimRigRN.phl[898]" "forearm_twist_l.sx";
+connectAttr "HumanAnimRigRN.phl[899]" "forearm_twist_l.sy";
+connectAttr "HumanAnimRigRN.phl[900]" "forearm_twist_l.sz";
+connectAttr "HumanAnimRigRN.phl[901]" "hand_l.tx";
+connectAttr "HumanAnimRigRN.phl[902]" "hand_l.ty";
+connectAttr "HumanAnimRigRN.phl[903]" "hand_l.tz";
+connectAttr "HumanAnimRigRN.phl[904]" "hand_l.rx";
+connectAttr "HumanAnimRigRN.phl[905]" "hand_l.ry";
+connectAttr "HumanAnimRigRN.phl[906]" "hand_l.rz";
+connectAttr "HumanAnimRigRN.phl[907]" "hold_l.tx";
+connectAttr "HumanAnimRigRN.phl[908]" "hold_l.ty";
+connectAttr "HumanAnimRigRN.phl[909]" "hold_l.tz";
+connectAttr "HumanAnimRigRN.phl[910]" "hold_l.rx";
+connectAttr "HumanAnimRigRN.phl[911]" "hold_l.ry";
+connectAttr "HumanAnimRigRN.phl[912]" "hold_l.rz";
+connectAttr "HumanAnimRigRN.phl[913]" "c_index1_l.tx";
+connectAttr "HumanAnimRigRN.phl[914]" "c_index1_l.ty";
+connectAttr "HumanAnimRigRN.phl[915]" "c_index1_l.tz";
+connectAttr "HumanAnimRigRN.phl[916]" "c_index1_l.rx";
+connectAttr "HumanAnimRigRN.phl[917]" "c_index1_l.ry";
+connectAttr "HumanAnimRigRN.phl[918]" "c_index1_l.rz";
+connectAttr "HumanAnimRigRN.phl[919]" "c_index2_l.tx";
+connectAttr "HumanAnimRigRN.phl[920]" "c_index2_l.ty";
+connectAttr "HumanAnimRigRN.phl[921]" "c_index2_l.tz";
+connectAttr "HumanAnimRigRN.phl[922]" "c_index2_l.rx";
+connectAttr "HumanAnimRigRN.phl[923]" "c_index2_l.ry";
+connectAttr "HumanAnimRigRN.phl[924]" "c_index2_l.rz";
+connectAttr "HumanAnimRigRN.phl[925]" "c_index3_l.rx";
+connectAttr "HumanAnimRigRN.phl[926]" "c_index3_l.ry";
+connectAttr "HumanAnimRigRN.phl[927]" "c_index3_l.rz";
+connectAttr "HumanAnimRigRN.phl[928]" "c_index3_l.tx";
+connectAttr "HumanAnimRigRN.phl[929]" "c_index3_l.ty";
+connectAttr "HumanAnimRigRN.phl[930]" "c_index3_l.tz";
+connectAttr "HumanAnimRigRN.phl[931]" "c_middle1_l.tx";
+connectAttr "HumanAnimRigRN.phl[932]" "c_middle1_l.ty";
+connectAttr "HumanAnimRigRN.phl[933]" "c_middle1_l.tz";
+connectAttr "HumanAnimRigRN.phl[934]" "c_middle1_l.rx";
+connectAttr "HumanAnimRigRN.phl[935]" "c_middle1_l.ry";
+connectAttr "HumanAnimRigRN.phl[936]" "c_middle1_l.rz";
+connectAttr "HumanAnimRigRN.phl[937]" "c_middle2_l.tx";
+connectAttr "HumanAnimRigRN.phl[938]" "c_middle2_l.ty";
+connectAttr "HumanAnimRigRN.phl[939]" "c_middle2_l.tz";
+connectAttr "HumanAnimRigRN.phl[940]" "c_middle2_l.rx";
+connectAttr "HumanAnimRigRN.phl[941]" "c_middle2_l.ry";
+connectAttr "HumanAnimRigRN.phl[942]" "c_middle2_l.rz";
+connectAttr "HumanAnimRigRN.phl[943]" "c_middle3_l.tx";
+connectAttr "HumanAnimRigRN.phl[944]" "c_middle3_l.ty";
+connectAttr "HumanAnimRigRN.phl[945]" "c_middle3_l.tz";
+connectAttr "HumanAnimRigRN.phl[946]" "c_middle3_l.rx";
+connectAttr "HumanAnimRigRN.phl[947]" "c_middle3_l.ry";
+connectAttr "HumanAnimRigRN.phl[948]" "c_middle3_l.rz";
+connectAttr "HumanAnimRigRN.phl[949]" "c_ring1_l.tx";
+connectAttr "HumanAnimRigRN.phl[950]" "c_ring1_l.ty";
+connectAttr "HumanAnimRigRN.phl[951]" "c_ring1_l.tz";
+connectAttr "HumanAnimRigRN.phl[952]" "c_ring1_l.rx";
+connectAttr "HumanAnimRigRN.phl[953]" "c_ring1_l.ry";
+connectAttr "HumanAnimRigRN.phl[954]" "c_ring1_l.rz";
+connectAttr "HumanAnimRigRN.phl[955]" "c_ring2_l.tx";
+connectAttr "HumanAnimRigRN.phl[956]" "c_ring2_l.ty";
+connectAttr "HumanAnimRigRN.phl[957]" "c_ring2_l.tz";
+connectAttr "HumanAnimRigRN.phl[958]" "c_ring2_l.rx";
+connectAttr "HumanAnimRigRN.phl[959]" "c_ring2_l.ry";
+connectAttr "HumanAnimRigRN.phl[960]" "c_ring2_l.rz";
+connectAttr "HumanAnimRigRN.phl[961]" "c_ring3_l.tx";
+connectAttr "HumanAnimRigRN.phl[962]" "c_ring3_l.ty";
+connectAttr "HumanAnimRigRN.phl[963]" "c_ring3_l.tz";
+connectAttr "HumanAnimRigRN.phl[964]" "c_ring3_l.rx";
+connectAttr "HumanAnimRigRN.phl[965]" "c_ring3_l.ry";
+connectAttr "HumanAnimRigRN.phl[966]" "c_ring3_l.rz";
+connectAttr "HumanAnimRigRN.phl[967]" "c_thumb1_l.tx";
+connectAttr "HumanAnimRigRN.phl[968]" "c_thumb1_l.ty";
+connectAttr "HumanAnimRigRN.phl[969]" "c_thumb1_l.tz";
+connectAttr "HumanAnimRigRN.phl[970]" "c_thumb1_l.rx";
+connectAttr "HumanAnimRigRN.phl[971]" "c_thumb1_l.ry";
+connectAttr "HumanAnimRigRN.phl[972]" "c_thumb1_l.rz";
+connectAttr "HumanAnimRigRN.phl[973]" "c_thumb2_l.tx";
+connectAttr "HumanAnimRigRN.phl[974]" "c_thumb2_l.ty";
+connectAttr "HumanAnimRigRN.phl[975]" "c_thumb2_l.tz";
+connectAttr "HumanAnimRigRN.phl[976]" "c_thumb2_l.rx";
+connectAttr "HumanAnimRigRN.phl[977]" "c_thumb2_l.ry";
+connectAttr "HumanAnimRigRN.phl[978]" "c_thumb2_l.rz";
+connectAttr "HumanAnimRigRN.phl[979]" "c_thumb3_l.tx";
+connectAttr "HumanAnimRigRN.phl[980]" "c_thumb3_l.ty";
+connectAttr "HumanAnimRigRN.phl[981]" "c_thumb3_l.tz";
+connectAttr "HumanAnimRigRN.phl[982]" "c_thumb3_l.rx";
+connectAttr "HumanAnimRigRN.phl[983]" "c_thumb3_l.ry";
+connectAttr "HumanAnimRigRN.phl[984]" "c_thumb3_l.rz";
+connectAttr "HumanAnimRigRN.phl[985]" "shoulder_r.tx";
+connectAttr "HumanAnimRigRN.phl[986]" "shoulder_r.ty";
+connectAttr "HumanAnimRigRN.phl[987]" "shoulder_r.tz";
+connectAttr "HumanAnimRigRN.phl[988]" "shoulder_r.rx";
+connectAttr "HumanAnimRigRN.phl[989]" "shoulder_r.ry";
+connectAttr "HumanAnimRigRN.phl[990]" "shoulder_r.rz";
+connectAttr "HumanAnimRigRN.phl[991]" "muscle_shoulder_r.tx";
+connectAttr "HumanAnimRigRN.phl[992]" "muscle_shoulder_r.ty";
+connectAttr "HumanAnimRigRN.phl[993]" "muscle_shoulder_r.tz";
+connectAttr "HumanAnimRigRN.phl[994]" "muscle_shoulder_r.rx";
+connectAttr "HumanAnimRigRN.phl[995]" "muscle_shoulder_r.ry";
+connectAttr "HumanAnimRigRN.phl[996]" "muscle_shoulder_r.rz";
+connectAttr "HumanAnimRigRN.phl[997]" "muscle_shoulder_r.sx";
+connectAttr "HumanAnimRigRN.phl[998]" "muscle_shoulder_r.sy";
+connectAttr "HumanAnimRigRN.phl[999]" "muscle_shoulder_r.sz";
+connectAttr "HumanAnimRigRN.phl[1000]" "upper_arm_r.tx";
+connectAttr "HumanAnimRigRN.phl[1001]" "upper_arm_r.ty";
+connectAttr "HumanAnimRigRN.phl[1002]" "upper_arm_r.tz";
+connectAttr "HumanAnimRigRN.phl[1003]" "upper_arm_r.rx";
+connectAttr "HumanAnimRigRN.phl[1004]" "upper_arm_r.ry";
+connectAttr "HumanAnimRigRN.phl[1005]" "upper_arm_r.rz";
+connectAttr "HumanAnimRigRN.phl[1006]" "bicep_r.tx";
+connectAttr "HumanAnimRigRN.phl[1007]" "bicep_r.ty";
+connectAttr "HumanAnimRigRN.phl[1008]" "bicep_r.tz";
+connectAttr "HumanAnimRigRN.phl[1009]" "bicep_r.rx";
+connectAttr "HumanAnimRigRN.phl[1010]" "bicep_r.ry";
+connectAttr "HumanAnimRigRN.phl[1011]" "bicep_r.rz";
+connectAttr "HumanAnimRigRN.phl[1012]" "bicep_r.sx";
+connectAttr "HumanAnimRigRN.phl[1013]" "bicep_r.sy";
+connectAttr "HumanAnimRigRN.phl[1014]" "bicep_r.sz";
+connectAttr "HumanAnimRigRN.phl[1015]" "forearm_r.tx";
+connectAttr "HumanAnimRigRN.phl[1016]" "forearm_r.ty";
+connectAttr "HumanAnimRigRN.phl[1017]" "forearm_r.tz";
+connectAttr "HumanAnimRigRN.phl[1018]" "forearm_r.rx";
+connectAttr "HumanAnimRigRN.phl[1019]" "forearm_r.ry";
+connectAttr "HumanAnimRigRN.phl[1020]" "forearm_r.rz";
+connectAttr "HumanAnimRigRN.phl[1021]" "forearm_twist_r.tx";
+connectAttr "HumanAnimRigRN.phl[1022]" "forearm_twist_r.ty";
+connectAttr "HumanAnimRigRN.phl[1023]" "forearm_twist_r.tz";
+connectAttr "HumanAnimRigRN.phl[1024]" "forearm_twist_r.rx";
+connectAttr "HumanAnimRigRN.phl[1025]" "forearm_twist_r.ry";
+connectAttr "HumanAnimRigRN.phl[1026]" "forearm_twist_r.rz";
+connectAttr "HumanAnimRigRN.phl[1027]" "forearm_twist_r.sx";
+connectAttr "HumanAnimRigRN.phl[1028]" "forearm_twist_r.sy";
+connectAttr "HumanAnimRigRN.phl[1029]" "forearm_twist_r.sz";
+connectAttr "HumanAnimRigRN.phl[1030]" "hand_r.tx";
+connectAttr "HumanAnimRigRN.phl[1031]" "hand_r.ty";
+connectAttr "HumanAnimRigRN.phl[1032]" "hand_r.tz";
+connectAttr "HumanAnimRigRN.phl[1033]" "hand_r.rx";
+connectAttr "HumanAnimRigRN.phl[1034]" "hand_r.ry";
+connectAttr "HumanAnimRigRN.phl[1035]" "hand_r.rz";
+connectAttr "HumanAnimRigRN.phl[1036]" "hold_r.tx";
+connectAttr "HumanAnimRigRN.phl[1037]" "hold_r.ty";
+connectAttr "HumanAnimRigRN.phl[1038]" "hold_r.tz";
+connectAttr "HumanAnimRigRN.phl[1039]" "hold_r.rx";
+connectAttr "HumanAnimRigRN.phl[1040]" "hold_r.ry";
+connectAttr "HumanAnimRigRN.phl[1041]" "hold_r.rz";
+connectAttr "HumanAnimRigRN.phl[1042]" "c_index1_r.tx";
+connectAttr "HumanAnimRigRN.phl[1043]" "c_index1_r.ty";
+connectAttr "HumanAnimRigRN.phl[1044]" "c_index1_r.tz";
+connectAttr "HumanAnimRigRN.phl[1045]" "c_index1_r.rx";
+connectAttr "HumanAnimRigRN.phl[1046]" "c_index1_r.ry";
+connectAttr "HumanAnimRigRN.phl[1047]" "c_index1_r.rz";
+connectAttr "HumanAnimRigRN.phl[1048]" "c_index2_r.tx";
+connectAttr "HumanAnimRigRN.phl[1049]" "c_index2_r.ty";
+connectAttr "HumanAnimRigRN.phl[1050]" "c_index2_r.tz";
+connectAttr "HumanAnimRigRN.phl[1051]" "c_index2_r.rx";
+connectAttr "HumanAnimRigRN.phl[1052]" "c_index2_r.ry";
+connectAttr "HumanAnimRigRN.phl[1053]" "c_index2_r.rz";
+connectAttr "HumanAnimRigRN.phl[1054]" "c_index3_r.tx";
+connectAttr "HumanAnimRigRN.phl[1055]" "c_index3_r.ty";
+connectAttr "HumanAnimRigRN.phl[1056]" "c_index3_r.tz";
+connectAttr "HumanAnimRigRN.phl[1057]" "c_index3_r.rx";
+connectAttr "HumanAnimRigRN.phl[1058]" "c_index3_r.ry";
+connectAttr "HumanAnimRigRN.phl[1059]" "c_index3_r.rz";
+connectAttr "HumanAnimRigRN.phl[1060]" "c_middle1_r.tx";
+connectAttr "HumanAnimRigRN.phl[1061]" "c_middle1_r.ty";
+connectAttr "HumanAnimRigRN.phl[1062]" "c_middle1_r.tz";
+connectAttr "HumanAnimRigRN.phl[1063]" "c_middle1_r.rx";
+connectAttr "HumanAnimRigRN.phl[1064]" "c_middle1_r.ry";
+connectAttr "HumanAnimRigRN.phl[1065]" "c_middle1_r.rz";
+connectAttr "HumanAnimRigRN.phl[1066]" "c_middle2_r.tx";
+connectAttr "HumanAnimRigRN.phl[1067]" "c_middle2_r.ty";
+connectAttr "HumanAnimRigRN.phl[1068]" "c_middle2_r.tz";
+connectAttr "HumanAnimRigRN.phl[1069]" "c_middle2_r.rx";
+connectAttr "HumanAnimRigRN.phl[1070]" "c_middle2_r.ry";
+connectAttr "HumanAnimRigRN.phl[1071]" "c_middle2_r.rz";
+connectAttr "HumanAnimRigRN.phl[1072]" "c_middle3_r.tx";
+connectAttr "HumanAnimRigRN.phl[1073]" "c_middle3_r.ty";
+connectAttr "HumanAnimRigRN.phl[1074]" "c_middle3_r.tz";
+connectAttr "HumanAnimRigRN.phl[1075]" "c_middle3_r.rx";
+connectAttr "HumanAnimRigRN.phl[1076]" "c_middle3_r.ry";
+connectAttr "HumanAnimRigRN.phl[1077]" "c_middle3_r.rz";
+connectAttr "HumanAnimRigRN.phl[1078]" "c_ring1_r.tx";
+connectAttr "HumanAnimRigRN.phl[1079]" "c_ring1_r.ty";
+connectAttr "HumanAnimRigRN.phl[1080]" "c_ring1_r.tz";
+connectAttr "HumanAnimRigRN.phl[1081]" "c_ring1_r.rx";
+connectAttr "HumanAnimRigRN.phl[1082]" "c_ring1_r.ry";
+connectAttr "HumanAnimRigRN.phl[1083]" "c_ring1_r.rz";
+connectAttr "HumanAnimRigRN.phl[1084]" "c_ring2_r.tx";
+connectAttr "HumanAnimRigRN.phl[1085]" "c_ring2_r.ty";
+connectAttr "HumanAnimRigRN.phl[1086]" "c_ring2_r.tz";
+connectAttr "HumanAnimRigRN.phl[1087]" "c_ring2_r.rx";
+connectAttr "HumanAnimRigRN.phl[1088]" "c_ring2_r.ry";
+connectAttr "HumanAnimRigRN.phl[1089]" "c_ring2_r.rz";
+connectAttr "HumanAnimRigRN.phl[1090]" "c_ring3_r.tx";
+connectAttr "HumanAnimRigRN.phl[1091]" "c_ring3_r.ty";
+connectAttr "HumanAnimRigRN.phl[1092]" "c_ring3_r.tz";
+connectAttr "HumanAnimRigRN.phl[1093]" "c_ring3_r.rx";
+connectAttr "HumanAnimRigRN.phl[1094]" "c_ring3_r.ry";
+connectAttr "HumanAnimRigRN.phl[1095]" "c_ring3_r.rz";
+connectAttr "HumanAnimRigRN.phl[1096]" "c_thumb1_r.tx";
+connectAttr "HumanAnimRigRN.phl[1097]" "c_thumb1_r.ty";
+connectAttr "HumanAnimRigRN.phl[1098]" "c_thumb1_r.tz";
+connectAttr "HumanAnimRigRN.phl[1099]" "c_thumb1_r.rx";
+connectAttr "HumanAnimRigRN.phl[1100]" "c_thumb1_r.ry";
+connectAttr "HumanAnimRigRN.phl[1101]" "c_thumb1_r.rz";
+connectAttr "HumanAnimRigRN.phl[1102]" "c_thumb2_r.tx";
+connectAttr "HumanAnimRigRN.phl[1103]" "c_thumb2_r.ty";
+connectAttr "HumanAnimRigRN.phl[1104]" "c_thumb2_r.tz";
+connectAttr "HumanAnimRigRN.phl[1105]" "c_thumb2_r.rx";
+connectAttr "HumanAnimRigRN.phl[1106]" "c_thumb2_r.ry";
+connectAttr "HumanAnimRigRN.phl[1107]" "c_thumb2_r.rz";
+connectAttr "HumanAnimRigRN.phl[1108]" "c_thumb3_r.rx";
+connectAttr "HumanAnimRigRN.phl[1109]" "c_thumb3_r.ry";
+connectAttr "HumanAnimRigRN.phl[1110]" "c_thumb3_r.rz";
+connectAttr "HumanAnimRigRN.phl[1111]" "c_thumb3_r.tx";
+connectAttr "HumanAnimRigRN.phl[1112]" "c_thumb3_r.ty";
+connectAttr "HumanAnimRigRN.phl[1113]" "c_thumb3_r.tz";
+connectAttr "HumanAnimRigRN.phl[1114]" "neck.tx";
+connectAttr "HumanAnimRigRN.phl[1115]" "neck.ty";
+connectAttr "HumanAnimRigRN.phl[1116]" "neck.tz";
+connectAttr "HumanAnimRigRN.phl[1117]" "neck.rx";
+connectAttr "HumanAnimRigRN.phl[1118]" "neck.ry";
+connectAttr "HumanAnimRigRN.phl[1119]" "neck.rz";
+connectAttr "HumanAnimRigRN.phl[1120]" "muscle_neck.tx";
+connectAttr "HumanAnimRigRN.phl[1121]" "muscle_neck.ty";
+connectAttr "HumanAnimRigRN.phl[1122]" "muscle_neck.tz";
+connectAttr "HumanAnimRigRN.phl[1123]" "muscle_neck.rx";
+connectAttr "HumanAnimRigRN.phl[1124]" "muscle_neck.ry";
+connectAttr "HumanAnimRigRN.phl[1125]" "muscle_neck.rz";
+connectAttr "HumanAnimRigRN.phl[1126]" "muscle_neck.sx";
+connectAttr "HumanAnimRigRN.phl[1127]" "muscle_neck.sy";
+connectAttr "HumanAnimRigRN.phl[1128]" "muscle_neck.sz";
+connectAttr "HumanAnimRigRN.phl[1129]" "head.tx";
+connectAttr "HumanAnimRigRN.phl[1130]" "head.ty";
+connectAttr "HumanAnimRigRN.phl[1131]" "head.tz";
+connectAttr "HumanAnimRigRN.phl[1132]" "head.rx";
+connectAttr "HumanAnimRigRN.phl[1133]" "head.ry";
+connectAttr "HumanAnimRigRN.phl[1134]" "head.rz";
+connectAttr "HumanAnimRigRN.phl[1135]" "thigh_r.tx";
+connectAttr "HumanAnimRigRN.phl[1136]" "thigh_r.ty";
+connectAttr "HumanAnimRigRN.phl[1137]" "thigh_r.tz";
+connectAttr "HumanAnimRigRN.phl[1138]" "thigh_r.rx";
+connectAttr "HumanAnimRigRN.phl[1139]" "thigh_r.ry";
+connectAttr "HumanAnimRigRN.phl[1140]" "thigh_r.rz";
+connectAttr "HumanAnimRigRN.phl[1141]" "width_thigh_r.tx";
+connectAttr "HumanAnimRigRN.phl[1142]" "width_thigh_r.ty";
+connectAttr "HumanAnimRigRN.phl[1143]" "width_thigh_r.tz";
+connectAttr "HumanAnimRigRN.phl[1144]" "width_thigh_r.rx";
+connectAttr "HumanAnimRigRN.phl[1145]" "width_thigh_r.ry";
+connectAttr "HumanAnimRigRN.phl[1146]" "width_thigh_r.rz";
+connectAttr "HumanAnimRigRN.phl[1147]" "width_thigh_r.sx";
+connectAttr "HumanAnimRigRN.phl[1148]" "width_thigh_r.sy";
+connectAttr "HumanAnimRigRN.phl[1149]" "width_thigh_r.sz";
+connectAttr "HumanAnimRigRN.phl[1150]" "lower_leg_r.tx";
+connectAttr "HumanAnimRigRN.phl[1151]" "lower_leg_r.ty";
+connectAttr "HumanAnimRigRN.phl[1152]" "lower_leg_r.tz";
+connectAttr "HumanAnimRigRN.phl[1153]" "lower_leg_r.rx";
+connectAttr "HumanAnimRigRN.phl[1154]" "lower_leg_r.ry";
+connectAttr "HumanAnimRigRN.phl[1155]" "lower_leg_r.rz";
+connectAttr "HumanAnimRigRN.phl[1156]" "foot_r.tx";
+connectAttr "HumanAnimRigRN.phl[1157]" "foot_r.ty";
+connectAttr "HumanAnimRigRN.phl[1158]" "foot_r.tz";
+connectAttr "HumanAnimRigRN.phl[1159]" "foot_r.rx";
+connectAttr "HumanAnimRigRN.phl[1160]" "foot_r.ry";
+connectAttr "HumanAnimRigRN.phl[1161]" "foot_r.rz";
+connectAttr "HumanAnimRigRN.phl[1162]" "toes_r.tx";
+connectAttr "HumanAnimRigRN.phl[1163]" "toes_r.ty";
+connectAttr "HumanAnimRigRN.phl[1164]" "toes_r.tz";
+connectAttr "HumanAnimRigRN.phl[1165]" "toes_r.rx";
+connectAttr "HumanAnimRigRN.phl[1166]" "toes_r.ry";
+connectAttr "HumanAnimRigRN.phl[1167]" "toes_r.rz";
+connectAttr "HumanAnimRigRN.phl[1168]" "thigh_l.tx";
+connectAttr "HumanAnimRigRN.phl[1169]" "thigh_l.ty";
+connectAttr "HumanAnimRigRN.phl[1170]" "thigh_l.tz";
+connectAttr "HumanAnimRigRN.phl[1171]" "thigh_l.rx";
+connectAttr "HumanAnimRigRN.phl[1172]" "thigh_l.ry";
+connectAttr "HumanAnimRigRN.phl[1173]" "thigh_l.rz";
+connectAttr "HumanAnimRigRN.phl[1174]" "width_thigh_l.tx";
+connectAttr "HumanAnimRigRN.phl[1175]" "width_thigh_l.ty";
+connectAttr "HumanAnimRigRN.phl[1176]" "width_thigh_l.tz";
+connectAttr "HumanAnimRigRN.phl[1177]" "width_thigh_l.rx";
+connectAttr "HumanAnimRigRN.phl[1178]" "width_thigh_l.ry";
+connectAttr "HumanAnimRigRN.phl[1179]" "width_thigh_l.rz";
+connectAttr "HumanAnimRigRN.phl[1180]" "width_thigh_l.sx";
+connectAttr "HumanAnimRigRN.phl[1181]" "width_thigh_l.sy";
+connectAttr "HumanAnimRigRN.phl[1182]" "width_thigh_l.sz";
+connectAttr "HumanAnimRigRN.phl[1183]" "lower_leg_l.tx";
+connectAttr "HumanAnimRigRN.phl[1184]" "lower_leg_l.ty";
+connectAttr "HumanAnimRigRN.phl[1185]" "lower_leg_l.tz";
+connectAttr "HumanAnimRigRN.phl[1186]" "lower_leg_l.rx";
+connectAttr "HumanAnimRigRN.phl[1187]" "lower_leg_l.ry";
+connectAttr "HumanAnimRigRN.phl[1188]" "lower_leg_l.rz";
+connectAttr "HumanAnimRigRN.phl[1189]" "foot_l.tx";
+connectAttr "HumanAnimRigRN.phl[1190]" "foot_l.ty";
+connectAttr "HumanAnimRigRN.phl[1191]" "foot_l.tz";
+connectAttr "HumanAnimRigRN.phl[1192]" "foot_l.rx";
+connectAttr "HumanAnimRigRN.phl[1193]" "foot_l.ry";
+connectAttr "HumanAnimRigRN.phl[1194]" "foot_l.rz";
+connectAttr "HumanAnimRigRN.phl[1195]" "toes_l.tx";
+connectAttr "HumanAnimRigRN.phl[1196]" "toes_l.ty";
+connectAttr "HumanAnimRigRN.phl[1197]" "toes_l.tz";
+connectAttr "HumanAnimRigRN.phl[1198]" "toes_l.rx";
+connectAttr "HumanAnimRigRN.phl[1199]" "toes_l.ry";
+connectAttr "HumanAnimRigRN.phl[1200]" "toes_l.rz";
+connectAttr "HumanAnimRigRN.phl[1201]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1202]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1203]" "HumanAnimRig:Ring3_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1204]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1205]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1206]" "HumanAnimRig:Ring2_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1207]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1208]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1209]" "HumanAnimRig:Ring1_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1210]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1211]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1212]" "HumanAnimRig:Middle3_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1213]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1214]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1215]" "HumanAnimRig:Middle2_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1216]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1217]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1218]" "HumanAnimRig:Middle1_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1219]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1220]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1221]" "HumanAnimRig:Index3_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1222]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1223]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1224]" "HumanAnimRig:Index2_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1225]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1226]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1227]" "HumanAnimRig:Index1_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1228]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1229]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1230]" "HumanAnimRig:Thumb3_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1231]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1232]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1233]" "HumanAnimRig:Thumb2_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1234]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.iaz"
+		;
+connectAttr "HumanAnimRigRN.phl[1235]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.iay"
+		;
+connectAttr "HumanAnimRigRN.phl[1236]" "HumanAnimRig:Thumb1_CTR_R_rotate_Fingers.iax"
+		;
+connectAttr "HumanAnimRigRN.phl[1237]" "HumanAnimRig:ArmOptions_CTR_R_Weapon_Fingers.ia"
+		;
+connectAttr "HumanAnimRigRN.phl[1238]" "HumanAnimRig:ArmOptions_CTR_R_Relaxed_Fingers.ia"
+		;
+connectAttr "HumanAnimRigRN.phl[1239]" "HumanAnimRig:ArmOptions_CTR_R_Fist_Fingers.ia"
+		;
+connectAttr "HumanAnimRigRN.phl[1240]" "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchElbow_Fingers.ia"
+		;
+connectAttr "HumanAnimRigRN.phl[1241]" "HumanAnimRig:ArmOptions_CTR_R_SpaceSwitchHand_Fingers.ia"
+		;
+connectAttr "HumanArmature.iog" "HumanAnimRigRN.phl[1242]";
+connectAttr "hips.iog" "HumanAnimRigRN.phl[1243]";
+connectAttr "thigh_l.iog" "HumanAnimRigRN.phl[1244]";
+connectAttr "lower_leg_l.iog" "HumanAnimRigRN.phl[1245]";
+connectAttr "foot_l.iog" "HumanAnimRigRN.phl[1246]";
+connectAttr "toes_l.iog" "HumanAnimRigRN.phl[1247]";
+connectAttr "width_thigh_l.iog" "HumanAnimRigRN.phl[1248]";
+connectAttr "thigh_r.iog" "HumanAnimRigRN.phl[1249]";
+connectAttr "lower_leg_r.iog" "HumanAnimRigRN.phl[1250]";
+connectAttr "foot_r.iog" "HumanAnimRigRN.phl[1251]";
+connectAttr "toes_r.iog" "HumanAnimRigRN.phl[1252]";
+connectAttr "spine.iog" "HumanAnimRigRN.phl[1253]";
+connectAttr "width_thigh_r.iog" "HumanAnimRigRN.phl[1254]";
+connectAttr "head.iog" "HumanAnimRigRN.phl[1255]";
+connectAttr "neck.iog" "HumanAnimRigRN.phl[1256]";
+connectAttr "chest.iog" "HumanAnimRigRN.phl[1257]";
+connectAttr "muscle_neck.iog" "HumanAnimRigRN.phl[1258]";
+connectAttr "shoulder_r.iog" "HumanAnimRigRN.phl[1259]";
+connectAttr "upper_arm_r.iog" "HumanAnimRigRN.phl[1260]";
+connectAttr "forearm_r.iog" "HumanAnimRigRN.phl[1261]";
+connectAttr "hand_r.iog" "HumanAnimRigRN.phl[1262]";
+connectAttr "c_thumb1_r.iog" "HumanAnimRigRN.phl[1263]";
+connectAttr "c_thumb2_r.iog" "HumanAnimRigRN.phl[1264]";
+connectAttr "c_thumb3_r.iog" "HumanAnimRigRN.phl[1265]";
+connectAttr "c_ring1_r.iog" "HumanAnimRigRN.phl[1266]";
+connectAttr "c_ring2_r.iog" "HumanAnimRigRN.phl[1267]";
+connectAttr "c_ring3_r.iog" "HumanAnimRigRN.phl[1268]";
+connectAttr "c_middle1_r.iog" "HumanAnimRigRN.phl[1269]";
+connectAttr "c_middle2_r.iog" "HumanAnimRigRN.phl[1270]";
+connectAttr "c_middle3_r.iog" "HumanAnimRigRN.phl[1271]";
+connectAttr "c_index1_r.iog" "HumanAnimRigRN.phl[1272]";
+connectAttr "c_index2_r.iog" "HumanAnimRigRN.phl[1273]";
+connectAttr "c_index3_r.iog" "HumanAnimRigRN.phl[1274]";
+connectAttr "hold_r.iog" "HumanAnimRigRN.phl[1275]";
+connectAttr "forearm_twist_r.iog" "HumanAnimRigRN.phl[1276]";
+connectAttr "bicep_r.iog" "HumanAnimRigRN.phl[1277]";
+connectAttr "muscle_shoulder_r.iog" "HumanAnimRigRN.phl[1278]";
+connectAttr "shoulder_l.iog" "HumanAnimRigRN.phl[1279]";
+connectAttr "upper_arm_l.iog" "HumanAnimRigRN.phl[1280]";
+connectAttr "forearm_l.iog" "HumanAnimRigRN.phl[1281]";
+connectAttr "hand_l.iog" "HumanAnimRigRN.phl[1282]";
+connectAttr "c_thumb1_l.iog" "HumanAnimRigRN.phl[1283]";
+connectAttr "c_thumb2_l.iog" "HumanAnimRigRN.phl[1284]";
+connectAttr "c_thumb3_l.iog" "HumanAnimRigRN.phl[1285]";
+connectAttr "c_ring1_l.iog" "HumanAnimRigRN.phl[1286]";
+connectAttr "c_ring2_l.iog" "HumanAnimRigRN.phl[1287]";
+connectAttr "c_ring3_l.iog" "HumanAnimRigRN.phl[1288]";
+connectAttr "c_middle1_l.iog" "HumanAnimRigRN.phl[1289]";
+connectAttr "c_middle2_l.iog" "HumanAnimRigRN.phl[1290]";
+connectAttr "c_middle3_l.iog" "HumanAnimRigRN.phl[1291]";
+connectAttr "c_index1_l.iog" "HumanAnimRigRN.phl[1292]";
+connectAttr "c_index2_l.iog" "HumanAnimRigRN.phl[1293]";
+connectAttr "c_index3_l.iog" "HumanAnimRigRN.phl[1294]";
+connectAttr "hold_l.iog" "HumanAnimRigRN.phl[1295]";
+connectAttr "forearm_twist_l.iog" "HumanAnimRigRN.phl[1296]";
+connectAttr "bicep_l.iog" "HumanAnimRigRN.phl[1297]";
+connectAttr "muscle_shoulder_l.iog" "HumanAnimRigRN.phl[1298]";
+connectAttr "breast_L.iog" "HumanAnimRigRN.phl[1299]";
+connectAttr "breast_R.iog" "HumanAnimRigRN.phl[1300]";
+connectAttr "muscle_chest.iog" "HumanAnimRigRN.phl[1301]";
+connectAttr "torso_width.iog" "HumanAnimRigRN.phl[1302]";
+connectAttr "belly.iog" "HumanAnimRigRN.phl[1303]";
+connectAttr "waist.iog" "HumanAnimRigRN.phl[1304]";
+connectAttr "butt.iog" "HumanAnimRigRN.phl[1305]";
 connectAttr "pCube1_translateX.o" "pCube1.tx";
 connectAttr "pCube1_translateY.o" "pCube1.ty";
 connectAttr "pCube1_translateZ.o" "pCube1.tz";
@@ -5562,6 +12841,553 @@ connectAttr "animBot_Select_Sets.msg" "animBot.animBot_Select_Sets";
 connectAttr "__Purple__.msg" "animBot.__Purple__";
 connectAttr "hyperLayout2.msg" "animBot_Select_Sets.hl";
 connectAttr "hyperLayout3.msg" "__Purple__.hl";
+connectAttr "HumanArmature.s" "hips.is";
+connectAttr "hips.s" "thigh_l.is";
+connectAttr "thigh_l.s" "lower_leg_l.is";
+connectAttr "lower_leg_l.s" "foot_l.is";
+connectAttr "foot_l.s" "toes_l.is";
+connectAttr "toes_l.ro" "toes_l_parentConstraint4.cro";
+connectAttr "toes_l.pim" "toes_l_parentConstraint4.cpim";
+connectAttr "toes_l.rp" "toes_l_parentConstraint4.crp";
+connectAttr "toes_l.rpt" "toes_l_parentConstraint4.crt";
+connectAttr "toes_l.jo" "toes_l_parentConstraint4.cjo";
+connectAttr "toes_l_parentConstraint4.w0" "toes_l_parentConstraint4.tg[0].tw";
+connectAttr "foot_l.ro" "foot_l_parentConstraint4.cro";
+connectAttr "foot_l.pim" "foot_l_parentConstraint4.cpim";
+connectAttr "foot_l.rp" "foot_l_parentConstraint4.crp";
+connectAttr "foot_l.rpt" "foot_l_parentConstraint4.crt";
+connectAttr "foot_l.jo" "foot_l_parentConstraint4.cjo";
+connectAttr "foot_l_parentConstraint4.w0" "foot_l_parentConstraint4.tg[0].tw";
+connectAttr "lower_leg_l.ro" "lower_leg_l_parentConstraint2.cro";
+connectAttr "lower_leg_l.pim" "lower_leg_l_parentConstraint2.cpim";
+connectAttr "lower_leg_l.rp" "lower_leg_l_parentConstraint2.crp";
+connectAttr "lower_leg_l.rpt" "lower_leg_l_parentConstraint2.crt";
+connectAttr "lower_leg_l.jo" "lower_leg_l_parentConstraint2.cjo";
+connectAttr "lower_leg_l_parentConstraint2.w0" "lower_leg_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "thigh_l.s" "width_thigh_l.is";
+connectAttr "width_thigh_l.ro" "width_thigh_l_parentConstraint3.cro";
+connectAttr "width_thigh_l.pim" "width_thigh_l_parentConstraint3.cpim";
+connectAttr "width_thigh_l.rp" "width_thigh_l_parentConstraint3.crp";
+connectAttr "width_thigh_l.rpt" "width_thigh_l_parentConstraint3.crt";
+connectAttr "width_thigh_l.jo" "width_thigh_l_parentConstraint3.cjo";
+connectAttr "width_thigh_l_parentConstraint3.w0" "width_thigh_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "width_thigh_l.pim" "width_thigh_l_scaleConstraint3.cpim";
+connectAttr "width_thigh_l.ssc" "width_thigh_l_scaleConstraint3.tsc";
+connectAttr "width_thigh_l_scaleConstraint3.w0" "width_thigh_l_scaleConstraint3.tg[0].tw"
+		;
+connectAttr "thigh_l.ro" "thigh_l_parentConstraint2.cro";
+connectAttr "thigh_l.pim" "thigh_l_parentConstraint2.cpim";
+connectAttr "thigh_l.rp" "thigh_l_parentConstraint2.crp";
+connectAttr "thigh_l.rpt" "thigh_l_parentConstraint2.crt";
+connectAttr "thigh_l.jo" "thigh_l_parentConstraint2.cjo";
+connectAttr "thigh_l_parentConstraint2.w0" "thigh_l_parentConstraint2.tg[0].tw";
+connectAttr "hips.s" "thigh_r.is";
+connectAttr "thigh_r.s" "lower_leg_r.is";
+connectAttr "lower_leg_r.s" "foot_r.is";
+connectAttr "foot_r.s" "toes_r.is";
+connectAttr "toes_r.ro" "toes_r_parentConstraint4.cro";
+connectAttr "toes_r.pim" "toes_r_parentConstraint4.cpim";
+connectAttr "toes_r.rp" "toes_r_parentConstraint4.crp";
+connectAttr "toes_r.rpt" "toes_r_parentConstraint4.crt";
+connectAttr "toes_r.jo" "toes_r_parentConstraint4.cjo";
+connectAttr "toes_r_parentConstraint4.w0" "toes_r_parentConstraint4.tg[0].tw";
+connectAttr "foot_r.ro" "foot_r_parentConstraint2.cro";
+connectAttr "foot_r.pim" "foot_r_parentConstraint2.cpim";
+connectAttr "foot_r.rp" "foot_r_parentConstraint2.crp";
+connectAttr "foot_r.rpt" "foot_r_parentConstraint2.crt";
+connectAttr "foot_r.jo" "foot_r_parentConstraint2.cjo";
+connectAttr "foot_r_parentConstraint2.w0" "foot_r_parentConstraint2.tg[0].tw";
+connectAttr "lower_leg_r.ro" "lower_leg_r_parentConstraint2.cro";
+connectAttr "lower_leg_r.pim" "lower_leg_r_parentConstraint2.cpim";
+connectAttr "lower_leg_r.rp" "lower_leg_r_parentConstraint2.crp";
+connectAttr "lower_leg_r.rpt" "lower_leg_r_parentConstraint2.crt";
+connectAttr "lower_leg_r.jo" "lower_leg_r_parentConstraint2.cjo";
+connectAttr "lower_leg_r_parentConstraint2.w0" "lower_leg_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "thigh_r.s" "width_thigh_r.is";
+connectAttr "width_thigh_r.ro" "width_thigh_r_parentConstraint3.cro";
+connectAttr "width_thigh_r.pim" "width_thigh_r_parentConstraint3.cpim";
+connectAttr "width_thigh_r.rp" "width_thigh_r_parentConstraint3.crp";
+connectAttr "width_thigh_r.rpt" "width_thigh_r_parentConstraint3.crt";
+connectAttr "width_thigh_r.jo" "width_thigh_r_parentConstraint3.cjo";
+connectAttr "width_thigh_r_parentConstraint3.w0" "width_thigh_r_parentConstraint3.tg[0].tw"
+		;
+connectAttr "width_thigh_r.pim" "width_thigh_r_scaleConstraint3.cpim";
+connectAttr "width_thigh_r.ssc" "width_thigh_r_scaleConstraint3.tsc";
+connectAttr "width_thigh_r_scaleConstraint3.w0" "width_thigh_r_scaleConstraint3.tg[0].tw"
+		;
+connectAttr "thigh_r.ro" "thigh_r_parentConstraint2.cro";
+connectAttr "thigh_r.pim" "thigh_r_parentConstraint2.cpim";
+connectAttr "thigh_r.rp" "thigh_r_parentConstraint2.crp";
+connectAttr "thigh_r.rpt" "thigh_r_parentConstraint2.crt";
+connectAttr "thigh_r.jo" "thigh_r_parentConstraint2.cjo";
+connectAttr "thigh_r_parentConstraint2.w0" "thigh_r_parentConstraint2.tg[0].tw";
+connectAttr "hips.s" "spine.is";
+connectAttr "spine.s" "chest.is";
+connectAttr "chest.s" "neck.is";
+connectAttr "neck.s" "head.is";
+connectAttr "head.ro" "head_parentConstraint1.cro";
+connectAttr "head.pim" "head_parentConstraint1.cpim";
+connectAttr "head.rp" "head_parentConstraint1.crp";
+connectAttr "head.rpt" "head_parentConstraint1.crt";
+connectAttr "head.jo" "head_parentConstraint1.cjo";
+connectAttr "head_parentConstraint1.w0" "head_parentConstraint1.tg[0].tw";
+connectAttr "neck.s" "muscle_neck.is";
+connectAttr "muscle_neck.ro" "muscle_neck_parentConstraint3.cro";
+connectAttr "muscle_neck.pim" "muscle_neck_parentConstraint3.cpim";
+connectAttr "muscle_neck.rp" "muscle_neck_parentConstraint3.crp";
+connectAttr "muscle_neck.rpt" "muscle_neck_parentConstraint3.crt";
+connectAttr "muscle_neck.jo" "muscle_neck_parentConstraint3.cjo";
+connectAttr "muscle_neck_parentConstraint3.w0" "muscle_neck_parentConstraint3.tg[0].tw"
+		;
+connectAttr "muscle_neck.pim" "muscle_neck_scaleConstraint4.cpim";
+connectAttr "muscle_neck.ssc" "muscle_neck_scaleConstraint4.tsc";
+connectAttr "muscle_neck_scaleConstraint4.w0" "muscle_neck_scaleConstraint4.tg[0].tw"
+		;
+connectAttr "neck.ro" "neck_parentConstraint2.cro";
+connectAttr "neck.pim" "neck_parentConstraint2.cpim";
+connectAttr "neck.rp" "neck_parentConstraint2.crp";
+connectAttr "neck.rpt" "neck_parentConstraint2.crt";
+connectAttr "neck.jo" "neck_parentConstraint2.cjo";
+connectAttr "neck_parentConstraint2.w0" "neck_parentConstraint2.tg[0].tw";
+connectAttr "chest.s" "shoulder_r.is";
+connectAttr "shoulder_r.s" "upper_arm_r.is";
+connectAttr "upper_arm_r.s" "forearm_r.is";
+connectAttr "forearm_r.s" "hand_r.is";
+connectAttr "hand_r.s" "c_thumb1_r.is";
+connectAttr "c_thumb1_r.s" "c_thumb2_r.is";
+connectAttr "c_thumb2_r.s" "c_thumb3_r.is";
+connectAttr "c_thumb3_r.ro" "c_thumb3_r_parentConstraint2.cro";
+connectAttr "c_thumb3_r.pim" "c_thumb3_r_parentConstraint2.cpim";
+connectAttr "c_thumb3_r.rp" "c_thumb3_r_parentConstraint2.crp";
+connectAttr "c_thumb3_r.rpt" "c_thumb3_r_parentConstraint2.crt";
+connectAttr "c_thumb3_r.jo" "c_thumb3_r_parentConstraint2.cjo";
+connectAttr "c_thumb3_r_parentConstraint2.w0" "c_thumb3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_thumb2_r.ro" "c_thumb2_r_parentConstraint2.cro";
+connectAttr "c_thumb2_r.pim" "c_thumb2_r_parentConstraint2.cpim";
+connectAttr "c_thumb2_r.rp" "c_thumb2_r_parentConstraint2.crp";
+connectAttr "c_thumb2_r.rpt" "c_thumb2_r_parentConstraint2.crt";
+connectAttr "c_thumb2_r.jo" "c_thumb2_r_parentConstraint2.cjo";
+connectAttr "c_thumb2_r_parentConstraint2.w0" "c_thumb2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_thumb1_r.ro" "c_thumb1_r_parentConstraint2.cro";
+connectAttr "c_thumb1_r.pim" "c_thumb1_r_parentConstraint2.cpim";
+connectAttr "c_thumb1_r.rp" "c_thumb1_r_parentConstraint2.crp";
+connectAttr "c_thumb1_r.rpt" "c_thumb1_r_parentConstraint2.crt";
+connectAttr "c_thumb1_r.jo" "c_thumb1_r_parentConstraint2.cjo";
+connectAttr "c_thumb1_r_parentConstraint2.w0" "c_thumb1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "hand_r.s" "c_ring1_r.is";
+connectAttr "c_ring1_r.s" "c_ring2_r.is";
+connectAttr "c_ring2_r.s" "c_ring3_r.is";
+connectAttr "c_ring3_r.ro" "c_ring3_r_parentConstraint2.cro";
+connectAttr "c_ring3_r.pim" "c_ring3_r_parentConstraint2.cpim";
+connectAttr "c_ring3_r.rp" "c_ring3_r_parentConstraint2.crp";
+connectAttr "c_ring3_r.rpt" "c_ring3_r_parentConstraint2.crt";
+connectAttr "c_ring3_r.jo" "c_ring3_r_parentConstraint2.cjo";
+connectAttr "c_ring3_r_parentConstraint2.w0" "c_ring3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_ring2_r.ro" "c_ring2_r_parentConstraint2.cro";
+connectAttr "c_ring2_r.pim" "c_ring2_r_parentConstraint2.cpim";
+connectAttr "c_ring2_r.rp" "c_ring2_r_parentConstraint2.crp";
+connectAttr "c_ring2_r.rpt" "c_ring2_r_parentConstraint2.crt";
+connectAttr "c_ring2_r.jo" "c_ring2_r_parentConstraint2.cjo";
+connectAttr "c_ring2_r_parentConstraint2.w0" "c_ring2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_ring1_r.ro" "c_ring1_r_parentConstraint2.cro";
+connectAttr "c_ring1_r.pim" "c_ring1_r_parentConstraint2.cpim";
+connectAttr "c_ring1_r.rp" "c_ring1_r_parentConstraint2.crp";
+connectAttr "c_ring1_r.rpt" "c_ring1_r_parentConstraint2.crt";
+connectAttr "c_ring1_r.jo" "c_ring1_r_parentConstraint2.cjo";
+connectAttr "c_ring1_r_parentConstraint2.w0" "c_ring1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "hand_r.s" "c_middle1_r.is";
+connectAttr "c_middle1_r.s" "c_middle2_r.is";
+connectAttr "c_middle2_r.s" "c_middle3_r.is";
+connectAttr "c_middle3_r.ro" "c_middle3_r_parentConstraint2.cro";
+connectAttr "c_middle3_r.pim" "c_middle3_r_parentConstraint2.cpim";
+connectAttr "c_middle3_r.rp" "c_middle3_r_parentConstraint2.crp";
+connectAttr "c_middle3_r.rpt" "c_middle3_r_parentConstraint2.crt";
+connectAttr "c_middle3_r.jo" "c_middle3_r_parentConstraint2.cjo";
+connectAttr "c_middle3_r_parentConstraint2.w0" "c_middle3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_middle2_r.ro" "c_middle2_r_parentConstraint2.cro";
+connectAttr "c_middle2_r.pim" "c_middle2_r_parentConstraint2.cpim";
+connectAttr "c_middle2_r.rp" "c_middle2_r_parentConstraint2.crp";
+connectAttr "c_middle2_r.rpt" "c_middle2_r_parentConstraint2.crt";
+connectAttr "c_middle2_r.jo" "c_middle2_r_parentConstraint2.cjo";
+connectAttr "c_middle2_r_parentConstraint2.w0" "c_middle2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_middle1_r.ro" "c_middle1_r_parentConstraint2.cro";
+connectAttr "c_middle1_r.pim" "c_middle1_r_parentConstraint2.cpim";
+connectAttr "c_middle1_r.rp" "c_middle1_r_parentConstraint2.crp";
+connectAttr "c_middle1_r.rpt" "c_middle1_r_parentConstraint2.crt";
+connectAttr "c_middle1_r.jo" "c_middle1_r_parentConstraint2.cjo";
+connectAttr "c_middle1_r_parentConstraint2.w0" "c_middle1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "hand_r.s" "c_index1_r.is";
+connectAttr "c_index1_r.s" "c_index2_r.is";
+connectAttr "c_index2_r.s" "c_index3_r.is";
+connectAttr "c_index3_r.ro" "c_index3_r_parentConstraint2.cro";
+connectAttr "c_index3_r.pim" "c_index3_r_parentConstraint2.cpim";
+connectAttr "c_index3_r.rp" "c_index3_r_parentConstraint2.crp";
+connectAttr "c_index3_r.rpt" "c_index3_r_parentConstraint2.crt";
+connectAttr "c_index3_r.jo" "c_index3_r_parentConstraint2.cjo";
+connectAttr "c_index3_r_parentConstraint2.w0" "c_index3_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index2_r.ro" "c_index2_r_parentConstraint2.cro";
+connectAttr "c_index2_r.pim" "c_index2_r_parentConstraint2.cpim";
+connectAttr "c_index2_r.rp" "c_index2_r_parentConstraint2.crp";
+connectAttr "c_index2_r.rpt" "c_index2_r_parentConstraint2.crt";
+connectAttr "c_index2_r.jo" "c_index2_r_parentConstraint2.cjo";
+connectAttr "c_index2_r_parentConstraint2.w0" "c_index2_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index1_r.ro" "c_index1_r_parentConstraint2.cro";
+connectAttr "c_index1_r.pim" "c_index1_r_parentConstraint2.cpim";
+connectAttr "c_index1_r.rp" "c_index1_r_parentConstraint2.crp";
+connectAttr "c_index1_r.rpt" "c_index1_r_parentConstraint2.crt";
+connectAttr "c_index1_r.jo" "c_index1_r_parentConstraint2.cjo";
+connectAttr "c_index1_r_parentConstraint2.w0" "c_index1_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "hand_r.s" "hold_r.is";
+connectAttr "hold_r.ro" "hold_r_parentConstraint1.cro";
+connectAttr "hold_r.pim" "hold_r_parentConstraint1.cpim";
+connectAttr "hold_r.rp" "hold_r_parentConstraint1.crp";
+connectAttr "hold_r.rpt" "hold_r_parentConstraint1.crt";
+connectAttr "hold_r.jo" "hold_r_parentConstraint1.cjo";
+connectAttr "hold_r_parentConstraint1.w0" "hold_r_parentConstraint1.tg[0].tw";
+connectAttr "hand_r.ro" "hand_r_parentConstraint1.cro";
+connectAttr "hand_r.pim" "hand_r_parentConstraint1.cpim";
+connectAttr "hand_r.rp" "hand_r_parentConstraint1.crp";
+connectAttr "hand_r.rpt" "hand_r_parentConstraint1.crt";
+connectAttr "hand_r.jo" "hand_r_parentConstraint1.cjo";
+connectAttr "hand_r_parentConstraint1.w0" "hand_r_parentConstraint1.tg[0].tw";
+connectAttr "forearm_r.s" "forearm_twist_r.is";
+connectAttr "forearm_twist_r.ro" "forearm_twist_r_parentConstraint1.cro";
+connectAttr "forearm_twist_r.pim" "forearm_twist_r_parentConstraint1.cpim";
+connectAttr "forearm_twist_r.rp" "forearm_twist_r_parentConstraint1.crp";
+connectAttr "forearm_twist_r.rpt" "forearm_twist_r_parentConstraint1.crt";
+connectAttr "forearm_twist_r.jo" "forearm_twist_r_parentConstraint1.cjo";
+connectAttr "forearm_twist_r_parentConstraint1.w0" "forearm_twist_r_parentConstraint1.tg[0].tw"
+		;
+connectAttr "forearm_twist_r.pim" "forearm_twist_r_scaleConstraint1.cpim";
+connectAttr "forearm_twist_r.ssc" "forearm_twist_r_scaleConstraint1.tsc";
+connectAttr "forearm_twist_r_scaleConstraint1.w0" "forearm_twist_r_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "forearm_r.ro" "forearm_r_parentConstraint2.cro";
+connectAttr "forearm_r.pim" "forearm_r_parentConstraint2.cpim";
+connectAttr "forearm_r.rp" "forearm_r_parentConstraint2.crp";
+connectAttr "forearm_r.rpt" "forearm_r_parentConstraint2.crt";
+connectAttr "forearm_r.jo" "forearm_r_parentConstraint2.cjo";
+connectAttr "forearm_r_parentConstraint2.w0" "forearm_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "upper_arm_r.s" "bicep_r.is";
+connectAttr "bicep_r.ro" "bicep_r_parentConstraint4.cro";
+connectAttr "bicep_r.pim" "bicep_r_parentConstraint4.cpim";
+connectAttr "bicep_r.rp" "bicep_r_parentConstraint4.crp";
+connectAttr "bicep_r.rpt" "bicep_r_parentConstraint4.crt";
+connectAttr "bicep_r.jo" "bicep_r_parentConstraint4.cjo";
+connectAttr "bicep_r_parentConstraint4.w0" "bicep_r_parentConstraint4.tg[0].tw";
+connectAttr "bicep_r.pim" "bicep_r_scaleConstraint4.cpim";
+connectAttr "bicep_r.ssc" "bicep_r_scaleConstraint4.tsc";
+connectAttr "bicep_r_scaleConstraint4.w0" "bicep_r_scaleConstraint4.tg[0].tw";
+connectAttr "upper_arm_r.ro" "upper_arm_r_parentConstraint2.cro";
+connectAttr "upper_arm_r.pim" "upper_arm_r_parentConstraint2.cpim";
+connectAttr "upper_arm_r.rp" "upper_arm_r_parentConstraint2.crp";
+connectAttr "upper_arm_r.rpt" "upper_arm_r_parentConstraint2.crt";
+connectAttr "upper_arm_r.jo" "upper_arm_r_parentConstraint2.cjo";
+connectAttr "upper_arm_r_parentConstraint2.w0" "upper_arm_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "shoulder_r.s" "muscle_shoulder_r.is";
+connectAttr "muscle_shoulder_r.ro" "muscle_shoulder_r_parentConstraint4.cro";
+connectAttr "muscle_shoulder_r.pim" "muscle_shoulder_r_parentConstraint4.cpim";
+connectAttr "muscle_shoulder_r.rp" "muscle_shoulder_r_parentConstraint4.crp";
+connectAttr "muscle_shoulder_r.rpt" "muscle_shoulder_r_parentConstraint4.crt";
+connectAttr "muscle_shoulder_r.jo" "muscle_shoulder_r_parentConstraint4.cjo";
+connectAttr "muscle_shoulder_r_parentConstraint4.w0" "muscle_shoulder_r_parentConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_shoulder_r.pim" "muscle_shoulder_r_scaleConstraint4.cpim";
+connectAttr "muscle_shoulder_r.ssc" "muscle_shoulder_r_scaleConstraint4.tsc";
+connectAttr "muscle_shoulder_r_scaleConstraint4.w0" "muscle_shoulder_r_scaleConstraint4.tg[0].tw"
+		;
+connectAttr "shoulder_r.ro" "shoulder_r_parentConstraint2.cro";
+connectAttr "shoulder_r.pim" "shoulder_r_parentConstraint2.cpim";
+connectAttr "shoulder_r.rp" "shoulder_r_parentConstraint2.crp";
+connectAttr "shoulder_r.rpt" "shoulder_r_parentConstraint2.crt";
+connectAttr "shoulder_r.jo" "shoulder_r_parentConstraint2.cjo";
+connectAttr "shoulder_r_parentConstraint2.w0" "shoulder_r_parentConstraint2.tg[0].tw"
+		;
+connectAttr "chest.s" "shoulder_l.is";
+connectAttr "shoulder_l.s" "upper_arm_l.is";
+connectAttr "upper_arm_l.s" "forearm_l.is";
+connectAttr "forearm_l.s" "hand_l.is";
+connectAttr "hand_l.s" "c_thumb1_l.is";
+connectAttr "c_thumb1_l.s" "c_thumb2_l.is";
+connectAttr "c_thumb2_l.s" "c_thumb3_l.is";
+connectAttr "c_thumb3_l.ro" "c_thumb3_l_parentConstraint3.cro";
+connectAttr "c_thumb3_l.pim" "c_thumb3_l_parentConstraint3.cpim";
+connectAttr "c_thumb3_l.rp" "c_thumb3_l_parentConstraint3.crp";
+connectAttr "c_thumb3_l.rpt" "c_thumb3_l_parentConstraint3.crt";
+connectAttr "c_thumb3_l.jo" "c_thumb3_l_parentConstraint3.cjo";
+connectAttr "c_thumb3_l_parentConstraint3.w0" "c_thumb3_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_thumb2_l.ro" "c_thumb2_l_parentConstraint3.cro";
+connectAttr "c_thumb2_l.pim" "c_thumb2_l_parentConstraint3.cpim";
+connectAttr "c_thumb2_l.rp" "c_thumb2_l_parentConstraint3.crp";
+connectAttr "c_thumb2_l.rpt" "c_thumb2_l_parentConstraint3.crt";
+connectAttr "c_thumb2_l.jo" "c_thumb2_l_parentConstraint3.cjo";
+connectAttr "c_thumb2_l_parentConstraint3.w0" "c_thumb2_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_thumb1_l.ro" "c_thumb1_l_parentConstraint3.cro";
+connectAttr "c_thumb1_l.pim" "c_thumb1_l_parentConstraint3.cpim";
+connectAttr "c_thumb1_l.rp" "c_thumb1_l_parentConstraint3.crp";
+connectAttr "c_thumb1_l.rpt" "c_thumb1_l_parentConstraint3.crt";
+connectAttr "c_thumb1_l.jo" "c_thumb1_l_parentConstraint3.cjo";
+connectAttr "c_thumb1_l_parentConstraint3.w0" "c_thumb1_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "hand_l.s" "c_ring1_l.is";
+connectAttr "c_ring1_l.s" "c_ring2_l.is";
+connectAttr "c_ring2_l.s" "c_ring3_l.is";
+connectAttr "c_ring3_l.ro" "c_ring3_l_parentConstraint3.cro";
+connectAttr "c_ring3_l.pim" "c_ring3_l_parentConstraint3.cpim";
+connectAttr "c_ring3_l.rp" "c_ring3_l_parentConstraint3.crp";
+connectAttr "c_ring3_l.rpt" "c_ring3_l_parentConstraint3.crt";
+connectAttr "c_ring3_l.jo" "c_ring3_l_parentConstraint3.cjo";
+connectAttr "c_ring3_l_parentConstraint3.w0" "c_ring3_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_ring2_l.ro" "c_ring2_l_parentConstraint3.cro";
+connectAttr "c_ring2_l.pim" "c_ring2_l_parentConstraint3.cpim";
+connectAttr "c_ring2_l.rp" "c_ring2_l_parentConstraint3.crp";
+connectAttr "c_ring2_l.rpt" "c_ring2_l_parentConstraint3.crt";
+connectAttr "c_ring2_l.jo" "c_ring2_l_parentConstraint3.cjo";
+connectAttr "c_ring2_l_parentConstraint3.w0" "c_ring2_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_ring1_l.ro" "c_ring1_l_parentConstraint3.cro";
+connectAttr "c_ring1_l.pim" "c_ring1_l_parentConstraint3.cpim";
+connectAttr "c_ring1_l.rp" "c_ring1_l_parentConstraint3.crp";
+connectAttr "c_ring1_l.rpt" "c_ring1_l_parentConstraint3.crt";
+connectAttr "c_ring1_l.jo" "c_ring1_l_parentConstraint3.cjo";
+connectAttr "c_ring1_l_parentConstraint3.w0" "c_ring1_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "hand_l.s" "c_middle1_l.is";
+connectAttr "c_middle1_l.s" "c_middle2_l.is";
+connectAttr "c_middle2_l.s" "c_middle3_l.is";
+connectAttr "c_middle3_l.ro" "c_middle3_l_parentConstraint3.cro";
+connectAttr "c_middle3_l.pim" "c_middle3_l_parentConstraint3.cpim";
+connectAttr "c_middle3_l.rp" "c_middle3_l_parentConstraint3.crp";
+connectAttr "c_middle3_l.rpt" "c_middle3_l_parentConstraint3.crt";
+connectAttr "c_middle3_l.jo" "c_middle3_l_parentConstraint3.cjo";
+connectAttr "c_middle3_l_parentConstraint3.w0" "c_middle3_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_middle2_l.ro" "c_middle2_l_parentConstraint3.cro";
+connectAttr "c_middle2_l.pim" "c_middle2_l_parentConstraint3.cpim";
+connectAttr "c_middle2_l.rp" "c_middle2_l_parentConstraint3.crp";
+connectAttr "c_middle2_l.rpt" "c_middle2_l_parentConstraint3.crt";
+connectAttr "c_middle2_l.jo" "c_middle2_l_parentConstraint3.cjo";
+connectAttr "c_middle2_l_parentConstraint3.w0" "c_middle2_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "c_middle1_l.ro" "c_middle1_l_parentConstraint3.cro";
+connectAttr "c_middle1_l.pim" "c_middle1_l_parentConstraint3.cpim";
+connectAttr "c_middle1_l.rp" "c_middle1_l_parentConstraint3.crp";
+connectAttr "c_middle1_l.rpt" "c_middle1_l_parentConstraint3.crt";
+connectAttr "c_middle1_l.jo" "c_middle1_l_parentConstraint3.cjo";
+connectAttr "c_middle1_l_parentConstraint3.w0" "c_middle1_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "hand_l.s" "c_index1_l.is";
+connectAttr "c_index1_l.s" "c_index2_l.is";
+connectAttr "c_index2_l.s" "c_index3_l.is";
+connectAttr "c_index3_l.ro" "c_index3_l_parentConstraint2.cro";
+connectAttr "c_index3_l.pim" "c_index3_l_parentConstraint2.cpim";
+connectAttr "c_index3_l.rp" "c_index3_l_parentConstraint2.crp";
+connectAttr "c_index3_l.rpt" "c_index3_l_parentConstraint2.crt";
+connectAttr "c_index3_l.jo" "c_index3_l_parentConstraint2.cjo";
+connectAttr "c_index3_l_parentConstraint2.w0" "c_index3_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index2_l.ro" "c_index2_l_parentConstraint2.cro";
+connectAttr "c_index2_l.pim" "c_index2_l_parentConstraint2.cpim";
+connectAttr "c_index2_l.rp" "c_index2_l_parentConstraint2.crp";
+connectAttr "c_index2_l.rpt" "c_index2_l_parentConstraint2.crt";
+connectAttr "c_index2_l.jo" "c_index2_l_parentConstraint2.cjo";
+connectAttr "c_index2_l_parentConstraint2.w0" "c_index2_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "c_index1_l.ro" "c_index1_l_parentConstraint2.cro";
+connectAttr "c_index1_l.pim" "c_index1_l_parentConstraint2.cpim";
+connectAttr "c_index1_l.rp" "c_index1_l_parentConstraint2.crp";
+connectAttr "c_index1_l.rpt" "c_index1_l_parentConstraint2.crt";
+connectAttr "c_index1_l.jo" "c_index1_l_parentConstraint2.cjo";
+connectAttr "c_index1_l_parentConstraint2.w0" "c_index1_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "hand_l.s" "hold_l.is";
+connectAttr "hold_l.ro" "hold_l_parentConstraint1.cro";
+connectAttr "hold_l.pim" "hold_l_parentConstraint1.cpim";
+connectAttr "hold_l.rp" "hold_l_parentConstraint1.crp";
+connectAttr "hold_l.rpt" "hold_l_parentConstraint1.crt";
+connectAttr "hold_l.jo" "hold_l_parentConstraint1.cjo";
+connectAttr "hold_l_parentConstraint1.w0" "hold_l_parentConstraint1.tg[0].tw";
+connectAttr "hand_l.ro" "hand_l_parentConstraint1.cro";
+connectAttr "hand_l.pim" "hand_l_parentConstraint1.cpim";
+connectAttr "hand_l.rp" "hand_l_parentConstraint1.crp";
+connectAttr "hand_l.rpt" "hand_l_parentConstraint1.crt";
+connectAttr "hand_l.jo" "hand_l_parentConstraint1.cjo";
+connectAttr "hand_l_parentConstraint1.w0" "hand_l_parentConstraint1.tg[0].tw";
+connectAttr "forearm_l.s" "forearm_twist_l.is";
+connectAttr "forearm_twist_l.ro" "forearm_twist_l_parentConstraint3.cro";
+connectAttr "forearm_twist_l.pim" "forearm_twist_l_parentConstraint3.cpim";
+connectAttr "forearm_twist_l.rp" "forearm_twist_l_parentConstraint3.crp";
+connectAttr "forearm_twist_l.rpt" "forearm_twist_l_parentConstraint3.crt";
+connectAttr "forearm_twist_l.jo" "forearm_twist_l_parentConstraint3.cjo";
+connectAttr "forearm_twist_l_parentConstraint3.w0" "forearm_twist_l_parentConstraint3.tg[0].tw"
+		;
+connectAttr "forearm_twist_l.pim" "forearm_twist_l_scaleConstraint1.cpim";
+connectAttr "forearm_twist_l.ssc" "forearm_twist_l_scaleConstraint1.tsc";
+connectAttr "forearm_twist_l_scaleConstraint1.w0" "forearm_twist_l_scaleConstraint1.tg[0].tw"
+		;
+connectAttr "forearm_l.ro" "forearm_l_parentConstraint2.cro";
+connectAttr "forearm_l.pim" "forearm_l_parentConstraint2.cpim";
+connectAttr "forearm_l.rp" "forearm_l_parentConstraint2.crp";
+connectAttr "forearm_l.rpt" "forearm_l_parentConstraint2.crt";
+connectAttr "forearm_l.jo" "forearm_l_parentConstraint2.cjo";
+connectAttr "forearm_l_parentConstraint2.w0" "forearm_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "upper_arm_l.s" "bicep_l.is";
+connectAttr "bicep_l.ro" "bicep_l_parentConstraint4.cro";
+connectAttr "bicep_l.pim" "bicep_l_parentConstraint4.cpim";
+connectAttr "bicep_l.rp" "bicep_l_parentConstraint4.crp";
+connectAttr "bicep_l.rpt" "bicep_l_parentConstraint4.crt";
+connectAttr "bicep_l.jo" "bicep_l_parentConstraint4.cjo";
+connectAttr "bicep_l_parentConstraint4.w0" "bicep_l_parentConstraint4.tg[0].tw";
+connectAttr "bicep_l.pim" "bicep_l_scaleConstraint1.cpim";
+connectAttr "bicep_l.ssc" "bicep_l_scaleConstraint1.tsc";
+connectAttr "bicep_l_scaleConstraint1.w0" "bicep_l_scaleConstraint1.tg[0].tw";
+connectAttr "upper_arm_l.ro" "upper_arm_l_parentConstraint2.cro";
+connectAttr "upper_arm_l.pim" "upper_arm_l_parentConstraint2.cpim";
+connectAttr "upper_arm_l.rp" "upper_arm_l_parentConstraint2.crp";
+connectAttr "upper_arm_l.rpt" "upper_arm_l_parentConstraint2.crt";
+connectAttr "upper_arm_l.jo" "upper_arm_l_parentConstraint2.cjo";
+connectAttr "upper_arm_l_parentConstraint2.w0" "upper_arm_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "shoulder_l.s" "muscle_shoulder_l.is";
+connectAttr "muscle_shoulder_l.ro" "muscle_shoulder_l_parentConstraint4.cro";
+connectAttr "muscle_shoulder_l.pim" "muscle_shoulder_l_parentConstraint4.cpim";
+connectAttr "muscle_shoulder_l.rp" "muscle_shoulder_l_parentConstraint4.crp";
+connectAttr "muscle_shoulder_l.rpt" "muscle_shoulder_l_parentConstraint4.crt";
+connectAttr "muscle_shoulder_l.jo" "muscle_shoulder_l_parentConstraint4.cjo";
+connectAttr "muscle_shoulder_l_parentConstraint4.w0" "muscle_shoulder_l_parentConstraint4.tg[0].tw"
+		;
+connectAttr "muscle_shoulder_l.pim" "muscle_shoulder_l_scaleConstraint4.cpim";
+connectAttr "muscle_shoulder_l.ssc" "muscle_shoulder_l_scaleConstraint4.tsc";
+connectAttr "muscle_shoulder_l_scaleConstraint4.w0" "muscle_shoulder_l_scaleConstraint4.tg[0].tw"
+		;
+connectAttr "shoulder_l.ro" "shoulder_l_parentConstraint2.cro";
+connectAttr "shoulder_l.pim" "shoulder_l_parentConstraint2.cpim";
+connectAttr "shoulder_l.rp" "shoulder_l_parentConstraint2.crp";
+connectAttr "shoulder_l.rpt" "shoulder_l_parentConstraint2.crt";
+connectAttr "shoulder_l.jo" "shoulder_l_parentConstraint2.cjo";
+connectAttr "shoulder_l_parentConstraint2.w0" "shoulder_l_parentConstraint2.tg[0].tw"
+		;
+connectAttr "chest.s" "breast_L.is";
+connectAttr "breast_L.ro" "breast_L_parentConstraint4.cro";
+connectAttr "breast_L.pim" "breast_L_parentConstraint4.cpim";
+connectAttr "breast_L.rp" "breast_L_parentConstraint4.crp";
+connectAttr "breast_L.rpt" "breast_L_parentConstraint4.crt";
+connectAttr "breast_L.jo" "breast_L_parentConstraint4.cjo";
+connectAttr "breast_L_parentConstraint4.w0" "breast_L_parentConstraint4.tg[0].tw"
+		;
+connectAttr "breast_L.pim" "breast_L_scaleConstraint4.cpim";
+connectAttr "breast_L.ssc" "breast_L_scaleConstraint4.tsc";
+connectAttr "breast_L_scaleConstraint4.w0" "breast_L_scaleConstraint4.tg[0].tw";
+connectAttr "chest.s" "breast_R.is";
+connectAttr "breast_R.ro" "breast_R_parentConstraint4.cro";
+connectAttr "breast_R.pim" "breast_R_parentConstraint4.cpim";
+connectAttr "breast_R.rp" "breast_R_parentConstraint4.crp";
+connectAttr "breast_R.rpt" "breast_R_parentConstraint4.crt";
+connectAttr "breast_R.jo" "breast_R_parentConstraint4.cjo";
+connectAttr "breast_R_parentConstraint4.w0" "breast_R_parentConstraint4.tg[0].tw"
+		;
+connectAttr "breast_R.pim" "breast_R_scaleConstraint3.cpim";
+connectAttr "breast_R.ssc" "breast_R_scaleConstraint3.tsc";
+connectAttr "breast_R_scaleConstraint3.w0" "breast_R_scaleConstraint3.tg[0].tw";
+connectAttr "chest.s" "muscle_chest.is";
+connectAttr "muscle_chest.pim" "muscle_chest_scaleConstraint3.cpim";
+connectAttr "muscle_chest.ssc" "muscle_chest_scaleConstraint3.tsc";
+connectAttr "muscle_chest_scaleConstraint3.w0" "muscle_chest_scaleConstraint3.tg[0].tw"
+		;
+connectAttr "muscle_chest.ro" "muscle_chest_parentConstraint4.cro";
+connectAttr "muscle_chest.pim" "muscle_chest_parentConstraint4.cpim";
+connectAttr "muscle_chest.rp" "muscle_chest_parentConstraint4.crp";
+connectAttr "muscle_chest.rpt" "muscle_chest_parentConstraint4.crt";
+connectAttr "muscle_chest.jo" "muscle_chest_parentConstraint4.cjo";
+connectAttr "muscle_chest_parentConstraint4.w0" "muscle_chest_parentConstraint4.tg[0].tw"
+		;
+connectAttr "chest.ro" "chest_parentConstraint2.cro";
+connectAttr "chest.pim" "chest_parentConstraint2.cpim";
+connectAttr "chest.rp" "chest_parentConstraint2.crp";
+connectAttr "chest.rpt" "chest_parentConstraint2.crt";
+connectAttr "chest.jo" "chest_parentConstraint2.cjo";
+connectAttr "chest_parentConstraint2.w0" "chest_parentConstraint2.tg[0].tw";
+connectAttr "spine.s" "torso_width.is";
+connectAttr "torso_width.ro" "torso_width_parentConstraint3.cro";
+connectAttr "torso_width.pim" "torso_width_parentConstraint3.cpim";
+connectAttr "torso_width.rp" "torso_width_parentConstraint3.crp";
+connectAttr "torso_width.rpt" "torso_width_parentConstraint3.crt";
+connectAttr "torso_width.jo" "torso_width_parentConstraint3.cjo";
+connectAttr "torso_width_parentConstraint3.w0" "torso_width_parentConstraint3.tg[0].tw"
+		;
+connectAttr "torso_width.pim" "torso_width_scaleConstraint2.cpim";
+connectAttr "torso_width.ssc" "torso_width_scaleConstraint2.tsc";
+connectAttr "torso_width_scaleConstraint2.w0" "torso_width_scaleConstraint2.tg[0].tw"
+		;
+connectAttr "spine.ro" "spine_parentConstraint2.cro";
+connectAttr "spine.pim" "spine_parentConstraint2.cpim";
+connectAttr "spine.rp" "spine_parentConstraint2.crp";
+connectAttr "spine.rpt" "spine_parentConstraint2.crt";
+connectAttr "spine.jo" "spine_parentConstraint2.cjo";
+connectAttr "spine_parentConstraint2.w0" "spine_parentConstraint2.tg[0].tw";
+connectAttr "hips.s" "belly.is";
+connectAttr "belly.ro" "belly_parentConstraint3.cro";
+connectAttr "belly.pim" "belly_parentConstraint3.cpim";
+connectAttr "belly.rp" "belly_parentConstraint3.crp";
+connectAttr "belly.rpt" "belly_parentConstraint3.crt";
+connectAttr "belly.jo" "belly_parentConstraint3.cjo";
+connectAttr "belly_parentConstraint3.w0" "belly_parentConstraint3.tg[0].tw";
+connectAttr "belly.pim" "belly_scaleConstraint4.cpim";
+connectAttr "belly.ssc" "belly_scaleConstraint4.tsc";
+connectAttr "belly_scaleConstraint4.w0" "belly_scaleConstraint4.tg[0].tw";
+connectAttr "hips.s" "waist.is";
+connectAttr "waist.ro" "waist_parentConstraint3.cro";
+connectAttr "waist.pim" "waist_parentConstraint3.cpim";
+connectAttr "waist.rp" "waist_parentConstraint3.crp";
+connectAttr "waist.rpt" "waist_parentConstraint3.crt";
+connectAttr "waist.jo" "waist_parentConstraint3.cjo";
+connectAttr "waist_parentConstraint3.w0" "waist_parentConstraint3.tg[0].tw";
+connectAttr "waist.pim" "waist_scaleConstraint4.cpim";
+connectAttr "waist.ssc" "waist_scaleConstraint4.tsc";
+connectAttr "waist_scaleConstraint4.w0" "waist_scaleConstraint4.tg[0].tw";
+connectAttr "hips.s" "butt.is";
+connectAttr "butt.ro" "butt_parentConstraint3.cro";
+connectAttr "butt.pim" "butt_parentConstraint3.cpim";
+connectAttr "butt.rp" "butt_parentConstraint3.crp";
+connectAttr "butt.rpt" "butt_parentConstraint3.crt";
+connectAttr "butt.jo" "butt_parentConstraint3.cjo";
+connectAttr "butt_parentConstraint3.w0" "butt_parentConstraint3.tg[0].tw";
+connectAttr "butt.pim" "butt_scaleConstraint2.cpim";
+connectAttr "butt.ssc" "butt_scaleConstraint2.tsc";
+connectAttr "butt_scaleConstraint2.w0" "butt_scaleConstraint2.tg[0].tw";
+connectAttr "hips.ro" "hips_parentConstraint4.cro";
+connectAttr "hips.pim" "hips_parentConstraint4.cpim";
+connectAttr "hips.rp" "hips_parentConstraint4.crp";
+connectAttr "hips.rpt" "hips_parentConstraint4.crt";
+connectAttr "hips.jo" "hips_parentConstraint4.cjo";
+connectAttr "hips_parentConstraint4.w0" "hips_parentConstraint4.tg[0].tw";
+connectAttr "HumanArmature.ro" "HumanArmature_parentConstraint2.cro";
+connectAttr "HumanArmature.pim" "HumanArmature_parentConstraint2.cpim";
+connectAttr "HumanArmature.rp" "HumanArmature_parentConstraint2.crp";
+connectAttr "HumanArmature.rpt" "HumanArmature_parentConstraint2.crt";
+connectAttr "HumanArmature_parentConstraint2.w0" "HumanArmature_parentConstraint2.tg[0].tw"
+		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "blinn1SG.message" ":defaultLightSet.message";
