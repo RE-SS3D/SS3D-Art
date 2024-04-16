@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: HumanStances.ma
-//Last modified: Mon, Apr 15, 2024 08:12:05 PM
+//Last modified: Mon, Apr 15, 2024 08:15:25 PM
 //Codeset: 1252
 file -rdi 1 -ns "Human_AnimRig" -rfn "Human_AnimRigRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Animation Rigs/Human/HumanAnimRig.ma";
@@ -20,13 +20,13 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22621)";
-fileInfo "UUID" "DDCB1CA2-4B99-9800-5FE5-FEADCB64E7EB";
+fileInfo "UUID" "C40784C0-4A9D-BB7C-6379-6EA46CDCBF23";
 fileInfo "vrayBuild" "6.00.02 ee5238c";
 createNode transform -s -n "persp";
 	rename -uid "9032DB97-4F61-0574-DD3C-77AF63BEA906";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.9876114243262468 2.7727532639884287 -0.38202085050313062 ;
-	setAttr ".r" -type "double3" -37.064389650891364 3700.5999999997125 0 ;
+	setAttr ".t" -type "double3" 3.2152159722996636 2.464359870999826 0.26204675771141339 ;
+	setAttr ".r" -type "double3" -31.664389650893497 3688.9999999997071 -1.822416118925036e-13 ;
 	setAttr ".rp" -type "double3" 1.8651746813702629e-16 -1.4210854715202004e-16 0 ;
 	setAttr ".rpt" -type "double3" 5.5043992900140518e-16 -1.2293095526547328e-15 -1.972176785456826e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -2813,7 +2813,7 @@ createNode renderLayer -n "defaultRenderLayer";
 	setAttr ".g" yes;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6DA466EC-489B-7328-F8D0-FC9C011BF537";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 8 -ast -30 -aet 250 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 13 -ast -30 -aet 250 ";
 	setAttr ".st" 6;
 createNode animLayer -n "BaseAnimation";
 	rename -uid "B0241C8F-4634-7C09-63A6-D790F4C02970";
@@ -3270,7 +3270,7 @@ createNode gameFbxExporter -n "gameExporterPreset2";
 	setAttr ".ebm" yes;
 	setAttr ".fv" -type "string" "FBX201800";
 	setAttr ".exp" -type "string" "F:/OneDrive/Projects/Games/RESS3D/Build/SS3D-ArtFork/Assets/Animations/Characters/Humanoid/Misc";
-	setAttr ".exf" -type "string" "Human@Stances_DEF";
+	setAttr ".exf" -type "string" "HumanStancesDEF";
 createNode gameFbxExporter -n "gameExporterPreset3";
 	rename -uid "861C26F5-4452-D1A7-A15C-02A9148BA739";
 	setAttr ".pn" -type "string" "TE Anim Default";
